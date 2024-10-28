@@ -137,8 +137,7 @@
   }
 }
 
-.main-menu .metismenu
- {
+.main-menu .metismenu {
   &:is(.theme-1) {
     ul {
       li {
@@ -160,10 +159,9 @@
   }
 }
 
-
-
 // Custom CSS
-.metismenu li, .metismenu ul li {
+.metismenu li,
+.metismenu ul li {
   list-style: none;
   list-style-type: none;
   & a {
@@ -180,7 +178,7 @@
   }
 }
 
- .metismenu li:first-child > a {
+.metismenu li:first-child > a {
   border-top: 0px;
 }
 .metismenu li ul {

@@ -1,46 +1,59 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import SideBarMobile from './SideBarMobile'
-import SideBarFullscreen from './SideBarFullscreen'
-import Header2 from './Header2'
-import Footer2 from './Footer2'
+import React from "react";
+import { useState, useEffect } from "react";
+import SideBarMobile from "./SideBarMobile";
+import SideBarFullscreen from "./SideBarFullscreen";
+import Header2 from "./Header2";
+import Footer2 from "./Footer2";
 
 export default function Layout2({ children }) {
+  const [isToggledInfo, setToggledInfo] = useState(false);
+  const toggleTrueFalseInfo = () => setToggledInfo(!isToggledInfo);
 
-    const [isToggledInfo, setToggledInfo] = useState(false);
-    const toggleTrueFalseInfo = () => setToggledInfo(!isToggledInfo);
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 100);
+    });
+  }, [scroll]);
 
+  return (
+    <>
+      <Header2 toggleTrueFalseInfo={toggleTrueFalseInfo} />
 
-    const [scroll, setScroll] = useState(false);
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            setScroll(window.scrollY > 100);
-        });
-    }, [scroll]);
+      <SideBarMobile
+        toggleTrueFalseInfo={toggleTrueFalseInfo}
+        isToggledInfo={isToggledInfo}
+      />
 
-    return (
-        <>
-            <Header2 toggleTrueFalseInfo={toggleTrueFalseInfo} />
+      <SideBarFullscreen
+        toggleTrueFalseInfo={toggleTrueFalseInfo}
+        isToggledInfo={isToggledInfo}
+      />
 
-            
-            <SideBarMobile toggleTrueFalseInfo={toggleTrueFalseInfo} isToggledInfo={isToggledInfo} />
+      <div
+        onClick={toggleTrueFalseInfo}
+        className={`offcanvas-overlay ${isToggledInfo ? "overlay-open" : ""}`}
+      ></div>
 
-            <SideBarFullscreen toggleTrueFalseInfo={toggleTrueFalseInfo} isToggledInfo={isToggledInfo} />
+      {/* back to top Start  */}
+      <a
+        href="#"
+        className={`progress-wrap ${scroll ? "active-progress" : ""}`}
+      >
+        <svg
+          className="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </a>
+      {/* back to top end  */}
 
-            <div onClick={toggleTrueFalseInfo} className={`offcanvas-overlay ${isToggledInfo ? "overlay-open" : ""}`}></div>
+      {children}
 
-            {/* back to top Start  */}
-            <a href="#" className={`progress-wrap ${scroll ? "active-progress" : ""}`}>
-                <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-                </svg>
-            </a>
-            {/* back to top end  */}
-
-            {children}
-
-            <Footer2 />
-
-        </>
-    )
+      <Footer2 />
+    </>
+  );
 }

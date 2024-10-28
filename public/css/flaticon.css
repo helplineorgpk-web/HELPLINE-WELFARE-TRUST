@@ -1,124 +1,123 @@
 @font-face {
-    font-family: "flaticon";
-    src: url("../fonts/flaticon.ttf") format("truetype"),
-url("../fonts/flaticon.woff") format("woff"),
-url("../fonts/flaticon.woff2") format("woff2"),
-url("../fonts/flaticon.eot") format("eot");
+  font-family: "flaticon";
+  src:
+    url("../fonts/flaticon.ttf") format("truetype"),
+    url("../fonts/flaticon.woff") format("woff"),
+    url("../fonts/flaticon.woff2") format("woff2"),
+    url("../fonts/flaticon.eot") format("eot");
 }
 
-i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .flaticon-map:before {
-    content: "\f101";
+  content: "\f101";
 }
 .flaticon-user:before {
-    content: "\f102";
+  content: "\f102";
 }
 .flaticon-stethoscope:before {
-    content: "\f103";
+  content: "\f103";
 }
 .flaticon-healthcare:before {
-    content: "\f104";
+  content: "\f104";
 }
 .flaticon-health-check:before {
-    content: "\f105";
+  content: "\f105";
 }
 .flaticon-doctor:before {
-    content: "\f106";
+  content: "\f106";
 }
 .flaticon-water-drop:before {
-    content: "\f107";
+  content: "\f107";
 }
 .flaticon-water-tap:before {
-    content: "\f108";
+  content: "\f108";
 }
 .flaticon-graduation-cap:before {
-    content: "\f109";
+  content: "\f109";
 }
 .flaticon-graduated:before {
-    content: "\f10a";
+  content: "\f10a";
 }
 .flaticon-education:before {
-    content: "\f10b";
+  content: "\f10b";
 }
 .flaticon-creativity:before {
-    content: "\f10c";
+  content: "\f10c";
 }
 .flaticon-running:before {
-    content: "\f10d";
+  content: "\f10d";
 }
 .flaticon-exercise:before {
-    content: "\f10e";
+  content: "\f10e";
 }
 .flaticon-sport:before {
-    content: "\f10f";
+  content: "\f10f";
 }
 .flaticon-dumbbell:before {
-    content: "\f110";
+  content: "\f110";
 }
 .flaticon-care:before {
-    content: "\f111";
+  content: "\f111";
 }
 .flaticon-charity:before {
-    content: "\f112";
+  content: "\f112";
 }
 .flaticon-hands:before {
-    content: "\f113";
+  content: "\f113";
 }
 .flaticon-flower:before {
-    content: "\f114";
+  content: "\f114";
 }
 .flaticon-lotus-flower:before {
-    content: "\f115";
+  content: "\f115";
 }
 .flaticon-trophy:before {
-    content: "\f116";
+  content: "\f116";
 }
 .flaticon-trophy-1:before {
-    content: "\f117";
+  content: "\f117";
 }
 .flaticon-growth:before {
-    content: "\f118";
+  content: "\f118";
 }
 .flaticon-growth-1:before {
-    content: "\f119";
+  content: "\f119";
 }
 .flaticon-light-bulb:before {
-    content: "\f11a";
+  content: "\f11a";
 }
 .flaticon-idea:before {
-    content: "\f11b";
+  content: "\f11b";
 }
 .flaticon-quote:before {
-    content: "\f11c";
+  content: "\f11c";
 }
 .flaticon-right-quote:before {
-    content: "\f11d";
+  content: "\f11d";
 }
 .flaticon-left-quote:before {
-    content: "\f11e";
+  content: "\f11e";
 }
 .flaticon-quote-1:before {
-    content: "\f11f";
+  content: "\f11f";
 }
 .flaticon-speech-bubble:before {
-    content: "\f120";
+  content: "\f120";
 }
 .flaticon-chat:before {
-    content: "\f121";
+  content: "\f121";
 }
 .flaticon-chat-1:before {
-    content: "\f122";
+  content: "\f122";
 }
-
-
-

@@ -26,13 +26,15 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/yourusername/lifeline.git
 
+   ```
+
 2. **Install Dependencies**
 
-    nvm install 16.20.0
-    nvm use 16.20.0
+   nvm install 16.20.0
+   nvm use 16.20.0
 
-    **Install with Legacy Peer Dependencies**
-        npm install --legacy-peer-deps
+   **Install with Legacy Peer Dependencies**
+   npm install --legacy-peer-deps
 
 ## Running the Server
 
