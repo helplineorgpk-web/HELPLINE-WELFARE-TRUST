@@ -30,10 +30,10 @@ export default function Footer3() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="/mailto:masum@gmail.com">
+                        <Link href="/mailto:info@helpline.org.pk">
                           <a>
                             <i className="fal fa-envelope"></i>
-                            <strong>Phone:</strong>masum@gmail.com
+                            <strong>Phone:</strong>info@helpline.org.pk
                           </a>
                         </Link>
                       </li>
@@ -239,10 +239,10 @@ export default function Footer3() {
             <div className="row">
               <div className="col-xxl-12 text-center">
                 <p>
-                  Copyright © 2021 All Rights Reserved by{" "}
+                  Design by{" "}
                   <strong>
-                    <Link href="#">
-                      <a>ThemePure</a>
+                    <Link href="https://www.codeviztech.com/">
+                      <a target="_blank">CodeViz Technology</a>
                     </Link>
                   </strong>
                 </p>

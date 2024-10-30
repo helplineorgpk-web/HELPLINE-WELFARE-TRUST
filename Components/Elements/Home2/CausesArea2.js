@@ -324,13 +324,17 @@ export default function CausesArea2() {
                     water
                   </button>
                   <button
-                    className={`nav-link ${filter === "education" ? "active" : ""}`}
+                    className={`nav-link ${
+                      filter === "education" ? "active" : ""
+                    }`}
                     onClick={() => setFilter("education")}
                   >
                     Education
                   </button>
                   <button
-                    className={`nav-link ${filter === "medical" ? "active" : ""}`}
+                    className={`nav-link ${
+                      filter === "medical" ? "active" : ""
+                    }`}
                     onClick={() => setFilter("medical")}
                   >
                     Medical
@@ -442,7 +446,7 @@ export default function CausesArea2() {
                       </SwiperSlide>
                     ) : (
                       ""
-                    ),
+                    )
                   )}
                 </Swiper>
               </div>

@@ -20,8 +20,8 @@ export default function Footer2() {
                     </Link>
                   </div>
                   <p className="mb-30">
-                    Eaque ipsa quae ab illo inventore veris quasi architecto
-                    beatae vitae dicta exp enim ipsam voluptatem.
+                    Your gift assists us with giving Welfare help to a huge
+                    number of individuals every year.
                   </p>
                   <div className="footer_social_2">
                     <Link href="#">
@@ -138,15 +138,15 @@ export default function Footer2() {
                   <div className="footer_info_content">
                     <p>
                       <span>
-                        <strong>Address :</strong>44 New Design Street, <br />{" "}
-                        Melbourne 005
+                        <strong>Address :</strong>House # 705/A-1, Township,
+                        <br /> Lahore
                       </span>
                     </p>
                     <p>
                       <Link href="/tel:800433633">
                         <a>
                           <span>
-                            <strong>Phone :</strong>(01) 800 433 633
+                            <strong>Phone :</strong>+92-42-35110164
                           </span>
                         </a>
                       </Link>
@@ -155,7 +155,7 @@ export default function Footer2() {
                       <Link href="/mailto:info@Example.com">
                         <a>
                           <span>
-                            <strong>Email :</strong>info@Example.com
+                            <strong>Email :</strong>info@helpline.org.pk
                           </span>
                         </a>
                       </Link>
@@ -211,10 +211,10 @@ export default function Footer2() {
           <div className="row">
             <div className="col-xxl-12 text-center">
               <p>
-                Copyright © 2021 All Rights Reserved by{" "}
+                Design by{" "}
                 <strong>
-                  <Link href="#">
-                    <a>ThemePure</a>
+                  <Link href="https://www.codeviztech.com/">
+                    <a target="_blank"> CodeViz Technology</a>
                   </Link>
                 </strong>
               </p>
@@ -223,7 +223,5 @@ export default function Footer2() {
         </div>
       </div>
     </footer>
-
-    //<!-- Footer Area End -->
   );
 }

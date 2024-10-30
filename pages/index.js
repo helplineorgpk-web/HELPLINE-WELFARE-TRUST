@@ -7,6 +7,9 @@ import CausesArea from "../Components/Elements/Home/CausesArea";
 import AboutArea from "../Components/Elements/Home/AboutArea";
 import SliderArea from "../Components/Elements/Home/SliderArea";
 import CTAArea from "../Components/Elements/Home/CTAArea";
+import AllOverPakistan from "../Components/Elements/Home/AllOverPakistan";
+import HelplineProject from "../Components/Elements/Home/HelplineProject";
+import WayToDonate from "../Components/Elements/Home/WayToDonate";
 
 export default function Home() {
   return (
@@ -16,10 +19,12 @@ export default function Home() {
           <SliderArea />
           <CTAArea />
           <AboutArea />
+          <AllOverPakistan />
           <CausesArea />
-
           <SupportArea />
+          <HelplineProject />
           <FeaturedArea />
+          <WayToDonate />
           <NewsFeed />
         </main>
       </Layout1>
