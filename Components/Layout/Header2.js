@@ -60,10 +60,10 @@ export default function Header2({ toggleTrueFalseInfo }) {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
-              <div className="logo">
+              <div className="">
                 <Link href="/">
                   <a>
-                    <img src="/img/logo/logo.png" alt="" />
+                    <img src="/img/logo/logo.png" alt="" width={"100%"} />
                   </a>
                 </Link>
               </div>

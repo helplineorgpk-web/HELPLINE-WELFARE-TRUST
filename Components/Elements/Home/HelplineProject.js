@@ -6,41 +6,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { HelplineData } from "../../../pages/api/data";
 
-const slidesData = [
-  {
-    image: "/img/causes/cause1.jpg",
-    percentage: "65",
-    label: "Fundraiser",
-    description:
-      "Become our Fundraiser, we just want to help those ones who need our help. Kindly help us to arrange necessary things for needy ones.",
-    link: "/cause-details",
-    Color: "pbar_1",
-    bgColor: "rgb(95, 179, 91, 0.8), rgb(241, 91, 67, 0.8)",
-  },
-  {
-    image: "/img/causes/cause17.jpg",
-    percentage: "80",
-    label: "Attend Event",
-    description:
-      "Be a volunteer to help us to arrange the event. And can join us on any event which will be arranged by HELPLINE.",
-    link: "/cause-details",
-    Color: "pbar_2",
-    bgColor: "rgb(241, 91, 67, 0.8), rgba(101, 202, 187, 0.8)",
-  },
-  {
-    image: "/img/causes/cause3.jpg",
-    percentage: "50",
-    label: "Donor",
-    description:
-      "Help us, we need your support because your little support for our good deeds will return to you and you will be amazed to donate.",
-    link: "/cause-details",
-    Color: "pbar_3",
-    bgColor: "rgba(101, 202, 187, 0.8), rgb(95, 179, 91, 0.8)",
-  },
-];
 
 function HelplineProject() {
+  const HelplineProject = HelplineData.slidesData;
   return (
     <section style={styles.ctaArea}>
       <h2 style={styles.heading}>How you can help</h2>
@@ -56,7 +26,7 @@ function HelplineProject() {
           },
         }}
       >
-        {slidesData.map((slide, index) => (
+        {HelplineProject.map((slide, index) => (
           <SwiperSlide className="single_cause mb-0" key={index}>
             <div className="single_cause_img img_effect_white p-rel">
               <Link href={slide.link}>

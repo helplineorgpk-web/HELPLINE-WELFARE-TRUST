@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -16,7 +15,6 @@ export default function SupportArea() {
 
   return (
     <>
-      {/* <!--support area start--> */}
       <div className="support_area mtm-294 pb-90">
         <div className="container">
           <div className="support_bg white-bg">
@@ -25,25 +23,16 @@ export default function SupportArea() {
                 <div className="support_images_active swiper-container dots_style">
                   <div className="swiper-wrapper">
                     <Swiper
-                      // install Swiper modules
                       modules={[Navigation, Pagination, Scrollbar, A11y]}
                       spaceBetween={2}
                       slidesPerView={1}
                       autoplaydisableoninteraction={"false"}
                       loop={true}
                       pagination={{ clickable: true }}
-                      // navigation={{ clickable: true }}
                       scrollbar={{ draggable: true }}
                       onSwiper={(swiper) => console.log(swiper)}
                       onSlideChange={() => console.log("slide change")}
                     >
-                      <SwiperSlide className="support_img_single img_effect_white">
-                        <Link href="/volunteer">
-                          <a>
-                            <img src="/img/bg/support1.jpg" alt="img" />
-                          </a>
-                        </Link>
-                      </SwiperSlide>
                       <SwiperSlide className="support_img_single img_effect_white">
                         <Link href="/volunteer">
                           <a>
@@ -61,13 +50,19 @@ export default function SupportArea() {
                       <SwiperSlide className="support_img_single img_effect_white">
                         <Link href="/volunteer">
                           <a>
-                            <img src="/img/bg/support3.jpg" alt="img" />
+                            <img src="/img/bg/support6.jpg" alt="img" />
+                          </a>
+                        </Link>
+                      </SwiperSlide>
+                      <SwiperSlide className="support_img_single img_effect_white">
+                        <Link href="/volunteer">
+                          <a>
+                            <img src="/img/bg/support7.jpg" alt="img" />
                           </a>
                         </Link>
                       </SwiperSlide>
                     </Swiper>
                   </div>
-                  {/* <!-- Add Pagination --> */}
                   <div className="swiper-pagination-join text-center"></div>
                 </div>
               </div>
@@ -157,42 +152,52 @@ export default function SupportArea() {
                       <button className="amount_btn">Amount</button>
                       <div
                         onClick={toggleTrueFalse}
-                        className={`nice-select support_btn support_select ${isToggled ? "open" : ""}`}
+                        className={`nice-select support_btn support_select ${
+                          isToggled ? "open" : ""
+                        }`}
                       >
                         <span className="current">{isSelect}</span>
                         <ul className="list">
                           <li
                             onClick={() => setSelect("USD")}
-                            className={`option ${isSelect == "USD" && "selected focus"}`}
+                            className={`option ${
+                              isSelect == "USD" && "selected focus"
+                            }`}
                           >
                             USD
                           </li>
                           <li
                             onClick={() => setSelect("EUR")}
-                            className={`option ${isSelect == "EUR" && "selected focus"}`}
+                            className={`option ${
+                              isSelect == "EUR" && "selected focus"
+                            }`}
                           >
                             EUR
                           </li>
                           <li
                             onClick={() => setSelect("JPY")}
-                            className={`option ${isSelect == "JPY" && "selected focus"}`}
+                            className={`option ${
+                              isSelect == "JPY" && "selected focus"
+                            }`}
                           >
                             JPY
                           </li>
                           <li
                             onClick={() => setSelect("BDT")}
-                            className={`option ${isSelect == "BDT" && "selected focus"}`}
+                            className={`option ${
+                              isSelect == "BDT" && "selected focus"
+                            }`}
                           >
                             BDT
                           </li>
                         </ul>
                       </div>
-                      {/* <select className="support_btn support_select">
-                                                <option value="Currency">USD</option>
-                                                <option value="">EUR</option>
-                                                <option value="">JPY</option>
-                                                <option value="">BDT</option>
-                                            </select> */}
+                      <select className="support_btn support_select">
+                        <option value="Currency">USD</option>
+                        <option value="">EUR</option>
+                        <option value="">JPY</option>
+                        <option value="">BDT</option>
+                      </select>
                     </div>
                     <div className="donar_section support_currency d-sm-flex d-inline-block justify-content-center">
                       <div className="donar_currency d-flex mb-30">
@@ -215,7 +220,6 @@ export default function SupportArea() {
           </div>
         </div>
       </div>
-      {/* <!--support area end--> */}
     </>
   );
 }

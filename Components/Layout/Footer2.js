@@ -15,7 +15,7 @@ export default function Footer2() {
                   <div className="footer_logo mb-35">
                     <Link href="/">
                       <a className="animation">
-                        <img src="/img/logo/logo_white.png" alt="img" />
+                        <img src="/img/logo/logo-white.png" alt="img" />
                       </a>
                     </Link>
                   </div>

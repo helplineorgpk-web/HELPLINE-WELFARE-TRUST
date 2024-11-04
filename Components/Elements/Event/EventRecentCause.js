@@ -3,251 +3,33 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Timer from "../TimeCountDown";
 import Link from "next/link";
+import { HelplineData } from "../../../pages/api/data";
+import { useRouter } from "next/router";
 
 export default function EventRecentCause() {
   const date = new Date();
-
-  // console.log(date)
-  const causes = [
-    {
-      category: ["water"],
-      img: (
-        <Image
-          src="/img/causes/cause1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: date.setDate(date.getDate() + 1),
-    },
-    {
-      category: ["water"],
-      img: (
-        <Image
-          src="/img/causes/cause2.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["water"],
-      img: (
-        <Image
-          src="/img/causes/cause3.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["water", ""],
-      img: (
-        <Image
-          src="/img/causes/cause4.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["education"],
-      img: (
-        <Image
-          src="/img/causes/cause13.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["education"],
-      img: (
-        <Image
-          src="/img/causes/cause14.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["education"],
-      img: (
-        <Image
-          src="/img/causes/cause15.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["", "education"],
-      img: (
-        <Image
-          src="/img/causes/cause16.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["medical"],
-      img: (
-        <Image
-          src="/img/causes/cause10.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["medical"],
-      img: (
-        <Image
-          src="/img/causes/cause11.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["medical"],
-      img: (
-        <Image
-          src="/img/causes/cause12.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["", "medical"],
-      img: (
-        <Image
-          src="/img/causes/cause28.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["food"],
-      img: (
-        <Image
-          src="/img/causes/cause23.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["food"],
-      img: (
-        <Image
-          src="/img/causes/cause24.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["food"],
-      img: (
-        <Image
-          src="/img/causes/cause25.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-    {
-      category: ["", "food"],
-      img: (
-        <Image
-          src="/img/causes/cause26.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      title: "Every Second Until the Event",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-    },
-  ];
   const [filter, setFilter] = useState("");
   const [projects, setProjects] = useState([]);
-
+  const causes = HelplineData.causes;
+  const router = useRouter();
   useEffect(() => {
-    setProjects([]);
-
     const filtered =
       filter === ""
         ? causes
-        : causes.filter((c) => c.category.includes(filter));
+        : causes.filter((c) =>
+            c.category.some((cat) => cat.toLowerCase() === filter.toLowerCase())
+          );
     setProjects(filtered);
-  }, [filter]);
+  }, [filter, causes]);
+
+  const handleNavigation = (item) => {
+    router.push({
+      pathname: `event-details`,
+      query: { id: item.id },
+    });
+  };
+
   return (
-    //Recent causes area start
     <section className="event_causes_area pt-120 pb-85">
       <div className="container">
         <div className="row">
@@ -268,13 +50,17 @@ export default function EventRecentCause() {
                     Water
                   </button>
                   <button
-                    className={`nav-link ${filter === "education" ? "active" : ""}`}
+                    className={`nav-link ${
+                      filter === "education" ? "active" : ""
+                    }`}
                     onClick={() => setFilter("education")}
                   >
                     Education
                   </button>
                   <button
-                    className={`nav-link ${filter === "medical" ? "active" : ""}`}
+                    className={`nav-link ${
+                      filter === "medical" ? "active" : ""
+                    }`}
                     onClick={() => setFilter("medical")}
                   >
                     Medical
@@ -305,17 +91,20 @@ export default function EventRecentCause() {
               >
                 <div className="row align-items-center">
                   <div className="col-xxl-3 col-xl-3 col-lg-3 d-md-none d-lg-block">
-                    <div className="eventcount_img w_img">
-                      <Link href="/event-details">
+                    <div
+                      className="eventcount_img w_img"
+                      onClick={() => handleNavigation(item)}
+                    >
+                      <Link href={{}}>
                         <a>{item.img}</a>
                       </Link>
                     </div>
                   </div>
                   <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 text-center text-md-start">
                     <div className="eventcount_text heading-clr">
-                      <h5>
-                        <Link href="/event-details">
-                          <a>{item.title}</a>
+                      <h5 onClick={() => handleNavigation(item)}>
+                        <Link href={{}}>
+                          <a>{item.desc}</a>
                         </Link>
                       </h5>
                       <span>{item.address}</span>
@@ -343,6 +132,5 @@ export default function EventRecentCause() {
         </div>
       </div>
     </section>
-    //Recent causes area end
   );
 }

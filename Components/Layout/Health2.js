@@ -1,15 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../public/css/HelplineHealth.module.css";
-
-const statsData = [
-  { id: 1, title: "Hospitals", target: 2 },
-  { id: 2, title: "Mobile Dispensary", target: 1 },
-  { id: 3, title: "Free Meal Service", target: 3 },
-  { id: 4, title: "Ambulance", target: 1 },
-  { id: 5, title: "Rehabilitation Hospitals", target: 2 },
-  { id: 6, title: "Beneficiaries", target: 939129 },
-  { id: 7, title: "Million / Year Expenditure", target: 2 },
-];
+import { HelplineData } from "../../pages/api/data";
 
 function StatCard({ title, target }) {
   const [count, setCount] = useState(0);
@@ -41,6 +32,7 @@ function StatCard({ title, target }) {
 }
 
 function Health2() {
+  const statsData = HelplineData.statsData;
   return (
     <section className={styles.container}>
       <h2 className={styles.mainTitle}>Helpline Health</h2>

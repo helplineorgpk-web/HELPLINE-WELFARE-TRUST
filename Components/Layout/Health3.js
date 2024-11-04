@@ -1,21 +1,9 @@
 import React from "react";
 import styles from "../../public/css/DonationGrid.module.css";
-
-const donationItems = [
-  { id: 1, icon: "🚑", title: "Ambulance", amount: "PKR 2.8 Million" },
-  { id: 2, icon: "🏥", title: "Hospital", amount: "PKR 500 Million" },
-  { id: 3, icon: "🏬", title: "Poly Clinics", amount: "PKR 25 Million" },
-  {
-    id: 4,
-    icon: "🩺",
-    title: "Mega Diagnostic Centers",
-    amount: "PKR 35 Million",
-  },
-  { id: 5, icon: "💉", title: "Blood Banks", amount: "PKR 25 Million" },
-  { id: 6, icon: "🩹", title: "Medical Camps", amount: "PKR 70,000" },
-];
+import { HelplineData } from "../../pages/api/data";
 
 function Health3() {
+  const statsData = HelplineData.donationItems;
   return (
     <section className={styles.container}>
       <div>
@@ -26,7 +14,7 @@ function Health3() {
         </p>
       </div>
       <div className={styles.grid}>
-        {donationItems.map((item) => (
+        {statsData.map((item) => (
           <div key={item.id} className={styles.card}>
             <div className={styles.icon}>{item.icon}</div>
             <div className={styles.title}>

@@ -1,0 +1,83 @@
+.ctaArea {
+  background: linear-gradient(
+      135deg,
+      rgba(48, 65, 88, 0.8),
+      rgba(76, 161, 175, 0.8)
+    ),
+    url("/img/featureEvent/fevent_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f8f9fa;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.col {
+  flex: 1 1 30%;
+  margin-bottom: 1.5rem;
+  padding: 10px;
+}
+
+.statItem {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.count {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.viewLink {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #4ca1af;
+  text-decoration: none;
+  border: 1px solid #4ca1af;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col {
+    width: 80%;
+  }
+}
