@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function VolunteerDetailsTeam() {
+export default function VolunteerDetailsTeam({ name, designation, image }) {
   return (
     //team single area start
     <div className="team_single_area pt-120 pb-90">
@@ -9,14 +9,14 @@ export default function VolunteerDetailsTeam() {
         <div className="row align-items-center mb-80">
           <div className="col-xxl-5 col-xl-5 col-lg-5">
             <div className="team_single_img">
-              <img src="/img/team/person.jpg" alt="img" />
+              <img src={image} alt="img" />
             </div>
           </div>
           <div className="col-xxl-7 col-xl-7 col-lg-7">
             <div className="team_single_info_wrapper pl-50">
               <div className="section_title">
-                <span className="sub_title sub_title_2">Founder &amp; CDO</span>
-                <h3 className="title title_2">Hawkni K. Hakli</h3>
+                <span className="sub_title sub_title_2">{designation}</span>
+                <h3 className="title title_2">{name}</h3>
               </div>
               <p className="mb-40">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

@@ -1,332 +1,69 @@
 import React from "react";
 import Link from "next/link";
+import { HelplineData } from "../../../pages/api/data";
+import { useRouter } from "next/router";
 
 export default function VolunteerTeamArea() {
+  const team = HelplineData.team;
+  const router = useRouter();
+
+  const handleNavigation = (member) => {
+    router.push({
+      pathname: "/volunteer-details",
+      query: { id: member.id },
+    });
+  };
+
   return (
-    // Team area start
     <div className="team_area pt-110 pb-90">
       <div className="container">
         <div className="row">
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member1.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
-              <span className="designation">Founder</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Miranda H. Halim</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member2.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
-
-              <span className="designation">Chairman</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>N. Uddin</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
+          {team.map((member) => (
+            <div
+              key={member.id}
+              className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center"
+            >
+              <div className="single_team mb-30">
+                <div
+                  className="team_thumb img_effect_white"
+                  onClick={() => handleNavigation(member)}
+                >
+                  <Link
+                    href={{
+                      pathname: "/volunteer-details",
+                      query: { id: member.id },
+                    }}
+                  >
+                    <a>
+                      <img src={member.image} alt={member.name} />
+                    </a>
+                  </Link>
+                </div>
+                <span className="designation">{member.designation}</span>
+                <h5 className="member_name">
+                  <Link
+                    href={{
+                      pathname: "/volunteer-details",
+                      query: { id: member.id },
+                    }}
+                  >
+                    <a>{member.name}</a>
+                  </Link>
+                </h5>
+                <div className="member_social">
+                  {member.socialLinks.map((link, index) => (
+                    <Link href={link.url} key={index}>
+                      <a className={link.platform}>
+                        <i className={link.icon}></i>
+                      </a>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member3.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
-
-              <span className="designation">Designer</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Mark Billah</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member4.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
-
-              <span className="designation">Developer</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Andreu Salim</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member5.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
-
-              <span className="designation">Founder</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Mark Tahiya</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member6.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
-              <span className="designation">Developer</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Andreu Salim</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member7.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
-              <span className="designation">Chairman</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Andreu Masum</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member8.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
-              <span className="designation">Developer</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Andreu Israt</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
-    // Team area end
   );
 }

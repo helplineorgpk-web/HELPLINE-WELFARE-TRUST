@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function VolunteerBreadCrumb() {
   return (
-    //breadcrumb area start
     <section
       className="breadcrumb_area breadcrumb_overlay"
       style={{ backgroundImage: "url(/img/bg/breadcrum_bg_2.jpg)" }}

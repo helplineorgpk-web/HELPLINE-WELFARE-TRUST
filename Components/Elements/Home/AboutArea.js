@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
-
+import { HelplineData } from "../../../pages/api/data";
 export default function AboutArea() {
+  const data = HelplineData.aboutSection;
   return (
     <section className="about_area pt-120 pb-80">
       <div className="container">
