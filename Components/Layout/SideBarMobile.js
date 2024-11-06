@@ -51,19 +51,22 @@ export default function SideBarMobile({ isToggledInfo, toggleTrueFalseInfo }) {
               <Link href="#">
                 <a className="theme-1">
                   <i className="fal fa-map-marker-alt"></i>
-                  <span>12/A, Mirnada City Tower, NYC</span>
+                  <span>
+                    HOUSE # 705/A-1, STREET NO. 11, GOVT EMPLOYEE CO-OPERATIVE
+                    HOUSING SOCIETY, Township, Lahore
+                  </span>
                 </a>
               </Link>
-              <Link href="/tel:088889797697">
+              <Link href="/tel:+92-42-3515 7374">
                 <a className="theme-2">
                   <i className="fal fa-phone"></i>
-                  <span>088889797697</span>
+                  <span>+92-42-3515 7374</span>
                 </a>
               </Link>
-              <Link href="/mailto:admin@domain.com">
+              <Link href="/mailto:info@helpline.org.pk">
                 <a className="theme-3">
                   <i className="far fa-envelope"></i>
-                  <span>admin@domain.com</span>
+                  <span>info@helpline.org.pk</span>
                 </a>
               </Link>
             </div>

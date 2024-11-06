@@ -10,7 +10,9 @@ export default function SideBarFullscreen({
     <>
       <div className="fix d-none d-lg-block">
         <div
-          className={`offset-sidebar side-info ${isToggledInfo ? "info-open" : ""}`}
+          className={`offset-sidebar side-info ${
+            isToggledInfo ? "info-open" : ""
+          }`}
         >
           <div className="offset-widget offset-logo mb-30 pb-20">
             <div className="row align-items-center">
@@ -66,7 +68,7 @@ export default function SideBarFullscreen({
           </div>
 
           <div className="side-map mt-20 mb-30">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6803.149432957353!2d74.328493!3d31.4604549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919037611000001%3A0xf4b9227f93dded6d!2sHOUSE%20%23%20705%2FA-1%2C%20STREET%20NO.%2011%2C%20GOVT%20EMPLOYEE%20CO-OPERATIVE%20HOUSING%20SOCIETY%2C%20TOWNSHIP%2C%20Lahore!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd"></iframe>
           </div>
 
           <div className="contact-infos mt-30 mb-30">
@@ -75,19 +77,19 @@ export default function SideBarFullscreen({
               <Link href="#">
                 <a className="theme-1">
                   <i className="fal fa-map-marker-alt"></i>
-                  <span>12/A, Mirnada City Tower, NYC</span>
+                  <span>HOUSE # 705/A-1, Township, Lahore</span>
                 </a>
               </Link>
-              <Link href="/tel:088889797697">
+              <Link href="/tel:+92-42-3515 7374">
                 <a className="theme-2">
                   <i className="fal fa-phone"></i>
-                  <span>088889797697</span>
+                  <span>+92-42-3515 7374</span>
                 </a>
               </Link>
-              <Link href="/mailto:admin@domain.com">
+              <Link href="/mailto:info@helpline.org.pk">
                 <a className="theme-3">
                   <i className="far fa-envelope"></i>
-                  <span>admin@domain.com</span>
+                  <span>info@helpline.org.pk</span>
                 </a>
               </Link>
             </div>

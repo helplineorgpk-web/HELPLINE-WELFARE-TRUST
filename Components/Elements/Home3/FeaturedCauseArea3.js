@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -272,13 +271,17 @@ export default function FeaturedCauseArea3() {
                     water
                   </button>
                   <button
-                    className={`nav-link ${filter === "education" ? "active" : ""}`}
+                    className={`nav-link ${
+                      filter === "education" ? "active" : ""
+                    }`}
                     onClick={() => setFilter("education")}
                   >
                     Education
                   </button>
                   <button
-                    className={`nav-link ${filter === "medical" ? "active" : ""}`}
+                    className={`nav-link ${
+                      filter === "medical" ? "active" : ""
+                    }`}
                     onClick={() => setFilter("medical")}
                   >
                     Medical

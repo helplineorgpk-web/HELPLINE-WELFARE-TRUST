@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function CauseBreadCrumb() {
+export default function CauseBreadCrumb({ desc }) {
   return (
     //breadcrumb area start
     <section
@@ -22,8 +22,8 @@ export default function CauseBreadCrumb() {
                   <span className="active">Cause Details</span>
                 </li>
               </ul>
-              <div className="breadcrumb_title">
-                <h2>Redcurrant food for homeless</h2>
+              <div>
+                <p style={{ fontSize: "40px", color: "white",  fontWeight: "bold" }}>{desc}</p>
               </div>
             </div>
           </div>

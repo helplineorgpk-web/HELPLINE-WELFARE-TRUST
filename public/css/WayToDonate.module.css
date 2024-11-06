@@ -1,0 +1,111 @@
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #e0e0e0;
+  padding-bottom: 40px;
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.heading1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.heading2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.heading3 {
+  font-size: 24px;
+  color: #657383;
+  margin-bottom: 30px;
+}
+
+.blockContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.block {
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  background-color: #366876;
+  color: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.block h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.block p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.bankButton,
+.callButton,
+.donateButton {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bankButton {
+  background-color: #39b54a;
+}
+.bankButton:hover {
+  background-color: #ffb800;
+}
+.callButton {
+  background-color: #ffb800;
+}
+.callButton:hover {
+  background-color: #ff4f4f;
+}
+.donateButton {
+  background-color: #ff4f4f;
+}
+.donateButton:hover {
+  background-color: #39b54a;
+}
+@media screen and (max-width: 1024px) {
+  .blockContainer {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blockContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blockContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block {
+    width: 300px;
+  }
+}

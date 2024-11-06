@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function VolunteerDetailsArea() {
   return (
-    //breadcrumb area start
     <section
       className="breadcrumb_area breadcrumb_overlay"
       style={{ backgroundImage: "url(/img/bg/breadcrumb_bg_3.jpg)" }}
@@ -30,6 +29,5 @@ export default function VolunteerDetailsArea() {
         </div>
       </div>
     </section>
-    //breadcrumb area end
   );
 }

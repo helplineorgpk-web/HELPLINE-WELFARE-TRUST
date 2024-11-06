@@ -4,22 +4,27 @@ import Link from "next/link";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-export default function EventCauseDetail() {
+export default function EventCauseDetail({ title, dates, image, category }) {
   const [isToggled, setToggled] = useState(false);
   const toggleTrueFalse = () => setToggled(!isToggled);
-
   const [isSelect, setSelect] = useState("Event");
-
   const [startDate, setStartDate] = useState(new Date());
+  const dateStr = dates;
+  const date = new Date(dateStr);
+
+  const formattedDate = date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
   return (
-    // cause_details_area start
     <div className="cause_details_area pt-120 pb-80">
       <div className="container">
         <div className="row">
           <div className="col-xxl-8 col-xl-8 col-lg-7">
             <div className="single_details_wrapper mb-40">
               <div className="single_details_img p-rel">
-                <img src="/img/featureEvent/event_sbig.jpg" alt="img" />
+                {image}
                 <div className="details_img_meta details_meta_abs">
                   <div className="donar_post_content donar_post_event_details">
                     <h5 className="donar_name">
@@ -30,8 +35,8 @@ export default function EventCauseDetail() {
                     <div className="donar_meta">
                       <Link href="#">
                         <a className="donar_date sep theme-2">
-                          <i className="fal fa-calendar-alt"></i> February 20,
-                          2022
+                          <i className="fal fa-calendar-alt"></i>
+                          {formattedDate}
                         </a>
                       </Link>
                       <Link href="#">
@@ -47,7 +52,7 @@ export default function EventCauseDetail() {
                         <a>Category</a>
                       </Link>
                     </h5>
-                    <span className="category_name theme-1">Water</span>
+                    <span className="category_name theme-1">{category}</span>
                   </div>
                   <div className="meta_speaker">
                     <div className="speaker_img">
@@ -77,10 +82,7 @@ export default function EventCauseDetail() {
                 </div>
               </div>
               <div className="single_details_content">
-                <h4 className="details_title">
-                  The community state of the art with recurring donation need to
-                  save world.
-                </h4>
+                <h4 className="details_title">{title}</h4>
                 <p className="mb-40">
                   generous actions or donations to aid the poor, ill, or needy:
                   to devote one&apos;s life to charity. something given to a
@@ -188,25 +190,33 @@ export default function EventCauseDetail() {
                   <div className="event_select">
                     <div
                       onClick={toggleTrueFalse}
-                      className={`nice-select widget has_border ${isToggled ? "open" : ""}`}
+                      className={`nice-select widget has_border ${
+                        isToggled ? "open" : ""
+                      }`}
                     >
                       <span className="current">{isSelect}</span>
                       <ul className="list">
                         <li
                           onClick={() => setSelect("Event")}
-                          className={`option ${isSelect == "Event" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Event" && "selected focus"
+                          }`}
                         >
                           Select Event
                         </li>
                         <li
                           onClick={() => setSelect("Roaming")}
-                          className={`option ${isSelect == "Roaming" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Roaming" && "selected focus"
+                          }`}
                         >
                           Abroad Roaming
                         </li>
                         <li
                           onClick={() => setSelect("Moments")}
-                          className={`option ${isSelect == "Moments" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Moments" && "selected focus"
+                          }`}
                         >
                           Likely Moments
                         </li>
@@ -412,6 +422,5 @@ export default function EventCauseDetail() {
         </div>
       </div>
     </div>
-    // cause_details_area end
   );
 }

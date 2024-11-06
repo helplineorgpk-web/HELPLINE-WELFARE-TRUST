@@ -1,0 +1,119 @@
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #1C232E;
+  color: #e0e0e0;
+  padding: 50px 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  color: #b0b0b0;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.statCard {
+  background: black;
+  border-radius: 12px;
+  padding: 40px 30px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 136, 0, 0.2), 0 0 30px rgba(255, 136, 0, 0.15);
+  cursor: pointer;
+}
+
+.statCard:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 136, 0, 0.05);
+  transform: rotate(45deg);
+  transition: opacity 0.3s ease;
+}
+
+.statCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 136, 0, 0.4), 0 0 60px rgba(255, 136, 0, 0.3);
+}
+
+.statCard:hover:before {
+  opacity: 0.2;
+}
+
+.number {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ff8800;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  .number {
+    font-size: 2.5rem;
+  }
+
+  .statCard {
+    width: 180px;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .quote {
+    font-size: 0.9rem;
+  }
+
+  .number {
+    font-size: 2.2rem;
+  }
+
+  .statCard {
+    width: 160px;
+    padding: 25px 15px;
+  }
+}

@@ -1,28 +1,30 @@
 import React from "react";
 import Link from "next/link";
-
-export default function CauseDetailsArea() {
+export default function CauseDetailsArea({
+  title,
+  desc,
+  image,
+  goal,
+  raised,
+  toGo,
+  category,
+}) {
+  // console.log("first", image.props);
   return (
-    // cause_details_area start
     <div className="cause_details_area pt-120 pb-80">
       <div className="container">
         <div className="row">
           <div className="col-xxl-8 col-xl-8 col-lg-7">
             <div className="single_details_wrapper mb-40">
-              <div className="single_details_img">
-                <img src="/img/causes/cause_sbig.jpg" alt="img" />
-              </div>
+              <div className="single_details_img">{image}</div>
               <div className="single_details_content">
                 <div className="single_donation_content single_border pb-45 mb-45">
                   <div className="section_title">
                     <Link href="#">
-                      <a className="sub_title_details line_h2_2">Water</a>
+                      <a className="sub_title_details line_h2_2">{category}</a>
                     </Link>
                   </div>
-                  <h4 className="details_title">
-                    The community state of the art with recurring donation need
-                    to save world.
-                  </h4>
+                  <h4 className="details_title">{title}</h4>
                   <p>
                     generous actions or donations to aid the poor, ill, or
                     needy: to devote one&apos;s life to charity. something given
@@ -465,6 +467,5 @@ export default function CauseDetailsArea() {
         </div>
       </div>
     </div>
-    // cause_details_area end
   );
 }

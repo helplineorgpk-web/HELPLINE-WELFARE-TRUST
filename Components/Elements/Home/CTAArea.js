@@ -2,7 +2,10 @@ import React from "react";
 
 export default function CTAArea() {
   return (
-    <section className="cta_area cta-bg text-white pt-90 pb-60">
+    <section
+      style={styles.ctaArea}
+      className="cta_area cta-bg text-white pt-90 pb-60 lin"
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 text-center">
@@ -42,3 +45,8 @@ export default function CTAArea() {
     </section>
   );
 }
+const styles = {
+  ctaArea: {
+    background: "linear-gradient(135deg, #4ca1af, #304158)",
+  },
+};

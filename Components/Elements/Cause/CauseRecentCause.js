@@ -1,297 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { useState, useEffect } from "react";
-export default function CauseRecentCause() {
-  const causes = [
-    {
-      category: ["water"],
-      img: (
-        <Image
-          src="/img/causes/cause1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "63",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["water"],
-      img: (
-        <Image
-          src="/img/causes/cause2.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["water"],
-      img: (
-        <Image
-          src="/img/causes/cause3.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["water", ""],
-      img: (
-        <Image
-          src="/img/causes/cause4.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["education"],
-      img: (
-        <Image
-          src="/img/causes/cause13.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["education"],
-      img: (
-        <Image
-          src="/img/causes/cause14.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["education"],
-      img: (
-        <Image
-          src="/img/causes/cause15.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["", "education"],
-      img: (
-        <Image
-          src="/img/causes/cause16.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["medical"],
-      img: (
-        <Image
-          src="/img/causes/cause10.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["medical"],
-      img: (
-        <Image
-          src="/img/causes/cause11.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["medical"],
-      img: (
-        <Image
-          src="/img/causes/cause12.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["", "medical"],
-      img: (
-        <Image
-          src="/img/causes/cause28.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["food"],
-      img: (
-        <Image
-          src="/img/causes/cause23.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["food"],
-      img: (
-        <Image
-          src="/img/causes/cause24.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["food"],
-      img: (
-        <Image
-          src="/img/causes/cause25.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-    {
-      category: ["", "food"],
-      img: (
-        <Image
-          src="/img/causes/cause26.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "The various agency help the poor, you also can try.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-    },
-  ];
+import { useRouter } from "next/router";
+import { HelplineData } from "../../../pages/api/data";
 
+export default function CauseRecentCause() {
+  const causes = HelplineData.causes;
   const [filter, setFilter] = useState("");
   const [projects, setProjects] = useState([]);
+  const router = useRouter();
 
   useEffect(() => {
-    setProjects([]);
-
     const filtered =
       filter === ""
         ? causes
-        : causes.filter((c) => c.category.includes(filter));
+        : causes.filter((c) =>
+            c.category.some((cat) => cat.toLowerCase() === filter.toLowerCase())
+          );
     setProjects(filtered);
-  }, [filter]);
+  }, [filter, causes]);
+
+  const handleNavigation = (item) => {
+    router.push({
+      pathname: `/cause-details`,
+      query: { id: item.id },
+    });
+  };
+
   return (
-    //Recent causes area start
     <section className="causes_area gray-bg pt-120 pb-85">
       <div className="container">
         <div className="row">
@@ -312,13 +47,17 @@ export default function CauseRecentCause() {
                     Water
                   </button>
                   <button
-                    className={`nav-link ${filter === "education" ? "active" : ""}`}
+                    className={`nav-link ${
+                      filter === "education" ? "active" : ""
+                    }`}
                     onClick={() => setFilter("education")}
                   >
                     Education
                   </button>
                   <button
-                    className={`nav-link ${filter === "medical" ? "active" : ""}`}
+                    className={`nav-link ${
+                      filter === "medical" ? "active" : ""
+                    }`}
                     onClick={() => setFilter("medical")}
                   >
                     Medical
@@ -350,8 +89,11 @@ export default function CauseRecentCause() {
                 >
                   <div className="single_cause mb-30">
                     <div className="single_cause_img_wrapper">
-                      <div className="single_cause_img w_img img_effect_white">
-                        <Link href="/cause-details">
+                      <div
+                        className="single_cause_img w_img img_effect_white"
+                        onClick={() => handleNavigation(item)}
+                      >
+                        <Link href={{}}>
                           <a>{item.img}</a>
                         </Link>
                       </div>
@@ -359,8 +101,8 @@ export default function CauseRecentCause() {
                         <div
                           className="progress-bar"
                           role="progressbar"
-                          style={{ width: "65%" }}
-                          aria-valuenow="88"
+                          style={{ width: `${item.progressData}%` }}
+                          aria-valuenow={item.progressData}
                           aria-valuemin="0"
                           aria-valuemax="100"
                         >
@@ -368,15 +110,15 @@ export default function CauseRecentCause() {
                         </div>
                       </div>
                     </div>
-
                     <div className="single_cause_content">
                       <div className="single_cause">
                         <span className="sub_title">{item.category}</span>
                         <h3 className="title">
-                          <Link href="/cause-details">
+                          <Link href={{}}>
                             <a>{item.desc}</a>
                           </Link>
                         </h3>
+                        <span className="sub_title">{item.adopted}</span>
                       </div>
                       <div className="single_cause_meta">
                         <div className="single_meta d-inline-block">
@@ -422,6 +164,5 @@ export default function CauseRecentCause() {
         </div>
       </div>
     </section>
-    //Recent causes area end
   );
 }

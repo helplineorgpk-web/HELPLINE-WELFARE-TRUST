@@ -1,9 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-export default function EventDetsailBreadCrumb() {
+export default function EventDetsailBreadCrumb({ desc }) {
   return (
-    //breadcrumb area start
     <section
       className="breadcrumb_area breadcrumb_overlay"
       style={{ backgroundImage: "url(/img/bg/breadcrumb_bg_4.jpg)" }}
@@ -19,17 +18,24 @@ export default function EventDetsailBreadCrumb() {
                   </Link>
                 </li>
                 <li>
-                  <span className="active">Cause Details</span>
+                  <span className="active">Events Details</span>
                 </li>
               </ul>
-              <div className="breadcrumb_title">
-                <h2>Redcurrant food for homeless</h2>
+              <div>
+                <p
+                  style={{
+                    fontSize: "40px",
+                    color: "white",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {desc}
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    //breadcrumb area end
   );
 }

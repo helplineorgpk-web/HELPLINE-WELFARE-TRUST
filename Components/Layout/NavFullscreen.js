@@ -27,13 +27,30 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
+        <li className="menu-item-has-children">
+          <Link href="/appeals">
+            <a>Appeal</a>
+          </Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/edu">
+                <a>Education</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/health">
+                <a>Health</a>
+              </Link>
+            </li>
+          </ul>
+        </li>
         <li>
           <Link href="/about">
             <a>About</a>
           </Link>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/cause-details">
+          <Link href="/cause">
             <a>Causes</a>
           </Link>
           <ul className="sub-menu">
@@ -43,8 +60,8 @@ export default function NavFullscreen() {
               </Link>
             </li>
             <li>
-              <Link href="/cause-details">
-                <a>Cause Details</a>
+              <Link href="/eligibilty-criteria">
+                <a>Eligibility Critera</a>
               </Link>
             </li>
           </ul>
@@ -91,7 +108,7 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
-        <li className="menu-item-has-children">
+        {/* <li className="menu-item-has-children">
           <Link href="/blog">
             <a>News</a>
           </Link>
@@ -107,8 +124,7 @@ export default function NavFullscreen() {
               </Link>
             </li>
           </ul>
-        </li>
-
+        </li> */}
         <li>
           <Link href="/contact">
             <a>Contact</a>
