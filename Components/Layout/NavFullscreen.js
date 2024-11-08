@@ -76,21 +76,21 @@ export default function NavFullscreen() {
                 <a>Events</a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/event-details">
                 <a>Events Details</a>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/volunteer">
                 <a>Volunteer</a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/volunteer-details">
                 <a>Volunteer Details</a>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/donation">
                 <a>Donation</a>

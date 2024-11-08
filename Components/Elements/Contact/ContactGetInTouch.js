@@ -30,49 +30,65 @@ export default function ContactGetInTouch() {
                   <div className="col-xxl-6 col-sm-6">
                     <div
                       onClick={isOpenFalse}
-                      className={`nice-select contact_select ${isOpen && "open"}`}
+                      className={`nice-select contact_select ${
+                        isOpen && "open"
+                      }`}
                     >
                       <span className="current">{isSelect}</span>
                       <ul className="list">
                         <li
                           onClick={() => setSelect("Select Subject")}
-                          className={`option ${isSelect == "Select Subject" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Select Subject" && "selected focus"
+                          }`}
                         >
                           Select Subject
                         </li>
                         <li
                           onClick={() => setSelect("Bangla")}
-                          className={`option ${isSelect == "Bangla" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Bangla" && "selected focus"
+                          }`}
                         >
                           Bangla
                         </li>
                         <li
                           onClick={() => setSelect("English")}
-                          className={`option ${isSelect == "English" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "English" && "selected focus"
+                          }`}
                         >
                           English
                         </li>
                         <li
                           onClick={() => setSelect("Mathmatics")}
-                          className={`option ${isSelect == "Mathmatics" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Mathmatics" && "selected focus"
+                          }`}
                         >
                           Mathmatics
                         </li>
                         <li
                           onClick={() => setSelect("Textile")}
-                          className={`option ${isSelect == "Textile" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Textile" && "selected focus"
+                          }`}
                         >
                           Textile
                         </li>
                       </ul>
                     </div>
-                    {/* <select name="contact_select" id="contact_select" className="contact_select">
-                                            <option value="Select Subject">Select Subject</option>
-                                            <option value="Bangla">Bangla</option>
-                                            <option value="English">English</option>
-                                            <option value="Mathmatics">Mathmatics</option>
-                                            <option value="Textile">Textile</option>
-                                        </select> */}
+                    <select
+                      name="contact_select"
+                      id="contact_select"
+                      className="contact_select"
+                    >
+                      <option value="Select Subject">Select Subject</option>
+                      <option value="Bangla">Bangla</option>
+                      <option value="English">English</option>
+                      <option value="Mathmatics">Mathmatics</option>
+                      <option value="Textile">Textile</option>
+                    </select>
                   </div>
                   <div className="col-xxl-12">
                     <textarea
@@ -110,7 +126,7 @@ export default function ContactGetInTouch() {
                   <div className="contact_location_text">
                     <span>Location</span>
                     <h5 className="contact_address_title">
-                      14/A, Kinglo City Hall, NYC
+                      HOUSE # 705/A-1, Township, Lahore Pakistan
                     </h5>
                   </div>
                 </div>
@@ -124,7 +140,7 @@ export default function ContactGetInTouch() {
                     <span>Email</span>
                     <Link href="/mailto:info@webexample.com">
                       <a className="contact_address_title">
-                        Info@webexample.com
+                        info@helpline.org.pk
                       </a>
                     </Link>
                   </div>
@@ -138,7 +154,7 @@ export default function ContactGetInTouch() {
                   <div className="contact_location_text">
                     <span>Phone</span>
                     <Link href="/tel:789.765.741.69">
-                      <a className="contact_address_title">789. 765. 741. 69</a>
+                      <a className="contact_address_title">+92-42-3515 7374</a>
                     </Link>
                   </div>
                 </div>
