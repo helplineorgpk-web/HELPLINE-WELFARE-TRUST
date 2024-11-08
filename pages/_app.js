@@ -32,7 +32,7 @@ export default function MyApp({ Component, pageProps }) {
         <link
           rel="shortcut icon"
           type="image/x-icon"
-          href="./img/favicon.png"
+          href="./img/favicon.ico"
         />
       </Head>
       <Component {...pageProps} />
