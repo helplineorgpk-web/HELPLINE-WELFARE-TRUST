@@ -24,8 +24,8 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta charset="utf-8" />
-        <title>Fundraising & Charity React Template</title>
-        <meta name="description" content="Developed by TrendyCoder" />
+        <title>HelpLine</title>
+        <meta name="description" content="Non-profit Social Welfare Organization" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="manifest" href="site.webmanifest" />
