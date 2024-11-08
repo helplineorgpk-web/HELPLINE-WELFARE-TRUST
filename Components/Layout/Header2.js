@@ -63,7 +63,7 @@ export default function Header2({ toggleTrueFalseInfo }) {
               <div className="">
                 <Link href="/">
                   <a>
-                    <img src="/img/logo/logo.png" alt="" width={"100%"} />
+                    <img src="/img/logo/logo.png" alt="" />
                   </a>
                 </Link>
               </div>

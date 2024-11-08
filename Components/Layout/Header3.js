@@ -11,7 +11,7 @@ export default function Header3({ toggleTrueFalseInfo, isToggledInfo }) {
             <div className="spacial_logo">
               <Link href="/">
                 <a>
-                  <img src="/img/logo/logo-vertical.png" alt="logo" />
+                <img src="/img/logo/logo.png" alt="" />
                 </a>
               </Link>
               <div

@@ -14,7 +14,7 @@ export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
               <div className="logo">
                 <Link href="/">
                   <a>
-                    <Image src={logo} alt="" height={"100%"} width={"100%"} />
+                    <Image src={logo} alt="" />
                   </a>
                 </Link>
               </div>

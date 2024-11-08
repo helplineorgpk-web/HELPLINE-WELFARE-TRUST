@@ -11,6 +11,15 @@ export default function CauseDetails() {
 
   const cause = HelplineData.causes.find((item) => item.id === parseInt(id));
 
+  if (!cause) {
+    // Render a fallback or loading state if cause is undefined
+    return (
+      <Layout2>
+        <p>Loading...</p>
+      </Layout2>
+    );
+  }
+
   return (
     <Layout2>
       <CauseBreadCrumb desc={cause.desc} />
