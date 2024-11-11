@@ -14,7 +14,7 @@ export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
               <div className="logo">
                 <Link href="/">
                   <a>
-                    <Image src={logo} alt="" />
+                    <Image src={logo} alt="" height={"100%"} width={"100%"} />
                   </a>
                 </Link>
               </div>
@@ -43,7 +43,7 @@ export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
                     </a>
                   </Link>
                 </div>
-                <div className="hamburger-menu menu-bar info-bar d-inline-block ml-20">
+                <div className="hamburger-menu menu-bar info-bar d-d-block ml-20">
                   <button
                     onClick={toggleTrueFalseInfo}
                     className="hamburger-btn open-mobile-menu"

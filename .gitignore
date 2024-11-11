@@ -13,12 +13,8 @@ node_modules
 coverage
 
 # production
-.next
-.swc
-_static
-out
-dist
-build
+
+
 
 # environment variables
 # .env

@@ -41,6 +41,14 @@ export default function CauseRecentCause() {
                     All Categories
                   </button>
                   <button
+                    className={`nav-link ${
+                      filter === "House Constructions" ? "active" : ""
+                    }`}
+                    onClick={() => setFilter("House Constructions")}
+                  >
+                    House Constructions
+                  </button>
+                  <button
                     className={`nav-link ${filter === "water" ? "active" : ""}`}
                     onClick={() => setFilter("water")}
                   >

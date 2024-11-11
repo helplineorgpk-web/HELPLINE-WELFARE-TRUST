@@ -167,6 +167,90 @@ export const HelplineData = {
   ],
   causes: [
     {
+      id: 17,
+      category: ["House Constructions"],
+      img: (
+        <Image
+          src="/img/causes/houseconstruction1.jpeg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "63",
+      desc: "CLEAN WATER PROJECT IN KPK",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2025-12-27 00:00:00",
+      color: "#5fb35b",
+    },
+    {
+      id: 18,
+      category: ["House Constructions"],
+      img: (
+        <Image
+          src="/img/causes/houseconstruction2.jpeg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN PUNJAB",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2024-01-07 00:00:00",
+      color: "#f15b43",
+    },
+    {
+      id: 19,
+      category: ["House Constructions"],
+      img: (
+        <Image
+          src="/img/causes/houseconstruction3.jpeg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN BALOCHISTAN.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 20,
+      category: ["House Constructions", ""],
+      img: (
+        <Image
+          src="/img/causes/houseconstruction4.jpeg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN KARBATH.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#5fb35b",
+    },
+    {
       id: 1,
       category: ["Water"],
       img: (
@@ -507,163 +591,186 @@ export const HelplineData = {
       color: "#5fb35b",
     },
   ],
-  team:[
+  team: [
     {
-      "id": 1,
-      "designation": "General Manager",
-      "name": "Colonel Muhammad Ali",
-      "image": "/img/team/member1.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 1,
+      designation: "General Manager",
+      name: "Colonel Muhammad Ali",
+      image: "/img/team/member1.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 2,
-      "designation": "General Manager EDU (Punjab)",
-      "name": "M.A Naeem Khan (Retd)",
-      "image": "/img/team/member2.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 2,
+      designation: "General Manager EDU (Punjab)",
+      name: "M.A Naeem Khan (Retd)",
+      image: "/img/team/member2.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 3,
-      "designation": "General Manager Accounts",
-      "name": "Mr Hameed Hassan khan",
-      "image": "/img/team/member3.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 3,
+      designation: "General Manager Accounts",
+      name: "Mr Hameed Hassan khan",
+      image: "/img/team/member3.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 4,
-      "designation": "Senior National Coordinator",
-      "name": "Mr Sarfraz Ahmad Bhullar",
-      "image": "/img/team/member4.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 4,
+      designation: "Senior National Coordinator",
+      name: "Mr Sarfraz Ahmad Bhullar",
+      image: "/img/team/member4.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 5,
-      "designation": "National Coordinator",
-      "name": "Mr Hafiz Bilal Nurani",
-      "image": "/img/team/member5.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 5,
+      designation: "National Coordinator",
+      name: "Mr Hafiz Bilal Nurani",
+      image: "/img/team/member5.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 6,
-      "designation": "Community Welfare Manager",
-      "name": "Mr Atif Hussain",
-      "image": "/img/team/member6.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 6,
+      designation: "Community Welfare Manager",
+      name: "Mr Atif Hussain",
+      image: "/img/team/member6.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 7,
-      "designation": "Liaison Manager",
-      "name": "Mr Abid Ali Abid",
-      "image": "/img/team/member7.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 7,
+      designation: "Liaison Manager",
+      name: "Mr Abid Ali Abid",
+      image: "/img/team/member7.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 8,
-      "designation": "Cashier",
-      "name": "Mr Faisal Mushtaq",
-      "image": "/img/team/member8.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 8,
+      designation: "Cashier",
+      name: "Mr Faisal Mushtaq",
+      image: "/img/team/member8.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 9,
-      "designation": "Designer",
-      "name": "Mr Adeem Mansoor",
-      "image": "/img/team/member9.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 9,
+      designation: "Designer",
+      name: "Mr Adeem Mansoor",
+      image: "/img/team/member9.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 10,
-      "designation": "Liaison Manager",
-      "name": "Mr Arslan Ramzan",
-      "image": "/img/team/member10.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 10,
+      designation: "Liaison Manager",
+      name: "Mr Arslan Ramzan",
+      image: "/img/team/member10.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 11,
-      "designation": "Web Developer",
-      "name": "Bilal Ramzan",
-      "image": "/img/team/member11.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 11,
+      designation: "Web Developer",
+      name: "Bilal Ramzan",
+      image: "/img/team/member11.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 12,
-      "designation": "Manager Purchase",
-      "name": "Mr Mehmood Ali joiya",
-      "image": "/img/team/member12.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
+      id: 12,
+      designation: "Manager Purchase",
+      name: "Mr Mehmood Ali joiya",
+      image: "/img/team/member12.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
     },
     {
-      "id": 13,
-      "designation": "Manager Transport",
-      "name": "Mr Amanat Ali",
-      "image": "/img/team/member13.jpg",
-      "socialLinks": [
-        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
-        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
-        { "platform": "behance", "icon": "fab fa-behance", "url": "#" },
-        { "platform": "youtube", "icon": "fab fa-youtube", "url": "#" }
-      ]
-    }
-  ]
-  
+      id: 13,
+      designation: "Manager Transport",
+      name: "Mr Amanat Ali",
+      image: "/img/team/member13.jpg",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+  ],
+  certificationData: [
+    {
+      id: 1,
+      title: "Certification",
+      announcement:
+        "We are proud to announce that Helpline, a dedicated social welfare organization, has been certified by the Pakistan Center of Philanthropy (PCP) and is registered with the Federal Board of Revenue (FBR). These certifications demonstrate our unwavering commitment to transparency, accountability, and excellence in all our endeavors.",
+      details:
+        "The certification from PCP highlights our adherence to the highest standards in governance, financial management, and program implementation. Being registered with the FBR empowers us to accept donations domestically and internationally, enhancing trust and credibility among donors.",
+      conclusion:
+        "Join us in making a lasting impact. Together, we can transform lives and create a brighter future.",
+      img: [
+        {
+          id: 1,
+          src: "/img/about/PCP-certificate2.jpg",
+          alt: "FBR Certificate",
+        },
+        {
+          id: 2,
+          src: "/img/about/PCP-certificate1.jpeg",
+          alt: "PCP Certificate",
+        },
+      ],
+    },
+  ],
 };

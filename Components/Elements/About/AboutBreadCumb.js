@@ -1,13 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-export default function AboutBreadCumb() {
+export default function AboutBreadCumb({ content }) {
   return (
-    // breadcrumb area start
-
     <section
       className="breadcrumb_area breadcrumb_overlay"
-      style={{ backgroundImage: "url(/img/bg/breadcrum_bg_2.jpg)" }}
+      style={{ backgroundImage: "url(/img/about/aboutus.jpg)" }}
     >
       <div className="container">
         <div className="row">
@@ -24,13 +22,12 @@ export default function AboutBreadCumb() {
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h2>About Us</h2>
+                <h2>{content ? content : "About Us"}</h2>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    // breadcrumb area end
   );
 }

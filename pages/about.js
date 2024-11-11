@@ -5,6 +5,7 @@ import AboutFaqArea from "../Components/Elements/About/AboutFaqArea";
 import AboutFeatureArea from "../Components/Elements/About/AboutFeatureArea";
 import AboutVideoArea from "../Components/Elements/About/AboutVideoArea";
 import Layout2 from "../Components/Layout/Layout2";
+import Certification from "../Components/Elements/About/AboutCertification";
 
 export default function About() {
   return (
@@ -13,6 +14,7 @@ export default function About() {
       <AboutAboutArea />
       <AboutFeatureArea />
       <AboutVideoArea />
+      <Certification />
       <AboutFaqArea />
     </Layout2>
   );

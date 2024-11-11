@@ -3,7 +3,6 @@ import React from "react";
 export default function Search({ toggleTrueFalse, isToggled }) {
   return (
     <>
-      {/* Fullscreen search  */}
       <div className={`search-wrap ${isToggled ? "d-block" : "d-none"}`}>
         <div className="search-inner">
           <i
@@ -24,7 +23,6 @@ export default function Search({ toggleTrueFalse, isToggled }) {
           </div>
         </div>
       </div>
-      {/* end fullscreen search  */}
     </>
   );
 }

@@ -9018,6 +9018,9 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 992px) {
+  .d-d-block {
+    display: block !important;
+  }
   .float-lg-start {
     float: left !important;
   }
@@ -9515,6 +9518,9 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 1200px) {
+  .d-d-block {
+    display: none !important;
+  }
   .float-xl-start {
     float: left !important;
   }

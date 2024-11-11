@@ -28,7 +28,7 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/appeals">
+          <Link href="">
             <a>Appeal</a>
           </Link>
           <ul className="sub-menu">
@@ -44,11 +44,25 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
-        <li>
-          <Link href="/about">
+
+        <li className="active menu-item-has-children">
+          <Link href="/">
             <a>About</a>
           </Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/about">
+                <a>About Us</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/ourjourney">
+                <a>Our Journey</a>
+              </Link>
+            </li>
+          </ul>
         </li>
+
         <li className="menu-item-has-children">
           <Link href="/cause">
             <a>Causes</a>
