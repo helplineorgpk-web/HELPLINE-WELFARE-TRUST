@@ -1,0 +1,84 @@
+.rashanpage {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.rashanintro {
+  padding: 50px 0;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.rashanintro .sectiontitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.rashanintro .line {
+  width: 50px;
+  height: 4px;
+  /* background-color: #ff9900; */
+  margin: 15px 0;
+}
+
+.rashanintro .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rashanintro .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colmd6 {
+  flex: 1 1 45%;
+  padding: 10px;
+}
+
+.imgfluid {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rashandetails {
+  padding: 50px 0;
+}
+
+.rashandetails h2,
+.rashandetails h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.rashandetails h3 {
+  color: #ff9900;
+}
+
+.rashandetails p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .colmd6 {
+    flex: 1 1 100%;
+  }
+
+  .rashanintro {
+    text-align: center;
+  }
+
+  .rashanintro .imgfluid {
+    margin-top: 20px;
+  }
+}

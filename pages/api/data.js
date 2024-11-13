@@ -591,6 +591,264 @@ export const HelplineData = {
       color: "#5fb35b",
     },
   ],
+  education: [
+    {
+      id: 1,
+      category: ["Helpline Schools"],
+      img: (
+        <Image
+          src="/img/causes/cause1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "63",
+      desc: "CLEAN WATER PROJECT IN KPK",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2025-12-27 00:00:00",
+      color: "#5fb35b",
+    },
+    {
+      id: 2,
+      category: ["Helpline Schools"],
+      img: (
+        <Image
+          src="/img/causes/cause2.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN PUNJAB",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2024-01-07 00:00:00",
+      color: "#f15b43",
+    },
+    {
+      id: 3,
+      category: ["Helpline Schools"],
+      img: (
+        <Image
+          src="/img/causes/cause3.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN BALOCHISTAN.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 4,
+      category: ["Helpline Schools", ""],
+      img: (
+        <Image
+          src="/img/causes/cause4.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN KARBATH.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#5fb35b",
+    },
+    {
+      id: 5,
+      category: ["Helpline Adopted Students"],
+      img: (
+        <Image
+          src="/img/causes/cause13.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "GPS. Roru Goth School.",
+      adopted: "Adopted",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#f15b43",
+    },
+    {
+      id: 6,
+      category: ["Helpline Adopted Students"],
+      img: (
+        <Image
+          src="/img/causes/cause14.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "GPS. Bagliar Mithi School.",
+      adopted: "Adopted",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 7,
+      category: ["Helpline Adopted Students"],
+      img: (
+        <Image
+          src="/img/causes/cause15.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "GPS. Kaktario Samma School.",
+      adopted: "Adopted",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#5fb35b",
+    },
+    {
+      id: 8,
+      category: ["Helpline Adopted Students"],
+      img: (
+        <Image
+          src="/img/causes/cause16.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "GPS. Misali Goth School.",
+      adopted: "Adopted",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#f15b43",
+    },
+    {
+      id: 9,
+      category: ["Al Kitab Education System"],
+      img: (
+        <Image
+          src="/img/causes/cause10.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Karbath Medical Centre Hospital.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 10,
+      category: ["Al Kitab Education System"],
+      img: (
+        <Image
+          src="/img/causes/cause11.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Hajra Bibi Memorial Trust Hospital.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#5fb35b",
+    },
+    {
+      id: 11,
+      category: ["Al Kitab Education System"],
+      img: (
+        <Image
+          src="/img/causes/cause12.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Cataract Surgeries Across Pakistan.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#f15b43",
+    },
+    {
+      id: 12,
+      category: ["Al Kitab Education System"],
+      img: (
+        <Image
+          src="/img/causes/cause28.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Hasene International & Helpline Medical Camp.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+  ],
   team: [
     {
       id: 1,
@@ -927,4 +1185,167 @@ export const HelplineData = {
       ],
     },
   ],
+  images: [
+    {
+      id: 1,
+      image: "/img/causes/cause1.jpg",
+    },
+    {
+      id: 2,
+      image: "/img/causes/cause2.jpg",
+    },
+    {
+      id: 3,
+      image: "/img/causes/cause3.jpg",
+    },
+    {
+      id: 4,
+      image: "/img/causes/cause4.jpg",
+    },
+    {
+      id: 5,
+      image: "/img/causes/cause10.jpg",
+    },
+    {
+      id: 6,
+      image: "/img/causes/cause11.jpg",
+    },
+    {
+      id: 7,
+      image: "/img/causes/cause12.jpg",
+    },
+    {
+      id: 8,
+      image: "/img/causes/cause28.jpg",
+    },
+    {
+      id: 9,
+      image: "/img/causes/cause24.jpg",
+    },
+    {
+      id: 10,
+      image: "/img/causes/cause23.jpg",
+    },
+    {
+      id: 11,
+      image: "/img/causes/cause25.jpg",
+    },
+    {
+      id: 12,
+      image: "/img/causes/cause13.jpg",
+    },
+    {
+      id: 13,
+      image: "/img/causes/cause14.jpg",
+    },
+    {
+      id: 14,
+      image: "/img/causes/cause15.jpg",
+    },
+    {
+      id: 15,
+      image: "/img/causes/cause16.jpg",
+    },
+    {
+      id: 16,
+      image: "/img/causes/cause17.jpg",
+    },
+    {
+      id: 17,
+      image: "/img/causes/houseconstruction1.jpeg",
+    },
+    {
+      id: 18,
+      image: "/img/causes/houseconstruction2.jpeg",
+    },
+    {
+      id: 19,
+      image: "/img/causes/houseconstruction4.jpeg",
+    },
+    {
+      id: 20,
+      image: "/img/causes/houseconstruction3.jpeg",
+    },
+    {
+      id: 21,
+      image: "/img/causes/support5.jpg",
+    },
+    {
+      id: 22,
+      image: "/img/team/member1.jpg",
+    },
+    {
+      id: 23,
+      image: "/img/team/member2.jpg",
+    },
+    {
+      id: 24,
+      image: "/img/team/member3.jpg",
+    },
+    {
+      id: 25,
+      image: "/img/team/member4.jpg",
+    },
+    {
+      id: 26,
+      image: "/img/team/member5.jpg",
+    },
+    {
+      id: 27,
+      image: "/img/team/member6.jpg",
+    },
+    {
+      id: 28,
+      image: "/img/team/member7.jpg",
+    },
+    {
+      id: 29,
+      image: "/img/team/member8.jpg",
+    },
+    {
+      id: 30,
+      image: "/img/team/member9.jpg",
+    },
+    {
+      id: 31,
+      image: "/img/team/member10.jpg",
+    },
+    {
+      id: 32,
+      image: "/img/team/member11.jpg",
+    },
+  ],
+ videoData: [
+    {
+      id: 1,
+      src: "https://www.youtube.com/embed/SsDAXkU1BiU?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=1",
+      title: "YouTube video player 1"
+    },
+    {
+      id: 2,
+      src: "https://www.youtube.com/embed/qIWgzMfnCYk?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=3",
+      title: "YouTube video player 2"
+    },
+    {
+      id: 3,
+      src: "https://www.youtube.com/embed/SG9EJl9oihQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=5",
+      title: "YouTube video player 3"
+    },
+    {
+      id: 4,
+      src: "https://www.youtube.com/embed/icydKjkJhXs?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=7",
+      title: "Qurbani - Eid UL Azha Message 2019"
+    },
+    {
+      id: 5,
+      src: "https://www.youtube.com/embed/o2bU86CxKWQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=9",
+      title: "Qubani Program by Pak Helpline"
+    },
+    {
+      id: 6,
+      src: "https://www.youtube.com/embed/e1DF3RJT1xA?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
+      title: "Distribution of 500 Rations to Deserving Families of Lahore"
+    }
+  ]
+  
 };
