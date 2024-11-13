@@ -110,7 +110,9 @@
     padding: 8px 16px;
     font-size: 14px;
   }
-
+  .desContainer {
+    padding-top: 30px;
+  }
   .content {
     flex-direction: column;
     padding: 20px;
