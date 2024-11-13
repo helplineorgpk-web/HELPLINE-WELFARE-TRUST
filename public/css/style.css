@@ -12990,151 +12990,77 @@ input:focus:-ms-input-placeholder {
 03. Navigation
 *************************
 */
+.header_menu_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-menu ul {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure the menu doesn't wrap */
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
 .main-menu ul li {
-  display: inline-block;
-  margin: 0px 10px;
+  margin: 0 20px; /* Adjust this value for spacing */
   list-style: none;
   position: relative;
-  /* sub-menu here*/
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .main-menu ul li {
-    margin: 0 15px;
+    margin: 0 30px; /* Adjust spacing for better alignment */
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu ul li {
     margin: 0 15px;
   }
 }
-.main-menu ul li.menu-item-has-children > a::after {
-  content: "\f107";
-  font-family: "Font Awesome 5 Pro";
-  margin-left: 3px;
-  display: inline-block;
-  transform: translateY(1px);
-  opacity: 0;
-  visibility: hidden;
-}
-.main-menu ul li.active > a {
-  color: var(--clr-body-heading-color);
-}
+
 .main-menu ul li a {
-  padding: 62px 0;
-  display: block;
+  padding: 15px 0; /* Adjust padding for better vertical alignment */
   text-decoration: none;
   color: var(--clr-common-menu-color);
   font-weight: 700;
   font-size: 16px;
 }
-.main-menu ul li:hover > a {
-  color: var(--clr-body-heading-color);
-}
-.main-menu ul li:hover > .sub-menu {
-  opacity: 1;
-  visibility: visible;
-  top: 100%;
-}
+
 .main-menu ul li ul.sub-menu {
-  position: absolute;
-  left: 0;
   top: 100%;
+  left: 0;
+  position: absolute;
   width: 250px;
-  border-top: 4px solid var(--clr-theme-1);
   background-color: var(--clr-common-white);
-  text-align: start;
+  border-top: 4px solid var(--clr-theme-1);
+  display: none; /* Hide by default */
   opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
   transform: scaleY(0);
   transform-origin: top;
-  z-index: 3;
+  transition: all 0.3s ease;
 }
-.main-menu ul li ul.sub-menu li {
-  margin: 0;
+
+.main-menu ul li:hover ul.sub-menu {
   display: block;
-  padding: 0 30px;
-}
-.main-menu ul li ul.sub-menu li:last-child {
-  border-bottom: 0;
-}
-.main-menu ul li ul.sub-menu li a {
-  padding: 12px 0;
-  text-align: start;
-  display: block;
-  border-bottom: 1px solid rgba(90, 90, 90, 0.11);
-  position: relative;
-  color: var(--clr-common-menu-color);
-}
-.main-menu ul li ul.sub-menu li a:after {
-  content: "";
-  width: 10px;
-  height: 2px;
-  background-color: var(--clr-theme-1);
-  position: absolute;
-  top: 50%;
-  left: -10px;
-  transform: translate(0, -50%);
-  opacity: 0;
-  transition: all 220ms linear 0ms;
-}
-.main-menu ul li ul.sub-menu li a:hover {
-  padding-left: 18px;
-  color: var(--clr-body-heading-color);
-}
-.main-menu ul li ul.sub-menu li a:hover:after {
   opacity: 1;
-  visibility: visible;
-  left: 0;
-}
-.main-menu ul li:hover .sub-menu {
   transform: scaleY(1);
-  opacity: 1;
-  visibility: visible;
 }
 
-.main-menu:is(.menu_2) ul li.menu-item-has-children ul.sub-menu {
-  z-index: 3;
-}
-
-.main-menu:is(.menu_2) ul li a {
-  padding: 43px 0;
-}
-
-.main-menu .metismenu:is(.theme-1) ul li:hover > a {
-  color: var(--clr-theme-1);
-}
-
-.main-menu .metismenu:is(.theme-1) ul li .sub-menu li a:hover {
-  color: var(--clr-theme-1);
-}
-
-.metismenu li,
-.metismenu ul li {
-  list-style: none;
-  list-style-type: none;
-}
-.metismenu li a,
-.metismenu ul li a {
+/* Ensure the logo stays centered in smaller viewports */
+.logo img {
+  max-width: 100%;
+  height: auto;
   display: block;
-  width: 100%;
-  padding: 10px 0;
-  color: #101a23;
-  border-top: 1px solid #ebebeb;
-  font-size: 14px;
-  font-weight: 700;
-}
-.metismenu li a:hover,
-.metismenu ul li a:hover {
-  color: #f15b43;
-}
-
-.metismenu li:first-child > a {
-  border-top: 0px;
-}
-
-.metismenu li ul {
-  padding-left: 15px;
 }
 
 /*
@@ -13932,7 +13858,7 @@ input.main-search-input:-ms-input-placeholder {
   color: var(--clr-body-heading-color);
 }
 .main-menu ul li a {
-  padding: 62px 0;
+  /* padding: 62px 0; */
   display: block;
   text-decoration: none;
   color: var(--clr-common-menu-color);

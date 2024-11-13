@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-
 export default function NavFullscreen() {
   return (
     <nav id="mobile-menu">
@@ -27,24 +26,6 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
-        <li className="menu-item-has-children">
-          <Link href="">
-            <a>Appeal</a>
-          </Link>
-          <ul className="sub-menu">
-            <li>
-              <Link href="/edu">
-                <a>Education</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/health">
-                <a>Health</a>
-              </Link>
-            </li>
-          </ul>
-        </li>
-
         <li className="active menu-item-has-children">
           <Link href="/">
             <a>About</a>
@@ -60,12 +41,16 @@ export default function NavFullscreen() {
                 <a>Our Journey</a>
               </Link>
             </li>
+            <li>
+              <Link href="/chairmanMessage">
+                <a>Chairman's Message</a>
+              </Link>
+            </li>
           </ul>
         </li>
-
         <li className="menu-item-has-children">
           <Link href="/cause">
-            <a>Causes</a>
+            <a>Projects</a>
           </Link>
           <ul className="sub-menu">
             <li>
@@ -81,6 +66,23 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
+          <Link href="">
+            <a>Social Welfare</a>
+          </Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/edu">
+                <a>Education</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/health">
+                <a>Health</a>
+              </Link>
+            </li>
+          </ul>
+        </li>
+        <li className="menu-item-has-children">
           <Link href="#">
             <a>Pages</a>
           </Link>
@@ -90,21 +92,11 @@ export default function NavFullscreen() {
                 <a>Events</a>
               </Link>
             </li>
-            {/* <li>
-              <Link href="/event-details">
-                <a>Events Details</a>
-              </Link>
-            </li> */}
             <li>
               <Link href="/volunteer">
                 <a>Volunteer</a>
               </Link>
             </li>
-            {/* <li>
-              <Link href="/volunteer-details">
-                <a>Volunteer Details</a>
-              </Link>
-            </li> */}
             <li>
               <Link href="/donation">
                 <a>Donation</a>
@@ -122,28 +114,33 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
-        {/* <li className="menu-item-has-children">
-          <Link href="/blog">
-            <a>News</a>
+        <li className="menu-item-has-children">
+          <Link href="#">
+            <a>media</a>
           </Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/blog">
-                <a>News</a>
+              <Link href="#">
+                <a>images</a>
               </Link>
             </li>
             <li>
-              <Link href="/blog-details">
-                <a>News Details</a>
+              <Link href="#">
+                <a>Videos</a>
               </Link>
             </li>
           </ul>
-        </li> */}
+        </li>
         <li>
           <Link href="/contact">
-            <a>Contact</a>
+            <a>Legal</a>
           </Link>
         </li>
+        {/* <li>
+          <Link href="/contact">
+            <a>donation</a>
+          </Link>
+        </li> */}
       </ul>
     </nav>
   );

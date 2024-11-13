@@ -773,4 +773,158 @@ export const HelplineData = {
       ],
     },
   ],
+  journeyData: [
+    {
+      title:
+        "HELPLINE is 'Bridging the Gap between Have and Have not' on the Principles of",
+      title1: '"MAWAKHAT-E-MADINAH"',
+      announcement:
+        "Helpline Social Welfare Charity Organization is built on the fundamental concept of Mawakhat, which is an Arabic term that refers to the bond of brotherhood and solidarity between individuals or groups of people. Mawakhat embodies the spirit of social responsibility, where people from different backgrounds and communities come together to support one another in times of need. At Helpline Social Welfare Charity Organization, this concept of Mawakhat is the cornerstone of our work, and we strive to build stronger communities by fostering a sense of collective responsibility and empathy. We believe that everyone deserves equal opportunities and access to basic necessities such as food, education, and healthcare, regardless of their background or socioeconomic status. Through our various initiatives and programs, we aim to create a more equitable society where people can live with dignity and respect. Our team of dedicated volunteers works tirelessly to provide assistance and support to those in need, and we are committed to making a positive impact in the lives of the people we serve. Overall, Helpline Social Welfare Charity Organization is grounded in the principles of Mawakhat, and we believe that by working together, we can create a better world for everyone.",
+      announcement1:
+        "Helpline started its journey with the private construction of a school in Pak Patan, Punjab in 1993 which got completed in the year 2000.The basic purpose of Helpline is Betterment of the academic activities of Government Schools and concentration towards providing basic necessities of life, especially support of poor students. Helpline’s proper registration was done in the year 2000 which included academic improvement of Government schools, wellness of prisoners and supply of food to patients.",
+      details:
+        "The certification from PCP highlights our adherence to the highest standards in governance, financial management, and program implementation. Being registered with the FBR empowers us to accept donations domestically and internationally, enhancing trust and credibility among donors.",
+      conclusion: "Overview of Helpline’s Massive Work Over the Years",
+      datayearly: [
+        {
+          id: 1,
+          year: "2001",
+          detail:
+            "Helpline started its journey with the private construction of a school in Pak Patan, Punjab in 1993 which got completed in the year 2000. The basic purpose of Helpline is Betterment of the academic activities of Government Schools and concentration towards providing basic necessities of life, especially support of poor students. Helpline’s proper registration was done in the year of 2000 which included academic improvement of Government schools, wellness of prisoners and supply of food to patients.",
+        },
+        {
+          id: 2,
+          year: "2002",
+          detail:
+            "Initially, four rooms were repaired in Government Boys Primary School Sattu Katla, and free books were distributed among needy students because the government did not provide books at that time. Additionally, an initiative called “Muhammadi Dastarkhwan” was started to provide free food to laborers who were unable to find work or labor. This service was available to all laborers on roads and road junctions.",
+        },
+        {
+          id: 3,
+          year: "2003",
+          detail:
+            "Free books were distributed among children and two rooms were constructed in Kot Lakhpat Girls Middle School. In Government Services Hospital, a free food service was started three times a day for a period of eight years, serving up to 1000 patients. Eventually, this responsibility was taken on by a donor, and the service is still ongoing. In addition, a service to provide quality food to prisoners in jails was initiated, providing food once a month for two years to approximately 4000 prisoners. The donor then passed on this responsibility to another catering company.",
+        },
+        {
+          id: 4,
+          year: "2004",
+          detail:
+            "In the Government Mian Munshi Hospital located on Band Road, a food service was initiated for patients, which is still in operation today. The service aims to provide nutritious meals to patients during their stay in the hospital. The number of patients benefiting from this service is estimated to be around 150.",
+        },
+        {
+          id: 5,
+          year: "2005",
+          detail:
+            "A huge number of October 2005 Earthquake victims were shifted to Lahore which kept on increasing and reached up to 700. Clothes and residence were managed for them and for six months food was also provided on which Pak Helpline spent a huge sum of money. In addition to this, a restoration camp was also organized in Mansehra.",
+        },
+        {
+          id: 6,
+          year: "2006",
+          detail:
+            "A scheme was started on behalf of city district government through which community had to provide 20% and government had to provide 80% of the amount and every possible work which can be done in favor of public e.g., school, dispensary, road and public toilet etc. Helpline started its work initially from Government Girls High School, Hanjarwal which by the Grace of Almighty Allah got completed on 2007. In this project 7 rooms, 1 office and concrete stairs were completed which was very eye catching and beneficial for the students. Food service was started in Jinnah Hospital in which the number of patients was 1000.",
+        },
+        {
+          id: 7,
+          year: "2007",
+          detail:
+            "A dispensary was established in Green Town, and a Stitching Center for Girls was also set up alongside it. The centre has been functioning ever since, and hundreds of girls have benefitted. Furthermore, food service was initiated for cancer ward patients at Mayo Hospital, which currently serves 150 patients.",
+        },
+        {
+          id: 8,
+          year: "2008",
+          detail:
+            "At the Shadab school for mentally challenged individuals, a lunch service for 150 patients was established and has continued to operate. Under the CBC Scheme, several schools were improved with necessary infrastructure.",
+        },
+        {
+          id: 9,
+          year: "2009",
+          detail:
+            "In the impoverished areas of Amar Sidhu and Harbanspura, stitching centres were established with one in each area. These centres have remained functional over the years and have graduated hundreds of girls annually.",
+        },
+        {
+          id: 10,
+          year: "2010",
+          detail:
+            "In response to the devastating floods in Muzaffargarh, a camp was established to assist the affected individuals in their restoration efforts. The camp included a room for shelter, a veranda for additional living space, and a hand pump to provide access to clean water.",
+        },
+        {
+          id: 11,
+          year: "2011",
+          detail:
+            "Once again, devastating floods caused extensive damage, particularly in the province of Sindh. In response to this crisis, Helpline was established to aid in the restoration efforts. The helpline has been tirelessly working to provide assistance to those who were affected by the floods.",
+        },
+        {
+          id: 12,
+          year: "2012",
+          detail:
+            "The establishment of the Karbath Medical Center was a significant step in providing healthcare access to individuals in the Bedian road area.",
+        },
+        {
+          id: 13,
+          year: "2013",
+          detail:
+            "The Gojra Educational Complex was facing an uncertain future as the owners were unable to continue running it. However, a remarkable development occurred when the owners handed over the management of the school to Helpline under an agreement.",
+        },
+        {
+          id: 14,
+          year: "2014",
+          detail:
+            "The School and stitching centre in Manawan were facing challenges in their operations, resulting in inadequate educational and vocational training opportunities for the community.",
+        },
+        {
+          id: 15,
+          year: "2015",
+          detail:
+            "Issuance of interest free loans started which is continuing with great success and till now thousands have been benefited.",
+        },
+        {
+          id: 16,
+          year: "2016",
+          detail:
+            "The provision of food service to patients admitted to Government Nawaz Sharif Hospital is a great initiative, which is benefiting a large number of patients.",
+        },
+        {
+          id: 17,
+          year: "2017",
+          detail:
+            "Start of Computer lab in Chitral for educational purposes. The aid of Muslim Refugees through food and medicine.",
+        },
+        {
+          id: 18,
+          year: "2018",
+          detail:
+            "The major contribution in Ramzan is food packages distributing to poor families, and disabled persons registered in this office.",
+        },
+        {
+          id: 19,
+          year: "2019",
+          detail:
+            "In 2019 Helpline slaughtered hundreds of animals with the help of our donors throughout the country.",
+        },
+        {
+          id: 20,
+          year: "2020",
+          detail:
+            "Pakistan now in a critical situation in the world’s water-deficient nations, indicating that it is rapidly approaching this status.",
+        },
+        {
+          id: 21,
+          year: "2021",
+          detail:
+            "In the year 2021, Helpline Social Welfare organization distributed 13,000 ration packages, ensuring that countless underprivileged households had access to essential food supplies during challenging times.",
+        },
+        {
+          id: 22,
+          year: "2022",
+          detail:
+            "In the year 2022, Helpline Social Welfare Organization emerged as a beacon of hope and support during the devastating flood 2022 in flood-affected areas of Sindh, Southern Punjab and Baluchistan.",
+        },
+        {
+          id: 23,
+          year: "2023",
+          detail:
+            "In the year 2023, So far, Helpline distributed 3005 ration packages in Ramzan, and undertook the sacred act of Qurbani, sacrificing 527 animals.",
+        },
+      ],
+    },
+  ],
 };
