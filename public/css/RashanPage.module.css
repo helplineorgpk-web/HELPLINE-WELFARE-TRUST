@@ -13,7 +13,7 @@
 .rashanintro .sectiontitle {
   font-size: 32px;
   font-weight: 700;
-  color: #000;
+  color: #1e3b55;
   margin-bottom: 10px;
   position: relative;
 }
@@ -21,7 +21,6 @@
 .rashanintro .line {
   width: 50px;
   height: 4px;
-  /* background-color: #ff9900; */
   margin: 15px 0;
 }
 
@@ -57,12 +56,12 @@
 .rashandetails h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #000;
+  color: #1e3b55;
   margin-bottom: 15px;
 }
 
 .rashandetails h3 {
-  color: #ff9900;
+  color: #1e3b55;
 }
 
 .rashandetails p {
@@ -80,5 +79,147 @@
 
   .rashanintro .imgfluid {
     margin-top: 20px;
+  }
+}
+/* 
+record section style  */
+/* General Classes for Colors */
+.bg-prussian-blue {
+  background-color: #1e3b55;
+}
+
+.bg-process-cyan {
+  background-color: #33acd9;
+}
+
+.bg-moon-stone {
+  background-color: #56b6cf;
+}
+
+.bg-timberwolf {
+  background-color: #d6cbc6;
+}
+
+.text-prussian-blue {
+  color: #1e3b55;
+}
+
+.text-process-cyan {
+  color: #33acd9;
+}
+
+.text-moon-stone {
+  color: #56b6cf;
+}
+
+.text-timberwolf {
+  color: #d6cbc6;
+}
+
+.rashanPage {
+  font-family: "Inter Regular", Arial, sans-serif;
+  color: #1e3b55;
+  background-color: #ffffff;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3b55;
+  font-family: "Kollektif Bold", Arial, sans-serif;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #56b6cf;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Inter Extra Light", Arial, sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #33acd9;
+  color: #1e3b55;
+}
+
+.active {
+  background-color: #1e3b55;
+  color: #ffffff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: "Inter Regular", Arial, sans-serif;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #d6cbc6;
+}
+
+.table th {
+  background-color: #1e3b55;
+  color: #ffffff;
+  font-family: "Kollektif Bold", Arial, sans-serif;
+}
+
+.table td {
+  background-color: #56b6cf;
+  color: #1e3b55;
+}
+
+.imageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.imageWrapper {
+  flex: 1 1 calc(33.33% - 10px);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #d6cbc6;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 12px;
   }
 }
