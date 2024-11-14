@@ -110,6 +110,61 @@ export default function NavFullscreen() {
                 <a>Eligibility Critera</a>
               </Link>
             </li>
+            {/* <li>
+              <Link href="/eligibilty-criteria">
+                <a>Ration Program at Al-Kitab School</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Ration Program at Bahawalpur</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Ration Program at Gojra</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Ration Program at Irtiqa-E-Ittefal School</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Ration Program at Noshki</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Ration Program at Mithi Tharparkar</a>
+              </Link>
+            </li> */}
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Idara-e-Nazariya-e-Pakistan</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Mithi-Tharparkar Medical Camp</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Helpline Tando Allahyar Sindh Program</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Helpline & Hasne Distribution Program</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Rajanpur Gulliwali Program</a>
+              </Link>
+            </li>
           </ul>
         </li>
         <li className="menu-item-has-children">
@@ -161,16 +216,59 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
-
-        <li>
+        <li className="menu-item-has-children">
           <Link href="/contact">
             <a>Legal</a>
           </Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Registration Documents</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>PDFs</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Certications</a>
+              </Link>
+            </li>
+          </ul>
         </li>
-        <li>
+        <li className="menu-item-has-children">
           <Link href="/contact">
             <a>donation</a>
           </Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Ramadan Appeal</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Emergency Appeal</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Pakistan Flood Appeal</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Education Appeal</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/eligibilty-criteria">
+                <a>Home Construction Appeal</a>
+              </Link>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>

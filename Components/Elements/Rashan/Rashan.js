@@ -47,7 +47,6 @@ export default function Rashan() {
 
       <section className={styles.rashandetails}>
         <div className="container">
-          <h2>Helpline Rashan Program Tables</h2>
           <h3>Rashan Program in Provinces</h3>
           <p>
             By helping mankind, Pak Helpline distributed 11,644 Ramzan Rashan
