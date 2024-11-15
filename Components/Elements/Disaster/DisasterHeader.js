@@ -1,10 +1,14 @@
 import React from "react";
-import styles from "../../public/css/Edu.module.css";
-
-function AppealHeader({ content  }) {
+import styles from "../../../public/css/Edu.module.css";
+function DisasterHeader({ content, image }) {
   return (
     <section className={styles.container}>
-      <div className={styles.banner}>
+      <div
+        className={styles.banner}
+        style={{
+          backgroundImage: `url(${image})`,
+        }}
+      >
         <div className={styles.overlay}>
           <h1 className={styles.title}>{content.title}</h1>
           <button className={styles.supportButton}>
@@ -33,4 +37,4 @@ function AppealHeader({ content  }) {
   );
 }
 
-export default AppealHeader;
+export default DisasterHeader;

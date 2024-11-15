@@ -10,8 +10,14 @@ import CTAArea from "../Components/Elements/Home/CTAArea";
 import AllOverPakistan from "../Components/Elements/Home/AllOverPakistan";
 import HelplineProject from "../Components/Elements/Home/HelplineProject";
 import WayToDonate from "../Components/Elements/Home/WayToDonate";
+import { HelplineData } from "../pages/api/data";
 
+const data = {
+  Water: "Water",
+  waterprojects: "Latest Cause",
+};
 export default function Home() {
+  const causes = HelplineData.causes;
   return (
     <>
       <Layout1>
@@ -20,7 +26,7 @@ export default function Home() {
           <CTAArea />
           <AboutArea />
           <AllOverPakistan />
-          <CausesArea />
+          <CausesArea causes={causes} data={data} />
           <SupportArea />
           <HelplineProject />
           <FeaturedArea />

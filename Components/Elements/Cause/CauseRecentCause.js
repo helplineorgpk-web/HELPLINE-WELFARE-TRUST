@@ -35,36 +35,44 @@ export default function CauseRecentCause({ categories, causes }) {
             <div className="cause_button_wrapper mb-25">
               <nav>
                 <div className="nav tab_buttons" id="nav-tab" role="tablist">
-                  <button
-                    className={`nav-link ${filter === "" ? "active" : ""}`}
-                    onClick={() => setFilter("")}
-                  >
-                    All Categories
-                  </button>
-                  <button
-                    className={`nav-link ${
-                      filter === categories.HouseConstructions ? "active" : ""
-                    }`}
-                    onClick={() => setFilter(categories.HouseConstructions)}
-                  >
-                    {categories.HouseConstructions}
-                  </button>
-                  <button
-                    className={`nav-link ${
-                      filter === categories.Water ? "active" : ""
-                    }`}
-                    onClick={() => setFilter(categories.Water)}
-                  >
-                    {categories.Water}
-                  </button>
-                  <button
-                    className={`nav-link ${
-                      filter === categories.Education ? "active" : ""
-                    }`}
-                    onClick={() => setFilter(categories.Education)}
-                  >
-                    {categories.Education}
-                  </button>
+                  {categories.AllCategories && (
+                    <button
+                      className={`nav-link ${filter === "" ? "active" : ""}`}
+                      onClick={() => setFilter("")}
+                    >
+                      {categories.AllCategories}
+                    </button>
+                  )}
+                  {categories.HouseConstructions && (
+                    <button
+                      className={`nav-link ${
+                        filter === categories.HouseConstructions ? "active" : ""
+                      }`}
+                      onClick={() => setFilter(categories.HouseConstructions)}
+                    >
+                      {categories.HouseConstructions}
+                    </button>
+                  )}
+                  {categories.Water && (
+                    <button
+                      className={`nav-link ${
+                        filter === categories.Water ? "active" : ""
+                      }`}
+                      onClick={() => setFilter(categories.Water)}
+                    >
+                      {categories.Water}
+                    </button>
+                  )}
+                  {categories.Education && (
+                    <button
+                      className={`nav-link ${
+                        filter === categories.Education ? "active" : ""
+                      }`}
+                      onClick={() => setFilter(categories.Education)}
+                    >
+                      {categories.Education}
+                    </button>
+                  )}
                   {categories.Medical && (
                     <button
                       className={`nav-link ${
