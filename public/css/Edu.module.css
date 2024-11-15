@@ -7,19 +7,9 @@
   position: relative;
   width: 100%;
   height: 400px;
-  background-image: url("../img/causes/cause17.jpg");
   background-size: cover;
   background-position: center;
 }
-.banner2 {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-image: url("../img/causes/hospital.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -62,11 +52,12 @@
 }
 
 .heading {
-  font-weight: bold;
+  font-size: xx-large;
   margin-bottom: 20px;
   border-left: 10px solid #ffb800;
   padding-left: 10px;
   color: #333;
+  text-align: start;
 }
 
 .desContainer {
@@ -78,6 +69,7 @@
   font-size: 16px;
   color: #555;
   margin-bottom: 30px;
+  text-align: start;
 }
 
 .description2 {

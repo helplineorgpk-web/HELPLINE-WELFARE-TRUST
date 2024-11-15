@@ -25,6 +25,7 @@ export const HelplineData = {
   educationContent: {
     title: "HELPLINE EDUCATION",
     supportButtonText: "SUPPORTING APPEAL",
+    headerBg: "img/causes/cause17.jpg",
     videoSrc: "https://www.youtube.com/embed/your_video_id",
     heading: "Helpline Education System",
     description: `
@@ -50,6 +51,7 @@ export const HelplineData = {
   HelplineHealthData: {
     title: "HELPLINE HEALTH",
     supportButtonText: "SUPPORTING APPEAL",
+    headerBg: "img/causes/hospital.jpeg",
     videoSrc: "https://www.youtube.com/embed/your_video_id",
     heading: "Helpline Health Projects",
     description: `
@@ -1407,6 +1409,151 @@ export const HelplineData = {
       image: "/img/rashan/irtikaschoolrashan.jpg",
       imagebg: "/img/rashan/irtikaschoolrashan2.jpg",
       programTitle: "HELPLINE RATION PROGRAM 2024",
+    },
+  ],
+  disasterContent: {
+    title: "HELPLINE DISASTER",
+    headerBg: "img/causes/disasterbg.jpg",
+    supportButtonText: "SUPPORTING APPEAL",
+    videoSrc:
+      "https://www.youtube.com/embed/uBu8B3Cf9fg?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fhelpline.org.pk&amp;widgetid=3",
+    videoSrc2:
+      "https://www.youtube.com/embed/A9OMSHZOiv0?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fhelpline.org.pk&amp;widgetid=1",
+    heading: "Helpline Disaster Management System",
+    description: `
+      Helpline NGO is committed to Disaster Management as one of its top priorities, given its nationwide presence and integrated network of volunteers across Pakistan. In the event of any sudden disaster anywhere in the country, the volunteers of Helpline NGO are always ready to provide immediate assistance and take part in relief activities. In addition, Helpline NGO has established specialized Disaster Management Cells throughout the country to ensure prompt rescue and relief services to deal with any unfortunate situation. These cells have been designated as independent departments at both the central and provincial levels, reflecting the importance that Helpline NGO places on Disaster Management.
+    `,
+    stats: [
+      { label: "Ration Packages", value: "12,636" },
+      { label: "Volunteers", value: "9,838" },
+      { label: "Houses", value: "150" },
+      { label: "Total Beneficiaries", value: "12,636" },
+      { label: "Expenditure PKR (In Million)", value: "148" },
+    ],
+    donationOptions: [
+      {
+        label: "Shelter Tent",
+        price: "Rs: 25,000/-",
+        buttonText: "Donate Now",
+      },
+      {
+        label: "Tarpaulin",
+        price: "PKR: 3,000/-",
+        buttonText: "Donate Now",
+      },
+      {
+        label: "Rashan Package",
+        price: "Rs: 25,000/-",
+        buttonText: "Donate Now",
+      },
+    ],
+  },
+  familyWelfareContent: {
+    title: "HELPLINE FAMILY WELFARE",
+    headerBg: "img/causes/familywelfare.jpeg",
+    supportButtonText: "SUPPORTING APPEAL",
+    videoSrc:
+      "https://www.youtube.com/embed/7p8vBnWjJes?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fhelpline.org.pk&amp;widgetid=3",
+    heading: "Helpline Family Welfare Management System",
+    description: `
+     Pakistan is facing multifarious social problems for years ranging from poverty to civic ignorance and lack of basic facilities of life. People face severe problems in terms of health, education, and the economy. The country stands at 152nd position in Human Development Index (HDI) and almost 51% of Pakistan’s population is deprived of basic necessities (health, education, etc.).” The best amongst you is the one who helps others.
+    `,
+  },
+  CleanWaterContent: {
+    title: "HELPLINE CLEAN WATER PROGRAM",
+    headerBg: "img/causes/cause4.jpg",
+    supportButtonText: "SUPPORTING APPEAL",
+    videoSrc:
+      "https://www.youtube.com/embed/MzLy5zMRcgk?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fhelpline.org.pk&amp;widgetid=3",
+    heading: "HELPLINE CLEAN WATER PROJECTS",
+    description: `
+Pakistan is on its way to become a water deficient country as it already stands at 30th position among the most water-deficient countries of the world. Safe drinking water is one of Pakistan’s most immediate and crucial problems that demands earliest actions to be taken for its resolution. Helpline is practically active to ensure the provision of clean drinking water by installing hand-pumps in arid lands, drilling water-wells in remote water-scarce areas, installing water-filtration plants in cities, and supplying water to homes in villages through its water schemes. Helpline Clean Water Program takes every possible measure according to the needs of the water-scarce regions to implement its mission.
+    `,
+  },
+  WaterCauses: [
+    {
+      id: 1,
+      category: ["Water"],
+      img: (
+        <Image
+          src="/img/causes/cause1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "63",
+      desc: "CLEAN WATER PROJECT IN KPK",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2025-12-27 00:00:00",
+      color: "#5fb35b",
+    },
+    {
+      id: 2,
+      category: ["Water"],
+      img: (
+        <Image
+          src="/img/causes/cause2.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN PUNJAB",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2024-01-07 00:00:00",
+      color: "#f15b43",
+    },
+    {
+      id: 3,
+      category: ["Water"],
+      img: (
+        <Image
+          src="/img/causes/cause3.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN BALOCHISTAN.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 4,
+      category: ["Water", ""],
+      img: (
+        <Image
+          src="/img/causes/cause4.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN KARBATH.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#5fb35b",
     },
   ],
 };

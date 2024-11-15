@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../../public/css/Edu.module.css";
+import styles from "../../../public/css/Edu.module.css";
 
-function AppealHeader({ content  }) {
+function FamilyWelfareHeader({ content }) {
   return (
     <section className={styles.container}>
-      <div className={styles.banner}>
+      <div className={styles.banner4}>
         <div className={styles.overlay}>
           <h1 className={styles.title}>{content.title}</h1>
           <button className={styles.supportButton}>
@@ -33,4 +33,4 @@ function AppealHeader({ content  }) {
   );
 }
 
-export default AppealHeader;
+export default FamilyWelfareHeader;

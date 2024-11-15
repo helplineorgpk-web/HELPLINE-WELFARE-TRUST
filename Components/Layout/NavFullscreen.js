@@ -74,17 +74,17 @@ export default function NavFullscreen() {
               </Link>
             </li>
             <li>
-              <Link href="/health">
+              <Link href="/disaster">
                 <a>Disaster Management</a>
               </Link>
             </li>
             <li>
-              <Link href="/edu">
+              <Link href="/familyWelfare">
                 <a>Family Welfare</a>
               </Link>
             </li>
             <li>
-              <Link href="/health">
+              <Link href="/water">
                 <a>Clean Water Program</a>
               </Link>
             </li>
@@ -110,36 +110,6 @@ export default function NavFullscreen() {
                 <a>Eligibility Critera</a>
               </Link>
             </li>
-            {/* <li>
-              <Link href="/eligibilty-criteria">
-                <a>Ration Program at Al-Kitab School</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Ration Program at Bahawalpur</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Ration Program at Gojra</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Ration Program at Irtiqa-E-Ittefal School</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Ration Program at Noshki</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Ration Program at Mithi Tharparkar</a>
-              </Link>
-            </li> */}
             <li>
               <Link href="/eligibilty-criteria">
                 <a>Idara-e-Nazariya-e-Pakistan</a>

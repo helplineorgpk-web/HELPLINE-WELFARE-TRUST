@@ -1,19 +1,17 @@
 import React from "react";
 import Layout2 from "../Components/Layout/Layout2";
-import Health2 from "../Components/Layout/Health2";
-import Health3 from "../Components/Layout/Health3";
 import { HelplineData } from "../pages/api/data";
 import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
+import EligibilityCriteria from "../Components/Layout/Eligibility";
 
-export default function health() {
+export default function familyWelfare() {
   return (
     <Layout2>
       <DisasterHeader
-        content={HelplineData.HelplineHealthData}
-        image={HelplineData.HelplineHealthData.headerBg}
+        content={HelplineData.familyWelfareContent}
+        image={HelplineData.familyWelfareContent.headerBg}
       />
-      <Health2 />
-      <Health3 />
+      <EligibilityCriteria />
     </Layout2>
   );
 }

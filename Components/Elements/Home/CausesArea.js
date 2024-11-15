@@ -1,17 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { HelplineData } from "../../../pages/api/data";
-import Image from "next/image";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-export default function CausesArea() {
-  const causes = HelplineData.causes;
-
+export default function CausesArea({ causes, data }) {
   return (
     <section
       className="causes_area grey-bg pt-105 pb-385"
@@ -22,9 +17,10 @@ export default function CausesArea() {
           <div className="col-xxl-12 text-center">
             <div className="section_title mb-45">
               <span className="sub_title">
-                <i className="fal fa-heart"></i> Causes
+                <i className="fal fa-heart"></i>
+                {data.Water}
               </span>
-              <h3 className="title">Latest Causes</h3>
+              <h3 className="title">{data.waterprojects}</h3>
             </div>
           </div>
         </div>
@@ -49,7 +45,7 @@ export default function CausesArea() {
                   </Link>
                   <div
                     className="progress_wrapper"
-                    style={{ backgroundColor: cause.color }} // Dynamically set the color
+                    style={{ backgroundColor: cause.color }}
                   >
                     <div
                       className="progress_circle"
