@@ -27,7 +27,7 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="active menu-item-has-children">
-          <Link href="/">
+          <Link href="#">
             <a>About</a>
           </Link>
           <ul className="sub-menu">
@@ -37,114 +37,13 @@ export default function NavFullscreen() {
               </Link>
             </li>
             <li>
-              <Link href="/ourjourney">
-                <a>Our Journey</a>
-              </Link>
-            </li>
-            <li>
               <Link href="/chairmanMessage">
                 <a>Chairman's Message</a>
               </Link>
             </li>
-          </ul>
-        </li>
-        <li className="menu-item-has-children">
-          <Link href="/cause">
-            <a>Projects</a>
-          </Link>
-          <ul className="sub-menu">
             <li>
-              <Link href="/cause">
-                <a>Our Projects</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/edu">
-                <a>Education</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/health">
-                <a>Health</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/rashan">
-                <a>Rashan Program</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/disaster">
-                <a>Disaster Management</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/familyWelfare">
-                <a>Family Welfare</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/water">
-                <a>Clean Water Program</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/edu">
-                <a>Cataract Program</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/health">
-                <a>Qurbani Program</a>
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li className="menu-item-has-children">
-          <Link href="">
-            <a>Social Welfare</a>
-          </Link>
-          <ul className="sub-menu">
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Eligibility Critera</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Idara-e-Nazariya-e-Pakistan</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Mithi-Tharparkar Medical Camp</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Helpline Tando Allahyar Sindh Program</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Helpline & Hasne Distribution Program</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Rajanpur Gulliwali Program</a>
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li className="menu-item-has-children">
-          <Link href="#">
-            <a>Pages</a>
-          </Link>
-          <ul className="sub-menu">
-            <li>
-              <Link href="/event">
-                <a>Events</a>
+              <Link href="/ourjourney">
+                <a>Our Journey</a>
               </Link>
             </li>
             <li>
@@ -152,14 +51,12 @@ export default function NavFullscreen() {
                 <a>Volunteer</a>
               </Link>
             </li>
-            <li>
-              <Link href="/donation">
-                <a>Donation</a>
-              </Link>
-            </li>
             <li className="menu-item-has-children">
               <Link href="#">
-                <a>media ▶</a>
+                <div className="innerli">
+                  <a>media </a>
+                  <span> ▶</span>
+                </div>
               </Link>
               <ul className="submenu">
                 <li>
@@ -187,7 +84,79 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/contact">
+          <Link href="#">
+            <a>Social Welfare</a>
+          </Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/edu">
+                <a>Education</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/health">
+                <a>Health</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/rashan">
+                <a>Rashan Program</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/disaster">
+                <a>Disaster Management</a>
+              </Link>
+            </li>
+            <li className="menu-item-has-children">
+              <Link href="#">
+                <div className="innerli">
+                  <a>Distribution </a>
+                  <span> ▶</span>
+                </div>
+              </Link>
+              <ul className="submenu">
+                <li>
+                  <Link href="/hasneDistribution">
+                    <a className="sub-dis">Helpline & Hasne Distribution</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/rajanpur">
+                    <a className="sub-dis">Rajanpur Gullowali Distribution</a>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link href="/familyWelfare">
+                <a>Family Welfare</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/water">
+                <a>Clean Water Program</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/cataract">
+                <a>Cataract Program</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/qurbani">
+                <a>Qurbani Program</a>
+              </Link>
+            </li>
+          </ul>
+        </li>
+        <li className="menu-item-has-children">
+          <Link href="/event">
+            <a>Events</a>
+          </Link>
+        </li>
+        <li className="menu-item-has-children">
+          <Link href="#">
             <a>Legal</a>
           </Link>
           <ul className="sub-menu">
@@ -210,9 +179,9 @@ export default function NavFullscreen() {
         </li>
         <li className="menu-item-has-children">
           <Link href="/contact">
-            <a>donation</a>
+            <a>Contact us</a>
           </Link>
-          <ul className="sub-menu">
+          {/* <ul className="sub-menu">
             <li>
               <Link href="/eligibilty-criteria">
                 <a>Ramadan Appeal</a>
@@ -238,7 +207,7 @@ export default function NavFullscreen() {
                 <a>Home Construction Appeal</a>
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </li>
       </ul>
     </nav>

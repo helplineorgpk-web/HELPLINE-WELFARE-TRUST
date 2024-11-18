@@ -1,5 +1,5 @@
 .main {
-  padding: 40px 0;
+  padding-top: 80px;
 }
 .slide {
   width: 100%;
@@ -13,6 +13,26 @@
   color: #fff;
   text-align: center;
   overflow: hidden;
+}
+.rashandetails {
+  padding: 50px 0;
+}
+
+.rashandetails h2,
+.rashandetails h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3b55;
+  margin-bottom: 15px;
+}
+
+.rashandetails h3 {
+  color: #1e3b55;
+}
+
+.rashandetails p {
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 .heading {
   font-size: 28px;

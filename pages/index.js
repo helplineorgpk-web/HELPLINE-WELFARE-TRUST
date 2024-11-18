@@ -17,7 +17,7 @@ const data = {
   waterprojects: "Latest Cause",
 };
 export default function Home() {
-  const causes = HelplineData.causes;
+  const cause = HelplineData.causes;
   return (
     <>
       <Layout1>
@@ -26,7 +26,7 @@ export default function Home() {
           <CTAArea />
           <AboutArea />
           <AllOverPakistan />
-          <CausesArea causes={causes} data={data} />
+          <CausesArea causes={cause} data={data} />
           <SupportArea />
           <HelplineProject />
           <FeaturedArea />

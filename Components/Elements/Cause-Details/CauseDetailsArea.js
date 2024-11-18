@@ -9,7 +9,6 @@ export default function CauseDetailsArea({
   toGo,
   category,
 }) {
-  // console.log("first", image.props);
   return (
     <div className="cause_details_area pt-120 pb-80">
       <div className="container">

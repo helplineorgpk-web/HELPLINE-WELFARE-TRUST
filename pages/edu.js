@@ -9,17 +9,18 @@ const data = {
   Water: "Helpline Schools",
   HouseConstructions: "Helpline Adopted Students",
   Education: "Al Kitab Education System",
+  Education2: "Idara-e-Nazariya-e-Pakistan",
   AllCategories: "All Categories",
 };
 export default function edu() {
-  const cause = HelplineData.education;
+  const educationProject = HelplineData.educationData;
   return (
     <Layout2>
       <DisasterHeader
         content={HelplineData.educationContent}
         image={HelplineData.educationContent.headerBg}
       />
-      <CauseRecentCause categories={data} causes={cause} />
+      <CauseRecentCause categories={data} causes={educationProject} />
     </Layout2>
   );
 }

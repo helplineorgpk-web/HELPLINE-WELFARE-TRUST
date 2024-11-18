@@ -23,6 +23,19 @@ const RashanDistributionArea = () => {
 
   return (
     <section className={styles.main}>
+      <section className={styles.rashandetails}>
+        <div className="container">
+          <h3>Rashan Distribution Program</h3>
+          <p>
+            By helping mankind, Pak Helpline distributed 11,644 Ramzan Rashan
+            packages among the needy families and individuals in 2019. The
+            packages include Atta, Ghee, Rice, Sugar, Daal, and tea. In
+            different areas of Pakistan like Punjab (Gojra, Bahawalpur, R.Y.
+            Khan, Rajan Pur, Sheikhupura, and Lahore), Sindh, Baluchistan, KPK,
+            and Kashmir, the program has been running since 1992.
+          </p>
+        </div>
+      </section>
       <h3 className={styles.heading}>Rashan Program In Cities</h3>
       <div
         className={styles.slide}
