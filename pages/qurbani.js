@@ -4,22 +4,21 @@ import { HelplineData } from "../pages/api/data";
 import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
 import CausesArea from "../Components/Elements/Home/CausesArea";
 import SupportArea from "../Components/Elements/Home/SupportArea";
+import Qurbani from "../Components/Elements/Qurbani/Qurbani";
 
 const data = {
   Water: "Water",
   Latest: "Latest Cause",
   waterprojects: "Clean Water Projects",
 };
-export default function water() {
-  const causes = HelplineData.WaterCauses;
+export default function qurbani() {
   return (
     <Layout2>
       <DisasterHeader
-        content={HelplineData.CleanWaterContent}
-        image={HelplineData.CleanWaterContent.headerBg}
+        content={HelplineData.qurbaniContent}
+        image={HelplineData.qurbaniContent.headerBg}
       />
-      <CausesArea causes={causes} data={data} />
-      <SupportArea />
+      <Qurbani />
     </Layout2>
   );
 }

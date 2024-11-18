@@ -73,6 +73,16 @@ export default function CauseRecentCause({ categories, causes }) {
                       {categories.Education}
                     </button>
                   )}
+                  {categories.Education2 && (
+                    <button
+                      className={`nav-link ${
+                        filter === categories.Education2 ? "active" : ""
+                      }`}
+                      onClick={() => setFilter(categories.Education2)}
+                    >
+                      {categories.Education2}
+                    </button>
+                  )}
                   {categories.Medical && (
                     <button
                       className={`nav-link ${

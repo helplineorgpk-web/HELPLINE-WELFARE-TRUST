@@ -169,7 +169,7 @@ export const HelplineData = {
   ],
   causes: [
     {
-      id: 17,
+      id: 1,
       category: ["House Constructions"],
       img: (
         <Image
@@ -190,7 +190,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 18,
+      id: 2,
       category: ["House Constructions"],
       img: (
         <Image
@@ -211,7 +211,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 19,
+      id: 3,
       category: ["House Constructions"],
       img: (
         <Image
@@ -232,8 +232,8 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 20,
-      category: ["House Constructions", ""],
+      id: 4,
+      category: ["House Constructions"],
       img: (
         <Image
           src="/img/causes/houseconstruction4.jpeg"
@@ -253,7 +253,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 1,
+      id: 5,
       category: ["Water"],
       img: (
         <Image
@@ -274,7 +274,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 2,
+      id: 6,
       category: ["Water"],
       img: (
         <Image
@@ -295,7 +295,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 3,
+      id: 7,
       category: ["Water"],
       img: (
         <Image
@@ -316,8 +316,8 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 4,
-      category: ["Water", ""],
+      id: 8,
+      category: ["Water"],
       img: (
         <Image
           src="/img/causes/cause4.jpg"
@@ -337,7 +337,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 5,
+      id: 9,
       category: ["Education"],
       img: (
         <Image
@@ -359,7 +359,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 6,
+      id: 10,
       category: ["Education"],
       img: (
         <Image
@@ -381,7 +381,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 7,
+      id: 11,
       category: ["Education"],
       img: (
         <Image
@@ -403,7 +403,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 8,
+      id: 12,
       category: ["Education"],
       img: (
         <Image
@@ -425,7 +425,29 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 9,
+      id: 37,
+      category: ["Education"],
+      img: (
+        <Image
+          src="/img/causes/tandusindh1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Tando Allahyar Sindh Program.",
+      adopted: "Adopted",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#f15b43",
+    },
+    {
+      id: 13,
       category: ["Medical"],
       img: (
         <Image
@@ -446,7 +468,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 10,
+      id: 14,
       category: ["Medical"],
       img: (
         <Image
@@ -467,7 +489,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 11,
+      id: 15,
       category: ["Medical"],
       img: (
         <Image
@@ -488,11 +510,11 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 12,
+      id: 36,
       category: ["Medical"],
       img: (
         <Image
-          src="/img/causes/cause28.jpg"
+          src="/img/causes/mithimedicalcamp1.jpg"
           layout="responsive"
           width={350}
           height={225}
@@ -500,16 +522,16 @@ export const HelplineData = {
       ),
       pbar: "pbar_1",
       progressData: "65",
-      desc: "Hasene International & Helpline Medical Camp.",
+      desc: "HELPLINE Mithi-Tharparkar Medical Camp.",
       goal: "4,5100",
       raised: "45,300",
       toGo: "45,200",
       address: "Douglas Park, Chicago, IL",
       date: "2022-11-27 00:00:00",
-      color: "#65cabb",
+      color: "#f15b43",
     },
     {
-      id: 13,
+      id: 16,
       category: ["Food"],
       img: (
         <Image
@@ -530,7 +552,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 14,
+      id: 17,
       category: ["Food"],
       img: (
         <Image
@@ -551,7 +573,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 15,
+      id: 18,
       category: ["Food"],
       img: (
         <Image
@@ -572,7 +594,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 16,
+      id: 19,
       category: ["Food"],
       img: (
         <Image
@@ -592,10 +614,53 @@ export const HelplineData = {
       date: "2022-11-27 00:00:00",
       color: "#5fb35b",
     },
-  ],
-  education: [
     {
-      id: 1,
+      id: 20,
+      category: ["Idara-e-Nazariya-e-Pakistan"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 21,
+      category: ["Food"],
+      img: (
+        <Image
+          src="/img/causes/cause27.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Rashan Distribution Campaign in Pakistan.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#5fb35b",
+    },
+  ],
+
+  educationData: [
+    {
+      id: 22,
       category: ["Helpline Schools"],
       img: (
         <Image
@@ -616,7 +681,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 2,
+      id: 23,
       category: ["Helpline Schools"],
       img: (
         <Image
@@ -637,7 +702,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 3,
+      id: 24,
       category: ["Helpline Schools"],
       img: (
         <Image
@@ -658,7 +723,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 4,
+      id: 25,
       category: ["Helpline Schools", ""],
       img: (
         <Image
@@ -679,7 +744,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 5,
+      id: 26,
       category: ["Helpline Adopted Students"],
       img: (
         <Image
@@ -701,7 +766,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 6,
+      id: 28,
       category: ["Helpline Adopted Students"],
       img: (
         <Image
@@ -723,7 +788,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 7,
+      id: 29,
       category: ["Helpline Adopted Students"],
       img: (
         <Image
@@ -745,7 +810,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 8,
+      id: 30,
       category: ["Helpline Adopted Students"],
       img: (
         <Image
@@ -767,7 +832,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 9,
+      id: 31,
       category: ["Al Kitab Education System"],
       img: (
         <Image
@@ -788,7 +853,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 10,
+      id: 32,
       category: ["Al Kitab Education System"],
       img: (
         <Image
@@ -809,7 +874,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 11,
+      id: 33,
       category: ["Al Kitab Education System"],
       img: (
         <Image
@@ -830,7 +895,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 12,
+      id: 34,
       category: ["Al Kitab Education System"],
       img: (
         <Image
@@ -843,6 +908,27 @@ export const HelplineData = {
       pbar: "pbar_1",
       progressData: "65",
       desc: "Hasene International & Helpline Medical Camp.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 35,
+      category: ["Idara-e-Nazariya-e-Pakistan"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
       goal: "4,5100",
       raised: "45,300",
       toGo: "45,200",
@@ -1554,6 +1640,53 @@ Pakistan is on its way to become a water deficient country as it already stands 
       address: "Douglas Park, Chicago, IL",
       date: "2022-11-27 00:00:00",
       color: "#5fb35b",
+    },
+  ],
+  cataractContent: {
+    title: "HELPLINE CATARACT PROGRAM",
+    supportButtonText: "SUPPORTING APPEAL",
+    headerBg: "img/causes/cataractbg.jpeg",
+    videoSrc: "https://www.youtube.com/embed/z49KpgNHTNM",
+    heading: "Helpline Cataract Program",
+    description: `
+   Helpline Social Welfare Organization has successfully carried out a monumental initiative aimed at restoring vision and transforming lives across Pakistan. Collaborating with Hasene International, the organization orchestrated a commendable effort, conducting a total of 500 cataract operations throughout the country. The comprehensive project not only addressed the critical need for eye care but also alleviated financial burdens for individuals who may have otherwise struggled to access these essential services. The initiative encompassed a holistic approach, offering free three-eye checkups to identify those in need, followed by complimentary cataract surgeries, including the provision of free lenses and post-operative medicines.
+The 500 individuals who benefitted from this initiative are now equipped with the gift of sight, enabling them to lead more fulfilling and independent lives. The success of this venture underscores the significance of philanthropic endeavors in addressing healthcare disparities and fostering a brighter future for communities in need.
+    `,
+  },
+  qurbaniContent: {
+    title: "HELPLINE QURBANI PROGRAM",
+    supportButtonText: "SUPPORTING APPEAL",
+    headerBg: "img/causes/qurbanibg.jpg",
+    videoSrc: "https://www.youtube.com/embed/rU2ZxQshws8",
+    heading: "Helpline Qurbani Program",
+    description: `
+        Qurbani is a great Sunnah of Ibrahim (AS) and the dearest deed to Allah (SWT). As you are preparing to commemorate Prophet Ibrahim (AS) dedication through Qurbani on this Eid-ul-Adha. Alkhidmat urges you to remember millions of underprivileged and undernourished families in Pakistan who eagerly await Eid-ul-Adha throughout the whole year to eat nutritious meat. Alkhidmat Foundation Pakistan is doing Qurbani Fi Sabeel Lillah to distribute nutritious meat to millions of underprivileged and undernourished Pakistanis on this Eid-ul-Adha. This year, Alkhidmat is also doing Qurbani specifically for the oppressed Palestinian families in Gaza. Take advantage of Alkhidmat online Qurbani Fi Sabeel Lillah
+    `,
+  },
+  swiperData: [
+    {
+      image: "img/causes/qurbani1.jpg",
+      detailHeader: "Qurbani",
+      detail:
+        "At Al Kitab School in Rana Town, we are organizing a qurbani event in collaboration with the Hasene Team and the Helpline Social Media Organization.",
+    },
+    {
+      image: "img/causes/qurbani2.jpg",
+      detailHeader: "Qurbani Meat",
+      detail:
+        "The Hasene team and Helpline Social Media Organization are distributing Qurbani meat to needy individuals in Rana Town’s Al Kitab School.",
+    },
+    {
+      image: "img/causes/qurbani3.jpg",
+      detailHeader: "Community Support",
+      detail:
+        "The event aims to support underprivileged families by providing essential resources and spreading joy during the festive season.",
+    },
+    {
+      image: "img/causes/qurbani4.jpg",
+      detailHeader: "Helping Hands",
+      detail:
+        "Join us in this noble cause as we collaborate to bring smiles and relief to those in need.",
     },
   ],
 };

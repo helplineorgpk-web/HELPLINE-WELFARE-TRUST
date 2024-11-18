@@ -13018,9 +13018,16 @@ input:focus:-ms-input-placeholder {
   padding: 0;
   margin: 0;
 }
-
+.sub-dis {
+  font-size: 13px !important;
+}
+.innerli {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+}
 .main-menu ul li {
-  margin: 0 20px; /* Adjust this value for spacing */
+  margin: 0 20px;
   list-style: none;
   position: relative;
 }

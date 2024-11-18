@@ -9,10 +9,10 @@ export default function CauseDetails() {
   const router = useRouter();
   const { id } = router.query;
 
-  const cause = HelplineData.causes.find((item) => item.id === parseInt(id));
+  const allCauses = [...HelplineData.causes, ...HelplineData.educationData];
+  const cause = allCauses.find((item) => item.id === parseInt(id));
 
   if (!cause) {
-    // Render a fallback or loading state if cause is undefined
     return (
       <Layout2>
         <p>Loading...</p>
