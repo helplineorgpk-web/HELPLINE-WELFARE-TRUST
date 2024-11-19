@@ -179,6 +179,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
       pbar: "pbar_1",
       progressData: "63",
       desc: "CLEAN WATER PROJECT IN KPK",
@@ -200,6 +202,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
       pbar: "pbar_1",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN PUNJAB",
@@ -221,6 +225,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
       pbar: "pbar_1",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN BALOCHISTAN.",
@@ -242,6 +248,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN KARBATH.",
@@ -263,6 +271,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "63",
       desc: "CLEAN WATER PROJECT IN KPK",
@@ -284,6 +294,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN PUNJAB",
@@ -305,6 +317,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN BALOCHISTAN.",
@@ -326,6 +340,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN KARBATH.",
@@ -347,6 +363,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "GPS. Roru Goth School.",
@@ -369,6 +387,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "GPS. Bagliar Mithi School.",
@@ -391,6 +411,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "GPS. Kaktario Samma School.",
@@ -413,6 +435,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "GPS. Misali Goth School.",
@@ -435,6 +459,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Helpline Tando Allahyar Sindh Program.",
@@ -457,6 +483,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Karbath Medical Centre Hospital.",
@@ -478,6 +506,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Hajra Bibi Memorial Trust Hospital.",
@@ -499,6 +529,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Cataract Surgeries Across Pakistan.",
@@ -520,6 +552,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "HELPLINE Mithi-Tharparkar Medical Camp.",
@@ -541,6 +575,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Helpline Rashan Distribution in ramzan.",
@@ -562,6 +598,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Helpline Rashan Distribution Between Needy People.",
@@ -583,6 +621,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Helpline Ramzan Rashan Distribution in Blochistan.",
@@ -604,6 +644,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Helpline Rashan Distribution in Flooded Area.",
@@ -625,6 +667,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
@@ -646,6 +690,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Helpline Rashan Distribution Campaign in Pakistan.",
@@ -656,9 +702,6 @@ export const HelplineData = {
       date: "2022-11-27 00:00:00",
       color: "#5fb35b",
     },
-  ],
-
-  educationData: [
     {
       id: 22,
       category: ["Helpline Schools"],
@@ -670,6 +713,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "63",
       desc: "CLEAN WATER PROJECT IN KPK",
@@ -691,6 +736,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN PUNJAB",
@@ -712,6 +759,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN BALOCHISTAN.",
@@ -733,6 +782,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN KARBATH.",
@@ -754,6 +805,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "GPS. Roru Goth School.",
@@ -776,6 +829,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "GPS. Bagliar Mithi School.",
@@ -798,6 +853,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "GPS. Kaktario Samma School.",
@@ -820,6 +877,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "GPS. Misali Goth School.",
@@ -842,6 +901,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Karbath Medical Centre Hospital.",
@@ -863,6 +924,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Hajra Bibi Memorial Trust Hospital.",
@@ -884,6 +947,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Cataract Surgeries Across Pakistan.",
@@ -905,6 +970,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Hasene International & Helpline Medical Camp.",
@@ -926,6 +993,8 @@ export const HelplineData = {
           height={225}
         />
       ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
       desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
@@ -1689,4 +1758,90 @@ The 500 individuals who benefitted from this initiative are now equipped with th
         "Join us in this noble cause as we collaborate to bring smiles and relief to those in need.",
     },
   ],
+  HelplineHasneData: {
+    title: "Helpline & Hesne Ration Distribution Program",
+    supportButtonText: "SUPPORTING APPEAL",
+    headerBg: "img/causes/hasnebg.jpg",
+    videoSrc: "https://www.youtube.com/embed/Q9_GMDMJE7w",
+    heading: "Helpline & Hesne Ration Distribution Program",
+    description: `
+      The Helpline organization is delighted to announce the distribution of shoes, clothes, and school bags to the students of Al-Kitab School in Rana Town, Lahore. This impactful initiative is designed to support these young learners by providing essential items that will enhance their educational experience and boost their confidence. By joining hands with us, you can help make a lasting difference in their lives, empowering them to focus on their studies and build a brighter future. Together, we can ensure that no child is held back by the lack of basic necessities, paving the way for success and opportunity.
+    `,
+    detailHeader: "Helpline & Hasne Distribution Program at Al-Kitab Rana town",
+    detail:
+      "The Helpline organization is proud to introduce an initiative focused on distributing shoes, clothes, and school bags to the students of Al-Kitab School in Rana Town, Lahore. This project is aimed at supporting students from underprivileged backgrounds by providing them with essential items that play a critical role in their everyday lives and educational journey.Many students in this area face significant challenges, including the lack of basic necessities such as appropriate clothing, footwear, and school supplies. These seemingly small yet crucial items can affect their confidence, comfort, and ability to engage fully in their studies. By providing new shoes, clothes, and school bags, we aim to alleviate some of these difficulties, ensuring that these young learners can attend school with dignity and focus on what truly matters: their education.This initiative goes beyond just providing material goods—it’s about empowering these children to believe in themselves and their potential. When students feel cared for and properly equipped, their self-esteem rises, and they are more likely to stay motivated in school, fostering a positive learning environment.The distribution of these essential items is part of our broader mission at Helpline to make education accessible and enriching for all children, regardless of their financial background. With the right support, these students can unlock their potential and work toward a brighter, more promising future.We invite you to be part of this meaningful cause. By contributing to this initiative, you can directly impact the lives of these students and help shape a future where every child has the opportunity to succeed. Together, we can make a difference and empower the next generation to achieve their dreams.",
+  },
+  HelplineRajanpurData: {
+    title: "Helpline Rajanpur Gullowali Program",
+    supportButtonText: "SUPPORTING APPEAL",
+    headerBg: "img/causes/hasnebg.jpg",
+    videoSrc: "https://www.youtube.com/embed/LVtB6r7dlzU",
+    heading:
+      "Distribution of Shoes, Clothes, and School Bags to Students of Al Kitab School.",
+    description: `
+The Helpline organization is proud to announce the distribution of shoes, clothes, and school bags to the students of Al-Kitab School in Rajanpur, Gullowali. This initiative aims to support and uplift underprivileged students by providing essential items that will enhance their educational experience. By joining us in this effort, you can contribute to empowering these young learners and making a meaningful difference in their lives, helping to build a brighter future for them.
+    `,
+    detailHeader:
+      "Distribution of Shoes, Clothes, and School Bags to Students of Al Kitab School.",
+    detail:
+      "The Helpline organization is excited to launch an initiative dedicated to the distribution of essential items such as shoes, clothes, and school bags to the students of Al-Kitab School, located in Rajanpur, Gullowali. This initiative is part of our ongoing efforts to support education and provide underprivileged students with the resources they need to succeed.Many students in the region face significant challenges in accessing basic necessities, which can impact their ability to focus on education. By providing these items, we aim to remove some of the barriers that stand in the way of their learning journey. Ensuring that students have proper footwear, suitable clothing, and functional school bags not only improves their comfort and safety but also boosts their self-esteem and confidence in the classroom.The distribution drive is about more than just meeting immediate needs—it is about empowering students to thrive academically and personally. When students feel cared for and supported, they are more likely to engage fully in their education, opening up opportunities for a brighter future. Our team at Helpline is committed to improving the lives of these young learners and believes that by working together, we can make a significant, lasting impact.We invite you to join us in this meaningful cause. Your support can make a world of difference to these children, helping them to not only receive an education but also to gain the tools and confidence they need to succeed in life. Let’s work together to empower the next generation, one student at a time.",
+  },
+  HelplineItLabsData: {
+    title: "Helpline IT Labs Program",
+    supportButtonText: "SUPPORTING APPEAL",
+    headerBg: "img/causes/itlabsbg.png",
+    videoSrc: "https://www.youtube.com/embed/oSK1iD6k7OA",
+    heading: "Helpline IT Labs Program",
+    description: `
+Helpline have realized that providing access to technology and digital education can help bridge the digital divide and empower communities. These IT labs are set up in different areas of the country like in schools (i.e. Al-Kitab School), community centers (i.e. Bahawalpur, Tando Allah Yar), and other public spaces (i.e. Lahore) to make them accessible to a larger audience. They can be a valuable resource for students and communities to gain new technical skills, explore new opportunities, and improve their quality of life.
+    `,
+    detailHeader: "Helpline IT Labs",
+  },
+  ITData: [
+    {
+      id: 1,
+      title: "Brain Scoop in Lahore",
+      description:
+        "Brain Scoop is a Lahore-based IT company that has been making waves in the tech industry with its innovative products and services. With the support of the Helpline NGO, the company has been able to expand its operations and provide better services to its clients. Brain Scoop specializes in software development, web design, and digital marketing. They have a team of highly skilled professionals who are dedicated to delivering top-quality solutions to their clients. Their innovative approach to problem-solving has earned them a reputation as one of the most reliable IT companies in the region.",
+      image: "/img/causes/itlab1.png",
+    },
+    {
+      id: 2,
+      title: "Brain Scoop in Islamabad",
+      description:
+        "Brain Scoop is an Islamabad-based IT company that has been making waves in the tech industry with its innovative products and services. With the support of the Helpline NGO, the company has been able to expand its operations and provide better services to its clients. Brain Scoop specializes in software development, web design, and digital marketing. They have a team of highly skilled professionals who are dedicated to delivering top-quality solutions to their clients. Their innovative approach to problem-solving has earned them a reputation as one of the most reliable IT companies in the region.",
+      image: "/img/causes/itlab2.png",
+    },
+    {
+      id: 3,
+      title: "Brain Scoop in Bahalwapur",
+      description:
+        "The Helpline NGO provides financial and technical support to Brain Scoop, enabling it to invest in better technology, infrastructure, and talent. This has allowed the IT lab to take on more significant projects and expand its reach, while maintaining its commitment to providing top-quality solutions to its clients.Brain Scoop has a team of highly skilled professionals who are dedicated to delivering innovative solutions to its clients. The lab’s expertise in software development and web design has earned it a reputation as one of the most reliable IT labs in the region.",
+      image: "/img/causes/itlab3.png",
+    },
+    {
+      id: 4,
+      title: "Brain Scoop in Nawab Shah",
+      description:
+        "Brain Scoop has a team of highly skilled professionals who are dedicated to delivering innovative solutions to its clients. The lab’s expertise in software development and web design has earned it a reputation as one of the most reliable IT labs in the region. Through its partnership with the Helpline NGO, Brain Scoop has also been able to promote IT education and training in the community, helping to develop local talent and create new opportunities for young people in the field of technology.",
+      image: "/img/causes/itlab4.png",
+    },
+    {
+      id: 5,
+      title: "Brain Scoop in Tando Allah Yar",
+      description:
+        "Brain Scoop has also been able to promote IT education and training in the community, helping to develop local talent and create new opportunities for young people in the field of technology. Overall, Brain Scoop’s commitment to excellence, combined with the support of the Helpline NGO, has made it a valuable asset to the community, providing high-quality IT solutions and helping to develop local talent in Tando Allah Yar.",
+      image: "/img/causes/itlab5.png",
+    },
+  ],
+  HelplineregistrationData: {
+    title: "Helpline Registrations",
+    headerBg: "img/causes/itlabsbg.png",
+    videoSrc: "https://www.youtube.com/embed/oSK1iD6k7OA",
+    heading: "Helpline Registrations",
+    description: `
+Helpline have realized that providing access to technology and digital education can help bridge the digital divide and empower communities. These IT labs are set up in different areas of the country like in schools (i.e. Al-Kitab School), community centers (i.e. Bahawalpur, Tando Allah Yar), and other public spaces (i.e. Lahore) to make them accessible to a larger audience. They can be a valuable resource for students and communities to gain new technical skills, explore new opportunities, and improve their quality of life.
+    `,
+    detailHeader: "Helpline IT Labs",
+  },
 };

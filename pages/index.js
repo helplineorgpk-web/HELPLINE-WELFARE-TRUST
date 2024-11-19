@@ -23,13 +23,12 @@ export default function Home() {
       <Layout1>
         <main>
           <SliderArea />
-          <CTAArea />
           <AboutArea />
           <AllOverPakistan />
           <CausesArea causes={cause} data={data} />
           <SupportArea />
           <HelplineProject />
-          <FeaturedArea />
+          {/* <FeaturedArea /> */}
           <WayToDonate />
           <NewsFeed />
         </main>

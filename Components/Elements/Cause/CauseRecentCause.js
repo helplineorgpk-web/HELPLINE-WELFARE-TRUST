@@ -3,14 +3,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function CauseRecentCause({ categories, causes }) {
-  const [filter, setFilter] = useState("");
-  const [projects, setProjects] = useState(causes || []);
+  const [filter, setFilter] = useState(
+    categories?.AllCategories ? "" : "Education" 
+  );
+  const [projects, setProjects] = useState([]);
+
   const router = useRouter();
 
   useEffect(() => {
-    console.log("causes:", causes);
-    console.log("filter:", filter);
-
     const filtered =
       filter === ""
         ? causes
@@ -35,74 +35,27 @@ export default function CauseRecentCause({ categories, causes }) {
             <div className="cause_button_wrapper mb-25">
               <nav>
                 <div className="nav tab_buttons" id="nav-tab" role="tablist">
-                  {categories.AllCategories && (
+                  {Object.keys(categories || {}).map((key) => (
                     <button
-                      className={`nav-link ${filter === "" ? "active" : ""}`}
-                      onClick={() => setFilter("")}
-                    >
-                      {categories.AllCategories}
-                    </button>
-                  )}
-                  {categories.HouseConstructions && (
-                    <button
+                      key={key}
                       className={`nav-link ${
-                        filter === categories.HouseConstructions ? "active" : ""
+                        (categories[key] === "All Categories" &&
+                          filter === "") ||
+                        filter === categories[key]
+                          ? "active"
+                          : ""
                       }`}
-                      onClick={() => setFilter(categories.HouseConstructions)}
+                      onClick={() =>
+                        setFilter(
+                          categories[key] === "All Categories"
+                            ? ""
+                            : categories[key]
+                        )
+                      }
                     >
-                      {categories.HouseConstructions}
+                      {categories[key]}
                     </button>
-                  )}
-                  {categories.Water && (
-                    <button
-                      className={`nav-link ${
-                        filter === categories.Water ? "active" : ""
-                      }`}
-                      onClick={() => setFilter(categories.Water)}
-                    >
-                      {categories.Water}
-                    </button>
-                  )}
-                  {categories.Education && (
-                    <button
-                      className={`nav-link ${
-                        filter === categories.Education ? "active" : ""
-                      }`}
-                      onClick={() => setFilter(categories.Education)}
-                    >
-                      {categories.Education}
-                    </button>
-                  )}
-                  {categories.Education2 && (
-                    <button
-                      className={`nav-link ${
-                        filter === categories.Education2 ? "active" : ""
-                      }`}
-                      onClick={() => setFilter(categories.Education2)}
-                    >
-                      {categories.Education2}
-                    </button>
-                  )}
-                  {categories.Medical && (
-                    <button
-                      className={`nav-link ${
-                        filter === categories.Medical ? "active" : ""
-                      }`}
-                      onClick={() => setFilter(categories.Medical)}
-                    >
-                      {categories.Medical}
-                    </button>
-                  )}
-                  {categories.Food && (
-                    <button
-                      className={`nav-link ${
-                        filter === categories.Food ? "active" : ""
-                      }`}
-                      onClick={() => setFilter(categories.Food)}
-                    >
-                      {categories.Food}
-                    </button>
-                  )}
+                  ))}
                 </div>
               </nav>
             </div>

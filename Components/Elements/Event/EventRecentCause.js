@@ -110,11 +110,6 @@ export default function EventRecentCause() {
                       <span>{item.address}</span>
                     </div>
                   </div>
-                  <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-8 text-center text-md-end">
-                    <div className="count_down_box heading-clr">
-                      <Timer endDateTime={item.date} />
-                    </div>
-                  </div>
                 </div>
               </div>
             ))}

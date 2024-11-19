@@ -13022,8 +13022,8 @@ input:focus:-ms-input-placeholder {
   font-size: 13px !important;
 }
 .innerli {
-  display: flex;
-  justify-content: space-between;
+  display: flex !important;
+  justify-content: space-between !important;
   align-items: center !important;
 }
 .main-menu ul li {
@@ -13034,7 +13034,7 @@ input:focus:-ms-input-placeholder {
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .main-menu ul li {
-    margin: 0 30px; /* Adjust spacing for better alignment */
+    margin: 0 30px;
   }
 }
 
@@ -13045,7 +13045,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .main-menu ul li a {
-  padding: 15px 0; /* Adjust padding for better vertical alignment */
+  padding: 15px 0; 
   text-decoration: none;
   color: var(--clr-common-menu-color);
   font-weight: 700;
@@ -13059,7 +13059,7 @@ input:focus:-ms-input-placeholder {
   width: 250px;
   background-color: var(--clr-common-white);
   border-top: 4px solid var(--clr-theme-1);
-  display: none; /* Hide by default */
+  display: none;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
@@ -13072,7 +13072,6 @@ input:focus:-ms-input-placeholder {
   transform: scaleY(1);
 }
 
-/* Ensure the logo stays centered in smaller viewports */
 .logo img {
   max-width: 100%;
   height: auto;

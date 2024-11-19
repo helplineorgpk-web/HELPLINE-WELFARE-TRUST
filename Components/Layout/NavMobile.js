@@ -14,40 +14,6 @@ export default function NavMobile() {
           <Link href="/">
             <a className="has-arrow">Home</a>
           </Link>
-          <ul className="sub-menu">
-            <li>
-              <Link href="/">
-                <a className="has-arrow">Home 1</a>
-              </Link>
-              <ul>
-                <li>
-                  <Link href="/">
-                    <a>Home 1</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/">
-                    <a>Home 1</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/">
-                    <a>Home 1</a>
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link href="/index-2">
-                <a>Home 2</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/index-3">
-                <a>Home 3</a>
-              </Link>
-            </li>
-          </ul>
         </li>
         <li className="menu-item-has-children">
           <Link href="/appeals">

@@ -11,9 +11,11 @@ function DisasterHeader({ content, image }) {
       >
         <div className={styles.overlay}>
           <h1 className={styles.title}>{content.title}</h1>
-          <button className={styles.supportButton}>
-            {content.supportButtonText}
-          </button>
+          {content.supportButtonText && (
+            <button className={styles.supportButton}>
+              {content.supportButtonText}
+            </button>
+          )}
         </div>
       </div>
       <div className={styles.content}>

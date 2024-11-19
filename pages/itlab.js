@@ -2,16 +2,16 @@ import React from "react";
 import Layout2 from "../Components/Layout/Layout2";
 import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
 import { HelplineData } from "../pages/api/data";
-import HasneDistribution from "../Components/Elements/Hasne/HasneDistribution";
+import ITLabs from "../Components/Elements/ITLabs/ITLabs";
 export default function rajanpur() {
-  const data = HelplineData.HelplineRajanpurData;
+  const data = HelplineData.HelplineItLabsData;
   return (
     <Layout2>
       <DisasterHeader
-        content={HelplineData.HelplineRajanpurData}
-        image={HelplineData.HelplineRajanpurData.headerBg}
+        content={HelplineData.HelplineItLabsData}
+        image={HelplineData.HelplineItLabsData.headerBg}
       />
-      <HasneDistribution data={data} />
+      <ITLabs />
     </Layout2>
   );
 }

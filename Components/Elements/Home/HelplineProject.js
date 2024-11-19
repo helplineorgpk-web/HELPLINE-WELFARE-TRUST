@@ -29,7 +29,7 @@ function HelplineProject() {
         {HelplineProject.map((slide, index) => (
           <SwiperSlide className="single_cause mb-0" key={index}>
             <div className="single_cause_img img_effect_white p-rel">
-              <Link href={slide.link}>
+              <Link href={{}}>
                 <a>
                   <img src={slide.image} alt="img" />
                 </a>
