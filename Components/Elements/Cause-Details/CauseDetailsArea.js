@@ -8,6 +8,7 @@ export default function CauseDetailsArea({
   raised,
   toGo,
   category,
+  detail,
 }) {
   return (
     <div className="cause_details_area pt-120 pb-80">
@@ -24,16 +25,7 @@ export default function CauseDetailsArea({
                     </Link>
                   </div>
                   <h4 className="details_title">{title}</h4>
-                  <p>
-                    generous actions or donations to aid the poor, ill, or
-                    needy: to devote one&apos;s life to charity. something given
-                    to a \person or persons in need; alms: She asked for work,
-                    not charity. a charitable act or work. Thank you so much for
-                    visiting my page, something I never thought I would be
-                    setting up. Having fought stage IV cancer for almost two
-                    years, I have ran out of options which makes my diagnosis
-                    terminal{" "}
-                  </p>
+                  <p>{detail}</p>
                   <div className="feature_progress_wrapper mb-25 mt-35">
                     <div className="progress feature_progress">
                       <div
@@ -263,7 +255,7 @@ export default function CauseDetailsArea({
                 <div className="widget_person_img">
                   <Link href="/volunteer-details">
                     <a>
-                      <img src="/img/causes/person_main.jpg" alt="img" />
+                      <img src="/img/slider/ceo.png" alt="img" />
                     </a>
                   </Link>
                   <span className="check_sign">
@@ -273,10 +265,10 @@ export default function CauseDetailsArea({
                 <div className="person_designation widget_mb25">
                   <h5 className="person_nam f_size24">
                     <Link href="/volunteer-details">
-                      <a>MR. Muhammad Ali</a>
+                      <a>Muhammad Iqbal Khan</a>
                     </Link>
                   </h5>
-                  <span className="person_surname">Founder,Anarkoli Co.</span>
+                  <span className="person_surname">Founder,Helpline Co.</span>
                 </div>
                 <div className="feature_buttons widget_buttons">
                   <Link href="/donation">

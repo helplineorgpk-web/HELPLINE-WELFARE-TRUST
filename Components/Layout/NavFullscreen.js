@@ -8,7 +8,7 @@ export default function NavFullscreen() {
           <Link href="/">
             <a>Home</a>
           </Link>
-          <ul className="sub-menu">
+          {/* <ul className="sub-menu">
             <li>
               <Link href="/">
                 <a>Home 1</a>
@@ -24,7 +24,7 @@ export default function NavFullscreen() {
                 <a>Home 3</a>
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </li>
         <li className="active menu-item-has-children">
           <Link href="#">
@@ -53,10 +53,10 @@ export default function NavFullscreen() {
             </li>
             <li className="menu-item-has-children">
               <Link href="#">
-                <div className="innerli">
-                  <a>media </a>
+                <a className="innerli">
+                  media
                   <span> ▶</span>
-                </div>
+                </a>
               </Link>
               <ul className="submenu">
                 <li>
@@ -99,6 +99,11 @@ export default function NavFullscreen() {
               </Link>
             </li>
             <li>
+              <Link href="/itlab">
+                <a>IT Labs</a>
+              </Link>
+            </li>
+            <li>
               <Link href="/rashan">
                 <a>Rashan Program</a>
               </Link>
@@ -110,10 +115,10 @@ export default function NavFullscreen() {
             </li>
             <li className="menu-item-has-children">
               <Link href="#">
-                <div className="innerli">
-                  <a>Distribution </a>
+                <a className="innerli">
+                  Distribution
                   <span> ▶</span>
-                </div>
+                </a>
               </Link>
               <ul className="submenu">
                 <li>
@@ -161,17 +166,12 @@ export default function NavFullscreen() {
           </Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/eligibilty-criteria">
+              <Link href="/registration">
                 <a>Registration Documents</a>
               </Link>
             </li>
             <li>
-              <Link href="/eligibilty-criteria">
-                <a>PDFs</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
+              <Link href="/certifications">
                 <a>Certications</a>
               </Link>
             </li>
@@ -181,33 +181,6 @@ export default function NavFullscreen() {
           <Link href="/contact">
             <a>Contact us</a>
           </Link>
-          {/* <ul className="sub-menu">
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Ramadan Appeal</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Emergency Appeal</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Pakistan Flood Appeal</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Education Appeal</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/eligibilty-criteria">
-                <a>Home Construction Appeal</a>
-              </Link>
-            </li>
-          </ul> */}
         </li>
       </ul>
     </nav>

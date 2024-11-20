@@ -9,7 +9,7 @@ export default function CauseDetails() {
   const router = useRouter();
   const { id } = router.query;
 
-  const allCauses = [...HelplineData.causes, ...HelplineData.educationData];
+  const allCauses = [...HelplineData.causes];
   const cause = allCauses.find((item) => item.id === parseInt(id));
 
   if (!cause) {
@@ -30,6 +30,7 @@ export default function CauseDetails() {
         raised={cause.raised}
         toGo={cause.toGo}
         category={cause.category}
+        detail={cause.description}
       />
     </Layout2>
   );
