@@ -171,11 +171,6 @@ export default function NavFullscreen() {
               </Link>
             </li>
             <li>
-              <Link href="/pdf">
-                <a>PDFs</a>
-              </Link>
-            </li>
-            <li>
               <Link href="/certifications">
                 <a>Certications</a>
               </Link>

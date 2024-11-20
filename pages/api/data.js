@@ -1837,11 +1837,68 @@ Helpline have realized that providing access to technology and digital education
   HelplineregistrationData: {
     title: "Helpline Registrations",
     headerBg: "img/causes/itlabsbg.png",
-    videoSrc: "https://www.youtube.com/embed/oSK1iD6k7OA",
+    videoSrc: "https://www.youtube.com/embed/txy5egSzmUY",
     heading: "Helpline Registrations",
     description: `
-Helpline have realized that providing access to technology and digital education can help bridge the digital divide and empower communities. These IT labs are set up in different areas of the country like in schools (i.e. Al-Kitab School), community centers (i.e. Bahawalpur, Tando Allah Yar), and other public spaces (i.e. Lahore) to make them accessible to a larger audience. They can be a valuable resource for students and communities to gain new technical skills, explore new opportunities, and improve their quality of life.
+This year, with your generous support, we’ve achieved incredible milestones in transforming lives. From providing clean water and distributing meals to underserved families to organizing healthcare camps and establishing IT labs in schools, your contributions have made a profound impact. Our education initiatives have empowered children with quality learning, while medical camps brought essential care to those in need. We also supported families with sustainable housing and vocational training. These achievements highlight the power of collective action and compassion. Thank you for standing with us and believing in our mission to build a brighter, better future for all..
     `,
     detailHeader: "Helpline IT Labs",
   },
+  pdfDocuments: [
+    {
+      id: 1,
+      title: "2014",
+      pdf: "/img/pdfs/HELPLINE-2014.pdf",
+    },
+    {
+      id: 2,
+      title: "2015",
+      pdf: "/img/pdfs/HELPLINE-2015.pdf",
+    },
+    {
+      id: 3,
+      title: "2016",
+      pdf: "/img/pdfs/HELPLINE-2016.pdf",
+    },
+    {
+      id: 4,
+      title: "2017",
+      pdf: "/img/pdfs/HELPLINE-2017.pdf",
+    },
+    {
+      id: 5,
+      title: "2018",
+      pdf: "/img/pdfs/HELPLINE-2018.pdf",
+    },
+    {
+      id: 6,
+      title: "2019",
+      pdf: "/img/pdfs/HELPLINE-2019.pdf",
+    },
+    {
+      id: 7,
+      title: "2020",
+      pdf: "/img/pdfs/HELPLINE-2020.pdf",
+    },
+    {
+      id: 8,
+      title: "2021",
+      pdf: "/img/pdfs/HELPLINE-2021.pdf",
+    },
+    {
+      id: 9,
+      title: "2022",
+      pdf: "/img/pdfs/HELPLINE-2022.pdf",
+    },
+    {
+      id: 10,
+      title: "2023",
+      pdf: "/img/pdfs/HELPLINE-2023.pdf",
+    },
+    {
+      id: 11,
+      title: "2020-24",
+      pdf: "/img/pdfs/TaxPayer-Registration-Certificate.pdf",
+    },
+  ],
 };

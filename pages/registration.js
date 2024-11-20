@@ -3,6 +3,7 @@ import Layout2 from "../Components/Layout/Layout2";
 import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
 import { HelplineData } from "../pages/api/data";
 import Eligibility from "../Components/Layout/Eligibility";
+import Registeration from "../Components/Elements/Registeration/Registeration";
 export default function registration() {
   return (
     <Layout2>
@@ -10,6 +11,7 @@ export default function registration() {
         content={HelplineData.HelplineregistrationData}
         image={HelplineData.HelplineregistrationData.headerBg}
       />
+      <Registeration content={HelplineData.HelplineregistrationData.pdf} />
       <Eligibility />
     </Layout2>
   );
