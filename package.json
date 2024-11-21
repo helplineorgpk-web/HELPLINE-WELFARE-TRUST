@@ -13,7 +13,9 @@
     "sass": "node-sass --watch public/scss/main.scss public/css/style.css --source-map public/css/style.css.map"
   },
   "dependencies": {
+    "@chakra-ui/react": "^3.2.0",
     "bootstrap": "^5.1.1",
+    "emailjs-com": "^3.2.0",
     "metismenujs": "^1.3.1",
     "next": "11.1.2",
     "node-sass": "^6.0.1",

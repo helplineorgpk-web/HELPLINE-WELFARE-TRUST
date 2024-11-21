@@ -13045,7 +13045,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .main-menu ul li a {
-  padding: 15px 0; 
+  padding: 15px 0;
   text-decoration: none;
   color: var(--clr-common-menu-color);
   font-weight: 700;
@@ -13988,7 +13988,7 @@ input.main-search-input:-ms-input-placeholder {
 }
 
 .main-menu:is(.menu_2) ul li a {
-  padding: 43px 0;
+  padding: 25px 0;
 }
 
 .main-menu .metismenu:is(.theme-1) ul li:hover > a {

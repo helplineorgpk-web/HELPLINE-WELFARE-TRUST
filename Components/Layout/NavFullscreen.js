@@ -8,23 +8,6 @@ export default function NavFullscreen() {
           <Link href="/">
             <a>Home</a>
           </Link>
-          {/* <ul className="sub-menu">
-            <li>
-              <Link href="/">
-                <a>Home 1</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/index-2">
-                <a>Home 2</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/index-3">
-                <a>Home 3</a>
-              </Link>
-            </li>
-          </ul> */}
         </li>
         <li className="active menu-item-has-children">
           <Link href="#">
@@ -98,20 +81,25 @@ export default function NavFullscreen() {
                 <a>Health</a>
               </Link>
             </li>
-            <li>
-              <Link href="/itlab">
-                <a>IT Labs</a>
+            <li className="menu-item-has-children">
+              <Link href="#">
+                <a className="innerli">
+                  Islamic Program
+                  <span> ▶</span>
+                </a>
               </Link>
-            </li>
-            <li>
-              <Link href="/rashan">
-                <a>Rashan Program</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/disaster">
-                <a>Disaster Management</a>
-              </Link>
+              <ul className="submenu">
+                <li>
+                  <Link href="/islamicactivity">
+                    <a className="sub-dis">Islamic Activity</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/qurbani">
+                    <a className="sub-dis">Qurbani Program</a>
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li className="menu-item-has-children">
               <Link href="#">
@@ -134,6 +122,16 @@ export default function NavFullscreen() {
               </ul>
             </li>
             <li>
+              <Link href="/rashan">
+                <a>Rashan Program</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/disaster">
+                <a>Disaster Management</a>
+              </Link>
+            </li>
+            <li>
               <Link href="/familyWelfare">
                 <a>Family Welfare</a>
               </Link>
@@ -149,8 +147,8 @@ export default function NavFullscreen() {
               </Link>
             </li>
             <li>
-              <Link href="/qurbani">
-                <a>Qurbani Program</a>
+              <Link href="/itlab">
+                <a>IT Labs</a>
               </Link>
             </li>
           </ul>
