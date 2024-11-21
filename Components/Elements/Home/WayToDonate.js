@@ -15,9 +15,11 @@ function WayToDonate() {
           <div className={styles.block} key={index}>
             <h6>{method.title}</h6>
             <p>{method.description}</p>
-            <button className={styles[method.buttonType]}>
-              {method.buttonLabel}
-            </button>
+            <a href="/donation">
+              <div className={styles[method.buttonType]}>
+                {method.buttonLabel}
+              </div>
+            </a>
           </div>
         ))}
       </div>

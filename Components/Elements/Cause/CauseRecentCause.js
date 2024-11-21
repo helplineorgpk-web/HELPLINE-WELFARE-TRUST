@@ -3,9 +3,18 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function CauseRecentCause({ categories, causes }) {
-  const [filter, setFilter] = useState(
-    categories?.AllCategories ? "" : "Education" 
-  );
+  const [filter, setFilter] = useState(() => {
+    if (categories?.AllCategories) {
+      return "";
+    }
+    if (categories?.Education) {
+      return "Education";
+    }
+    if (categories?.Aqiqah) {
+      return "Aqiqah";
+    }
+  });
+
   const [projects, setProjects] = useState([]);
 
   const router = useRouter();

@@ -1005,6 +1005,375 @@ export const HelplineData = {
       date: "2022-11-27 00:00:00",
       color: "#65cabb",
     },
+    // eee?
+    {
+      id: 38,
+      category: ["Sadaqah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Sadaqah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 39,
+      category: ["Sadaqah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Sadaqah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 40,
+      category: ["Sadaqah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Sadaqah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 41,
+      category: ["Sadaqah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Sadaqah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 42,
+      category: ["Kaffarah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Kaffarah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 43,
+      category: ["Kaffarah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Kaffarah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 44,
+      category: ["Kaffarah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Kaffarah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 45,
+      category: ["Kaffarah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Kaffarah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 46,
+      category: ["Fidyah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Fidyah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 47,
+      category: ["Fidyah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Fidyah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 48,
+      category: ["Fidyah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Fidyah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 49,
+      category: ["Fidyah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Fidyah Program .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 50,
+      category: ["Aqiqah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Aqiqah – Celebrate the Birth of Your Child: .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 51,
+      category: ["Aqiqah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Aqiqah – Celebrate the Birth of Your Child:.",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 52,
+      category: ["Aqiqah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Aqiqah – Celebrate the Birth of Your Child: .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 53,
+      category: ["Aqiqah"],
+      img: (
+        <Image
+          src="/img/causes/idaranazriyapakistan.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+      pbar: "pbar_1",
+      progressData: "65",
+      desc: "Helpline Aqiqah – Celebrate the Birth of Your Child: .",
+      goal: "4,5100",
+      raised: "45,300",
+      toGo: "45,200",
+      address: "Douglas Park, Chicago, IL",
+      date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
   ],
   team: [
     {
@@ -1840,7 +2209,7 @@ Helpline have realized that providing access to technology and digital education
     videoSrc: "https://www.youtube.com/embed/txy5egSzmUY",
     heading: "Helpline Registrations",
     description: `
-This year, with your generous support, we’ve achieved incredible milestones in transforming lives. From providing clean water and distributing meals to underserved families to organizing healthcare camps and establishing IT labs in schools, your contributions have made a profound impact. Our education initiatives have empowered children with quality learning, while medical camps brought essential care to those in need. We also supported families with sustainable housing and vocational training. These achievements highlight the power of collective action and compassion. Thank you for standing with us and believing in our mission to build a brighter, better future for all..
+This year, with your generous support, we’ve achieved incredible milestones in transforming lives. From providing clean water and distributing meals to underserved families to organizing healthcare camps and establishing IT labs in schools, your contributions have made a profound impact. Our education initiatives have empowered children with quality learning, while medical camps brought essential care to those in need. We also supported families with sustainable housing and vocational training. These achievements highlight the power of collective action and compassion. Thank you for standing with us and believing in our mission to build a brighter, better future for all.
     `,
     detailHeader: "Helpline IT Labs",
   },
@@ -1901,4 +2270,14 @@ This year, with your generous support, we’ve achieved incredible milestones in
       pdf: "/img/pdfs/TaxPayer-Registration-Certificate.pdf",
     },
   ],
+  HelplineIslamicData: {
+    title: "Helpline Islamic Activity",
+    headerBg: "img/causes/islam.png",
+    videoSrc: "https://www.youtube.com/embed/1KuzgWg2m7o",
+    heading: "Helpline Islamic Activity",
+    description: `
+       Helpline promotes Islamic values through Quran distribution, educational programs, Ramadan iftar campaigns, and zakat collection. It supports mosque construction, organizes study circles, and provides aid to orphans and the needy. Key initiatives include Eid celebrations and sacrificial meat distribution, fostering hope and unity in the community.
+    `,
+    detailHeader: "Helpline Islamic Activity",
+  },
 };

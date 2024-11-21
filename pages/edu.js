@@ -6,7 +6,6 @@ import { HelplineData } from "../pages/api/data";
 import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
 
 const data = {
-  // AllCategories: "All Categories",
   Water: "Helpline Schools",
   HouseConstructions: "Helpline Adopted Students",
   Education: "Al Kitab Education System",

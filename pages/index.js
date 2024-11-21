@@ -13,7 +13,7 @@ import WayToDonate from "../Components/Elements/Home/WayToDonate";
 import { HelplineData } from "../pages/api/data";
 
 const data = {
-  Water: "Water",
+  Water: "House Construction",
   waterprojects: "Latest Cause",
 };
 export default function Home() {
@@ -28,7 +28,6 @@ export default function Home() {
           <CausesArea causes={cause} data={data} />
           <SupportArea />
           <HelplineProject />
-          {/* <FeaturedArea /> */}
           <WayToDonate />
           <NewsFeed />
         </main>
