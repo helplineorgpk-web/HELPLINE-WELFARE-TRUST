@@ -4,12 +4,12 @@ export default function NavFullscreen() {
   return (
     <nav id="mobile-menu">
       <ul>
-        <li className="active menu-item-has-children">
+        <li className="menu-item-has-children">
           <Link href="/">
             <a>Home</a>
           </Link>
         </li>
-        <li className="active menu-item-has-children">
+        <li className=" menu-item-has-children">
           <Link href="#">
             <a>About</a>
           </Link>
@@ -97,6 +97,11 @@ export default function NavFullscreen() {
                 <li>
                   <Link href="/qurbani">
                     <a className="sub-dis">Qurbani Program</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/masjid">
+                    <a className="sub-dis">Masjid Program</a>
                   </Link>
                 </li>
               </ul>

@@ -1,11 +1,45 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import emailjs from "emailjs-com";
 
 export default function ContactGetInTouch() {
-  const [isOpen, setOpen] = useState(false);
-  const isOpenFalse = () => setOpen(!isOpen);
-  const [isSelect, setSelect] = useState("Bangla");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const finalMessage = `${message}\n\nPhone Number: ${phone}`;
+
+    const templateParams = {
+      to_name: "Help Line",
+      from_name: name,
+      from_email: email,
+      message: finalMessage,
+    };
+
+    emailjs
+      .send(
+        "service_rllrreu",
+        "template_xm5hpkn",
+        templateParams,
+        "MIBYbIcXK2xnIWlrP"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setName("");
+          setEmail("");
+          setPhone("");
+          setMessage("");
+        },
+        (err) => {
+          console.error("FAILED...", err);
+        }
+      );
+  };
+
   return (
     <div
       className="get_intouch_area pt-120 pb-120"
@@ -15,88 +49,46 @@ export default function ContactGetInTouch() {
         <div className="row">
           <div className="col-xxl-6 col-xl-6 col-lg-7 order-1 order-lg-0">
             <div className="contact_section contact_contact bottom_radius0">
-              <form action="#">
+              <form onSubmit={handleSubmit} action="#">
                 <div className="row">
                   <div className="col-xxl-6 col-sm-6">
-                    <input type="text" placeholder="Enter full name" />
+                    <input
+                      type="text"
+                      placeholder="Enter full name"
+                      name="name"
+                      value={name}
+                      required
+                      onChange={(e) => setName(e.target.value)}
+                    />
                   </div>
                   <div className="col-xxl-6 col-sm-6">
-                    <input type="email" placeholder="Enter email address" />
+                    <input
+                      type="email"
+                      placeholder="Enter email address"
+                      name="email"
+                      value={email}
+                      required
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                   </div>
 
                   <div className="col-xxl-6 col-sm-6">
-                    <input type="tel" placeholder="Phone number" />
-                  </div>
-                  <div className="col-xxl-6 col-sm-6">
-                    <div
-                      onClick={isOpenFalse}
-                      className={`nice-select contact_select ${
-                        isOpen && "open"
-                      }`}
-                    >
-                      <span className="current">{isSelect}</span>
-                      <ul className="list">
-                        <li
-                          onClick={() => setSelect("Select Subject")}
-                          className={`option ${
-                            isSelect == "Select Subject" && "selected focus"
-                          }`}
-                        >
-                          Select Subject
-                        </li>
-                        <li
-                          onClick={() => setSelect("Bangla")}
-                          className={`option ${
-                            isSelect == "Bangla" && "selected focus"
-                          }`}
-                        >
-                          Bangla
-                        </li>
-                        <li
-                          onClick={() => setSelect("English")}
-                          className={`option ${
-                            isSelect == "English" && "selected focus"
-                          }`}
-                        >
-                          English
-                        </li>
-                        <li
-                          onClick={() => setSelect("Mathmatics")}
-                          className={`option ${
-                            isSelect == "Mathmatics" && "selected focus"
-                          }`}
-                        >
-                          Mathmatics
-                        </li>
-                        <li
-                          onClick={() => setSelect("Textile")}
-                          className={`option ${
-                            isSelect == "Textile" && "selected focus"
-                          }`}
-                        >
-                          Textile
-                        </li>
-                      </ul>
-                    </div>
-                    <select
-                      name="contact_select"
-                      id="contact_select"
-                      className="contact_select"
-                    >
-                      <option value="Select Subject">Select Subject</option>
-                      <option value="Bangla">Bangla</option>
-                      <option value="English">English</option>
-                      <option value="Mathmatics">Mathmatics</option>
-                      <option value="Textile">Textile</option>
-                    </select>
+                    <input
+                      type="tel"
+                      placeholder="Phone number"
+                      name="phone"
+                      value={phone}
+                      required
+                      onChange={(e) => setPhone(e.target.value)}
+                    />
                   </div>
                   <div className="col-xxl-12">
                     <textarea
                       name="message"
-                      id="message"
-                      cols="30"
-                      rows="10"
-                      placeholder="Enter Message"
+                      placeholder="Your Message"
+                      value={message}
+                      required
+                      onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                   </div>
                   <div className="col-xxl-12">

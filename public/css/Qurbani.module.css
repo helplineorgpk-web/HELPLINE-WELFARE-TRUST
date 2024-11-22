@@ -1,6 +1,6 @@
 .container {
-  background: linear-gradient(135deg, #65cabb, #C6FBF3);
-  padding: 50px 0;
+  background: linear-gradient(135deg, #65cabb, #c6fbf3);
+  padding: 40px 10px;
   border-radius: 8px;
 }
 
@@ -35,6 +35,12 @@
   justify-content: flex-start;
   padding: 20px;
   color: #fff;
+  transition: all 0.3s ease;
+}
+
+.slideContent:hover .textOverlay {
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
 }
 
 .textOverlay {
@@ -42,6 +48,7 @@
   padding: 20px;
   border-radius: 8px;
   max-width: 70%;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .detailHeader {
@@ -57,16 +64,20 @@
   line-height: 1.6;
 }
 
-.slideContent:hover .textOverlay {
-  background: rgba(0, 0, 0, 0.7);
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}
-
+/* Adjustments for smaller devices */
 @media screen and (max-width: 768px) {
+  .innerContainer {
+    max-width: 100%;
+  }
+
   .slideContent {
     height: 300px;
     padding: 15px;
+  }
+
+  .textOverlay {
+    padding: 15px;
+    max-width: 90%;
   }
 
   .detailHeader {
@@ -76,12 +87,22 @@
   .detail {
     font-size: 14px;
   }
+
+  .swiperContainer {
+    margin: 0 auto;
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .slideContent {
     height: 250px;
     padding: 10px;
+  }
+
+  .textOverlay {
+    padding: 10px;
+    max-width: 95%;
   }
 
   .detailHeader {

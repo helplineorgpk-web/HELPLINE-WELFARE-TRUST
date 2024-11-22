@@ -2127,6 +2127,48 @@ The 500 individuals who benefitted from this initiative are now equipped with th
         "Join us in this noble cause as we collaborate to bring smiles and relief to those in need.",
     },
   ],
+  MasjidContent: {
+    title: "HELPLINE Masjid PROGRAM",
+    supportButtonText: "SUPPORTING APPEAL",
+    headerBg: "img/causes/masjidbg.jpg",
+    videoSrc: "https://www.youtube.com/embed/6JoodIjZILk",
+    heading: "Helpline Masjid Program",
+    description: `
+     By supporting Masjid Schools, Helpline is helping to provide a valuable service to communities where students can learn Islamic studies and other subjects such as Arabic and Quranic studies on the basis of Muakhaat-e-Madina. Helpline has adopted 6 Masjid schools as a means of improving educational opportunities for underprivileged children.
+    `,
+  },
+  masjidData: [
+    {
+      image: "img/causes/masjid1.png",
+      detailHeader: "Andu Mahajir Masjid",
+      detail:
+        "Andu Mahajir Masjid, backed by Helpline NGO, unites the community with education, healthcare, and social support, fostering harmony and togetherness.",
+    },
+    {
+      image: "img/causes/masjid2.png",
+      detailHeader: "Bilal Masjid Misalli Goth(TJM)",
+      detail:
+        "Bilal Masjid in Misalli Goth, supported by Helpline NGO, is a center for prayer, Islamic learning, healthcare, and social aid, promoting unity and community well-being.",
+    },
+    {
+      image: "img/causes/masjid3.png",
+      detailHeader: "Jamia Masjid Fatima Bhagliar Thar",
+      detail:
+        "Jamia Masjid Fatima Bhagliar Thar, supported by Helpline NGO, serves as a community hub in Thar, providing prayers, education, healthcare, and vital social services.",
+    },
+    {
+      image: "img/causes/masjid4.png",
+      detailHeader: "Kakrario Madrasa Tharparker",
+      detail:
+        "Kakrario Madrasa Tharparker, supported by Helpline NGO, is a vital center for Islamic education, providing knowledge, food, clothing, and shelter to students in need.",
+    },
+    {
+      image: "img/causes/masjid5.png",
+      detailHeader: "Katho Sama Madrasa",
+      detail:
+        "Katho Sama Madrasa in Sindh, supported by Helpline NGO, is a hub for Islamic education, offering knowledge, food, clothing, and shelter to students in need.",
+    },
+  ],
   HelplineHasneData: {
     title: "Helpline & Hesne Ration Distribution Program",
     supportButtonText: "SUPPORTING APPEAL",
@@ -2165,6 +2207,7 @@ The Helpline organization is proud to announce the distribution of shoes, clothe
 Helpline have realized that providing access to technology and digital education can help bridge the digital divide and empower communities. These IT labs are set up in different areas of the country like in schools (i.e. Al-Kitab School), community centers (i.e. Bahawalpur, Tando Allah Yar), and other public spaces (i.e. Lahore) to make them accessible to a larger audience. They can be a valuable resource for students and communities to gain new technical skills, explore new opportunities, and improve their quality of life.
     `,
     detailHeader: "Helpline IT Labs",
+    
   },
   ITData: [
     {
