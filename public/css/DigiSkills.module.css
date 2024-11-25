@@ -1,46 +1,130 @@
 .container {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
   padding: 20px;
-  background: linear-gradient(135deg, #65cabb, #c6f3e3);
-  color: #333;
+  background: linear-gradient(135deg, #f7fbfc, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
   text-align: center;
-  margin-bottom: 30px;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  background: linear-gradient(
+    135deg,
+    rgba(101, 202, 187, 0.3),
+    rgba(214, 203, 198, 0.3)
+  );
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(101, 202, 187, 0.2);
 }
 
+.headerImage {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.footerImage {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
 .header h1 {
-  font-size: 2.5rem;
-  color: #007bff;
+  font-size: 3rem;
+  color: #263b5d;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .header p {
   font-size: 1.2rem;
-  color: #555;
+  color: #34495e;
+  line-height: 1.8;
+  margin: 0;
 }
 
-.programSection,
-.psdfSection {
-  background: #fff;
-  padding: 20px;
+.programSection {
+  width: 100%;
+  max-width: 1200px;
+  background: linear-gradient(135deg, #ffffff, #f2f6f7);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.programTitle {
+  font-size: 2.5rem;
+  color: #263b5d;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(250, 250, 250, 0.9)
+  );
+  border-radius: 15px;
+  padding: 25px;
   margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.programSection h2,
-.psdfSection h2 {
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.cardTitle {
   font-size: 1.8rem;
-  color: #007bff;
+  color: #1abc9c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
   margin-bottom: 15px;
 }
 
-.programDetails p,
-.psdfSection p {
-  margin-bottom: 10px;
-  color: #555;
+.cardLink {
+  display: inline-block;
+  background: linear-gradient(135deg, #65cabb, #d6cbc6);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(101, 202, 187, 0.3);
+  margin: 20px 0;
+}
+
+.cardLink:hover {
+  background: linear-gradient(135deg, #d6cbc6, #65cabb);
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(101, 202, 187, 0.5);
 }
 
 .courseList {
@@ -48,27 +132,69 @@
   padding: 0;
 }
 
-.courseList h3 {
+.courseItem {
+  font-size: 1rem;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
   margin-bottom: 10px;
-  color: #007bff;
+  color: #34495e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.courseList li {
-  padding: 5px 0;
-  border-bottom: 1px solid #ddd;
-  color: #333;
+.courseItem:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-.courseList li:last-child {
-  border-bottom: none;
+.psdfSection {
+  margin-top: 50px;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(101, 202, 187, 0.3),
+    rgba(214, 203, 198, 0.4)
+  );
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(101, 202, 187, 0.3);
 }
 
-.psdfSection address {
-  font-style: normal;
-  line-height: 1.4;
-  margin-top: 15px;
+.psdfTitle {
+  font-size: 2.5rem;
+  color: #263b5d;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.psdfSection address strong {
-  color: #007bff;
+.psdfDescription {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.psdfAddress {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.psdfAddress strong {
+  color: #1abc9c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
