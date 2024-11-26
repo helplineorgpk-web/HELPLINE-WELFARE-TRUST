@@ -6,7 +6,6 @@ import Link from "next/link";
 export default function MissionAbout() {
   const [isShow, setShow] = useState(false);
   return (
-    //about single area start
     <div className="about_single_area pt-120 pb-80">
       <div className="container">
         <div className="row align-items-center">
@@ -15,7 +14,7 @@ export default function MissionAbout() {
               <div className="img_effect_white about_video_image_wrapper">
                 <Link href="/event">
                   <a>
-                    <img src="/img/bg/mission.jpg" alt="img" />
+                    <img src="/img/causes/mission.jpg" alt="img" />
                   </a>
                 </Link>
               </div>
@@ -31,7 +30,7 @@ export default function MissionAbout() {
             {isShow && (
               <VideoPopUp
                 setShow={() => setShow(false)}
-                src="//www.youtube.com/embed/B4GwnBrp41s?autoplay=1"
+                src="https://www.youtube.com/embed/SsDAXkU1BiU?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=1"
               />
             )}
           </div>

@@ -61,7 +61,7 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   text-align: left;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
   position: relative;
   overflow: hidden;
 }
@@ -79,6 +79,7 @@
 .certificationItem:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #d6cbc6, #65cabb); /* Reversed Gradient */
 }
 
 .certificationItem h2 {

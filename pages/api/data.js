@@ -2493,7 +2493,7 @@ This year, with your generous support, we’ve achieved incredible milestones in
         "Now click on the View option for any of the completed courses, it will redirect you to the e-certificate.",
         "Download and Print options are available on the top right corner of that page.",
       ],
-      link: "Login to https://lms.digiskills.pk/",
+      link: "https://lms.digiskills.pk",
     },
     {
       title:
@@ -2537,7 +2537,7 @@ This year, with your generous support, we’ve achieved incredible milestones in
       ],
     },
   ],
-newsFeedData: [
+  newsFeedData: [
     {
       id: 1,
       image: "/img/news/newsfeed22.jpg",
@@ -2565,5 +2565,124 @@ newsFeedData: [
       date: "24th June 2021",
       link: "/blog-details",
     },
-  ]
+  ],
+  formFields: [
+    {
+      label: "Designation",
+      name: "designation",
+      placeholder: "Enter Your Designation...",
+      required: true,
+    },
+    {
+      label: "Full Name",
+      name: "fullName",
+      placeholder: "Enter Your Full Name...",
+      required: true,
+    },
+    {
+      label: "Father's Name",
+      name: "fatherName",
+      placeholder: "Enter Your Father Name...",
+      required: true,
+    },
+    {
+      label: "CNIC",
+      name: "cnic",
+      placeholder: "Enter Your CNIC...",
+      required: true,
+    },
+    {
+      label: "Phone Number",
+      name: "phoneNumber",
+      placeholder: "Enter Your Phone Number...",
+      required: true,
+    },
+    {
+      label: "Email",
+      name: "email",
+      type: "email",
+      placeholder: "Enter Your Email...",
+      required: true,
+    },
+    {
+      label: "Date of Joining",
+      name: "dateOfJoining",
+      type: "date",
+      required: true,
+    },
+    {
+      label: "Address",
+      name: "address",
+      type: "textarea",
+      placeholder: "Enter Your Home Address...",
+      required: true,
+    },
+    {
+      label: "Select One Option",
+      name: "maritalStatus",
+      type: "select",
+      options: ["Married", "Unmarried"],
+      required: true,
+    },
+    {
+      label: "If Married, No. of Wifes",
+      name: "noOfWives",
+      type: "select",
+      options: Array.from({ length: 5 }, (_, i) => i + 1).map((val) => ({
+        label: val,
+        value: val,
+      })),
+      placeholder: "None",
+    },
+    {
+      label: "Wife Name/s",
+      name: "wifesNames",
+      placeholder: "Enter Full Name of Your Wife...",
+    },
+    {
+      label: "No. of Children",
+      name: "noOfChildren",
+      type: "select",
+      options: Array.from({ length: 10 }, (_, i) => i + 1).map((val) => ({
+        label: val,
+        value: val,
+      })),
+      placeholder: "None",
+    },
+    {
+      label: "Name of the Children",
+      name: "childrenNames",
+      placeholder: "Enter Name of Your Children...",
+    },
+    {
+      label: "Mother",
+      name: "mother",
+      placeholder: "Enter Your Mother Name...",
+    },
+    {
+      label: "Transport",
+      name: "transport",
+      type: "select",
+      options: ["None", "Bike", "Car", "Bus"],
+      placeholder: "Select Transport Type",
+    },
+    {
+      label: "Make & Type",
+      name: "makeAndType",
+      placeholder: "Enter Make & Type...",
+    },
+    { label: "Model", name: "model", placeholder: "Enter Model..." },
+    {
+      label: "Reg. Number",
+      name: "regNumber",
+      placeholder: "Enter Registration Number...",
+    },
+    {
+      label: "Any Other Information",
+      name: "otherInfo",
+      type: "textarea",
+      placeholder: "Enter Additional Information...",
+    },
+    { label: "Date of Submission", name: "dateOfSubmission", type: "date" },
+  ],
 };

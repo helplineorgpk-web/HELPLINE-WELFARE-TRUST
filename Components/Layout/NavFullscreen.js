@@ -151,10 +151,30 @@ export default function NavFullscreen() {
                 <a>Cataract Program</a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/itlab">
                 <a>IT Labs</a>
               </Link>
+            </li> */}
+            <li className="menu-item-has-children">
+              <Link href="#">
+                <a className="innerli">
+                  IT Labs
+                  <span> ▶</span>
+                </a>
+              </Link>
+              <ul className="submenu">
+                <li>
+                  <Link href="/itlab">
+                    <a className="sub-dis">IT Labs</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/itform">
+                    <a className="sub-dis">IT Labs Form</a>
+                  </Link>
+                </li>
+              </ul>
             </li>
           </ul>
         </li>
