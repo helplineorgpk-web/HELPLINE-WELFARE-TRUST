@@ -1,13 +1,7 @@
 import React from "react";
-import { useState } from "react";
 
 export default function MissionSupport() {
-  const [isToggled, setToggled] = useState(false);
-  const toggleTrueFalse = () => setToggled(!isToggled);
-
-  const [isSelect, setSelect] = useState("USD");
   return (
-    //Support area start
     <div className="support_area gray-bg pt-115 pb-90">
       <div className="container">
         <div className="row">
@@ -56,77 +50,32 @@ export default function MissionSupport() {
               className="single-support p-rel ml-50 mb-30"
               style={{ background: "url(/img/bg/support_bg.jpg)" }}
             >
-              <div className="support-wrapper p-rel">
-                <h4 className="support_title">Support Us</h4>
-                <p className="mb-35">
-                  Charity is the largest global for crowdfunding
-                </p>
-                <div className="support_form">
-                  <form action="#">
-                    <div className="support_search_section mb-20">
-                      <input type="text" placeholder="$100" id="Support" />
-                      <button className="amount_btn">Amount</button>
-                      <div
-                        onClick={toggleTrueFalse}
-                        className={`nice-select support_btn support_select ${isToggled ? "open" : ""}`}
-                      >
-                        <span className="current">{isSelect}</span>
-                        <ul className="list">
-                          <li
-                            onClick={() => setSelect("USD")}
-                            className={`option ${isSelect == "USD" && "selected focus"}`}
-                          >
-                            USD
-                          </li>
-                          <li
-                            onClick={() => setSelect("EUR")}
-                            className={`option ${isSelect == "EUR" && "selected focus"}`}
-                          >
-                            EUR
-                          </li>
-                          <li
-                            onClick={() => setSelect("JPY")}
-                            className={`option ${isSelect == "JPY" && "selected focus"}`}
-                          >
-                            JPY
-                          </li>
-                          <li
-                            onClick={() => setSelect("BDT")}
-                            className={`option ${isSelect == "BDT" && "selected focus"}`}
-                          >
-                            BDT
-                          </li>
-                        </ul>
-                      </div>
-                      {/* <select className="support_btn support_select">
-                                                <option value="Currency">USD</option>
-                                                <option value="">EUR</option>
-                                                <option value="">JPY</option>
-                                                <option value="">BDT</option>
-                                            </select> */}
-                    </div>
-                    <div className="donar_section support_currency d-sm-flex d-inline-block justify-content-center">
-                      <div className="donar_currency mb-30">
-                        <button className="currency">$5</button>
-                        <button className="currency ml-10">$10</button>
-                        <button className="currency ml-10">$50</button>
-                        <button className="currency ml-10">$100</button>
-                      </div>
-                      <button
-                        type="submit"
-                        className="g_btn curr_btn rad-30 ml-10"
-                      >
-                        Donate<span></span>
-                      </button>
-                    </div>
-                  </form>
+              <form action="#">
+                <div className="support-wrapper p-rel">
+                  <h4 className="support_title">Support Us</h4>
+                  <p className="mb-35 opacity_6">
+                    Charity is the largest global for crowdfunding For those who
+                    wish to join hands with us in creating a brighter tomorrow,
+                    we offer a seamless path to philanthropy. We invite you to
+                    become a part of our journey, and work together to build a
+                    society where hope, equity, and opportunity flourish for
+                    all. Join us in embracing the spirit of Mawakhath-e-Madina
+                    and turning it into a living legacy of transformation.
+                  </p>
+                  <div className="donar_section support_currency d-sm-flex d-inline-block justify-content-center">
+                    <button
+                      type="submit"
+                      className="g_btn curr_btn rad-30 ml-10"
+                    >
+                      Donate<span></span>
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    //Support area end
   );
 }

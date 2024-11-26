@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function AboutAboutArea() {
   return (
-    //about area start
     <section className="about_area pt-120">
       <div className="about_white_bg">
         <div className="container">
@@ -66,7 +65,5 @@ export default function AboutAboutArea() {
         </div>
       </div>
     </section>
-
-    //about area end
   );
 }

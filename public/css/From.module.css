@@ -1,0 +1,133 @@
+
+.container {
+  background: linear-gradient(135deg, #65cabb, #d6cbc6);
+  padding: 40px;
+}
+
+.formContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.formTitle {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 15px;
+}
+
+.input,
+.textarea,
+.select {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.2);
+}
+
+.textarea {
+  resize: none;
+  height: 120px;
+}
+
+.formSelect {
+  cursor: pointer;
+}
+
+.inputError {
+  border-color: #e74c3c !important;
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.2) !important;
+}
+
+.errorText {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -20px;
+}
+
+.formButton {
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #4caf50, #3e8e41);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.formButton:hover {
+  background: linear-gradient(135deg, #3e8e41, #4caf50);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
+.formButton:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 20px;
+  }
+
+  .formButton {
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

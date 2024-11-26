@@ -1,12 +1,13 @@
 .donationArea {
-  padding: 80px 0;
+  padding: 80px 20px;
   background: linear-gradient(135deg, #65cabb, #d6cbc6);
 }
 
 .imageWrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .image {
@@ -22,65 +23,6 @@
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.form {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.heading {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 30px;
-}
-
-.input,
-.textarea {
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  color: #333;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
-  background: rgba(255, 255, 255, 0.7);
-}
-
-.input:focus,
-.textarea:focus {
-  border-color: #007bff;
-  background-color: #f5f5f5;
-  outline: none;
-}
-
-.textarea {
-  resize: vertical;
-  height: 120px;
-}
-
-.submitButton {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
-  background: #007bff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.submitButton:hover {
-  background: #0056b3;
-  transform: scale(1.02);
-}
-
 .bankDetails {
   margin-bottom: 40px;
   padding: 30px;
@@ -91,14 +33,14 @@
 }
 
 .bankHeading {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
 }
 
 .bankContent p {
-  font-size: 16px;
+  font-size: 18px;
   margin: 10px 0;
   color: #555;
 }
@@ -107,17 +49,35 @@
   color: #007bff;
 }
 
+/* Responsive Styling */
 @media only screen and (max-width: 850px) {
-  .form {
-    padding: 30px;
+  .donationArea {
+    padding: 60px 10px;
   }
 
   .imageWrapper {
-    margin-bottom: 20px;
+    gap: 15px;
   }
 
-  .submitButton {
-    padding: 10px;
+  .bankHeading {
+    font-size: 24px;
+  }
+
+  .bankContent p {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .image {
+    max-width: 100%;
+  }
+
+  .bankHeading {
+    font-size: 22px;
+  }
+
+  .bankContent p {
+    font-size: 14px;
   }
 }

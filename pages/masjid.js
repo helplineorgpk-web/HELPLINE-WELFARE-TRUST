@@ -4,13 +4,13 @@ import { HelplineData } from "../pages/api/data";
 import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
 import Qurbani from "../Components/Elements/Qurbani/Qurbani";
 
-export default function qurbani() {
-  const Data = HelplineData.swiperData;
+export default function masjid() {
+  const Data = HelplineData.masjidData;
   return (
     <Layout2>
       <DisasterHeader
-        content={HelplineData.qurbaniContent}
-        image={HelplineData.qurbaniContent.headerBg}
+        content={HelplineData.MasjidContent}
+        image={HelplineData.MasjidContent.headerBg}
       />
       <Qurbani swiperData={Data} />
     </Layout2>

@@ -2127,6 +2127,48 @@ The 500 individuals who benefitted from this initiative are now equipped with th
         "Join us in this noble cause as we collaborate to bring smiles and relief to those in need.",
     },
   ],
+  MasjidContent: {
+    title: "HELPLINE Masjid PROGRAM",
+    supportButtonText: "SUPPORTING APPEAL",
+    headerBg: "img/causes/masjidbg.jpg",
+    videoSrc: "https://www.youtube.com/embed/6JoodIjZILk",
+    heading: "Helpline Masjid Program",
+    description: `
+     By supporting Masjid Schools, Helpline is helping to provide a valuable service to communities where students can learn Islamic studies and other subjects such as Arabic and Quranic studies on the basis of Muakhaat-e-Madina. Helpline has adopted 6 Masjid schools as a means of improving educational opportunities for underprivileged children.
+    `,
+  },
+  masjidData: [
+    {
+      image: "img/causes/masjid1.png",
+      detailHeader: "Andu Mahajir Masjid",
+      detail:
+        "Andu Mahajir Masjid, backed by Helpline NGO, unites the community with education, healthcare, and social support, fostering harmony and togetherness.",
+    },
+    {
+      image: "img/causes/masjid2.png",
+      detailHeader: "Bilal Masjid Misalli Goth(TJM)",
+      detail:
+        "Bilal Masjid in Misalli Goth, supported by Helpline NGO, is a center for prayer, Islamic learning, healthcare, and social aid, promoting unity and community well-being.",
+    },
+    {
+      image: "img/causes/masjid3.png",
+      detailHeader: "Jamia Masjid Fatima Bhagliar Thar",
+      detail:
+        "Jamia Masjid Fatima Bhagliar Thar, supported by Helpline NGO, serves as a community hub in Thar, providing prayers, education, healthcare, and vital social services.",
+    },
+    {
+      image: "img/causes/masjid4.png",
+      detailHeader: "Kakrario Madrasa Tharparker",
+      detail:
+        "Kakrario Madrasa Tharparker, supported by Helpline NGO, is a vital center for Islamic education, providing knowledge, food, clothing, and shelter to students in need.",
+    },
+    {
+      image: "img/causes/masjid5.png",
+      detailHeader: "Katho Sama Madrasa",
+      detail:
+        "Katho Sama Madrasa in Sindh, supported by Helpline NGO, is a hub for Islamic education, offering knowledge, food, clothing, and shelter to students in need.",
+    },
+  ],
   HelplineHasneData: {
     title: "Helpline & Hesne Ration Distribution Program",
     supportButtonText: "SUPPORTING APPEAL",
@@ -2280,4 +2322,367 @@ This year, with your generous support, we’ve achieved incredible milestones in
     `,
     detailHeader: "Helpline Islamic Activity",
   },
+  digiLabs: [
+    {
+      title: "What is DigiSkills?",
+      description:
+        "DigiSkills is Pakistan’s first online training program to empower youth with in-demand skills for the freelance market. The courses are in a mix of Urdu-English for accessibility.",
+    },
+    {
+      title: "Why join?",
+      description:
+        "Enhance your skills and earn through freelancing. Learning these skills will enable you to become part of the rapidly growing freelance market. The program is completely free!",
+    },
+    {
+      title: "Is this a Government program?",
+      description:
+        "Yes, DigiSkills is an initiative of the Government of Pakistan spearheaded by the Ministry of IT & Telecom through Ignite – National Technology Fund and executed by Virtual University of Pakistan.",
+    },
+    {
+      title: "When do enrollments open?",
+      description:
+        "Enrollments for Batch-05 opened on 5th June 2023. Enrollment is on a first-come, first-served basis.",
+    },
+    {
+      title: "When do classes start?",
+      description: "Classes for Batch-05 started on 4th July 2023.",
+    },
+    {
+      title: "Do I have to pay?",
+      description:
+        "No, the program is absolutely free! Just sign up and enroll in your preferred courses.",
+    },
+    {
+      title: "Courses Offered",
+      courses: [
+        "Freelancing (Mandatory for first-time trainees)",
+        "E-Commerce Management",
+        "Creative Writing",
+        "Graphic Design",
+        "QuickBooks",
+        "WordPress",
+        "AutoCAD",
+        "Search Engine Optimization (SEO)",
+        "Digital Marketing",
+        "Digital Literacy",
+        "Virtual Assistant",
+        "Affiliate Marketing",
+        "Communication & Soft Skills",
+        "Video Editing, Animation & Vlogging",
+        "Data Analytics & Business Intelligence",
+      ],
+    },
+    {
+      title: "Technical Requirements",
+      description:
+        "You need a stable internet connection and a desktop, laptop, or Android phone. You can also download the DigiSkills app from Google Play Store.",
+      link: "https://play.google.com/store/apps/details?id=pk.digiskills.lms",
+    },
+    {
+      title: "Training Location",
+      description:
+        "All training is online through the DigiSkills Learning Management System (LMS). You can access videos, materials, and course content at your convenience from home or office.",
+    },
+    {
+      title: "How do I study?",
+      description:
+        "All the videos and learning material for each module will be available on DigiSkills Online Learning Platform. You can self-pace the training or you can follow the announced time table which will be available on Portal.",
+    },
+    {
+      title:
+        "Will this initiative offer jobs to freelancers or is it just to train them?",
+      description:
+        "This program has been launched to train people in those skills that are demanded in freelance markets. It will not offer jobs to trainees, rather, it will offer skill-based trainings, which will enable them to get projects from freelance markets.",
+    },
+    {
+      title:
+        "What is the maximum limit of courses I can take summed over all the batches?",
+      description:
+        "There are a total of 15 courses that are being offered in this program. In one batch, a trainee can take up to a maximum of two (2) courses. In this way, you can get training of all the 15 courses in 8 batches. The limit is imposed to make sure a trainee gets the maximum value out of the course(s) they are enrolled in and can actively participate in discussions, coaching, and assignments.",
+    },
+    {
+      title: "Do I need professional advice in selection of the course(s)?",
+      description:
+        "Which course is suitable for you depends on your interest and to some extent on your previous education. All courses are of equal importance. The Freelancing course is mandatory if you are enrolling in DigiSkills.pk for the first time, whereas, from the remaining courses, you can select any course which excites you. Course introductions and learning outcomes that are available on the web portal can help you decide.",
+    },
+    {
+      title:
+        "How can I signup and enroll in the courses offered by the training program?",
+      description: `You can sign up for this program by visiting.After Signup, you can enroll in any two courses of your choice. Freelancing is a mandatory course for the trainees enrolling the course(s) for the first time. Enrollment will open one month prior to the commencement of each upcoming batch.`,
+      link: "https://digiskills.pk/Register.aspx",
+    },
+    {
+      title:
+        "I have registered with DigiSkills.pk, but unable to activate my account.",
+      description:
+        "You can Sign in with your registered Email Address using your current Password and regenerate the activation email to activate your account.",
+    },
+    {
+      title:
+        "I have enrolled in the courses, but unable to access study material and videos of the courses?",
+      description:
+        "The course-related study material, videos, and all related links such as Course Website, Announcements, and Discussions, etc., will be accessible after the start of the batch. We encourage you to sign up and you will automatically be notified once the batch starts.",
+    },
+    {
+      title: "How can I reset my lost Password?",
+      description:
+        "You can reset your password yourself through the 'Forgot Password' link available on the 'Sign In' page and follow the given instructions. If the problem persists, you can contact the support team using the Contact Us interface.",
+    },
+    {
+      title:
+        "When will the videos and course contents of each week be available on LMS to the registered students?",
+      description:
+        "The content and videos of each week will be made available on the respective Monday by 11:00 AM.",
+    },
+    {
+      title: "How to use LMS?",
+      description:
+        "The following link will help you in understanding the use of LMS",
+
+      link: "https://lms.digiskills.pk/OrientationVideo.aspx",
+    },
+    {
+      title: "How to watch videos through LMS?",
+      link: "Login to https://lms.digiskills.pk/",
+      courses: [
+        "You will find your enrolled courses directly from the Home Screen on your LMS under “My Courses (DSTP2.0-BATCH-04)” section. Click on the respective course, and you will be redirected to the “Topic content” tab. Here you can watch the Videos of the current week.",
+        "To go to the next topic video, click on “Next Topic” link available on the top right side.",
+        "After logging in to your LMS account, click on “Course Website” icon under “My Courses (DSTP2.0-BATCH-04)” section.",
+        "Here you will see the topics of the current and previous weeks under ‘Course topics’ tab.",
+        "Click on ‘Week’ of which you want to watch Videos.",
+        "Click on any topic; it will redirect you to the “Topic Content” tab. Here you can watch the Video.",
+        "To go to the next topic video, click on “Next Topic” link available on the top right side.",
+      ],
+    },
+    {
+      title: "What if I need to ask a question?",
+      courses: [
+        "Discussion board: If you are an enrolled trainee, then visit the discussion board of LMS to post your query. On the discussion board, you can ask a question, help other trainees by commenting on their queries, and see previous queries related to that specific topic.",
+        "Online support: You can send your general queries related to LMS, Course, and other matters related to DigiSkills.pk.",
+        "Mobile phone number: You can call on 0304-111-1570, and ask your question directly from the coach.",
+      ],
+    },
+    {
+      title: "Will I get any certificate after completing the training?",
+      description:
+        "Yes, you will get an e-Certificate from DigiSkills Training Program if you fulfill the course completion criteria. DigiSkills e-Certificate will be issued by the Virtual University of Pakistan.",
+    },
+    {
+      title:
+        "What is the completion criteria to get E-certificate for any course of DigiSkills.pk?",
+      description:
+        "According to course completion criteria, trainees will need to secure 50% score to become eligible for an E-certificate.",
+      courses: [
+        "Watching Topic Videos through LMS = 60%",
+        "Quizzes = 25%",
+        "Hands-on Exercises = 15%",
+
+        "If you watch 70% videos, attempt 60% quizzes and submit 50% Hands-on exercises, your total score will be as follows:",
+        "Video score: 42",
+        "Quiz score: 15",
+        "Exercise score: 7.5",
+        "Total score: 64.5 (eligible for E-certificate)",
+      ],
+    },
+    {
+      title: "How can we get a hard copy of E-Certificate?",
+      description:
+        "The eligible trainees will only get the soft copy of a verified e-certificate for each of their respective courses. You can access a verified e-certificate as soon as course certificates become available in your Learning Management System.",
+      courses: [
+        "Click on the Above button under the Trainee Services section (available on the homepage).",
+        "Now click on the View option for any of the completed courses, it will redirect you to the e-certificate.",
+        "Download and Print options are available on the top right corner of that page.",
+      ],
+      link: "https://lms.digiskills.pk",
+    },
+    {
+      title:
+        "Can I access content of the courses I enrolled in the previous batches?",
+      description:
+        "You can only access Videos, Hands-on Exercises, and their solutions of previously enrolled courses under the 'My Previous Courses' section on LMS. However, other content like Handouts, Internet Links, Books, etc. will not be available.",
+    },
+    {
+      title:
+        "After the completion of training, how can I get work from freelance markets?",
+      description:
+        "This program will help the trainees to learn new skills. As soon as a trainee learns any skill, he/she can create an online profile on any freelance marketplace. Trainees are encouraged to find jobs online on their own through freelancing platforms. During the training, our coaches will help you in creating your profile and guide in bidding for the projects in freelance markets.",
+    },
+    {
+      title:
+        "I missed some videos and course material. Can I access them later on LMS?",
+      description:
+        "You can access all Videos of the previous courses you were enrolled in but once a batch concludes then other learning material like hand-outs, books will not be available so please download and save them during the batch.",
+    },
+    {
+      title: "How can I contact my Coach via call",
+      description:
+        "If you have any course-related queries, then you can call the relevant team at 0304-1111570 and dial the extension of your desired course:",
+      courses: [
+        "Freelancing",
+        "Virtual Assistant",
+        "Digital Marketing",
+        "Affiliate Marketing",
+        "Communication & Soft Skills",
+        "Creative Writing",
+        "Video Editing, Animation & Vlogging",
+        "WordPress",
+        "Graphic Design",
+        "SEO",
+        "Digital Literacy",
+        "AutoCAD",
+        "QuickBooks",
+        "E-Commerce Management",
+        "Video Editing, Animation & Vlogging",
+        " Data Analytics & Business Intelligence",
+      ],
+    },
+  ],
+  newsFeedData: [
+    {
+      id: 1,
+      image: "/img/news/newsfeed22.jpg",
+      category: "Charity Water",
+      title: "Healthy food for everyone in a campaign.",
+      author: "Admin",
+      date: "24th June 2021",
+      link: "/blog-details",
+    },
+    {
+      id: 2,
+      image: "/img/news/newsfeed11.jpg",
+      category: "Charity Goods",
+      title: "Desired goods for all in a campaign.",
+      author: "Admin",
+      date: "24th June 2021",
+      link: "/blog-details",
+    },
+    {
+      id: 3,
+      image: "/img/news/newsfeed33.jpg",
+      category: "Charity Medicine",
+      title: "Expected clothes for all in a campaign.",
+      author: "Admin",
+      date: "24th June 2021",
+      link: "/blog-details",
+    },
+  ],
+  formFields: [
+    {
+      label: "Designation",
+      name: "designation",
+      placeholder: "Enter Your Designation...",
+      required: true,
+    },
+    {
+      label: "Full Name",
+      name: "fullName",
+      placeholder: "Enter Your Full Name...",
+      required: true,
+    },
+    {
+      label: "Father's Name",
+      name: "fatherName",
+      placeholder: "Enter Your Father Name...",
+      required: true,
+    },
+    {
+      label: "CNIC",
+      name: "cnic",
+      placeholder: "Enter Your CNIC...",
+      required: true,
+    },
+    {
+      label: "Phone Number",
+      name: "phoneNumber",
+      placeholder: "Enter Your Phone Number...",
+      required: true,
+    },
+    {
+      label: "Email",
+      name: "email",
+      type: "email",
+      placeholder: "Enter Your Email...",
+      required: true,
+    },
+    {
+      label: "Date of Joining",
+      name: "dateOfJoining",
+      type: "date",
+      required: true,
+    },
+    {
+      label: "Address",
+      name: "address",
+      type: "textarea",
+      placeholder: "Enter Your Home Address...",
+      required: true,
+    },
+    {
+      label: "Select One Option",
+      name: "maritalStatus",
+      type: "select",
+      options: ["Married", "Unmarried"],
+      required: true,
+    },
+    {
+      label: "If Married, No. of Wifes",
+      name: "noOfWives",
+      type: "select",
+      options: Array.from({ length: 5 }, (_, i) => i + 1).map((val) => ({
+        label: val,
+        value: val,
+      })),
+      placeholder: "None",
+    },
+    {
+      label: "Wife Name/s",
+      name: "wifesNames",
+      placeholder: "Enter Full Name of Your Wife...",
+    },
+    {
+      label: "No. of Children",
+      name: "noOfChildren",
+      type: "select",
+      options: Array.from({ length: 10 }, (_, i) => i + 1).map((val) => ({
+        label: val,
+        value: val,
+      })),
+      placeholder: "None",
+    },
+    {
+      label: "Name of the Children",
+      name: "childrenNames",
+      placeholder: "Enter Name of Your Children...",
+    },
+    {
+      label: "Mother",
+      name: "mother",
+      placeholder: "Enter Your Mother Name...",
+    },
+    {
+      label: "Transport",
+      name: "transport",
+      type: "select",
+      options: ["None", "Bike", "Car", "Bus"],
+      placeholder: "Select Transport Type",
+    },
+    {
+      label: "Make & Type",
+      name: "makeAndType",
+      placeholder: "Enter Make & Type...",
+    },
+    { label: "Model", name: "model", placeholder: "Enter Model..." },
+    {
+      label: "Reg. Number",
+      name: "regNumber",
+      placeholder: "Enter Registration Number...",
+    },
+    {
+      label: "Any Other Information",
+      name: "otherInfo",
+      type: "textarea",
+      placeholder: "Enter Additional Information...",
+    },
+    { label: "Date of Submission", name: "dateOfSubmission", type: "date" },
+  ],
 };
