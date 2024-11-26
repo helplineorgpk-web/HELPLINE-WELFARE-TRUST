@@ -147,10 +147,22 @@ export default function NavMobile() {
               <a>Cataract Program</a>
             </Link>
           </li>
-          <li>
-            <Link href="/itlab">
-              <a>IT Labs</a>
+          <li className="menu-item-has-children">
+            <Link href="#">
+              <a className="has-arrow">IT Lab</a>
             </Link>
+            <ul className="sub-menu">
+              <li>
+                <Link href="/itlab">
+                  <a>IT Labs</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/itform">
+                  <a>IT Labs Form</a>
+                </Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>

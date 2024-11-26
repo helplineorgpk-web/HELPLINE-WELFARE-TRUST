@@ -26,7 +26,7 @@ export const HelplineData = {
     title: "HELPLINE EDUCATION",
     supportButtonText: "SUPPORTING APPEAL",
     headerBg: "img/causes/cause17.jpg",
-    videoSrc: "https://www.youtube.com/embed/your_video_id",
+    videoSrc: "https://www.youtube.com/embed/TZKNHw18OhM",
     heading: "Helpline Education System",
     description: `
       Being a developing country, Pakistan has suffered the most from
@@ -52,7 +52,7 @@ export const HelplineData = {
     title: "HELPLINE HEALTH",
     supportButtonText: "SUPPORTING APPEAL",
     headerBg: "img/causes/hospital.jpeg",
-    videoSrc: "https://www.youtube.com/embed/your_video_id",
+    videoSrc: "https://www.youtube.com/embed/G25BUguOoEc",
     heading: "Helpline Health Projects",
     description: `
       Pakistan has been listed by the World Health Organization (WHO) as
@@ -2213,28 +2213,28 @@ Helpline have realized that providing access to technology and digital education
       id: 1,
       title: "Brain Scoop in Lahore",
       description:
-        "Brain Scoop is a Lahore-based IT company that has been making waves in the tech industry with its innovative products and services. With the support of the Helpline NGO, the company has been able to expand its operations and provide better services to its clients. Brain Scoop specializes in software development, web design, and digital marketing. They have a team of highly skilled professionals who are dedicated to delivering top-quality solutions to their clients. Their innovative approach to problem-solving has earned them a reputation as one of the most reliable IT companies in the region.",
+        "Brain Scoop, a Lahore-based IT company, specializes in software development, web design, and digital marketing. Supported by the Helpline NGO, it has expanded operations and enhanced client services. With a skilled team and innovative problem-solving, Brain Scoop is a trusted name in the regional tech industry.",
       image: "/img/causes/itlab1.png",
     },
     {
       id: 2,
       title: "Brain Scoop in Islamabad",
       description:
-        "Brain Scoop is an Islamabad-based IT company that has been making waves in the tech industry with its innovative products and services. With the support of the Helpline NGO, the company has been able to expand its operations and provide better services to its clients. Brain Scoop specializes in software development, web design, and digital marketing. They have a team of highly skilled professionals who are dedicated to delivering top-quality solutions to their clients. Their innovative approach to problem-solving has earned them a reputation as one of the most reliable IT companies in the region.",
+        "Brain Scoop, an Islamabad-based IT company, excels in software development, web design, and digital marketing. Backed by the Helpline NGO, it has expanded its operations to deliver innovative, high-quality solutions. Known for its skilled team and creative problem-solving, Brain Scoop is a trusted name in the regional tech industry.",
       image: "/img/causes/itlab2.png",
     },
     {
       id: 3,
       title: "Brain Scoop in Bahalwapur",
       description:
-        "The Helpline NGO provides financial and technical support to Brain Scoop, enabling it to invest in better technology, infrastructure, and talent. This has allowed the IT lab to take on more significant projects and expand its reach, while maintaining its commitment to providing top-quality solutions to its clients.Brain Scoop has a team of highly skilled professionals who are dedicated to delivering innovative solutions to its clients. The lab’s expertise in software development and web design has earned it a reputation as one of the most reliable IT labs in the region.",
+        "The Helpline NGO supports Brain Scoop with financial and technical resources, helping it improve technology, infrastructure, and talent. This enables the IT lab to handle larger projects and expand its reach while delivering top-quality solutions. With a skilled team and expertise in software development and web design, Brain Scoop is recognized as a trusted IT lab in the region.",
       image: "/img/causes/itlab3.png",
     },
     {
       id: 4,
       title: "Brain Scoop in Nawab Shah",
       description:
-        "Brain Scoop has a team of highly skilled professionals who are dedicated to delivering innovative solutions to its clients. The lab’s expertise in software development and web design has earned it a reputation as one of the most reliable IT labs in the region. Through its partnership with the Helpline NGO, Brain Scoop has also been able to promote IT education and training in the community, helping to develop local talent and create new opportunities for young people in the field of technology.",
+        "Brain Scoop, known for its skilled team and expertise in software development and web design, is a trusted IT lab in the region. With support from the Helpline NGO, it not only delivers innovative solutions but also promotes IT education and training, nurturing local talent and creating opportunities for young people in technology.",
       image: "/img/causes/itlab4.png",
     },
     {
