@@ -34,34 +34,14 @@ export default function NavFullscreen() {
                 <a>Volunteer</a>
               </Link>
             </li>
-            <li className="menu-item-has-children">
-              <Link href="#">
-                <a className="innerli">
-                  media
-                  <span> ▶</span>
-                </a>
+            <li>
+              <Link href="/videos">
+                <a>Media</a>
               </Link>
-              <ul className="submenu">
-                <li>
-                  <Link href="/images">
-                    <a>images</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/videos">
-                    <a>Videos</a>
-                  </Link>
-                </li>
-              </ul>
             </li>
             <li>
               <Link href="/mission">
                 <a>Mission</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/faq">
-                <a>Faq</a>
               </Link>
             </li>
           </ul>
@@ -151,11 +131,6 @@ export default function NavFullscreen() {
                 <a>Cataract Program</a>
               </Link>
             </li>
-            {/* <li>
-              <Link href="/itlab">
-                <a>IT Labs</a>
-              </Link>
-            </li> */}
             <li className="menu-item-has-children">
               <Link href="#">
                 <a className="innerli">
@@ -177,11 +152,6 @@ export default function NavFullscreen() {
               </ul>
             </li>
           </ul>
-        </li>
-        <li className="menu-item-has-children">
-          <Link href="/event">
-            <a>Events</a>
-          </Link>
         </li>
         <li className="menu-item-has-children">
           <Link href="#">

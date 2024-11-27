@@ -34,18 +34,11 @@ export default function AboutTeam() {
               <div className="single_team mb-30">
                 <div
                   className="team_thumb img_effect_white"
-                  onClick={() => handleNavigation(member)}
                 >
-                  <Link
-                    href={{
-                      pathname: "/volunteer-details",
-                      query: { id: member.id },
-                    }}
-                  >
+
                     <a>
                       <img src={member.image} alt={member.name} />
                     </a>
-                  </Link>
                 </div>
                 <span className="designation">{member.designation}</span>
                 <h5 className="member_name">
@@ -58,15 +51,6 @@ export default function AboutTeam() {
                     <a>{member.name}</a>
                   </Link>
                 </h5>
-                <div className="member_social">
-                  {member.socialLinks.map((link, index) => (
-                    <Link href={link.url} key={index}>
-                      <a className={link.platform}>
-                        <i className={link.icon}></i>
-                      </a>
-                    </Link>
-                  ))}
-                </div>
               </div>
             </div>
           ))}

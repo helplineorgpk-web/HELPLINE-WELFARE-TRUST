@@ -20,7 +20,9 @@ function Health3() {
             <div className={styles.title}>
               {item.title} {item.amount}
             </div>
-            <button className={styles.button}>Donate Now</button>
+            <a href="/donation">
+              <div className={styles.button}>Donate Now</div>
+            </a>
           </div>
         ))}
       </div>

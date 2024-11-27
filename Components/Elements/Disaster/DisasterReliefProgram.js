@@ -15,9 +15,11 @@ const DisasterReliefProgram = ({ data }) => {
       <div className={styles.overlay}>
         <div className={styles.header}>
           <h1 className={styles.title}>{data.title}</h1>
-          <button className={styles.supportButton}>
-            {data.supportButtonText}
-          </button>
+          <a href="/donation">
+            <button className={styles.supportButton}>
+              {data.supportButtonText}
+            </button>
+          </a>
         </div>
 
         <div className={styles.stats}>
@@ -49,9 +51,11 @@ const DisasterReliefProgram = ({ data }) => {
             <div key={index} className={styles.donationCard}>
               <h5 className={styles.title}>{option.label}</h5>
               <p>{option.price}</p>
-              <button className={styles.donationButton}>
-                {option.buttonText}
-              </button>
+              <a href="/donation">
+                <button className={styles.donationButton}>
+                  {option.buttonText}
+                </button>
+              </a>
             </div>
           ))}
         </div>

@@ -29,6 +29,5 @@ export default function VolunteerBreadCrumb() {
         </div>
       </div>
     </section>
-    //breadcrumb area end
   );
 }

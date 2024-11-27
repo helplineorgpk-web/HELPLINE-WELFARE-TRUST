@@ -40,30 +40,13 @@ export default function NavMobile() {
             </Link>
           </li>
           <li className="menu-item-has-children">
-            <Link href="#">
-              <a className="has-arrow">Media</a>
+            <Link href="/videos">
+              <a className="">Media</a>
             </Link>
-            <ul>
-              <li>
-                <Link href="/images">
-                  <a>Images</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/videos">
-                  <a>Videos</a>
-                </Link>
-              </li>
-            </ul>
           </li>
           <li>
             <Link href="/mission">
               <a>Mission</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/faq">
-              <a>Faq</a>
             </Link>
           </li>
         </ul>
@@ -165,11 +148,6 @@ export default function NavMobile() {
             </ul>
           </li>
         </ul>
-      </li>
-      <li>
-        <Link href="/event">
-          <a>Events</a>
-        </Link>
       </li>
       <li className="menu-item-has-children">
         <Link href="#">

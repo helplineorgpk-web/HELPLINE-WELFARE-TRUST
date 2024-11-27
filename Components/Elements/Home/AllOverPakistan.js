@@ -28,9 +28,6 @@ const StatItem = ({ title, target }) => {
       <div className={styles.statItem}>
         <h3 className={styles.count}>{count.toLocaleString()}</h3>
         <p className={styles.title}>{title}</p>
-        <a href="#" className={styles.viewLink}>
-          View
-        </a>
       </div>
     </div>
   );

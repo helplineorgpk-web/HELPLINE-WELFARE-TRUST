@@ -26,11 +26,10 @@ export default function CauseDetails() {
       <CauseDetailsArea
         title={cause.desc}
         image={cause.img}
-        goal={cause.goal}
-        raised={cause.raised}
-        toGo={cause.toGo}
         category={cause.category}
         detail={cause.description}
+        img1={cause.img1}
+        img2={cause.img2}
       />
     </Layout2>
   );

@@ -179,16 +179,14 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/construction2.jpeg",
+      img2: "/img/causes/constructions1.jpeg",
+      detail:
+        "Floods hit Pakistan; Abdul Akbar, Helpline provide economical housing solutions.",
       description:
         "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-      pbar: "pbar_1",
       progressData: "63",
-      desc: "CLEAN WATER PROJECT IN KPK",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2025-12-27 00:00:00",
+      desc: "House Constructions Project In Rajanpur",
       color: "#5fb35b",
     },
     {
@@ -202,16 +200,14 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/houseconstruction3.jpeg",
+      img2: "/img/causes/houseconstruction4.jpeg",
+      detail:
+        "Floods hit Pakistan; Matti ul haq, Helpline provide economical housing solutions.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-      pbar: "pbar_1",
+        "In response, Matti ul Haq and the Helpline organization have stepped forward to provide shelter to displaced families ahead of the harsh winter season. An economical model house has been carefully designed to ensure safety and comfort for the affected. Detailed blueprints and cost estimates for these model houses are being shared with compassionate individuals who wish to contribute to this humanitarian effort.",
       progressData: "65",
-      desc: "CLEAN WATER PROJECT IN PUNJAB",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2024-01-07 00:00:00",
+      desc: "House Constructions Project In Rajanpur",
       color: "#f15b43",
     },
     {
@@ -219,22 +215,20 @@ export const HelplineData = {
       category: ["House Constructions"],
       img: (
         <Image
-          src="/img/causes/houseconstruction3.jpeg"
+          src="/img/causes/house3.jpeg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/houseconstruction3.jpeg",
+      img2: "/img/causes/houseconstruction4.jpeg",
+      detail:
+        "Floods hit Pakistan; Chaudhary Amir, Helpline provide economical housing solutions.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-      pbar: "pbar_1",
+        "In response to the devastating floods that have ravaged Pakistan, Chaudhary Amir and the Helpline organization have taken a significant step to address the urgent need for shelter among displaced families. Recognizing the widespread destruction, they have developed an economical housing solution to provide safe and affordable accommodations. This initiative features a specially designed model house that ensures both security and sustainability for those affected. Blueprints and cost estimates for these homes are being shared with donors who wish to contribute to this critical cause. By enabling families to rebuild their lives with dignity and stability, this program serves as a lifeline for countless individuals, fostering hope and resilience in the face of unprecedented challenges.",
       progressData: "65",
-      desc: "CLEAN WATER PROJECT IN BALOCHISTAN.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "House Constructions Project In Rajanpur",
       color: "#65cabb",
     },
     {
@@ -242,22 +236,20 @@ export const HelplineData = {
       category: ["House Constructions"],
       img: (
         <Image
-          src="/img/causes/houseconstruction4.jpeg"
+          src="/img/causes/house4.jpeg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/houseconstruction3.jpeg",
+      img2: "/img/causes/houseconstruction4.jpeg",
+      detail:
+        "Floods hit Pakistan; Junaid Aftab, Helpline provide economical housing solutions.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "In the wake of catastrophic floods that devastated Pakistan, Junaid Aftab and the Helpline organization have launched a life-changing initiative to support affected families. With countless homes swept away and lives disrupted, they have developed economical housing solutions to provide safe, affordable shelter. This initiative includes a thoughtfully designed model house that balances security, durability, and cost-effectiveness, addressing the urgent need for shelter before the harsh winter arrives.Detailed blueprints and cost estimates for these homes are being shared with kind-hearted donors eager to contribute to rebuilding efforts. By enabling families to regain stability and rebuild their lives with dignity, this program offers hope and resilience to those grappling with the aftermath of this climate disaster.",
       progressData: "65",
-      desc: "CLEAN WATER PROJECT IN KARBATH.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "House Constructions Project In Rajanpur",
       color: "#5fb35b",
     },
     {
@@ -265,23 +257,21 @@ export const HelplineData = {
       category: ["Water"],
       img: (
         <Image
-          src="/img/causes/cause1.jpg"
+          src="/img/causes/karbathwater.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/water1.jpg",
+      img2: "/img/causes/water2.jpg",
+      detail:
+        "Helpline ensures clean water in KARBATH: filtration plants, solar wells, hand pumps.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Provision of clean water to deprived areas is one of the main objectives of Helpline. In this regard, two water filtration plants costing Rs 1.8 Million have already been installed at Karbath and Kahna. A solar tube well has also been installed in a remote area of Khuzdar Baluchistan. Helpline has successfully installed about 1,500 hand pumps in various areas inhabited by underprivileged families.",
       progressData: "63",
-      desc: "CLEAN WATER PROJECT IN KPK",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2025-12-27 00:00:00",
-      color: "#5fb35b",
+      desc: "CLEAN WATER PROJECT IN KARBATH",
+      color: "#65cabb",
     },
     {
       id: 6,
@@ -294,16 +284,14 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/punjabwater2.jpg",
+      img2: "/img/causes/punjabwater.jpg",
+      detail:
+        "Helpline ensures clean water in PUNJAB: filtration plants, solar wells, hand pumps.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Provision of clean water to deprived areas is a key objective of Helpline. In Punjab, two water filtration plants costing Rs 1.8 Million have been installed to serve communities in need. To address the water needs of rural communities, Helpline has also successfully installed over 1,500 hand pumps in various underprivileged areas across the province. These efforts aim to ensure access to safe drinking water for families in need, improving health and quality of life in the region.",
       progressData: "65",
       desc: "CLEAN WATER PROJECT IN PUNJAB",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2024-01-07 00:00:00",
       color: "#f15b43",
     },
     {
@@ -317,16 +305,14 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/cause4.jpg",
+      img2: "/img/causes/kpkwater2.jpg",
+      detail:
+        "Helpline ensures clean water in KPK: filtration plants, solar wells, hand pumps.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "In KPK, Helpline has initiated a clean water plant project to provide safe drinking water to underserved communities. This project aims to address the critical need for access to clean and hygienic water, which is essential for maintaining health and well-being. Helpline is committed to expanding its efforts in the future by implementing larger and more impactful clean water initiatives across the region. These upcoming projects are currently in the planning stages and will soon be launched to benefit countless families, ensuring sustainable access to clean water. Through these efforts, Helpline aims to make a significant difference in improving the quality of life for those living in water-scarce areas of KPK.",
       progressData: "65",
-      desc: "CLEAN WATER PROJECT IN BALOCHISTAN.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "CLEAN WATER PROJECT IN KPK",
       color: "#65cabb",
     },
     {
@@ -340,16 +326,14 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/blochistanwater.jpg",
+      img2: "/img/causes/blochistanwater2.jpg",
+      detail:
+        "Helpline ensures clean water in BALOCHISTAN: filtration plants, hand pumps.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Helpline is dedicated to ensuring access to clean water in Balochistan, particularly in underserved areas like Khuzdar. Recognizing the urgent need for safe drinking water, the organization has implemented impactful projects to improve water availability for local communities. These initiatives include the installation of advanced water filtration plants, which provide purified water to hundreds of families daily, reducing the risk of waterborne diseases. In addition, Helpline has successfully installed numerous hand pumps in remote villages, empowering underprivileged families with easy access to clean water near their homes. These projects not only improve health and hygiene but also save time and effort for women and children who often travel long distances for water. Helpline remains committed to expanding these efforts.",
       progressData: "65",
-      desc: "CLEAN WATER PROJECT IN KARBATH.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "CLEAN WATER PROJECT IN BALOCHISTAN",
       color: "#5fb35b",
     },
     {
@@ -357,23 +341,21 @@ export const HelplineData = {
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause13.jpg"
+          src="/img/causes/roruschool.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/roru1.jpg",
+      img2: "/img/causes/roru2.jpg",
+      detail:
+        "Govt. Roru Goth School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
       progressData: "65",
-      desc: "GPS. Roru Goth School.",
+      desc: "Alighar Education Complex GPS. Roru Goth School.",
       adopted: "Adopted",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#f15b43",
     },
     {
@@ -387,17 +369,15 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/gpsbaglair1.jpg",
+      img2: "/img/causes/gpsbaglair2.jpg",
+      detail:
+        "GPS. Bagliar Mithi School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Govt. Bagliar Mithi School is a beacon of hope for underprivileged students who might not otherwise have access to quality education. With the help of a helpline NGO, the school can provide support to students facing financial and other challenges. This support can come in many forms, including scholarships, tuition assistance, and other resources designed to help students succeed in their studies. The work that is being done by Govt. Bagliar Mithi School and the helpline NGO are genuinely inspiring. By providing opportunities for education to students who might not otherwise have access to it, they are helping to break the cycle of poverty and create a brighter future for the next generation. The dedication and hard work of the teachers and staff at the school, as well as the generosity of the NGO supporters, is making a real difference in the lives of these students and is something that should be celebrated and supported by all members of the community.",
       progressData: "65",
-      desc: "GPS. Bagliar Mithi School.",
+      desc: "The Govt GPS. Bagliar Mithi School.",
       adopted: "Adopted",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#65cabb",
     },
     {
@@ -405,23 +385,21 @@ export const HelplineData = {
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause15.jpg"
+          src="/img/causes/kaktario1.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/kaktario2.jpg",
+      img2: "/img/causes/kaktario3.jpg",
+      detail:
+        "Govt. Kaktario Samma School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "The adoption of Govt. Kaktario Samma School a helpline NGO has been a game-changer for the school, its students, and its teachers. The NGO has taken on the responsibility of supporting the school’s operations by providing financial assistance for the payment of teachers’ salaries, as well as other essential needs such as textbooks, school supplies, and maintenance of facilities. This support has been critical for the school, which serves a predominantly low-income student population. Through this partnership, the helpline NGO has been able to provide a range of resources and programs to support students’ learning and academic achievement. These resources include scholarships, mentorship programs, and academic support services, such as tutoring and study skills workshops. By providing these opportunities to underprivileged students, the NGO is helping to level the playing field and give these students a chance to succeed.",
       progressData: "65",
-      desc: "GPS. Kaktario Samma School.",
+      desc: "Govt GPS. Kaktario Samma School",
       adopted: "Adopted",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#5fb35b",
     },
     {
@@ -435,17 +413,15 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/gpsmisali.jpg",
+      img2: "/img/causes/gpsmisali1.jpg",
+      detail:
+        "GPS. Misali Goth School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Helpline NGO’s support for the Govt. Misali Goth School is highly commendable, as it recognizes the importance of education in the development of communities. By providing financial assistance to the school, Helpline NGO is helping to ensure that students have access to quality education and a supportive learning environment. In addition to supporting the school itself, Helpline NGO also provides salaries to the employees, which is a significant contribution to the livelihoods of the staff. The provision of salaries to the employees is essential, as it helps to ensure that the school can attract and retain qualified and dedicated teachers and staff. This, in turn, contributes to the quality of education provided to students, and ultimately, to the school’s success. By providing this support, Helpline NGO is playing an essential role in the development of education in the community and is making a positive impact on the lives of both students and employees.",
       progressData: "65",
-      desc: "GPS. Misali Goth School.",
+      desc: "The Govt GPS. Misali Goth School",
       adopted: "Adopted",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#f15b43",
     },
     {
@@ -453,23 +429,21 @@ export const HelplineData = {
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/tandusindh1.jpg"
+          src="/img/causes/katho1.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/katho2.jpg",
+      img2: "/img/causes/katho3.jpg",
+      detail:
+        "GPS. Katho Samma School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "The adoption of Govt. Katho Samma School by a helpline NGO has had a transformative impact on the school, its students, and its teachers. The NGO has taken on the responsibility of providing financial assistance for the school’s operations, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been critical for the school, which serves a predominantly low-income student population. Furthermore, the support that the NGO provides for the school’s teachers is invaluable. The NGO recognizes the vital role that teachers play in shaping students’ lives and is committed to ensuring that they are compensated fairly for their hard work. This support helps to incentivize high-quality teaching, which is essential for creating a positive and effective learning environment for students.",
       progressData: "65",
-      desc: "Helpline Tando Allahyar Sindh Program.",
+      desc: "The Govt GPS. Katho Samma School",
       adopted: "Adopted",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#f15b43",
     },
     {
@@ -483,16 +457,14 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/medicalkarbath1.jpeg",
+      img2: "/img/causes/karbathmedical.jpg",
+      detail:
+        "Karbath Medical Centre provides free quality healthcare to underserved patients.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Karbath Medical Centre is a special medical centre run by the Helpline Social Welfare Foundation. At Karbath Medical Centre, patients who cannot afford expensive fees in private hospitals can get access to free medical services. The centre is equipped with state–of–the–art medical equipment and experienced medical personnel and provides a range of services including general check-ups, immunizations, and treatments for various illnesses and injuries. The centre also provides psychological, social, and educational support to all patients. Karbath Medical Centre is committed to providing quality healthcare to those in need and strives to become a trusted source of care for the community.",
       progressData: "65",
       desc: "Karbath Medical Centre Hospital.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#65cabb",
     },
     {
@@ -506,16 +478,14 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/hajramedical1.jpg",
+      img2: "/img/causes/hajramedical2.jpg",
+      detail:
+        "Haji Hospital offers free healthcare, expanding under Helpline since 2012.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Haji Muhammad Sadiq Hajra Bibi Hospital was commissioned on 1st June 2001 at 18 km Sheikhupura-Faisalabad Road spread on 2.3 acres of land. It is a 50 bedded Hospital with Laboratory, X-ray, Operation Theatre, Gynecology Deptt, Eye Deptt, Pharmacy, etc. At the time of its inception, it was the only health facility within a radius of 20 km. The daily influx of patients was 150-200. In this hospital, poor and needy patients are provided treatment free of cost. The hospital was handed over to Helpline in 2012 and since then we are working on its expansion plans to improve the health facilities.",
       progressData: "65",
       desc: "Hajra Bibi Memorial Trust Hospital.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#5fb35b",
     },
     {
@@ -529,16 +499,15 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/cataract1.jpg",
+      img2: "/img/causes/cataract2.jpeg",
+      detail:
+        "Helpline funds cataract surgeries, restoring vision for underprivileged Pakistanis.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Helpline has been utilizing generous donations to fund cataract surgeries for underprivileged individuals across Pakistan, transforming lives by restoring vision. Cataracts, a common yet debilitating condition, disproportionately affect those who lack access to adequate healthcare. With the support of donors, Helpline organizes surgical camps in rural and underserved areas, ensuring that people who cannot afford expensive medical treatments receive high-quality care free of charge.Each surgery is performed by experienced ophthalmologists using advanced equipment, ensuring safe and effective outcomes. Beyond surgeries, Helpline also raises awareness about eye health and provides post-operative care to patients. These efforts not only improve individual lives but also empower families and communities, enabling beneficiaries to regain independence and productivity.",
+
       progressData: "65",
       desc: "Cataract Surgeries Across Pakistan.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#f15b43",
     },
     {
@@ -552,16 +521,14 @@ export const HelplineData = {
           height={225}
         />
       ),
+      img1: "/img/causes/mithi1.png",
+      img2: "/img/causes/mithi2.jpg",
+      detail:
+        "Helpline Mobile Unit provides free healthcare and medicines in Mithi.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Helpline Mobile Unit & Dispensary, located in Mithi, Sindh, is an initiative of Helpline Social Welfare Foundation. This project was launched with the aim of providing free medicines to patients in rural areas, who often lack access to basic medical care due to financial constraints. The dispensary is equipped with a variety of medicines, including antibiotics, antivirals, antifungals, and other essential drugs. Furthermore, the dispensary also provides free consultation and medical advice. The dispensary is staffed by trained medical personnel, who work hard to ensure that patients receive the best possible care. The Helpline Mobile Unit & Dispensary also provides health education and preventive healthcare services to the local community. This has helped to reduce the burden of disease in the area, as well as alleviating the financial burden of medical care.",
       progressData: "65",
-      desc: "HELPLINE Mithi-Tharparkar Medical Camp.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "HELPLINE MOBILE UNIT & DISPENSARY, MITHI (Sindh)",
       color: "#f15b43",
     },
     {
@@ -658,7 +625,7 @@ export const HelplineData = {
     },
     {
       id: 20,
-      category: ["Idara-e-Nazariya-e-Pakistan"],
+      category: ["Education"],
       img: (
         <Image
           src="/img/causes/idaranazriyapakistan.jpg"
@@ -704,7 +671,7 @@ export const HelplineData = {
     },
     {
       id: 22,
-      category: ["Helpline Schools"],
+      category: ["Education"],
       img: (
         <Image
           src="/img/causes/cause1.jpg"
@@ -727,7 +694,7 @@ export const HelplineData = {
     },
     {
       id: 23,
-      category: ["Helpline Schools"],
+      category: ["Education"],
       img: (
         <Image
           src="/img/causes/cause2.jpg"
@@ -750,7 +717,7 @@ export const HelplineData = {
     },
     {
       id: 24,
-      category: ["Helpline Schools"],
+      category: ["Education"],
       img: (
         <Image
           src="/img/causes/cause3.jpg"
@@ -773,126 +740,117 @@ export const HelplineData = {
     },
     {
       id: 25,
-      category: ["Helpline Schools", ""],
+      category: ["Education", ""],
       img: (
         <Image
-          src="/img/causes/cause4.jpg"
+          src="/img/causes/illasschool1.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/illiyasschool2.jpg",
+      img2: "/img/causes/illiyasschool3.jpg",
+      detail: "Illyas Dal School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "The adoption of Govt. Illyas Dal School by a helpline NGO has been a crucial step towards improving the education outcomes of underprivileged students in the community. The NGO has taken on the responsibility of supporting the school’s operations by providing financial assistance for the payment of teachers’ salaries, as well as other essential needs such as textbooks, school supplies, and maintenance of facilities. This support has been critical for the school, which serves a predominantly low-income student population. Moreover, the support that the NGO provides for the school’s teachers is invaluable. The NGO recognizes the crucial role that teachers play in shaping students’ lives and is committed to ensuring that they are compensated fairly for their hard work. This support helps to incentivize high-quality teaching, which is essential for creating a positive and effective learning environment for students.",
       progressData: "65",
-      desc: "CLEAN WATER PROJECT IN KARBATH.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      adopted: "Adopted",
+      desc: "The Govt GPS illyas dal School by Helpline",
       color: "#5fb35b",
     },
     {
       id: 26,
-      category: ["Helpline Adopted Students"],
+      category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause13.jpg"
+          src="/img/causes/nimro1.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS. Nimro Sharif School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
       pbar: "pbar_1",
       progressData: "65",
-      desc: "GPS. Roru Goth School.",
+      desc: "The Govt GPS. Nimro Sharif School",
       adopted: "Adopted",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#f15b43",
     },
     {
       id: 28,
-      category: ["Helpline Adopted Students"],
+      category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause14.jpg"
+          src="/img/causes/bheel2.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/bheel1.jpg",
+      img2: "/img/causes/bheel3.jpg",
+      detail:
+        "GPS. Missi Bheel School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "The support provided by a helpline NGO to Govt. Missi Bheel School has been critical in ensuring that underprivileged students in the community have access to quality education. The NGO has taken on the responsibility of running the school, providing financial support, and ensuring that students have access to essential supplies and resources. Moreover, the NGO’s support for the school’s operations has been instrumental in keeping the school running and providing quality education to students who otherwise may not have had access to it. The NGO has worked closely with the school’s administration to ensure that the school is well-maintained and that students have access to necessary resources such as textbooks and school supplies.",
       progressData: "65",
-      desc: "GPS. Bagliar Mithi School.",
+      desc: "The Govt GPS. Missi Bheel School",
       adopted: "Adopted",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#65cabb",
     },
     {
       id: 29,
-      category: ["Helpline Adopted Students"],
+      category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause15.jpg"
+          src="/img/causes/nabibakhsh1.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/nabibakhsh.jpg",
+      img2: "/img/causes/nabibakhsh2.jpg",
+      detail:
+        "GPS. Nabi Baksh Gabool School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "The Helpline Social Welfare Foundation’s adoption of Govt. Nabi Baksh Gabool School is a remarkable example of a community-based organization taking the initiative to support underprivileged students and uplift the education system. The Foundation has assumed full responsibility for the school, providing much-needed financial aid and resources to ensure that students receive a quality education.<br>Through this partnership, the Foundation has been able to offer an array of programs and resources to support students’ academic achievement, including scholarships, mentorship programs, and academic support services. The Foundation has also focused on ensuring that the school is well-maintained and that students have access to critical resources and supplies.",
       progressData: "65",
-      desc: "GPS. Kaktario Samma School.",
+      desc: "Govt GPS. Nabi Baksh Gabool School",
       adopted: "Adopted",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#5fb35b",
     },
     {
       id: 30,
-      category: ["Helpline Adopted Students"],
+      category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause16.jpg"
+          src="/img/causes/sardar1.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/sardar2.jpg",
+      img2: "/img/causes/sardar3.jpg",
+      detail:
+        "GPS. Sardar Khan Laghari School empowers students with quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "The Helpline Social Welfare Foundation’s adoption of Govt. Sardar Khan Laghari School is a commendable initiative aimed at improving the quality of education for underprivileged students. By taking on the full responsibility of supporting the school, the Foundation has helped to stabilize its operations and ensure its sustainability in the long run. In addition to supporting students’ academic success, the Foundation has worked to ensure that the school is well-maintained and equipped with the necessary resources and supplies. This has helped to create a conducive learning environment that promotes students’ well-being and academic achievement.",
       progressData: "65",
-      desc: "GPS. Misali Goth School.",
+      desc: "GPS. Sardar Khan Laghari School",
       adopted: "Adopted",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
       color: "#f15b43",
     },
     {
       id: 31,
-      category: ["Al Kitab Education System"],
+      category: ["Education"],
       img: (
         <Image
           src="/img/causes/cause10.jpg"
@@ -905,7 +863,7 @@ export const HelplineData = {
         "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
-      desc: "Karbath Medical Centre Hospital.",
+      desc: "Al Kitab Education System.",
       goal: "4,5100",
       raised: "45,300",
       toGo: "45,200",
@@ -915,7 +873,7 @@ export const HelplineData = {
     },
     {
       id: 32,
-      category: ["Al Kitab Education System"],
+      category: ["Education"],
       img: (
         <Image
           src="/img/causes/cause11.jpg"
@@ -928,7 +886,7 @@ export const HelplineData = {
         "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
-      desc: "Hajra Bibi Memorial Trust Hospital.",
+      desc: "Al Kitab Education System.",
       goal: "4,5100",
       raised: "45,300",
       toGo: "45,200",
@@ -938,7 +896,7 @@ export const HelplineData = {
     },
     {
       id: 33,
-      category: ["Al Kitab Education System"],
+      category: ["Education"],
       img: (
         <Image
           src="/img/causes/cause12.jpg"
@@ -951,7 +909,7 @@ export const HelplineData = {
         "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
-      desc: "Cataract Surgeries Across Pakistan.",
+      desc: "Al Kitab Education System.",
       goal: "4,5100",
       raised: "45,300",
       toGo: "45,200",
@@ -961,7 +919,7 @@ export const HelplineData = {
     },
     {
       id: 34,
-      category: ["Al Kitab Education System"],
+      category: ["Education"],
       img: (
         <Image
           src="/img/causes/cause28.jpg"
@@ -974,7 +932,7 @@ export const HelplineData = {
         "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
       pbar: "pbar_1",
       progressData: "65",
-      desc: "Hasene International & Helpline Medical Camp.",
+      desc: "Al Kitab Education System.",
       goal: "4,5100",
       raised: "45,300",
       toGo: "45,200",
@@ -984,7 +942,7 @@ export const HelplineData = {
     },
     {
       id: 35,
-      category: ["Idara-e-Nazariya-e-Pakistan"],
+      category: ["Education"],
       img: (
         <Image
           src="/img/causes/idaranazriyapakistan.jpg"
@@ -1005,7 +963,6 @@ export const HelplineData = {
       date: "2022-11-27 00:00:00",
       color: "#65cabb",
     },
-    // eee?
     {
       id: 38,
       category: ["Sadaqah"],
@@ -1372,6 +1329,78 @@ export const HelplineData = {
       toGo: "45,200",
       address: "Douglas Park, Chicago, IL",
       date: "2022-11-27 00:00:00",
+      color: "#65cabb",
+    },
+    {
+      id: 54,
+      category: ["Medical"],
+      img: (
+        <Image
+          src="/img/causes/jinah1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      detail: "Helpline provided free meals to patients at Jinnah Hospital.",
+      description:
+        "Jinnah Hospital is one of the largest hospitals in Lahore, servicing over 1 million patients each year. In 2019, Helpline Social Welfare Foundation served free meals for patients at Jinnah Hospital, showing their commitment to assisting those in need. The initiative provided over 1,000 meals to patients and their families, helping to ease the burden of affording food. All the patients and their families greatly appreciated this generous gesture and were very thankful for the assistance. The initiative also raised awareness about the importance of providing aid to those in need, and it has been praised by many for its impact.",
+      progressData: "65",
+      desc: "Meal Distribution Jinnah Hospital, Lahore.",
+      color: "#65cabb",
+    },
+    {
+      id: 55,
+      category: ["Medical"],
+      img: (
+        <Image
+          src="/img/causes/Jinnah2.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      detail: "Helpline provided free meals to patients at Munshi Hospital.",
+      description:
+        "Mian Muhammad Munshi Hospital is a government–run hospital in Lahore, Pakistan. It is a charitable hospital providing medical care to people of all economic backgrounds. The Helpline Social Welfare Foundation recently served free meals to patients at Mian Muhammad Munshi Hospital. This initiative was taken to provide nutritious and hygienic meals to those in need and to show the foundation’s commitment to the community. The hospital’s staff was thankful for the generous gesture and appreciated the foundation for their kind-heartedness.",
+      progressData: "65",
+      desc: "Mian Muhammad Munshi Hospital",
+      color: "#65cabb",
+    },
+    {
+      id: 56,
+      category: ["Medical"],
+      img: (
+        <Image
+          src="/img/causes/general1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      detail: "Helpline provided free meals to patients at General Hospital.",
+      description:
+        "Helpline Social Welfare Foundation recently provided free meals to patients at General Hospital in Lahore, Pakistan. This act of kindness was made possible by generous donations from several individuals and organizations, which allowed the foundation to provide meals to patients and their families. In addition to providing meals, the foundation also distributed bedsheets and blankets to patients who needed them. This genuinely heartwarming gesture enabled many people to have a better hospital stay. The foundation’s mission is to provide essential services to people in need, and this service at General Hospital is a testament to their commitment.",
+      progressData: "65",
+      desc: "Free Meal General Hospital, Lahore.",
+      color: "#65cabb",
+    },
+    {
+      id: 57,
+      category: ["Medical"],
+      img: (
+        <Image
+          src="/img/causes/khawaja.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      detail: "Helpline provided free meals to patients at Kot Khawaja Saeed.",
+      description:
+        "Helpline Social Welfare Foundation recently organized a unique initiative in the Government Hospital Kot Khawaja Saeed, providing free meals to patients. This noble cause was a great success, as the Hospital staff, patients and their families appreciated this kind gesture. The meals were prepared and distributed by the volunteers of the Foundation, and they brought smiles to the faces of the patients. It was a great way to show the hospital’s commitment to its patients’ well-being and ensure they have access to nutritious meals. This Helpline Social Welfare Foundation initiative was a great success, and it is hoped that Helpline will take up more such initiatives in the future to help the people of Pakistan.",
+      progressData: "65",
+      desc: "Govt Hospital Kot Khawaja Saeed",
       color: "#65cabb",
     },
   ],
