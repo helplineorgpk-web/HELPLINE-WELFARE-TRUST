@@ -4,7 +4,9 @@
   background-color: #e0e0e0;
   padding-bottom: 40px;
 }
-
+.blocktitle {
+  color: #e0e0e0;
+}
 .main {
   text-align: center;
   display: flex;

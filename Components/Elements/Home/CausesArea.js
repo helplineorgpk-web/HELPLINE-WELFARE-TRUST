@@ -69,31 +69,23 @@ export default function CausesArea({ causes, data }) {
                         </Link>
                       </h3>
                     </div>
-                    <div className="single_cause_meta">
-                      <div className="single_meta d-inline-block">
-                        <span className="meta_text clr_theme1">
-                          <i className="fal fa-globe"></i> Goal
-                        </span>
-                        <span className="meta_price clr_theme1">
-                          ${item.goal}
-                        </span>
-                      </div>
-                      <div className="single_meta d-inline-block">
-                        <span className="meta_text clr_theme2">
-                          <i className="fal fa-users"></i> Raised
-                        </span>
-                        <span className="meta_price clr_theme2">
-                          ${item.raised}
-                        </span>
-                      </div>
-                      <div className="single_meta d-inline-block">
-                        <span className="meta_text clr_theme3">
-                          <i className="fal fa-reply"></i> To go
-                        </span>
-                        <span className="meta_price clr_theme3">
-                          ${item.toGo}
-                        </span>
-                      </div>
+                    <div className="single_cause_meta">{item.detail}</div>
+                    <div
+                      onClick={() => handleNavigation(item)}
+                      style={{
+                        padding: "10px 20px",
+                        backgroundColor: item.color,
+                        color: "#fff",
+                        textAlign: "center",
+                        borderRadius: "5px",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                        marginTop: "20px",
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                        transition: "transform 0.2s ease, box-shadow 0.2s ease",
+                      }}
+                    >
+                      See More
                     </div>
                   </div>
                 </div>

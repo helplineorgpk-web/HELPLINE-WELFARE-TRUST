@@ -13,7 +13,7 @@ function WayToDonate() {
       <div className={styles.blockContainer}>
         {donationMethods.map((method, index) => (
           <div className={styles.block} key={index}>
-            <h6>{method.title}</h6>
+            <h6 className={styles.blocktitle}>{method.title}</h6>
             <p>{method.description}</p>
             <a href="/donation">
               <div className={styles[method.buttonType]}>

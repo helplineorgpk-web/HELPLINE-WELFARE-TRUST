@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function VolunteerNewsfeed() {
   return (
-    // newsfeed area start
 
     <div className="nfeed_area pt-105 pb-90">
       <div className="container">
@@ -176,7 +175,5 @@ export default function VolunteerNewsfeed() {
         </div>
       </div>
     </div>
-
-    // newsfeed area end
   );
 }

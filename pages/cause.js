@@ -9,7 +9,6 @@ const data = {
   Water: "Water",
   Education: "Education",
   Medical: "Medical",
-  Food: "Food",
 };
 
 export default function Cause() {

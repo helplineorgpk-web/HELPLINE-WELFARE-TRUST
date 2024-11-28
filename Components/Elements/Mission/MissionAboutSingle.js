@@ -22,14 +22,6 @@ export default function MissionAboutSingle() {
                 Diego, are industry recognized experts in a wide variety of
                 cosmetic procedure and are dedicated to providing customers.
               </p>
-              <div className="subscribe_form height_70">
-                <form action="#">
-                  <input type="text" placeholder="Enter email address" />
-                  <button className="submit_btn abs_submit" type="submit">
-                    <i className="fal fa-envelope i_left"></i>Subscribe Now
-                  </button>
-                </form>
-              </div>
             </div>
           </div>
         </div>

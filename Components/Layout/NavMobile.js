@@ -40,30 +40,13 @@ export default function NavMobile() {
             </Link>
           </li>
           <li className="menu-item-has-children">
-            <Link href="#">
-              <a className="has-arrow">Media</a>
+            <Link href="/videos">
+              <a className="">Media</a>
             </Link>
-            <ul>
-              <li>
-                <Link href="/images">
-                  <a>Images</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/videos">
-                  <a>Videos</a>
-                </Link>
-              </li>
-            </ul>
           </li>
           <li>
             <Link href="/mission">
               <a>Mission</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/faq">
-              <a>Faq</a>
             </Link>
           </li>
         </ul>
@@ -147,17 +130,24 @@ export default function NavMobile() {
               <a>Cataract Program</a>
             </Link>
           </li>
-          <li>
-            <Link href="/itlab">
-              <a>IT Labs</a>
+          <li className="menu-item-has-children">
+            <Link href="#">
+              <a className="has-arrow">IT Lab</a>
             </Link>
+            <ul className="sub-menu">
+              <li>
+                <Link href="/itlab">
+                  <a>IT Labs</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/itform">
+                  <a>IT Labs Form</a>
+                </Link>
+              </li>
+            </ul>
           </li>
         </ul>
-      </li>
-      <li>
-        <Link href="/event">
-          <a>Events</a>
-        </Link>
       </li>
       <li className="menu-item-has-children">
         <Link href="#">
