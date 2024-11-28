@@ -42,7 +42,7 @@ export default function NewsFeed() {
           <div className="col-xxl-12">
             <div className="section_title mb-45">
               <span className="sub_title">
-                <i className="fal fa-heart"></i> Insights
+                <i className="fal fa-heart"></i> Insta Feeds
               </span>
               <h3 className="title">News Feeds</h3>
             </div>

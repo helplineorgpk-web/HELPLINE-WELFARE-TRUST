@@ -96,9 +96,8 @@ export const HelplineData = {
       label: "Fundraiser",
       description:
         "Become our Fundraiser, we just want to help those ones who need our help. Kindly help us to arrange necessary things for needy ones.",
-      link: "/cause-details",
+      link: "/donation",
       Color: "pbar_1",
-      bgColor: "rgb(95, 179, 91, 0.8), rgb(241, 91, 67, 0.8)",
     },
     {
       image: "/img/causes/cause17.jpg",
@@ -106,9 +105,8 @@ export const HelplineData = {
       label: "Attend Event",
       description:
         "Be a volunteer to help us to arrange the event. And can join us on any event which will be arranged by HELPLINE.",
-      link: "/cause-details",
+      link: "/donation",
       Color: "pbar_2",
-      bgColor: "rgb(241, 91, 67, 0.8), rgba(101, 202, 187, 0.8)",
     },
     {
       image: "/img/causes/cause3.jpg",
@@ -116,9 +114,8 @@ export const HelplineData = {
       label: "Donor",
       description:
         "Help us, we need your support because your little support for our good deeds will return to you and you will be amazed to donate.",
-      link: "/cause-details",
+      link: "/donation",
       Color: "pbar_3",
-      bgColor: "rgba(101, 202, 187, 0.8), rgb(95, 179, 91, 0.8)",
     },
   ],
   donationMethods: [
@@ -1302,6 +1299,51 @@ export const HelplineData = {
     {
       id: 6,
       src: "https://www.youtube.com/embed/e1DF3RJT1xA?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
+      title: "Distribution of 500 Rations to Deserving Families of Lahore",
+    },
+    {
+      id: 7,
+      src: "https://www.youtube.com/embed/p9N0r1P-RYQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=1",
+      title: "YouTube video player 1",
+    },
+    {
+      id: 8,
+      src: "https://www.youtube.com/embed/5xZLbU1bYGI?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=3",
+      title: "YouTube video player 2",
+    },
+    {
+      id: 9,
+      src: "https://www.youtube.com/embed/8RAQOETPHhk?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=5",
+      title: "YouTube video player 3",
+    },
+    {
+      id: 10,
+      src: "https://www.youtube.com/embed/Zed6wEaHiag?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=7",
+      title: "Qurbani - Eid UL Azha Message 2019",
+    },
+    {
+      id: 11,
+      src: "https://www.youtube.com/embed/qYl8uuP5rd0?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=9",
+      title: "Qubani Program by Pak Helpline",
+    },
+    {
+      id: 12,
+      src: "https://www.youtube.com/embed/jedMB4nbdjE?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
+      title: "Distribution of 500 Rations to Deserving Families of Lahore",
+    },
+    {
+      id: 13,
+      src: "https://www.youtube.com/embed/T0AQTnVL4jc?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=7",
+      title: "Qurbani - Eid UL Azha Message 2019",
+    },
+    {
+      id: 14,
+      src: "https://www.youtube.com/embed/-WjRhXXI75Y?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=9",
+      title: "Qubani Program by Pak Helpline",
+    },
+    {
+      id: 15,
+      src: "https://www.youtube.com/embed/0FArIwxbYOQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
       title: "Distribution of 500 Rations to Deserving Families of Lahore",
     },
   ],

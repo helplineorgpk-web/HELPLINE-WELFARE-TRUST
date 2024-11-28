@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { HelplineData } from "../../../pages/api/data";
 
-
 function HelplineProject() {
   const HelplineProject = HelplineData.slidesData;
   return (
@@ -55,9 +54,8 @@ function HelplineProject() {
             <div
               className="single_cause_contents"
               style={{
-                background: `linear-gradient(135deg, ${slide.bgColor})`,
+                background: `linear-gradient(135deg,#d6cbc6, #65cabb)`,
                 padding: "20px",
-                color: "#fff",
               }}
             >
               <div>
@@ -65,11 +63,21 @@ function HelplineProject() {
                   <a>{slide.description}</a>
                 </span>
               </div>
-              <h6 style={styles.readmore}>
-                <Link href={slide.link}>
-                  <a>Read More</a>
-                </Link>
-              </h6>
+              <Link href={slide.link}>
+                <h6
+                  style={{
+                    color: "#FFFFFF",
+                    textAlign: "center",
+                    marginTop: "30px",
+                    padding: "10px",
+                    borderRadius: "10px",
+                    cursor: "pointer",
+                    background: `linear-gradient(135deg,#0A463E, #F8B698)`,
+                  }}
+                >
+                  <a>Donate Now</a>
+                </h6>
+              </Link>
             </div>
           </SwiperSlide>
         ))}

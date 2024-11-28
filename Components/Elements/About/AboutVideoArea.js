@@ -6,8 +6,6 @@ import Link from "next/link";
 export default function AboutVideoArea() {
   const [isShow, setShow] = useState(false);
   return (
-    //  about videos area start
-
     <div className="about_videos_area mtm-300">
       <div className="container">
         <div className="row">
@@ -29,12 +27,10 @@ export default function AboutVideoArea() {
         {isShow && (
           <VideoPopUp
             setShow={() => setShow(false)}
-            src={"//www.youtube.com/embed/B4GwnBrp41s?autoplay=1"}
+            src={"//www.youtube.com/embed/tKMMzq1dA5I"}
           />
         )}
       </div>
     </div>
-
-    // about videos area end
   );
 }
