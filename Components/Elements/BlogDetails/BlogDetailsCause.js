@@ -219,7 +219,7 @@ export default function BlogDetailsCause() {
                             <i className="fab fa-youtube"></i>
                           </a>
                         </Link>
-                        <Link href="#">
+                        <Link href="">
                           <a className="instagram">
                             <i className="fab fa-instagram"></i>
                           </a>
