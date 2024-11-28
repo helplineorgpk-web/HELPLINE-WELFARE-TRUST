@@ -6,10 +6,7 @@ import { HelplineData } from "../pages/api/data";
 import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
 
 const data = {
-  Water: "Helpline Schools",
-  HouseConstructions: "Helpline Adopted Students",
-  Education: "Al Kitab Education System",
-  Education2: "Idara-e-Nazariya-e-Pakistan",
+  Education: "Education",
 };
 export default function edu() {
   const educationProject = HelplineData.causes;

@@ -1,0 +1,195 @@
+.container {
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  background: linear-gradient(135deg, #eef5f9, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #263b5d;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.activityButton {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #65cabb, #d6cbc6);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(101, 202, 187, 0.3);
+}
+
+.activityButton:hover {
+  background: linear-gradient(135deg, #d6cbc6, #65cabb);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(101, 202, 187, 0.4);
+}
+
+.activityButton.activeButton {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  box-shadow: 0 6px 20px rgba(26, 188, 156, 0.5);
+  transform: translateY(0);
+}
+
+.slide {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.activityTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1abc9c;
+  margin-bottom: 15px;
+}
+
+.activityDescription {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.activityVideo {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.questions {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.que {
+  color: #16a085;
+}
+
+.question {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.question strong {
+  color: #263b5d;
+  font-size: 1rem;
+}
+
+.question p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide::-webkit-scrollbar {
+  width: 8px;
+}
+
+.slide::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.slide::-webkit-scrollbar-thumb {
+  background: #1abc9c;
+  border-radius: 10px;
+}
+
+.slide::-webkit-scrollbar-thumb:hover {
+  background: #16a085;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .activityButton {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .activityVideo {
+    height: 250px;
+  }
+
+  .slide {
+    padding: 20px;
+  }
+
+  .activityTitle {
+    font-size: 1.5rem;
+  }
+
+  .activityDescription {
+    font-size: 0.9rem;
+  }
+
+  .question strong {
+    font-size: 0.9rem;
+  }
+
+  .question p {
+    font-size: 0.8rem;
+  }
+}

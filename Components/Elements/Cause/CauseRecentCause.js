@@ -7,11 +7,11 @@ export default function CauseRecentCause({ categories, causes }) {
     if (categories?.AllCategories) {
       return "";
     }
+    if (categories?.Water) {
+      return "Water";
+    }
     if (categories?.Education) {
       return "Education";
-    }
-    if (categories?.Aqiqah) {
-      return "Aqiqah";
     }
   });
 

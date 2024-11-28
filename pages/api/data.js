@@ -425,7 +425,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 37,
+      id: 13,
       category: ["Education"],
       img: (
         <Image
@@ -447,7 +447,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 13,
+      id: 14,
       category: ["Medical"],
       img: (
         <Image
@@ -468,7 +468,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 14,
+      id: 15,
       category: ["Medical"],
       img: (
         <Image
@@ -489,7 +489,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 15,
+      id: 16,
       category: ["Medical"],
       img: (
         <Image
@@ -511,7 +511,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 36,
+      id: 17,
       category: ["Medical"],
       img: (
         <Image
@@ -532,235 +532,25 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 16,
-      category: ["Food"],
-      img: (
-        <Image
-          src="/img/causes/cause23.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Rashan Distribution in ramzan.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#5fb35b",
-    },
-    {
-      id: 17,
-      category: ["Food"],
-      img: (
-        <Image
-          src="/img/causes/cause24.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Rashan Distribution Between Needy People.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#f15b43",
-    },
-    {
       id: 18,
-      category: ["Food"],
+      category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause25.jpg"
+          src="/img/causes/irtiqa.jpeg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      detail: "Empowering underprivileged youth through quality education.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
       progressData: "65",
-      desc: "Helpline Ramzan Rashan Distribution in Blochistan.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
       color: "#65cabb",
     },
     {
       id: 19,
-      category: ["Food"],
-      img: (
-        <Image
-          src="/img/causes/cause26.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Rashan Distribution in Flooded Area.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#5fb35b",
-    },
-    {
-      id: 20,
-      category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 21,
-      category: ["Food"],
-      img: (
-        <Image
-          src="/img/causes/cause27.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Rashan Distribution Campaign in Pakistan.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#5fb35b",
-    },
-    {
-      id: 22,
-      category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/cause1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "63",
-      desc: "CLEAN WATER PROJECT IN KPK",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2025-12-27 00:00:00",
-      color: "#5fb35b",
-    },
-    {
-      id: 23,
-      category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/cause2.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "CLEAN WATER PROJECT IN PUNJAB",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2024-01-07 00:00:00",
-      color: "#f15b43",
-    },
-    {
-      id: 24,
-      category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/cause3.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "CLEAN WATER PROJECT IN BALOCHISTAN.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 25,
-      category: ["Education", ""],
-      img: (
-        <Image
-          src="/img/causes/illasschool1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      img1: "/img/causes/illiyasschool2.jpg",
-      img2: "/img/causes/illiyasschool3.jpg",
-      detail: "Illyas Dal School empowers students with quality education.",
-      description:
-        "The adoption of Govt. Illyas Dal School by a helpline NGO has been a crucial step towards improving the education outcomes of underprivileged students in the community. The NGO has taken on the responsibility of supporting the school’s operations by providing financial assistance for the payment of teachers’ salaries, as well as other essential needs such as textbooks, school supplies, and maintenance of facilities. This support has been critical for the school, which serves a predominantly low-income student population. Moreover, the support that the NGO provides for the school’s teachers is invaluable. The NGO recognizes the crucial role that teachers play in shaping students’ lives and is committed to ensuring that they are compensated fairly for their hard work. This support helps to incentivize high-quality teaching, which is essential for creating a positive and effective learning environment for students.",
-      progressData: "65",
-      adopted: "Adopted",
-      desc: "The Govt GPS illyas dal School by Helpline",
-      color: "#5fb35b",
-    },
-    {
-      id: 26,
       category: ["Education"],
       img: (
         <Image
@@ -783,7 +573,7 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 28,
+      id: 20,
       category: ["Education"],
       img: (
         <Image
@@ -805,7 +595,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 29,
+      id: 21,
       category: ["Education"],
       img: (
         <Image
@@ -827,7 +617,7 @@ export const HelplineData = {
       color: "#5fb35b",
     },
     {
-      id: 30,
+      id: 22,
       category: ["Education"],
       img: (
         <Image
@@ -849,490 +639,103 @@ export const HelplineData = {
       color: "#f15b43",
     },
     {
-      id: 31,
+      id: 23,
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause10.jpg"
+          src="/img/causes/alkitab2.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      img1: "/img/causes/alkitab3.jpg",
+      img2: "/img/causes/alkitab4.jpg",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
       progressData: "65",
-      desc: "Al Kitab Education System.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "Al Kitab Education System (Rana Town).",
       color: "#65cabb",
     },
     {
-      id: 32,
+      id: 24,
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause11.jpg"
+          src="/img/causes/alkitabghani1.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      detail:
+        "Al-Kitab School offers free education, fostering growth and community service.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Al-Kitab School, located in Chani Goth, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The school focuses on academic excellence and offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects. The school prioritises academic performance and aims to instil moral values and a sense of community service among its students. In addition, the school provides extracurricular activities that help to develop the student’s skills and talents. The school also organizes community service activities to encourage the students to give back to society. The Al-Kitab School is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The school also provides free uniforms, textbooks, and school supplies.",
       progressData: "65",
-      desc: "Al Kitab Education System.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "Al Kitab Education System  (Chani Goth).",
       color: "#5fb35b",
     },
     {
-      id: 33,
+      id: 25,
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause12.jpg"
+          src="/img/causes/rehmat.jpeg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      detail:
+        "Aligarh Complex offers free education, breaking poverty through knowledge.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Aligarh Educational Complex in Gojra is a project owned by Helpline NGO, aimed at providing free education to underprivileged students. The complex comprises a school, a computer lab, a library, and a hostel. The school has a team of highly qualified teachers who are committed to providing quality education to children from low-income families. The computer lab at the complex is equipped with the latest technology and offers students the opportunity to learn computer skills. The library is stocked with a wide range of books, which provides students with access to a wealth of knowledge and information. The hostel offers comfortable accommodation for students who live far away from the school and ensures that they have a safe and secure environment to study in. Aligarh Educational Complex in Gojra is making a significant contribution to the community it serves. The school’s focus on providing quality education to underprivileged children has helped to break the cycle of poverty and provide a brighter future for many families.",
       progressData: "65",
-      desc: "Al Kitab Education System.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "Aligarh Educational Complex (Gojra)",
       color: "#f15b43",
     },
     {
-      id: 34,
+      id: 26,
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/cause28.jpg"
+          src="/img/causes/girlsschool.jpeg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      detail: "Free education for brighter futures.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "CH. Rahmat Ali Superior Higher Secondary School, located in the Alighar Education Complex in Gojra, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The institution offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects, with a focus on academic excellence. In addition to academic subjects, the school also provides extracurricular activities that help to develop the student’s skills and talents. The institution encourages students to participate in sports, debates, and other activities that enable them to develop their leadership skills and teamwork abilities. The Alighar Education Complex is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The institution also provides free uniforms, textbooks, and school supplies to the students.",
       progressData: "65",
-      desc: "Al Kitab Education System.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "Iman Maryam Girls Higher Secondary School Alighar Education Complex (Gojra)",
       color: "#65cabb",
     },
     {
-      id: 35,
+      id: 27,
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
+          src="/img/causes/eman1.jpeg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
+      detail: "Free education for brighter futures.",
       description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
+        "Emman Maryam Smart School, Alighar Education Complex (Gojra) is a remarkable institution that is supported by Helpline NGO. The school is dedicated to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and enthusiastic, despite the financial challenges they may face. They are committed to their education and strive to excel academically. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been crucial in making this possible. By providing financial assistance, Helpline NGO is helping to ensure that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are designed to cater to the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
       progressData: "65",
-      desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
+      desc: "Emman Maryam Smart School Alighar Education Complex (Gojra)",
       color: "#65cabb",
     },
+
     {
-      id: 38,
-      category: ["Sadaqah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Sadaqah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 39,
-      category: ["Sadaqah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Sadaqah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 40,
-      category: ["Sadaqah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Sadaqah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 41,
-      category: ["Sadaqah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Sadaqah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 42,
-      category: ["Kaffarah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Kaffarah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 43,
-      category: ["Kaffarah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Kaffarah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 44,
-      category: ["Kaffarah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Kaffarah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 45,
-      category: ["Kaffarah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Kaffarah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 46,
-      category: ["Fidyah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Fidyah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 47,
-      category: ["Fidyah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Fidyah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 48,
-      category: ["Fidyah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Fidyah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 49,
-      category: ["Fidyah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Fidyah Program .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 50,
-      category: ["Aqiqah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Aqiqah – Celebrate the Birth of Your Child: .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 51,
-      category: ["Aqiqah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Aqiqah – Celebrate the Birth of Your Child:.",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 52,
-      category: ["Aqiqah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Aqiqah – Celebrate the Birth of Your Child: .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 53,
-      category: ["Aqiqah"],
-      img: (
-        <Image
-          src="/img/causes/idaranazriyapakistan.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
-      description:
-        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people,",
-      pbar: "pbar_1",
-      progressData: "65",
-      desc: "Helpline Aqiqah – Celebrate the Birth of Your Child: .",
-      goal: "4,5100",
-      raised: "45,300",
-      toGo: "45,200",
-      address: "Douglas Park, Chicago, IL",
-      date: "2022-11-27 00:00:00",
-      color: "#65cabb",
-    },
-    {
-      id: 54,
+      id: 28,
       category: ["Medical"],
       img: (
         <Image
@@ -1350,7 +753,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 55,
+      id: 29,
       category: ["Medical"],
       img: (
         <Image
@@ -1368,7 +771,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 56,
+      id: 30,
       category: ["Medical"],
       img: (
         <Image
@@ -1386,7 +789,7 @@ export const HelplineData = {
       color: "#65cabb",
     },
     {
-      id: 57,
+      id: 31,
       category: ["Medical"],
       img: (
         <Image
@@ -2714,4 +2117,198 @@ This year, with your generous support, we’ve achieved incredible milestones in
     },
     { label: "Date of Submission", name: "dateOfSubmission", type: "date" },
   ],
+activities: [
+    {
+      title: "Aqiqah",
+      description: `Helpline Social Welfare Foundation Establishment aqiqah pack contains the penance of one (for girl) or two (for boy) Aqiqah creatures and meat appropriated to poor people and vagrants. Rs: 3,672.65/-  likewise is given in sadaqah to poor people, at the market cost of silver, this effectively covers the worth equivalent to the load in silver of your kid’s hair. Aqiqah is performed within 2 days.*. Praise the introduction of your kid and give aqiqah.`,
+      videoUrl: "https://www.youtube.com/embed/NhGfnNxH1R4",
+      questions: [
+        {
+          question: "What is Aqiqah?",
+          answer:
+            "Aqiqah, an Islamic terminology, is defined as an animal that is slaughtered on the occasion of childbirth. For the child, there should be aqiqah, and on behalf of the child make sacrifices and remove the hair. Hadith (Bukhari)",
+        },
+        {
+          question: "When Should Aqiqah be Performed?",
+          answer:
+            "The preferable method for Aqiqah is that it should be performed on the seventh day if not then on the 14th or 21st and so on. Some scholars have said that this can be carried on till the child has become mature and say Aqiqah can be performed then. However, after this period performing Aqiqah is irrelevant. Some scholars are given the Fatwa that Aqiqah is valid till the day of one’s death. If someone after becoming an adult performs his own Aqiqah, according to some scholars it is not valid but according to some scholars, it’s permissible as it is also understood from Fadhul Bari.",
+        },
+        {
+          question: "What is the Purpose of Aqiqah?",
+          answer:
+            "The performance of Aqiqah is highly encouraged. It is to be performed by the parents or the guardians of the child. Prophet Muhammad (peace be upon him) and his companions used to perform Aqiqah when they were bestowed with a newborn. There are many benefits in the performance of Aqiqah. One is the announcing the birth of the baby. Being bestowed a child is a great blessing from the Creator. Another purpose is to invite family members, neighbours, and friends to celebrate the blessed occasion. The poor should be included in the celebration by offering them food and meat served on this occasion.",
+        },
+        {
+          question: "Types of Animals to be Slaughtered:",
+          answer:
+            "The condition of the animals in Aqiqah is the same as the conditions for the animals in Qurbani. The animals to be slaughtered must be a goats, cows or camels. For camels, it must be older than 6 years, for cows the age must be older than 3 years and for goats, it must be older than 2 years. They must be free from any form of handicap such as blind, sick, limp and undernourished. The animals must be slaughtered in the appropriate humane ways.Celebrate the birth of your newborn and share the joy with your needy brothers and sisters through the Alkhidmat Foundation’s Aqiqah Service.",
+        },
+        {
+          question: "The Aqiqah Pack:",
+          answer:
+            "The Alkhidmat Foundation Aqiqah Pack encompasses all these aspects and includes The sacrifice of one or two Aqiqah animals (depending on sex “boy or a girl”) distributed to the poor and needy, including orphans and the elderly. The value is equal to the weight in silver of your child’s hair distributed to the needy as sadaqah. Rs: 3,672.65/-  Aqiqah performed within 3 days.  is given in sadaqah. At the market price of silver, this easily covers the required value.",
+        },
+      ],
+    },
+    {
+      title: "Fidya",
+      description: `Fidyah is a donation that a person must pay to feed the poor for not making up fasts missed in Ramadan on time. Alkhidmat Foundation Pakistan suggests that $4.93 is paid for each fast missed to feed the poor.`,
+      videoUrl: "https://www.youtube.com/embed/NhGfnNxH1R4",
+      questions: [
+        {
+          question: "What is Fidyah?",
+          answer:
+            "Fidyah is a donation that a person must pay to feed the poor for not making up fasts missed in Ramadan on time. Alkhidmat Foundation Pakistan suggests that $4.93 is paid for each fast missed to feed the poor.If one does not fast some days during Ramadan, it is obligatory to make up these missed fasts before the next Ramadan arrives, regardless of whether these fasts were cut with a valid excuse (e.g. menstruation, travel, sickness, etc.) or without a valid excuse. If one does not make them up before the next Ramadan, one is sinful and must pay a “mudd” (a volumetric measure defined below) of food to someone poor (faqeer) or short of money (miskeen) in addition to making up the missed fasts (I`anatu’l-Talibin, 2.242; Tuhfat ul Muhtaj, 3.445-446). Imam Daraqutni and Imam Bayhaqi (Allah be pleased with them) have related the following hadith from the Prophet (Allah bless him and give him peace): Whoever lives to meet Ramadan, does not fast because of an illness, then regains his health and does not makeup [the missed fasts] until another Ramadan should fast [the Ramadan] that he has reached, then makeup what he owes, and then feed someone short of money [miskeen] for every day [he missed]. Both Imam Daraqutni and Imam Bayhaqi (Allah be pleased with them) said this hadith was weak (da`if), but Imam Ramli has mentioned that it has been narrated with sound (sahih) chains of transmission as a statement of a companion (a mawquf hadith). All this is also strengthened by the fact that six companions gave this fatwa and no one objected to them (Hashiyat al-Sharqawi, 1.413).",
+        },
+        {
+          question: "What is the Fidyah that Must be Paid?",
+          answer:
+            "One must give one “mudd” of the main staple of one’s area to either someone who is poor (faqeer) or short of money (miskeen) (those who are considered poor or short of money are defined in Reliance, h8.8, h8.11). A “mudd” is the amount one can hold in both hands when cupped together. It is estimated in the Reliance as 0.51 liters (Reliance, i1.33). The type of food one gives varies from place to place. One must pay whatever food is considered the main staple in the area where one lives. This could be wheat, barley, rice or something else (al-Minhaj al-Qawim + al-Hawashi al-Madaniyya, 2.194). One mudd needs to be given for every day of fasting that one delayed making up (al-Minhaj al-Qawim, 2.194).",
+        },
+        {
+          question: "Does the Fidyah Accumulate from Year to Year?",
+          answer:
+            "Yes, it does. One must pay one mudd per day per year (I`anatu’l-Talibin, 2.242). For example, if a woman missed six fasts during Ramadan because of menstruation, and she did not make them up until after three more Ramadans had passed, she would have to pay 18 mudds (1 mudd per day per year * 6 days * 3 years = 18 mudd’s)",
+        },
+        {
+          question: "Can I Feed All the People on One Day at a Big Feast?",
+          answer:
+            "Feeding (it`am) a poor person, as Imam Bajuri (Allah have mercy on him) explains in the section on expiating (kaffara) for fast days that one has invalidated, means giving him ownership (tamleek) of the food. It is not sufficient to cook the food and then invite him to one’s house for lunch or dinner (Hashiyat al-Bajuri, 1.319). Rather, the poor person must be given possession of the food (e.g. a bag of wheat) and then he can do what he wants with it (e.g. eat it, sell it, give it away to someone else, give it back to you and ask you to cook it for him, etc.). As such, it would not be sufficient to invite the people to a feast. One would have to give them the actual staple food. It is valid, however, to give everyone the food the same day. It suffices to give multiple mudd’s to one person (so one could calculate everything one owes and give everything to one person). However, it is not acceptable to divide a single mudd between multiple people (Tuhfat al-Muhtaj, 3.446).",
+        },
+        {
+          question: "What Qualifies as an Excuse for not Making up These days?",
+          answer:
+            "For example, if one never knew that it was obligatory to make up missed fasts before the next Ramadan despite being raised Muslim, does one still have make them up? Just like missed prayers, there is no excuse for not making up the fast days. Obligatory fasts must be made up. They are a debt one owes to Allah, just like missed prayers. There are, however, excuses for not paying the expiatory payment (fidyah). The fuqaha mention that someone who was not aware that it was obligatory to make up missed fasts before the next Ramadan does not have to perform the expiation (fidyah), even if he or she lives among scholars. Non-scholars (awamm) are excused for being ignorant of minor, subtle points such as these even if they live in Muslim lands among scholars. If, however, one knew that it was obligatory to make up the fasts before the next Ramadan, but was not aware that one had to make an expiatory payment (fidyah), one would not be considered excused (Tuhfat al-Muhtaj, 3.445).",
+        },
+      ],
+    },
+    {
+      title: "Kaffarah",
+      description: `Kaffarah for blatantly breaking a quick of Ramadhan is to quick 60 successive days – sixty days, consistently, without missing any in the middle between.Since Kaffarah Saum has a place with the inferior of the Wajib class of Saum (see page 3 ), it is vital for make niyyat for this kind of fasting from the evening, for example prior to Subah Sadiq. If the niyyat isn’t made before Subah Sadiq, the Kaffarah won’t be legitimate.`,
+      videoUrl: "https://www.youtube.com/embed/NhGfnNxH1R4",
+      questions: [
+        {
+          question: "What is Kaffarah?",
+          answer:
+            "The Shariah’s punishment for willfully and blatantly annulling the Saum of Ramadan is called kaffarah. A person who is unable to complete the Kaffarah due to sickness or older age must feed 60 people in need two full meals each day or pay the amount assigned as Sadqah ul Fitr in cash. Our estimate is $4.93 per person every day, or $296 for 60 people. Let’s create a Kaffarah gift here.",
+        },
+        {
+          question: "When Kaffarah Applies?",
+          answer: `Kaffarah applies to just the Saum of Ramadhan.Kaffarah comes into force provided that the niyyat for fasting was made around evening time, for example prior to Subah Sadiq. In this way, in the event that niyyat was made during the night to quick the next day, and afterward the quick is broken without a substantial explanation, the Kaffarah punishment happen.Kaffarah for blatantly breaking a quick of Ramadhan is to quick 60 successive days – sixty days, consistently, without missing any in the middle between.
+                  Since Kaffarah Saum has a place with the inferior of the Wajib class of Saum (see page 3 ), it is vital for make niyyat for this kind of fasting from the evening, for example prior to Subah Sadiq. If the niyyat isn’t made before Subah Sadiq, the Kaffarah won’t be legitimate.
+                  The kaffarah will be delivered invalid if under any condition be it a legitimate explanation even a solitary day is discarded during the 60-day Kaffarah course. Subsequently on the off chance that an individual abstained for 59 days and neglected to quick on the 60th day because of sickness, he should begin the Kaffarah all once more. The main interference which won’t negate the kaffarah is haidh (the month to month menses of ladies).
+                  A Kaffarah hindered by the mediation of nifas will be delivered invalid.
+                  An individual who can’t release the Kaffarah due to weakness or extremely advanced age should take care of 60 unfortunate people. Each miskeen (poor) ought to be given two full feasts for the afternoon or the sum in real money which is given as Sadqah Fitr. This sum is the cost of roughly 2 kilograms of bread flour. Rather than cash, flour may likewise be given.
+                  On the off chance that the grain, food or money of 60 people is given to one man on a solitary day the Kaffarah won’t be released. It will be viewed as a sum/amount given to just a single individual. On the off chance that the whole Kaffarah sum/amount is disseminated on a solitary day to just two people, the Kaffarah won’t be released in this manner. Another 58 people should be given each the Sadqah Fitr sum.
+                  The Kaffarah choice of taking care of 60 Masakeen (unfortunate people) might be released on a solitary day by taking care of 60 people or giving money or grain to sixty people.
+                  The Kaffarah may likewise be spread over a time of 60 days. Day to day, one miskeen might be taken care of or given the grain/cash until 60 days.
+                  Assuming in the wake of having paid the Kaffarah one recuperates from the ailment and can execute the 60-day quick, then fasting for 60 days becomes compulsory. The cash, and so forth recently given to the unfortunate will turn into a nafl noble cause.
+                  If any miskeen among the sixty is a little youngster, the Kaffarah won’t be released. Assuming little youngsters were taken care of, an equivalent number of grown-ups should be taken care of in lieu. Nonetheless, in the event that the full Sadqah Fitr sum was given in real money to an unfortunate youngster, the Kaffarah will be satisfied.
+                  Where the Kaffarah choice of taking care of or instalment is legitimate, someone else may pay it on the guidance of the person who is obligated for the Kaffarah. Without such guidance, it won’t be legitimate.
+                  Where the Kaffarah choice of taking care of or instalment is substantial, an Interference over the span of taking care of or paying won’t discredit the Kaffarah. Consequently, on the off chance that an individual who can’t quick the 60 days, embraces to take care of one miskeen for 60 days, yet doesn’t take care of the miskeen for 60 continuous days, the Kaffarah will be legitimate. However long the miskeen is taken care of for 60 days, the Kaffarah will be substantial regardless of whether the 60 days are spread over a significant stretch.
+                  A solitary Ramadhan makes Wajib only one Kaffarah independent of the number of diets blatantly broken during that Ramadhan.
+                  Assuming diets were glaringly invalidated in more than one Ramadhan, the quantity of kaffarah will be equivalent to the quantity of Ramadhan. Along these lines, assuming that diets were outrageously broken in three different Ramadhans, three unique Kaffarah will be mandatory.
+                  At the point when the Kaffarah is started on the first day of the Islamic month, then fasting for two full Islamic months will get the job done for the Kaffarah regardless of whether the absolute number of days In the two months is 58 days (29 days months).
+                  In the event that, nonetheless, the Kaffarah is begun over the span of the month, fasting an entire 60 days will be vital.`,
+        },
+      ],
+    },
+    {
+      title: "Sadaqah",
+      description: ` That which you give in usury for increase through the property of (other) people, will have no increase with Allah: but that which you give for charity, seeking the Countenance of Allah, (will increase); it is those who will get a recompense multiplied.`,
+      videoUrl: "https://www.youtube.com/embed/I1_YqCTQoDY",
+      questions: [
+        {
+          question: "Give your Sadaqah to Poor people.",
+          answer: `Sadaqah (voluntary charity) is a virtuous deed in Islam. In fact, it is considered as a proof of one’s eeman (faith). The Prophet (S.A.W.S.) sallallaahu ‘alayhi wa sallam said in the following authentic hadeeth: Abu Malik al-Ashari (R.A.) (radhi Allahu anhu) narrated that Allah’s Messenger (S.A.W.S.) Said: “Cleanliness is half of faith. Alhamdulillah (Praise be to Allah) fills the scale. SubhanAllah (Glory be to Allah) and Alhamdulillah (Praise be to Allah) fill up what is between the heavens and the earth. Prayer is a light. Charity is proof (of one’s faith). Endurance is a brightness and the Qur’an is a proof on your behalf or against you. All men go out early in the morning and sell themselves, thereby setting themselves free or destroying themselves.  (Muslim, 432)
+                  The more we give sadaqah the more we increase our eeman and thus, expect Allah’s rewards both in this world and in the life hereafter. Giving charity out of our wealth does not decrease our wealth but instead Allah (S.W.T.) increases it:
+                  Allah will deprive usury of all blessing, but will give increase for deeds of charity: for He loves not creatures ungrateful and sinner.  (Qur’an, 2: 276)
+                  That which you give in usury for increase through the property of (other) people, will have no increase with Allah: but that which you give for charity, seeking the Countenance of Allah, (will increase); it is those who will get a recompense multiplied.  (Qur’an, 30:39)
+                  Abu Hurairah (R.A.) reported Allah’s Messenger (S.A.W.S.) as saying:  “Charity does not in any way decrease the wealth and the servant who forgives, Allah adds to his respect; and the one who shows humility, Allah elevates him in the estimation (of the people).  (Muslim Vol. 4, Hadith 6264)
+                  Sadaqah is not restricted to giving part of our wealth or material possessions or any special deed of righteousness. Islam considers all good deeds as sadaqah that increase our eeman: Abu Musa narrated that the Prophet (S.A.W.S.) Said:
+                   Every Muslim has to give in sadaqah (charity). 
+                  The people asked:  O Allah’s Messenger (S.A.W.S.)! If someone has nothing to give, what will he do? 
+                  He said:  He should work with his hands and benefit himself and also give in charity (from what he earns). 
+                  The people further asked:  If he cannot do even that? 
+                  He replied:  Then he should help the needy who appeal for help. 
+                  Then the people asked:  If he cannot do that? 
+                  He replied:  Then he should perform all that is good and keep away from all that is evil and this will be regarded as charitable deeds. 
+                  (Bukhari Vol. 2, Hadith 524)
+                  The Messenger of Allah (S.A.W.S.) Said:  To smile in the company of your brother is charity. To command to do good deeds and to prevent others from doing evil is charity. To guide a person in a place where he cannot get astray is charity. To remove troublesome things like thorns and bones from the road is charity. To pour water from your jug into the jug of your brother is charity. To guide a person with defective vision is charity for you.  (Bukhari)
+                  Since sadaqah is not limited to giving of money or part of our wealth, every Muslim can therefore earn rewards from Allah. Sadaqah is an easy way to increase our eeman. Every Muslim whether poor or wealthy can give sadaqah at all times. The Prophet (S.A.W.S.) tells us that dhikr (remembrance of Allah) is a form of sadaqah. We read in the following Ahadeeth:
+
+                  Abu Hurairah narrated that: Abu Dharr said to the Messenger of Allah, The wealthy people have all the rewards, they pray as we pray, they fast as we fast, and they have surplus wealth which they give in charity, but we have no wealth which we may give in charity.
+                  Allah’s Messenger (S.A.W.S.) Said: Abu Dharr, should I not teach you phrases by which you acquire the rank of those who excel you? No one can acquire your rank except one who acts like you.
+                  He said:  Why not, Allah’s Messenger (S.A.W.S.)?
+                  He Said: Exalt Allah say: Allahu Akbar (Allah is Most Great) after each prayer thirty-three times, and praise Him say: Alhamdulillah (Praise be to Allah) thirty-three times, and glorify Him say: Subhan Allah (Glory be to Allah) thirty-three times; and end it by saying, La ilâha illallâhu wahdahu la shareeka lahu, lahul mulku wa lahul hamdu yuhyi wa yomeetu wa Huwa ‘ala kulli shai’in Qadeer. (There is no god but Allah alone, He has no partner, to Him belongs the Kingdom, to Him praise is due and He has power over everything.) Your sins will be forgiven, even if they are like the foam of the sea. (Abu Dawud 1499)
+
+                  Abu Dharr narrated that Allah’s Messenger (S.A.W.S.) Said:  In the morning charity is due from every bone in the body of every one of you. Every utterance of Allah’s glorification is an act of charity. Every utterance of praise of Him is an act of charity; every utterance of profession of His Oneness is an act of charity; every utterance of profession of His Greatness is an act of charity; enjoining good is an act of charity; forbidding what is disreputable is an act of charity; and two rak’ahs which one prays in the forenoon will suffice.  (Muslim 1557)
+
+                  For our own success, we should spend time, money and efforts in giving sadaqah for the pleasure of Allah as the rewards of sadaqah is nothing but success, especially in the Hereafter:  “The likeness of those who spend for Allah’s sake is as the likeness of a grain of corn, it grows seven ears every single ear has a hundred grains, and Allah multiplies (increases the reward of) for whom He wills, and Allah is sufficient for His creatures’ needs, All-Knower).  (Qur’an, 2:261)
+
+                  Those who (in charity) spend of their goods by night and by day, in secret and in public have their reward with their Rabb (only God and Sustainer). On them shall be no fear nor shall they grieve.  (Qur’an, 2:274)
+                  …that which you give for charity, seeking the Countenance of Allah, (will increase); it is those who will get a recompense multiplied.  (Qur’an, 30:39)
+                  Only those who believe in Our Signs, who when they are recited to them fall down in adoration, and celebrate the praises of their Rabb (only God and Sustainer), nor are they (ever) puffed up with pride. They forsake their beds of sleep, the while they call on their Rabb (only God and Sustainer), in Fear and Hope. And they spend (in charity) out of the sustenance which We have bestowed on them. Now no person knows what delights of the eye are kept hidden (in reserve) for them — as a reward for their (good) Deeds. Is then the man who believes no better than the man who is rebellious and wicked? Not equal are they. For those who believe and do righteous deeds are Gardens as hospitable Homes, for their (good) deeds.  (Qur’an, 32:15-19)
+
+                  For Muslim men and women, for believing men and women for devout men and women for true men and women, for men and women who are patient and constant, for men and women who humble themselves, for men and women who give in charity, for men and women who fast, for men and women who guard their chastity, and for men and women who engage much in Allah’s remembrance for them has Allah prepared forgiveness and great reward.  (Qur’an, 33:35)
+
+                  Qais ibn Abu Hazim narrated that…. Allah’s Messenger (S.A.W.S.) Said,  A Muslim is rewarded (in the Hereafter) for whatever he spends except for something that he spends on building.  (Bukhari, Vol. 7, Hadith 576)
+                  Mu’aadh bin Jabal (R.A.) related from the Prophet (S.A.W.S.)  Sadaqah extinguishes sin as water extinguishes fire.  (Ahmad, Tirmidhi and Ibn Majah)
+                  The Prophet (S.A.W.S.) also Said:  The believer’s shade on the Day of Resurrection will be his Sadaqah.  (Ahmad)
+
+                  To be able to enjoy Allah’s tremendous rewards for every sadaqah that we give, we need to observe the following teachings: Sadaqah must be done sincerely for the pleasure of Allah and not out of riya’ (show off) to gain praise or recognition from others:  O you who believe! Do not render vain your charity by reminders of your generosity or by injury, like him who spends his wealth to be seen of men and he does not believe in Allah nor in the last Day.  (Qur’an, 2: 264)
+                  Sa’d ibn Abu Waqqas narrated that Allah’s Messenger (S.A.W.S.) Said:  …whatever you spend (for Allah’s sake) you will be rewarded for it, even for a morsel of food which you may put in the mouth of your wife.  (Bukhari, Vol. 8, Hadith 725; Vol.1, Hadith 53)`,
+        },
+        {
+          question: "Better to conceal what we give as sadaqah:",
+          answer: `And whatever you spend in charity or whatever vow you make, be sure Allah knows it all. But the wrongdoers have no helpers. Even if you disclose (acts of) charity, it is well, but if you conceal them and make them reach those (really) in need, that is best for you. It will remove from you some of your (stains of) evil. And Allah is well acquainted with what you do.  (Qur’an, 2:270-271)
+                  Prophet Muhammad (S.A.W.S.) Said, “Allah will shade seven people under His shade on the day when there will be no shade except His. They are:
+                  A just ruler
+                  A youth who grew up in the worship of Allah
+                  A man whose heart is attached to the mosque
+                  Two men who love each other for Allah’s sake, meeting for that and parting for that.
+                  A man who is called by a woman of beauty and position but says, I fear Allah
+                  A man who gives in charity and hides it, such that his left-hand does not know what his right hand gives in charity,
+                  A man who remembered Allah in private and so his eyes shed tears.
+                  (Sahih Al-Bukhari (Eng. translation) vol.2, hadeeth no. 504)`,
+        },
+        {
+          question: "Sadaqah must be from halal (lawful) source:",
+          answer: `
+                Abu Hurairah (R.A.) narrated that Allah’s Messenger (S.A.W.S.) said If one gives in charity what equals one date-fruit from the honestly earned money and Allah accepts only the honestly earned money Allah takes it in His Right (hand). And then, enlarges its reward for that person (who has given it), as anyone of you brings up his baby horse, so much so that it becomes as big as a mountain.  (Bukhari, Vol.2, Hadith 491)`,
+        },
+        {
+          question: "Begin Charity With Your Dependents:",
+          answer: `
+                  Hakim ibn Hizam narrated that the Prophet (S.A.W.A.) Said: The upper hand is better than the lower hand, (i.e., he who gives charity is better than him who takes it). One should start giving first to his dependents. And the best object of charity is that which is given by a wealthy person (from the money which is left after his expenses.) And whoever abstains from asking others for some financial help, Allah will give him and save him from asking others, Allah will make him self-sufficient.  (Bukhari, Vol.2, Hadith 508)
+                  Abu Umamah (R.A.) narrated that Allah’s Messenger said:  O son of Adam, it is better for you if you spend your surplus (wealth), but if you withhold it, it is evil for you. There is (however) no reproach for you (if you withhold means necessary) for a living. And begin (charity) with your dependents; and the upper hand is better than the lower hand.  (Muslim, 2256)`,
+        },
+        {
+          question: "Not to Delay Giving of Sadaqah",
+          answer: `
+                Abu Hurairah (R.A.) narrated that a man came to the Prophet (S.A.W.S.) and asked,  O Allah’s Messenger which charity is the most superior in reward? 
+                He replied,  The charity which you practice while you are healthy, niggardly and afraid of poverty and wish to become wealthy. Do not delay it to the time of approaching death and then say, ‘Give so much to such and such, and so much to such and such.’ (And it has already belonged to such and such (his heirs).  (Bukhari Vol. 2, Hadith 500)  Do not show lethargy or negligence in giving alms and charity till your last breath.  (Bukhari and Muslim)`,
+        },
+        {
+          question: "Do Not Count the Sadaqah You Give:",
+          answer: ` Spend in charity and do not keep count for then Allah will also keep count in giving you provision. (Bukhari and Muslim)`,
+        },
+        {
+          question: "Seek only the desire to see Allah",
+          answer: `Do not expect favour or reward from any person for the sadaqah you give: Those who spend their wealth for an increase in self-purification, and have in their minds no favour from anyone for which a reward is expected in return, but only the desire to seek for the Countenance of their Creator Most High; and soon will they attain (complete) satisfaction  (Qur’an, 92:18-21) From the above virtuous teachings, we can conclude that indeed, Islam opens for us many ways of increasing our eeman and good deeds through sadaqah. We can perform easy good deeds like smiling and dhikr (remembrance of Allah), which we can do at any time and get rewards. The rich among us can earn more rewards if we give part of our wealth to the poor members of our relatives, friends, neighbours and society. If we can extend sadaqah, especially to other poor Muslims outside our community or country then we must extend our help. Another virtuous way of giving sadaqah is by supporting individuals and groups who are doing Da’wah (inviting people to Islam or the Truth) for the pleasure of Allah the Almighty. Let us take inspiration from the following Qur’anic ayah:  And he who brings the Truth and he who confirms (and supports) it — such are the men who do right. They shall have all they wish for, with their Rabb (Only God, Cherisher and Sustainer). Such is the reward of those who do good: so that Allah will remit from them (even) the worst in their deeds and give them their reward according to the best of what they have done.  (Qur’an 39:33-35) Let us hasten to give sadaqah for life in this world is short and temporary while the world in the Hereafter is everlasting. We never know when death has been decreed for us. Today we live and we never know how long we will enjoy the pleasure of this world. But one thing is sure: life in this world is nothing compared to everlasting life in the Hereafter. Allah (S.W.T.) tells us:  Nothing is the life of this world but play and amusement, but best is the Home in the Hereafter, for those who are righteous, will you not then understand?  (Qur’an, 6:32)`,
+        },
+        {
+          question: "“Seek only the desire to see Allah, which is the supreme success in Paradise. “",
+          answer: ` Allah does enlarge, or grant by (strict) measure, the sustenance (which He gives) to whom so He pleases — (the worldly) rejoice in the life of this world. But the life of this world is but little comfort compared to the Hereafter  (Qur’an, 13:26)Let us prepare ourselves for the everlasting world to come. Let us be among those who will earn Allah’s rewards in Jannah (the Garden of Bliss or Paradise) through giving sadaqah in many ways. Let us continue earning Allah’s rewards for our good deeds by giving sadaqah that continues to benefit others. Let us think of giving sadaqah to support Islamic projects like the building of mosques, Islamic schools, Islamic libraries, orphanages and da’wah centres. If Allah has blessed us with wealth, let us not delay building any or all of the said Islamic projects for the sole pleasure of Allah. If we do so, we will certainly attain the rewards of doing good deeds continuously even after we die. Let us be inspired to give sadaqah with the following authentic hadeeth:
+                    Abu Hurairah (R.A.) narrated that Allah’s Messenger (S.A.W.S.) said:  Verily what a believer continues to receive (in the form of reward) for his action and his virtues after his death is the knowledge which he acquired and then disseminated; the pious son that he left behind him; or a copy of the Qur’an which he left as a legacy; or the mosques that he had built; or the inn that he had built for the wayfarers; or the canal that he caused to flow, or a sadaqah which he gave out of his property in the state when he was healthy and alive. (These are the acts of goodness the reward of which) reaches him even after his death.  (Tirmidhi, 254; Ibn Majah and Bayhaqi) For those who are wealthy but miser or negligent in giving sadaqah may they take admonitions from the following words of Allah and His Messenger (S.A.W.S.):  So he who gives (in charity) and fears (Allah), and (in all sincerity) testifies to the Best, We will indeed make smooth for him the path to Ease. But he who is a greedy miser and thinks himself self-sufficient, and gives the lie to the Best, — We will indeed make smooth for him the Path of Misery; nor will his wealth profit him when he falls headlong (into the Pit). Verily We take upon Us to guide, and verily unto Us (belong) the End and the Beginning. Therefore do I warn you of a Fire blazing fiercely; none shall burn therein but those most unfortunate ones who give the lie to Truth and turn their backs. But those most devoted to Allah shall be removed far from it.  (Qur’an, 92:4-17)
+                    Abu Hurairah (R.A.) narrated that the Prophet (S.A.W.S.) Said,  The example of a miser and the one who gives in charity, is like the example of two men wearing iron cloaks so tightly that their arms are raised forcibly towards their collarbones. So, whenever a charitable person wants to give in charity, his cloak spreads over his body so much so that it wipes out his traces. But whenever the miser wants to give in charity, the rings (of the iron cloak) come closer to each other and press over his body and his hands get connected to his collarbones.  Abu Huraira heard the Prophet (S.A.W.S.) Saying,  The miser then tries to widen it but in vain.  (Bukhari, Vol. 4, Hadith 166; also see Vol. 2, Hadith 523)
+                    Abu Hurairah (R.A.) narrated that the Prophet (S.A.W.S.) Said,  Every day two angels come down from Heaven and one of them says, ‘O Allah! Compensate every person who spends in Your cause, and the other (angel) says, ‘O Allah! Destroy every miser.  (Bukhari, Vol. 2, Hadith 522)
+                    Abu Dharr (R.A.) narrated that… Allah’s Messenger (S.A.W.S.) Said,  Those who have much wealth (in this world) will be the least rewarded (in the Hereafter) except those who do like this and like this (i.e., spend their money in charity).  (Bukhari, Vol. 8, Hadith 285)
+                    Abu Bakr As-Siddiq (R.A.) narrated that Allah’s Messenger (S.A.W.S.) Said,  A crafty one, a miser, and one who keeps reminding people of what he has given, will not enter Paradise.  (Tirmidhi, 1873)
+                    May Allah the Most Gracious, the Most Merciful give us opportunities to do many ways of providing sadaqah for His pleasure and reward our best life, especially in the Hereafter. May we spend our lives, time, money and efforts or everything in us to do deeds that Allah accepts as forms of sadaqah solely for His Sake. May our Rabb save us from the Hellfire by protecting us from being misers.
+                    Ameen!`,
+        },
+      ],
+    },
+  ]
 };
