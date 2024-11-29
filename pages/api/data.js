@@ -96,9 +96,8 @@ export const HelplineData = {
       label: "Fundraiser",
       description:
         "Become our Fundraiser, we just want to help those ones who need our help. Kindly help us to arrange necessary things for needy ones.",
-      link: "/cause-details",
+      link: "/donation",
       Color: "pbar_1",
-      bgColor: "rgb(95, 179, 91, 0.8), rgb(241, 91, 67, 0.8)",
     },
     {
       image: "/img/causes/cause17.jpg",
@@ -106,9 +105,8 @@ export const HelplineData = {
       label: "Attend Event",
       description:
         "Be a volunteer to help us to arrange the event. And can join us on any event which will be arranged by HELPLINE.",
-      link: "/cause-details",
+      link: "/donation",
       Color: "pbar_2",
-      bgColor: "rgb(241, 91, 67, 0.8), rgba(101, 202, 187, 0.8)",
     },
     {
       image: "/img/causes/cause3.jpg",
@@ -116,9 +114,8 @@ export const HelplineData = {
       label: "Donor",
       description:
         "Help us, we need your support because your little support for our good deeds will return to you and you will be amazed to donate.",
-      link: "/cause-details",
+      link: "/donation",
       Color: "pbar_3",
-      bgColor: "rgba(101, 202, 187, 0.8), rgb(95, 179, 91, 0.8)",
     },
   ],
   donationMethods: [
@@ -1304,6 +1301,51 @@ export const HelplineData = {
       src: "https://www.youtube.com/embed/e1DF3RJT1xA?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
       title: "Distribution of 500 Rations to Deserving Families of Lahore",
     },
+    {
+      id: 7,
+      src: "https://www.youtube.com/embed/p9N0r1P-RYQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=1",
+      title: "YouTube video player 1",
+    },
+    {
+      id: 8,
+      src: "https://www.youtube.com/embed/5xZLbU1bYGI?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=3",
+      title: "YouTube video player 2",
+    },
+    {
+      id: 9,
+      src: "https://www.youtube.com/embed/8RAQOETPHhk?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=5",
+      title: "YouTube video player 3",
+    },
+    {
+      id: 10,
+      src: "https://www.youtube.com/embed/Zed6wEaHiag?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=7",
+      title: "Qurbani - Eid UL Azha Message 2019",
+    },
+    {
+      id: 11,
+      src: "https://www.youtube.com/embed/qYl8uuP5rd0?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=9",
+      title: "Qubani Program by Pak Helpline",
+    },
+    {
+      id: 12,
+      src: "https://www.youtube.com/embed/jedMB4nbdjE?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
+      title: "Distribution of 500 Rations to Deserving Families of Lahore",
+    },
+    {
+      id: 13,
+      src: "https://www.youtube.com/embed/T0AQTnVL4jc?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=7",
+      title: "Qurbani - Eid UL Azha Message 2019",
+    },
+    {
+      id: 14,
+      src: "https://www.youtube.com/embed/-WjRhXXI75Y?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=9",
+      title: "Qubani Program by Pak Helpline",
+    },
+    {
+      id: 15,
+      src: "https://www.youtube.com/embed/0FArIwxbYOQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
+      title: "Distribution of 500 Rations to Deserving Families of Lahore",
+    },
   ],
   RashanData: [
     {
@@ -1972,30 +2014,30 @@ This year, with your generous support, we’ve achieved incredible milestones in
   newsFeedData: [
     {
       id: 1,
-      image: "/img/news/newsfeed22.jpg",
-      category: "Charity Water",
+      image: "/img/news/news1.png",
+      category: "Charity Goods",
       title: "Healthy food for everyone in a campaign.",
       author: "Admin",
       date: "24th June 2021",
-      link: "/blog-details",
+      link: "https://www.instagram.com/helplineorg/?utm_source=qr",
     },
     {
       id: 2,
-      image: "/img/news/newsfeed11.jpg",
-      category: "Charity Goods",
+      image: "/img/news/news2.png",
+      category: "Charity Medicine",
       title: "Desired goods for all in a campaign.",
       author: "Admin",
       date: "24th June 2021",
-      link: "/blog-details",
+      link: "https://www.instagram.com/helplineorg/?utm_source=qr",
     },
     {
       id: 3,
-      image: "/img/news/newsfeed33.jpg",
-      category: "Charity Medicine",
+      image: "/img/news/news3.png",
+      category: "Mobile Clinic",
       title: "Expected clothes for all in a campaign.",
       author: "Admin",
       date: "24th June 2021",
-      link: "/blog-details",
+      link: "https://www.instagram.com/helplineorg/?utm_source=qr",
     },
   ],
   formFields: [
@@ -2117,7 +2159,7 @@ This year, with your generous support, we’ve achieved incredible milestones in
     },
     { label: "Date of Submission", name: "dateOfSubmission", type: "date" },
   ],
-activities: [
+  activities: [
     {
       title: "Aqiqah",
       description: `Helpline Social Welfare Foundation Establishment aqiqah pack contains the penance of one (for girl) or two (for boy) Aqiqah creatures and meat appropriated to poor people and vagrants. Rs: 3,672.65/-  likewise is given in sadaqah to poor people, at the market cost of silver, this effectively covers the worth equivalent to the load in silver of your kid’s hair. Aqiqah is performed within 2 days.*. Praise the introduction of your kid and give aqiqah.`,
@@ -2298,7 +2340,8 @@ activities: [
           answer: `Do not expect favour or reward from any person for the sadaqah you give: Those who spend their wealth for an increase in self-purification, and have in their minds no favour from anyone for which a reward is expected in return, but only the desire to seek for the Countenance of their Creator Most High; and soon will they attain (complete) satisfaction  (Qur’an, 92:18-21) From the above virtuous teachings, we can conclude that indeed, Islam opens for us many ways of increasing our eeman and good deeds through sadaqah. We can perform easy good deeds like smiling and dhikr (remembrance of Allah), which we can do at any time and get rewards. The rich among us can earn more rewards if we give part of our wealth to the poor members of our relatives, friends, neighbours and society. If we can extend sadaqah, especially to other poor Muslims outside our community or country then we must extend our help. Another virtuous way of giving sadaqah is by supporting individuals and groups who are doing Da’wah (inviting people to Islam or the Truth) for the pleasure of Allah the Almighty. Let us take inspiration from the following Qur’anic ayah:  And he who brings the Truth and he who confirms (and supports) it — such are the men who do right. They shall have all they wish for, with their Rabb (Only God, Cherisher and Sustainer). Such is the reward of those who do good: so that Allah will remit from them (even) the worst in their deeds and give them their reward according to the best of what they have done.  (Qur’an 39:33-35) Let us hasten to give sadaqah for life in this world is short and temporary while the world in the Hereafter is everlasting. We never know when death has been decreed for us. Today we live and we never know how long we will enjoy the pleasure of this world. But one thing is sure: life in this world is nothing compared to everlasting life in the Hereafter. Allah (S.W.T.) tells us:  Nothing is the life of this world but play and amusement, but best is the Home in the Hereafter, for those who are righteous, will you not then understand?  (Qur’an, 6:32)`,
         },
         {
-          question: "“Seek only the desire to see Allah, which is the supreme success in Paradise. “",
+          question:
+            "“Seek only the desire to see Allah, which is the supreme success in Paradise. “",
           answer: ` Allah does enlarge, or grant by (strict) measure, the sustenance (which He gives) to whom so He pleases — (the worldly) rejoice in the life of this world. But the life of this world is but little comfort compared to the Hereafter  (Qur’an, 13:26)Let us prepare ourselves for the everlasting world to come. Let us be among those who will earn Allah’s rewards in Jannah (the Garden of Bliss or Paradise) through giving sadaqah in many ways. Let us continue earning Allah’s rewards for our good deeds by giving sadaqah that continues to benefit others. Let us think of giving sadaqah to support Islamic projects like the building of mosques, Islamic schools, Islamic libraries, orphanages and da’wah centres. If Allah has blessed us with wealth, let us not delay building any or all of the said Islamic projects for the sole pleasure of Allah. If we do so, we will certainly attain the rewards of doing good deeds continuously even after we die. Let us be inspired to give sadaqah with the following authentic hadeeth:
                     Abu Hurairah (R.A.) narrated that Allah’s Messenger (S.A.W.S.) said:  Verily what a believer continues to receive (in the form of reward) for his action and his virtues after his death is the knowledge which he acquired and then disseminated; the pious son that he left behind him; or a copy of the Qur’an which he left as a legacy; or the mosques that he had built; or the inn that he had built for the wayfarers; or the canal that he caused to flow, or a sadaqah which he gave out of his property in the state when he was healthy and alive. (These are the acts of goodness the reward of which) reaches him even after his death.  (Tirmidhi, 254; Ibn Majah and Bayhaqi) For those who are wealthy but miser or negligent in giving sadaqah may they take admonitions from the following words of Allah and His Messenger (S.A.W.S.):  So he who gives (in charity) and fears (Allah), and (in all sincerity) testifies to the Best, We will indeed make smooth for him the path to Ease. But he who is a greedy miser and thinks himself self-sufficient, and gives the lie to the Best, — We will indeed make smooth for him the Path of Misery; nor will his wealth profit him when he falls headlong (into the Pit). Verily We take upon Us to guide, and verily unto Us (belong) the End and the Beginning. Therefore do I warn you of a Fire blazing fiercely; none shall burn therein but those most unfortunate ones who give the lie to Truth and turn their backs. But those most devoted to Allah shall be removed far from it.  (Qur’an, 92:4-17)
                     Abu Hurairah (R.A.) narrated that the Prophet (S.A.W.S.) Said,  The example of a miser and the one who gives in charity, is like the example of two men wearing iron cloaks so tightly that their arms are raised forcibly towards their collarbones. So, whenever a charitable person wants to give in charity, his cloak spreads over his body so much so that it wipes out his traces. But whenever the miser wants to give in charity, the rings (of the iron cloak) come closer to each other and press over his body and his hands get connected to his collarbones.  Abu Huraira heard the Prophet (S.A.W.S.) Saying,  The miser then tries to widen it but in vain.  (Bukhari, Vol. 4, Hadith 166; also see Vol. 2, Hadith 523)
@@ -2310,5 +2353,5 @@ activities: [
         },
       ],
     },
-  ]
+  ],
 };
