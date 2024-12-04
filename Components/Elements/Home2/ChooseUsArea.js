@@ -1,11 +1,10 @@
 import React from "react";
-import VideoPopUp from "../../../Components/Elements/VideoPopUp";
+import VideoPopUp from "../VideoPopUp";
 import { useState } from "react";
 
 export default function ChooseUsArea() {
   const [isPopUp, setPopUp] = useState(false);
   return (
-    // <!-- Chooseus area start-->
     <div
       className="chooseus_area bg_cover p-rel pt-105 pb-90"
       style={{ backgroundImage: "url(/img/bg/choose_bg.jpg)" }}
