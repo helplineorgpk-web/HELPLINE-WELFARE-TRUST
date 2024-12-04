@@ -8,7 +8,6 @@ export default function DonationArea2() {
   const [isSelect, setSelect] = useState("USD");
 
   return (
-    // donation area start
     <div
       className="donation_area bg_cover pt-120 pb-110"
       style={{ backgroundImage: "url(/img/donation/donation_bg.jpg)" }}

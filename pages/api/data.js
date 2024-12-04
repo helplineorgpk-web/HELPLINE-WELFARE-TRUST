@@ -93,27 +93,27 @@ export const HelplineData = {
     {
       image: "/img/causes/cause1.jpg",
       percentage: "65",
-      label: "Fundraiser",
+      label: "AWARENESS",
       description:
-        "Become our Fundraiser, we just want to help those ones who need our help. Kindly help us to arrange necessary things for needy ones.",
+        "Use your network to promote the NGO’s mission, share their work on social media, or organize events to spread the word and attract more supporters.",
       link: "/donation",
       Color: "pbar_1",
     },
     {
       image: "/img/causes/cause17.jpg",
       percentage: "80",
-      label: "Attend Event",
+      label: "DONATE",
       description:
-        "Be a volunteer to help us to arrange the event. And can join us on any event which will be arranged by HELPLINE.",
+        "Contribute financially to support Helpline’s programs, helping them fund their initiatives and reach more people in need.",
       link: "/donation",
       Color: "pbar_2",
     },
     {
       image: "/img/causes/cause3.jpg",
       percentage: "50",
-      label: "Donor",
+      label: "VOLUNTEER",
       description:
-        "Help us, we need your support because your little support for our good deeds will return to you and you will be amazed to donate.",
+        "Offer your time and skills to assist with the NGO's operations, whether in-person or remotely, and actively participate in their community projects.",
       link: "/donation",
       Color: "pbar_3",
     },
@@ -802,6 +802,72 @@ export const HelplineData = {
       progressData: "65",
       desc: "Govt Hospital Kot Khawaja Saeed",
       color: "#65cabb",
+    },
+  ],
+  homeCauses: [
+    {
+      id: 1,
+      category: ["House Constructions"],
+      img: (
+        <Image
+          src="/img/causes/houseconstruction1.jpeg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/construction2.jpeg",
+      img2: "/img/causes/constructions1.jpeg",
+      detail:
+        "Floods hit Pakistan; Abdul Akbar, Helpline provide economical housing solutions.",
+      description:
+        "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
+      progressData: "63",
+      desc: "House Constructions Project In Rajanpur",
+      color: "#f15b43",
+    },
+    {
+      id: 8,
+      category: ["Water"],
+      img: (
+        <Image
+          src="/img/causes/cause4.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/blochistanwater.jpg",
+      img2: "/img/causes/blochistanwater2.jpg",
+      detail:
+        "Helpline ensures clean water in BALOCHISTAN: filtration plants, hand pumps.",
+      description:
+        "Helpline is dedicated to ensuring access to clean water in Balochistan, particularly in underserved areas like Khuzdar. Recognizing the urgent need for safe drinking water, the organization has implemented impactful projects to improve water availability for local communities. These initiatives include the installation of advanced water filtration plants, which provide purified water to hundreds of families daily, reducing the risk of waterborne diseases. In addition, Helpline has successfully installed numerous hand pumps in remote villages, empowering underprivileged families with easy access to clean water near their homes. These projects not only improve health and hygiene but also save time and effort for women and children who often travel long distances for water. Helpline remains committed to expanding these efforts.",
+      progressData: "65",
+      desc: "CLEAN WATER PROJECT IN BALOCHISTAN",
+      color: "#5fb35b",
+    },
+    {
+      id: 9,
+      category: ["Education"],
+      img: (
+        <Image
+          src="/img/causes/roruschool.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/roru1.jpg",
+      img2: "/img/causes/roru2.jpg",
+      detail:
+        "Govt. Roru Goth School empowers students with quality education.",
+      description:
+        "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
+      progressData: "65",
+      desc: "Alighar Education Complex GPS. Roru Goth School.",
+      adopted: "Adopted",
+      color: "#f15b43",
     },
   ],
   team: [

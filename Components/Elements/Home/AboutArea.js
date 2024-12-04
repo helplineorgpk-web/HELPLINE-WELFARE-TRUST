@@ -55,20 +55,27 @@ export default function AboutArea() {
                   <i className="fal fa-heart"></i> About Us
                 </span>
                 <h3 className="title">
-                  Fight for right cause <br /> for save the world
+                  Building Bridges of Compassion
+                  {/* Fight for right cause <br /> for save the world */}
                 </h3>
               </div>
               <p className="mb-45">
-                NewLook unlike many traditional plastic surgery centers in San
+                {/* NewLook unlike many traditional plastic surgery centers in San
                 Diego, are industry recognized experts in a wide variety of
-                cosmetic procedure and are dedicated to providing customers.
+                cosmetic procedure and are dedicated to providing customers. */}
+                Since 1992, Helpline has been dedicated to fostering a just and
+                equitable society inspired by the timeless principle of
+                Mawakhath-e-Madina. Guided by unity, compassion, and collective
+                responsibility, we work tirelessly to uplift communities, ensure
+                equal rights, and build a world where every individual is
+                respected and valued.
               </p>
               <div className="row">
                 <div className="col-xxl-5 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <ul className="about_list mtm-20 mb-30">
-                    <li>Food & water charity</li>
-                    <li>Sent a gift anytime</li>
-                    <li>Make donation</li>
+                    <li>Global & Local Reach</li>
+                    <li>Service over revenue</li>
+                    <li>Legal Registrations</li>
                     <li>24/7 online support</li>
                   </ul>
                 </div>
@@ -77,9 +84,9 @@ export default function AboutArea() {
                     className="about_review text-center mb-30"
                     style={{ background: "url(/img/about/about_review.jpg)" }}
                   >
-                    <span className="author">-Mironton T.</span>
+                    <span className="author">Mahatma Gandhi.</span>
                     <h5 className="review_text">
-                      Life is a long lesson in humanity
+                      Be the change that you wish to see in the world
                     </h5>
                   </div>
                 </div>

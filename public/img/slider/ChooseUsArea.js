@@ -1,5 +1,5 @@
 import React from "react";
-import VideoPopUp from "../VideoPopUp";
+import VideoPopUp from "../../../Components/Elements/VideoPopUp";
 import { useState } from "react";
 
 export default function ChooseUsArea() {

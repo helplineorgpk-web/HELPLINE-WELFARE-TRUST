@@ -1662,6 +1662,22 @@ progress {
     flex: 0 0 auto;
     width: 33.33333%;
   }
+  .flex {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  .flex-2 {
+    flex: 0 0 auto;
+    width: 20.33333%;
+  }
+  .flex-3 {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+  .flex-4 {
+    flex: 0 0 auto;
+    width: 33%;
+  }
   .col-xxl-5 {
     flex: 0 0 auto;
     width: 41.66667%;
@@ -14161,7 +14177,7 @@ input.main-search-input:-ms-input-placeholder {
 .slider_content .slider_button {
   position: absolute;
   right: 70px;
-  top: 60px;
+  top: 0px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .slider_content .slider_button {
@@ -14212,39 +14228,39 @@ input.main-search-input:-ms-input-placeholder {
   }
 }
 .slider_area .slider_text .slider_title {
-  font-size: 152px;
+  font-size: 90px;
   line-height: 1;
   font-weight: 700;
   color: var(--clr-body-heading-color);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .slider_area .slider_text .slider_title {
-    font-size: 145px;
+    font-size: 85px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider_area .slider_text .slider_title {
-    font-size: 125px;
+    font-size: 75px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider_area .slider_text .slider_title {
-    font-size: 95px;
+    font-size: 65px;
   }
 }
 @media (max-width: 767px) {
   .slider_area .slider_text .slider_title {
-    font-size: 75px;
+    font-size: 55px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider_area .slider_text .slider_title {
-    font-size: 90px;
+    font-size: 60px;
   }
 }
 .slider_area .slider_text .slider_title span {
-  font-size: 120px;
-  font-weight: 100;
+  font-size: 50px;
+  font-weight: 400;
   line-height: 1.12;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {

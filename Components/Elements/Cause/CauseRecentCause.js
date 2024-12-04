@@ -96,7 +96,7 @@ export default function CauseRecentCause({ categories, causes }) {
                           </Link>
                         </div>
                         <div className="progress cause_progress">
-                          <div
+                          {/* <div
                             className="progress-bar"
                             role="progressbar"
                             style={{ width: `${item.progressData}%` }}
@@ -105,7 +105,7 @@ export default function CauseRecentCause({ categories, causes }) {
                             aria-valuemax="100"
                           >
                             <span>{item.progressData}%</span>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                       <div className="single_cause_content">

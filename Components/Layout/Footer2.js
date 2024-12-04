@@ -3,8 +3,6 @@ import Link from "next/link";
 
 export default function Footer2() {
   return (
-    // <!-- Footer Area Start -->
-
     <footer>
       <div className="footer_top_area footer_top_2">
         <div className="footer_top_wrapper">
@@ -57,33 +55,33 @@ export default function Footer2() {
                   <div className="footer_links footer_links_2">
                     <ul>
                       <li>
-                        <Link href="/about">
-                          <a>About Us</a>
+                        <Link href="/videos">
+                          <a>Media</a>
                         </Link>
                       </li>
                       <li>
                         <Link href="/volunteer">
-                          <a>Meet The Team</a>
+                          <a>Volunteer</a>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/volunteer">
-                          <a>Volenteers</a>
+                        <Link href="/mission">
+                          <a>Mission</a>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/about">
-                          <a>Service Provided</a>
+                        <Link href="/edu">
+                          <a>Education</a>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/blog">
-                          <a>Latest News</a>
+                        <Link href="/health">
+                          <a>Health</a>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/contact">
-                          <a>Contact Us</a>
+                        <Link href="/qurbani">
+                          <a>Qurbani Program</a>
                         </Link>
                       </li>
                     </ul>
@@ -112,11 +110,6 @@ export default function Footer2() {
                           <a>Recent Causes</a>
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/faq">
-                          <a>FAQ</a>
-                        </Link>
-                      </li>
                     </ul>
                   </div>
                   <div className="footer_btn">
@@ -138,8 +131,9 @@ export default function Footer2() {
                   <div className="footer_info_content">
                     <p>
                       <span>
-                        <strong>Address :</strong>House # 705/A-1, Township,
-                        <br /> Lahore
+                        <strong>Address :</strong>HOUSE # 705/A-1, STREET NO.
+                        11, GOVT EMPLOYEE CO-OPERATIVE HOUSING SOCIETY,
+                        TOWNSHIP,Lahore
                       </span>
                     </p>
                     <p>
