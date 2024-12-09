@@ -10,36 +10,10 @@ export default function Footer2() {
             <div className="row">
               <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-7 col-sm-7">
                 <div className="footer_widget footer_about mb-50">
-                  <div className="footer_logo mb-35">
+                  <div className="footer_logo ">
                     <Link href="/">
                       <a className="animation">
                         <img src="/img/logo/logo-white.png" alt="img" />
-                      </a>
-                    </Link>
-                  </div>
-                  <p className="mb-30">
-                    Your gift assists us with giving Welfare help to a huge
-                    number of individuals every year.
-                  </p>
-                  <div className="footer_social_2">
-                    <Link href="#">
-                      <a className="facebook">
-                        <i className="fab fa-facebook-f"></i>
-                      </a>
-                    </Link>
-                    <Link href="#">
-                      <a className="twitter">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                    </Link>
-                    <Link href="#">
-                      <a className="behance">
-                        <i className="fab fa-behance"></i>
-                      </a>
-                    </Link>
-                    <Link href="#">
-                      <a className="youtube">
-                        <i className="fab fa-youtube"></i>
                       </a>
                     </Link>
                   </div>
@@ -101,11 +75,6 @@ export default function Footer2() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="/donation">
-                          <a>Donation List</a>
-                        </Link>
-                      </li>
-                      <li>
                         <Link href="/cause">
                           <a>Recent Causes</a>
                         </Link>
@@ -113,7 +82,7 @@ export default function Footer2() {
                     </ul>
                   </div>
                   <div className="footer_btn">
-                    <Link href="/about">
+                    <Link href="/donation">
                       <a className="g_btn fbtn_2 to_right1 p-40 rad-50">
                         Get Support<span></span>
                       </a>
@@ -137,62 +106,19 @@ export default function Footer2() {
                       </span>
                     </p>
                     <p>
-                      <Link href="/tel:800433633">
-                        <a>
-                          <span>
-                            <strong>Phone :</strong>+92-42-35110164
-                          </span>
-                        </a>
-                      </Link>
+                      <a>
+                        <span>
+                          <strong>Phone :</strong>+92-42-35110164
+                        </span>
+                      </a>
                     </p>
                     <p>
-                      <Link href="/mailto:info@Example.com">
-                        <a>
-                          <span>
-                            <strong>Email :</strong>info@helpline.org.pk
-                          </span>
-                        </a>
-                      </Link>
+                      <a>
+                        <span>
+                          <strong>Email :</strong>info@helpline.org.pk
+                        </span>
+                      </a>
                     </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-xxl-6 col-xl-6 col-lg-6 col-sm-12">
-                <div className="fcta_sigle has_bg mb-30">
-                  <img src="/img/footer/fcta2_1.png" alt="img" />
-                  <div className="fcta_text">
-                    <h4>Help & Support Now</h4>
-                    <span>
-                      Might as well say Would you Could be you be mine?{" "}
-                    </span>
-                  </div>
-                  <div className="fcta_button">
-                    <Link href="/donation">
-                      <a className="g_btn fca_btn1 to_right2 p-40 rad-50">
-                        Donate <span></span>
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xxl-6 col-xl-6 col-lg-6 col-sm-12">
-                <div className="fcta_sigle has_bg mb-30">
-                  <img src="/img/footer/fcta2_2.png" alt="img" />
-                  <div className="fcta_text">
-                    <h4>Join as Volunteer</h4>
-                    <span>
-                      Might as well say Would you Could be you be mine?{" "}
-                    </span>
-                  </div>
-                  <div className="fcta_button">
-                    <Link href="/about">
-                      <a className="g_btn fca_btn to_left p-40 rad-50">
-                        Join <span></span>
-                      </a>
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -200,7 +126,7 @@ export default function Footer2() {
           </div>
         </div>
       </div>
-      <div className="footer_copyright_area">
+      {/* <div className="footer_copyright_area">
         <div className="container">
           <div className="row">
             <div className="col-xxl-12 text-center">
@@ -215,7 +141,7 @@ export default function Footer2() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }

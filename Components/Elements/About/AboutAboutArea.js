@@ -35,14 +35,16 @@ export default function AboutAboutArea() {
                 <div className="section_title">
                   <span className="sub_title sub_title_2">About Us</span>
                   <h3 className="title title_2 mb-20">
-                    Charity to Change Child’s and Poor People Life
+                    Empowering Lives, Inspiring Hope, Building Futures.
                   </h3>
                 </div>
                 <p className="mb-40">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis with nostrud exercitation
-                  ullamco laboris nisi ut aliquip
+                  Welcome to Helpline, fostering compassion and unity since
+                  1992. Guided by Mawakhath-e-Madina, we uplift communities
+                  through education, healthcare, clean water, and
+                  sustainability. Registered under the Voluntary Social Welfare
+                  Ordinance, we transparently accept local and international
+                  donations.
                 </p>
                 <div className="about_summary">
                   <p>

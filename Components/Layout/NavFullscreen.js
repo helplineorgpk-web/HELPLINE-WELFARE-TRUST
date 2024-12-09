@@ -160,12 +160,12 @@ export default function NavFullscreen() {
           <ul className="sub-menu">
             <li>
               <Link href="/registration">
-                <a>Registration Documents</a>
+                <a className="sub-diss">Registration Documents</a>
               </Link>
             </li>
             <li>
               <Link href="/certifications">
-                <a>Certications</a>
+                <a className="sub-diss">Certications</a>
               </Link>
             </li>
           </ul>
