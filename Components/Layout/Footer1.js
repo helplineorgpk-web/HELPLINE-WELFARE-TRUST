@@ -7,7 +7,7 @@ export default function Footer1() {
       <footer>
         <div
           className="footer_top_area footer_default_area p-rel bg_cover"
-          style={{ background: "url(/img/footer/footer_bg.jpg)" }}
+          style={{ background: "url(/img/footer/www.png)" }}
         >
           <div className="footer_top_wrapper p-rel">
             <div className="container">
@@ -18,18 +18,29 @@ export default function Footer1() {
                       <h4 className="footer_title">About Us</h4>
                     </div>
                     <p className="mb-25">
-                      Because it does not spend hours selling to customers,
-                      maintaining a brick and mortar stores, or paying for a
-                      commissions, Carify Auto Center can run more with in
-                      efficiently than a traditional.
+                      Education, Health, Clean Water, Disaster Management,
+                      Rashion Program, Blood Donation, Islamic Activity
                     </p>
                     <div className="footer_locate_link theme-1">
                       <ul>
                         <li>
                           <Link href="/tel:+92-42-35110164">
-                            <a>
-                              <i className="fal fa-phone"></i>
-                              <strong>Phone:</strong>+92-42-35110164
+                            <a
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                // justifyContent: "space-between",
+                              }}
+                            >
+                              <p>
+                                <i className="fal fa-phone"></i>
+                                <strong>Phone:</strong>
+                              </p>
+                              <div>
+                                +92-42-35157374
+                                <br />
+                                +92-42-35110164
+                              </div>
                             </a>
                           </Link>
                         </li>
@@ -37,7 +48,7 @@ export default function Footer1() {
                           <Link href="/mailto:info@helpline.org.pk">
                             <a>
                               <i className="fal fa-envelope"></i>
-                              <strong>Phone:</strong>info@helpline.org.pk
+                              <strong>Email:</strong>info@helpline.org.pk
                             </a>
                           </Link>
                         </li>
@@ -58,43 +69,43 @@ export default function Footer1() {
                           </Link>
                         </li>
                         <li>
-                          <Link href="/about">
-                            <a>Features</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/about">
-                            <a>Services</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/about">
-                            <a>Pricing</a>
+                          <Link href="/videos">
+                            <a>Media</a>
                           </Link>
                         </li>
                         <li>
                           <Link href="/volunteer">
-                            <a>Team</a>
+                            <a>Volunteer</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/about">
-                            <a>Terms & condition</a>
+                          <Link href="/mission">
+                            <a>Mission</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/about">
-                            <a>Privacy Policy</a>
+                          <Link href="/edu">
+                            <a>Education</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/blog">
-                            <a>News Insights</a>
+                          <Link href="/health">
+                            <a>Health</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/faq">
-                            <a>Faq</a>
+                          <Link href="/islamicactivity">
+                            <a>Islamic Activity</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/qurbani">
+                            <a>Qurbani Program</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/masjid">
+                            <a>Masjid Program</a>
                           </Link>
                         </li>
                       </ul>

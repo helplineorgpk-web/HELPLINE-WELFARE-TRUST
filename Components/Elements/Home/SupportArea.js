@@ -64,13 +64,15 @@ export default function SupportArea() {
                         <i className="fal fa-users"></i> Join Us
                       </span>
                       <h3 className="title">
-                        Become a volunteer to save children
+                        Volunteers are the Heart of Change
                       </h3>
                     </div>
                     <p className="mb-45">
-                      NewLook unlike many traditional plastic surgery centers in
-                      San Diego, are industry-recognized experts in a wide
-                      variety of cosmetic procedures.
+                      Support a vulnerable child by providing access to
+                      education, healthcare, and basic needs. Your sponsorship
+                      helps them grow and reach their full potential. Stay
+                      connected with updates and letters, knowing your
+                      contributions are making a real difference.
                     </p>
                     <Link href="/volunteer">
                       <a className="g_btn theme1_bg to_right2 i_right rad-30 p-45">
@@ -103,8 +105,9 @@ export default function SupportArea() {
                     <div className="choose_card_content">
                       <h5 className="choose_card_title">Places to get lost</h5>
                       <p>
-                        Charity is the largest global for crowdfunding community
-                        with connecting nonprofits.
+                        We ensure your contributions directly improve lives with
+                        essentials like food, shelter, healthcare, and
+                        education.
                       </p>
                     </div>
                   </div>
@@ -118,8 +121,8 @@ export default function SupportArea() {
                     <div className="choose_card_content">
                       <h5 className="choose_card_title">Free Refuge Shelter</h5>
                       <p>
-                        Lorem ipsum dolor sit ametco bns ectetur adi pisicing
-                        elit sed do eiusmod tempor incid.
+                        Transparency & Accountability: We provide clear updates,
+                        showing how your donations make a difference.
                       </p>
                     </div>
                   </div>
@@ -129,20 +132,18 @@ export default function SupportArea() {
             <div className="col-xxl-6 col-xl-6 col-lg-12 col-sm-12 d-flex align-items-center text-center">
               <div
                 className="single-support p-rel ml-50 mb-30"
-                style={{ background: "url(/img/bg/support_bg.jpg)" }}
+                style={{ background: "url(/img/bg/support123.png)" }}
               >
                 <form action="#">
                   <div className="support-wrapper p-rel">
                     <h4 className="support_title">Support Us</h4>
                     <p className="mb-35 opacity_6">
-                      Charity is the largest global for crowdfunding For those
-                      who wish to join hands with us in creating a brighter
-                      tomorrow, we offer a seamless path to philanthropy. We
-                      invite you to become a part of our journey, and work
-                      together to build a society where hope, equity, and
-                      opportunity flourish for all. Join us in embracing the
-                      spirit of Mawakhath-e-Madina and turning it into a living
-                      legacy of transformation.
+                      Helpline NGO supports families in need by providing
+                      essentials like food, shelter, healthcare, and education.
+                      Your sponsorship helps them become self-sufficient through
+                      access to vital resources. Connect with the family you
+                      sponsor and see the impact of your support. Sponsor today
+                      and change a life.
                     </p>
                     <div className="donar_section support_currency d-sm-flex d-inline-block justify-content-center">
                       <button

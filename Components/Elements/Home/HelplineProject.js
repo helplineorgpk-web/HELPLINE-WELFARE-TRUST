@@ -33,7 +33,10 @@ function HelplineProject() {
                   <img src={slide.image} alt="img" />
                 </a>
               </Link>
-              <div className={`progress_wrapper ${slide.Color}`}>
+              <div
+                className={`progress_wrapper ${slide.Color}`}
+                style={{ width: "28%" }}
+              >
                 <div
                   className="progress_circle"
                   data-percentage={slide.percentage}

@@ -13,11 +13,11 @@ import WayToDonate from "../Components/Elements/Home/WayToDonate";
 import { HelplineData } from "../pages/api/data";
 
 const data = {
-  Water: "House Construction",
+  Water: "Recent development",
   waterprojects: "Latest Cause",
 };
 export default function Home() {
-  const cause = HelplineData.causes;
+  const cause = HelplineData.homeCauses;
   return (
     <>
       <Layout1>

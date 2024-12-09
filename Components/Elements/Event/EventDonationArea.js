@@ -7,7 +7,6 @@ export default function EventDonationArea() {
 
   const [isSelect, setSelect] = useState("USD");
   return (
-    // donation area start
     <div
       className="donation_area bg_cover pt-120 pb-115"
       style={{ background: "url(/img/bg/donate_bg2.jpg)" }}
@@ -65,12 +64,7 @@ export default function EventDonationArea() {
                     </li>
                   </ul>
                 </div>
-                {/* <select className="support_btn support_select">
-                                        <option value="Currency">USD</option>
-                                        <option value="">EUR</option>
-                                        <option value="">JPY</option>
-                                        <option value="">BDT</option>
-                                    </select> */}
+
                 <p className="s_14">Please enter amount over 500 manually</p>
               </div>
               <button className="g_btn hbtn_1 to_left rad-30">
@@ -94,6 +88,5 @@ export default function EventDonationArea() {
         </div>
       </div>
     </div>
-    // donation area end
   );
 }

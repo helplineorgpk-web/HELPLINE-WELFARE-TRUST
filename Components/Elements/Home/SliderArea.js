@@ -5,7 +5,7 @@ export default function SliderArea() {
   return (
     <section className="slider_area">
       <div className="img_topleft">
-        <img data-depth="1" src="/img/slider/lefttop.png" alt="img" />
+        <img data-depth="1" src="/img/slider/topok.png" alt="img" />
       </div>
       <div className="img_topright">
         <img data-depth="1.3" src="/img/slider/righttop.png" alt="img" />
@@ -16,16 +16,26 @@ export default function SliderArea() {
       <div className="slider_active">
         <div className="single_slider slider_height p-rel d-flex align-items-center align-items-md-end">
           <div className="img_bottomright">
-            <img data-depth="0.8" src="/img/slider/bottomright.png" alt="img" />
+            <img
+              data-depth="0.8"
+              src="/img/slider/qwerty-Photoroom.png"
+              alt="img"
+            />
           </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
-                <div className="slider_content text_space">
+          <div
+            className=""
+            style={{
+              marginLeft: "40px",
+              position: "absolute",
+              top: 300,
+            }}
+          >
+            <div className="">
+              <div className="">
+                <div className="">
                   <div className="slider_text text_overlay">
                     <h2 className="slider_title">
-                      {" "}
-                      <span>Make</span> <br /> Donation
+                      <span>Empowering</span> <br /> Communities
                     </h2>
                     <div className="slider_button">
                       <Link href="/cause">

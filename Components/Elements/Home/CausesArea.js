@@ -30,7 +30,8 @@ export default function CausesArea({ causes, data }) {
           {causes.map((item, index) =>
             index < 3 ? (
               <div
-                className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 mb-30"
+                className="flex flex-2 flex-3 flex-4 mb-30"
+                style={{}}
                 key={item.id}
               >
                 <div className="single_cause mb-30">
