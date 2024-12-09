@@ -21,10 +21,11 @@ export default function AboutFeatureArea() {
               </div>
               <span className="card_number">01</span>
               <div className="choose_card_content">
-                <h5 className="choose_card_title">Places to Get Lost</h5>
+                <h5 className="choose_card_title">Empowering Education</h5>
                 <p>
-                  Charity is the largest global for crowdfunding community with
-                  connecting nonprofits.
+                  Delivering quality education to underprivileged communities,
+                  fostering a brighter future for children and youth across
+                  Pakistan.
                 </p>
               </div>
             </div>
@@ -36,10 +37,11 @@ export default function AboutFeatureArea() {
               </div>
               <span className="card_number clr-theme-3">02</span>
               <div className="choose_card_content">
-                <h5 className="choose_card_title">Free Refuge Shelter</h5>
+                <h5 className="choose_card_title">Accessible Healthcare</h5>
                 <p>
-                  Lorem ipsum dolor sit ametco bns ectetur adi pisicing elit sed
-                  do eiusmod tempor incid.
+                  Bridging the healthcare gap by providing medical services,
+                  maternal care, and health awareness to underserved
+                  populations.
                 </p>
               </div>
             </div>
@@ -53,8 +55,9 @@ export default function AboutFeatureArea() {
               <div className="choose_card_content">
                 <h5 className="choose_card_title">Food & Shelter</h5>
                 <p>
-                  Ut enim ad minim veniam, quis with nostrudexerci of ullamco
-                  laboris nisi ut aliquip.
+                  Ensuring access to safe drinking water and sanitation
+                  facilities, improving lives and reducing health risks in
+                  vulnerable communities.
                 </p>
               </div>
             </div>
@@ -66,10 +69,10 @@ export default function AboutFeatureArea() {
               </div>
               <span className="card_number clr-theme-5">04</span>
               <div className="choose_card_content">
-                <h5 className="choose_card_title">Fresh & Clean Water</h5>
+                <h5 className="choose_card_title">Clean Water Initiatives</h5>
                 <p>
-                  We are called by God and purpose is to raise awareness of the
-                  147 million work.
+                  Promoting sustainability through tree planting, awareness, and
+                  climate action initiatives to protect natural resources.
                 </p>
               </div>
             </div>
@@ -85,11 +88,12 @@ export default function AboutFeatureArea() {
               </div>
               <div className="about_feature_text">
                 <h5 className="about_feature_title theme-1">
-                  Fresh & Clean Water
+                  Environmental Stewardship
                 </h5>
                 <p>
-                  Our primary goal is developing a secure and safe world for
-                  poor peoples in the world.
+                  Driving sustainability through tree plantation campaigns,
+                  awareness programs, and initiatives that combat climate change
+                  and preserve natural resources.
                 </p>
               </div>
             </div>

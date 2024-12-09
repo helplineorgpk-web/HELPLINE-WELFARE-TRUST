@@ -21,36 +21,37 @@ export default function Footer1() {
                       Education, Health, Clean Water, Disaster Management,
                       Rashion Program, Blood Donation, Islamic Activity
                     </p>
-                    <div className="footer_locate_link theme-1">
+                    <div className="footer_locate_link">
                       <ul>
                         <li>
-                          <Link href="/tel:+92-42-35110164">
-                            <a
-                              style={{
-                                display: "flex",
-                                alignItems: "center",
-                                // justifyContent: "space-between",
-                              }}
-                            >
-                              <p>
-                                <i className="fal fa-phone"></i>
-                                <strong>Phone:</strong>
-                              </p>
-                              <div>
-                                +92-42-35157374
-                                <br />
-                                +92-42-35110164
-                              </div>
-                            </a>
-                          </Link>
+                          {/* <a
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              // justifyContent: "space-between",
+                            }}
+                          >
+                            <p>
+                              <i className="fal fa-phone"></i>
+                              <strong>Phone:</strong>
+                            </p>
+                            <div>
+                              +92-42-35157374
+                              <br />
+                              +92-42-35110164
+                            </div>
+                          </a> */}
+                          <a>
+                            <i className="fal fa-phone"></i>
+                            <strong>Phone:</strong>
+                            +92-42-35157374
+                          </a>
                         </li>
                         <li>
-                          <Link href="/mailto:info@helpline.org.pk">
-                            <a>
-                              <i className="fal fa-envelope"></i>
-                              <strong>Email:</strong>info@helpline.org.pk
-                            </a>
-                          </Link>
+                          <a>
+                            <i className="fal fa-envelope"></i>
+                            <strong>Email:</strong>info@helpline.org.pk
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -176,16 +177,16 @@ export default function Footer1() {
                     <div className="footer_news_content">
                       <div className="single_fnews d-flex mb-30">
                         <div className="fnews_img">
-                          <Link href="/blog-details">
+                          <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
                             <a>
-                              <img src="/img/footer/fnews1.jpg" alt="img" />
+                              <img src="/img/news/news1.png" alt="img" />
                             </a>
                           </Link>
                         </div>
 
                         <div className="fnews_content">
                           <div className="fnews_meta">
-                            <Link href="/blog-details">
+                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
                               <a className="fnews_author theme-1 sep">
                                 Charity
                               </a>
@@ -193,24 +194,25 @@ export default function Footer1() {
                             <span className="fnews_date">August 22th,2021</span>
                           </div>
                           <h5 className="fnews_title theme-1">
-                            <Link href="/blog-details">
-                              <a>Tips How to repair you by myself</a>
-                            </Link>
+                            <a>
+                              Equipping young learners with bags shoes and
+                              cloths.
+                            </a>
                           </h5>
                         </div>
                       </div>
                       <div className="single_fnews d-flex mb-30">
                         <div className="fnews_img">
-                          <Link href="/blog-details">
+                          <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
                             <a>
-                              <img src="/img/footer/fnews2.jpg" alt="img" />
+                              <img src="/img/news/news2.png" alt="img" />
                             </a>
                           </Link>
                         </div>
 
                         <div className="fnews_content">
                           <div className="fnews_meta">
-                            <Link href="/blog-details">
+                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
                               <a className="fnews_author theme-1 sep">
                                 Charity
                               </a>
@@ -218,33 +220,11 @@ export default function Footer1() {
                             <span className="fnews_date">August 22th,2021</span>
                           </div>
                           <h5 className="fnews_title theme-1">
-                            <Link href="/blog-details">
-                              <a>Tips How to keep yourself good health</a>
-                            </Link>
-                          </h5>
-                        </div>
-                      </div>
-                      <div className="single_fnews d-flex mb-30">
-                        <div className="fnews_img">
-                          <Link href="/blog-details">
-                            <a>
-                              <img src="/img/footer/fnews3.jpg" alt="img" />
-                            </a>
-                          </Link>
-                        </div>
-
-                        <div className="fnews_content">
-                          <div className="fnews_meta">
-                            <Link href="/blog-details">
-                              <a className="fnews_author theme-1 sep">
-                                Charity
+                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
+                              <a>
+                                Medical: Health is fundamental right not a
+                                privilege.
                               </a>
-                            </Link>
-                            <span className="fnews_date">August 22th,2021</span>
-                          </div>
-                          <h5 className="fnews_title theme-1">
-                            <Link href="/blog-details">
-                              <a>make you happy by yourself</a>
                             </Link>
                           </h5>
                         </div>
@@ -256,7 +236,7 @@ export default function Footer1() {
             </div>
           </div>
         </div>
-        <div className="footer_copyright_area ">
+        {/* <div className="footer_copyright_area ">
           <div className="container">
             <div className="row">
               <div className="col-xxl-12 text-center">
@@ -271,7 +251,7 @@ export default function Footer1() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </footer>
     </>
   );

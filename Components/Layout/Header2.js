@@ -82,7 +82,15 @@ export default function Header2({ toggleTrueFalseInfo }) {
                     </a>
                   </Link>
                 </div>
-                <div className="hamburger-menu menu-bar info-bar d-inline-block ml-20">
+                <div
+                  className="menu-bar d-inline-none d-block d-xl-none"
+                  // style={{
+                  //   display: "block",
+                  //   "@media (max-width: 992px)": {
+                  //     display: "none",
+                  //   },
+                  // }}
+                >
                   <button
                     onClick={toggleTrueFalseInfo}
                     className="hamburger-btn open-mobile-menu"

@@ -26,16 +26,6 @@ export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
             </div>
             <div className="col-xxl-3 col-xl-4 col-lg-2 col-md-6 col-6">
               <div className="header-right d-flex align-items-center justify-content-end">
-                <div className="header-icon d-inline-block">
-                  <Link href="#">
-                    <a
-                      onClick={toggleTrueFalse}
-                      className="nav-search search-trigger"
-                    >
-                      <i className="fal fa-search"></i>
-                    </a>
-                  </Link>
-                </div>
                 <div className="header-sing d-inline-block ml-20 d-none d-xl-block">
                   <Link href="/donation">
                     <a className="g_btn hbtn_1 to_right1 rad-30">

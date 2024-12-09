@@ -146,7 +146,9 @@ export default function ContactGetInTouch() {
                   <div className="contact_location_text">
                     <span>Phone</span>
                     <Link href="/tel:789.765.741.69">
-                      <a className="contact_address_title">+92-42-3515 7374</a>
+                      <a className="contact_address_title">
+                        +92-42-3515 7374 , +92-42-35110164
+                      </a>
                     </Link>
                   </div>
                 </div>

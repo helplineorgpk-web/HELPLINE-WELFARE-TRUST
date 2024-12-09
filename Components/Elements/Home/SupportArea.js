@@ -76,7 +76,8 @@ export default function SupportArea() {
                     </p>
                     <Link href="/volunteer">
                       <a className="g_btn theme1_bg to_right2 i_right rad-30 p-45">
-                        Apply Here<i className="fal fa-long-arrow-right"></i>
+                        See Volunteers
+                        <i className="fal fa-long-arrow-right"></i>
                         <span></span>
                       </a>
                     </Link>
@@ -146,12 +147,13 @@ export default function SupportArea() {
                       and change a life.
                     </p>
                     <div className="donar_section support_currency d-sm-flex d-inline-block justify-content-center">
-                      <button
+                      <a
+                        href="/donation"
                         type="submit"
                         className="g_btn curr_btn rad-30 ml-10"
                       >
                         Donate<span></span>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </form>

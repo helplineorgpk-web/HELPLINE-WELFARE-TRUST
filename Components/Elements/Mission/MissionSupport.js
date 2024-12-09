@@ -63,12 +63,13 @@ export default function MissionSupport() {
                     and turning it into a living legacy of transformation.
                   </p>
                   <div className="donar_section support_currency d-sm-flex d-inline-block justify-content-center">
-                    <button
+                    <a
                       type="submit"
+                      href="/donation"
                       className="g_btn curr_btn rad-30 ml-10"
                     >
                       Donate<span></span>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </form>
