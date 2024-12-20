@@ -20,10 +20,10 @@ export default function MissionSupport() {
                   </div>
                   <span className="card_number">01</span>
                   <div className="choose_card_content">
-                    <h5 className="choose_card_title">Places to get lost</h5>
+                    <h5 className="choose_card_title">Impactful Support</h5>
                     <p>
-                      Charity is the largest global for crowdfunding community
-                      with connecting nonprofits.
+                      We ensure your contributions directly improve lives with
+                      essentials like food, shelter, healthcare, and education.
                     </p>
                   </div>
                 </div>
@@ -35,10 +35,12 @@ export default function MissionSupport() {
                   </div>
                   <span className="card_number clr-theme-3">02</span>
                   <div className="choose_card_content">
-                    <h5 className="choose_card_title">Free Refuge Shelter</h5>
+                    <h5 className="choose_card_title">
+                      Transparency & Accountability
+                    </h5>
                     <p>
-                      Lorem ipsum dolor sit ametco bns ectetur adi pisicing elit
-                      sed do eiusmod tempor incid.
+                      We provide clear updates, showing how your donations make
+                      a difference.
                     </p>
                   </div>
                 </div>
@@ -52,15 +54,14 @@ export default function MissionSupport() {
             >
               <form action="#">
                 <div className="support-wrapper p-rel">
-                  <h4 className="support_title">Support Us</h4>
+                  <h4 className="support_title">Sponsor a Family</h4>
                   <p className="mb-35 opacity_6">
-                    Charity is the largest global for crowdfunding For those who
-                    wish to join hands with us in creating a brighter tomorrow,
-                    we offer a seamless path to philanthropy. We invite you to
-                    become a part of our journey, and work together to build a
-                    society where hope, equity, and opportunity flourish for
-                    all. Join us in embracing the spirit of Mawakhath-e-Madina
-                    and turning it into a living legacy of transformation.
+                    Helpline NGO supports families in need by providing
+                    essentials like food, shelter, healthcare, and education.
+                    Your sponsorship helps them become self-sufficient through
+                    access to vital resources. Connect with the family you
+                    sponsor and see the impact of your support. Sponsor today
+                    and change a life.
                   </p>
                   <div className="donar_section support_currency d-sm-flex d-inline-block justify-content-center">
                     <a

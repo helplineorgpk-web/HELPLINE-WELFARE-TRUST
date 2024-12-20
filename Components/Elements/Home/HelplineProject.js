@@ -33,26 +33,6 @@ function HelplineProject() {
                   <img src={slide.image} alt="img" />
                 </a>
               </Link>
-              <div
-                className={`progress_wrapper ${slide.Color}`}
-                style={{ width: "28%" }}
-              >
-                <div
-                  className="progress_circle"
-                  data-percentage={slide.percentage}
-                >
-                  <span className="progress-left">
-                    <span className="progress-bar"></span>
-                  </span>
-                  <span className="progress-right">
-                    <span className="progress-bar"></span>
-                  </span>
-                  <div className="progress-value">
-                    <div>{slide.percentage}%</div>
-                  </div>
-                </div>
-                <span>{slide.label}</span>
-              </div>
             </div>
             <div
               className="single_cause_contents"
@@ -61,6 +41,13 @@ function HelplineProject() {
                 padding: "20px",
               }}
             >
+              <p
+                style={{
+                  color: "#263b5d",
+                }}
+              >
+                {slide.label}
+              </p>
               <div>
                 <span>
                   <a>{slide.description}</a>

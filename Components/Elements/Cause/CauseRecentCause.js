@@ -81,10 +81,7 @@ export default function CauseRecentCause({ categories, causes }) {
             <div className="row">
               {projects?.length > 0 ? (
                 projects.map((item, i) => (
-                  <div
-                    className="col-xxl-4 col-xl-4 col-lg-4 col-md-6"
-                    key={item.id}
-                  >
+                  <div className="col-xxl-4  col-lg-4 col-md-6" key={item.id}>
                     <div className="single_cause mb-30">
                       <div className="single_cause_img_wrapper">
                         <div
@@ -94,18 +91,6 @@ export default function CauseRecentCause({ categories, causes }) {
                           <Link href={{}}>
                             <a>{item.img}</a>
                           </Link>
-                        </div>
-                        <div className="progress cause_progress">
-                          {/* <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: `${item.progressData}%` }}
-                            aria-valuenow={item.progressData}
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          >
-                            <span>{item.progressData}%</span>
-                          </div> */}
                         </div>
                       </div>
                       <div className="single_cause_content">
@@ -117,7 +102,6 @@ export default function CauseRecentCause({ categories, causes }) {
                               alignItems: "center",
                             }}
                           >
-                            <span className="sub_title">{item.category}</span>
                             <span
                               style={{
                                 fontWeight: "bold",

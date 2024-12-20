@@ -41,25 +41,6 @@ export default function CausesArea({ causes, data }) {
                         <a>{item.img}</a>
                       </Link>
                     </div>
-                    <div
-                      className="progress_wrapper"
-                      style={{ backgroundColor: item.color }}
-                    >
-                      <div
-                        className="progress_circle"
-                        data-percentage={item.progressData}
-                      >
-                        <span className="progress-left">
-                          <span className="progress-bar"></span>
-                        </span>
-                        <span className="progress-right">
-                          <span className="progress-bar"></span>
-                        </span>
-                        <div className="progress-value">
-                          <div>{item.progressData}%</div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="single_cause_content single_cause_content_2">
                     <div className="single_cause">
