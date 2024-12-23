@@ -38,71 +38,24 @@ export default function MissionAbout() {
             <div className="about_wrapper pl-50 mb-40">
               <div className="section_title mb-30">
                 <span className="sub_title sub_title_2">Work Program</span>
-                <h3 className="title title_2 no_br">
-                  Keep Track of Our <br />
-                  Annual Charity Program
-                </h3>
+                <h6 className="title title_2 no_br">
+                  Rebuilding Communities Together
+                </h6>
               </div>
               <p className="mb-55">
-                NewLook unlike many traditional plastic surgery centers in San
-                Diego, are industry recognized experts in a wide variety of
-                cosmetic procedure and are dedicated to providing customers.
+                We are committed to creating lasting change by providing
+                sustainable solutions that uplift communities in need. Through
+                affordable housing, access to clean water, and quality
+                education, we strive to empower individuals and families,
+                helping them regain stability and hope for a better future.
+                Let’s join hands with compassion, collaboration, and dedication
+                to create a world where every life is valued and every community
+                thrives
               </p>
-              <div className="mission_progress_wrapper">
-                <div className="mission_progress_single">
-                  <div className="progress_circle theme-1" data-percentage="65">
-                    <span className="progress-left">
-                      <span className="progress-bar"></span>
-                    </span>
-                    <span className="progress-right">
-                      <span className="progress-bar"></span>
-                    </span>
-                    <div className="progress-value">
-                      <div className="value">
-                        65<span>%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <span className="progress_text">Annual Program</span>
-                </div>
-                <div className="mission_progress_single">
-                  <div className="progress_circle theme-3" data-percentage="75">
-                    <span className="progress-left">
-                      <span className="progress-bar"></span>
-                    </span>
-                    <span className="progress-right">
-                      <span className="progress-bar"></span>
-                    </span>
-                    <div className="progress-value">
-                      <div className="value">
-                        75<span>%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <span className="progress_text">Monthly Program</span>
-                </div>
-                <div className="mission_progress_single">
-                  <div className="progress_circle theme-2" data-percentage="55">
-                    <span className="progress-left">
-                      <span className="progress-bar"></span>
-                    </span>
-                    <span className="progress-right">
-                      <span className="progress-bar"></span>
-                    </span>
-                    <div className="progress-value">
-                      <div className="value">
-                        55<span>%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <span className="progress_text">Global Program</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    // about single area end
   );
 }

@@ -11,16 +11,22 @@ export default function MissionAboutSingle() {
             <div className="about_wrapper subscribe_mission pl-50">
               <div className="section_title">
                 <Link href="#">
-                  <a className="sub_title sub_title_2">subscribe</a>
+                  <a className="sub_title sub_title_2">
+                    Helpline’s Primary Objective{" "}
+                  </a>
                 </Link>
                 <h3 className="title title_2 text_white">
-                  Get every weekly update from here.
+                  Health, Healing, and Hope.
                 </h3>
               </div>
               <p className="mb-45">
-                NewLook unlike many traditional plastic surgery centers in San
-                Diego, are industry recognized experts in a wide variety of
-                cosmetic procedure and are dedicated to providing customers.
+                We are dedicated to improving the health and well-being of
+                underserved communities by providing essential healthcare
+                services. From building medical facilities to offering free
+                treatments and health education, we strive to ensure access to
+                quality care for every individual. With compassion, commitment,
+                and collaboration, we work tirelessly to restore health and
+                dignity, empowering people to lead healthier, happier lives.
               </p>
             </div>
           </div>
