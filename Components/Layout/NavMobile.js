@@ -10,139 +10,139 @@ export default function NavMobile() {
   return (
     <ul className="metismenu text-muted" id="metismenu">
       <li className="active menu-item-has-children">
-        <Link href="/">
-          <a className="has-arrow">Home</a>
+        <Link href="/" className="has-arrow">
+          Home
         </Link>
       </li>
       <li className="menu-item-has-children">
-        <Link href="#">
-          <a className="has-arrow">About</a>
+        <Link href="#" className="has-arrow">
+          About
         </Link>
         <ul className="sub-menu">
           <li>
             <Link href="/about">
-              <a>About Us</a>
+              About Us
             </Link>
           </li>
           <li>
             <Link href="/chairmanMessage">
-              <a>Chairman's Message</a>
+              Chairman's Message
             </Link>
           </li>
           <li>
             <Link href="/ourjourney">
-              <a>Our Journey</a>
+              Our Journey
             </Link>
           </li>
           <li>
             <Link href="/volunteer">
-              <a>Volunteer</a>
+              Volunteer
             </Link>
           </li>
           <li className="menu-item-has-children">
-            <Link href="/videos">
-              <a className="">Media</a>
+            <Link href="/videos" className="has-arrow">
+              Media
             </Link>
           </li>
           <li>
             <Link href="/mission">
-              <a>Mission</a>
+              Mission
             </Link>
           </li>
         </ul>
       </li>
       <li className="menu-item-has-children">
-        <Link href="#">
-          <a className="has-arrow">Social Welfare</a>
+        <Link href="#" className="has-arrow">
+          Social Welfare
         </Link>
         <ul className="sub-menu">
           <li>
             <Link href="/edu">
-              <a>Education</a>
+              Education
             </Link>
           </li>
           <li>
             <Link href="/health">
-              <a>Health</a>
+              Health
             </Link>
           </li>
           <li className="menu-item-has-children">
-            <Link href="#">
-              <a className="has-arrow">Islamic Program</a>
+            <Link href="#" className="has-arrow">
+              Islamic Program
             </Link>
             <ul>
               <li>
                 <Link href="/islamicactivity">
-                  <a>Islamic Activity</a>
+                  Islamic Activity
                 </Link>
               </li>
               <li>
                 <Link href="/qurbani">
-                  <a>Qurbani Program</a>
+                  Qurbani Program
                 </Link>
               </li>
               <li>
                 <Link href="/masjid">
-                  <a>Masjid Program</a>
+                  Masjid Program
                 </Link>
               </li>
             </ul>
           </li>
           <li className="menu-item-has-children">
-            <Link href="#">
-              <a className="has-arrow">Distribution</a>
+            <Link href="#" className="has-arrow">
+              Distribution
             </Link>
             <ul>
               <li>
                 <Link href="/hasneDistribution">
-                  <a>Helpline & Hasne Distribution</a>
+                  Helpline & Hasne Distribution
                 </Link>
               </li>
               <li>
                 <Link href="/rajanpur">
-                  <a>Rajanpur Gullowali Distribution</a>
+                  Rajanpur Gullowali Distribution
                 </Link>
               </li>
             </ul>
           </li>
           <li>
             <Link href="/rashan">
-              <a>Rashan Program</a>
+              Rashan Program
             </Link>
           </li>
           <li>
             <Link href="/disaster">
-              <a>Disaster Management</a>
+              Disaster Management
             </Link>
           </li>
           <li>
             <Link href="/familyWelfare">
-              <a>Family Welfare</a>
+              Family Welfare
             </Link>
           </li>
           <li>
             <Link href="/water">
-              <a>Clean Water Program</a>
+              Clean Water Program
             </Link>
           </li>
           <li>
             <Link href="/cataract">
-              <a>Cataract Program</a>
+              Cataract Program
             </Link>
           </li>
           <li className="menu-item-has-children">
-            <Link href="#">
-              <a className="has-arrow">IT Lab</a>
+            <Link href="#" className="has-arrow">
+              IT Lab
             </Link>
             <ul className="sub-menu">
               <li>
                 <Link href="/itlab">
-                  <a>IT Labs</a>
+                  IT Labs
                 </Link>
               </li>
               <li>
                 <Link href="/itform">
-                  <a>IT Labs Form</a>
+                  IT Labs Form
                 </Link>
               </li>
             </ul>
@@ -150,25 +150,25 @@ export default function NavMobile() {
         </ul>
       </li>
       <li className="menu-item-has-children">
-        <Link href="#">
-          <a className="has-arrow">Legal</a>
+        <Link href="#" className="has-arrow">
+          Legal
         </Link>
         <ul className="sub-menu">
           <li>
             <Link href="/registration">
-              <a>Registration Documents</a>
+              Registration Documents
             </Link>
           </li>
           <li>
             <Link href="/certifications">
-              <a>Certifications</a>
+              Certifications
             </Link>
           </li>
         </ul>
       </li>
       <li>
         <Link href="/contact">
-          <a>Contact Us</a>
+          Contact Us
         </Link>
       </li>
     </ul>

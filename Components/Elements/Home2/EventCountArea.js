@@ -15,18 +15,16 @@ export default function EventCountArea() {
             <div className="row align-items-center">
               <div className="col-xxl-3 col-xl-3 col-lg-3 d-md-none d-lg-block">
                 <div className="eventcount_img">
-                  <Link href="/event-details">
-                    <a>
-                      <img src="/img/causes/cause11.jpg" alt="img" />
-                    </a>
+                  <Link href="/event-details" className="img_effect_white">
+                    <img src="/img/causes/cause11.jpg" alt="img" />
                   </Link>
                 </div>
               </div>
               <div className="col-xxl-3 col-xl-4 col-lg-3 col-md-5 text-center text-md-start">
                 <div className="eventcount_text">
                   <h5>
-                    <Link href="/event-details">
-                      <a>Every Second Until the Event</a>
+                    <Link href="/event-details" className="event_title_link">
+                      Every Second Until the Event
                     </Link>
                   </h5>
                   <span className="white_txt">Douglas Park, Chicago, IL</span>

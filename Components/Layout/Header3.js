@@ -10,9 +10,7 @@ export default function Header3({ toggleTrueFalseInfo, isToggledInfo }) {
           <div className="col-xxl-12">
             <div className="spacial_logo">
               <Link href="/">
-                <a>
                 <img src="/img/logo/logo.png" alt="" />
-                </a>
               </Link>
               <div
                 onClick={toggleTrueFalseInfo}

@@ -18,10 +18,8 @@ export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
           <div className="row align-items-center">
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
               <div className={styles.logo}>
-                <Link href="/">
-                  <a>
-                    <Image src={logo} alt="" />
-                  </a>
+                <Link href="/" className="logo">
+                  <Image src={logo} alt="Logo" />
                 </Link>
               </div>
             </div>
@@ -33,10 +31,11 @@ export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
             <div className="col-xxl-3 col-xl-4 col-lg-2 col-md-6 col-6">
               <div className="header-right d-flex align-items-center justify-content-end">
                 <div className="header-sing d-inline-block ml-20 d-none d-xl-block">
-                  <Link href="/donation">
-                    <a className="g_btn hbtn_1 to_right1 rad-30">
-                      Make Donation<span></span>
-                    </a>
+                  <Link
+                    href="/donation"
+                    className="g_btn hbtn_1 to_right1 rad-30"
+                  >
+                    Make Donation<span></span>
                   </Link>
                 </div>
                 <div className="hamburger-menu menu-bar info-bar d-d-block ml-20">

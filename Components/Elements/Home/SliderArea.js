@@ -38,11 +38,17 @@ export default function SliderArea() {
                       <span>Empowering</span> <br /> Communities
                     </h2>
                     <div className="slider_button">
-                      <Link href="/cause">
-                        <a className="g_btn theme1_bg to_right2 slider_btn i_left rad-30 p-35">
-                          <i className="fal fa-heart"></i> Explore Causes
-                          <span></span>
-                        </a>
+                      <Link href="/cause" className="slider_btn">
+                        Education
+                      </Link>
+                      <Link href="/cause" className="slider_btn">
+                        Water
+                      </Link>
+                      <Link href="/cause" className="slider_btn">
+                        Medical
+                      </Link>
+                      <Link href="/donation" className="g_btn theme1_bg to_right2 rad-50">
+                        Donate Now <span></span>
                       </Link>
                     </div>
                   </div>

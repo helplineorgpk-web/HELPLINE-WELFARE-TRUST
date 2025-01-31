@@ -9,14 +9,20 @@ export default function VolunteerDetailsTeam({ name, designation, image }) {
         <div className="row align-items-center mb-80">
           <div className="col-xxl-5 col-xl-5 col-lg-5">
             <div className="team_single_img">
-              <img src={image} alt="img" />
+              <Link href="/volunteer-details" className="img_effect_white">
+                <img src={image} alt="img" />
+              </Link>
             </div>
           </div>
           <div className="col-xxl-7 col-xl-7 col-lg-7">
             <div className="team_single_info_wrapper pl-50">
               <div className="section_title">
                 <span className="sub_title sub_title_2">{designation}</span>
-                <h3 className="title title_2">{name}</h3>
+                <h3 className="title title_2">
+                  <Link href="/volunteer-details" className="team_title_link">
+                    {name}
+                  </Link>
+                </h3>
               </div>
               <p className="mb-40">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -28,64 +34,42 @@ export default function VolunteerDetailsTeam({ name, designation, image }) {
                 <div className="col-sm-6">
                   <div className="team_person_info">
                     <Link href="/tell:+09638664967007">
-                      <a>
-                        <strong>Phone:</strong> +09638 664 967007
-                      </a>
+                      <strong>Phone:</strong> +09638 664 967007
                     </Link>
                     <Link href="/mailto:example@gmail.com">
-                      <a>
-                        <strong>Email:</strong> example@gmail.com
-                      </a>
+                      <strong>Email:</strong> example@gmail.com
                     </Link>
                     <Link href="#">
-                      <a>
-                        <strong>Working Area:</strong> African Congo
-                      </a>
+                      <strong>Working Area:</strong> African Congo
                     </Link>
                     <Link href="#">
-                      <a>
-                        <strong>Nationality:</strong> American
-                      </a>
+                      <strong>Nationality:</strong> American
                     </Link>
                   </div>
                 </div>
                 <div className="col-sm-6">
                   <div className="team_person_info">
                     <Link href="#">
-                      <a>
-                        <strong>Website:</strong> webexample.com
-                      </a>
+                      <strong>Website:</strong> webexample.com
                     </Link>
                     <Link href="#">
-                      <a>
-                        <strong>Linkedin:</strong> Webhuntexample
-                      </a>
+                      <strong>Linkedin:</strong> Webhuntexample
                     </Link>
                     <Link href="#">
-                      <a>
-                        <strong>Address:</strong> 16/A, New Town Hall City, US
-                      </a>
+                      <strong>Address:</strong> 16/A, New Town Hall City, US
                     </Link>
                     <div className="team_info_social">
-                      <Link href="#">
-                        <a className="facebook">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
+                      <Link href="#" className="facebook">
+                        <i className="fab fa-facebook-f"></i>
                       </Link>
-                      <Link href="#">
-                        <a className="google">
-                          <i className="fab fa-google-plus-g"></i>
-                        </a>
+                      <Link href="#" className="google">
+                        <i className="fab fa-google-plus-g"></i>
                       </Link>
-                      <Link href="#">
-                        <a className="twitter">
-                          <i className="fab fa-twitter"></i>
-                        </a>
+                      <Link href="#" className="twitter">
+                        <i className="fab fa-twitter"></i>
                       </Link>
-                      <Link href="#">
-                        <a className="pinterest">
-                          <i className="fab fa-pinterest-p"></i>
-                        </a>
+                      <Link href="#" className="pinterest">
+                        <i className="fab fa-pinterest-p"></i>
                       </Link>
                     </div>
                   </div>

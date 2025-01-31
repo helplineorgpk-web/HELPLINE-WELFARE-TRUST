@@ -1,12 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import SwiperCore, {
-  Autoplay,
-  Navigation,
-  Pagination,
-  Scrollbar,
-  EffectFade,
-} from "swiper";
+import { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -16,7 +10,6 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 
 // install Swiper modules
-SwiperCore.use([Autoplay, Navigation, Pagination, EffectFade]);
 
 export default function SliderArea() {
   return (
@@ -25,6 +18,7 @@ export default function SliderArea() {
         <div className="swiper-wrapper">
           <Swiper
             // install Swiper modules
+            modules={[Autoplay, Navigation, Pagination, EffectFade]}
             spaceBetween={2}
             slidesPerView={1}
             autoplay={{
@@ -66,15 +60,9 @@ export default function SliderArea() {
                           data-animation="fadeInUp"
                           data-delay="0.3s"
                         >
-                          <Link href="/cause">
-                            <a>Education</a>
-                          </Link>
-                          <Link href="/cause">
-                            <a>Water</a>
-                          </Link>
-                          <Link href="/cause">
-                            <a>Medical</a>
-                          </Link>
+                          <Link href="/cause">Education</Link>
+                          <Link href="/cause">Water</Link>
+                          <Link href="/cause">Medical</Link>
                         </div>
                         <h3
                           className="hero_title"
@@ -92,15 +80,17 @@ export default function SliderArea() {
                           data-animation="fadeInUp"
                           data-delay="0.9s"
                         >
-                          <Link href="/cause">
-                            <a className="g_btn theme1_bg to_rightout_heading rad-30 mr-20">
-                              Our Causes<span></span>
-                            </a>
+                          <Link
+                            href="/cause"
+                            className="g_btn theme1_bg to_rightout_heading rad-30 mr-20"
+                          >
+                            Our Causes<span></span>
                           </Link>
-                          <Link href="/about">
-                            <a className="g_btn heading_bg  to_right1 rad-30">
-                              Learn More<span></span>
-                            </a>
+                          <Link
+                            href="/about"
+                            className="g_btn heading_bg  to_right1 rad-30"
+                          >
+                            Learn More<span></span>
                           </Link>
                         </div>
                       </div>
@@ -133,15 +123,9 @@ export default function SliderArea() {
                           data-animation="fadeInUp"
                           data-delay="0.3s"
                         >
-                          <Link href="/cause">
-                            <a>Education</a>
-                          </Link>
-                          <Link href="/cause">
-                            <a>Water</a>
-                          </Link>
-                          <Link href="/cause">
-                            <a>Medical</a>
-                          </Link>
+                          <Link href="/cause">Education</Link>
+                          <Link href="/cause">Water</Link>
+                          <Link href="/cause">Medical</Link>
                         </div>
                         <h3
                           className="hero_title wow fadeInUp"
@@ -163,15 +147,17 @@ export default function SliderArea() {
                           data-animation="fadeInUp"
                           data-delay="0.9s"
                         >
-                          <Link href="/cause">
-                            <a className="g_btn theme1_bg to_rightout_heading rad-30 mr-20">
-                              Our Causes<span></span>
-                            </a>
+                          <Link
+                            href="/cause"
+                            className="g_btn theme1_bg to_rightout_heading rad-30 mr-20"
+                          >
+                            Our Causes<span></span>
                           </Link>
-                          <Link href="/about">
-                            <a className="g_btn heading_bg  to_right1 rad-30">
-                              Learn More<span></span>
-                            </a>
+                          <Link
+                            href="/about"
+                            className="g_btn heading_bg  to_right1 rad-30"
+                          >
+                            Learn More<span></span>
                           </Link>
                         </div>
                       </div>
@@ -204,15 +190,9 @@ export default function SliderArea() {
                           data-animation="fadeInUp"
                           data-delay="0.3s"
                         >
-                          <Link href="/cause">
-                            <a>Education</a>
-                          </Link>
-                          <Link href="/cause">
-                            <a>Water</a>
-                          </Link>
-                          <Link href="/cause">
-                            <a>Medical</a>
-                          </Link>
+                          <Link href="/cause">Education</Link>
+                          <Link href="/cause">Water</Link>
+                          <Link href="/cause">Medical</Link>
                         </div>
                         <h3
                           className="hero_title wow fadeInUp "
@@ -234,15 +214,17 @@ export default function SliderArea() {
                           data-animation="fadeInUp"
                           data-delay="0.9s"
                         >
-                          <Link href="/cause">
-                            <a className="g_btn theme1_bg to_rightout_heading rad-30 mr-20">
-                              Our Causes<span></span>
-                            </a>
+                          <Link
+                            href="/cause"
+                            className="g_btn theme1_bg to_rightout_heading rad-30 mr-20"
+                          >
+                            Our Causes<span></span>
                           </Link>
-                          <Link href="/about">
-                            <a className="g_btn heading_bg  to_right1 rad-30">
-                              Learn More<span></span>
-                            </a>
+                          <Link
+                            href="/about"
+                            className="g_btn heading_bg  to_right1 rad-30"
+                          >
+                            Learn More<span></span>
                           </Link>
                         </div>
                       </div>

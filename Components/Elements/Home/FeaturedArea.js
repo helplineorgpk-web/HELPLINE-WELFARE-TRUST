@@ -45,24 +45,22 @@ export default function FeaturedArea() {
                       <span>Feb</span>
                     </div>
                     <div className="fcontent single_fcontent">
-                      <Link href="/event-details">
-                        <a className="sub_title theme-3">Charity, Water</a>
+                      <Link href="/event-details" className="sub_title theme-3">
+                        Charity, Water
                       </Link>
                       <h3 className="title theme-3">
                         <Link href="/event-details">
-                          <a>Your Rennovation Programm 2021</a>
+                          Your Rennovation Programm 2021
                         </Link>
                       </h3>
                     </div>
                     <div className="fauthor single_fauthor">
-                      <Link href="/volunteer-details">
-                        <a className="fdot">
-                          <img src="/img/causes/donar1.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="fdot">
+                        <img src="/img/causes/donar1.jpg" alt="img" />
                       </Link>
                       <div className="fauthor_address">
-                        <Link href="/volunteer-details">
-                          <a>Mark Salim</a>
+                        <Link href="/volunteer-details" className="cause_title_link">
+                          Mark Salim
                         </Link>
                         <span className="fauthor_location">
                           <i className="fal fa-map-marker-alt"></i> 24/a New
@@ -71,10 +69,8 @@ export default function FeaturedArea() {
                       </div>
                     </div>
                     <div className="fbooking single_fbooking">
-                      <Link href="/event-details">
-                        <a className="booking_btn theme-3 g_btn to_right3 rad-30">
-                          Book Your Seat <span></span>
-                        </a>
+                      <Link href="/event-details" className="booking_btn theme-3 g_btn to_right3 rad-30">
+                        Book Your Seat <span></span>
                       </Link>
                     </div>
                   </div>
@@ -84,24 +80,22 @@ export default function FeaturedArea() {
                       <span>MAR</span>
                     </div>
                     <div className="fcontent single_fcontent">
-                      <Link href="/event-details">
-                        <a className="sub_title theme-2">Charity, Education</a>
+                      <Link href="/event-details" className="sub_title theme-2">
+                        Charity, Education
                       </Link>
                       <h3 className="title theme-2">
                         <Link href="/event-details">
-                          <a>Your Reparation Programm 2022</a>
+                          Your Reparation Programm 2022
                         </Link>
                       </h3>
                     </div>
                     <div className="fauthor single_fauthor">
-                      <Link href="/volunteer-details">
-                        <a className="fdot">
-                          <img src="/img/causes/donar2.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="fdot">
+                        <img src="/img/causes/donar2.jpg" alt="img" />
                       </Link>
                       <div className="fauthor_address">
-                        <Link href="/volunteer-details">
-                          <a>Rossania D.</a>
+                        <Link href="/volunteer-details" className="cause_title_link">
+                          Rossania D.
                         </Link>
                         <span className="fauthor_location">
                           <i className="fal fa-map-marker-alt"></i> 24/a New
@@ -110,10 +104,8 @@ export default function FeaturedArea() {
                       </div>
                     </div>
                     <div className="fbooking single_fbooking">
-                      <Link href="/event-details">
-                        <a className="booking_btn theme-2 g_btn to_right2 rad-30">
-                          Book Your Seat <span></span>
-                        </a>
+                      <Link href="/event-details" className="booking_btn theme-2 g_btn to_right2 rad-30">
+                        Book Your Seat <span></span>
                       </Link>
                     </div>
                   </div>
@@ -123,24 +115,22 @@ export default function FeaturedArea() {
                       <span>SEP</span>
                     </div>
                     <div className="fcontent single_fcontent">
-                      <Link href="/event-details">
-                        <a className="sub_title theme-1">Charity, Medical</a>
+                      <Link href="/event-details" className="sub_title theme-1">
+                        Charity, Medical
                       </Link>
                       <h3 className="title theme-1">
                         <Link href="#">
-                          <a>Your Alteration Project 2021</a>
+                          Your Alteration Project 2021
                         </Link>
                       </h3>
                     </div>
                     <div className="fauthor single_fauthor">
-                      <Link href="/volunteer-details">
-                        <a className="fdot">
-                          <img src="/img/causes/donar3.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="fdot">
+                        <img src="/img/causes/donar3.jpg" alt="img" />
                       </Link>
                       <div className="fauthor_address">
-                        <Link href="/volunteer-details">
-                          <a>M. Billah</a>
+                        <Link href="/volunteer-details" className="cause_title_link">
+                          M. Billah
                         </Link>
                         <span className="fauthor_location">
                           <i className="fal fa-map-marker-alt"></i> 24/a New
@@ -149,10 +139,8 @@ export default function FeaturedArea() {
                       </div>
                     </div>
                     <div className="fbooking single_fbooking">
-                      <Link href="/event-details">
-                        <a className="booking_btn theme-1 g_btn to_right1 rad-30">
-                          Book Your Seat <span></span>
-                        </a>
+                      <Link href="/event-details" className="booking_btn theme-1 g_btn to_right1 rad-30">
+                        Book Your Seat <span></span>
                       </Link>
                     </div>
                   </div>

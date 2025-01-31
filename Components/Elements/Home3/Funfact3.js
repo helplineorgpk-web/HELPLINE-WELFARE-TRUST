@@ -39,10 +39,8 @@ export default function Funfact3() {
           <div className="col-12">
             <div className="funfact_wrapper">
               <div className="funfact_upper text-center">
-                <Link href="/">
-                  <a className="funfact_icon play_btn popup-video p-rel">
-                    <img src="/img/bg/funfact_icon.png" alt="img" />
-                  </a>
+                <Link href="/" className="funfact_icon play_btn popup-video p-rel">
+                  <img src="/img/bg/funfact_icon.png" alt="img" />
                 </Link>
                 <div className="funfact_title_section">
                   <span className="funfact_sub">Fun fact</span>
@@ -110,12 +108,9 @@ export default function Funfact3() {
                       <button className="currency funfact">$100</button>
                     </div>
                     <div className="funfact_button text-center">
-                      <button
-                        type="submit"
-                        className="g_btn theme1_bg to_right2 rad-30 mb-30"
-                      >
-                        Make a Donation<span></span>
-                      </button>
+                      <Link href="/donation" className="g_btn theme1_bg to_right2 rad-50">
+                        Donate Now <span></span>
+                      </Link>
                     </div>
                   </div>
                 </div>

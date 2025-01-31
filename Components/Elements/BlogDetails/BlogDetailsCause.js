@@ -12,8 +12,8 @@ export default function BlogDetailsCause() {
               <div className="blog_details_wrapper has_border mb-40">
                 <div className="blog_details_content">
                   <div className="blog_category mb-20">
-                    <Link href="#">
-                      <a className="blog_cat theme-1">Business</a>
+                    <Link href="#" className="blog_cat theme-1">
+                      Business
                     </Link>
                   </div>
                   <h4 className="blog_title">
@@ -21,20 +21,14 @@ export default function BlogDetailsCause() {
                     that can protect
                   </h4>
                   <div className="blog_meta mb-25">
-                    <Link href="#">
-                      <a className="eye sep">
-                        <i className="fal fa-eye"></i>100 Views
-                      </a>
+                    <Link href="#" className="eye sep">
+                      <i className="fal fa-eye"></i>100 Views
                     </Link>
-                    <Link href="#">
-                      <a className="comments sep">
-                        <i className="fal fa-comments"></i>30 Comments
-                      </a>
+                    <Link href="#" className="comments sep">
+                      <i className="fal fa-comments"></i>30 Comments
                     </Link>
-                    <Link href="#">
-                      <a className="calendar">
-                        <i className="fal fa-calendar-alt"></i>24 March 2022
-                      </a>
+                    <Link href="#" className="calendar">
+                      <i className="fal fa-calendar-alt"></i>24 March 2022
                     </Link>
                   </div>
                   <p className="mb-20">
@@ -188,14 +182,14 @@ export default function BlogDetailsCause() {
                     <div className="details_tag">
                       <h5 className="details_title mb-25">Releted Tags</h5>
                       <div className="tagcloud tagcloud-sm">
-                        <Link href="#">
-                          <a>Popular</a>
+                        <Link href="#" className="theme-1">
+                          Popular
                         </Link>
-                        <Link href="#">
-                          <a>Desgin</a>
+                        <Link href="#" className="theme-1">
+                          Desgin
                         </Link>
-                        <Link href="#">
-                          <a>UX</a>
+                        <Link href="#" className="theme-1">
+                          UX
                         </Link>
                       </div>
                     </div>
@@ -204,30 +198,20 @@ export default function BlogDetailsCause() {
                     <div className="details_social text-end">
                       <h5 className="details_title mb-25">Social Share</h5>
                       <div className="social_share">
-                        <Link href="#">
-                          <a className="facebook">
-                            <i className="fab fa-facebook-f"></i>
-                          </a>
+                        <Link href="#" className="facebook">
+                          <i className="fab fa-facebook-f"></i>
                         </Link>
-                        <Link href="#">
-                          <a className="twitter">
-                            <i className="fab fa-twitter"></i>
-                          </a>
+                        <Link href="#" className="twitter">
+                          <i className="fab fa-twitter"></i>
                         </Link>
-                        <Link href="#">
-                          <a className="youtube">
-                            <i className="fab fa-youtube"></i>
-                          </a>
+                        <Link href="#" className="youtube">
+                          <i className="fab fa-youtube"></i>
                         </Link>
-                        <Link href="">
-                          <a className="instagram">
-                            <i className="fab fa-instagram"></i>
-                          </a>
+                        <Link href="#" className="instagram">
+                          <i className="fab fa-instagram"></i>
                         </Link>
-                        <Link href="#">
-                          <a className="viber">
-                            <i className="fab fa-viber"></i>
-                          </a>
+                        <Link href="#" className="viber">
+                          <i className="fab fa-viber"></i>
                         </Link>
                       </div>
                     </div>
@@ -240,19 +224,15 @@ export default function BlogDetailsCause() {
                   </div>
                   <div className="row">
                     <div className="col-xl-6 col-sm-6">
-                      <Link href="/blog-details">
-                        <a className="single_post_nav">
-                          <span>Prev Post</span>
-                          <h4>Tips On Minimalist</h4>
-                        </a>
+                      <Link href="/blog-details" className="single_post_nav">
+                        <span>Prev Post</span>
+                        <h4>Tips On Minimalist</h4>
                       </Link>
                     </div>
                     <div className="col-xl-6 col-sm-6">
-                      <Link href="/blog-details">
-                        <a className="single_post_nav right_nav text-end">
-                          <span>Next Post</span>
-                          <h4>Less Is More</h4>
-                        </a>
+                      <Link href="/blog-details" className="single_post_nav right_nav text-end">
+                        <span>Next Post</span>
+                        <h4>Less Is More</h4>
                       </Link>
                     </div>
                   </div>
@@ -265,29 +245,19 @@ export default function BlogDetailsCause() {
                       <div className="related_post_single mb-30">
                         <div className="details_thumb">
                           <Link href="/blog-details">
-                            <a>
-                              <img
-                                src="/img/news/details_rp1.jpg"
-                                className="img-fluid"
-                                alt="img"
-                              />{" "}
-                            </a>
+                            <img src="/img/news/details_rp1.jpg" alt="img" />
                           </Link>
                         </div>
                         <div className="details_content">
                           <div className="blog_meta mb-10">
-                            <Link href="#">
-                              <a className="calendar">
-                                <i className="fal fa-calendar-alt"></i>24 March
-                                2022
-                              </a>
+                            <Link href="#" className="calendar">
+                              <i className="fal fa-calendar-alt"></i>24 March
+                              2022
                             </Link>
                           </div>
                           <h6 className="related_title theme-1">
                             <Link href="/blog-details">
-                              <a>
-                                A series of iOS 7 inspire vector icons sense.
-                              </a>
+                              A series of iOS 7 inspire vector icons sense.
                             </Link>
                           </h6>
                           <p>
@@ -301,29 +271,19 @@ export default function BlogDetailsCause() {
                       <div className="related_post_single mb-30">
                         <div className="details_thumb">
                           <Link href="/blog-details">
-                            <a>
-                              <img
-                                src="/img/news/details_rp2.jpg"
-                                className="img-fluid"
-                                alt="img"
-                              />{" "}
-                            </a>
+                            <img src="/img/news/details_rp2.jpg" alt="img" />
                           </Link>
                         </div>
                         <div className="details_content">
                           <div className="blog_meta mb-10">
-                            <Link href="#">
-                              <a className="calendar">
-                                <i className="fal fa-calendar-alt"></i>24 March
-                                2022
-                              </a>
+                            <Link href="#" className="calendar">
+                              <i className="fal fa-calendar-alt"></i>24 March
+                              2022
                             </Link>
                           </div>
                           <h6 className="related_title theme-1">
                             <Link href="/blog-details">
-                              <a>
-                                iPhone inspires a man to buy its configaration.
-                              </a>
+                              iPhone inspires a man to buy its configaration.
                             </Link>
                           </h6>
                           <p>
@@ -339,16 +299,14 @@ export default function BlogDetailsCause() {
                 <div className="details_author_box d-flex">
                   <div className="author_thumb">
                     <Link href="/volunteer-details">
-                      <a>
-                        <img src="/img/news/details_person.jpg" alt="img" />
-                      </a>
+                      <img src="/img/news/details_person.jpg" alt="img" />
                     </Link>
                   </div>
                   <div className="details_content">
                     <span>Written by</span>
                     <h6 className="author_details_name">
                       <Link href="/volunteer-details">
-                        <a>Andreu D. William</a>
+                        Andreu D. William
                       </Link>
                     </h6>
                     <p className="mb-0">
@@ -369,35 +327,24 @@ export default function BlogDetailsCause() {
                         <div className="comments_box  pb-30">
                           <div className="comment_avater f-left">
                             <Link href="/volunteer-details">
-                              <a>
-                                <img src="/img/news/comment1.jpg" alt="img" />
-                              </a>
+                              <img src="/img/news/comment1.jpg" alt="img" />
                             </Link>
                           </div>
                           <div className="comment_text has-children">
                             <div className="avater_text">
                               <h5>
-                                <Link href="/volunteer-details">
-                                  <a>
-                                    Arista Williamson{" "}
-                                    <span>
-                                      <i className="fal fa-bookmark"></i>
-                                    </span>
-                                  </a>
+                                <Link href="/volunteer-details" className="theme-1">
+                                  Arista Williamson
                                 </Link>
                               </h5>
                               <div className="blog_meta mb-10">
-                                <Link href="#">
-                                  <a className="calendar">
-                                    <i className="fal fa-calendar-alt"></i>24
-                                    March 2022
-                                  </a>
+                                <Link href="#" className="calendar">
+                                  <i className="fal fa-calendar-alt"></i>24
+                                  March 2022
                                 </Link>
                               </div>
-                              <Link href="#">
-                                <a className="replay_btn has_abs">
-                                  <i className="fal fa-reply"></i>Reply
-                                </a>
+                              <Link href="#" className="replay_btn has_abs">
+                                <i className="fal fa-reply"></i>Reply
                               </Link>
                             </div>
                             <p>
@@ -414,38 +361,24 @@ export default function BlogDetailsCause() {
                             <div className="comments_box">
                               <div className="comment_avater f-left">
                                 <Link href="/volunteer-details">
-                                  <a>
-                                    <img
-                                      src="/img/news/comment2.jpg"
-                                      alt="img"
-                                    />
-                                  </a>
+                                  <img src="/img/news/comment2.jpg" alt="img" />
                                 </Link>
                               </div>
                               <div className="comment_text">
                                 <div className="avater_text">
                                   <h5>
-                                    <Link href="/volunteer-details">
-                                      <a>
-                                        Mark Kelian{" "}
-                                        <span>
-                                          <i className="fal fa-bookmark"></i>
-                                        </span>
-                                      </a>
+                                    <Link href="/volunteer-details" className="theme-1">
+                                      Mark Kelian
                                     </Link>
                                   </h5>
                                   <div className="blog_meta mb-10">
-                                    <Link href="#">
-                                      <a className="calendar">
-                                        <i className="fal fa-calendar-alt"></i>
-                                        24 March 2022
-                                      </a>
+                                    <Link href="#" className="calendar">
+                                      <i className="fal fa-calendar-alt"></i>
+                                      24 March 2022
                                     </Link>
                                   </div>
-                                  <Link href="#">
-                                    <a className="replay_btn has_abs">
-                                      <i className="fal fa-reply"></i>Reply
-                                    </a>
+                                  <Link href="#" className="replay_btn has_abs">
+                                    <i className="fal fa-reply"></i>Reply
                                   </Link>
                                 </div>
                                 <p>
@@ -465,35 +398,24 @@ export default function BlogDetailsCause() {
                         <div className="comments_box  pb-30">
                           <div className="comment_avater f-left">
                             <Link href="/volunteer-details">
-                              <a>
-                                <img src="/img/news/comment3.jpg" alt="img" />
-                              </a>
+                              <img src="/img/news/comment3.jpg" alt="img" />
                             </Link>
                           </div>
                           <div className="comment_text">
                             <div className="avater_text">
                               <h5>
-                                <Link href="/volunteer-details">
-                                  <a>
-                                    H. Akanda{" "}
-                                    <span>
-                                      <i className="fal fa-bookmark"></i>
-                                    </span>
-                                  </a>
+                                <Link href="/volunteer-details" className="theme-1">
+                                  H. Akanda
                                 </Link>
                               </h5>
                               <div className="blog_meta mb-10">
-                                <Link href="#">
-                                  <a className="calendar">
-                                    <i className="fal fa-calendar-alt"></i>24
-                                    March 2022
-                                  </a>
+                                <Link href="#" className="calendar">
+                                  <i className="fal fa-calendar-alt"></i>24
+                                  March 2022
                                 </Link>
                               </div>
-                              <Link href="#">
-                                <a className="replay_btn has_abs">
-                                  <i className="fal fa-reply"></i>Reply
-                                </a>
+                              <Link href="#" className="replay_btn has_abs">
+                                <i className="fal fa-reply"></i>Reply
                               </Link>
                             </div>
                             <p>
@@ -584,15 +506,13 @@ export default function BlogDetailsCause() {
                   <div className="about_widget_content text-center">
                     <div className="widget_about_img">
                       <Link href="/volunteer-details">
-                        <a>
-                          <img src="/img/news/blog_person.jpg" alt="img" />
-                        </a>
+                        <img src="/img/news/blog_person.jpg" alt="img" />
                       </Link>
                     </div>
 
                     <h6 className="about_person_title">
                       <Link href="/volunteer-details">
-                        <a>Rosalina D. Willaimson</a>
+                        Rosalina D. Willaimson
                       </Link>
                     </h6>
                     <p>
@@ -600,30 +520,20 @@ export default function BlogDetailsCause() {
                       sed do eiusmod tempor incididunt ut labore.
                     </p>
                     <div className="widget_social">
-                      <Link href="#">
-                        <a className="facebook">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
+                      <Link href="#" className="facebook">
+                        <i className="fab fa-facebook-f"></i>
                       </Link>
-                      <Link href="#">
-                        <a className="twitter">
-                          <i className="fab fa-twitter"></i>
-                        </a>
+                      <Link href="#" className="twitter">
+                        <i className="fab fa-twitter"></i>
                       </Link>
-                      <Link href="#">
-                        <a className="behance">
-                          <i className="fab fa-behance"></i>
-                        </a>
+                      <Link href="#" className="behance">
+                        <i className="fab fa-behance"></i>
                       </Link>
-                      <Link href="#">
-                        <a className="linkedin">
-                          <i className="fab fa-linkedin-in"></i>
-                        </a>
+                      <Link href="#" className="linkedin">
+                        <i className="fab fa-linkedin-in"></i>
                       </Link>
-                      <Link href="#">
-                        <a className="youtube">
-                          <i className="fab fa-youtube"></i>
-                        </a>
+                      <Link href="#" className="youtube">
+                        <i className="fab fa-youtube"></i>
                       </Link>
                     </div>
                   </div>
@@ -655,87 +565,71 @@ export default function BlogDetailsCause() {
                     <div className="single_feed_widget has_border">
                       <div className="feed_widget_img">
                         <Link href="/blog-details">
-                          <a>
-                            <img src="/img/news/blog_feed1.jpg" alt="img" />
-                          </a>
+                          <img src="/img/news/blog_feed1.jpg" alt="img" />
                         </Link>
                       </div>
                       <div className="feed_widget_text">
                         <h5 className="feed_widget_title theme-1">
                           <Link href="/blog-details">
-                            <a>How to improve knowledge for myself</a>
+                            How to improve knowledge for myself
                           </Link>
                         </h5>
-                        <Link href="#">
-                          <a className="feed_widget_date theme-1">
-                            <i className="fal fa-calendar-alt"></i>24th March
-                            2022
-                          </a>
+                        <Link href="#" className="feed_widget_date theme-1">
+                          <i className="fal fa-calendar-alt"></i>24th March
+                          2022
                         </Link>
                       </div>
                     </div>
                     <div className="single_feed_widget has_border">
                       <div className="feed_widget_img">
                         <Link href="/blog-details">
-                          <a>
-                            <img src="/img/news/blog_feed2.jpg" alt="img" />
-                          </a>
+                          <img src="/img/news/blog_feed2.jpg" alt="img" />
                         </Link>
                       </div>
                       <div className="feed_widget_text">
                         <h5 className="feed_widget_title theme-1">
                           <Link href="/blog-details">
-                            <a>Everybody needs to know how to help myself</a>
+                            Everybody needs to know how to help myself
                           </Link>
                         </h5>
-                        <Link href="#">
-                          <a className="feed_widget_date theme-1">
-                            <i className="fal fa-calendar-alt"></i>24th March
-                            2022
-                          </a>
+                        <Link href="#" className="feed_widget_date theme-1">
+                          <i className="fal fa-calendar-alt"></i>24th March
+                          2022
                         </Link>
                       </div>
                     </div>
                     <div className="single_feed_widget has_border">
                       <div className="feed_widget_img">
                         <Link href="/blog-details">
-                          <a>
-                            <img src="/img/news/blog_feed3.jpg" alt="img" />
-                          </a>
+                          <img src="/img/news/blog_feed3.jpg" alt="img" />
                         </Link>
                       </div>
                       <div className="feed_widget_text">
                         <h5 className="feed_widget_title theme-1">
                           <Link href="/blog-details">
-                            <a>Good foods available on behalf of fundraise</a>
+                            Good foods available on behalf of fundraise
                           </Link>
                         </h5>
-                        <Link href="#">
-                          <a className="feed_widget_date theme-1">
-                            <i className="fal fa-calendar-alt"></i>24th Sep 2021
-                          </a>
+                        <Link href="#" className="feed_widget_date theme-1">
+                          <i className="fal fa-calendar-alt"></i>24th Sep 2021
                         </Link>
                       </div>
                     </div>
                     <div className="single_feed_widget">
                       <div className="feed_widget_img">
                         <Link href="/blog-details">
-                          <a>
-                            <img src="/img/news/blog_feed4.jpg" alt="img" />
-                          </a>
+                          <img src="/img/news/blog_feed4.jpg" alt="img" />
                         </Link>
                       </div>
                       <div className="feed_widget_text">
                         <h5 className="feed_widget_title theme-1">
                           <Link href="/blog-details">
-                            <a>Keep focus on you to find out yourself</a>
+                            Keep focus on you to find out yourself
                           </Link>
                         </h5>
-                        <Link href="#">
-                          <a className="feed_widget_date theme-1">
-                            <i className="fal fa-calendar-alt"></i>24th March
-                            2022
-                          </a>
+                        <Link href="#" className="feed_widget_date theme-1">
+                          <i className="fal fa-calendar-alt"></i>24th March
+                          2022
                         </Link>
                       </div>
                     </div>
@@ -750,28 +644,28 @@ export default function BlogDetailsCause() {
                   </div>
                   <ul>
                     <li>
-                      <Link href="#">
-                        <a>Business</a>
+                      <Link href="#" className="theme-1">
+                        Business
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
-                        <a>Consultant</a>
+                      <Link href="#" className="theme-1">
+                        Consultant
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
-                        <a>Creative</a>
+                      <Link href="#" className="theme-1">
+                        Creative
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
-                        <a>UI/UX</a>
+                      <Link href="#" className="theme-1">
+                        UI/UX
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
-                        <a>Technology</a>
+                      <Link href="#" className="theme-1">
+                        Technology
                       </Link>
                     </li>
                   </ul>
@@ -784,65 +678,41 @@ export default function BlogDetailsCause() {
                     </h4>
                   </div>
                   <div className="instagram_widget_img_wrapper">
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta1.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta1.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta2.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta2.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta3.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta3.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta4.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta4.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta5.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta5.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta6.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta6.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta7.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta7.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta8.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta8.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta9.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta9.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta10.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta10.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta11.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta11.jpg" alt="img" />
                     </Link>
-                    <Link href="#">
-                      <a>
-                        <img src="/img/news/insta12.jpg" alt="img" />
-                      </a>
+                    <Link href="#" className="theme-1">
+                      <img src="/img/news/insta12.jpg" alt="img" />
                     </Link>
                   </div>
                 </div>
@@ -854,53 +724,53 @@ export default function BlogDetailsCause() {
                     </h4>
                   </div>
                   <div className="tagcloud">
-                    <Link href="#">
-                      <a>Popular</a>
+                    <Link href="#" className="theme-1">
+                      Popular
                     </Link>
-                    <Link href="#">
-                      <a>Design</a>
+                    <Link href="#" className="theme-1">
+                      Design
                     </Link>
-                    <Link href="#">
-                      <a>UX</a>
+                    <Link href="#" className="theme-1">
+                      UX
                     </Link>
-                    <Link href="#">
-                      <a>UX</a>
+                    <Link href="#" className="theme-1">
+                      UX
                     </Link>
-                    <Link href="#">
-                      <a>Usability</a>
+                    <Link href="#" className="theme-1">
+                      Usability
                     </Link>
-                    <Link href="#">
-                      <a>Develop</a>
+                    <Link href="#" className="theme-1">
+                      Develop
                     </Link>
-                    <Link href="#">
-                      <a>Icon</a>
+                    <Link href="#" className="theme-1">
+                      Icon
                     </Link>
-                    <Link href="#">
-                      <a>Icon</a>
+                    <Link href="#" className="theme-1">
+                      Icon
                     </Link>
-                    <Link href="#">
-                      <a>Business</a>
+                    <Link href="#" className="theme-1">
+                      Business
                     </Link>
-                    <Link href="#">
-                      <a>Consult</a>
+                    <Link href="#" className="theme-1">
+                      Consult
                     </Link>
-                    <Link href="#">
-                      <a>Kit</a>
+                    <Link href="#" className="theme-1">
+                      Kit
                     </Link>
-                    <Link href="#">
-                      <a>Kit</a>
+                    <Link href="#" className="theme-1">
+                      Kit
                     </Link>
-                    <Link href="#">
-                      <a>Keyboard</a>
+                    <Link href="#" className="theme-1">
+                      Keyboard
                     </Link>
-                    <Link href="#">
-                      <a>Mouse</a>
+                    <Link href="#" className="theme-1">
+                      Mouse
                     </Link>
-                    <Link href="#">
-                      <a>Tech</a>
+                    <Link href="#" className="theme-1">
+                      Tech
                     </Link>
-                    <Link href="#">
-                      <a>Tech</a>
+                    <Link href="#" className="theme-1">
+                      Tech
                     </Link>
                   </div>
                 </div>
@@ -913,9 +783,7 @@ export default function BlogDetailsCause() {
                   </div>
                   <div className="advertise_img">
                     <Link href="/blog-details">
-                      <a>
-                        <img src="/img/news/blog_add.jpg" alt="img" />
-                      </a>
+                      <img src="/img/news/blog_add.jpg" alt="img" />
                     </Link>
                     <div className="advertise_abs">
                       <span>270x240</span>

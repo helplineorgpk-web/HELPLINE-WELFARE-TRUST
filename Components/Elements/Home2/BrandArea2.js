@@ -7,9 +7,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import Swiper core and required modules
-import SwiperCore, { Autoplay, EffectFade } from "swiper";
-// install Swiper modules
-SwiperCore.use([Autoplay, EffectFade]);
+import { Autoplay, EffectFade } from "swiper/modules";
 
 export default function BrandArea2() {
   return (
@@ -19,6 +17,7 @@ export default function BrandArea2() {
         <div className="brand_active swiper-container pb-70">
           <div className="swiper-wrapper">
             <Swiper
+              modules={[Autoplay, EffectFade]}
               spaceBetween={30}
               slidesPerView={3}
               centeredSlides={true}

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+
 export default function BlogDetailsBreadCrumb() {
   return (
     //breadcrumb area start
@@ -13,8 +14,8 @@ export default function BlogDetailsBreadCrumb() {
             <div className="breadcrumb_section">
               <ul className="breadcrumb-list volunteer_breadcrumb">
                 <li className="bhas_border">
-                  <Link href="/">
-                    <a>Home</a>
+                  <Link href="/" className="text-white">
+                    Home
                   </Link>
                 </li>
                 <li>

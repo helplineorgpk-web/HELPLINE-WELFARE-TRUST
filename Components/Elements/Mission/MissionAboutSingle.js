@@ -10,10 +10,10 @@ export default function MissionAboutSingle() {
           <div className="col-xl-6 offset-xl-6 col-md-10 offset-md-1">
             <div className="about_wrapper subscribe_mission pl-50">
               <div className="section_title">
-                <Link href="#">
-                  <a className="sub_title sub_title_2">
+                <Link href="#" className="sub_title sub_title_2" >
+
                     Helpline’s Primary Objective{" "}
-                  </a>
+
                 </Link>
                 <h3 className="title title_2 text_white">
                   Health, Healing, and Hope.

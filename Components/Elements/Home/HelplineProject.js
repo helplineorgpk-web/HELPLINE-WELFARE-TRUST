@@ -27,13 +27,9 @@ function HelplineProject() {
       >
         {HelplineProject.map((slide, index) => (
           <SwiperSlide className="single_cause mb-0" key={index}>
-            <div className="single_cause_img img_effect_white p-rel">
-              <Link href={{}}>
-                <a>
-                  <img src={slide.image} alt="img" />
-                </a>
-              </Link>
-            </div>
+            <Link href={slide.link} className="img_effect_white">
+              <img src={slide.image} alt="img" />
+            </Link>
             <div
               className="single_cause_contents"
               style={{
@@ -49,24 +45,12 @@ function HelplineProject() {
                 {slide.label}
               </p>
               <div>
-                <span>
-                  <a>{slide.description}</a>
-                </span>
+                <Link href={slide.link} className="cause_title_link">
+                  {slide.description}
+                </Link>
               </div>
-              <Link href={slide.link}>
-                <h6
-                  style={{
-                    color: "#FFFFFF",
-                    textAlign: "center",
-                    marginTop: "30px",
-                    padding: "10px",
-                    borderRadius: "10px",
-                    cursor: "pointer",
-                    background: `linear-gradient(135deg,#0A463E, #F8B698)`,
-                  }}
-                >
-                  <a>Donate Now</a>
-                </h6>
+              <Link href={slide.link} className="g_btn theme1_bg to_right2 rad-50">
+                Donate Now <span></span>
               </Link>
             </div>
           </SwiperSlide>

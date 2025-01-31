@@ -22,19 +22,15 @@ export default function Footer3() {
                   <div className="footer_locate_link theme-1">
                     <ul>
                       <li>
-                        <Link href="/tel:09994022717">
-                          <a>
-                            <i className="fal fa-phone"></i>
-                            <strong>Phone:</strong>09994022717
-                          </a>
+                        <Link href="/tel:09994022717" className="footer-link">
+                          <i className="fal fa-phone"></i>
+                          <strong>Phone:</strong>09994022717
                         </Link>
                       </li>
                       <li>
-                        <Link href="/mailto:info@helpline.org.pk">
-                          <a>
-                            <i className="fal fa-envelope"></i>
-                            <strong>Phone:</strong>info@helpline.org.pk
-                          </a>
+                        <Link href="/mailto:info@helpline.org.pk" className="footer-link">
+                          <i className="fal fa-envelope"></i>
+                          <strong>Email:</strong>info@helpline.org.pk
                         </Link>
                       </li>
                     </ul>
@@ -49,48 +45,48 @@ export default function Footer3() {
                   <div className="footer_links w_half theme-1">
                     <ul>
                       <li>
-                        <Link href="/">
-                          <a>Home</a>
+                        <Link href="/" className="footer-link">
+                          Home
                         </Link>
                       </li>
                       <li>
-                        <Link href="/about">
-                          <a>Terms & condition</a>
+                        <Link href="/about" className="footer-link">
+                          Terms & condition
                         </Link>
                       </li>
                       <li>
-                        <Link href="/about">
-                          <a>Features</a>
+                        <Link href="/about" className="footer-link">
+                          Features
                         </Link>
                       </li>
                       <li>
-                        <Link href="/about">
-                          <a>Privacy Policy</a>
+                        <Link href="/about" className="footer-link">
+                          Privacy Policy
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Services</a>
+                        <Link href="/cause" className="footer-link">
+                          Services
                         </Link>
                       </li>
                       <li>
-                        <Link href="/blog">
-                          <a>News Insights</a>
+                        <Link href="/blog" className="footer-link">
+                          News Insights
                         </Link>
                       </li>
                       <li>
-                        <Link href="/about">
-                          <a>Pricing</a>
+                        <Link href="/about" className="footer-link">
+                          Pricing
                         </Link>
                       </li>
                       <li>
-                        <Link href="/faq">
-                          <a>FAQ</a>
+                        <Link href="/faq" className="footer-link">
+                          FAQ
                         </Link>
                       </li>
                       <li>
-                        <Link href="/volunteer">
-                          <a>Team</a>
+                        <Link href="/volunteer" className="footer-link">
+                          Team
                         </Link>
                       </li>
                     </ul>
@@ -105,48 +101,48 @@ export default function Footer3() {
                   <div className="footer_links w_half theme-1">
                     <ul>
                       <li>
-                        <Link href="/cause">
-                          <a>Water</a>
+                        <Link href="/cause" className="footer-link">
+                          Water
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Shelter</a>
+                        <Link href="/cause" className="footer-link">
+                          Shelter
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Education</a>
+                        <Link href="/cause" className="footer-link">
+                          Education
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Refuse Camp</a>
+                        <Link href="/cause" className="footer-link">
+                          Refuse Camp
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Medicine</a>
+                        <Link href="/cause" className="footer-link">
+                          Medicine
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Donation</a>
+                        <Link href="/cause" className="footer-link">
+                          Donation
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Medical</a>
+                        <Link href="/cause" className="footer-link">
+                          Medical
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Blood Donation</a>
+                        <Link href="/cause" className="footer-link">
+                          Blood Donation
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Fresh Food</a>
+                        <Link href="/cause" className="footer-link">
+                          Fresh Food
                         </Link>
                       </li>
                     </ul>
@@ -162,22 +158,20 @@ export default function Footer3() {
                     <div className="single_fnews d-flex mb-30">
                       <div className="fnews_img">
                         <Link href="/blog-details">
-                          <a>
-                            <img src="/img/footer/fnews1.jpg" alt="img" />
-                          </a>
+                          <img src="/img/footer/fnews1.jpg" alt="img" />
                         </Link>
                       </div>
 
                       <div className="fnews_content">
                         <div className="fnews_meta">
-                          <Link href="/blog-details">
-                            <a className="fnews_author theme-1 sep">Charity</a>
+                          <Link href="/blog-details" className="footer-link">
+                            Charity
                           </Link>
                           <span className="fnews_date">August 22th,2021</span>
                         </div>
                         <h5 className="fnews_title theme-1">
-                          <Link href="/blog-details">
-                            <a>Tips How to repair you by myself</a>
+                          <Link href="/blog-details" className="footer-link">
+                            Tips How to repair you by myself
                           </Link>
                         </h5>
                       </div>
@@ -185,22 +179,20 @@ export default function Footer3() {
                     <div className="single_fnews d-flex mb-30">
                       <div className="fnews_img">
                         <Link href="/blog-details">
-                          <a>
-                            <img src="/img/footer/fnews2.jpg" alt="img" />
-                          </a>
+                          <img src="/img/footer/fnews2.jpg" alt="img" />
                         </Link>
                       </div>
 
                       <div className="fnews_content">
                         <div className="fnews_meta">
-                          <Link href="/blog-details">
-                            <a className="fnews_author theme-1 sep">Charity</a>
+                          <Link href="/blog-details" className="footer-link">
+                            Charity
                           </Link>
                           <span className="fnews_date">August 22th,2021</span>
                         </div>
                         <h5 className="fnews_title theme-1">
-                          <Link href="/blog-details">
-                            <a>Tips How to keep yourself good health</a>
+                          <Link href="/blog-details" className="footer-link">
+                            Tips How to keep yourself good health
                           </Link>
                         </h5>
                       </div>
@@ -208,22 +200,20 @@ export default function Footer3() {
                     <div className="single_fnews d-flex mb-30">
                       <div className="fnews_img">
                         <Link href="/blog-details">
-                          <a>
-                            <img src="/img/footer/fnews3.jpg" alt="img" />
-                          </a>
+                          <img src="/img/footer/fnews3.jpg" alt="img" />
                         </Link>
                       </div>
 
                       <div className="fnews_content">
                         <div className="fnews_meta">
-                          <Link href="/blog-details">
-                            <a className="fnews_author theme-1 sep">Charity</a>
+                          <Link href="/blog-details" className="footer-link">
+                            Charity
                           </Link>
                           <span className="fnews_date">August 22th,2021</span>
                         </div>
                         <h5 className="fnews_title theme-1">
-                          <Link href="/blog-details">
-                            <a>Tips How to make you happy by yourself</a>
+                          <Link href="/blog-details" className="footer-link">
+                            Tips How to make you happy by yourself
                           </Link>
                         </h5>
                       </div>
@@ -241,8 +231,8 @@ export default function Footer3() {
                 <p>
                   Design by{" "}
                   <strong>
-                    <Link href="https://www.codeviztech.com/">
-                      <a target="_blank">CodeViz Technology</a>
+                    <Link href="https://www.codeviztech.com/" className="footer-link">
+                      CodeViz Technology
                     </Link>
                   </strong>
                 </p>

@@ -103,17 +103,15 @@ export default function ContactGetInTouch() {
           <div className="col-xxl-6 col-xl-6 col-lg-5 order-0 order-lg-1">
             <div className="contact_location_section pl-50 mb-50">
               <div className="section_title mb-40">
-                <Link href="/contact">
-                  <a className="sub_title sub_title_2">Contact Us</a>
+                <Link href="/contact" className="sub_title sub_title_2">
+                  Contact Us
                 </Link>
                 <h3 className="title">Get In Touch</h3>
               </div>
               <div className="contact_location_wrapper">
                 <div className="single_contact_location theme-6">
-                  <Link href="#">
-                    <a className="icon">
-                      <i className="far fa-map-marker-alt"></i>
-                    </a>
+                  <Link href="#" className="icon">
+                    <i className="far fa-map-marker-alt"></i>
                   </Link>
                   <div className="contact_location_text">
                     <span>Location</span>
@@ -123,32 +121,27 @@ export default function ContactGetInTouch() {
                   </div>
                 </div>
                 <div className="single_contact_location theme-1">
-                  <Link href="/mailto:info@webexample.com">
-                    <a className="icon">
-                      <i className="fal fa-envelope"></i>
-                    </a>
+                  <Link href="mailto:info@helpline.org.pk" className="icon">
+                    <i className="fal fa-envelope"></i>
                   </Link>
                   <div className="contact_location_text">
                     <span>Email</span>
-                    <Link href="/mailto:info@webexample.com">
-                      <a className="contact_address_title">
-                        info@helpline.org.pk
-                      </a>
+                    <Link href="mailto:info@helpline.org.pk" className="contact_address_title">
+                      info@helpline.org.pk
                     </Link>
                   </div>
                 </div>
                 <div className="single_contact_location theme-2">
-                  <Link href="/tel:789.765.741.69">
-                    <a className="icon">
-                      <i className="fal fa-phone"></i>
-                    </a>
+                  <Link href="tel:+92-42-3515 7374" className="icon">
+                    <i className="fal fa-phone"></i>
                   </Link>
                   <div className="contact_location_text">
                     <span>Phone</span>
-                    <Link href="/tel:789.765.741.69">
-                      <a className="contact_address_title">
-                        +92-42-3515 7374 , +92-42-35110164
-                      </a>
+                    <Link href="tel:+92-42-3515 7374" className="contact_address_title">
+                      +92-42-3515 7374
+                    </Link>
+                    <Link href="tel:+92-42-35110164" className="contact_address_title">
+                      +92-42-35110164
                     </Link>
                   </div>
                 </div>

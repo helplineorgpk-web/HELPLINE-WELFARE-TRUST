@@ -18,10 +18,8 @@ export default function CTAArea3() {
                 postman for takeout to children.
               </p>
 
-              <Link href="/donation">
-                <a className="g_btn red_bg to_right1 rad-50 p-55">
-                  Donate Now <span></span>
-                </a>
+              <Link href="/donation" className="g_btn red_bg to_right1 rad-50 p-55">
+                Donate Now <span></span>
               </Link>
             </div>
           </div>
@@ -33,10 +31,8 @@ export default function CTAArea3() {
                 forward in smart way for save world.
               </p>
 
-              <Link href="/volunteer">
-                <a className="g_btn theme1_bg to_right2 rad-50 p-55">
-                  Become Volunteer <span></span>
-                </a>
+              <Link href="/volunteer" className="g_btn theme1_bg to_right2 rad-50 p-55">
+                Become Volunteer <span></span>
               </Link>
             </div>
           </div>
@@ -46,8 +42,8 @@ export default function CTAArea3() {
               style={{ background: "url(/img/bg/cta_bg3.jpg)" }}
             >
               <a
-                onClick={setPopUp}
-                style={{ cursor: "pionter" }}
+                onClick={() => setPopUp(true)}
+                style={{ cursor: "pointer" }}
                 className="play_btn p-rel focus_theme-1"
               >
                 <i className="fas fa-play"></i>

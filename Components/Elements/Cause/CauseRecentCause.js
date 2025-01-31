@@ -81,15 +81,15 @@ export default function CauseRecentCause({ categories, causes }) {
             <div className="row">
               {projects?.length > 0 ? (
                 projects.map((item, i) => (
-                  <div className="col-xxl-4  col-lg-4 col-md-6" key={item.id}>
+                  <div className="col-xxl-4 col-lg-4 col-md-6" key={item.id}>
                     <div className="single_cause mb-30">
                       <div className="single_cause_img_wrapper">
                         <div
                           className="single_cause_img w_img img_effect_white"
                           onClick={() => handleNavigation(item)}
                         >
-                          <Link href={{}}>
-                            <a>{item.img}</a>
+                          <Link href={`/cause-details?id=${item.id}`}>
+                            {item.img}
                           </Link>
                         </div>
                       </div>
@@ -112,9 +112,7 @@ export default function CauseRecentCause({ categories, causes }) {
                             </span>
                           </div>
                           <h3 className="title">
-                            <Link href={{}}>
-                              <a>{item.desc}</a>
-                            </Link>
+                            <Link href="#">{item.desc}</Link>
                           </h3>
                         </div>
                         <div className="single_cause_meta">{item.detail}</div>

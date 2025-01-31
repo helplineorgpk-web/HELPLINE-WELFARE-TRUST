@@ -28,56 +28,47 @@ export default function EventCauseDetail({ title, dates, image, category }) {
                 <div className="details_img_meta details_meta_abs">
                   <div className="donar_post_content donar_post_event_details">
                     <h5 className="donar_name">
-                      <Link href="volunteer-details">
-                        <a>Nilmarendra Max</a>
+                      <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                        Nilmarendra Max <span></span>
                       </Link>
                     </h5>
                     <div className="donar_meta">
-                      <Link href="#">
-                        <a className="donar_date sep theme-2">
-                          <i className="fal fa-calendar-alt"></i>
-                          {formattedDate}
-                        </a>
+                      <Link href="#" className="donar_date sep theme-2">
+                        <i className="fal fa-calendar-alt"></i>
+                        {formattedDate}
                       </Link>
-                      <Link href="#">
-                        <a className="donar_time theme-8">
-                          <i className="fal fa-clock"></i> 11:00 - 3:00
-                        </a>
+                      <Link href="#" className="donar_time theme-8">
+                        <i className="fal fa-clock"></i> 11:00 - 3:00
                       </Link>
                     </div>
                   </div>
                   <div className="donar_category">
                     <h5 className="donar_name">
-                      <Link href="event-details">
-                        <a>Category</a>
+                      <Link href="/event-details" className="g_btn theme1_bg to_right2 rad-50">
+                        Category <span></span>
                       </Link>
                     </h5>
                     <span className="category_name theme-1">{category}</span>
                   </div>
                   <div className="meta_speaker">
                     <div className="speaker_img">
-                      <Link href="volunteer-details">
-                        <a>
-                          <img src="/img/featureEvent/speaker.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                        <img src="/img/featureEvent/speaker.jpg" alt="img" />
                       </Link>
                     </div>
                     <div className="speaker_info">
                       <h5 className="donar_name">
-                        <Link href="volunteer-details">
-                          <a>Mahindra H.</a>
+                        <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                          Mahindra H. <span></span>
                         </Link>
                       </h5>
                       <span className="category_name">Speaker</span>
                     </div>
                   </div>
                   <div className="details_meta_button">
-                    <button
-                      type="submit"
-                      className="rad-30 g_btn theme1_bg to_right2"
-                    >
+                    <Link href="/donation" className="g_btn theme1_bg to_right2 rad-50">
                       Book Your Seat <span></span>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -138,31 +129,27 @@ export default function EventCauseDetail({ title, dates, image, category }) {
                 </p>
 
                 <div className="page_pagination_withimg">
-                  <Link href="event-details">
-                    <a className="img_pagination img_pagination_left">
-                      <div className="left_img">
-                        <img src="/img/causes/prev.jpg" alt="img" />
-                      </div>
-                      <div className="left_text">
-                        <span className="sub_pagination">Prev Cause</span>
-                        <h5 className="pagination_title">
-                          World Water Charity
-                        </h5>
-                      </div>
-                    </a>
+                  <Link href="/event-details" className="img_pagination img_pagination_left">
+                    <div className="left_img">
+                      <img src="/img/causes/prev.jpg" alt="img" />
+                    </div>
+                    <div className="left_text">
+                      <span className="sub_pagination">Prev Cause</span>
+                      <h5 className="pagination_title">
+                        World Water Charity
+                      </h5>
+                    </div>
                   </Link>
-                  <Link href="event-details">
-                    <a className="img_pagination img_pagination_right">
-                      <div className="right_text text-sm-end">
-                        <span className="sub_pagination">Next Cause</span>
-                        <h5 className="pagination_title">
-                          Helping poor people
-                        </h5>
-                      </div>
-                      <div className="right_img">
-                        <img src="/img/causes/next.jpg" alt="img" />
-                      </div>
-                    </a>
+                  <Link href="/event-details" className="img_pagination img_pagination_right">
+                    <div className="right_text text-sm-end">
+                      <span className="sub_pagination">Next Cause</span>
+                      <h5 className="pagination_title">
+                        Helping poor people
+                      </h5>
+                    </div>
+                    <div className="right_img">
+                      <img src="/img/causes/next.jpg" alt="img" />
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -222,11 +209,6 @@ export default function EventCauseDetail({ title, dates, image, category }) {
                         </li>
                       </ul>
                     </div>
-                    {/* <select name="select" id="widget_select" className="widget has_border">
-                                            <option value="Select Event">Select Event</option>
-                                            <option value="Abroad Roaming">Abroad Roaming</option>
-                                            <option value="Likely Moments">Likely Moments</option>
-                                        </select> */}
                   </div>
                   <DatePicker
                     selected={startDate}
@@ -234,17 +216,9 @@ export default function EventCauseDetail({ title, dates, image, category }) {
                     className={`calendar_icon has_border gj-textbox-md`}
                     style={{ zIndex: "1000" }}
                   ></DatePicker>
-                  <div className="calendar_icon">
-                    {/* <i className="fal fa-calendar-alt" role="right-icon"></i> */}
-                    {/* <input type="text" id="datepicker_event" name="Category" placeholder="Select date" className="has_border" /> */}
-                  </div>
-                  <button
-                    style={{ zIndex: "0" }}
-                    type="submit"
-                    className="rad-30 g_btn theme1_bg to_right2"
-                  >
+                  <Link href="/donation" className="g_btn theme1_bg to_right2 rad-50">
                     Book Your Seat <span></span>
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -255,162 +229,138 @@ export default function EventCauseDetail({ title, dates, image, category }) {
                 <div className="donor_post_wrapper">
                   <div className="single_donor_post">
                     <div className="donar_post_img">
-                      <Link href="volunteer-details">
-                        <a>
-                          <img src="/img/causes/donar1.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                        <img src="/img/causes/donar1.jpg" alt="img" />
                       </Link>
                     </div>
                     <div className="donar_post_content">
                       <h5 className="donar_name">
-                        <Link href="volunteer-details">
-                          <a>Nilmarendra Max</a>
+                        <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                          Nilmarendra Max <span></span>
                         </Link>
                       </h5>
                       <div className="donar_meta">
-                        <Link href="#">
-                          <a className="donar_amount theme-1 sep">$900</a>
+                        <Link href="#" className="donar_amount theme-1 sep">
+                          $900
                         </Link>
-                        <Link href="#">
-                          <a className="donar_date theme-2">
-                            <i className="fal fa-calendar-alt"></i> February 20,
-                            2022
-                          </a>
+                        <Link href="#" className="donar_date theme-2">
+                          <i className="fal fa-calendar-alt"></i> February 20,
+                          2022
                         </Link>
                       </div>
                     </div>
                   </div>
                   <div className="single_donor_post">
                     <div className="donar_post_img">
-                      <Link href="volunteer-details">
-                        <a>
-                          <img src="/img/causes/donar2.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                        <img src="/img/causes/donar2.jpg" alt="img" />
                       </Link>
                     </div>
                     <div className="donar_post_content">
                       <h5 className="donar_name">
-                        <Link href="volunteer-details">
-                          <a>Miranda H. Hilix</a>
+                        <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                          Miranda H. Hilix <span></span>
                         </Link>
                       </h5>
                       <div className="donar_meta">
-                        <Link href="#">
-                          <a className="donar_amount theme-1 sep">$500</a>
+                        <Link href="#" className="donar_amount theme-1 sep">
+                          $500
                         </Link>
-                        <Link href="#">
-                          <a className="donar_date theme-2">
-                            <i className="fal fa-calendar-alt"></i> February 20,
-                            2022
-                          </a>
+                        <Link href="#" className="donar_date theme-2">
+                          <i className="fal fa-calendar-alt"></i> February 20,
+                          2022
                         </Link>
                       </div>
                     </div>
                   </div>
                   <div className="single_donor_post">
                     <div className="donar_post_img">
-                      <Link href="volunteer-details">
-                        <a>
-                          <img src="/img/causes/donar3.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                        <img src="/img/causes/donar3.jpg" alt="img" />
                       </Link>
                     </div>
                     <div className="donar_post_content">
                       <h5 className="donar_name">
-                        <Link href="volunteer-details">
-                          <a>Anayatulla Abbasi</a>
+                        <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                          Anayatulla Abbasi <span></span>
                         </Link>
                       </h5>
                       <div className="donar_meta">
-                        <Link href="#">
-                          <a className="donar_amount theme-1 sep">$900</a>
+                        <Link href="#" className="donar_amount theme-1 sep">
+                          $900
                         </Link>
-                        <Link href="#">
-                          <a className="donar_date theme-2">
-                            <i className="fal fa-calendar-alt"></i> February 20,
-                            2022
-                          </a>
+                        <Link href="#" className="donar_date theme-2">
+                          <i className="fal fa-calendar-alt"></i> February 20,
+                          2022
                         </Link>
                       </div>
                     </div>
                   </div>
                   <div className="single_donor_post">
                     <div className="donar_post_img">
-                      <Link href="volunteer-details">
-                        <a>
-                          <img src="/img/causes/donar4.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                        <img src="/img/causes/donar4.jpg" alt="img" />
                       </Link>
                     </div>
                     <div className="donar_post_content">
                       <h5 className="donar_name">
-                        <Link href="volunteer-details">
-                          <a>Ahmadullah Fokir</a>
+                        <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                          Ahmadullah Fokir <span></span>
                         </Link>
                       </h5>
                       <div className="donar_meta">
-                        <Link href="#">
-                          <a className="donar_amount theme-1 sep">$300</a>
+                        <Link href="#" className="donar_amount theme-1 sep">
+                          $300
                         </Link>
-                        <Link href="#">
-                          <a className="donar_date theme-2">
-                            <i className="fal fa-calendar-alt"></i> February 20,
-                            2022
-                          </a>
+                        <Link href="#" className="donar_date theme-2">
+                          <i className="fal fa-calendar-alt"></i> February 20,
+                          2022
                         </Link>
                       </div>
                     </div>
                   </div>
                   <div className="single_donor_post">
                     <div className="donar_post_img">
-                      <Link href="volunteer-details">
-                        <a>
-                          <img src="/img/causes/donar5.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                        <img src="/img/causes/donar5.jpg" alt="img" />
                       </Link>
                     </div>
                     <div className="donar_post_content">
                       <h5 className="donar_name">
-                        <Link href="volunteer-details">
-                          <a>Ahmed Riad</a>
+                        <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                          Ahmed Riad <span></span>
                         </Link>
                       </h5>
                       <div className="donar_meta">
-                        <Link href="#">
-                          <a className="donar_amount theme-1 sep">$500</a>
+                        <Link href="#" className="donar_amount theme-1 sep">
+                          $500
                         </Link>
-                        <Link href="#">
-                          <a className="donar_date theme-2">
-                            <i className="fal fa-calendar-alt"></i> February 20,
-                            2022
-                          </a>
+                        <Link href="#" className="donar_date theme-2">
+                          <i className="fal fa-calendar-alt"></i> February 20,
+                          2022
                         </Link>
                       </div>
                     </div>
                   </div>
                   <div className="single_donor_post">
                     <div className="donar_post_img">
-                      <Link href="volunteer-details">
-                        <a>
-                          <img src="/img/causes/donar6.jpg" alt="img" />
-                        </a>
+                      <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                        <img src="/img/causes/donar6.jpg" alt="img" />
                       </Link>
                     </div>
                     <div className="donar_post_content">
                       <h5 className="donar_name">
-                        <Link href="volunteer-details">
-                          <a>Andreu R.</a>
+                        <Link href="/volunteer-details" className="g_btn theme1_bg to_right2 rad-50">
+                          Andreu R. <span></span>
                         </Link>
                       </h5>
                       <div className="donar_meta">
-                        <Link href="#">
-                          <a className="donar_amount theme-1 sep">$500</a>
+                        <Link href="#" className="donar_amount theme-1 sep">
+                          $500
                         </Link>
-                        <Link href="#">
-                          <a className="donar_date theme-2">
-                            <i className="fal fa-calendar-alt"></i> February 20,
-                            2022
-                          </a>
+                        <Link href="#" className="donar_date theme-2">
+                          <i className="fal fa-calendar-alt"></i> February 20,
+                          2022
                         </Link>
                       </div>
                     </div>

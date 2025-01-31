@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import ImageGallery from "./Gallery/ImageGallery";
 
 export default function SideBarFullscreen({
   isToggledInfo,
@@ -17,10 +16,8 @@ export default function SideBarFullscreen({
           <div className="offset-widget offset-logo mb-30 pb-20">
             <div className="row align-items-center">
               <div className="col-8">
-                <Link href="/">
-                  <a>
-                    <img src="/img/logo/logo.png" alt="Logo" />
-                  </a>
+                <Link href="/" className="logo">
+                  <img src="/img/logo/logo.png" alt="Logo" />
                 </Link>
               </div>
               <div className="col-4 text-end">
@@ -57,14 +54,22 @@ export default function SideBarFullscreen({
                 a complete account of the system and expound the actual
                 teachings of the great explore
               </p>
-              <Link href="#">
-                <a className="c-btn btn-round-02 d-none">Contact Us</a>
+              <Link href="/about" className="theme-2">
+                About Us
+              </Link>
+              <Link href="/cause" className="theme-2">
+                Our Causes
+              </Link>
+              <Link href="/event" className="theme-2">
+                Events
+              </Link>
+              <Link href="/blog" className="theme-2">
+                News
+              </Link>
+              <Link href="/contact" className="theme-2">
+                Contact
               </Link>
             </div>
-          </div>
-
-          <div className="row side-row">
-            <ImageGallery />
           </div>
 
           <div className="side-map mt-20 mb-30">
@@ -74,56 +79,38 @@ export default function SideBarFullscreen({
           <div className="contact-infos mt-30 mb-30">
             <div className="contact-list mb-30">
               <h4>Contact Info</h4>
-              <Link href="#">
-                <a className="theme-1">
-                  <i className="fal fa-map-marker-alt"></i>
-                  <span>HOUSE # 705/A-1, Township, Lahore</span>
-                </a>
+              <Link href="#" className="theme-1">
+                <i className="fal fa-map-marker-alt"></i>
+                <span>HOUSE # 705/A-1, Township, Lahore</span>
               </Link>
-              <Link href="/tel:+92-42-3515 7374">
-                <a className="theme-2">
-                  <i className="fal fa-phone"></i>
-                  <span>+92-42-3515 7374</span>
-                </a>
+              <Link href="/tel:+92-42-3515 7374" className="theme-2">
+                <i className="fal fa-phone"></i>
+                <span>+92-42-3515 7374</span>
               </Link>
-              <Link href="/mailto:info@helpline.org.pk">
-                <a className="theme-3">
-                  <i className="far fa-envelope"></i>
-                  <span>info@helpline.org.pk</span>
-                </a>
+              <Link href="/mailto:info@helpline.org.pk" className="theme-3">
+                <i className="far fa-envelope"></i>
+                <span>info@helpline.org.pk</span>
               </Link>
             </div>
 
             <div className="top_social offset_social mt-20 mb-30">
-              <Link href="#">
-                <a target="_blank" className="facebook">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
+              <Link href="#" target="_blank" className="facebook">
+                <i className="fab fa-facebook-f"></i>
               </Link>
-              <Link href="#">
-                <a target="_blank" className="twitter">
-                  <i className="fab fa-twitter"></i>
-                </a>
+              <Link href="#" target="_blank" className="twitter">
+                <i className="fab fa-twitter"></i>
               </Link>
-              <Link href="#">
-                <a target="_blank" className="instagram">
-                  <i className="fab fa-instagram"></i>
-                </a>
+              <Link href="#" target="_blank" className="instagram">
+                <i className="fab fa-instagram"></i>
               </Link>
-              <Link href="#">
-                <a target="_blank" className="linkedin">
-                  <i className="fab fa-linkedin"></i>
-                </a>
+              <Link href="#" target="_blank" className="linkedin">
+                <i className="fab fa-linkedin"></i>
               </Link>
-              <Link href="#">
-                <a target="_blank" className="youtube">
-                  <i className="fab fa-youtube"></i>
-                </a>
+              <Link href="#" target="_blank" className="youtube">
+                <i className="fab fa-youtube"></i>
               </Link>
-              <Link href="#">
-                <a className="pinterest">
-                  <i className="fab fa-pinterest-p"></i>
-                </a>
+              <Link href="#" className="pinterest">
+                <i className="fab fa-pinterest-p"></i>
               </Link>
             </div>
           </div>

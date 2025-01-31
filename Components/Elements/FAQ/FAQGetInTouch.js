@@ -31,37 +31,49 @@ export default function FAQGetInTouch() {
                   <div className="col-xxl-6 col-sm-6">
                     <div
                       onClick={isOpenFalse}
-                      className={`nice-select contact_select ${isOpen && "open"}`}
+                      className={`nice-select contact_select ${
+                        isOpen && "open"
+                      }`}
                     >
                       <span className="current">{isSelect}</span>
                       <ul className="list">
                         <li
                           onClick={() => setSelect("Select Subject")}
-                          className={`option ${isSelect == "Select Subject" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Select Subject" && "selected focus"
+                          }`}
                         >
                           Select Subject
                         </li>
                         <li
                           onClick={() => setSelect("Bangla")}
-                          className={`option ${isSelect == "Bangla" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Bangla" && "selected focus"
+                          }`}
                         >
                           Bangla
                         </li>
                         <li
                           onClick={() => setSelect("English")}
-                          className={`option ${isSelect == "English" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "English" && "selected focus"
+                          }`}
                         >
                           English
                         </li>
                         <li
                           onClick={() => setSelect("Mathmatics")}
-                          className={`option ${isSelect == "Mathmatics" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Mathmatics" && "selected focus"
+                          }`}
                         >
                           Mathmatics
                         </li>
                         <li
                           onClick={() => setSelect("Textile")}
-                          className={`option ${isSelect == "Textile" && "selected focus"}`}
+                          className={`option ${
+                            isSelect == "Textile" && "selected focus"
+                          }`}
                         >
                           Textile
                         </li>
@@ -96,17 +108,15 @@ export default function FAQGetInTouch() {
           <div className="col-xxl-6 col-xl-6 col-lg-5 order-0 order-lg-1">
             <div className="contact_location_section pl-50 mb-50">
               <div className="section_title mb-40">
-                <Link href="/contact">
-                  <a className="sub_title sub_title_2">Contact Us</a>
+                <Link href="/contact" className="sub_title sub_title_2">
+                  Contact Us
                 </Link>
                 <h3 className="title">Get In Touch</h3>
               </div>
               <div className="contact_location_wrapper">
                 <div className="single_contact_location theme-6">
-                  <Link href="#">
-                    <a className="icon">
-                      <i className="far fa-map-marker-alt"></i>
-                    </a>
+                  <Link href="#" className="icon">
+                    <i className="far fa-map-marker-alt"></i>
                   </Link>
                   <div className="contact_location_text">
                     <span>Location</span>
@@ -116,31 +126,21 @@ export default function FAQGetInTouch() {
                   </div>
                 </div>
                 <div className="single_contact_location theme-1">
-                  <Link href="/mailto:info@webexample.com">
-                    <a className="icon">
-                      <i className="fal fa-envelope"></i>
-                    </a>
+                  <Link href="/mailto:info@helpline.org.pk" className="theme-3">
+                    <i className="far fa-envelope"></i>
+                    <span>info@helpline.org.pk</span>
                   </Link>
                   <div className="contact_location_text">
                     <span>Email</span>
-                    <Link href="/mailto:info@webexample.com">
-                      <a className="contact_address_title">
-                        Info@webexample.com
-                      </a>
-                    </Link>
                   </div>
                 </div>
                 <div className="single_contact_location theme-2">
-                  <Link href="/tel:789.765.741.69">
-                    <a className="icon">
-                      <i className="fal fa-phone"></i>
-                    </a>
+                  <Link href="/tel:+92-42-35157374" className="theme-2">
+                    <i className="fal fa-phone"></i>
+                    <span>+92-42-35157374</span>
                   </Link>
                   <div className="contact_location_text">
                     <span>Phone</span>
-                    <Link href="/tel:789.765.741.69">
-                      <a className="contact_address_title">789. 765. 741. 69</a>
-                    </Link>
                   </div>
                 </div>
               </div>

@@ -10,46 +10,32 @@ export default function Header2({ toggleTrueFalseInfo }) {
           <div className="row align-items-center">
             <div className="col-xxl-9 col-xl-9 col-lg-8">
               <div className="top_mailing">
-                <Link href="#">
-                  <a className="theme-1">
-                    <i className="fal fa-envelope"></i>
-                    info@helpline.org.pk
-                  </a>
+                <Link href="#" className="theme-1">
+                  <i className="fal fa-envelope"></i>
+                  info@helpline.org.pk
                 </Link>
-                <Link href="#">
-                  <a className="theme-2">
-                    <i className="fal fa-phone"></i>+92-42-3515 7374
-                  </a>
+                <Link href="#" className="theme-2">
+                  <i className="fal fa-phone"></i>+92-42-3515 7374
                 </Link>
-                <Link href="#">
-                  <a className="theme-3">
-                    <i className="fal fa-map-marker-alt"></i>HOUSE # 705/A-1,
-                    Township, Lahore Pakistan
-                  </a>
+                <Link href="#" className="theme-3">
+                  <i className="fal fa-map-marker-alt"></i>HOUSE # 705/A-1,
+                  Township, Lahore Pakistan
                 </Link>
               </div>
             </div>
             <div className="col-xxl-3 col-xl-3 col-lg-4 text-start text-md-end">
               <div className="top_social">
-                <Link href="https://www.facebook.com/helpline.org.pk/">
-                  <a className="facebook" target="_blank">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
+                <Link href="https://www.facebook.com/helpline.org.pk/" target="_blank" className="facebook">
+                  <i className="fab fa-facebook-f"></i>
                 </Link>
-                <Link href="https://twitter.com/helpline_swo?s=20">
-                  <a className="twitter" target="_blank">
-                    <i className="fab fa-twitter"></i>
-                  </a>
+                <Link href="https://twitter.com/helpline_swo?s=20" target="_blank" className="twitter">
+                  <i className="fab fa-twitter"></i>
                 </Link>
-                <Link href="https://www.youtube.com/@helpline3532">
-                  <a className="pinterest" target="_blank">
-                    <i className="fab fa-youtube"></i>
-                  </a>
+                <Link href="https://www.youtube.com/@helpline3532" target="_blank" className="pinterest">
+                  <i className="fab fa-youtube"></i>
                 </Link>
-                <Link href="https://www.instagram.com/helpline.socialwelfare/">
-                  <a className="pinterest" target="_blank">
-                    <i className="fab fa-instagram"></i>
-                  </a>
+                <Link href="https://www.instagram.com/helpline.socialwelfare/" target="_blank" className="pinterest">
+                  <i className="fab fa-instagram"></i>
                 </Link>
               </div>
             </div>
@@ -61,10 +47,8 @@ export default function Header2({ toggleTrueFalseInfo }) {
           <div className="row align-items-center">
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
               <div className="">
-                <Link href="/">
-                  <a>
-                    <img src="/img/logo/logo.png" alt="" />
-                  </a>
+                <Link href="/" className="logo">
+                  <img src="/img/logo/logo.png" alt="Logo" />
                 </Link>
               </div>
             </div>
@@ -76,20 +60,12 @@ export default function Header2({ toggleTrueFalseInfo }) {
             <div className="col-xxl-3 col-xl-3 col-lg-1 col-md-6 col-6">
               <div className="header-right d-flex align-items-center justify-content-end">
                 <div className="header-sing d-inline-block d-none d-xl-block">
-                  <Link href="/donation">
-                    <a className="g_btn hbtn_1 to_right1 rad-30">
-                      Make Donation<span></span>
-                    </a>
+                  <Link href="/donation" className="g_btn hbtn_1 to_right1 rad-30">
+                    Make Donation<span></span>
                   </Link>
                 </div>
                 <div
                   className="menu-bar d-inline-none d-block d-xl-none"
-                  // style={{
-                  //   display: "block",
-                  //   "@media (max-width: 992px)": {
-                  //     display: "none",
-                  //   },
-                  // }}
                 >
                   <button
                     onClick={toggleTrueFalseInfo}

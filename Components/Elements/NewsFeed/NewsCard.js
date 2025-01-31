@@ -7,9 +7,9 @@ const NewsCard = ({ image, category, title, author, date, link }) => (
       style={{ border: "2px solid #65cabb", borderRadius: "10px" }}
     >
       <Link href={link}>
-        <a>
+
           <img src={image} alt={title} />
-        </a>
+
       </Link>
       <a
         style={{

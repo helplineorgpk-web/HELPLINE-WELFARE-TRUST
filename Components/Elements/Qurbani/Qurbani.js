@@ -1,6 +1,12 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import styles from "../../../public/css/Qurbani.module.css";
 import "swiper/css";
 import "swiper/css/navigation";

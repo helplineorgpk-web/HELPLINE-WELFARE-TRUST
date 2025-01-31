@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import { HelplineData } from "../../../pages/api/data";
+
 export default function AboutArea() {
   const data = HelplineData.aboutSection;
+
   return (
     <section className="about_area pt-120 pb-80">
       <div className="container">
@@ -11,38 +13,32 @@ export default function AboutArea() {
             <div className="about_img_wrapper fix mr-30">
               <div className="row mb-40">
                 <div className="col-12 custom_col">
-                  <Link href="/about">
-                    <a className="about_img w_img">
-                      <img src="/img/causes/cause_sbig.jpg" alt="img" />
-                      <div className="about_img_text theme-2">
-                        <i className="flaticon-water-drop"></i>
-                        <h6 className="img_text">Pure Water</h6>
-                      </div>
-                    </a>
+                  <Link href="/about" className="about_img w_img">
+                    <img src="/img/causes/cause_sbig.jpg" alt="img" />
+                    <div className="about_img_text theme-2">
+                      <i className="flaticon-water-drop"></i>
+                      <h6 className="img_text">Pure Water</h6>
+                    </div>
                   </Link>
                 </div>
               </div>
               <div className="row gutter_40">
                 <div className="col-xxl-6 col-md-6 col-sm-6 custom_col mb-40">
-                  <Link href="/about">
-                    <a className="about_img w_img rad-50p fix">
-                      <img src="/img/about/about_sm1.jpg" alt="img" />
-                      <div className="about_img_text theme-no1">
-                        <i className="flaticon-doctor"></i>
-                        <h6 className="img_text">Education</h6>
-                      </div>
-                    </a>
+                  <Link href="/about" className="about_img w_img rad-50p fix">
+                    <img src="/img/about/about_sm1.jpg" alt="img" />
+                    <div className="about_img_text theme-no1">
+                      <i className="flaticon-doctor"></i>
+                      <h6 className="img_text">Education</h6>
+                    </div>
                   </Link>
                 </div>
                 <div className="col-xxl-6 col-md-6 col-sm-6 custom_col mb-40">
-                  <Link href="/about">
-                    <a className="about_img w_img">
-                      <img src="/img/about/about_sm2.jpg" alt="img" />
-                      <div className="about_img_text theme-no">
-                        <i className="flaticon-stethoscope"></i>
-                        <h6 className="img_text">Medical & Health</h6>
-                      </div>
-                    </a>
+                  <Link href="/about" className="about_img w_img">
+                    <img src="/img/about/about_sm2.jpg" alt="img" />
+                    <div className="about_img_text theme-no">
+                      <i className="flaticon-stethoscope"></i>
+                      <h6 className="img_text">Medical & Health</h6>
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -91,6 +87,9 @@ export default function AboutArea() {
                   </div>
                 </div>
               </div>
+              <Link href="/about" className="g_btn theme1_bg to_right2 rad-30">
+                Learn More <span></span>
+              </Link>
             </div>
           </div>
         </div>

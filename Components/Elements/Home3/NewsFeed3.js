@@ -18,13 +18,9 @@ export default function NewsFeed3() {
         <div className="row">
           <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6">
             <div className="nfeed_single_3 w_img mb-30">
-              <div className="single_feed_img img_effect_white">
-                <Link href="/blog-details">
-                  <a>
-                    <img src="/img/news/nfeed1.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
+              <Link href="/blog-details" className="img_effect_white">
+                <img src="/img/news/nfeed1.jpg" alt="img" />
+              </Link>
 
               <div className="nfeed_content_wrapper_3 has_abs_card">
                 <div className="date_card feed_card nhas_abs">
@@ -32,19 +28,17 @@ export default function NewsFeed3() {
                   <span className="events_month">Jun</span>
                 </div>
                 <div className="nfeed_cat">
-                  <Link href="#">
-                    <a className="nfeed_admin sep">
-                      <span className="nfeed_by">By</span>Admin
-                    </a>
+                  <Link href="#" className="nfeed_admin sep">
+                    <span className="nfeed_by">By</span>Admin
                   </Link>
-                  <Link href="/blog-details">
-                    <a className="nfeed_cattext">Charity,Fundrise</a>
+                  <Link href="/blog-details" className="nfeed_cattext">
+                    Charity,Fundrise
                   </Link>
                 </div>
                 <div className="nfeed_content_3">
                   <h3 className="nfeed_title">
-                    <Link href="/blog-details">
-                      <a>Consult with customers not a good way for forward.</a>
+                    <Link href="/blog-details" className="news_title_link">
+                      Consult with customers not a good way for forward.
                     </Link>
                   </h3>
                   <p>
@@ -57,13 +51,9 @@ export default function NewsFeed3() {
           </div>
           <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6">
             <div className="nfeed_single_3 w_img mb-30">
-              <div className="single_feed_img img_effect_white">
-                <Link href="/blog-details">
-                  <a>
-                    <img src="/img/news/nfeed2_4.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
+              <Link href="/blog-details" className="img_effect_white">
+                <img src="/img/news/nfeed2_4.jpg" alt="img" />
+              </Link>
 
               <div className="nfeed_content_wrapper_3 has_abs_card">
                 <div className="date_card feed_card nhas_abs">
@@ -71,19 +61,17 @@ export default function NewsFeed3() {
                   <span className="events_month">Jan</span>
                 </div>
                 <div className="nfeed_cat">
-                  <Link href="#">
-                    <a className="nfeed_admin sep">
-                      <span className="nfeed_by">By</span>Admin
-                    </a>
+                  <Link href="#" className="nfeed_admin sep">
+                    <span className="nfeed_by">By</span>Admin
                   </Link>
-                  <Link href="/blog-details">
-                    <a className="nfeed_cattext">Charity,Medical</a>
+                  <Link href="/blog-details" className="nfeed_cattext">
+                    Charity,Medical
                   </Link>
                 </div>
                 <div className="nfeed_content_3">
                   <h3 className="nfeed_title">
-                    <Link href="/blog-details">
-                      <a>Consult with doctors is a good way for forward.</a>
+                    <Link href="/blog-details" className="news_title_link">
+                      Consult with doctors is a good way for forward.
                     </Link>
                   </h3>
                   <p>
@@ -96,13 +84,9 @@ export default function NewsFeed3() {
           </div>
           <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6">
             <div className="nfeed_single_3 w_img mb-30">
-              <div className="single_feed_img img_effect_white">
-                <Link href="/blog-details">
-                  <a>
-                    <img src="/img/news/nfeed3.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
+              <Link href="/blog-details" className="img_effect_white">
+                <img src="/img/news/nfeed3.jpg" alt="img" />
+              </Link>
 
               <div className="nfeed_content_wrapper_3 has_abs_card">
                 <div className="date_card feed_card nhas_abs">
@@ -110,19 +94,17 @@ export default function NewsFeed3() {
                   <span className="events_month">Jun</span>
                 </div>
                 <div className="nfeed_cat">
-                  <Link href="#">
-                    <a className="nfeed_admin sep">
-                      <span className="nfeed_by">By</span>Admin
-                    </a>
+                  <Link href="#" className="nfeed_admin sep">
+                    <span className="nfeed_by">By</span>Admin
                   </Link>
-                  <Link href="/blog-details">
-                    <a className="nfeed_cattext">Charity,Education</a>
+                  <Link href="/blog-details" className="nfeed_cattext">
+                    Charity,Education
                   </Link>
                 </div>
                 <div className="nfeed_content_3">
                   <h3 className="nfeed_title">
-                    <Link href="/blog-details">
-                      <a>Discuss with teachers is a good way for forward.</a>
+                    <Link href="/blog-details" className="news_title_link">
+                      Discuss with teachers is a good way for forward.
                     </Link>
                   </h3>
                   <p>
