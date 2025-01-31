@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import ImageGallery from "./Gallery/ImageGallery";
 
 export default function SideBarFullscreen({
   isToggledInfo,
@@ -61,10 +60,6 @@ export default function SideBarFullscreen({
                 <a className="c-btn btn-round-02 d-none">Contact Us</a>
               </Link>
             </div>
-          </div>
-
-          <div className="row side-row">
-            <ImageGallery />
           </div>
 
           <div className="side-map mt-20 mb-30">

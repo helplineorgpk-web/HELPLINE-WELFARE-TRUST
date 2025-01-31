@@ -23872,10 +23872,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   transform: translateY(0);
 }
 
-.sidebar-gallery .react-photo-gallery--gallery img {
-  max-width: 32.1%;
-}
-
 /* Mixin for Button style*/
 /* Mixin for Animated Button*/
 @keyframes icon-bounce {
