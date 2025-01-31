@@ -1,182 +1,119 @@
 import React from "react";
 import Link from "next/link";
+
 export default function NavFullscreen() {
   return (
-    <nav
-      id="mobile-menu"
-  
-    >
+    <nav id="mobile-menu">
       <ul>
         <li className="menu-item-has-children">
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
-        <li className=" menu-item-has-children">
-          <Link href="#">
-            <a>About</a>
-          </Link>
+          <Link href="/about">About Us</Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/about">
-                <a>About Us</a>
-              </Link>
+              <Link href="/about">About Us</Link>
             </li>
             <li>
-              <Link href="/chairmanMessage">
-                <a>Chairman's Message</a>
-              </Link>
+              <Link href="/chairmanMessage">Chairman's Message</Link>
             </li>
             <li>
-              <Link href="/ourjourney">
-                <a>Our Journey</a>
-              </Link>
+              <Link href="/ourjourney">Our Journey</Link>
             </li>
             <li>
-              <Link href="/volunteer">
-                <a>Volunteer</a>
-              </Link>
+              <Link href="/volunteer">Volunteer</Link>
             </li>
             <li>
-              <Link href="/videos">
-                <a>Media</a>
-              </Link>
+              <Link href="/videos">Media</Link>
             </li>
             <li>
-              <Link href="/mission">
-                <a>Mission</a>
-              </Link>
+              <Link href="/mission">Mission</Link>
             </li>
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="#">
-            <a>Social Welfare</a>
-          </Link>
+          <Link href="/cause">Our Causes</Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/edu">
-                <a>Education</a>
-              </Link>
+              <Link href="/edu">Education</Link>
             </li>
             <li>
-              <Link href="/health">
-                <a>Health</a>
-              </Link>
+              <Link href="/health">Health</Link>
             </li>
             <li className="menu-item-has-children">
-              <Link href="#">
-                <a className="innerli">
-                  Islamic Program
-                  <span> ▶</span>
-                </a>
+              <Link href="#" className="innerli">
+                Islamic Program
+                <span> ▶</span>
               </Link>
               <ul className="submenu">
                 <li>
-                  <Link href="/islamicactivity">
-                    <a className="sub-dis">Islamic Activity</a>
-                  </Link>
+                  <Link href="/islamicactivity">Islamic Activity</Link>
                 </li>
                 <li>
-                  <Link href="/qurbani">
-                    <a className="sub-dis">Qurbani Program</a>
-                  </Link>
+                  <Link href="/qurbani">Qurbani Program</Link>
                 </li>
                 <li>
-                  <Link href="/masjid">
-                    <a className="sub-dis">Masjid Program</a>
-                  </Link>
+                  <Link href="/masjid">Masjid Program</Link>
                 </li>
               </ul>
             </li>
             <li className="menu-item-has-children">
-              <Link href="#">
-                <a className="innerli">
-                  Distribution
-                  <span> ▶</span>
-                </a>
+              <Link href="#" className="innerli">
+                Distribution
+                <span> ▶</span>
               </Link>
               <ul className="submenu">
                 <li>
                   <Link href="/hasneDistribution">
-                    <a className="sub-dis">Helpline & Hasne Distribution</a>
+                    Helpline & Hasne Distribution
                   </Link>
                 </li>
                 <li>
-                  <Link href="/rajanpur">
-                    <a className="sub-dis">Rajanpur Gullowali Distribution</a>
-                  </Link>
+                  <Link href="/rajanpur">Rajanpur Gullowali Distribution</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="/rashan">
-                <a>Rashan Program</a>
-              </Link>
+              <Link href="/rashan">Rashan Program</Link>
             </li>
             <li>
-              <Link href="/disaster">
-                <a>Disaster Management</a>
-              </Link>
+              <Link href="/disaster">Disaster Management</Link>
             </li>
             <li>
-              <Link href="/familyWelfare">
-                <a>Family Welfare</a>
-              </Link>
+              <Link href="/familyWelfare">Family Welfare</Link>
             </li>
             <li>
-              <Link href="/water">
-                <a>Clean Water Program</a>
-              </Link>
+              <Link href="/water">Clean Water Program</Link>
             </li>
             <li>
-              <Link href="/cataract">
-                <a>Cataract Program</a>
-              </Link>
+              <Link href="/cataract">Cataract Program</Link>
             </li>
             <li className="menu-item-has-children">
-              <Link href="#">
-                <a className="innerli">
-                  IT Labs
-                  <span> ▶</span>
-                </a>
-              </Link>
+              <Link href="/itlab">IT Labs</Link>
               <ul className="submenu">
                 <li>
-                  <Link href="/itlab">
-                    <a className="sub-dis">IT Labs</a>
-                  </Link>
+                  <Link href="/itlab">IT Labs</Link>
                 </li>
                 <li>
-                  <Link href="/itform">
-                    <a className="sub-dis">IT Labs Form</a>
-                  </Link>
+                  <Link href="/itform">IT Labs Form</Link>
                 </li>
               </ul>
             </li>
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="#">
-            <a>Legal</a>
-          </Link>
+          <Link href="/event">Events</Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/registration">
-                <a className="sub-diss">Registration Documents</a>
-              </Link>
+              <Link href="/registration">Registration Documents</Link>
             </li>
             <li>
-              <Link href="/certifications">
-                <a className="sub-diss">Certications</a>
-              </Link>
+              <Link href="/certifications">Certications</Link>
             </li>
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/contact">
-            <a>Contact us</a>
-          </Link>
+          <Link href="/blog">News</Link>
+        </li>
+        <li className="menu-item-has-children">
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </nav>

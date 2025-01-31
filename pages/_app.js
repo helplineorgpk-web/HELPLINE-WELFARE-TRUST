@@ -9,17 +9,9 @@ import "./../public/css/magnific-popup.css";
 import "./../public/css/nice-select.css";
 import "metismenujs/style";
 import "../styles/globals.css";
-import { useEffect } from "react";
 import Head from "next/head";
 
 export default function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.WOW = require("wowjs");
-    }
-    new WOW.WOW().init();
-  });
-
   return (
     <>
       <Head>

@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -387,9 +386,7 @@ export default function CausesArea2() {
                     item.filtered === true ? (
                       <SwiperSlide className="single_cause mb-30">
                         <div className="single_cause_img img_effect_white p-rel">
-                          <Link href="/cause-details">
-                            <a>{item.img}</a>
-                          </Link>
+                          <Link href="/cause-details">{item.img}</Link>
                           <div className={`progress_wrapper ${item.pbar}`}>
                             <div
                               className="progress_circle"
@@ -411,9 +408,7 @@ export default function CausesArea2() {
                         <div className="single_cause_content single_cause_content_2">
                           <div className="single_cause">
                             <h3 className="title">
-                              <Link href="/cause-details">
-                                <a>{item.desc}</a>
-                              </Link>
+                              <Link href="/cause-details">{item.desc}</Link>
                             </h3>
                           </div>
                           <div className="single_cause_meta">

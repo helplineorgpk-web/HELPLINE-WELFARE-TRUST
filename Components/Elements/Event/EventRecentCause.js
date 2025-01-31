@@ -95,17 +95,13 @@ export default function EventRecentCause() {
                       className="eventcount_img w_img"
                       onClick={() => handleNavigation(item)}
                     >
-                      <Link href={{}}>
-                        <a>{item.img}</a>
-                      </Link>
+                      <Link href={{}}>{item.img}</Link>
                     </div>
                   </div>
                   <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 text-center text-md-start">
                     <div className="eventcount_text heading-clr">
                       <h5 onClick={() => handleNavigation(item)}>
-                        <Link href={{}}>
-                          <a>{item.desc}</a>
-                        </Link>
+                        <Link href={{}}>{item.desc}</Link>
                       </h5>
                       <span>{item.address}</span>
                     </div>
@@ -118,10 +114,8 @@ export default function EventRecentCause() {
 
         <div className="row">
           <div className="cause_button text-center mt-10 mb-30">
-            <Link href="/event">
-              <a className="cause_btn g_btn to_right1 rad-30">
-                Load More <i className="far fa-plus"></i> <span></span>
-              </a>
+            <Link href="/event" className="cause_btn g_btn to_right1 rad-30">
+              Load More <i className="far fa-plus"></i> <span></span>
             </Link>
           </div>
         </div>

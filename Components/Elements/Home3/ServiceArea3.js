@@ -20,18 +20,14 @@ export default function ServiceArea3() {
           <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
             <div className="services_single mb-30">
               <div className="services_img">
-                <Link href="/cause-details">
-                  <a>
-                    <img src="/img/donation/service-1.png" alt="img" />
-                  </a>
+                <Link href="/cause-details" className="service_link">
+                  <img src="/img/donation/service-1.png" alt="img" />
                 </Link>
               </div>
               <div className="services_text">
-                <h5 className="services_title">
-                  <Link href="/cause-details">
-                    <a>Places to get lost</a>
-                  </Link>
-                </h5>
+                <Link href="/cause-details" className="service_link">
+                  <h5>Places to get lost</h5>
+                </Link>
                 <p>
                   Charity is the largest global for crowdfunding community with
                   connecting nonprofits.
@@ -43,18 +39,14 @@ export default function ServiceArea3() {
           <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
             <div className="services_single mb-30">
               <div className="services_img">
-                <Link href="/cause-details">
-                  <a>
-                    <img src="/img/donation/service-2.png" alt="img" />
-                  </a>
+                <Link href="/cause-details" className="service_link">
+                  <img src="/img/donation/service-2.png" alt="img" />
                 </Link>
               </div>
               <div className="services_text">
-                <h5 className="services_title">
-                  <Link href="/cause-details">
-                    <a>Make fundrise for world</a>
-                  </Link>
-                </h5>
+                <Link href="/cause-details" className="service_link">
+                  <h5>Make fundrise for world</h5>
+                </Link>
                 <p>
                   Our primary goal is developing a secure and safe world for
                   poor in the world.
@@ -68,18 +60,14 @@ export default function ServiceArea3() {
           <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
             <div className="services_single mb-30">
               <div className="services_img">
-                <Link href="/cause-details">
-                  <a>
-                    <img src="/img/donation/service-3.png" alt="img" />
-                  </a>
+                <Link href="/cause-details" className="service_link">
+                  <img src="/img/donation/service-3.png" alt="img" />
                 </Link>
               </div>
               <div className="services_text">
-                <h5 className="services_title">
-                  <Link href="/cause-details">
-                    <a>Medical & Blood Donation</a>
-                  </Link>
-                </h5>
+                <Link href="/cause-details" className="service_link">
+                  <h5>Medical & Blood Donation</h5>
+                </Link>
                 <p>
                   Lorem ipsum dolor sit amet, cons ectetur adi pisicing elit,
                   sed do eiusmod tempor.

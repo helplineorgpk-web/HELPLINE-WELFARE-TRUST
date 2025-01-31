@@ -56,10 +56,8 @@ export default function AboutAboutArea() {
                     People.
                   </p>
                 </div>
-                <Link href="/about">
-                  <a className="g_btn trans_btn rad-50 p-45">
-                    Learn More <span></span>
-                  </a>
+                <Link href="/about" className="g_btn theme1_bg to_right2 rad-30">
+                  Learn More <span></span>
                 </Link>
               </div>
             </div>

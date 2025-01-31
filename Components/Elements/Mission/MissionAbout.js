@@ -13,9 +13,9 @@ export default function MissionAbout() {
             <div className="about_signle_video mb-40">
               <div className="img_effect_white about_video_image_wrapper">
                 <Link href="/event">
-                  <a>
+
                     <img src="/img/causes/mission.jpg" alt="img" />
-                  </a>
+
                 </Link>
               </div>
 

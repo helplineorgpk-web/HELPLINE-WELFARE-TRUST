@@ -24,34 +24,17 @@ export default function Footer1() {
                     <div className="footer_locate_link">
                       <ul>
                         <li>
-                          {/* <a
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              // justifyContent: "space-between",
-                            }}
-                          >
-                            <p>
-                              <i className="fal fa-phone"></i>
-                              <strong>Phone:</strong>
-                            </p>
-                            <div>
-                              +92-42-35157374
-                              <br />
-                              +92-42-35110164
-                            </div>
-                          </a> */}
-                          <a>
+                          <Link href="tel:+92-42-35157374" className="footer-link">
                             <i className="fal fa-phone"></i>
                             <strong>Phone:</strong>
                             +92-42-35157374
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a>
+                          <Link href="mailto:info@helpline.org.pk" className="footer-link">
                             <i className="fal fa-envelope"></i>
                             <strong>Email:</strong>info@helpline.org.pk
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -65,48 +48,48 @@ export default function Footer1() {
                     <div className="footer_links theme-1">
                       <ul>
                         <li>
-                          <Link href="/">
-                            <a>Home</a>
+                          <Link href="/" className="footer-link">
+                            Home
                           </Link>
                         </li>
                         <li>
-                          <Link href="/videos">
-                            <a>Media</a>
+                          <Link href="/videos" className="footer-link">
+                            Media
                           </Link>
                         </li>
                         <li>
-                          <Link href="/volunteer">
-                            <a>Volunteer</a>
+                          <Link href="/volunteer" className="footer-link">
+                            Volunteer
                           </Link>
                         </li>
                         <li>
-                          <Link href="/mission">
-                            <a>Mission</a>
+                          <Link href="/mission" className="footer-link">
+                            Mission
                           </Link>
                         </li>
                         <li>
-                          <Link href="/edu">
-                            <a>Education</a>
+                          <Link href="/edu" className="footer-link">
+                            Education
                           </Link>
                         </li>
                         <li>
-                          <Link href="/health">
-                            <a>Health</a>
+                          <Link href="/health" className="footer-link">
+                            Health
                           </Link>
                         </li>
                         <li>
-                          <Link href="/islamicactivity">
-                            <a>Islamic Activity</a>
+                          <Link href="/islamicactivity" className="footer-link">
+                            Islamic Activity
                           </Link>
                         </li>
                         <li>
-                          <Link href="/qurbani">
-                            <a>Qurbani Program</a>
+                          <Link href="/qurbani" className="footer-link">
+                            Qurbani Program
                           </Link>
                         </li>
                         <li>
-                          <Link href="/masjid">
-                            <a>Masjid Program</a>
+                          <Link href="/masjid" className="footer-link">
+                            Masjid Program
                           </Link>
                         </li>
                       </ul>
@@ -121,48 +104,48 @@ export default function Footer1() {
                     <div className="footer_links theme-1">
                       <ul>
                         <li>
-                          <Link href="/cause">
-                            <a>Water</a>
+                          <Link href="/cause" className="footer-link">
+                            Water
                           </Link>
                         </li>
                         <li>
-                          <Link href="/cause">
-                            <a>Education</a>
+                          <Link href="/cause" className="footer-link">
+                            Education
                           </Link>
                         </li>
                         <li>
-                          <Link href="/cause">
-                            <a>Medicine</a>
+                          <Link href="/cause" className="footer-link">
+                            Medicine
                           </Link>
                         </li>
                         <li>
-                          <Link href="/cause">
-                            <a>Medical</a>
+                          <Link href="/cause" className="footer-link">
+                            Medical
                           </Link>
                         </li>
                         <li>
-                          <Link href="/cause">
-                            <a>Fresh Food</a>
+                          <Link href="/cause" className="footer-link">
+                            Fresh Food
                           </Link>
                         </li>
                         <li>
-                          <Link href="/cause">
-                            <a>Shelter</a>
+                          <Link href="/cause" className="footer-link">
+                            Shelter
                           </Link>
                         </li>
                         <li>
-                          <Link href="/cause">
-                            <a>Refuse Camp</a>
+                          <Link href="/cause" className="footer-link">
+                            Refuse Camp
                           </Link>
                         </li>
                         <li>
-                          <Link href="/cause">
-                            <a>Donation</a>
+                          <Link href="/cause" className="footer-link">
+                            Donation
                           </Link>
                         </li>
                         <li>
-                          <Link href="/cause">
-                            <a>Blood Donation</a>
+                          <Link href="/cause" className="footer-link">
+                            Blood Donation
                           </Link>
                         </li>
                       </ul>
@@ -177,54 +160,42 @@ export default function Footer1() {
                     <div className="footer_news_content">
                       <div className="single_fnews d-flex mb-30">
                         <div className="fnews_img">
-                          <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
-                            <a>
-                              <img src="/img/news/news1.png" alt="img" />
-                            </a>
+                          <Link href="https://www.instagram.com/helplineorg/?utm_source=qr" className="footer-link">
+                            <img src="/img/news/news1.png" alt="img" />
                           </Link>
                         </div>
 
                         <div className="fnews_content">
                           <div className="fnews_meta">
-                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
-                              <a className="fnews_author theme-1 sep">
-                                Charity
-                              </a>
+                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr" className="footer-link">
+                              Charity
                             </Link>
                             <span className="fnews_date">August 22th,2021</span>
                           </div>
                           <h5 className="fnews_title theme-1">
-                            <a>
-                              Equipping young learners with bags shoes and
-                              cloths.
-                            </a>
+                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr" className="footer-link">
+                              Equipping young learners with bags shoes and cloths.
+                            </Link>
                           </h5>
                         </div>
                       </div>
                       <div className="single_fnews d-flex mb-30">
                         <div className="fnews_img">
-                          <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
-                            <a>
-                              <img src="/img/news/news2.png" alt="img" />
-                            </a>
+                          <Link href="https://www.instagram.com/helplineorg/?utm_source=qr" className="footer-link">
+                            <img src="/img/news/news2.png" alt="img" />
                           </Link>
                         </div>
 
                         <div className="fnews_content">
                           <div className="fnews_meta">
-                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
-                              <a className="fnews_author theme-1 sep">
-                                Charity
-                              </a>
+                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr" className="footer-link">
+                              Charity
                             </Link>
                             <span className="fnews_date">August 22th,2021</span>
                           </div>
                           <h5 className="fnews_title theme-1">
-                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr">
-                              <a>
-                                Medical: Health is fundamental right not a
-                                privilege.
-                              </a>
+                            <Link href="https://www.instagram.com/helplineorg/?utm_source=qr" className="footer-link">
+                              Medical: Health is fundamental right not a privilege.
                             </Link>
                           </h5>
                         </div>

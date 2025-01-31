@@ -32,13 +32,10 @@ export default function AboutTeam() {
               className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center"
             >
               <div className="single_team mb-30">
-                <div
-                  className="team_thumb img_effect_white"
-                >
-
-                    <a>
-                      <img src={member.image} alt={member.name} />
-                    </a>
+                <div className="team_thumb img_effect_white">
+                  <a>
+                    <img src={member.image} alt={member.name} />
+                  </a>
                 </div>
                 <span className="designation">{member.designation}</span>
                 <h5 className="member_name">
@@ -48,7 +45,7 @@ export default function AboutTeam() {
                       query: { id: member.id },
                     }}
                   >
-                    <a>{member.name}</a>
+                    {member.name}
                   </Link>
                 </h5>
               </div>

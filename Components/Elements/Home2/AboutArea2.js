@@ -31,19 +31,15 @@ export default function AboutArea2() {
                   People.
                 </p>
               </div>
-              <Link href="/about">
-                <a className="g_btn trans_btn rad-50 p-45">
-                  Learn More <span></span>
-                </a>
+              <Link href="/about" className="g_btn theme1_bg to_right2 rad-50">
+                Learn More <span></span>
               </Link>
             </div>
           </div>
           <div className="col-xxl-6 col-xl-6 col-lg-6">
             <div className="about_img_wrapper_2 w_img border_radius10 ml-100">
-              <Link href="/about">
-                <a>
-                  <img src="/img/about/about2_1_big.jpg" alt="img" />
-                </a>
+              <Link href="/about" className="img_effect_white">
+                <img src="/img/about/about2_1_big.jpg" alt="img" />
               </Link>
               <div className="about_champ_card about_abs2">
                 <i className="flaticon-creativity"></i>

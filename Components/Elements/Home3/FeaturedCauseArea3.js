@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -331,16 +330,21 @@ export default function FeaturedCauseArea3() {
                 >
                   {projects.map((item, i) => (
                     <SwiperSlide key={item.id}>
-                      console.log(item.id);
                       <div className="row g-0 justify-content-center swiper-slide">
                         <div className="col-xxl-11 col-xl-12">
                           <div className="feature_cause_wrapper">
                             <div className="feature_single">
                               <div className="feature_single_img d-block">
-                                {item.img}
+                                <Link href="/cause-details" className="img_effect_white">
+                                  {item.img}
+                                </Link>
                               </div>
                               <div className="feature_single_content">
-                                <h4>{item.title}</h4>
+                                <h4>
+                                  <Link href="/cause-details" className="cause_title_link">
+                                    {item.title}
+                                  </Link>
+                                </h4>
                                 <p>{item.desc}</p>
                                 <div className="feature_progress_wrapper mb-25 mt-35">
                                   <div className="progress feature_progress">
@@ -382,10 +386,8 @@ export default function FeaturedCauseArea3() {
                                   </div>
                                 </div>
                                 <div className="feature_buttons">
-                                  <Link href="/donation">
-                                    <a className="g_btn theme1_bg to_right2 rad-50">
-                                      Make Donation <span></span>
-                                    </a>
+                                  <Link href="/donation" className="g_btn theme1_bg to_right2 rad-50">
+                                    Donate Now <span></span>
                                   </Link>
                                   <Link href="#">
                                     <a className="reply_btn">

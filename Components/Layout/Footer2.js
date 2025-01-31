@@ -11,10 +11,8 @@ export default function Footer2() {
               <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-7 col-sm-7">
                 <div className="footer_widget footer_about mb-50">
                   <div className="footer_logo ">
-                    <Link href="/">
-                      <a className="animation">
-                        <img src="/img/logo/logo-white.png" alt="img" />
-                      </a>
+                    <Link href="/" className="animation">
+                      <img src="/img/logo/logo-white.png" alt="img" />
                     </Link>
                   </div>
                 </div>
@@ -29,33 +27,33 @@ export default function Footer2() {
                   <div className="footer_links footer_links_2">
                     <ul>
                       <li>
-                        <Link href="/videos">
-                          <a>Media</a>
+                        <Link href="/videos" className="text-white">
+                          Media
                         </Link>
                       </li>
                       <li>
-                        <Link href="/volunteer">
-                          <a>Volunteer</a>
+                        <Link href="/volunteer" className="text-white">
+                          Volunteer
                         </Link>
                       </li>
                       <li>
-                        <Link href="/mission">
-                          <a>Mission</a>
+                        <Link href="/mission" className="text-white">
+                          Mission
                         </Link>
                       </li>
                       <li>
-                        <Link href="/edu">
-                          <a>Education</a>
+                        <Link href="/edu" className="text-white">
+                          Education
                         </Link>
                       </li>
                       <li>
-                        <Link href="/health">
-                          <a>Health</a>
+                        <Link href="/health" className="text-white">
+                          Health
                         </Link>
                       </li>
                       <li>
-                        <Link href="/qurbani">
-                          <a>Qurbani Program</a>
+                        <Link href="/qurbani" className="text-white">
+                          Qurbani Program
                         </Link>
                       </li>
                     </ul>
@@ -70,22 +68,20 @@ export default function Footer2() {
                   <div className="footer_links footer_links_2">
                     <ul>
                       <li>
-                        <Link href="/donation">
-                          <a>How to Donate</a>
+                        <Link href="/donation" className="text-white">
+                          How to Donate
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cause">
-                          <a>Recent Causes</a>
+                        <Link href="/cause" className="text-white">
+                          Recent Causes
                         </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="footer_btn">
-                    <Link href="/donation">
-                      <a className="g_btn fbtn_2 to_right1 p-40 rad-50">
-                        Get Support<span></span>
-                      </a>
+                    <Link href="/donation" className="g_btn fbtn_2 to_right1 p-40 rad-50">
+                      Get Support
                     </Link>
                   </div>
                 </div>
@@ -106,18 +102,18 @@ export default function Footer2() {
                       </span>
                     </p>
                     <p>
-                      <a>
+                      <Link href="tel:+92-42-35110164" className="text-white">
                         <span>
                           <strong>Phone :</strong>+92-42-35110164
                         </span>
-                      </a>
+                      </Link>
                     </p>
                     <p>
-                      <a>
+                      <Link href="mailto:info@helpline.org.pk" className="text-white">
                         <span>
                           <strong>Email :</strong>info@helpline.org.pk
                         </span>
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -133,8 +129,8 @@ export default function Footer2() {
               <p>
                 Design by{" "}
                 <strong>
-                  <Link href="https://www.codeviztech.com/">
-                    <a target="_blank"> CodeViz Technology</a>
+                  <Link href="https://www.codeviztech.com/" className="text-white">
+                    CodeViz Technology
                   </Link>
                 </strong>
               </p>

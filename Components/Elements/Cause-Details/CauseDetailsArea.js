@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+
 export default function CauseDetailsArea({
   title,
   image,
@@ -18,8 +19,8 @@ export default function CauseDetailsArea({
               <div className="single_details_content">
                 <div className="single_donation_content single_border pb-45 mb-45">
                   <div className="section_title">
-                    <Link href="#">
-                      <a className="sub_title_details line_h2_2">{category}</a>
+                    <Link href="#" className="sub_title_details line_h2_2">
+                      {category}
                     </Link>
                   </div>
                   <h4 className="details_title">{title}</h4>
@@ -47,9 +48,7 @@ export default function CauseDetailsArea({
               <div className="single_widget has_border person_widget text-center mb-40">
                 <div className="widget_person_img">
                   <Link href="/volunteer-details">
-                    <a>
-                      <img src="/img/slider/ceo.png" alt="img" />
-                    </a>
+                    <img src="/img/slider/ceo.png" alt="img" />
                   </Link>
                   <span className="check_sign">
                     <i className="fal fa-check"></i>
@@ -57,22 +56,18 @@ export default function CauseDetailsArea({
                 </div>
                 <div className="person_designation widget_mb25">
                   <h5 className="person_nam f_size24">
-                    <Link href="/volunteer-details">
-                      <a>Muhammad Iqbal Khan</a>
+                    <Link href="/volunteer-details" className="person_nam f_size24">
+                      Muhammad Iqbal Khan
                     </Link>
                   </h5>
                   <span className="person_surname">Founder,Helpline Co.</span>
                 </div>
                 <div className="feature_buttons widget_buttons">
-                  <Link href="/donation">
-                    <a className="g_btn hbtn_1 to_right1 i_left rad-30">
-                      <i className="fal fa-heart"></i>Donate Now<span></span>
-                    </a>
+                  <Link href="/donation" className="g_btn hbtn_1 to_right1 i_left rad-30">
+                    <i className="fal fa-heart"></i>Donate Now<span></span>
                   </Link>
-                  <Link href="#">
-                    <a className="reply_btn theme-2">
-                      <i className="fal fa-reply"></i>
-                    </a>
+                  <Link href="#" className="reply_btn theme-2">
+                    <i className="fal fa-reply"></i>
                   </Link>
                 </div>
               </div>

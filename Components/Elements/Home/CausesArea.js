@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 export default function CausesArea({ causes, data }) {
   const router = useRouter();
   const handleNavigation = (item) => {
@@ -9,6 +10,7 @@ export default function CausesArea({ causes, data }) {
       query: { id: item.id },
     });
   };
+
   return (
     <section
       className="causes_area grey-bg pt-105 pb-385"
@@ -29,26 +31,18 @@ export default function CausesArea({ causes, data }) {
         <div className="row">
           {causes.map((item, index) =>
             index < 3 ? (
-              <div
-                className="flex flex-2 flex-3 flex-4 mb-30"
-                style={{}}
-                key={item.id}
-              >
+              <div className="flex flex-2 flex-3 flex-4 mb-30" key={item.id}>
                 <div className="single_cause mb-30">
                   <div className="single_cause_img img_effect_white p-rel">
                     <div onClick={() => handleNavigation(item)}>
-                      <Link href={{}}>
-                        <a>{item.img}</a>
-                      </Link>
+                      <Link href={{}}>{item.img}</Link>
                     </div>
                   </div>
                   <div className="single_cause_content single_cause_content_2">
                     <div className="single_cause">
                       <span>{item.category[0]}</span>
                       <h3 className="title">
-                        <Link href="/cause-details">
-                          <a>{item.desc}</a>
-                        </Link>
+                        <Link href="/cause-details">{item.desc}</Link>
                       </h3>
                     </div>
                     <div className="single_cause_meta">{item.detail}</div>
@@ -75,11 +69,12 @@ export default function CausesArea({ causes, data }) {
             ) : null
           )}
           <div style={{ textAlign: "center" }}>
-            <Link href="/cause">
-              <a className="g_btn theme1_bg to_right2 i_right rad-30 p-45">
-                See More<i className="fal fa-long-arrow-right"></i>
-                <span></span>
-              </a>
+            <Link
+              href="/cause"
+              className="g_btn theme1_bg to_right2 i_right rad-30 p-45"
+            >
+              See More<i className="fal fa-long-arrow-right"></i>
+              <span></span>
             </Link>
           </div>
         </div>

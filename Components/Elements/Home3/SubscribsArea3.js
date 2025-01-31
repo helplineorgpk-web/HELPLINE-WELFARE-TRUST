@@ -12,20 +12,13 @@ export default function SubscribsArea3() {
             <div className="col-xxl-6 col-xl-6 col-lg-6">
               <div className="hotline_wrapper mb-30">
                 <Link href="tel:98798798797">
-                  <a>
-                    <img src="/img/footer/cell_icon.png" alt="img" />
-                  </a>
+                  <img src="/img/footer/cell_icon.png" alt="img" />
                 </Link>
                 <div className="hotline_text">
                   <span className="sub_hottext">Support Hotline: </span>
                   <span className="cell_number">
-                    <Link href="/tel:98798798797">
-                      <a>987 987 987 97</a>
-                    </Link>{" "}
-                    -{" "}
-                    <Link href="/tel:03465476578">
-                      <a>034 654 765 78</a>
-                    </Link>
+                    <Link href="tel:98798798797">987 987 987 97</Link> - 
+                    <Link href="tel:03465476578">034 654 765 78</Link>
                   </span>
                 </div>
               </div>

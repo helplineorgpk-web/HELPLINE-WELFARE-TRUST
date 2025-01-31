@@ -13,9 +13,7 @@ export default function VolunteerBreadCrumb() {
             <div className="breadcrumb_section">
               <ul className="breadcrumb-list volunteer_breadcrumb">
                 <li className="bhas_border">
-                  <Link href="/">
-                    <a>Home</a>
-                  </Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
                   <span className="active">Team</span>

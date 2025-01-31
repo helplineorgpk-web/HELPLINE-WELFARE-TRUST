@@ -15,10 +15,8 @@ function Eligibility() {
           </div>
         ))}
       </div>
-      <Link href="/contact">
-        <a className="g_btn hbtn_1 to_right1 rad-30">
-          CONTACT US<span></span>
-        </a>
+      <Link href="/contact" className="g_btn hbtn_1 to_right1 rad-30">
+        CONTACT US<span></span>
       </Link>
     </section>
   );

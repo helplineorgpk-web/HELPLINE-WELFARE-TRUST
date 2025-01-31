@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import "swiper/css";
@@ -26,32 +26,24 @@ export default function SupportArea() {
                       pagination={{ clickable: true }}
                       scrollbar={{ draggable: true }}
                     >
-                      <SwiperSlide className="support_img_single img_effect_white">
-                        <Link href="/volunteer">
-                          <a>
-                            <img src="/img/bg/support3.jpg" alt="img" />
-                          </a>
+                      <SwiperSlide className="support_img_single">
+                        <Link href="/volunteer" className="img_effect_white">
+                          <img src="/img/bg/support3.jpg" alt="img" />
                         </Link>
                       </SwiperSlide>
-                      <SwiperSlide className="support_img_single img_effect_white">
-                        <Link href="/volunteer">
-                          <a>
-                            <img src="/img/bg/support4.jpg" alt="img" />
-                          </a>
+                      <SwiperSlide className="support_img_single">
+                        <Link href="/volunteer" className="img_effect_white">
+                          <img src="/img/bg/support4.jpg" alt="img" />
                         </Link>
                       </SwiperSlide>
-                      <SwiperSlide className="support_img_single img_effect_white">
-                        <Link href="/volunteer">
-                          <a>
-                            <img src="/img/bg/support6.jpg" alt="img" />
-                          </a>
+                      <SwiperSlide className="support_img_single">
+                        <Link href="/volunteer" className="img_effect_white">
+                          <img src="/img/bg/support6.jpg" alt="img" />
                         </Link>
                       </SwiperSlide>
-                      <SwiperSlide className="support_img_single img_effect_white">
-                        <Link href="/volunteer">
-                          <a>
-                            <img src="/img/bg/support7.jpg" alt="img" />
-                          </a>
+                      <SwiperSlide className="support_img_single">
+                        <Link href="/volunteer" className="img_effect_white">
+                          <img src="/img/bg/support7.jpg" alt="img" />
                         </Link>
                       </SwiperSlide>
                     </Swiper>
@@ -74,12 +66,13 @@ export default function SupportArea() {
                       connected with updates and letters, knowing your
                       contributions are making a real difference.
                     </p>
-                    <Link href="/volunteer">
-                      <a className="g_btn theme1_bg to_right2 i_right rad-30 p-45">
-                        See Volunteers
-                        <i className="fal fa-long-arrow-right"></i>
-                        <span></span>
-                      </a>
+                    <Link
+                      href="/volunteer"
+                      className="g_btn theme1_bg to_right2 i_right rad-30 p-45"
+                    >
+                      See Volunteers
+                      <i className="fal fa-long-arrow-right"></i>
+                      <span></span>
                     </Link>
                   </div>
                 </div>

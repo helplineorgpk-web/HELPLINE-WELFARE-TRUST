@@ -23,43 +23,31 @@ export default function TestimonialArea3() {
                     <div className="testimonial_author">
                       <div className="author_img">
                         <Link href="/volunteer-details">
-                          <a>
-                            <img src="/img/team/author1.jpg" alt="" />
-                          </a>
+                          <img src="/img/team/author1.jpg" alt="" />
                         </Link>
                       </div>
                       <div className="author_text">
                         <div className="review-icon">
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
                         </div>
                         <div className="name_designation">
                           <h5>
-                            <Link href="/volunteer-details">
-                              <a>Rosallina H. -</a>
+                            <Link href="/volunteer-details" className="sub_title sub_title_2">
+                              Rosallina H. -
                             </Link>{" "}
                             <span>Founder Cryto Co.</span>
                           </h5>
@@ -78,43 +66,31 @@ export default function TestimonialArea3() {
                     <div className="testimonial_author">
                       <div className="author_img">
                         <Link href="/volunteer-details">
-                          <a>
-                            <img src="/img/team/author2.jpg" alt="" />
-                          </a>
+                          <img src="/img/team/author2.jpg" alt="" />
                         </Link>
                       </div>
                       <div className="author_text">
                         <div className="review-icon">
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
                         </div>
                         <div className="name_designation">
                           <h5>
-                            <Link href="/volunteer-details">
-                              <a>Ahmedulla M. -</a>
+                            <Link href="/volunteer-details" className="sub_title sub_title_2">
+                              Ahmedulla M. -
                             </Link>{" "}
                             <span>Founder Cryto Co.</span>
                           </h5>
@@ -132,43 +108,31 @@ export default function TestimonialArea3() {
                     <div className="testimonial_author">
                       <div className="author_img">
                         <Link href="/volunteer-details">
-                          <a>
-                            <img src="/img/team/author3.jpg" alt="" />
-                          </a>
+                          <img src="/img/team/author3.jpg" alt="" />
                         </Link>
                       </div>
                       <div className="author_text">
                         <div className="review-icon">
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
                         </div>
                         <div className="name_designation">
                           <h5>
-                            <Link href="/volunteer-details">
-                              <a>Hussain N. -</a>
+                            <Link href="/volunteer-details" className="sub_title sub_title_2">
+                              Hussain N. -
                             </Link>{" "}
                             <span>Founder Cryto Co.</span>
                           </h5>
@@ -187,43 +151,31 @@ export default function TestimonialArea3() {
                     <div className="testimonial_author">
                       <div className="author_img">
                         <Link href="/volunteer-details">
-                          <a>
-                            <img src="/img/team/author4.jpg" alt="" />
-                          </a>
+                          <img src="/img/team/author4.jpg" alt="" />
                         </Link>
                       </div>
                       <div className="author_text">
                         <div className="review-icon">
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
-                          <Link href="#">
-                            <a>
-                              <i className="fas fa-star"></i>
-                            </a>
+                          <Link href="#" className="sub_title sub_title_2">
+                            <i className="fas fa-star"></i>
                           </Link>
                         </div>
                         <div className="name_designation">
                           <h5>
-                            <Link href="/volunteer-details">
-                              <a>Andrella R. -</a>
+                            <Link href="/volunteer-details" className="sub_title sub_title_2">
+                              Andrella R. -
                             </Link>{" "}
                             <span>Founder Cryto Co.</span>
                           </h5>

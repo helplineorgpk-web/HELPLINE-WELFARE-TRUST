@@ -2,6 +2,29 @@ import React from "react";
 import Link from "next/link";
 
 export default function TeamArea2() {
+  const teamMembers = [
+    {
+      image: "/img/team/member1.jpg",
+      name: "Miranda H. Halim",
+      designation: "Founder",
+    },
+    {
+      image: "/img/team/member2.jpg",
+      name: "N. Uddin",
+      designation: "Chairman",
+    },
+    {
+      image: "/img/team/member3.jpg",
+      name: "Mark Billah",
+      designation: "Designer",
+    },
+    {
+      image: "/img/team/member4.jpg",
+      name: "Andreu Salim",
+      designation: "Developer",
+    },
+  ];
+
   return (
     // Team area start
     <div className="team_area pt-110 pb-90">
@@ -15,165 +38,43 @@ export default function TeamArea2() {
           </div>
         </div>
         <div className="row">
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member1.jpg" alt="img" />
-                  </a>
+          {teamMembers.map((member, index) => (
+            <div key={index} className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
+              <div className="single_team mb-30">
+                <Link href="/volunteer-details" className="img_effect_white">
+                  <img src={member.image} alt={member.name} />
                 </Link>
-              </div>
-              <span className="designation">Founder</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Miranda H. Halim</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member2.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
+                <span className="designation">{member.designation}</span>
+                <h5 className="member_name">
+                  <Link href="/volunteer-details" className="team_title_link">
+                    {member.name}
+                  </Link>
+                </h5>
+                <div className="member_social">
+                  <Link href="#" className="facebook" >
 
-              <span className="designation">Chairman</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>N. Uddin</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member3.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
+                      <i className="fab fa-facebook-f"></i>
 
-              <span className="designation">Designer</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Mark Billah</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 text-center">
-            <div className="single_team mb-30">
-              <div className="team_thumb img_effect_white">
-                <Link href="/volunteer-details">
-                  <a>
-                    <img src="/img/team/member4.jpg" alt="img" />
-                  </a>
-                </Link>
-              </div>
+                  </Link>
+                  <Link href="#" className="twitter">
 
-              <span className="designation">Developer</span>
-              <h5 className="member_name">
-                <Link href="/volunteer-details">
-                  <a>Andreu Salim</a>
-                </Link>
-              </h5>
-              <div className="member_social">
-                <Link href="#">
-                  <a className="facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="behance">
-                    <i className="fab fa-behance"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a className="youtube">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
+                      <i className="fab fa-twitter"></i>
+
+                  </Link>
+                  <Link href="#" className="behance">
+
+                      <i className="fab fa-behance"></i>
+
+                  </Link>
+                  <Link href="#" className="youtube">
+
+                      <i className="fab fa-youtube"></i>
+
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

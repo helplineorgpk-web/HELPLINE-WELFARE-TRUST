@@ -16695,6 +16695,8 @@ input.main-search-input:-ms-input-placeholder {
 
 .single_cause_img {
   overflow: hidden;
+  height: 30vh !important;
+  object-fit: cover;
 }
 
 .img_effect_white {
