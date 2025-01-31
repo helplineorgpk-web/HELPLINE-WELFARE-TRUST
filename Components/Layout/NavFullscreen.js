@@ -2,7 +2,10 @@ import React from "react";
 import Link from "next/link";
 export default function NavFullscreen() {
   return (
-    <nav id="mobile-menu">
+    <nav
+      id="mobile-menu"
+  
+    >
       <ul>
         <li className="menu-item-has-children">
           <Link href="/">
