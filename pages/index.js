@@ -6,23 +6,31 @@ import NewsFeed from "../Components/Elements/Home/NewsFeed";
 import CausesArea from "../Components/Elements/Home/CausesArea";
 import AboutArea from "../Components/Elements/Home/AboutArea";
 import SliderArea from "../Components/Elements/Home/SliderArea";
-import CTAArea from "../Components/Elements/Home/CTAArea";
+import HeadArea from "../Components/Elements/Home/HeadArea";
 import AllOverPakistan from "../Components/Elements/Home/AllOverPakistan";
 import HelplineProject from "../Components/Elements/Home/HelplineProject";
 import WayToDonate from "../Components/Elements/Home/WayToDonate";
 import { HelplineData } from "../pages/api/data";
+import Meta from "../Components/SEO/Meta";
 
 const data = {
   Water: "Recent development",
   waterprojects: "Latest Cause",
 };
+
 export default function Home() {
   const cause = HelplineData.homeCauses;
   return (
     <>
+      <Meta 
+        title="Helpline Welfare Organization - Supporting Communities Across Pakistan"
+        description="Join Helpline Welfare Organization in our mission to provide support through disaster relief, family welfare, and community development projects across Pakistan. Make a difference today."
+        keywords="welfare organization, charity pakistan, disaster relief, family welfare, community support, donations, zakat, sadqa, welfare projects"
+      />
       <Layout1>
         <main>
-          <SliderArea />
+          {/* <SliderArea />    */}
+          <HeadArea />
           <AboutArea />
           <AllOverPakistan />
           <CausesArea causes={cause} data={data} />

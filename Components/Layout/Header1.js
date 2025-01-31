@@ -3,15 +3,21 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "/public/img/logo/logo.png";
 import NavFullscreen from "./NavFullscreen";
+import styles from "../../public/css/headArea.module.css";
 
 export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
   return (
-    <header className="header-area header-transparent">
+    <header
+      className="header-area header-transparent"
+      style={{
+        background: "white",
+      }}
+    >
       <div id="sticky-header" className="header_menu_area res_padd">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
-              <div className="logo">
+              <div className={styles.logo}>
                 <Link href="/">
                   <a>
                     <Image src={logo} alt="" />
