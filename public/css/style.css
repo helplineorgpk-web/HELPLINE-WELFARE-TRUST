@@ -13092,9 +13092,11 @@ input:focus:-ms-input-placeholder {
 }
 
 .logo img {
-  max-width: 100%;
-  height: auto;
+  width: 40px !important;
+  height: 180px !important;
+  /* height: auto; */
   display: block;
+  padding: 30px;
 }
 
 /*

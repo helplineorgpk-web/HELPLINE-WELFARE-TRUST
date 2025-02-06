@@ -34,7 +34,9 @@
 }
 
 .logo {
-width: 160px;
+  width: 10px;
+  /* height: 10px; */
+  padding: 10px;
 }
 
 .pergraph {
