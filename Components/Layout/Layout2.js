@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import SideBarMobile from "./SideBarMobile";
 import SideBarFullscreen from "./SideBarFullscreen";
 import Header2 from "./Header2";
-import Footer2 from "./Footer2";
+import Footer1 from "./Footer1";
 
 export default function Layout2({ children }) {
   const [isToggledInfo, setToggledInfo] = useState(false);
@@ -53,7 +53,7 @@ export default function Layout2({ children }) {
 
       {children}
 
-      <Footer2 />
+      <Footer1 />
     </>
   );
 }

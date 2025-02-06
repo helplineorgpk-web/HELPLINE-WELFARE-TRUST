@@ -17,11 +17,9 @@ export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
-              <div className={styles.logo}>
-                <Link href="/" className="logo">
-                  <Image src={logo} alt="Logo" />
-                </Link>
-              </div>
+              <Link href="/" className="logo">
+                <Image src={logo} alt="Logo" />
+              </Link>
             </div>
             <div className="col-xxl-7 col-xl-6 col-lg-8 d-none d-lg-block">
               <div className="main-menu theme-1 text-center">
