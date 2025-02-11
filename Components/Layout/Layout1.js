@@ -5,7 +5,7 @@ import SideBarFullscreen from "./SideBarFullscreen";
 import Search from "./Search";
 import Header1 from "./Header1";
 import Footer1 from "./Footer1";
-
+import Header2 from "./Header2";
 export default function Layout1({ children }) {
   const [isToggled, setToggled] = useState(false);
   const toggleTrueFalse = () => setToggled(!isToggled);

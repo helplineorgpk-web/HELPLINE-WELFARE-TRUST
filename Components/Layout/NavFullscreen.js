@@ -32,7 +32,23 @@ export default function NavFullscreen() {
           <Link href="/cause">Our Causes</Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/edu">Education</Link>
+              <Link href="/edu" className="innerli">
+                Education <span> ▶</span>
+              </Link>
+              <ul className="submenu">
+                <li>
+                  <Link href="/ownSchools">7 Own School In Punjab</Link>
+                </li>
+                <li>
+                  <Link href="/">13 adopted Schools</Link>
+                </li>
+                <li>
+                  <Link href="/">Orphanage Abbottabad</Link>
+                </li>
+                <li>
+                  <Link href="/">Vocational Training centers</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link href="/health">Health</Link>

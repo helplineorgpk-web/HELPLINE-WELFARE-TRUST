@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function MissionAboutSingle() {
   return (
     <div className="about_single_area about_subscribe pt-105 pb-120">
-      <img src="/img/bg/animatedimg.jpg" alt="img" />
+      <img src="/img/causes/cause11.jpg" alt="img" />
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6 offset-xl-6 col-md-10 offset-md-1">

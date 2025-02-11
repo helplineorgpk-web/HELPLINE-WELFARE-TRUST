@@ -59,6 +59,10 @@
   text-align: center;
 }
 
+.joinnowwrapper{
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .chairmanimage img {
     float: none;

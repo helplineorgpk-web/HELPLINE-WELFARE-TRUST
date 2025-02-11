@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "/public/img/logo/logo.png";
 import NavFullscreen from "./NavFullscreen";
-import styles from "../../public/css/headArea.module.css";
+import styles from "../../public/css/headerTop.module.css";
 
-export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
+export default function Header1({ toggleTrueFalseInfo }) {
   return (
     <header
       className="header-area header-transparent"
@@ -13,6 +13,24 @@ export default function Header1({ toggleTrueFalse, toggleTrueFalseInfo }) {
         background: "white",
       }}
     >
+      <div className={`${styles.header_top_area} d-none d-lg-block`}>
+        <div className="container">
+          <div className="row align-items-center">
+            <div>
+              <div className={styles.marqueeContainer}>
+                <div className={styles.marquee}>
+                  Ramzan Rashan Programme: Donate generously to provide iftar
+                  meals, groceries, and essentials to underprivileged families,
+                  spreading love, kindness, and warmth during Ramadan. Support
+                  Ramzan Rashan Programme and help distribute food packages,
+                  bringing joy and relief to needy families, elderly, and
+                  orphans during the blessed month of Ramadan.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="sticky-header" className="header_menu_area res_padd">
         <div className="container">
           <div className="row align-items-center">

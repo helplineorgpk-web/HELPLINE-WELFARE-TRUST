@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-export default function FAQBreadCrumb() {
+export default function OwnSchoolsBreadCrumb() {
   return (
     <section
       className="breadcrumb_area breadcrumb_overlay"
-      style={{ background: "url(/img/bg/breadcrum_bg_2.jpg)" }}
+      style={{ backgroundImage: "url(/img/causes/alkitab2.jpg)", objectFit: "cover" }}
     >
       <div className="container">
         <div className="row">
@@ -16,7 +16,7 @@ export default function FAQBreadCrumb() {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <span className="active">Contact</span>
+                  <span className="active">Own Schools</span>
                 </li>
               </ul>
               <div className="breadcrumb_title">
@@ -27,6 +27,5 @@ export default function FAQBreadCrumb() {
         </div>
       </div>
     </section>
-    //breadcrumb area end
   );
 }

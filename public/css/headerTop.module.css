@@ -1,0 +1,50 @@
+.header_top_area {
+  background-color: #263b5c;
+  padding: 5px 0;
+  color: white;
+}
+
+.marqueeContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  gap: 40px;
+  text-wrap: nowrap;
+  animation: marquee-scroll 15s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.theme1,
+.theme2,
+.theme3 {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme1 i,
+.theme2 i,
+.theme3 i {
+  font-size: 18px;
+  color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .marqueeContainer {
+    display: none;
+  }
+}

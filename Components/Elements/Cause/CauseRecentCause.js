@@ -13,6 +13,9 @@ export default function CauseRecentCause({ categories, causes }) {
     if (categories?.Education) {
       return "Education";
     }
+    if (categories?.OwnSchools) {
+      return "Own School";
+    }
   });
 
   const [projects, setProjects] = useState([]);

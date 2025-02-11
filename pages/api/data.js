@@ -164,6 +164,103 @@ export const HelplineData = {
       description: "Rehabilitates them by providing a financial opportunity",
     },
   ],
+  ownSchools: [
+    {
+      id: 23,
+      category: ["Own School"],
+      img: (
+        <Image
+          src="/img/causes/alkitab2.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/alkitab3.jpg",
+      img2: "/img/causes/alkitab4.jpg",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+      description:
+        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
+
+      desc: "Al Kitab Education System (Rana Town).",
+      color: "#65cabb",
+    },
+    {
+      id: 24,
+      category: ["Own School"],
+      img: (
+        <Image
+          src="/img/causes/alkitabghani1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      detail:
+        "Al-Kitab School offers free education, fostering growth and community service.",
+      description:
+        "Al-Kitab School, located in Chani Goth, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The school focuses on academic excellence and offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects. The school prioritises academic performance and aims to instil moral values and a sense of community service among its students. In addition, the school provides extracurricular activities that help to develop the student’s skills and talents. The school also organizes community service activities to encourage the students to give back to society. The Al-Kitab School is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The school also provides free uniforms, textbooks, and school supplies.",
+
+      desc: "Al Kitab Education System  (Chani Goth).",
+      color: "#5fb35b",
+    },
+    {
+      id: 25,
+      category: ["Own School"],
+      img: (
+        <Image
+          src="/img/causes/rehmat.jpeg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      detail:
+        "Aligarh Complex offers free education, breaking poverty through knowledge.",
+      description:
+        "Aligarh Educational Complex in Gojra is a project owned by Helpline NGO, aimed at providing free education to underprivileged students. The complex comprises a school, a computer lab, a library, and a hostel. The school has a team of highly qualified teachers who are committed to providing quality education to children from low-income families. The computer lab at the complex is equipped with the latest technology and offers students the opportunity to learn computer skills. The library is stocked with a wide range of books, which provides students with access to a wealth of knowledge and information. The hostel offers comfortable accommodation for students who live far away from the school and ensures that they have a safe and secure environment to study in. Aligarh Educational Complex in Gojra is making a significant contribution to the community it serves. The school’s focus on providing quality education to underprivileged children has helped to break the cycle of poverty and provide a brighter future for many families.",
+
+      desc: "Aligarh Educational Complex (Gojra)",
+      color: "#f15b43",
+    },
+    {
+      id: 26,
+      category: ["Own School"],
+      img: (
+        <Image
+          src="/img/causes/girlsschool.jpeg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      detail: "Free education for brighter futures.",
+      description:
+        "CH. Rahmat Ali Superior Higher Secondary School, located in the Alighar Education Complex in Gojra, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The institution offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects, with a focus on academic excellence. In addition to academic subjects, the school also provides extracurricular activities that help to develop the student’s skills and talents. The institution encourages students to participate in sports, debates, and other activities that enable them to develop their leadership skills and teamwork abilities. The Alighar Education Complex is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The institution also provides free uniforms, textbooks, and school supplies to the students.",
+
+      desc: "Iman Maryam Girls Higher Secondary School Alighar Education Complex (Gojra)",
+      color: "#65cabb",
+    },
+    {
+      id: 27,
+      category: ["Own School"],
+      img: (
+        <Image
+          src="/img/causes/eman1.jpeg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      detail: "Free education for brighter futures.",
+      description:
+        "Emman Maryam Smart School, Alighar Education Complex (Gojra) is a remarkable institution that is supported by Helpline NGO. The school is dedicated to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and enthusiastic, despite the financial challenges they may face. They are committed to their education and strive to excel academically. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been crucial in making this possible. By providing financial assistance, Helpline NGO is helping to ensure that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are designed to cater to the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
+
+      desc: "Emman Maryam Smart School Alighar Education Complex (Gojra)",
+      color: "#65cabb",
+    },
+  ],
   causes: [
     {
       id: 1,
@@ -1055,7 +1152,7 @@ export const HelplineData = {
       announcement:
         "Helpline Social Welfare Charity Organization is built on the fundamental concept of Mawakhat, which is an Arabic term that refers to the bond of brotherhood and solidarity between individuals or groups of people. Mawakhat embodies the spirit of social responsibility, where people from different backgrounds and communities come together to support one another in times of need. At Helpline Social Welfare Charity Organization, this concept of Mawakhat is the cornerstone of our work, and we strive to build stronger communities by fostering a sense of collective responsibility and empathy. We believe that everyone deserves equal opportunities and access to basic necessities such as food, education, and healthcare, regardless of their background or socioeconomic status. Through our various initiatives and programs, we aim to create a more equitable society where people can live with dignity and respect. Our team of dedicated volunteers works tirelessly to provide assistance and support to those in need, and we are committed to making a positive impact in the lives of the people we serve. Overall, Helpline Social Welfare Charity Organization is grounded in the principles of Mawakhat, and we believe that by working together, we can create a better world for everyone.",
       announcement1:
-        "Helpline started its journey with the private construction of a school in Pak Patan, Punjab in 1993 which got completed in the year 2000.The basic purpose of Helpline is Betterment of the academic activities of Government Schools and concentration towards providing basic necessities of life, especially support of poor students. Helpline’s proper registration was done in the year 2000 which included academic improvement of Government schools, wellness of prisoners and supply of food to patients.",
+        "Helpline started its journey with the private construction of a school in Pak Patan, Punjab in 1993 which got completed in the year 2000.The basic purpose of Helpline is Betterment of the academic activities of Government Schools and concentration towards providing basic necessities of life, especially support of poor students. Helpline’s proper registration was done in the year 2000 which included academic improvement of Government schools, wellness of prisoners and supply of free food to patients in Public Hospitals.",
       details:
         "The certification from PCP highlights our adherence to the highest standards in governance, financial management, and program implementation. Being registered with the FBR empowers us to accept donations domestically and internationally, enhancing trust and credibility among donors.",
       conclusion: "Overview of Helpline’s Massive Work Over the Years",
@@ -1197,6 +1294,12 @@ export const HelplineData = {
           year: "2023",
           detail:
             "In the year 2023, So far, Helpline distributed 3005 ration packages in Ramzan, and undertook the sacred act of Qurbani, sacrificing 527 animals.",
+        },
+        {
+          id: 23,
+          year: "2024",
+          detail:
+            "In 2024, Helpline distributed ration packages among 18000 deserving families during Ramzan and supported families in need. Our Al-kitab Educational System reached over 6,000 students across Pakistan, with 7 schools in Punjab and 13 adopted government schools in interior Sindh, expanding access toquality education for underprivileged children. 1000 free Cataract operations. Free treatment of 3000 free medical care.",
         },
       ],
     },
