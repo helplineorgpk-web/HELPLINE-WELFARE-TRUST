@@ -13046,7 +13046,7 @@ input:focus:-ms-input-placeholder {
   align-items: center !important;
 }
 .main-menu ul li {
-  margin: 0 20px;
+  margin: 0 17px;
   list-style: none;
   position: relative;
 }
@@ -13059,7 +13059,7 @@ input:focus:-ms-input-placeholder {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu ul li {
-    margin: 0 15px;
+    margin: 0 12px;
   }
 }
 
@@ -13096,8 +13096,8 @@ input:focus:-ms-input-placeholder {
   height: 180px !important;
   /* height: auto; */
   display: block;
-  padding: 30px;
-  margin: -10px;
+  padding: 30px 26px;
+  margin: -18px;
 }
 
 /*
@@ -13912,12 +13912,12 @@ input.main-search-input:-ms-input-placeholder {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .main-menu ul li {
-    margin-left: 15px;
+    margin-left: 12px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu ul li {
-    margin: 0 15px;
+    margin: 0 12px;
   }
 }
 .main-menu ul li.menu-item-has-children > a::after {
