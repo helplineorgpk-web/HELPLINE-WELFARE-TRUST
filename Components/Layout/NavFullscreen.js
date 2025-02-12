@@ -40,7 +40,7 @@ export default function NavFullscreen() {
                   <Link href="/ownSchools">7 Own School In Punjab</Link>
                 </li>
                 <li>
-                  <Link href="/">13 adopted Schools</Link>
+                  <Link href="/adoptedSchools">13 adopted Schools</Link>
                 </li>
                 <li>
                   <Link href="/">Orphanage Abbottabad</Link>

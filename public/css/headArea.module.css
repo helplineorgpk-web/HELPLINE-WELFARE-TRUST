@@ -85,12 +85,15 @@
 
 .slideDescription {
   color: #666;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 10px;
   text-align: start;
   padding:0 10px 0px 15px;
 }
-
+.project{
+  text-align: start;
+  padding:0 10px 0px 15px
+}
 .cardContainer {
   display: flex;
   justify-content: center;
@@ -105,6 +108,7 @@
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 

@@ -13,6 +13,7 @@ const sliderData = [
   {
     id: 1,
     title: "Previous Projects",
+    project: "Schools",
     content:
       "A look at our past successful projects. A look at our past successful projects.",
     images: image1,
@@ -20,6 +21,7 @@ const sliderData = [
   {
     id: 2,
     title: "Current Projects",
+    project: "Medical",
     content:
       "Ongoing projects making a difference. Ongoing projects making a difference.",
     images: image2,
@@ -27,8 +29,9 @@ const sliderData = [
   {
     id: 3,
     title: "Upcoming Projects",
+    project: "Ramzan Rashan",
     content:
-      "Exciting future initiatives. Exciting future initiatives. Exciting future initiatives.Exciting future initiatives.",
+      "Innovative upcoming programs. Inspiring upcoming programs. Transformative upcoming programs.",
     images: image3,
   },
 ];
@@ -72,7 +75,10 @@ export default function HeadArea() {
                   <h3 className={styles.slideTitle}>{slide.title}</h3>
 
                   <div className={styles.imageCard}>
-                    <p className={styles.slideDescription}>{slide.content}</p>
+                    <div>
+                      <h6 className={styles.project}>{slide.project}</h6>
+                      <p className={styles.slideDescription}>{slide.content}</p>
+                    </div>
                     <Image
                       src={slide.images}
                       alt={slide.title}
@@ -93,7 +99,10 @@ export default function HeadArea() {
                       height={100}
                       className={styles.cardImage}
                     />
-                    <p className={styles.slideDescription}>{slide.content}</p>
+                    <div>
+                      <h6 className={styles.project}>{slide.project}</h6>
+                      <p className={styles.slideDescription}>{slide.content}</p>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

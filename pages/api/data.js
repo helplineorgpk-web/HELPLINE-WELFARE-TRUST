@@ -166,6 +166,27 @@ export const HelplineData = {
   ],
   ownSchools: [
     {
+      id: 33,
+      category: ["Own School"],
+      img: (
+        <Image
+          src="/img/causes/cause13.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/alkitab3.jpg",
+      img2: "/img/causes/alkitab4.jpg",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+      description:
+        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
+
+      desc: "Al-Kitab School (Gullowali, Rsajanpur).",
+      color: "#65cabb",
+    },
+    {
       id: 23,
       category: ["Own School"],
       img: (
@@ -221,7 +242,7 @@ export const HelplineData = {
       description:
         "Aligarh Educational Complex in Gojra is a project owned by Helpline NGO, aimed at providing free education to underprivileged students. The complex comprises a school, a computer lab, a library, and a hostel. The school has a team of highly qualified teachers who are committed to providing quality education to children from low-income families. The computer lab at the complex is equipped with the latest technology and offers students the opportunity to learn computer skills. The library is stocked with a wide range of books, which provides students with access to a wealth of knowledge and information. The hostel offers comfortable accommodation for students who live far away from the school and ensures that they have a safe and secure environment to study in. Aligarh Educational Complex in Gojra is making a significant contribution to the community it serves. The school’s focus on providing quality education to underprivileged children has helped to break the cycle of poverty and provide a brighter future for many families.",
 
-      desc: "Aligarh Educational Complex (Gojra)",
+      desc: "Ch Rehmat Ali Higher Secondary School for Boys",
       color: "#f15b43",
     },
     {
@@ -259,6 +280,315 @@ export const HelplineData = {
 
       desc: "Emman Maryam Smart School Alighar Education Complex (Gojra)",
       color: "#65cabb",
+    },
+    {
+      id: 18,
+      category: ["Own School"],
+      img: (
+        <Image
+          src="/img/causes/irtiqa.jpeg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      detail: "Empowering underprivileged youth through quality education.",
+      description:
+        "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
+
+      desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
+      color: "#65cabb",
+    },
+  ],
+  adoptedSchools: [
+    {
+      id: 19,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/nimro1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS. Nimro Sharif School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "The Govt GPS. Nimro Sharif School",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 20,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/bheel2.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/bheel1.jpg",
+      img2: "/img/causes/bheel3.jpg",
+      detail:
+        "GPS. Misri Bheel School empowers students with quality education.",
+      description:
+        "The support provided by a helpline NGO to Govt. Misri Bheel School has been critical in ensuring that underprivileged students in the community have access to quality education. The NGO has taken on the responsibility of running the school, providing financial support, and ensuring that students have access to essential supplies and resources. Moreover, the NGO’s support for the school’s operations has been instrumental in keeping the school running and providing quality education to students who otherwise may not have had access to it. The NGO has worked closely with the school’s administration to ensure that the school is well-maintained and that students have access to necessary resources such as textbooks and school supplies.",
+
+      desc: "The Govt GPS. Misri Bheel School (Tando Allah Yar)",
+      adopted: "Adopted",
+      color: "#65cabb",
+    },
+    {
+      id: 21,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/nabibakhsh1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nabibakhsh.jpg",
+      img2: "/img/causes/nabibakhsh2.jpg",
+      detail:
+        "GPS. Nabi Baksh Gabool School empowers students with quality education.",
+      description:
+        "The Helpline Social Welfare Foundation’s adoption of Govt. Nabi Baksh Gabool School is a remarkable example of a community-based organization taking the initiative to support underprivileged students and uplift the education system. The Foundation has assumed full responsibility for the school, providing much-needed financial aid and resources to ensure that students receive a quality education.<br>Through this partnership, the Foundation has been able to offer an array of programs and resources to support students’ academic achievement, including scholarships, mentorship programs, and academic support services. The Foundation has also focused on ensuring that the school is well-maintained and that students have access to critical resources and supplies.",
+
+      desc: "Govt GPS. Nabi Baksh Gabool School (Tando Allah Yar)",
+      adopted: "Adopted",
+      color: "#5fb35b",
+    },
+    {
+      id: 22,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/sardar1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/sardar2.jpg",
+      img2: "/img/causes/sardar3.jpg",
+      detail:
+        "GPS. Sardar Khan Laghari School empowers students with quality education.",
+      description:
+        "The Helpline Social Welfare Foundation’s adoption of Govt. Sardar Khan Laghari School is a commendable initiative aimed at improving the quality of education for underprivileged students. By taking on the full responsibility of supporting the school, the Foundation has helped to stabilize its operations and ensure its sustainability in the long run. In addition to supporting students’ academic success, the Foundation has worked to ensure that the school is well-maintained and equipped with the necessary resources and supplies. This has helped to create a conducive learning environment that promotes students’ well-being and academic achievement.",
+
+      desc: "GPS. Sardar Khan Laghari School (Mirpurkhas)",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 9,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/roruschool.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/roru1.jpg",
+      img2: "/img/causes/roru2.jpg",
+      detail:
+        "Govt. Roru Goth School empowers students with quality education.",
+      description:
+        "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
+      progressData: "65",
+      desc: "GPS Roru Goth School (Mirpurkhas).",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 10,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/cause14.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/gpsbaglair1.jpg",
+      img2: "/img/causes/gpsbaglair2.jpg",
+      detail:
+        "GPS. Bagliar Mithi School empowers students with quality education.",
+      description:
+        "Govt. Bagliar Mithi School is a beacon of hope for underprivileged students who might not otherwise have access to quality education. With the help of a helpline NGO, the school can provide support to students facing financial and other challenges. This support can come in many forms, including scholarships, tuition assistance, and other resources designed to help students succeed in their studies. The work that is being done by Govt. Bagliar Mithi School and the helpline NGO are genuinely inspiring. By providing opportunities for education to students who might not otherwise have access to it, they are helping to break the cycle of poverty and create a brighter future for the next generation. The dedication and hard work of the teachers and staff at the school, as well as the generosity of the NGO supporters, is making a real difference in the lives of these students and is something that should be celebrated and supported by all members of the community.",
+      desc: "The Govt GPS. Bagliar Mithi School (Tharparkar).",
+      adopted: "Adopted",
+      color: "#65cabb",
+    },
+    {
+      id: 11,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/kaktario1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/kaktario2.jpg",
+      img2: "/img/causes/kaktario3.jpg",
+      detail:
+        "Govt. Kakrario Saman Mian School empowers students with quality education.",
+      description:
+        "The adoption of Govt. Kakrario Saman Mian School a helpline NGO has been a game-changer for the school, its students, and its teachers. The NGO has taken on the responsibility of supporting the school’s operations by providing financial assistance for the payment of teachers’ salaries, as well as other essential needs such as textbooks, school supplies, and maintenance of facilities. This support has been critical for the school, which serves a predominantly low-income student population. Through this partnership, the helpline NGO has been able to provide a range of resources and programs to support students’ learning and academic achievement. These resources include scholarships, mentorship programs, and academic support services, such as tutoring and study skills workshops. By providing these opportunities to underprivileged students, the NGO is helping to level the playing field and give these students a chance to succeed.",
+
+      desc: "Govt GPS. Kakrario Saman Mian School (Tharparkar)",
+      adopted: "Adopted",
+      color: "#5fb35b",
+    },
+    {
+      id: 12,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/cause16.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/gpsmisali.jpg",
+      img2: "/img/causes/gpsmisali1.jpg",
+      detail:
+        "GPS. Misali Goth School empowers students with quality education.",
+      description:
+        "Helpline NGO’s support for the Govt. Misali Goth School is highly commendable, as it recognizes the importance of education in the development of communities. By providing financial assistance to the school, Helpline NGO is helping to ensure that students have access to quality education and a supportive learning environment. In addition to supporting the school itself, Helpline NGO also provides salaries to the employees, which is a significant contribution to the livelihoods of the staff. The provision of salaries to the employees is essential, as it helps to ensure that the school can attract and retain qualified and dedicated teachers and staff. This, in turn, contributes to the quality of education provided to students, and ultimately, to the school’s success. By providing this support, Helpline NGO is playing an essential role in the development of education in the community and is making a positive impact on the lives of both students and employees.",
+      desc: "The Govt GPS. Misali Goth School",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 13,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/katho1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/katho2.jpg",
+      img2: "/img/causes/katho3.jpg",
+      detail:
+        "GPS. Katho Samma School empowers students with quality education.",
+      description:
+        "The adoption of Govt. Katho Samma School by a helpline NGO has had a transformative impact on the school, its students, and its teachers. The NGO has taken on the responsibility of providing financial assistance for the school’s operations, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been critical for the school, which serves a predominantly low-income student population. Furthermore, the support that the NGO provides for the school’s teachers is invaluable. The NGO recognizes the vital role that teachers play in shaping students’ lives and is committed to ensuring that they are compensated fairly for their hard work. This support helps to incentivize high-quality teaching, which is essential for creating a positive and effective learning environment for students.",
+
+      desc: "The Govt GPS. Katho Samma School",
+      adopted: "Adopted",
+      color: "#65cabb",
+    },
+    {
+      id: 34,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/nimro1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Qazi Muhammad Ashraf School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "GPS Qazi Muhammad Ashraf (Mirpurkhas)",
+      adopted: "Adopted",
+      color: "#5fb35b",
+    },
+    {
+      id: 35,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/nimro1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Nazar Hussain Arain School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "GPS Nazar Hussain Arain (Mirpurkhas)",
+      adopted: "Adopted",
+      color: "#65cabb",
+    },
+    {
+      id: 37,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/nimro1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Nazar Hussain Arain School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "GPS Nazar Hussain Arain (Tando Allah Yar)",
+      adopted: "Adopted",
+      color: "#65cabb",
+    },
+    {
+      id: 36,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/nimro1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Ando Muhajir School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "GPS Ando Muhajir (Tando Allah Yar)",
+      adopted: "Adopted",
+      color: "#f15b43",
     },
   ],
   causes: [
@@ -446,7 +776,7 @@ export const HelplineData = {
       description:
         "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
       progressData: "65",
-      desc: "Alighar Education Complex GPS. Roru Goth School.",
+      desc: "GPS Roru Goth School (Mirpurkhas)",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -467,7 +797,7 @@ export const HelplineData = {
         "GPS. Bagliar Mithi School empowers students with quality education.",
       description:
         "Govt. Bagliar Mithi School is a beacon of hope for underprivileged students who might not otherwise have access to quality education. With the help of a helpline NGO, the school can provide support to students facing financial and other challenges. This support can come in many forms, including scholarships, tuition assistance, and other resources designed to help students succeed in their studies. The work that is being done by Govt. Bagliar Mithi School and the helpline NGO are genuinely inspiring. By providing opportunities for education to students who might not otherwise have access to it, they are helping to break the cycle of poverty and create a brighter future for the next generation. The dedication and hard work of the teachers and staff at the school, as well as the generosity of the NGO supporters, is making a real difference in the lives of these students and is something that should be celebrated and supported by all members of the community.",
-      desc: "The Govt GPS. Bagliar Mithi School.",
+      desc: "The Govt GPS. Bagliar Mithi School (Tharparkar)",
       adopted: "Adopted",
       color: "#65cabb",
     },
@@ -485,11 +815,11 @@ export const HelplineData = {
       img1: "/img/causes/kaktario2.jpg",
       img2: "/img/causes/kaktario3.jpg",
       detail:
-        "Govt. Kaktario Samma School empowers students with quality education.",
+        "Govt. Kakrario Saman Mian School empowers students with quality education.",
       description:
-        "The adoption of Govt. Kaktario Samma School a helpline NGO has been a game-changer for the school, its students, and its teachers. The NGO has taken on the responsibility of supporting the school’s operations by providing financial assistance for the payment of teachers’ salaries, as well as other essential needs such as textbooks, school supplies, and maintenance of facilities. This support has been critical for the school, which serves a predominantly low-income student population. Through this partnership, the helpline NGO has been able to provide a range of resources and programs to support students’ learning and academic achievement. These resources include scholarships, mentorship programs, and academic support services, such as tutoring and study skills workshops. By providing these opportunities to underprivileged students, the NGO is helping to level the playing field and give these students a chance to succeed.",
+        "The adoption of Govt. Kakrario Saman Mian School a helpline NGO has been a game-changer for the school, its students, and its teachers. The NGO has taken on the responsibility of supporting the school’s operations by providing financial assistance for the payment of teachers’ salaries, as well as other essential needs such as textbooks, school supplies, and maintenance of facilities. This support has been critical for the school, which serves a predominantly low-income student population. Through this partnership, the helpline NGO has been able to provide a range of resources and programs to support students’ learning and academic achievement. These resources include scholarships, mentorship programs, and academic support services, such as tutoring and study skills workshops. By providing these opportunities to underprivileged students, the NGO is helping to level the playing field and give these students a chance to succeed.",
 
-      desc: "Govt GPS. Kaktario Samma School",
+      desc: "Govt GPS. Kakrario Saman Mian School (Tharparkar)",
       adopted: "Adopted",
       color: "#5fb35b",
     },
@@ -533,6 +863,52 @@ export const HelplineData = {
         "The adoption of Govt. Katho Samma School by a helpline NGO has had a transformative impact on the school, its students, and its teachers. The NGO has taken on the responsibility of providing financial assistance for the school’s operations, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been critical for the school, which serves a predominantly low-income student population. Furthermore, the support that the NGO provides for the school’s teachers is invaluable. The NGO recognizes the vital role that teachers play in shaping students’ lives and is committed to ensuring that they are compensated fairly for their hard work. This support helps to incentivize high-quality teaching, which is essential for creating a positive and effective learning environment for students.",
 
       desc: "The Govt GPS. Katho Samma School",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 34,
+      category: ["Education"],
+      img: (
+        <Image
+          src="/img/causes/nimro1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Qazi Muhammad Ashraf School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "GPS Qazi Muhammad Ashraf (Mirpurkhas)",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 35,
+      category: ["Education"],
+      img: (
+        <Image
+          src="/img/causes/nimro1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Nazar Hussain Arain School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "GPS Nazar Hussain Arain (Mirpurkhas)",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -675,11 +1051,11 @@ export const HelplineData = {
       img1: "/img/causes/bheel1.jpg",
       img2: "/img/causes/bheel3.jpg",
       detail:
-        "GPS. Missi Bheel School empowers students with quality education.",
+        "GPS. Misri Bheel School empowers students with quality education.",
       description:
-        "The support provided by a helpline NGO to Govt. Missi Bheel School has been critical in ensuring that underprivileged students in the community have access to quality education. The NGO has taken on the responsibility of running the school, providing financial support, and ensuring that students have access to essential supplies and resources. Moreover, the NGO’s support for the school’s operations has been instrumental in keeping the school running and providing quality education to students who otherwise may not have had access to it. The NGO has worked closely with the school’s administration to ensure that the school is well-maintained and that students have access to necessary resources such as textbooks and school supplies.",
+        "The support provided by a helpline NGO to Govt. Misri Bheel School has been critical in ensuring that underprivileged students in the community have access to quality education. The NGO has taken on the responsibility of running the school, providing financial support, and ensuring that students have access to essential supplies and resources. Moreover, the NGO’s support for the school’s operations has been instrumental in keeping the school running and providing quality education to students who otherwise may not have had access to it. The NGO has worked closely with the school’s administration to ensure that the school is well-maintained and that students have access to necessary resources such as textbooks and school supplies.",
 
-      desc: "The Govt GPS. Missi Bheel School",
+      desc: "The Govt GPS. Misri Bheel School (Tando Allah Yar)",
       adopted: "Adopted",
       color: "#65cabb",
     },
@@ -701,7 +1077,7 @@ export const HelplineData = {
       description:
         "The Helpline Social Welfare Foundation’s adoption of Govt. Nabi Baksh Gabool School is a remarkable example of a community-based organization taking the initiative to support underprivileged students and uplift the education system. The Foundation has assumed full responsibility for the school, providing much-needed financial aid and resources to ensure that students receive a quality education.<br>Through this partnership, the Foundation has been able to offer an array of programs and resources to support students’ academic achievement, including scholarships, mentorship programs, and academic support services. The Foundation has also focused on ensuring that the school is well-maintained and that students have access to critical resources and supplies.",
 
-      desc: "Govt GPS. Nabi Baksh Gabool School",
+      desc: "Govt GPS. Nabi Baksh Gabool School (Tando Allah Yar)",
       adopted: "Adopted",
       color: "#5fb35b",
     },
@@ -723,9 +1099,55 @@ export const HelplineData = {
       description:
         "The Helpline Social Welfare Foundation’s adoption of Govt. Sardar Khan Laghari School is a commendable initiative aimed at improving the quality of education for underprivileged students. By taking on the full responsibility of supporting the school, the Foundation has helped to stabilize its operations and ensure its sustainability in the long run. In addition to supporting students’ academic success, the Foundation has worked to ensure that the school is well-maintained and equipped with the necessary resources and supplies. This has helped to create a conducive learning environment that promotes students’ well-being and academic achievement.",
 
-      desc: "GPS. Sardar Khan Laghari School",
+      desc: "GPS. Sardar Khan Laghari School (Mirpurkhas)",
       adopted: "Adopted",
       color: "#f15b43",
+    },
+    {
+      id: 36,
+      category: ["Education"],
+      img: (
+        <Image
+          src="/img/causes/nimro1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Ando Muhajir School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "GPS Ando Muhajir (Tando Allah Yar)",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 37,
+      category: ["Education"],
+      img: (
+        <Image
+          src="/img/causes/nimro1.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Nazar Hussain Arain School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "GPS Nazar Hussain Arain (Tando Allah Yar)",
+      adopted: "Adopted",
+      color: "#65cabb",
     },
     {
       id: 23,
@@ -895,6 +1317,27 @@ export const HelplineData = {
       desc: "Govt Hospital Kot Khawaja Saeed",
       color: "#65cabb",
     },
+    {
+      id: 33,
+      category: ["Own School"],
+      img: (
+        <Image
+          src="/img/causes/cause13.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/alkitab3.jpg",
+      img2: "/img/causes/alkitab4.jpg",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+      description:
+        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
+
+      desc: "Al-Kitab School (Gullowali, Rsajanpur).",
+      color: "#65cabb",
+    },
   ],
   homeCauses: [
     {
@@ -957,7 +1400,7 @@ export const HelplineData = {
       description:
         "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
 
-      desc: "Alighar Education Complex GPS. Roru Goth School.",
+      desc: "GPS Roru Goth School (Mirpurkhas).",
       adopted: "Adopted",
       color: "#f15b43",
     },
