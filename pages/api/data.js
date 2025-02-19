@@ -526,14 +526,14 @@ export const HelplineData = {
       category: ["Adopted Schools"],
       img: (
         <Image
-          src="/img/causes/nimro1.jpg"
+          src="/img/causes/PHOTO-2025-02-19-11-39-49.jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
+      img1: "/img/causes/PHOTO-2025-02-19-11-40-10(1).jpg",
+      img2: "/img/causes/PHOTO-2025-02-19-11-40-10(2).jpg",
       detail:
         "GPS Nazar Hussain Arain School empowers students with quality education.",
       description:
@@ -549,14 +549,14 @@ export const HelplineData = {
       category: ["Adopted Schools"],
       img: (
         <Image
-          src="/img/causes/nimro1.jpg"
+          src="/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
+      img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
+      img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
       detail:
         "GPS Nazar Hussain Arain School empowers students with quality education.",
       description:
@@ -587,6 +587,29 @@ export const HelplineData = {
       pbar: "pbar_1",
 
       desc: "GPS Ando Muhajir (Tando Allah Yar)",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 38,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/PHOTO-2025-02-19-11-45-31.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(2).jpg",
+      img2: "/img/causes/PHOTO-2025-02-19-11-45-31(3).jpg",
+      detail:
+        "GPS Ando Muhajir School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "Benazir Higher Secondary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -894,14 +917,14 @@ export const HelplineData = {
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/nimro1.jpg"
+          src="/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
+      img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
+      img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
       detail:
         "GPS Nazar Hussain Arain School empowers students with quality education.",
       description:
@@ -1131,14 +1154,14 @@ export const HelplineData = {
       category: ["Education"],
       img: (
         <Image
-          src="/img/causes/nimro1.jpg"
+          src="/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg"
           layout="responsive"
           width={350}
           height={225}
         />
       ),
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
+      img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
+      img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
       detail:
         "GPS Nazar Hussain Arain School empowers students with quality education.",
       description:
@@ -1337,6 +1360,29 @@ export const HelplineData = {
 
       desc: "Al-Kitab School (Gullowali, Rsajanpur).",
       color: "#65cabb",
+    },
+    {
+      id: 38,
+      category: ["Adopted Schools"],
+      img: (
+        <Image
+          src="/img/causes/PHOTO-2025-02-19-11-45-31.jpg"
+          layout="responsive"
+          width={350}
+          height={225}
+        />
+      ),
+      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(2).jpg",
+      img2: "/img/causes/PHOTO-2025-02-19-11-45-31(3).jpg",
+      detail:
+        "GPS Ando Muhajir School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "Benazir Higher Secondary School",
+      adopted: "Adopted",
+      color: "#f15b43",
     },
   ],
   homeCauses: [

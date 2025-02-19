@@ -43,10 +43,10 @@ export default function NavFullscreen() {
                   <Link href="/adoptedSchools">13 adopted Schools</Link>
                 </li>
                 <li>
-                  <Link href="/">Orphanage Abbottabad</Link>
+                  <Link href="/orphanage">Orphanage Abbottabad</Link>
                 </li>
                 <li>
-                  <Link href="/">Vocational Training centers</Link>
+                  <Link href="/vocationalTrainingCenters">Vocational Training centers</Link>
                 </li>
               </ul>
             </li>
