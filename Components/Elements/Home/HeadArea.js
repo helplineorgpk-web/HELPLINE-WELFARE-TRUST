@@ -31,7 +31,7 @@ const sliderData = [
     title: "Upcoming Projects",
     project: "Ramzan Rashan",
     content:
-      "Innovative upcoming programs. Inspiring upcoming programs. Transformative upcoming programs.",
+      "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
     images: image3,
   },
 ];
@@ -71,6 +71,7 @@ export default function HeadArea() {
           >
             {sliderData.map((slide) => (
               <SwiperSlide key={slide.id} className={styles.slideItem}>
+                <h5 className={styles.news}>News</h5>
                 <div className={styles.card}>
                   <h3 className={styles.slideTitle}>{slide.title}</h3>
 

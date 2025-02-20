@@ -19,12 +19,18 @@ export default function Header1({ toggleTrueFalseInfo }) {
             <div>
               <div className={styles.marqueeContainer}>
                 <div className={styles.marquee}>
-                  Ramzan Rashan Programme: Donate generously to provide iftar
-                  meals, groceries, and essentials to underprivileged families,
-                  spreading love, kindness, and warmth during Ramadan. Support
-                  Ramzan Rashan Programme and help distribute food packages,
-                  bringing joy and relief to needy families, elderly, and
-                  orphans during the blessed month of Ramadan.
+                  1: This Ramzan, Helpline Welfare Trust is distributing Ramzan
+                  Rations to 4000 destitute and deserving families. Join us in
+                  spreading hope and blessings to those in need. Together, we
+                  can make a difference and bring joy to countless lives this
+                  holy month. This Ramzan, Helpline Welfare Trust is
+                  distributing 2 tons of dates to destitute and deserving
+                  families. Dates, a symbol of blessings and sustenance, will
+                  bring joy and nourishment to countless lives. Helpline is
+                  organizing a Sports Gala at Al-Kitab Higher Secondary School,
+                  Rana Town, to promote extracurricular activities and foster a
+                  spirit of healthy competition among students. The event aims
+                  to encourage teamwork, sportsmanship, and physical well-being.
                 </div>
               </div>
             </div>

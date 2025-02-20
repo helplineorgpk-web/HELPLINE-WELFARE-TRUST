@@ -22,14 +22,13 @@ export default function Home() {
   const cause = HelplineData.homeCauses;
   return (
     <>
-      <Meta 
+      <Meta
         title="Helpline Welfare Organization - Supporting Communities Across Pakistan"
         description="Join Helpline Welfare Organization in our mission to provide support through disaster relief, family welfare, and community development projects across Pakistan. Make a difference today."
         keywords="welfare organization, charity pakistan, disaster relief, family welfare, community support, donations, zakat, sadqa, welfare projects"
       />
       <Layout1>
         <main>
-          {/* <SliderArea />    */}
           <HeadArea />
           <AboutArea />
           <AllOverPakistan />

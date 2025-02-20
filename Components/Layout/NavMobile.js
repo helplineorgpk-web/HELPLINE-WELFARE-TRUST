@@ -20,24 +20,16 @@ export default function NavMobile() {
         </Link>
         <ul className="sub-menu">
           <li>
-            <Link href="/about">
-              About Us
-            </Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li>
-            <Link href="/chairmanMessage">
-              Chairman's Message
-            </Link>
+            <Link href="/chairmanMessage">Chairman's Message</Link>
           </li>
           <li>
-            <Link href="/ourjourney">
-              Our Journey
-            </Link>
+            <Link href="/ourjourney">Our Journey</Link>
           </li>
           <li>
-            <Link href="/volunteer">
-              Volunteer
-            </Link>
+            <Link href="/volunteer">Volunteer</Link>
           </li>
           <li className="menu-item-has-children">
             <Link href="/videos" className="has-arrow">
@@ -45,9 +37,7 @@ export default function NavMobile() {
             </Link>
           </li>
           <li>
-            <Link href="/mission">
-              Mission
-            </Link>
+            <Link href="/mission">Mission</Link>
           </li>
         </ul>
       </li>
@@ -57,14 +47,28 @@ export default function NavMobile() {
         </Link>
         <ul className="sub-menu">
           <li>
-            <Link href="/edu">
+            <Link href="/edu" className="has-arrow">
               Education
             </Link>
+            <ul>
+              <li>
+                <Link href="/ownSchools">7 Own School In Punjab</Link>
+              </li>
+              <li>
+                <Link href="/adoptedSchools">13 adopted Schools</Link>
+              </li>
+              <li>
+                <Link href="/orphanage">Orphanage Abbottabad</Link>
+              </li>
+              <li>
+                <Link href="/vocationalTrainingCenters">
+                  Vocational Training centers
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
-            <Link href="/health">
-              Health
-            </Link>
+            <Link href="/health">Health</Link>
           </li>
           <li className="menu-item-has-children">
             <Link href="#" className="has-arrow">
@@ -72,19 +76,13 @@ export default function NavMobile() {
             </Link>
             <ul>
               <li>
-                <Link href="/islamicactivity">
-                  Islamic Activity
-                </Link>
+                <Link href="/islamicactivity">Islamic Activity</Link>
               </li>
               <li>
-                <Link href="/qurbani">
-                  Qurbani Program
-                </Link>
+                <Link href="/qurbani">Qurbani Program</Link>
               </li>
               <li>
-                <Link href="/masjid">
-                  Masjid Program
-                </Link>
+                <Link href="/masjid">Masjid Program</Link>
               </li>
             </ul>
           </li>
@@ -99,36 +97,24 @@ export default function NavMobile() {
                 </Link>
               </li>
               <li>
-                <Link href="/rajanpur">
-                  Rajanpur Gullowali Distribution
-                </Link>
+                <Link href="/rajanpur">Rajanpur Gullowali Distribution</Link>
               </li>
             </ul>
           </li>
           <li>
-            <Link href="/rashan">
-              Rashan Program
-            </Link>
+            <Link href="/rashan">Rashan Program</Link>
           </li>
           <li>
-            <Link href="/disaster">
-              Disaster Management
-            </Link>
+            <Link href="/disaster">Disaster Management</Link>
           </li>
           <li>
-            <Link href="/familyWelfare">
-              Family Welfare
-            </Link>
+            <Link href="/familyWelfare">Family Welfare</Link>
           </li>
           <li>
-            <Link href="/water">
-              Clean Water Program
-            </Link>
+            <Link href="/water">Clean Water Program</Link>
           </li>
           <li>
-            <Link href="/cataract">
-              Cataract Program
-            </Link>
+            <Link href="/cataract">Cataract Program</Link>
           </li>
           <li className="menu-item-has-children">
             <Link href="#" className="has-arrow">
@@ -136,14 +122,10 @@ export default function NavMobile() {
             </Link>
             <ul className="sub-menu">
               <li>
-                <Link href="/itlab">
-                  IT Labs
-                </Link>
+                <Link href="/itlab">IT Labs</Link>
               </li>
               <li>
-                <Link href="/itform">
-                  IT Labs Form
-                </Link>
+                <Link href="/itform">IT Labs Form</Link>
               </li>
             </ul>
           </li>
@@ -155,21 +137,15 @@ export default function NavMobile() {
         </Link>
         <ul className="sub-menu">
           <li>
-            <Link href="/registration">
-              Registration Documents
-            </Link>
+            <Link href="/registration">Registration Documents</Link>
           </li>
           <li>
-            <Link href="/certifications">
-              Certifications
-            </Link>
+            <Link href="/certifications">Certifications</Link>
           </li>
         </ul>
       </li>
       <li>
-        <Link href="/contact">
-          Contact Us
-        </Link>
+        <Link href="/contact">Contact Us</Link>
       </li>
     </ul>
   );
