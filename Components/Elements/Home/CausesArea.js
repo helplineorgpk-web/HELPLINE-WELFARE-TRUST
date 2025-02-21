@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import styles from "../../../public/css/WayToDonate.module.css";
 export default function CausesArea({ causes, data }) {
   const router = useRouter();
   const handleNavigation = (item) => {

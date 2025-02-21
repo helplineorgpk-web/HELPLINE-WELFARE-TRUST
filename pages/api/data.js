@@ -125,6 +125,7 @@ export const HelplineData = {
         "Direct deposits or transfers can be made into our accounts at any of the banks.",
       buttonLabel: "Bank Details",
       buttonType: "bankButton",
+      href: "./donation",
     },
     {
       title: "Cash Pickup",

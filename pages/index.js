@@ -5,7 +5,6 @@ import FeaturedArea from "../Components/Elements/Home/FeaturedArea";
 import NewsFeed from "../Components/Elements/Home/NewsFeed";
 import CausesArea from "../Components/Elements/Home/CausesArea";
 import AboutArea from "../Components/Elements/Home/AboutArea";
-import SliderArea from "../Components/Elements/Home/SliderArea";
 import HeadArea from "../Components/Elements/Home/HeadArea";
 import AllOverPakistan from "../Components/Elements/Home/AllOverPakistan";
 import HelplineProject from "../Components/Elements/Home/HelplineProject";
