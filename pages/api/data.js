@@ -169,14 +169,7 @@ export const HelplineData = {
     {
       id: 33,
       category: ["Own School"],
-      img: (
-        <Image
-          src="/img/causes/cause13.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause13.jpg",
       img1: "/img/causes/alkitab3.jpg",
       img2: "/img/causes/alkitab4.jpg",
       detail:
@@ -190,14 +183,7 @@ export const HelplineData = {
     {
       id: 23,
       category: ["Own School"],
-      img: (
-        <Image
-          src="/img/causes/alkitab2.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/alkitab2.jpg",
       img1: "/img/causes/alkitab3.jpg",
       img2: "/img/causes/alkitab4.jpg",
       detail:
@@ -211,14 +197,7 @@ export const HelplineData = {
     {
       id: 24,
       category: ["Own School"],
-      img: (
-        <Image
-          src="/img/causes/alkitabghani1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/alkitabghani1.jpg",
       detail:
         "Al-Kitab School offers free education, fostering growth and community service.",
       description:
@@ -230,14 +209,7 @@ export const HelplineData = {
     {
       id: 25,
       category: ["Own School"],
-      img: (
-        <Image
-          src="/img/causes/rehmat.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/rehmat.jpeg",
       detail:
         "Aligarh Complex offers free education, breaking poverty through knowledge.",
       description:
@@ -249,14 +221,7 @@ export const HelplineData = {
     {
       id: 26,
       category: ["Own School"],
-      img: (
-        <Image
-          src="/img/causes/girlsschool.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/girlsschool.jpeg",
       detail: "Free education for brighter futures.",
       description:
         "CH. Rahmat Ali Superior Higher Secondary School, located in the Alighar Education Complex in Gojra, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The institution offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects, with a focus on academic excellence. In addition to academic subjects, the school also provides extracurricular activities that help to develop the student’s skills and talents. The institution encourages students to participate in sports, debates, and other activities that enable them to develop their leadership skills and teamwork abilities. The Alighar Education Complex is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The institution also provides free uniforms, textbooks, and school supplies to the students.",
@@ -267,14 +232,9 @@ export const HelplineData = {
     {
       id: 27,
       category: ["Own School"],
-      img: (
-        <Image
-          src="/img/causes/eman1.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/eman1.jpeg",
+      img1: "/img/causes/eman2.jpeg",
+      img2: "/img/causes/eman3.jpeg",
       detail: "Free education for brighter futures.",
       description:
         "Emman Maryam Smart School, Alighar Education Complex (Gojra) is a remarkable institution that is supported by Helpline NGO. The school is dedicated to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and enthusiastic, despite the financial challenges they may face. They are committed to their education and strive to excel academically. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been crucial in making this possible. By providing financial assistance, Helpline NGO is helping to ensure that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are designed to cater to the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
@@ -285,14 +245,7 @@ export const HelplineData = {
     {
       id: 18,
       category: ["Own School"],
-      img: (
-        <Image
-          src="/img/causes/irtiqa.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/irtiqa.jpeg",
       detail: "Empowering underprivileged youth through quality education.",
       description:
         "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
@@ -305,14 +258,7 @@ export const HelplineData = {
     {
       id: 19,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/nimro1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/nimro1.jpg",
       img1: "/img/causes/nimro2.jpg",
       img2: "/img/causes/nimro3.jpg",
       detail:
@@ -328,14 +274,7 @@ export const HelplineData = {
     {
       id: 20,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/bheel2.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/bheel2.jpg",
       img1: "/img/causes/bheel1.jpg",
       img2: "/img/causes/bheel3.jpg",
       detail:
@@ -350,14 +289,7 @@ export const HelplineData = {
     {
       id: 21,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/nabibakhsh1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/nabibakhsh1.jpg",
       img1: "/img/causes/nabibakhsh.jpg",
       img2: "/img/causes/nabibakhsh2.jpg",
       detail:
@@ -372,14 +304,7 @@ export const HelplineData = {
     {
       id: 22,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/sardar1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/sardar1.jpg",
       img1: "/img/causes/sardar2.jpg",
       img2: "/img/causes/sardar3.jpg",
       detail:
@@ -394,14 +319,7 @@ export const HelplineData = {
     {
       id: 9,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/roruschool.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/roruschool.jpg",
       img1: "/img/causes/roru1.jpg",
       img2: "/img/causes/roru2.jpg",
       detail:
@@ -416,14 +334,7 @@ export const HelplineData = {
     {
       id: 10,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/cause14.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause14.jpg",
       img1: "/img/causes/gpsbaglair1.jpg",
       img2: "/img/causes/gpsbaglair2.jpg",
       detail:
@@ -437,14 +348,7 @@ export const HelplineData = {
     {
       id: 11,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/kaktario1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/kaktario1.jpg",
       img1: "/img/causes/kaktario2.jpg",
       img2: "/img/causes/kaktario3.jpg",
       detail:
@@ -459,14 +363,7 @@ export const HelplineData = {
     {
       id: 12,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/cause16.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause16.jpg",
       img1: "/img/causes/gpsmisali.jpg",
       img2: "/img/causes/gpsmisali1.jpg",
       detail:
@@ -480,14 +377,7 @@ export const HelplineData = {
     {
       id: 13,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/katho1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/katho1.jpg",
       img1: "/img/causes/katho2.jpg",
       img2: "/img/causes/katho3.jpg",
       detail:
@@ -502,14 +392,7 @@ export const HelplineData = {
     {
       id: 34,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/nimro1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/nimro1.jpg",
       img1: "/img/causes/nimro2.jpg",
       img2: "/img/causes/nimro3.jpg",
       detail:
@@ -525,14 +408,7 @@ export const HelplineData = {
     {
       id: 35,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/PHOTO-2025-02-19-11-39-49.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/PHOTO-2025-02-19-11-39-49.jpg",
       img1: "/img/causes/PHOTO-2025-02-19-11-40-10(1).jpg",
       img2: "/img/causes/PHOTO-2025-02-19-11-40-10(2).jpg",
       detail:
@@ -548,14 +424,9 @@ export const HelplineData = {
     {
       id: 37,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg",
+      img1: "/img/causes/PHOTO-2025-02-19-11-40-10(1).jpg",
+      img2: "/img/causes/PHOTO-2025-02-19-11-40-10(2).jpg",
       img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
       img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
       detail:
@@ -571,14 +442,7 @@ export const HelplineData = {
     {
       id: 36,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/nimro1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/nimro1.jpg",
       img1: "/img/causes/nimro2.jpg",
       img2: "/img/causes/nimro3.jpg",
       detail:
@@ -594,14 +458,8 @@ export const HelplineData = {
     {
       id: 38,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/PHOTO-2025-02-19-11-45-31.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
+      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(1).jpg",
       img1: "/img/causes/PHOTO-2025-02-19-11-45-31(2).jpg",
       img2: "/img/causes/PHOTO-2025-02-19-11-45-31(3).jpg",
       detail:
@@ -619,14 +477,8 @@ export const HelplineData = {
     {
       id: 1,
       category: ["House Constructions"],
-      img: (
-        <Image
-          src="/img/causes/houseconstruction1.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/houseconstruction1.jpeg",
+
       img1: "/img/causes/construction2.jpeg",
       img2: "/img/causes/constructions1.jpeg",
       detail:
@@ -639,14 +491,7 @@ export const HelplineData = {
     {
       id: 2,
       category: ["House Constructions"],
-      img: (
-        <Image
-          src="/img/causes/houseconstruction2.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/houseconstruction2.jpeg",
       img1: "/img/causes/houseconstruction3.jpeg",
       img2: "/img/causes/houseconstruction4.jpeg",
       detail:
@@ -660,14 +505,8 @@ export const HelplineData = {
     {
       id: 3,
       category: ["House Constructions"],
-      img: (
-        <Image
-          src="/img/causes/house3.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/house3.jpeg",
+
       img1: "/img/causes/houseconstruction3.jpeg",
       img2: "/img/causes/houseconstruction4.jpeg",
       detail:
@@ -681,14 +520,8 @@ export const HelplineData = {
     {
       id: 4,
       category: ["House Constructions"],
-      img: (
-        <Image
-          src="/img/causes/house4.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/house4.jpeg",
+
       img1: "/img/causes/houseconstruction3.jpeg",
       img2: "/img/causes/houseconstruction4.jpeg",
       detail:
@@ -701,14 +534,7 @@ export const HelplineData = {
     {
       id: 5,
       category: ["Water"],
-      img: (
-        <Image
-          src="/img/causes/karbathwater.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/karbathwater.jpg",
       img1: "/img/causes/water1.jpg",
       img2: "/img/causes/water2.jpg",
       detail:
@@ -722,14 +548,7 @@ export const HelplineData = {
     {
       id: 6,
       category: ["Water"],
-      img: (
-        <Image
-          src="/img/causes/cause2.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause2.jpg",
       img1: "/img/causes/punjabwater2.jpg",
       img2: "/img/causes/punjabwater.jpg",
       detail:
@@ -743,14 +562,13 @@ export const HelplineData = {
     {
       id: 7,
       category: ["Water"],
-      img: (
-        <Image
-          src="/img/causes/cause3.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause3.jpg",
+      img1: "/img/causes/water1.jpg",
+      img2: "/img/causes/water2.jpg",
+      detail:
+        "Helpline ensures clean water in KPK: filtration plants, solar wells, hand pumps.",
+      description:
+        "In KPK, Helpline has initiated a clean water plant project to provide safe drinking water to underserved communities. This project aims to address the critical need for access to clean and hygienic water, which is essential for maintaining health and well-being. Helpline is committed to ensuring that this project is successful and that clean water is available for all those in need.",
       img1: "/img/causes/cause4.jpg",
       img2: "/img/causes/kpkwater2.jpg",
       detail:
@@ -764,14 +582,8 @@ export const HelplineData = {
     {
       id: 8,
       category: ["Water"],
-      img: (
-        <Image
-          src="/img/causes/cause4.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause4.jpg",
+
       img1: "/img/causes/blochistanwater.jpg",
       img2: "/img/causes/blochistanwater2.jpg",
       detail:
@@ -785,14 +597,7 @@ export const HelplineData = {
     {
       id: 9,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/roruschool.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/roruschool.jpg",
       img1: "/img/causes/roru1.jpg",
       img2: "/img/causes/roru2.jpg",
       detail:
@@ -807,14 +612,7 @@ export const HelplineData = {
     {
       id: 10,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/cause14.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause14.jpg",
       img1: "/img/causes/gpsbaglair1.jpg",
       img2: "/img/causes/gpsbaglair2.jpg",
       detail:
@@ -828,14 +626,7 @@ export const HelplineData = {
     {
       id: 11,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/kaktario1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/kaktario1.jpg",
       img1: "/img/causes/kaktario2.jpg",
       img2: "/img/causes/kaktario3.jpg",
       detail:
@@ -850,14 +641,7 @@ export const HelplineData = {
     {
       id: 12,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/cause16.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause16.jpg",
       img1: "/img/causes/gpsmisali.jpg",
       img2: "/img/causes/gpsmisali1.jpg",
       detail:
@@ -871,14 +655,7 @@ export const HelplineData = {
     {
       id: 13,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/katho1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/katho1.jpg",
       img1: "/img/causes/katho2.jpg",
       img2: "/img/causes/katho3.jpg",
       detail:
@@ -893,14 +670,7 @@ export const HelplineData = {
     {
       id: 34,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/nimro1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/nimro1.jpg",
       img1: "/img/causes/nimro2.jpg",
       img2: "/img/causes/nimro3.jpg",
       detail:
@@ -916,14 +686,7 @@ export const HelplineData = {
     {
       id: 35,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg",
       img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
       img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
       detail:
@@ -939,14 +702,7 @@ export const HelplineData = {
     {
       id: 14,
       category: ["Medical"],
-      img: (
-        <Image
-          src="/img/causes/cause10.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause10.jpg",
       img1: "/img/causes/medicalkarbath1.jpeg",
       img2: "/img/causes/karbathmedical.jpg",
       detail:
@@ -960,14 +716,7 @@ export const HelplineData = {
     {
       id: 15,
       category: ["Medical"],
-      img: (
-        <Image
-          src="/img/causes/cause11.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause11.jpg",
       img1: "/img/causes/hajramedical1.jpg",
       img2: "/img/causes/hajramedical2.jpg",
       detail:
@@ -981,14 +730,7 @@ export const HelplineData = {
     {
       id: 16,
       category: ["Medical"],
-      img: (
-        <Image
-          src="/img/causes/cause12.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause12.jpg",
       img1: "/img/causes/cataract1.jpg",
       img2: "/img/causes/cataract2.jpeg",
       detail:
@@ -1002,14 +744,7 @@ export const HelplineData = {
     {
       id: 17,
       category: ["Medical"],
-      img: (
-        <Image
-          src="/img/causes/mithimedicalcamp1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/mithimedicalcamp1.jpg",
       img1: "/img/causes/mithi1.png",
       img2: "/img/causes/mithi2.jpg",
       detail:
@@ -1023,14 +758,9 @@ export const HelplineData = {
     {
       id: 18,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/irtiqa.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/irtiqa.jpeg",
+      img1: "/img/causes/irtiqa1.jpg",
+      img2: "/img/causes/irtiqa2.jpg",
       detail: "Empowering underprivileged youth through quality education.",
       description:
         "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
@@ -1041,14 +771,7 @@ export const HelplineData = {
     {
       id: 19,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/nimro1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/nimro1.jpg",
       img1: "/img/causes/nimro2.jpg",
       img2: "/img/causes/nimro3.jpg",
       detail:
@@ -1064,14 +787,7 @@ export const HelplineData = {
     {
       id: 20,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/bheel2.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/bheel2.jpg",
       img1: "/img/causes/bheel1.jpg",
       img2: "/img/causes/bheel3.jpg",
       detail:
@@ -1086,14 +802,7 @@ export const HelplineData = {
     {
       id: 21,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/nabibakhsh1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/nabibakhsh1.jpg",
       img1: "/img/causes/nabibakhsh.jpg",
       img2: "/img/causes/nabibakhsh2.jpg",
       detail:
@@ -1108,14 +817,7 @@ export const HelplineData = {
     {
       id: 22,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/sardar1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/sardar1.jpg",
       img1: "/img/causes/sardar2.jpg",
       img2: "/img/causes/sardar3.jpg",
       detail:
@@ -1130,14 +832,7 @@ export const HelplineData = {
     {
       id: 36,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/nimro1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/nimro1.jpg",
       img1: "/img/causes/nimro2.jpg",
       img2: "/img/causes/nimro3.jpg",
       detail:
@@ -1153,14 +848,7 @@ export const HelplineData = {
     {
       id: 37,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg",
       img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
       img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
       detail:
@@ -1176,14 +864,7 @@ export const HelplineData = {
     {
       id: 23,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/alkitab2.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/alkitab2.jpg",
       img1: "/img/causes/alkitab3.jpg",
       img2: "/img/causes/alkitab4.jpg",
       detail:
@@ -1197,14 +878,9 @@ export const HelplineData = {
     {
       id: 24,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/alkitabghani1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/alkitabghani1.jpg",
+      img1: "/img/causes/alkitabghani2.jpg",
+      img2: "/img/causes/alkitabghani3.jpg",
       detail:
         "Al-Kitab School offers free education, fostering growth and community service.",
       description:
@@ -1216,14 +892,9 @@ export const HelplineData = {
     {
       id: 25,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/rehmat.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/rehmat.jpeg",
+      img1: "/img/causes/rehmat2.jpeg",
+      img2: "/img/causes/rehmat3.jpeg",
       detail:
         "Aligarh Complex offers free education, breaking poverty through knowledge.",
       description:
@@ -1235,14 +906,9 @@ export const HelplineData = {
     {
       id: 26,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/girlsschool.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/girlsschool.jpeg",
+      img1: "/img/causes/girlsschool2.jpeg",
+      img2: "/img/causes/girlsschool3.jpeg",
       detail: "Free education for brighter futures.",
       description:
         "CH. Rahmat Ali Superior Higher Secondary School, located in the Alighar Education Complex in Gojra, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The institution offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects, with a focus on academic excellence. In addition to academic subjects, the school also provides extracurricular activities that help to develop the student’s skills and talents. The institution encourages students to participate in sports, debates, and other activities that enable them to develop their leadership skills and teamwork abilities. The Alighar Education Complex is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The institution also provides free uniforms, textbooks, and school supplies to the students.",
@@ -1253,14 +919,7 @@ export const HelplineData = {
     {
       id: 27,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/eman1.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/eman1.jpeg",
       detail: "Free education for brighter futures.",
       description:
         "Emman Maryam Smart School, Alighar Education Complex (Gojra) is a remarkable institution that is supported by Helpline NGO. The school is dedicated to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and enthusiastic, despite the financial challenges they may face. They are committed to their education and strive to excel academically. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been crucial in making this possible. By providing financial assistance, Helpline NGO is helping to ensure that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are designed to cater to the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
@@ -1272,14 +931,7 @@ export const HelplineData = {
     {
       id: 28,
       category: ["Medical"],
-      img: (
-        <Image
-          src="/img/causes/jinah1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/jinah1.jpg",
       detail: "Helpline provided free meals to patients at Jinnah Hospital.",
       description:
         "Jinnah Hospital is one of the largest hospitals in Lahore, servicing over 1 million patients each year. In 2019, Helpline Social Welfare Foundation served free meals for patients at Jinnah Hospital, showing their commitment to assisting those in need. The initiative provided over 1,000 meals to patients and their families, helping to ease the burden of affording food. All the patients and their families greatly appreciated this generous gesture and were very thankful for the assistance. The initiative also raised awareness about the importance of providing aid to those in need, and it has been praised by many for its impact.",
@@ -1290,14 +942,7 @@ export const HelplineData = {
     {
       id: 29,
       category: ["Medical"],
-      img: (
-        <Image
-          src="/img/causes/Jinnah2.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/Jinnah2.jpg",
       detail: "Helpline provided free meals to patients at Munshi Hospital.",
       description:
         "Mian Muhammad Munshi Hospital is a government–run hospital in Lahore, Pakistan. It is a charitable hospital providing medical care to people of all economic backgrounds. The Helpline Social Welfare Foundation recently served free meals to patients at Mian Muhammad Munshi Hospital. This initiative was taken to provide nutritious and hygienic meals to those in need and to show the foundation’s commitment to the community. The hospital’s staff was thankful for the generous gesture and appreciated the foundation for their kind-heartedness.",
@@ -1308,14 +953,7 @@ export const HelplineData = {
     {
       id: 30,
       category: ["Medical"],
-      img: (
-        <Image
-          src="/img/causes/general1.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/general1.jpg",
       detail: "Helpline provided free meals to patients at General Hospital.",
       description:
         "Helpline Social Welfare Foundation recently provided free meals to patients at General Hospital in Lahore, Pakistan. This act of kindness was made possible by generous donations from several individuals and organizations, which allowed the foundation to provide meals to patients and their families. In addition to providing meals, the foundation also distributed bedsheets and blankets to patients who needed them. This genuinely heartwarming gesture enabled many people to have a better hospital stay. The foundation’s mission is to provide essential services to people in need, and this service at General Hospital is a testament to their commitment.",
@@ -1326,14 +964,7 @@ export const HelplineData = {
     {
       id: 31,
       category: ["Medical"],
-      img: (
-        <Image
-          src="/img/causes/khawaja.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/khawaja.jpg",
       detail: "Helpline provided free meals to patients at Kot Khawaja Saeed.",
       description:
         "Helpline Social Welfare Foundation recently organized a unique initiative in the Government Hospital Kot Khawaja Saeed, providing free meals to patients. This noble cause was a great success, as the Hospital staff, patients and their families appreciated this kind gesture. The meals were prepared and distributed by the volunteers of the Foundation, and they brought smiles to the faces of the patients. It was a great way to show the hospital’s commitment to its patients’ well-being and ensure they have access to nutritious meals. This Helpline Social Welfare Foundation initiative was a great success, and it is hoped that Helpline will take up more such initiatives in the future to help the people of Pakistan.",
@@ -1344,14 +975,7 @@ export const HelplineData = {
     {
       id: 33,
       category: ["Own School"],
-      img: (
-        <Image
-          src="/img/causes/cause13.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause13.jpg",
       img1: "/img/causes/alkitab3.jpg",
       img2: "/img/causes/alkitab4.jpg",
       detail:
@@ -1365,14 +989,7 @@ export const HelplineData = {
     {
       id: 38,
       category: ["Adopted Schools"],
-      img: (
-        <Image
-          src="/img/causes/PHOTO-2025-02-19-11-45-31.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
       img1: "/img/causes/PHOTO-2025-02-19-11-45-31(2).jpg",
       img2: "/img/causes/PHOTO-2025-02-19-11-45-31(3).jpg",
       detail:
@@ -1390,14 +1007,7 @@ export const HelplineData = {
     {
       id: 1,
       category: ["House Constructions"],
-      img: (
-        <Image
-          src="/img/causes/houseconstruction1.jpeg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/houseconstruction1.jpeg",
       img1: "/img/causes/construction2.jpeg",
       img2: "/img/causes/constructions1.jpeg",
       detail:
@@ -1411,14 +1021,7 @@ export const HelplineData = {
     {
       id: 8,
       category: ["Water"],
-      img: (
-        <Image
-          src="/img/causes/cause4.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/cause4.jpg",
       img1: "/img/causes/blochistanwater.jpg",
       img2: "/img/causes/blochistanwater2.jpg",
       detail:
@@ -1432,14 +1035,7 @@ export const HelplineData = {
     {
       id: 9,
       category: ["Education"],
-      img: (
-        <Image
-          src="/img/causes/roruschool.jpg"
-          layout="responsive"
-          width={350}
-          height={225}
-        />
-      ),
+      img: "/img/causes/roruschool.jpg",
       img1: "/img/causes/roru1.jpg",
       img2: "/img/causes/roru2.jpg",
       detail:

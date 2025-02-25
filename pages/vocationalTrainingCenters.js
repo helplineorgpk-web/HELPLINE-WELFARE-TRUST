@@ -10,7 +10,6 @@ export default function VocationalTrainingCenters() {
       <VocationalTrainingCentersHeader />
       <TrainingCenterDetails />
       <WayToDonate />
-
     </Layout2>
   );
 }

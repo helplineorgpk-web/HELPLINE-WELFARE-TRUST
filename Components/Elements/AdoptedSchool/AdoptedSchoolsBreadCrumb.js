@@ -5,7 +5,10 @@ export default function AdoptedSchoolsBreadCrumb() {
   return (
     <section
       className="breadcrumb_area breadcrumb_overlay"
-      style={{ backgroundImage: "url(/img/causes/alkitab2.jpg)", objectFit: "cover" }}
+      style={{
+        backgroundImage: "url(/img/causes/kaktario2.jpg)",
+        objectFit: "cover",
+      }}
     >
       <div className="container">
         <div className="row">

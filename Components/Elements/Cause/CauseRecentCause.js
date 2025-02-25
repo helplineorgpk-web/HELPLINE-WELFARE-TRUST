@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import styles from "../../../public/css/WayToDonate.module.css";
+import Image from "next/image";
 export default function CauseRecentCause({ categories, causes }) {
   const [filter, setFilter] = useState(() => {
     if (categories?.AllCategories) {
@@ -84,44 +85,32 @@ export default function CauseRecentCause({ categories, causes }) {
             role="tabpanel"
             aria-labelledby="nav-home-tab"
           >
-            <div className="row">
+            <div className={styles.home_card}>
               {projects?.length > 0 ? (
                 projects.map((item, i) => (
-                  <div className="col-xxl-4 col-lg-4 col-md-6" key={item.id}>
-                    <div className="single_cause mb-30">
-                      <div className="single_cause_img_wrapper">
-                        <div
-                          className="single_cause_img w_img img_effect_white"
-                          onClick={() => handleNavigation(item)}
-                        >
-                          <Link href={`/cause-details?id=${item.id}`}>
-                            {item.img}
-                          </Link>
+                  <div className={styles.flex} key={item.id}>
+                    <div className={styles.single_cause}>
+                      <div className={styles.img}>
+                        <div onClick={() => handleNavigation(item)}>
+                          <Image
+                            src={item.img}
+                            layout="responsive"
+                            width={0}
+                            height={0}
+                            className={styles.img}
+                          />
                         </div>
                       </div>
-                      <div className="single_cause_content">
-                        <div className="single_cause">
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                            }}
-                          >
-                            <span
-                              style={{
-                                fontWeight: "bold",
-                                color: item.color,
-                              }}
-                            >
-                              {item.adopted}
-                            </span>
-                          </div>
-                          <h3 className="title">
-                            <Link href="#">{item.desc}</Link>
+                      <div className={styles.single_cause_content}>
+                        <div className={styles.title_area}>
+                          <span>{item.category[0]}</span>
+                          <h3 className={styles.title}>
+                            <Link href="/cause-details">{item.desc}</Link>
                           </h3>
                         </div>
-                        <div className="single_cause_meta">{item.detail}</div>
+                        <div className={styles.single_cause_meta}>
+                          {item.detail}
+                        </div>
                         <div
                           onClick={() => handleNavigation(item)}
                           style={{

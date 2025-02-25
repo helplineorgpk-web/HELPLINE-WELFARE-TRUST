@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function CauseDetailsArea({
   title,
   image,
@@ -15,7 +15,9 @@ export default function CauseDetailsArea({
         <div className="row">
           <div className="col-xxl-8 col-xl-8 col-lg-7">
             <div className="single_details_wrapper mb-40">
-              <div className="single_details_img">{image}</div>
+              <div className="single_details_img">
+                <Image src={image} alt="img" height={500} width={2000} />
+              </div>
               <div className="single_details_content">
                 <div className="single_donation_content single_border pb-45 mb-45">
                   <div className="section_title">
@@ -56,14 +58,20 @@ export default function CauseDetailsArea({
                 </div>
                 <div className="person_designation widget_mb25">
                   <h5 className="person_nam f_size24">
-                    <Link href="/volunteer-details" className="person_nam f_size24">
+                    <Link
+                      href="/volunteer-details"
+                      className="person_nam f_size24"
+                    >
                       Muhammad Iqbal Khan
                     </Link>
                   </h5>
                   <span className="person_surname">Founder,Helpline Co.</span>
                 </div>
                 <div className="feature_buttons widget_buttons">
-                  <Link href="/donation" className="g_btn hbtn_1 to_right1 i_left rad-30">
+                  <Link
+                    href="/donation"
+                    className="g_btn hbtn_1 to_right1 i_left rad-30"
+                  >
                     <i className="fal fa-heart"></i>Donate Now<span></span>
                   </Link>
                   <Link href="#" className="reply_btn theme-2">

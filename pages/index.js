@@ -11,6 +11,7 @@ import HelplineProject from "../Components/Elements/Home/HelplineProject";
 import WayToDonate from "../Components/Elements/Home/WayToDonate";
 import { HelplineData } from "../pages/api/data";
 import Meta from "../Components/SEO/Meta";
+import Educations from "../Components/Elements/Home/Educations";
 
 const data = {
   Water: "Recent development",
@@ -29,6 +30,7 @@ export default function Home() {
       <Layout1>
         <main>
           <HeadArea />
+          <Educations />
           <AboutArea />
           <AllOverPakistan />
           <CausesArea causes={cause} data={data} />

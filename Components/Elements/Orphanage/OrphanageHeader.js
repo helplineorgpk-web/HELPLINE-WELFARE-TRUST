@@ -5,7 +5,7 @@ export default function OrphanageHeader() {
   return (
     <section
       className="breadcrumb_area breadcrumb_overlay"
-      style={{ background: "url(/img/bg/breadcrum_bg_2.jpg)" }}
+      style={{ background: "url(/img/orphanage/PHOTO-2025-02-19-11-48-25.jpg)" }}
     >
       <div className="container">
         <div className="row">

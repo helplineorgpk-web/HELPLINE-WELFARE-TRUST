@@ -1,7 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -12,7 +11,7 @@ function HelplineProject() {
   const HelplineProject = HelplineData.slidesData;
   return (
     <section style={styles.ctaArea}>
-      <h2 style={styles.heading}>How you can help</h2>
+      <h2 style={styles.heading}>How You Can Help</h2>
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
@@ -26,32 +25,20 @@ function HelplineProject() {
         }}
       >
         {HelplineProject.map((slide, index) => (
-          <SwiperSlide className="single_cause mb-0" key={index}>
-            <Link href={slide.link} className="img_effect_white">
-              <img src={slide.image} alt="img" />
-            </Link>
-            <div
-              className="single_cause_contents"
-              style={{
-                background: `linear-gradient(135deg,#d6cbc6, #65cabb)`,
-                padding: "20px",
-              }}
-            >
-              <p
-                style={{
-                  color: "#263b5d",
-                }}
-              >
-                {slide.label}
-              </p>
-              <div>
-                <Link href={slide.link} className="cause_title_link">
+          <SwiperSlide className="single_cause" key={index}>
+            <div style={styles.card}>
+              <Link href={slide.link} className="img_effect_white">
+                <img src={slide.image} alt="img" style={styles.image} />
+              </Link>
+              <div style={styles.cardContent}>
+                <p style={styles.label}>{slide.label}</p>
+                <Link href={slide.link} style={styles.description}>
                   {slide.description}
                 </Link>
+                <Link href={slide.link} style={styles.donateButton}>
+                  Donate Now <span></span>
+                </Link>
               </div>
-              <Link href={slide.link} className="g_btn theme1_bg to_right2 rad-50">
-                Donate Now <span></span>
-              </Link>
             </div>
           </SwiperSlide>
         ))}
@@ -63,23 +50,66 @@ function HelplineProject() {
 const styles = {
   ctaArea: {
     background:
-      "linear-gradient(135deg, rgba(48, 65, 88, 0.8), rgba(76, 161, 175, 0.8)), url(/img/featureEvent/fevent_bg.jpg)",
+      "linear-gradient(135deg, rgba(30, 40, 55, 0.9), rgba(66, 180, 200, 0.9)), url(/img/featureEvent/fevent_bg.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    padding: "60px",
-    borderRadius: "8px",
-  },
-  heading: {
-    fontSize: "2.5rem",
-    fontWeight: "700",
-    color: "#f8f9fa",
-    marginBottom: "2.5rem",
-    textTransform: "uppercase",
+    padding: "80px 20px",
+    borderRadius: "12px",
     textAlign: "center",
   },
-  readmore: {
-    marginTop: "20px",
-    color: "white",
+  heading: {
+    fontSize: "2.8rem",
+    fontWeight: "700",
+    color: "#fff",
+    marginBottom: "3rem",
+    textTransform: "uppercase",
+  },
+  card: {
+    background: "#fff",
+    borderRadius: "12px",
+    overflow: "hidden",
+    boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
+    transition: "transform 0.3s ease-in-out",
+  },
+  image: {
+    width: "100%",
+    height: "200px",
+    objectFit: "cover",
+    borderTopLeftRadius: "12px",
+    borderTopRightRadius: "12px",
+  },
+  cardContent: {
+    padding: "20px",
+    background: "linear-gradient(135deg, #d6cbc6, #65cabb)",
+    borderBottomLeftRadius: "12px",
+    borderBottomRightRadius: "12px",
+    textAlign: "center",
+  },
+  label: {
+    color: "#263b5d",
+    fontSize: "1rem",
+    fontWeight: "600",
+    marginBottom: "10px",
+  },
+  description: {
+    color: "#333",
+    fontSize: "1.1rem",
+    textDecoration: "none",
+    fontWeight: "500",
+    display: "block",
+    marginBottom: "15px",
+  },
+  donateButton: {
+    display: "inline-block",
+    padding: "12px 25px",
+    background: "#ff6f61",
+    color: "#fff",
+    fontSize: "1rem",
+    fontWeight: "600",
+    borderRadius: "50px",
+    textDecoration: "none",
+    transition: "0.3s",
   },
 };
+
 export default HelplineProject;
