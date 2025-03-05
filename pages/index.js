@@ -5,13 +5,13 @@ import FeaturedArea from "../Components/Elements/Home/FeaturedArea";
 import NewsFeed from "../Components/Elements/Home/NewsFeed";
 import CausesArea from "../Components/Elements/Home/CausesArea";
 import AboutArea from "../Components/Elements/Home/AboutArea";
-import SliderArea from "../Components/Elements/Home/SliderArea";
 import HeadArea from "../Components/Elements/Home/HeadArea";
 import AllOverPakistan from "../Components/Elements/Home/AllOverPakistan";
 import HelplineProject from "../Components/Elements/Home/HelplineProject";
 import WayToDonate from "../Components/Elements/Home/WayToDonate";
 import { HelplineData } from "../pages/api/data";
 import Meta from "../Components/SEO/Meta";
+import Educations from "../Components/Elements/Home/Educations";
 
 const data = {
   Water: "Recent development",
@@ -22,15 +22,15 @@ export default function Home() {
   const cause = HelplineData.homeCauses;
   return (
     <>
-      <Meta 
+      <Meta
         title="Helpline Welfare Organization - Supporting Communities Across Pakistan"
         description="Join Helpline Welfare Organization in our mission to provide support through disaster relief, family welfare, and community development projects across Pakistan. Make a difference today."
         keywords="welfare organization, charity pakistan, disaster relief, family welfare, community support, donations, zakat, sadqa, welfare projects"
       />
       <Layout1>
         <main>
-          {/* <SliderArea />    */}
           <HeadArea />
+          <Educations />
           <AboutArea />
           <AllOverPakistan />
           <CausesArea causes={cause} data={data} />

@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function FAQBreadCrumb() {
   return (
-    //breadcrumb area start
     <section
       className="breadcrumb_area breadcrumb_overlay"
       style={{ background: "url(/img/bg/breadcrum_bg_2.jpg)" }}
@@ -14,9 +13,7 @@ export default function FAQBreadCrumb() {
             <div className="breadcrumb_section">
               <ul className="breadcrumb-list volunteer_breadcrumb">
                 <li className="bhas_border">
-                  <Link href="/">
-                  Home
-                  </Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
                   <span className="active">Contact</span>

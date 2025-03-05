@@ -9,13 +9,17 @@ export default function VolunteerAbout() {
             <div className="about_team_img pr-20">
               <div className="about_signle_img">
                 <img
-                  src="/img/about/about_big_1.jpg"
+                  src="/img/about/Picture1.png"
                   alt="img"
+                  height={500}
+                  width={500}
                   className="big_single"
                 />
                 <img
-                  src="/img/about/about_small1.jpg"
+                  src="/img/about/Picture5.png"
                   alt="img"
+                  height={300}
+                  width={350}
                   className="small_single"
                 />
               </div>
