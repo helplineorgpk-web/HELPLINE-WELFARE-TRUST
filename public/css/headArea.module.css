@@ -1,7 +1,7 @@
 .head_area {
   position: relative;
   background: url("/img/bg/headArea.jpeg") no-repeat center center/cover;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -20,31 +20,43 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .news {
   text-align: center;
   background-color: white;
+  font-weight: bold;
+  padding: 5px;
 }
+
 .main_container {
   width: 100%;
+  position: relative;
+}
+
+.sliders {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .text_container {
-  position: relative;
-  z-index: 2;
-  max-width: 600px;
+  z-index: 10;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .heading {
   font-weight: bold;
   margin: 0;
   color: white;
-  font-size: 70px;
+  font-size: 50px;
+  text-align: center;
 }
+
 .pergraph {
-  font-size: 22px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .sideSlider {
@@ -70,7 +82,7 @@
 
 .card {
   background: #ffffff;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -81,22 +93,25 @@
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 5px;
-  background-color: #65cabb;
+  background-color: #1d9c91;
   border-radius: 5px;
   padding: 10px;
 }
 
 .slideDescription {
-  color: #666;
-  font-size: 12px;
+  color: #444;
+  font-size: 14px;
   margin-bottom: 10px;
   text-align: start;
-  padding: 0 10px 0px 15px;
+  padding: 0 15px;
 }
+
 .project {
   text-align: start;
-  padding: 0 10px 0px 15px;
+  padding: 0 15px;
+  font-weight: bold;
 }
+
 .cardContainer {
   display: flex;
   justify-content: center;
@@ -107,24 +122,27 @@
 .imageCard {
   margin-top: 10px;
   background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
 }
 
 .imageCard:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cardImage {
   border-radius: 8px;
   object-fit: cover;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
 }
 
 .wave {
@@ -142,8 +160,38 @@
   height: 80px;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .head_area {
+    height: auto;
+    padding: 50px 5%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .text_container {
+    text-align: center;
+  }
+
+  .sliders {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 768px) {
   .sideSlider {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .sideSlider:nth-child(n + 2) {
+    display: none;
+  }
+
+  .sliders {
     display: none;
   }
 
@@ -152,6 +200,12 @@
   }
 
   .imageCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .cardImage {
     width: 80px;
     height: 80px;
   }

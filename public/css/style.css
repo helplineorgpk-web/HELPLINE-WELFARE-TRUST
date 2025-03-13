@@ -13896,7 +13896,7 @@ input.main-search-input:-ms-input-placeholder {
   padding: 0 15px;
 }
 .main-menu ul li ul.submenu li a {
-    font-size: 14.5px;
+  font-size: 14.5px;
   padding: 8px 0;
   display: block;
   color: var(--clr-common-menu-color);
@@ -13952,7 +13952,7 @@ input.main-search-input:-ms-input-placeholder {
   position: absolute;
   left: 0;
   top: 100%;
-  width: 250px;
+  width: 270px;
   border-top: 4px solid var(--clr-theme-1);
   background-color: var(--clr-common-white);
   text-align: start;

@@ -38,6 +38,7 @@ const sliderData = [
 
 export default function HeadArea() {
   const [isPaused, setIsPaused] = useState(false);
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 
   return (
     <div className={styles.head_area}>
@@ -51,64 +52,76 @@ export default function HeadArea() {
           </p>
         </div>
 
-        <div
-          className={styles.sideSlider}
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
-          <Swiper
-            direction="vertical"
-            spaceBetween={20}
-            slidesPerView={1}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: isPaused,
-            }}
-            loop={true}
-            modules={[Autoplay]}
-            className={styles.swiperContainer}
-          >
-            {sliderData.map((slide) => (
-              <SwiperSlide key={slide.id} className={styles.slideItem}>
-                <h5 className={styles.news}>News</h5>
-                <div className={styles.card}>
-                  <h3 className={styles.slideTitle}>{slide.title}</h3>
-
-                  <div className={styles.imageCard}>
-                    <div>
-                      <h6 className={styles.project}>{slide.project}</h6>
-                      <p className={styles.slideDescription}>{slide.content}</p>
+        <div className={styles.sliders}>
+          {[...(isMobile ? [0] : [0, 1, 2])].map((index) => (
+            <div
+              key={index}
+              className={styles.sideSlider}
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+            >
+              <Swiper
+                direction="vertical"
+                spaceBetween={20}
+                slidesPerView={1}
+                autoplay={
+                  isPaused
+                    ? false
+                    : { delay: 4000, disableOnInteraction: false }
+                }
+                loop={true}
+                modules={[Autoplay]}
+                className={styles.swiperContainer}
+              >
+                {sliderData.map((slide) => (
+                  <SwiperSlide key={slide.id} className={styles.slideItem}>
+                    <h5 className={styles.news}>News</h5>
+                    <div className={styles.card}>
+                      <h3 className={styles.slideTitle}>{slide.title}</h3>
+                      <div className={styles.imageCard}>
+                        <div>
+                          <h6 className={styles.project}>{slide.project}</h6>
+                          <p className={styles.slideDescription}>
+                            {slide.content}
+                          </p>
+                        </div>
+                        <div>
+                          <Image
+                            src={slide.images}
+                            alt={slide.title}
+                            width={100}
+                            height={100}
+                            className={styles.cardImage}
+                          />
+                          <Image
+                            src={slide.images}
+                            alt={slide.title}
+                            width={100}
+                            height={100}
+                            className={styles.cardImage}
+                          />
+                          <Image
+                            src={slide.images}
+                            alt={slide.title}
+                            width={100}
+                            height={100}
+                            className={styles.cardImage}
+                          />
+                          <Image
+                            src={slide.images}
+                            alt={slide.title}
+                            width={100}
+                            height={100}
+                            className={styles.cardImage}
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <Image
-                      src={slide.images}
-                      alt={slide.title}
-                      width={100}
-                      height={100}
-                      className={styles.cardImage}
-                    />
-                  </div>
-                </div>
-                <div className={styles.card}>
-                  <h3 className={styles.slideTitle}>{slide.title}</h3>
-
-                  <div className={styles.imageCard}>
-                    <Image
-                      src={slide.images}
-                      alt={slide.title}
-                      width={100}
-                      height={100}
-                      className={styles.cardImage}
-                    />
-                    <div>
-                      <h6 className={styles.project}>{slide.project}</h6>
-                      <p className={styles.slideDescription}>{slide.content}</p>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          ))}
         </div>
       </div>
 

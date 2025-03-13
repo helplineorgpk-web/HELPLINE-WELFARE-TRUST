@@ -13,30 +13,6 @@ export default function Header1({ toggleTrueFalseInfo }) {
         background: "white",
       }}
     >
-      <div className={`${styles.header_top_area} d-none d-lg-block`}>
-        <div className="container">
-          <div className="row align-items-center">
-            <div>
-              <div className={styles.marqueeContainer}>
-                <div className={styles.marquee}>
-                  1: This Ramzan, Helpline Welfare Trust is distributing Ramzan
-                  Rations to 4000 destitute and deserving families. Join us in
-                  spreading hope and blessings to those in need. Together, we
-                  can make a difference and bring joy to countless lives this
-                  holy month. This Ramzan, Helpline Welfare Trust is
-                  distributing 2 tons of dates to destitute and deserving
-                  families. Dates, a symbol of blessings and sustenance, will
-                  bring joy and nourishment to countless lives. Helpline is
-                  organizing a Sports Gala at Al-Kitab Higher Secondary School,
-                  Rana Town, to promote extracurricular activities and foster a
-                  spirit of healthy competition among students. The event aims
-                  to encourage teamwork, sportsmanship, and physical well-being.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div id="sticky-header" className="header_menu_area res_padd">
         <div className="container">
           <div className="row align-items-center">
@@ -67,6 +43,30 @@ export default function Header1({ toggleTrueFalseInfo }) {
                   >
                     <i className="fal fa-bars"></i>
                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={`${styles.header_top_area} d-none d-lg-block`}>
+        <div className="container">
+          <div className="row align-items-center">
+            <div>
+              <div className={styles.marqueeContainer}>
+                <div className={styles.marquee}>
+                  1: This Ramzan, Helpline Welfare Trust is distributing Ramzan
+                  Rations to 4000 destitute and deserving families. Join us in
+                  spreading hope and blessings to those in need. Together, we
+                  can make a difference and bring joy to countless lives this
+                  holy month. This Ramzan, Helpline Welfare Trust is
+                  distributing 2 tons of dates to destitute and deserving
+                  families. Dates, a symbol of blessings and sustenance, will
+                  bring joy and nourishment to countless lives. Helpline is
+                  organizing a Sports Gala at Al-Kitab Higher Secondary School,
+                  Rana Town, to promote extracurricular activities and foster a
+                  spirit of healthy competition among students. The event aims
+                  to encourage teamwork, sportsmanship, and physical well-being.
                 </div>
               </div>
             </div>

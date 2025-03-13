@@ -21,10 +21,26 @@ export default function NavFullscreen() {
               <Link href="/volunteer">Volunteer</Link>
             </li>
             <li>
-              <Link href="/videos">Media</Link>
+              <Link href="/" className="innerli">
+                Media <span> ▶</span>
+              </Link>
+              <ul className="submenu">
+                <li>
+                  <Link href="/videos">Videos</Link>
+                </li>
+                <li>
+                  <Link href="/images">Images</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link href="/mission">Mission</Link>
+            </li>
+            <li>
+              <Link href="/registration">Registration Documents</Link>
+            </li>
+            <li>
+              <Link href="/certifications">Certications</Link>
             </li>
           </ul>
         </li>
@@ -46,7 +62,9 @@ export default function NavFullscreen() {
                   <Link href="/orphanage">Orphanage Abbottabad</Link>
                 </li>
                 <li>
-                  <Link href="/vocationalTrainingCenters">Vocational Training centers</Link>
+                  <Link href="/vocationalTrainingCenters">
+                    Vocational Training centers
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -102,7 +120,7 @@ export default function NavFullscreen() {
               <Link href="/cataract">Cataract Program</Link>
             </li>
             <li className="menu-item-has-children">
-              <Link href="/itlab">IT Labs</Link>
+              <Link href="/itlab">Digital Skills</Link>
               <ul className="submenu">
                 <li>
                   <Link href="/itlab">IT Labs</Link>
@@ -115,18 +133,35 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/event">Events</Link>
+          <Link href="/event">Get Registered As</Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/registration">Registration Documents</Link>
+              <Link href="/needy">Needy support/ Medical</Link>
             </li>
             <li>
-              <Link href="/certifications">Certications</Link>
+              <Link href="/jobSeeker">Job seeker/ Internee</Link>
+            </li>
+            <li>
+              <Link href="/studentSkillWorker">Student/ Skill Worker</Link>
             </li>
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/blog">News</Link>
+          <Link href="/event">Join us As</Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/donation">Donor</Link>
+            </li>
+            <li>
+              <Link href="/sponsor">Sponsor</Link>
+            </li>
+            <li>
+              <Link href="/volunteer">Volunteer</Link>
+            </li>
+            <li>
+              <Link href="/consultant">Consultant & Friend</Link>
+            </li>
+          </ul>
         </li>
         <li className="menu-item-has-children">
           <Link href="/contact">Contact</Link>
