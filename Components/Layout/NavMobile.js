@@ -39,11 +39,17 @@ export default function NavMobile() {
           <li>
             <Link href="/mission">Mission</Link>
           </li>
+          <li>
+            <Link href="/registration">Registration Documents</Link>
+          </li>
+          <li>
+            <Link href="/certifications">Certifications</Link>
+          </li>
         </ul>
       </li>
       <li className="menu-item-has-children">
         <Link href="#" className="has-arrow">
-          Social Welfare
+          Our Causes
         </Link>
         <ul className="sub-menu">
           <li>
@@ -133,14 +139,36 @@ export default function NavMobile() {
       </li>
       <li className="menu-item-has-children">
         <Link href="#" className="has-arrow">
-          Legal
+          Get Registered As
         </Link>
         <ul className="sub-menu">
           <li>
-            <Link href="/registration">Registration Documents</Link>
+            <Link href="/needy">Needy support/ Medical</Link>
           </li>
           <li>
-            <Link href="/certifications">Certifications</Link>
+            <Link href="/jobSeeker">Job seeker/ Internee</Link>
+          </li>
+          <li>
+            <Link href="/studentSkillWorker">Student/ Skill Worker</Link>
+          </li>
+        </ul>
+      </li>
+      <li className="menu-item-has-children">
+        <Link href="#" className="has-arrow">
+          Join us As
+        </Link>
+        <ul className="sub-menu">
+          <li>
+            <Link href="/donation">Donor</Link>
+          </li>
+          <li>
+            <Link href="/sponsor">Sponsor</Link>
+          </li>
+          <li>
+            <Link href="/volunteer">Volunteer</Link>
+          </li>
+          <li>
+            <Link href="/consultant">Consultant & Friend</Link>
           </li>
         </ul>
       </li>

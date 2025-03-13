@@ -44,7 +44,6 @@ export default function Layout1({ children }) {
         className={`offcanvas-overlay ${isToggledInfo ? "overlay-open" : ""}`}
       ></div>
 
-      {/* back to top Start  */}
       <a
         href="#"
         className={`progress-wrap ${scroll ? "active-progress" : ""}`}
@@ -58,7 +57,6 @@ export default function Layout1({ children }) {
           <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
       </a>
-      {/* back to top end  */}
 
       {children}
 
