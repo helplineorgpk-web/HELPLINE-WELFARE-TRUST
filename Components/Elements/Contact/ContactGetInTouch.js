@@ -126,7 +126,10 @@ export default function ContactGetInTouch() {
                   </Link>
                   <div className="contact_location_text">
                     <span>Email</span>
-                    <Link href="mailto:info@helpline.org.pk" className="contact_address_title">
+                    <Link
+                      href="mailto:info@helpline.org.pk"
+                      className="contact_address_title"
+                    >
                       info@helpline.org.pk
                     </Link>
                   </div>
@@ -137,10 +140,16 @@ export default function ContactGetInTouch() {
                   </Link>
                   <div className="contact_location_text">
                     <span>Phone</span>
-                    <Link href="tel:+92-42-3515 7374" className="contact_address_title">
+                    <Link
+                      href="tel:+92-42-3515 7374"
+                      className="contact_address_title"
+                    >
                       +92-42-3515 7374
                     </Link>
-                    <Link href="tel:+92-42-35110164" className="contact_address_title">
+                    <Link
+                      href="tel:+92-42-35110164"
+                      className="contact_address_title"
+                    >
                       +92-42-35110164
                     </Link>
                   </div>

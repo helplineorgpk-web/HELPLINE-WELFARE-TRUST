@@ -5,36 +5,106 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import styles from "../../../public/css/headArea.module.css";
 import Image from "next/image";
-import image1 from "/public/img/causes/cause4.jpg";
-import image2 from "/public/img/causes/cause23.jpg";
-import image3 from "/public/img/causes/cause24.jpg";
 
-const sliderData = [
-  {
-    id: 1,
-    title: "Previous Projects",
-    project: "Schools",
-    content:
-      "A look at our past successful projects. A look at our past successful projects.",
-    images: image1,
-  },
-  {
-    id: 2,
-    title: "Current Projects",
-    project: "Medical",
-    content:
-      "Ongoing projects making a difference. Ongoing projects making a difference.",
-    images: image2,
-  },
-  {
-    id: 3,
-    title: "Upcoming Projects",
-    project: "Ramzan Rashan",
-    content:
-      "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
-    images: image3,
-  },
-];
+const sliderData = {
+  slider1: [
+    {
+      id: 1,
+      News: "Compaigns Alert",
+      title: "Previous Projects",
+      project: "Schools",
+      content:
+        "A look at our past successful projects. A look at our past successful projects.",
+      image1: "/img/causes/alkitab.jpg",
+      image2: "/img/causes/alkitab2.jpg",
+    },
+    {
+      id: 2,
+      News: "Events Alert",
+      title: "Previous Projects",
+      project: "Schools",
+      content:
+        "A look at our past successful projects. A look at our past successful projects.",
+      image1: "/img/causes/alkitab3.jpg",
+      image2: "/img/causes/alkitab4.jpg",
+    },
+    {
+      id: 3,
+      News: "News Alert",
+      title: "Previous Projects",
+      project: "Schools",
+      content:
+        "A look at our past successful projects. A look at our past successful projects.",
+      image1: "/img/causes/alkitabghani1.jpg",
+      image2: "/img/causes/Jinnah2.jpg",
+    },
+  ],
+  slider2: [
+    {
+      id: 1,
+      News: "Compaigns Alert",
+      title: "Current Projects",
+      project: "Medical",
+      content:
+        "Ongoing projects making a difference. Ongoing projects making a difference.",
+      image1: "/img/causes/cataract1.jpg",
+      image2: "/img/causes/cataract2.jpeg",
+    },
+    {
+      id: 2,
+      News: "Events Alert",
+      title: "Current Projects",
+      project: "Medical",
+      content:
+        "Ongoing projects making a difference. Ongoing projects making a difference.",
+      image1: "/img/causes/cataractbg.jpeg",
+      image2:
+        "/img/causes/Health-Care-qem5tse0cyp4tdwq5pet84x12rexveu2iwxn31m8im.png",
+    },
+    {
+      id: 3,
+      News: "News Alert",
+      title: "Current Projects",
+      project: "Medical",
+      content:
+        "Ongoing projects making a difference. Ongoing projects making a difference.",
+      image1: "/img/causes/PHOTO-2025-02-19-11-39-49.jpg",
+      image2: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
+    },
+  ],
+  slider3: [
+    {
+      id: 1,
+      News: "Compaigns Alert",
+      title: "Upcoming Projects",
+      project: "Ramzan Rashan",
+      content:
+        "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
+      image1: "/img/causes/rashan1.jpeg",
+      image2: "/img/causes/PHOTO-2025-02-19-11-45-30(2).jpg",
+    },
+    {
+      id: 2,
+      News: "Events Alert",
+      title: "Upcoming Projects",
+      project: "Ramzan Rashan",
+      content:
+        "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
+      image1: "/img/causes/PHOTO-2025-02-19-11-40-10(1).jpg",
+      image2: "/img/causes/PHOTO-2025-02-19-11-40-10(2).jpg",
+    },
+    {
+      id: 3,
+      News: "News Alert",
+      title: "Upcoming Projects",
+      project: "Ramzan Rashan",
+      content:
+        "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
+      image1: "/img/causes/PHOTO-2025-02-19-11-45-31(1).jpg",
+      image2: "/img/causes/PHOTO-2025-02-19-11-45-31(2).jpg",
+    },
+  ],
+};
 
 export default function HeadArea() {
   const [isPaused, setIsPaused] = useState(false);
@@ -67,15 +137,15 @@ export default function HeadArea() {
                 autoplay={
                   isPaused
                     ? false
-                    : { delay: 4000, disableOnInteraction: false }
+                    : { delay: 2000, disableOnInteraction: false }
                 }
                 loop={true}
                 modules={[Autoplay]}
                 className={styles.swiperContainer}
               >
-                {sliderData.map((slide) => (
+                {sliderData[`slider${index + 1}`].map((slide) => (
                   <SwiperSlide key={slide.id} className={styles.slideItem}>
-                    <h5 className={styles.news}>News</h5>
+                    <h5 className={styles.news}>{slide.News}</h5>
                     <div className={styles.card}>
                       <h3 className={styles.slideTitle}>{slide.title}</h3>
                       <div className={styles.imageCard}>
@@ -87,28 +157,14 @@ export default function HeadArea() {
                         </div>
                         <div>
                           <Image
-                            src={slide.images}
+                            src={slide.image1}
                             alt={slide.title}
                             width={100}
                             height={100}
                             className={styles.cardImage}
                           />
                           <Image
-                            src={slide.images}
-                            alt={slide.title}
-                            width={100}
-                            height={100}
-                            className={styles.cardImage}
-                          />
-                          <Image
-                            src={slide.images}
-                            alt={slide.title}
-                            width={100}
-                            height={100}
-                            className={styles.cardImage}
-                          />
-                          <Image
-                            src={slide.images}
+                            src={slide.image2}
                             alt={slide.title}
                             width={100}
                             height={100}

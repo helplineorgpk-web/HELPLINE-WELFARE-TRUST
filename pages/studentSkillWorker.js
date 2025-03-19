@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
-import Link from "next/link";
 const StudentSkillWorker = () => {
   const [formData, setFormData] = useState({
     fullName: "",
