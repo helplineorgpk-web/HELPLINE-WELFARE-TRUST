@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 export const HelplineData = {
   statsData: [
     { id: 1, title: "Hospitals", target: 2 },
@@ -2600,6 +2601,387 @@ This year, with your generous support, we’ve achieved incredible milestones in
                     Abu Bakr As-Siddiq (R.A.) narrated that Allah’s Messenger (S.A.W.S.) Said,  A crafty one, a miser, and one who keeps reminding people of what he has given, will not enter Paradise.  (Tirmidhi, 1873)
                     May Allah the Most Gracious, the Most Merciful give us opportunities to do many ways of providing sadaqah for His pleasure and reward our best life, especially in the Hereafter. May we spend our lives, time, money and efforts or everything in us to do deeds that Allah accepts as forms of sadaqah solely for His Sake. May our Rabb save us from the Hellfire by protecting us from being misers.
                     Ameen!`,
+        },
+      ],
+    },
+  ],
+};
+export const citiesData = {
+  cities: [
+    {
+      id: 1,
+      name: "Head Office Lahore",
+      description: "The Heart of Pakistan",
+      image: "/img/city/lahore.webp",
+      projects: 5,
+      stats: {
+        students: "1000+",
+        volunteers: "50+",
+      },
+      initiatives: [
+        {
+          title: "Alkitab Higher Secondary School",
+          description:
+            "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+
+          projects: [
+            {
+              name: "School Leading to University",
+              description:
+                "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
+              status: "Active",
+            },
+            {
+              name: "Digital Learning",
+              description: "Implementation of digital learning tools",
+              status: "Active",
+            },
+          ],
+        },
+        {
+          title: "Irtaqa-e-Itfal High Secondary School",
+          description:
+            "Empowering underprivileged youth through quality education.",
+
+          projects: [
+            {
+              name: "School in Lahore",
+              description:
+                "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
+              status: "Active",
+            },
+            {
+              name: "Health Education",
+              description: "Community health awareness programs",
+              status: "Active",
+            },
+          ],
+        },
+        {
+          title: "VOC-Training Center",
+          description:
+            "Vocational training for underprivileged youth only for Women.",
+          projects: [
+            {
+              name: "VOC Training",
+              description:
+                "Vocational training for underprivileged young women is a powerful initiative aimed at empowering them with skills, knowledge, and opportunities for self-sufficiency. Many women from disadvantaged backgrounds face systemic barriers such as poverty, lack of education, and limited access to employment. By providing vocational training in fields like tailoring, handicrafts, healthcare, IT, and entrepreneurship, these programs equip them with practical skills that enable financial independence. Beyond technical education, such initiatives often include personal development, leadership training, and financial literacy to ensure holistic empowerment. With a focus on job placement and entrepreneurship support, vocational training not only uplifts individual women but also contributes to breaking the cycle of poverty in their families and communities. By fostering economic participation and self-reliance, these programs help build a more inclusive and equitable society.",
+              status: "Active",
+            },
+            {
+              name: "Social Education",
+              description: "Community health awareness programs",
+              status: "Active",
+            },
+          ],
+        },
+        {
+          title: "IT Lab (SD-IT)",
+          description:
+            "Opening doors to career opportunities and economic independence.",
+          projects: [
+            {
+              name: "Computer Labs",
+              description:
+                "The IT Lab (SD-IT) is a charitable initiative dedicated to providing underprivileged young women with access to quality technology education and digital skills. In today’s fast-paced world, IT proficiency is essential for economic independence, yet many disadvantaged women lack the resources and opportunities to learn. This initiative offers training in areas such as computer literacy, coding, web development, graphic design, and digital marketing, equipping participants with skills that are in high demand. Beyond technical expertise, the program also focuses on career guidance, job placement support, and entrepreneurship training to help women secure employment or start their own businesses. By bridging the digital divide, the IT Lab (SD-IT) not only empowers women with the tools to build sustainable careers but also contributes to a more inclusive, tech-driven future where opportunities are accessible to all, regardless of socio-economic background.",
+              status: "Active",
+            },
+            {
+              name: "Skills Training",
+              description: "Vocational training for youth",
+              status: "Active",
+            },
+          ],
+        },
+        {
+          title: "Darul-Tarbiyah",
+          description:
+            "Young women with education, life skills, and ethical guidance for a brighter future.",
+          projects: [
+            {
+              name: "Islamic Education",
+              description:
+                "Darul-Tarbiyah is a charitable initiative dedicated to the holistic education and personal development of underprivileged young women. It provides a nurturing environment where they receive not only academic and vocational training but also moral and ethical guidance to build a strong foundation for their future. Through programs in education, life skills, and career-oriented training, Darul-Tarbiyah empowers women with the knowledge and confidence needed to become self-reliant and contribute positively to society. By fostering an inclusive and supportive learning atmosphere, it aims to uplift disadvantaged women, helping them break the cycle of poverty and achieve personal and professional success.",
+              status: "Active",
+            },
+            {
+              name: "Skills Training",
+              description: "Vocational training for youth",
+              status: "Active",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "Regional Office Karachi",
+      description: "The City of Lights",
+      image: "/img/city/Karachi.webp",
+      projects: 1,
+      stats: {
+        students: "500+",
+        volunteers: "40+",
+      },
+      initiatives: [
+        {
+          title: "Government Primary school",
+          description:
+            "Provides quality education to underprivileged children, shaping their future with knowledge and skills.",
+          projects: [
+            {
+              name: "Government Primary school (GPS)",
+              description:
+                "Government Primary School Karachi is a vital institution dedicated to providing quality education to children from underprivileged backgrounds. As a cornerstone of community development, the school offers free and accessible education, ensuring that every child, regardless of financial limitations, has the opportunity to learn and grow. With a focus on foundational literacy, numeracy, and essential life skills, the school prepares students for higher education and future opportunities. Beyond academics, it fosters discipline, creativity, and critical thinking, nurturing well-rounded individuals. By investing in young minds, Government Primary School Karachi plays a crucial role in shaping a brighter future for both students and society.",
+              status: "Active",
+            },
+            {
+              name: "After-School Program",
+              description: "Extra-curricular activities",
+              status: "Active",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Regional Office Islamabad",
+      description: "The Beautiful Capital",
+      image: "/img/city/islamabad.png",
+      projects: 8,
+      stats: {
+        students: "600+",
+        volunteers: "35+",
+      },
+      initiatives: [
+        {
+          title: "Education",
+          description: "Capital region education programs",
+          projects: [
+            {
+              name: "Model School Program",
+              description: "Establishing model schools",
+              status: "Active",
+            },
+          ],
+        },
+        {
+          title: "Technology",
+          description: "Tech education initiatives",
+          projects: [
+            {
+              name: "Tech Hub",
+              description: "Technology training center",
+              status: "Active",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: "Regional Office Hyderabad",
+      description: "City of Pearls",
+      image: "/img/city/hyderabad.jpeg",
+      projects: 2,
+      stats: {
+        students: "500+",
+        volunteers: "25+",
+      },
+      initiatives: [
+        {
+          title: "Government Primary school (Tando Allahyar to Mithi)",
+          description:
+            "Provide free education, empowering underprivileged children for a better future.",
+          projects: [
+            {
+              name: "Community Education",
+              description:
+                "Government Primary Schools from Tando Allahyar to Mithi serve as crucial educational institutions dedicated to providing free and quality education to underprivileged children in rural Sindh. These schools play a vital role in bridging the education gap, ensuring that children from remote areas have access to fundamental learning in literacy, numeracy, and life skills. Despite limited resources, they foster an environment that encourages curiosity, creativity, and critical thinking, preparing students for future academic and professional opportunities. By empowering young minds with education, these schools contribute to breaking the cycle of poverty and uplifting entire communities, paving the way for a brighter future.",
+              status: "Active",
+            },
+          ],
+        },
+        {
+          title: "IT Lab (SD-IT) Hyderabad",
+          description:
+            "Poor People with digital skills for career growth and financial independence.",
+          projects: [
+            {
+              name: "IT Education",
+              description:
+                "IT Lab (SD-IT) Hyderabad is a charitable initiative dedicated to empowering underprivileged young women with essential digital and technology skills. Located in Hyderabad, this lab provides training in computer literacy, coding, web development, graphic design, and digital marketing, equipping participants with the tools needed for career growth and financial independence. Beyond technical education, the program offers career counseling, job placement support, and entrepreneurship training, ensuring long-term success. By bridging the digital divide, IT Lab (SD-IT) Hyderabad creates new opportunities for women, enabling them to contribute to the growing digital economy and build a self-sustaining future.",
+              status: "Active",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 5,
+      name: "Regional Office Bahawalpur",
+      description: "The City of Nawabs",
+      image: "/img/city/bahawalpur.jpg",
+      projects: 1,
+      stats: {
+        students: "200+",
+        volunteers: "20+",
+      },
+      initiatives: [
+        {
+          title: "IT Lab (SD-IT)",
+          description:
+            "Empowers underprivileged young women with digital skills, creating opportunities for a brighter future.",
+          projects: [
+            {
+              name: "IT Education",
+              description:
+                "IT Lab (SD-IT) Bahawalpur is a charitable initiative dedicated to providing underprivileged young women with access to high-quality technology education and digital skills. Located in Bahawalpur, this lab serves as a hub for empowering women through courses in computer literacy, coding, web development, graphic design, and digital marketing. By equipping them with in-demand skills, IT Lab (SD-IT) Bahawalpur opens pathways to employment, entrepreneurship, and financial independence. The initiative also focuses on career guidance, job placement support, and mentorship, ensuring that participants can build sustainable futures. Through this program, the lab aims to bridge the digital divide and create equal opportunities, enabling young women in Bahawalpur to thrive in the modern tech-driven world.",
+              status: "Active",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 6,
+      name: "Nawabshah",
+      description: "City of Sindh",
+      image: "/img/city/nawabshah.jpg",
+      projects: 1,
+      stats: {
+        students: "450+",
+        volunteers: "22+",
+      },
+      initiatives: [
+        {
+          title: "Benazir Public School for Girls",
+          description:
+            "Young girls with quality education, fostering confidence and future success.",
+          projects: [
+            {
+              name: "(BPSG) Education Support",
+              description:
+                "Benazir Public School for Girls is a dedicated institution committed to providing quality education to underprivileged young girls, empowering them with knowledge and skills for a brighter future. Named in honor of the visionary leader Benazir Bhutto, the school focuses on academic excellence, personal development, and leadership training. By offering a safe and nurturing environment, it ensures that girls receive equal opportunities to learn and grow, breaking barriers in education and social progress. With a strong emphasis on literacy, science, and technology, Benazir Public School for Girls aims to shape confident, educated women who can contribute meaningfully to their communities and beyond.",
+              status: "Active",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 7,
+      name: "Rajanpur",
+      description: "The City of Saraiki",
+      image: "/img/city/rajanpur.jpg",
+      projects: 1,
+      stats: {
+        students: "300+",
+        volunteers: "15+",
+      },
+      initiatives: [
+        {
+          title: "Alkitab University of Emerging Sciences",
+          description:
+            "Empowers underprivileged youth with quality education and skills for a brighter future.",
+          projects: [
+            {
+              name: "Alkitab Emerging Project",
+              description:
+                "Alkitab University of Emerging Sciences is a charitable institution committed to providing quality education and skill development for underprivileged youth, especially young women. It focuses on equipping students with knowledge in emerging fields such as IT, business, and science, ensuring they are prepared for modern career opportunities. Alongside academic excellence, the university emphasizes personal growth, ethical values, and leadership skills, fostering well-rounded individuals ready to contribute to society. By making higher education accessible to those in need, Alkitab University of Emerging Sciences empowers students to break barriers, achieve their aspirations, and build a better future for themselves and their communities.",
+              status: "Active",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 8,
+      name: "Gojra",
+      description: "City of Toba Tek Singh",
+      image: "/img/city/gojra.jpg",
+      projects: 7,
+      stats: {
+        students: "350+",
+        volunteers: "18+",
+      },
+      initiatives: [
+        {
+          title: "Agriculture",
+          description: "Agricultural education programs",
+          projects: [
+            {
+              name: "Farmer Education",
+              description: "Supporting local farmers",
+              status: "Active",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 9,
+      name: "Taxila",
+      description: "City of Cut Stone",
+      image: "/img/city/Taxila.jpg",
+      projects: 2,
+      stats: {
+        students: "400+",
+        volunteers: "20+",
+      },
+      initiatives: [
+        {
+          title: "VOC-Training Center (Women) Taxila",
+          description:
+            "Taxila empowers underprivileged women with vocational skills for financial independence and self-sufficiency.",
+          projects: [
+            {
+              name: "Women Vocational Training",
+              description:
+                "VOC-Training Center (Women) Taxila is a charitable initiative dedicated to equipping underprivileged women with vocational skills, enabling them to achieve financial independence and self-sufficiency. The center offers hands-on training in various fields such as tailoring, embroidery, beauty care, computer literacy, and handicrafts, preparing women for employment and entrepreneurship opportunities. With a focus on skill development, career guidance, and empowerment, the center provides a supportive learning environment where women can gain confidence and economic stability. By fostering self-reliance and professional growth, VOC-Training Center (Women) Taxila plays a crucial role in uplifting women and strengthening their role in society.",
+              status: "Active",
+            },
+          ],
+        },
+        {
+          title: "Child Grooming Center Taxila",
+          description:
+            "Taxila nurtures young minds with education and life skills, shaping them for a better future.",
+          projects: [
+            {
+              name: "Child Grooming Center",
+              description:
+                "Child Grooming Center Taxila is a dedicated initiative focused on the holistic development of underprivileged children, providing them with essential education, life skills, and moral guidance. The center nurtures young minds by fostering a positive learning environment where children receive foundational education, character-building lessons, and personal development training. Through structured programs in academics, creativity, and social skills, the center helps shape confident, responsible, and well-rounded individuals. By offering a safe and supportive space, Child Grooming Center Taxila plays a vital role in preparing children for a brighter future, ensuring they grow into capable and ethical members of society.",
+              status: "Active",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 10,
+      name: "Abbottabad",
+      description: "City of pines",
+      image: "/img/city/Abbottabad.jpg",
+      projects: 1,
+      stats: {
+        students: "250+",
+        volunteers: "25+",
+      },
+      initiatives: [
+        {
+          title: "Children Home-(Orphanage)",
+          description:
+            "Children Home (Orphanage) provides a safe and nurturing home for orphaned children, empowering them with love, care, and education.",
+          projects: [
+            {
+              name: "Orphanage Center",
+              description:
+                "Children Home (Orphanage) is a safe haven dedicated to providing care, education, and emotional support to orphaned and vulnerable children. With a nurturing environment, the home ensures that every child receives proper shelter, nutrition, healthcare, and educational opportunities, allowing them to grow into confident and self-reliant individuals. Beyond basic needs, it focuses on character development, vocational training, and emotional well-being to help children build a promising future. Through love, guidance, and a sense of belonging, Children Home (Orphanage) plays a crucial role in shaping young lives, giving them hope and opportunities to thrive in society.",
+              status: "Active",
+            },
+          ],
         },
       ],
     },

@@ -34,6 +34,12 @@ export default function NavFullscreen() {
               </ul>
             </li>
             <li>
+              <Link href="/ourPresence">Our Presence</Link>
+            </li>
+            <li>
+              <Link href="/supporters">Supporters</Link>
+            </li>
+            <li>
               <Link href="/mission">Mission</Link>
             </li>
             <li>

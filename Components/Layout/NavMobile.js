@@ -29,6 +29,12 @@ export default function NavMobile() {
             <Link href="/ourjourney">Our Journey</Link>
           </li>
           <li>
+            <Link href="/ourPresence">Our Presence</Link>
+          </li>
+          <li>
+            <Link href="/supporters">Supporters</Link>
+          </li>
+          <li>
             <Link href="/volunteer">Volunteer</Link>
           </li>
           <li className="menu-item-has-children">
