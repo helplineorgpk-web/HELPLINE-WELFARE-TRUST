@@ -1,46 +1,48 @@
 import React from "react";
 import Image from "next/image";
+import styles from "../../../public/css/supporter.module.css";
+
 export default function SupportersCard() {
+  const supporters = [
+    "TransData",
+    "Benchmark",
+    "Ilaan",
+    "Mahir (Gp of Cos)",
+    "Ezhar Industries",
+    "Descon",
+    "Haleeb Foods",
+    "HP AirTravels-Tours",
+    "Henkel-Pak (Ger-Firm)",
+  ];
+
   return (
-    <div>
-      <div className="container">
-        <div className="row">
+    <section className={styles.container}>
+      <div className={styles.wrapper}>
+        <h2 className={styles.title}>Our Valued Supporters</h2>
+        <div className={styles.imageContainer}>
           <Image
             src="/img/causes/sponser.jpg"
-            height={600}
-            width={800}
-            alt="img"
+            alt="Our Supporters"
+            fill
+            className={styles.image}
           />
-
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <div className="supporter_card">TransData</div>
-          </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <div className="supporter_card">Benchmark,</div>
-          </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <div className="supporter_card">Ilaan,</div>
-          </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <div className="supporter_card">Mahir (Gp of Cos),</div>
-          </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <div className="supporter_card">Ezhar Industries,</div>
-          </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <div className="supporter_card">Descon,</div>
-          </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <div className="supporter_card">Haleeb Foods,</div>
-          </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <div className="supporter_card">HP AirTravels-Tours,</div>
-          </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-            <div className="supporter_card">Henkel-Pak (Ger-Firm),</div>
-          </div>
+        </div>
+        <div className={styles.supporterGrid}>
+          {supporters.map((supporter, index) => (
+            <div key={index} className={styles.supporterCard}>
+              <div className={styles.supporterInfo}>
+                <div className={styles.avatar}>
+                  <span>{supporter.charAt(0)}</span>
+                </div>
+                <div>
+                  <h3 className={styles.supporterName}>{supporter}</h3>
+                  <p className={styles.supporterRole}>Trusted Partner</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

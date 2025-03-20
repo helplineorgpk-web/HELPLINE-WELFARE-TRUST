@@ -7,24 +7,27 @@ export default function ContactGetInTouch() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [purpose, setPurpose] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const finalMessage = `${message}\n\nPhone Number: ${phone}`;
+    const finalMessage = `${message}\n\n📞 Phone Number: ${phone}`;
 
     const templateParams = {
-      to_name: "Help Line",
-      from_name: name,
-      from_email: email,
+      name: name,
+      emailName: email.split("@")[0],
+      email: email,
       message: finalMessage,
+      phone: phone,
+      purpose: purpose || "General Inquiry",
     };
 
     emailjs
       .send(
-        "service_rllrreu",
-        "template_xm5hpkn",
+        "service_l4b8zlx",
+        "template_z92hfde",
         templateParams,
-        "MIBYbIcXK2xnIWlrP"
+        "TYoPyIR43vGbLqWLE"
       )
       .then(
         (response) => {
@@ -33,6 +36,7 @@ export default function ContactGetInTouch() {
           setEmail("");
           setPhone("");
           setMessage("");
+          setPurpose("");
         },
         (err) => {
           console.error("FAILED...", err);
@@ -49,7 +53,7 @@ export default function ContactGetInTouch() {
         <div className="row">
           <div className="col-xxl-6 col-xl-6 col-lg-7 order-1 order-lg-0">
             <div className="contact_section contact_contact bottom_radius0">
-              <form onSubmit={handleSubmit} action="#">
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-xxl-6 col-sm-6">
                     <input
@@ -71,7 +75,6 @@ export default function ContactGetInTouch() {
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
-
                   <div className="col-xxl-6 col-sm-6">
                     <input
                       type="tel"
@@ -80,6 +83,15 @@ export default function ContactGetInTouch() {
                       value={phone}
                       required
                       onChange={(e) => setPhone(e.target.value)}
+                    />
+                  </div>
+                  <div className="col-xxl-6 col-sm-6">
+                    <input
+                      type="text"
+                      placeholder="Purpose of Inquiry"
+                      name="purpose"
+                      value={purpose}
+                      onChange={(e) => setPurpose(e.target.value)}
                     />
                   </div>
                   <div className="col-xxl-12">
