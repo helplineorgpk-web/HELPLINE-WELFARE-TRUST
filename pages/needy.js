@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
-import Link from "next/link";
+import emailjs from "emailjs-com";
+
 const NeedySupport = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -11,7 +12,6 @@ const NeedySupport = () => {
     supportType: "",
     medicalCondition: "",
     description: "",
-    documents: null,
   });
 
   const handleChange = (e) => {
@@ -22,17 +22,8 @@ const NeedySupport = () => {
     }));
   };
 
-  const handleFileChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      documents: e.target.files[0],
-    }));
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
   };
 
   return (
@@ -127,14 +118,6 @@ const NeedySupport = () => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-5">
-            <Form.Label>Supporting Documents (if any)</Form.Label>
-            <Form.Control
-              type="file"
-              name="documents"
-              onChange={handleFileChange}
-            />
-          </Form.Group>
           <div className="header-right d-flex align-items-center justify-content-center">
             <div className="header-sing d-inline-block">
               <button type="submit" className="g_btn hbtn_1 to_right1 rad-30">

@@ -11,7 +11,10 @@ export default function ContactGetInTouch() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const finalMessage = `${message}\n\n📞 Phone Number: ${phone}`;
+    const finalMessage = `
+    Contact Us 
+    ${message}\n\n📞 Phone Number: ${phone}
+    `;
 
     const templateParams = {
       name: name,
