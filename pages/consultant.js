@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
 import emailjs from "emailjs-com";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Consultant = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -65,14 +66,18 @@ const Consultant = () => {
 
     emailjs
       .send(
-        "service_l4b8zlx", 
-        "template_z92hfde", 
+        "service_l4b8zlx",
+        "template_z92hfde",
         templateParams,
-        "TYoPyIR43vGbLqWLE" 
+        "TYoPyIR43vGbLqWLE"
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          toast.success("Your request has been submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
 
           setFormData({
             fullName: "",
@@ -89,6 +94,10 @@ const Consultant = () => {
         },
         (err) => {
           console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
         }
       );
   };
@@ -248,6 +257,7 @@ const Consultant = () => {
             </div>
           </div>
         </Form>
+        <ToastContainer />
       </Container>
     </Layout2>
   );

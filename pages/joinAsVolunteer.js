@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function JoinAsVolunteer() {
   const [name, setName] = useState("");
@@ -32,6 +34,10 @@ export default function JoinAsVolunteer() {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          toast.success("Your request has been submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
           setName("");
           setEmail("");
           setPhone("");
@@ -39,6 +45,10 @@ export default function JoinAsVolunteer() {
         },
         (err) => {
           console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
         }
       );
   };
@@ -103,6 +113,7 @@ export default function JoinAsVolunteer() {
                   </div>
                 </div>
               </form>
+              <ToastContainer />
             </div>
           </div>
         </div>

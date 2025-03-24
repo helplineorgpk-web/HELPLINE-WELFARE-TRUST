@@ -2,35 +2,47 @@ import React, { useState } from "react";
 import NewsCard from "../NewsFeed/NewsCard";
 import { HelplineData } from "../../../pages/api/data";
 import emailjs from "emailjs-com";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function NewsFeed() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    const finalMessage = `
+    From News Feed Subcription
+    `;
     const templateParams = {
       to_name: "Help Line",
-      from_name: name,
-      from_email: email,
+      name: name,
+      email: email,
+      message: finalMessage,
     };
 
     emailjs
       .send(
-        "service_rllrreu",
-        "template_xm5hpkn",
+        "service_l4b8zlx",
+        "template_z92hfde",
         templateParams,
-        "MIBYbIcXK2xnIWlrP"
+        "TYoPyIR43vGbLqWLE"
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          toast.success("Application submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
           setName("");
           setEmail("");
         },
         (err) => {
           console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
         }
       );
   };
@@ -85,6 +97,7 @@ export default function NewsFeed() {
                   </button>
                 </form>
               </div>
+              <ToastContainer />
             </div>
           </div>
         </div>

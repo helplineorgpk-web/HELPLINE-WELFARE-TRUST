@@ -87,6 +87,9 @@ export default function NavFullscreen() {
                   <Link href="/islamicactivity">Islamic Activity</Link>
                 </li>
                 <li>
+                  <Link href="/taleem-e-Quran">Taleem e Quran</Link>
+                </li>
+                <li>
                   <Link href="/qurbani">Qurbani Program</Link>
                 </li>
                 <li>

@@ -1159,30 +1159,6 @@ export const HelplineData = {
       ],
     },
     {
-      id: 10,
-      designation: "Liaison Manager",
-      name: "Mr Arslan Ramzan",
-      image: "/img/team/member10.jpg",
-      socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
-        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-      ],
-    },
-    {
-      id: 11,
-      designation: "Web Developer",
-      name: "Bilal Ramzan",
-      image: "/img/team/member11.jpg",
-      socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
-        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-      ],
-    },
-    {
       id: 12,
       designation: "Manager Purchase",
       name: "Mr Mehmood Ali joiya",

@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const StudentSkillWorker = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -13,7 +17,6 @@ const StudentSkillWorker = () => {
     skills: "",
     interests: "",
     supportNeeded: "",
-    documents: null,
   });
 
   const handleChange = (e) => {
@@ -24,17 +27,75 @@ const StudentSkillWorker = () => {
     }));
   };
 
-  const handleFileChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      documents: e.target.files[0],
-    }));
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+
+    const {
+      fullName,
+      email,
+      contact,
+      category,
+      currentStatus,
+      institution,
+      fieldOfStudy,
+      skills,
+      interests,
+      supportNeeded,
+    } = formData;
+
+    try {
+      const finalMessage = `
+      🎓 Student / Skill Worker Registration
+      
+      👤 Full Name: ${fullName}
+      📧 Email: ${email}
+      📞 Contact: ${contact}
+      🏷️ Category: ${category}
+      📌 Current Status: ${currentStatus}
+      🏫 Institution/Organization: ${institution}
+      📚 Field of Study/Work: ${fieldOfStudy}
+      🛠️ Skills: ${skills}
+      💡 Interests: ${interests}
+      🤝 Support Needed: ${supportNeeded}
+      `;
+
+      const templateParams = {
+        to_name: "Support Team",
+        from_name: fullName,
+        from_email: email,
+        message: finalMessage,
+      };
+      await emailjs.send(
+        "service_l4b8zlx",
+        "template_z92hfde",
+        templateParams,
+        "TYoPyIR43vGbLqWLE"
+      );
+
+      toast.success("Registration submitted successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+
+      setFormData({
+        fullName: "",
+        email: "",
+        contact: "",
+        category: "",
+        currentStatus: "",
+        institution: "",
+        fieldOfStudy: "",
+        skills: "",
+        interests: "",
+        supportNeeded: "",
+      });
+    } catch (error) {
+      console.error("Submission failed:", error);
+      toast.error("Submission failed. Please try again later.", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+    }
   };
 
   return (
@@ -179,14 +240,6 @@ const StudentSkillWorker = () => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-5">
-            <Form.Label>Supporting Documents (if any)</Form.Label>
-            <Form.Control
-              type="file"
-              name="documents"
-              onChange={handleFileChange}
-            />
-          </Form.Group>
           <div className="header-right d-flex align-items-center justify-content-center">
             <div className="header-sing d-inline-block">
               <button type="submit" className="g_btn hbtn_1 to_right1 rad-30">
@@ -195,6 +248,7 @@ const StudentSkillWorker = () => {
             </div>
           </div>
         </Form>
+        <ToastContainer />
       </Container>
     </Layout2>
   );

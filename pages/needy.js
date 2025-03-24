@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
 import emailjs from "emailjs-com";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const NeedySupport = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -24,6 +25,70 @@ const NeedySupport = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const {
+      fullName,
+      contact,
+      email,
+      address,
+      supportType,
+      medicalCondition,
+      description,
+    } = formData;
+
+    const finalMessage = `
+    🆘 Needy Support / Medical Assistance Request 🆘
+  
+    👤 Full Name: ${fullName}
+    📞 Contact: ${contact}
+    📧 Email: ${email}
+    📍 Address: ${address}
+    🛠️ Type of Support Needed: ${supportType}
+    🩺 Medical Condition: ${medicalCondition || "N/A"}
+    📝 Description of Need:
+    ${description}
+    `;
+
+    const templateParams = {
+      to_name: "Help Line",
+      from_name: fullName,
+      from_email: email,
+      message: finalMessage,
+    };
+
+    emailjs
+      .send(
+        "service_l4b8zlx",
+        "template_z92hfde",
+        templateParams,
+        "TYoPyIR43vGbLqWLE"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          toast.success("Your request has been submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+
+          setFormData({
+            fullName: "",
+            contact: "",
+            email: "",
+            address: "",
+            supportType: "",
+            medicalCondition: "",
+            description: "",
+          });
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+        }
+      );
   };
 
   return (
@@ -126,6 +191,7 @@ const NeedySupport = () => {
             </div>
           </div>
         </Form>
+        <ToastContainer />
       </Container>
     </Layout2>
   );

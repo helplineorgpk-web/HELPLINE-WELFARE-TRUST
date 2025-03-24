@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
-import Link from "next/link";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const JobSeeker = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -18,23 +21,79 @@ const JobSeeker = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
+    setFormData((prev) => ({
+      ...prev,
       [name]: value,
-    }));
-  };
-
-  const handleFileChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      resume: e.target.files[0],
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+
+    const {
+      fullName,
+      email,
+      contact,
+      education,
+      experience,
+      skills,
+      jobType,
+      preferredLocation,
+      expectedSalary,
+    } = formData;
+
+    try {
+      const finalMessage = `
+      🧾 Job Seeker / Internee Registration
+      
+      👤 Full Name: ${fullName}
+      📧 Email: ${email}
+      📞 Contact: ${contact}
+      🎓 Education: ${education}
+      💼 Experience: ${experience} years
+      🛠️ Skills: ${skills}
+      🔍 Looking for: ${jobType}
+      📍 Preferred Location: ${preferredLocation}
+      💰 Expected Salary/Stipend: ${expectedSalary}
+      `;
+
+      const templateParams = {
+        to_name: "HR Team",
+        from_name: fullName,
+        from_email: email,
+        message: finalMessage,
+      };
+
+      await emailjs.send(
+        "service_l4b8zlx",
+        "template_z92hfde",
+        templateParams,
+        "TYoPyIR43vGbLqWLE"
+      );
+
+      toast.success("Application submitted successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+
+      setFormData({
+        fullName: "",
+        email: "",
+        contact: "",
+        education: "",
+        experience: "",
+        skills: "",
+        jobType: "",
+        preferredLocation: "",
+        expectedSalary: "",
+      });
+    } catch (error) {
+      console.error("Submission failed:", error);
+      toast.error("Submission failed. Please try again later.", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+    }
   };
 
   return (
@@ -163,16 +222,6 @@ const JobSeeker = () => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-5">
-            <Form.Label>Upload Resume</Form.Label>
-            <Form.Control
-              type="file"
-              name="resume"
-              onChange={handleFileChange}
-              required
-            />
-          </Form.Group>
-
           <div className="header-right d-flex align-items-center justify-content-center">
             <div className="header-sing d-inline-block">
               <button type="submit" className="g_btn hbtn_1 to_right1 rad-30">
@@ -181,6 +230,7 @@ const JobSeeker = () => {
             </div>
           </div>
         </Form>
+        <ToastContainer />
       </Container>
     </Layout2>
   );

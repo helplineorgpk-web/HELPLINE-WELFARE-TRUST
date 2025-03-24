@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
 import emailjs from "emailjs-com";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Sponsor = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -60,6 +61,10 @@ const Sponsor = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          toast.success("Your request has been submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
           setFormData({
             fullName: "",
             email: "",
@@ -75,6 +80,10 @@ const Sponsor = () => {
         },
         (err) => {
           console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
         }
       );
   };
@@ -220,6 +229,7 @@ const Sponsor = () => {
             Submit Sponsorship Request
           </button>
         </Form>
+        <ToastContainer />
       </Container>
     </Layout2>
   );
