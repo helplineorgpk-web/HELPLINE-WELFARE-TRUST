@@ -4,7 +4,6 @@ import Header from "../Components/Elements/Header/Header";
 import Rashan from "../Components/Elements/Rashan/Rashan";
 import RashanDistributionJourney from "../Components/Elements/Rashan/RashanDistributionJourney";
 import RashanDistributionArea from "../Components/Elements/Rashan/RashanDistributionArea";
-import SupportArea from "../Components/Elements/Home/SupportArea";
 
 export default function Images() {
   const img = "/img/causes/cause24.jpg";
