@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
-import Link from "next/link";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const NeedySupport = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -11,7 +13,6 @@ const NeedySupport = () => {
     supportType: "",
     medicalCondition: "",
     description: "",
-    documents: null,
   });
 
   const handleChange = (e) => {
@@ -22,17 +23,72 @@ const NeedySupport = () => {
     }));
   };
 
-  const handleFileChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      documents: e.target.files[0],
-    }));
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+
+    const {
+      fullName,
+      contact,
+      email,
+      address,
+      supportType,
+      medicalCondition,
+      description,
+    } = formData;
+
+    const finalMessage = `
+    🆘 Needy Support / Medical Assistance Request 🆘
+  
+    👤 Full Name: ${fullName}
+    📞 Contact: ${contact}
+    📧 Email: ${email}
+    📍 Address: ${address}
+    🛠️ Type of Support Needed: ${supportType}
+    🩺 Medical Condition: ${medicalCondition || "N/A"}
+    📝 Description of Need:
+    ${description}
+    `;
+
+    const templateParams = {
+      to_name: "Help Line",
+      from_name: fullName,
+      from_email: email,
+      message: finalMessage,
+    };
+
+    emailjs
+      .send(
+        "service_l4b8zlx",
+        "template_z92hfde",
+        templateParams,
+        "TYoPyIR43vGbLqWLE"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          toast.success("Your request has been submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+
+          setFormData({
+            fullName: "",
+            contact: "",
+            email: "",
+            address: "",
+            supportType: "",
+            medicalCondition: "",
+            description: "",
+          });
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+        }
+      );
   };
 
   return (
@@ -127,14 +183,6 @@ const NeedySupport = () => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-5">
-            <Form.Label>Supporting Documents (if any)</Form.Label>
-            <Form.Control
-              type="file"
-              name="documents"
-              onChange={handleFileChange}
-            />
-          </Form.Group>
           <div className="header-right d-flex align-items-center justify-content-center">
             <div className="header-sing d-inline-block">
               <button type="submit" className="g_btn hbtn_1 to_right1 rad-30">
@@ -143,6 +191,7 @@ const NeedySupport = () => {
             </div>
           </div>
         </Form>
+        <ToastContainer />
       </Container>
     </Layout2>
   );

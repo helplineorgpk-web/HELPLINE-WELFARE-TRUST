@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import styles from "../../../public/css/headArea.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const sliderData = {
   slider1: [
@@ -20,28 +21,6 @@ const sliderData = {
     },
     {
       id: 2,
-      News: "Events Alert",
-      title: "Previous Projects",
-      project: "Schools",
-      content:
-        "A look at our past successful projects. A look at our past successful projects.",
-      image1: "/img/causes/alkitab3.jpg",
-      image2: "/img/causes/alkitab4.jpg",
-    },
-    {
-      id: 3,
-      News: "News Alert",
-      title: "Previous Projects",
-      project: "Schools",
-      content:
-        "A look at our past successful projects. A look at our past successful projects.",
-      image1: "/img/causes/alkitabghani1.jpg",
-      image2: "/img/causes/Jinnah2.jpg",
-    },
-  ],
-  slider2: [
-    {
-      id: 1,
       News: "Compaigns Alert",
       title: "Current Projects",
       project: "Medical",
@@ -49,6 +28,29 @@ const sliderData = {
         "Ongoing projects making a difference. Ongoing projects making a difference.",
       image1: "/img/causes/cataract1.jpg",
       image2: "/img/causes/cataract2.jpeg",
+    },
+    {
+      id: 3,
+      News: "Compaigns Alert",
+      title: "Upcoming Projects",
+      project: "Ramzan Rashan",
+      content:
+        "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
+      image1: "/img/causes/rashan1.jpeg",
+      image2: "/img/causes/PHOTO-2025-02-19-11-45-30(2).jpg",
+    },
+  ],
+  slider2: [
+    {
+      id: 1,
+
+      News: "Events Alert",
+      title: "Previous Projects",
+      project: "Schools",
+      content:
+        "A look at our past successful projects. A look at our past successful projects.",
+      image1: "/img/causes/alkitab3.jpg",
+      image2: "/img/causes/alkitab4.jpg",
     },
     {
       id: 2,
@@ -63,28 +65,6 @@ const sliderData = {
     },
     {
       id: 3,
-      News: "News Alert",
-      title: "Current Projects",
-      project: "Medical",
-      content:
-        "Ongoing projects making a difference. Ongoing projects making a difference.",
-      image1: "/img/causes/PHOTO-2025-02-19-11-39-49.jpg",
-      image2: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
-    },
-  ],
-  slider3: [
-    {
-      id: 1,
-      News: "Compaigns Alert",
-      title: "Upcoming Projects",
-      project: "Ramzan Rashan",
-      content:
-        "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
-      image1: "/img/causes/rashan1.jpeg",
-      image2: "/img/causes/PHOTO-2025-02-19-11-45-30(2).jpg",
-    },
-    {
-      id: 2,
       News: "Events Alert",
       title: "Upcoming Projects",
       project: "Ramzan Rashan",
@@ -92,6 +72,29 @@ const sliderData = {
         "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
       image1: "/img/causes/PHOTO-2025-02-19-11-40-10(1).jpg",
       image2: "/img/causes/PHOTO-2025-02-19-11-40-10(2).jpg",
+    },
+  ],
+  slider3: [
+    {
+      id: 1,
+      News: "News Alert",
+      title: "Previous Projects",
+      project: "Schools",
+      content:
+        "A look at our past successful projects. A look at our past successful projects.",
+      image1: "/img/causes/alkitabghani1.jpg",
+      image2: "/img/causes/Jinnah2.jpg",
+    },
+    {
+      id: 2,
+
+      News: "News Alert",
+      title: "Previous Projects",
+      project: "Schools",
+      content:
+        "A look at our past successful projects. A look at our past successful projects.",
+      image1: "/img/causes/alkitabghani1.jpg",
+      image2: "/img/causes/Jinnah2.jpg",
     },
     {
       id: 3,
@@ -114,14 +117,6 @@ export default function HeadArea() {
     <div className={styles.head_area}>
       <div className={styles.overlay}></div>
       <div className={styles.main_container}>
-        <div className={styles.text_container}>
-          <h1 className={styles.heading}>HELPLINE</h1>
-          <p className={styles.pergraph}>
-            Helpline Welfare Trust, a project of community development through
-            education.
-          </p>
-        </div>
-
         <div className={styles.sliders}>
           {[...(isMobile ? [0] : [0, 1, 2])].map((index) => (
             <div
@@ -173,11 +168,20 @@ export default function HeadArea() {
                         </div>
                       </div>
                     </div>
+                    <Link href="/donation" className={styles.donate_now}>
+                      donate now
+                    </Link>
                   </SwiperSlide>
                 ))}
               </Swiper>
             </div>
           ))}
+        </div>
+        <div className={styles.text_container}>
+          <h1 className={styles.heading}>HELPLINE WELFARE TRUST</h1>
+          <p className={styles.pergraph}>
+            (A Project of Community Development.)
+          </p>
         </div>
       </div>
 

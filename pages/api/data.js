@@ -178,7 +178,7 @@ export const HelplineData = {
       description:
         "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
 
-      desc: "Al-Kitab School (Gullowali, Rsajanpur).",
+      desc: "Al-Kitab School (Gullowali, Rajanpur).",
       color: "#65cabb",
     },
     {
@@ -984,7 +984,7 @@ export const HelplineData = {
       description:
         "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
 
-      desc: "Al-Kitab School (Gullowali, Rsajanpur).",
+      desc: "Al-Kitab School (Gullowali, Rajanpur).",
       color: "#65cabb",
     },
     {
@@ -1151,30 +1151,6 @@ export const HelplineData = {
       designation: "Designer",
       name: "Mr Adeem Mansoor",
       image: "/img/team/member9.jpg",
-      socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
-        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-      ],
-    },
-    {
-      id: 10,
-      designation: "Liaison Manager",
-      name: "Mr Arslan Ramzan",
-      image: "/img/team/member10.jpg",
-      socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
-        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-      ],
-    },
-    {
-      id: 11,
-      designation: "Web Developer",
-      name: "Bilal Ramzan",
-      image: "/img/team/member11.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },

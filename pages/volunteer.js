@@ -11,8 +11,6 @@ export default function volunteer() {
       <VolunteerBreadCrumb />
       <VolunteerAbout />
       <JoinAsVolunteer />
-      {/* <VolunteerTeamArea /> */}
-      {/* <NewsFeed /> */}
     </Layout2>
   );
 }

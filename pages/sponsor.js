@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
-import Link from "next/link";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Sponsor = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -13,7 +15,7 @@ const Sponsor = () => {
     duration: "",
     message: "",
     preferredArea: "",
-    documents: null,
+    purpose: "",
   });
 
   const handleChange = (e) => {
@@ -24,17 +26,66 @@ const Sponsor = () => {
     }));
   };
 
-  const handleFileChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      documents: e.target.files[0],
-    }));
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+    const finalMessage = `
+      I Want To Become A Sponsor.\n
+      Full Name: ${formData.fullName}\n
+      Email: ${formData.email}\n
+      Contact: ${formData.contact}\n
+      Purpose: ${formData.purpose}\n
+      Organization: ${formData.organization || "N/A"}\n
+      Sponsorship Type: ${formData.sponsorshipType}\n
+      Sponsorship Amount: ${formData.sponsorshipAmount}\n
+      Duration: ${formData.duration}\n
+      Preferred Area of Impact: ${formData.preferredArea}\n
+      Additional Message: ${formData.message || "N/A"}\n
+      Supporting Documents: ${
+        formData.documents ? formData.documents.name : "None"
+      }
+    `;
+
+    const templateParams = {
+      name: formData.fullName,
+      email: formData.email,
+      message: finalMessage,
+    };
+
+    emailjs
+      .send(
+        "service_l4b8zlx",
+        "template_z92hfde",
+        templateParams,
+        "TYoPyIR43vGbLqWLE"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          toast.success("Your request has been submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+          setFormData({
+            fullName: "",
+            email: "",
+            contact: "",
+            organization: "",
+            sponsorshipType: "",
+            sponsorshipAmount: "",
+            duration: "",
+            message: "",
+            preferredArea: "",
+            purpose: "",
+          });
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+        }
+      );
   };
 
   return (
@@ -150,11 +201,19 @@ const Sponsor = () => {
               name="preferredArea"
               value={formData.preferredArea}
               onChange={handleChange}
-              placeholder="e.g., Local community, specific region, or type of beneficiaries"
               required
             />
           </Form.Group>
-
+          <Form.Group className="mb-3">
+            <Form.Label>Purpose</Form.Label>
+            <Form.Control
+              type="text"
+              name="purpose"
+              value={formData.purpose}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
           <Form.Group className="mb-3">
             <Form.Label>Additional Message</Form.Label>
             <Form.Control
@@ -163,27 +222,14 @@ const Sponsor = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Any specific requirements or message"
             />
           </Form.Group>
 
-          <Form.Group className="mb-5">
-            <Form.Label>Supporting Documents (if any)</Form.Label>
-            <Form.Control
-              type="file"
-              name="documents"
-              onChange={handleFileChange}
-            />
-          </Form.Group>
-
-          <div className="header-right d-flex align-items-center justify-content-center">
-            <div className="header-sing d-inline-block">
-              <button type="submit" className="g_btn hbtn_1 to_right1 rad-30">
-                Submit Sponsorship Request<span></span>
-              </button>
-            </div>
-          </div>
+          <button type="submit" className="g_btn hbtn_1 to_right1 rad-30">
+            Submit Sponsorship Request
+          </button>
         </Form>
+        <ToastContainer />
       </Container>
     </Layout2>
   );

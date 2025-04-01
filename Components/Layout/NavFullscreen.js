@@ -18,22 +18,6 @@ export default function NavFullscreen() {
               <Link href="/ourjourney">Our Journey</Link>
             </li>
             <li>
-              <Link href="/volunteer">Volunteer</Link>
-            </li>
-            <li>
-              <Link href="/" className="innerli">
-                Media <span> ▶</span>
-              </Link>
-              <ul className="submenu">
-                <li>
-                  <Link href="/videos">Videos</Link>
-                </li>
-                <li>
-                  <Link href="/images">Images</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
               <Link href="/ourPresence">Our Presence</Link>
             </li>
             <li>
@@ -50,6 +34,7 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
+
         <li className="menu-item-has-children">
           <Link href="/cause">Our Causes</Link>
           <ul className="sub-menu">
@@ -85,6 +70,9 @@ export default function NavFullscreen() {
               <ul className="submenu">
                 <li>
                   <Link href="/islamicactivity">Islamic Activity</Link>
+                </li>
+                <li>
+                  <Link href="/taleem-e-Quran">Taleem e Quran</Link>
                 </li>
                 <li>
                   <Link href="/qurbani">Qurbani Program</Link>
@@ -139,7 +127,7 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/event">Get Registered As</Link>
+          <Link href="/event">Get Registered</Link>
           <ul className="sub-menu">
             <li>
               <Link href="/needy">Needy support/ Medical</Link>
@@ -153,7 +141,7 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/event">Join us As</Link>
+          <Link href="/event">Join us</Link>
           <ul className="sub-menu">
             <li>
               <Link href="/donation">Donor</Link>
@@ -169,6 +157,18 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
+        <li className="menu-item-has-children">
+          <Link href="/"> Media</Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/videos">Videos</Link>
+            </li>
+            <li>
+              <Link href="/images">Images</Link>
+            </li>
+          </ul>
+        </li>
+
         <li className="menu-item-has-children">
           <Link href="/contact">Contact</Link>
         </li>

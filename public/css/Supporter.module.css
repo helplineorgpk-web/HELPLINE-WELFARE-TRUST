@@ -2,10 +2,39 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #f9fafb 0%, #e0e7ff 100%);
+  background: rgba(255, 255, 255, 0.1); /* Glass morphism background */
+  backdrop-filter: blur(20px); /* Blur effect for glass morphism */
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
   text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  animation: rotateGradient 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .wrapper {
@@ -13,14 +42,26 @@
 }
 
 .title {
-  font-size: 2.8rem;
-  color: #1e3a8a;
+  font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(to right, #6366f1, #2B4CE1);
+  background: linear-gradient(to right, #ff6b6b, #ffa5a5, #ff6b6b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2rem;
   text-transform: uppercase;
+  letter-spacing: 3px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.8),
+      0 0 20px rgba(255, 107, 107, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 107, 107, 0.8),
+      0 0 40px rgba(255, 107, 107, 0.8);
+  }
 }
 
 .imageContainer {
@@ -29,7 +70,7 @@
   height: 450px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   margin-bottom: 60px;
   transition: transform 0.5s ease-in-out;
 }
@@ -49,12 +90,13 @@
 }
 
 .supporterCard {
-  background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+  background: rgba(255, 255, 255, 0.1); /* Glass morphism background */
+  backdrop-filter: blur(10px); /* Blur effect */
   border-radius: 16px;
   padding: 30px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
   overflow: hidden;
 }
@@ -62,31 +104,46 @@
 .supporterCard::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(to right, #6366f1, #1c1c1c);
   top: 0;
-  left: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.supporterCard:hover::before {
+  left: 100%;
 }
 
 .supporterCard:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
 }
 
 .avatar {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #6366f1 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #ff6b6b, #ffa5a5);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #1a1a1a;
   font-weight: bold;
   font-size: 1.6rem;
   margin-right: 15px;
-  box-shadow: 0 6px 12px rgba(29, 78, 216, 0.4);
+  box-shadow: 0 6px 12px rgba(255, 107, 107, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.supporterCard:hover .avatar {
+  transform: rotate(360deg);
 }
 
 .supporterInfo {
@@ -97,18 +154,18 @@
 .supporterName {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #66cbbb;
   margin-bottom: 5px;
   transition: color 0.3s ease;
 }
 
 .supporterCard:hover .supporterName {
-  color: #2563eb;
+  color: #ff6b6b;
 }
 
 .supporterRole {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #a0a0a0;
   position: relative;
   padding-left: 20px;
   font-style: italic;
@@ -118,7 +175,7 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #6366f1;
+  color: #ff6b6b;
   font-size: 1.3rem;
   line-height: 1;
 }

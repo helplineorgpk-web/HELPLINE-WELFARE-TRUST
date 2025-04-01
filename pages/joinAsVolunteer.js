@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import Image from "next/image";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function JoinAsVolunteer() {
   const [name, setName] = useState("");
@@ -10,7 +11,11 @@ export default function JoinAsVolunteer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const finalMessage = `${message}\n\nPhone Number: ${phone}`;
+    const finalMessage = `
+    I want to become a volunteer
+    ${message}\n\nPhone Number: ${phone}
+    Email: ${email}
+    `;
 
     const templateParams = {
       to_name: "Help Line",
@@ -21,14 +26,18 @@ export default function JoinAsVolunteer() {
 
     emailjs
       .send(
-        "service_rllrreu",
-        "template_xm5hpkn",
+        "service_l4b8zlx",
+        "template_z92hfde",
         templateParams,
-        "MIBYbIcXK2xnIWlrP"
+        "TYoPyIR43vGbLqWLE"
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          toast.success("Your request has been submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
           setName("");
           setEmail("");
           setPhone("");
@@ -36,6 +45,10 @@ export default function JoinAsVolunteer() {
         },
         (err) => {
           console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
         }
       );
   };
@@ -100,6 +113,7 @@ export default function JoinAsVolunteer() {
                   </div>
                 </div>
               </form>
+              <ToastContainer />
             </div>
           </div>
         </div>

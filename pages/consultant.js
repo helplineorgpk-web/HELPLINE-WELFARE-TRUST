@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import Layout2 from "../Components/Layout/Layout2";
-import Link from "next/link";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Consultant = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -13,7 +15,6 @@ const Consultant = () => {
     availability: "",
     consultationType: "",
     languages: "",
-    resume: null,
     additionalInfo: "",
   });
 
@@ -24,18 +25,81 @@ const Consultant = () => {
       [name]: value,
     }));
   };
-
-  const handleFileChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      resume: e.target.files[0],
-    }));
-  };
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+
+    const {
+      fullName,
+      email,
+      contact,
+      profession,
+      expertise,
+      experience,
+      availability,
+      consultationType,
+      languages,
+      additionalInfo,
+    } = formData;
+
+    const finalMessage = `
+  I want to register as a Consultant & Friend.
+  
+  👤 Full Name: ${fullName}
+  📧 Email: ${email}
+  📞 Contact Number: ${contact}
+  💼 Current Profession: ${profession}
+  🧠 Areas of Expertise: ${expertise}
+  📆 Years of Experience: ${experience}
+  ⏰ Availability: ${availability}
+  💬 Type of Consultation: ${consultationType}
+  🗣️ Languages Spoken: ${languages}
+  📝 Additional Information:
+  ${additionalInfo || "N/A"}
+    `;
+
+    const templateParams = {
+      to_name: "Help Line",
+      from_name: fullName,
+      from_email: email,
+      message: finalMessage,
+    };
+
+    emailjs
+      .send(
+        "service_l4b8zlx",
+        "template_z92hfde",
+        templateParams,
+        "TYoPyIR43vGbLqWLE"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          toast.success("Your request has been submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+
+          setFormData({
+            fullName: "",
+            email: "",
+            contact: "",
+            profession: "",
+            expertise: "",
+            experience: "",
+            availability: "",
+            consultationType: "",
+            languages: "",
+            additionalInfo: "",
+          });
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+        }
+      );
   };
 
   return (
@@ -173,16 +237,6 @@ const Consultant = () => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-3">
-            <Form.Label>Upload Resume/CV</Form.Label>
-            <Form.Control
-              type="file"
-              name="resume"
-              onChange={handleFileChange}
-              required
-            />
-          </Form.Group>
-
           <Form.Group className="mb-5">
             <Form.Label>Additional Information</Form.Label>
             <Form.Control
@@ -203,6 +257,7 @@ const Consultant = () => {
             </div>
           </div>
         </Form>
+        <ToastContainer />
       </Container>
     </Layout2>
   );

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactGetInTouch() {
   const [name, setName] = useState("");
@@ -11,7 +13,10 @@ export default function ContactGetInTouch() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const finalMessage = `${message}\n\n📞 Phone Number: ${phone}`;
+    const finalMessage = `
+    From Contact Us Form 
+    ${message}\n\n📞 Phone Number: ${phone}
+    `;
 
     const templateParams = {
       name: name,
@@ -32,6 +37,10 @@ export default function ContactGetInTouch() {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          toast.success("Your request has been submitted successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
           setName("");
           setEmail("");
           setPhone("");
@@ -39,7 +48,10 @@ export default function ContactGetInTouch() {
           setPurpose("");
         },
         (err) => {
-          console.error("FAILED...", err);
+          toast.error("Submission failed. Please try again later.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
         }
       );
   };
@@ -110,6 +122,7 @@ export default function ContactGetInTouch() {
                   </div>
                 </div>
               </form>
+              <ToastContainer />
             </div>
           </div>
           <div className="col-xxl-6 col-xl-6 col-lg-5 order-0 order-lg-1">
