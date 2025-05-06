@@ -26,6 +26,9 @@
   font-weight: 600;
   cursor: pointer;
 }
+.seeMore:hover {
+  color: #ff0000;
+}
 .cityName {
   font-size: bold;
   font-weight: 600;
@@ -34,5 +37,5 @@
   cursor: pointer;
 }
 .cityName:hover {
-color: #FF0000;
+  color: #ff0000;
 }
