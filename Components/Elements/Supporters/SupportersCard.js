@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../../public/css/supporter.module.css";
+import styles from "../../../public/css/Supporter.module.css";
 
 export default function SupportersCard() {
   const supporters = [
