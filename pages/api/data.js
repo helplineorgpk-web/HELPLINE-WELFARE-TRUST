@@ -1054,7 +1054,7 @@ export const HelplineData = {
       id: 1,
       designation: "General Manager",
       name: "Colonel Muhammad Ali",
-      image: "/img/team/member1.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1066,7 +1066,7 @@ export const HelplineData = {
       id: 2,
       designation: "General Manager EDU (Punjab)",
       name: "M.A Naeem Khan (Retd)",
-      image: "/img/team/member2.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1078,7 +1078,7 @@ export const HelplineData = {
       id: 3,
       designation: "General Manager Accounts",
       name: "Mr Hameed Hassan khan",
-      image: "/img/team/member3.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1090,7 +1090,7 @@ export const HelplineData = {
       id: 4,
       designation: "Senior National Coordinator",
       name: "Mr Sarfraz Ahmad Bhullar",
-      image: "/img/team/member4.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1102,7 +1102,7 @@ export const HelplineData = {
       id: 5,
       designation: "National Coordinator",
       name: "Mr Hafiz Bilal Nurani",
-      image: "/img/team/member5.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1114,7 +1114,7 @@ export const HelplineData = {
       id: 6,
       designation: "Community Welfare Manager",
       name: "Mr Atif Hussain",
-      image: "/img/team/member6.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1126,7 +1126,7 @@ export const HelplineData = {
       id: 7,
       designation: "Liaison Manager",
       name: "Mr Abid Ali Abid",
-      image: "/img/team/member7.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1138,7 +1138,7 @@ export const HelplineData = {
       id: 8,
       designation: "Cashier",
       name: "Mr Faisal Mushtaq",
-      image: "/img/team/member8.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1150,7 +1150,7 @@ export const HelplineData = {
       id: 9,
       designation: "Designer",
       name: "Mr Adeem Mansoor",
-      image: "/img/team/member9.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1162,7 +1162,7 @@ export const HelplineData = {
       id: 12,
       designation: "Manager Purchase",
       name: "Mr Mehmood Ali joiya",
-      image: "/img/team/member12.jpg",
+      image: "/img/team/member13.jpg",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },

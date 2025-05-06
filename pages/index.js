@@ -12,6 +12,7 @@ import WayToDonate from "../Components/Elements/Home/WayToDonate";
 import { HelplineData } from "../pages/api/data";
 import Meta from "../Components/SEO/Meta";
 import Educations from "../Components/Elements/Home/Educations";
+import Header from "../Components/Elements/Home/Header";
 
 const data = {
   Water: "Recent development",
@@ -29,7 +30,8 @@ export default function Home() {
       />
       <Layout1>
         <main>
-          <HeadArea />
+          {/* <HeadArea /> */}
+          <Header />
           <Educations />
           <AboutArea />
           <AllOverPakistan />
