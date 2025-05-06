@@ -20,12 +20,12 @@ export default function SupportersCard() {
       <div className={styles.wrapper}>
         <h2 className={styles.title}>Our Valued Supporters</h2>
         <div className={styles.imageContainer}>
-          <Image
+          {/* <Image
             src="/img/causes/sponser.jpg"
             alt="Our Supporters"
             fill
             className={styles.image}
-          />
+          /> */}
         </div>
         <div className={styles.supporterGrid}>
           {supporters.map((supporter, index) => (
