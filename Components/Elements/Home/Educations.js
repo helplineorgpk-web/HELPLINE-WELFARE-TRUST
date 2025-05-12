@@ -33,7 +33,7 @@ export default function Educations() {
 
   return (
     <div className={styles.container}>
-      <h3>Our Education Projects</h3>
+      <h3>Al-Kitab Education System</h3>
       <div className={styles.content_container}>
         {cards.map((card, index) => (
           <div key={index} className={styles.card}>

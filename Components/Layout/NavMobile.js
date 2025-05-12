@@ -23,7 +23,7 @@ export default function NavMobile() {
             <Link href="/about">About Us</Link>
           </li>
           <li>
-            <Link href="/chairmanMessage">Chairman's Message</Link>
+            <Link href="/chairmanMessage">CEO Message</Link>
           </li>
           <li>
             <Link href="/ourjourney">Our Journey</Link>
@@ -64,10 +64,10 @@ export default function NavMobile() {
             </Link>
             <ul>
               <li>
-                <Link href="/ownSchools">7 Own School In Punjab</Link>
+                <Link href="/ownSchools">8 Own School In Punjab</Link>
               </li>
               <li>
-                <Link href="/adoptedSchools">13 adopted Schools</Link>
+                <Link href="/adoptedSchools">15 adopted Schools</Link>
               </li>
               <li>
                 <Link href="/orphanage">Orphanage Abbottabad</Link>

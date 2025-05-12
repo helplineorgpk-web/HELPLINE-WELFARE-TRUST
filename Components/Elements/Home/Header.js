@@ -13,32 +13,20 @@ const sliderData = {
     {
       id: 1,
       News: "Campaigns Alert",
-      title: "Previous Projects",
-      project: "Schools",
+      title: "Islamic Programs",
+      project: "Ramzan Rashan 2025",
       content:
-        "A look at our past successful projects. A look at our past successful projects.",
-      image1: "/img/causes/alkitab.jpg",
-      image2: "/img/causes/alkitab2.jpg",
-    },
-    {
-      id: 2,
-      News: "Campaigns Alert",
-      title: "Current Projects",
-      project: "Medical",
-      content:
-        "Ongoing projects making a difference. Ongoing projects making a difference.",
-      image1: "/img/causes/cataract1.jpg",
-      image2: "/img/causes/cataract2.jpeg",
+        "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
+      image1: "/img/causes/rashan1.jpeg",
     },
     {
       id: 3,
       News: "Campaigns Alert",
-      title: "Upcoming Projects",
-      project: "Ramzan Rashan",
+      title: "Islamic Programs",
+      project: "Qurbani 2025",
       content:
-        "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
-      image1: "/img/causes/rashan1.jpeg",
-      image2: "/img/causes/PHOTO-2025-02-19-11-45-30(2).jpg",
+        "Helpline performs Qurbani for the underprivileged, distributes fresh meat, and ensures hygienic packaging and delivery.",
+      image1: "/img/Campaigns/reallygreatsite.png",
     },
   ],
 };
@@ -46,13 +34,13 @@ const sliderData = {
 const idealProjects = [
   {
     id: 1,
-    title: "Al-Kitab School",
+    title: "Al-Kitab Education System",
     description: "Empowering children through quality education",
-    image: "/img/causes/alkitab2.jpg",
+    image: "/img/causes/School-1-scaled.jpg",
     stats: {
       students: "8000+",
-      teachers: "50",
-      classrooms: "12",
+      teachers: "400+",
+      classrooms: "200+",
     },
     slug: "al-kitab-school",
   },
@@ -84,10 +72,6 @@ export default function Header() {
     router.push("/donation");
   };
 
-  const handleLearnMoreClick = () => {
-    router.push("/about");
-  };
-
   const handleProjectLearnMore = () => {
     router.push(`/cause-details?id=23`);
   };
@@ -96,27 +80,58 @@ export default function Header() {
     <div className={styles.mainContainer}>
       <div className={styles.leftSection}>
         <div className={styles.contentArea}>
+          {/* <div className={styles.marqueeContainer}>
+          <div className={styles.marquee}>
+            <span>EDUCATION</span> - <span>HEALTH</span> -<span>WELFARE</span> -{" "}
+            <span>REHABILITATION</span> -<span>CAPACITY BUILDING</span> -{" "}
+            <span>SKILL DEVELOPMENT</span> -<span>COMMUNITY DEVELOPMENT</span>
+          </div>
+        </div> */}
           <div className={styles.headerNewTag}>
             <span className={styles.newLabel}>NEW</span>
             <span className={styles.brand}>
               HELPLINE <span className={styles.airo}>Pakistan</span>
             </span>
           </div>
-          <h1 className={styles.headline}>Helpline Welfare Trust</h1>
+
+          <h1 className={styles.headline}>
+            Helpline <br />{" "}
+            <span className={styles.welfare}>Welfare Trust</span>
+          </h1>
           <p className={styles.subtext}>
-            A project of community development through education.
+            Charity isn’t just a task, it’s a sacred calling to serve humanity
+            with unwavering grace, deep humility, compassion, and true purpose.
           </p>
-          <ul className={styles.features}>
-            <li>Supporting Education Initiatives</li>
-            <li>Healthcare Programs</li>
-            <li>Community Development</li>
-          </ul>
+
+          <div style={{ marginBottom: "20px" }}>
+            <h6 style={{ color: "#f15b43", fontWeight: "bold" }}>
+              Core Values
+            </h6>
+            <p style={{ color: "#343434" }}>
+              Honestly, Sincerity, Service & Commitment
+            </p>
+          </div>
+
+          <div className={styles.visionMissionContainer}>
+            <div className={styles.visionBox}>
+              <h6 className={styles.sectionHeading}>Vision</h6>
+              <p>
+                A world where every individual in distress finds a listening
+                ear, timely help, and renewed hope.
+              </p>
+            </div>
+            <div className={styles.missionBox}>
+              <h6 className={styles.sectionHeading}>Mission</h6>
+              <p>
+                Providing immediate support, and hope to those in crisis through
+                compassionate helpline services.
+              </p>
+            </div>
+          </div>
+
           <div className={styles.ctaButtons}>
             <button className={styles.btnPrimary} onClick={handleDonateClick}>
               Donate Now
-            </button>
-            <button className={styles.btnSecondary} onClick={handleLearnMoreClick}>
-              Learn More
             </button>
           </div>
         </div>
@@ -149,26 +164,14 @@ export default function Header() {
                       <div className={styles.imageCard}>
                         <div className={styles.cardContent}>
                           <h6 className={styles.project}>{slide.project}</h6>
-                          <p className={styles.slideDescription}>
-                            {slide.content}
-                          </p>
                         </div>
-                        <div className={styles.cardImages}>
-                          <Image
-                            src={slide.image1}
-                            alt={slide.title}
-                            width={100}
-                            height={100}
-                            className={styles.cardImage}
-                          />
-                          <Image
-                            src={slide.image2}
-                            alt={slide.title}
-                            width={100}
-                            height={100}
-                            className={styles.cardImage}
-                          />
-                        </div>
+                        <Image
+                          src={slide.image1}
+                          alt={slide.title}
+                          width={200}
+                          height={235}
+                          className={styles.cardImage}
+                        />
                       </div>
                     </div>
                     <Link href="/donation" className={styles.donate_now}>
@@ -192,15 +195,21 @@ export default function Header() {
               <p className={styles.projectDescription}>{project.description}</p>
               <div className={styles.projectStats}>
                 <div className={styles.stat}>
-                  <span className={styles.statNumber}>{project.stats.students}</span>
+                  <span className={styles.statNumber}>
+                    {project.stats.students}
+                  </span>
                   <span className={styles.statLabel}>Students</span>
                 </div>
                 <div className={styles.stat}>
-                  <span className={styles.statNumber}>{project.stats.teachers}</span>
+                  <span className={styles.statNumber}>
+                    {project.stats.teachers}
+                  </span>
                   <span className={styles.statLabel}>Teachers</span>
                 </div>
                 <div className={styles.stat}>
-                  <span className={styles.statNumber}>{project.stats.classrooms}</span>
+                  <span className={styles.statNumber}>
+                    {project.stats.classrooms}
+                  </span>
                   <span className={styles.statLabel}>Classrooms</span>
                 </div>
               </div>
@@ -214,7 +223,7 @@ export default function Header() {
                 className={styles.rightSectionImage}
               />
             </div>
-            <button 
+            <button
               className={styles.btnWhite}
               onClick={() => handleProjectLearnMore(project.slug)}
             >

@@ -6,7 +6,7 @@ export default function AdoptedSchoolsBreadCrumb() {
     <section
       className="breadcrumb_area breadcrumb_overlay"
       style={{
-        backgroundImage: "url(/img/causes/kaktario2.jpg)",
+        backgroundImage: "url(/img/causes/School-1-scaled.jpg)",
         objectFit: "cover",
       }}
     >
@@ -23,7 +23,7 @@ export default function AdoptedSchoolsBreadCrumb() {
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h2>Get In Touch</h2>
+                <h2>AL-Kitab Education System</h2>
               </div>
             </div>
           </div>

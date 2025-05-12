@@ -5,7 +5,10 @@ export default function OwnSchoolsBreadCrumb() {
   return (
     <section
       className="breadcrumb_area breadcrumb_overlay"
-      style={{ backgroundImage: "url(/img/causes/alkitab2.jpg)", objectFit: "cover" }}
+      style={{
+        backgroundImage: "url(/img/causes/School-1-scaled.jpg)",
+        objectFit: "cover",
+      }}
     >
       <div className="container">
         <div className="row">
@@ -16,11 +19,11 @@ export default function OwnSchoolsBreadCrumb() {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <span className="active">Own Schools</span>
+                  <span className="active">Owned Schools</span>
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h2>Get In Touch</h2>
+                <h2>Al-Kitab Education System</h2>
               </div>
             </div>
           </div>

@@ -18,13 +18,13 @@ const Registration = (content) => {
             }
           >
             <a className="g_btn hbtn_1 to_right1 rad-30">
-              2020-24<span></span>
+              2025-26<span></span>
             </a>
           </div>
         </div>
       </div>
       <div style={styles.container}>
-        <h1 style={styles.heading}>Annual Reports</h1>
+        <h1 style={styles.heading}>Annual Audit Reports</h1>
         <div style={styles.buttonContainer}>
           {pdfDocuments.map((doc) =>
             doc.title !== "2020-24" ? (

@@ -12,7 +12,7 @@ export default function NavFullscreen() {
               <Link href="/about">About Us</Link>
             </li>
             <li>
-              <Link href="/chairmanMessage">Chairman's Message</Link>
+              <Link href="/chairmanMessage">CEO Message</Link>
             </li>
             <li>
               <Link href="/ourjourney">Our Journey</Link>
@@ -30,13 +30,13 @@ export default function NavFullscreen() {
               <Link href="/registration">Registration Documents</Link>
             </li>
             <li>
-              <Link href="/certifications">Certications</Link>
+              <Link href="/certifications">Certifications</Link>
             </li>
           </ul>
         </li>
 
         <li className="menu-item-has-children">
-          <Link href="/cause">Our Causes</Link>
+          <Link href="/cause">Projects</Link>
           <ul className="sub-menu">
             <li>
               <Link href="/edu" className="innerli">
@@ -44,17 +44,22 @@ export default function NavFullscreen() {
               </Link>
               <ul className="submenu">
                 <li>
-                  <Link href="/ownSchools">7 Own School In Punjab</Link>
+                  <Link href="/ownSchools">Owned Schools</Link>
                 </li>
                 <li>
-                  <Link href="/adoptedSchools">13 adopted Schools</Link>
+                  <Link href="/adoptedSchools">Adopted Schools</Link>
                 </li>
                 <li>
-                  <Link href="/orphanage">Orphanage Abbottabad</Link>
+                  <Link href="/orphanage">Orphanage Home</Link>
                 </li>
                 <li>
                   <Link href="/vocationalTrainingCenters">
-                    Vocational Training centers
+                    Skills Development
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/vocationalTrainingCenters">
+                    Vocational Centers
                   </Link>
                 </li>
               </ul>
