@@ -1,0 +1,167 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.header h2 {
+  font-size: 2.8rem;
+  color: #263b5e;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: #f15b43;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  max-width: 900px;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 2.5rem;
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.story {
+  background-color: #263b5e;
+  position: relative;
+}
+
+.work {
+  background-color: #65cabb;
+  position: relative;
+}
+
+.islamicPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L45 30L30 60L15 30L30 0z M0 30L15 0L30 30L15 60L0 30z M60 30L45 0L30 30L45 60L60 30z' fill='%23ffffff' fill-opacity='0.1'/%3E%3C/svg%3E");
+  background-size: 60px 60px;
+  opacity: 0.1;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.cardTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.story .cardText {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.work .cardText {
+  color: #263b5e;
+}
+
+.cardText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.readMore {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.story .readMore:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.work .readMore {
+  background: rgba(38, 59, 94, 0.2);
+  color: #263b5e;
+}
+
+.work .readMore:hover {
+  background: rgba(38, 59, 94, 0.3);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+  .cardsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4rem 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .cardTitle {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,146 @@
+.teamContainer {
+  background-color: #f0fdfc;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.mainHeader h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1e9c91;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.mainHeader h1::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f15b43, #7ec8ea);
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.teamSection {
+  margin-bottom: 5rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2rem;
+  color: #1e9c91;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+.teamCard {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 12px 30px rgba(30, 156, 145, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.teamCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(30, 156, 145, 0.15);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  position: relative;
+  background: linear-gradient(135deg, #65cabb, #7ec8ea);
+}
+
+.imageContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.teamCard:hover .imageContainer img {
+  transform: scale(1.08);
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(30, 156, 145, 0.4), rgba(126, 200, 234, 0.1));
+}
+
+.cardContent {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.cardContent h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e9c91;
+  margin-bottom: 0.5rem;
+}
+
+.cardContent p {
+  font-size: 1.1rem;
+  color: #65cabb;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.viewProfileButton {
+  background: #f15b43;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.viewProfileButton:hover {
+  background: #c74d37;
+}
+
+@media (max-width: 768px) {
+  .mainHeader h1 {
+    font-size: 2.5rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.6rem;
+  }
+
+  .cardContent h3 {
+    font-size: 1.3rem;
+  }
+
+  .cardContent p {
+    font-size: 1rem;
+  }
+}
