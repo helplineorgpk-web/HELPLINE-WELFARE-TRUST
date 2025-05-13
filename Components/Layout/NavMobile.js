@@ -23,7 +23,7 @@ export default function NavMobile() {
             <Link href="/about">About Us</Link>
           </li>
           <li>
-            <Link href="/chairmanMessage">CEO Message</Link>
+            <Link href="/organization">Organization</Link>
           </li>
           <li>
             <Link href="/ourjourney">Our Journey</Link>

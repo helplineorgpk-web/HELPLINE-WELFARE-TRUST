@@ -147,23 +147,22 @@ export const HelplineData = {
     {
       id: 1,
       icon: "📝",
-      description: "Accepts application from deserving families",
+      description: "Accept Application from deserving family",
     },
     {
       id: 2,
       icon: "🔍",
-      description: "Our team investigates the applicant",
+      description: "Investigates the Applicant",
     },
     {
       id: 3,
       icon: "🤝",
-      description:
-        "Provides them immediate help in terms of cash or in services",
+      description: "Provide immediate Help in terms of Cash/ Service",
     },
     {
       id: 4,
       icon: "💵",
-      description: "Rehabilitates them by providing a financial opportunity",
+      description: "Rehabilitate by providing financial Support",
     },
   ],
   ownSchools: [
@@ -1198,7 +1197,7 @@ export const HelplineData = {
   team: [
     {
       id: 0,
-      designation: "Chief Executive Officer",
+      designation: "Managing Trustee",
       name: "Muhammad Iqbal Khan",
       image: "/img/team/iconimage.png",
       socialLinks: [
@@ -1424,43 +1423,79 @@ export const HelplineData = {
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
-  ],
-  certificationData: [
     {
-      id: 1,
-      title: "Certification",
-      announcement:
-        "We are proud to announce that Helpline, a dedicated social welfare organization, has been certified by the Pakistan Center of Philanthropy (PCP) and is registered with the Federal Board of Revenue (FBR). These certifications demonstrate our unwavering commitment to transparency, accountability, and excellence in all our endeavors.",
-      details:
-        "The certification from PCP highlights our adherence to the highest standards in governance, financial management, and program implementation. Being registered with the FBR empowers us to accept donations domestically and internationally, enhancing trust and credibility among donors.",
-      conclusion:
-        "Join us in making a lasting impact. Together, we can transform lives and create a brighter future.",
-      img: [
-        {
-          id: 1,
-          src: "/img/about/PCP-certificate2.jpg",
-          alt: "FBR Certificate",
-        },
-        {
-          id: 2,
-          src: "/img/about/PCP-certificate1.jpeg",
-          alt: "PCP Certificate",
-        },
+      id: 21,
+      designation: "Administrator KMC",
+      name: "COL Zahoor Hussain (Retd)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 22,
+      designation: "Education Advisor",
+      name: "Aijaz Hussain Kazi (Former Secretary)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 23,
+      designation: "Marketing Consultant",
+      name: "Brigadier Zaheer Ahmad (Retd)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 24,
+      designation: "Technology Consultant",
+      name: "Col Waqar Ahmad (Retd)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 25,
+      designation: "Media Consultant",
+      name: "Amir Hashim Khakwani",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
   ],
+
   journeyData: [
     {
-      title:
-        "HELPLINE is 'Bridging the Gap between Have and Have not' on the Principles of",
+      title: "'Bridging the Gap Between the Haves and the Have-Nots'",
       title1: '"MAWAKHAT-E-MADINAH"',
       announcement:
-        "Helpline Social Welfare Charity Organization is built on the fundamental concept of Mawakhat, which is an Arabic term that refers to the bond of brotherhood and solidarity between individuals or groups of people. Mawakhat embodies the spirit of social responsibility, where people from different backgrounds and communities come together to support one another in times of need. At Helpline Social Welfare Charity Organization, this concept of Mawakhat is the cornerstone of our work, and we strive to build stronger communities by fostering a sense of collective responsibility and empathy. We believe that everyone deserves equal opportunities and access to basic necessities such as food, education, and healthcare, regardless of their background or socioeconomic status. Through our various initiatives and programs, we aim to create a more equitable society where people can live with dignity and respect. Our team of dedicated volunteers works tirelessly to provide assistance and support to those in need, and we are committed to making a positive impact in the lives of the people we serve. Overall, Helpline Social Welfare Charity Organization is grounded in the principles of Mawakhat, and we believe that by working together, we can create a better world for everyone.",
+        "Helpline Social Welfare Organization is built on the fundamental concept of Mawakhat, which is an Arabic term that refers to the bond of brotherhood and solidarity between individuals or groups of people. Mawakhat embodies the spirit of social responsibility, where people from different backgrounds and communities come together to support one another in times of need. At Helpline Social Welfare Charity Organization, this concept of Mawakhat is the cornerstone of our work, and we strive to build stronger communities by fostering a sense of collective responsibility and empathy. We believe that everyone deserves equal opportunities and access to basic necessities such as food, education, and healthcare, regardless of their background or socioeconomic status. Through our various initiatives and programs, we aim to create a more equitable society where people can live with dignity and respect. Our team of dedicated volunteers works tirelessly to provide assistance and support to those in need, and we are committed to making a positive impact in the lives of the people we serve. Overall, Helpline Social Welfare Charity Organization is grounded in the principles of Mawakhat, and we believe that by working together, we can create a better world for everyone.",
       announcement1:
         "Helpline started its journey with the private construction of a school in Pak Patan, Punjab in 1993 which got completed in the year 2000.The basic purpose of Helpline is Betterment of the academic activities of Government Schools and concentration towards providing basic necessities of life, especially support of poor students. Helpline’s proper registration was done in the year 2000 which included academic improvement of Government schools, wellness of prisoners and supply of free food to patients in Public Hospitals.",
       details:
         "The certification from PCP highlights our adherence to the highest standards in governance, financial management, and program implementation. Being registered with the FBR empowers us to accept donations domestically and internationally, enhancing trust and credibility among donors.",
-      conclusion: "Overview of Helpline’s Massive Work Over the Years",
+      conclusion: "Massive Work Over the Years",
       datayearly: [
         {
           id: 1,
@@ -1601,7 +1636,7 @@ export const HelplineData = {
             "In the year 2023, So far, Helpline distributed 3005 ration packages in Ramzan, and undertook the sacred act of Qurbani, sacrificing 527 animals.",
         },
         {
-          id: 23,
+          id: 24,
           year: "2024",
           detail:
             "In 2024, Helpline distributed ration packages among 18000 deserving families during Ramzan and supported families in need. Our Al-kitab Educational System reached over 6,000 students across Pakistan, with 7 schools in Punjab and 13 adopted government schools in interior Sindh, expanding access toquality education for underprivileged children. 1000 free Cataract operations. Free treatment of 3000 free medical care.",
@@ -2227,52 +2262,52 @@ This year, with your generous support, we’ve achieved incredible milestones in
   pdfDocuments: [
     {
       id: 1,
-      title: "2014",
+      title: "2013-14",
       pdf: "/img/pdfs/HELPLINE-2014.pdf",
     },
     {
       id: 2,
-      title: "2015",
+      title: "2014-15",
       pdf: "/img/pdfs/HELPLINE-2015.pdf",
     },
     {
       id: 3,
-      title: "2016",
+      title: "2015-16",
       pdf: "/img/pdfs/HELPLINE-2016.pdf",
     },
     {
       id: 4,
-      title: "2017",
+      title: "2016-17",
       pdf: "/img/pdfs/HELPLINE-2017.pdf",
     },
     {
       id: 5,
-      title: "2018",
+      title: "2017-18",
       pdf: "/img/pdfs/HELPLINE-2018.pdf",
     },
     {
       id: 6,
-      title: "2019",
+      title: "2018-19",
       pdf: "/img/pdfs/HELPLINE-2019.pdf",
     },
     {
       id: 7,
-      title: "2020",
+      title: "2019-20",
       pdf: "/img/pdfs/HELPLINE-2020.pdf",
     },
     {
       id: 8,
-      title: "2021",
+      title: "2020-21",
       pdf: "/img/pdfs/HELPLINE-2021.pdf",
     },
     {
       id: 9,
-      title: "2022",
+      title: "2021-22",
       pdf: "/img/pdfs/HELPLINE-2022.pdf",
     },
     {
       id: 10,
-      title: "2023",
+      title: "2022-23",
       pdf: "/img/pdfs/HELPLINE-2023.pdf",
     },
     {

@@ -9,28 +9,24 @@ export default function NavFullscreen() {
           <Link href="/about">About Us</Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/about">About Us</Link>
+              <Link href="/about">Introduction</Link>
             </li>
             <li>
-              <Link href="/chairmanMessage">CEO Message</Link>
+              <Link href="/organization">Organization</Link>
             </li>
-            <li>
-              <Link href="/ourjourney">Our Journey</Link>
-            </li>
+
             <li>
               <Link href="/ourPresence">Our Presence</Link>
             </li>
             <li>
               <Link href="/supporters">Supporters</Link>
             </li>
+
             <li>
-              <Link href="/mission">Mission</Link>
+              <Link href="/ourjourney">Our Journey</Link>
             </li>
             <li>
               <Link href="/registration">Registration Documents</Link>
-            </li>
-            <li>
-              <Link href="/certifications">Certifications</Link>
             </li>
           </ul>
         </li>
@@ -175,7 +171,7 @@ export default function NavFullscreen() {
         </li>
 
         <li className="menu-item-has-children">
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">Contact Us</Link>
         </li>
       </ul>
     </nav>

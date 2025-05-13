@@ -1,53 +1,58 @@
-import React from 'react';
-import styles from '../../../public/css/OurIdentity.module.css';
+import React from "react";
+import styles from "../../../public/css/OurIdentity.module.css";
 
 export default function OurIdentity() {
+  const identityItems = [
+    {
+      id: 1,
+      title: "Our Vision",
+      icon: "/img/icons/vision.png",
+      description:
+        "To create a society based on the principles of Mawakhat-e-Madina, where every individual has access to basic necessities and opportunities for growth.",
+    },
+    {
+      id: 2,
+      title: "Our Mission",
+      icon: "/img/icons/mission.png",
+      description:
+        "To bridge the gap between the privileged and underprivileged through sustainable initiatives in education, healthcare, and social welfare.",
+    },
+    {
+      id: 3,
+      title: "Our Values",
+      icon: "/img/icons/values.png",
+      description:
+        "Transparency, compassion, and dedication guide our every action. We believe in empowering communities through collective responsibility and mutual support.",
+    },
+  ];
+
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <h2>Our Identity</h2>
-        <p className={styles.description}>
-          Helpline embodies Mawakhat (solidarity) as a vision towards a poverty-free society based
-          on the values of solidarity, equity, and compassion. Helpline values financial inclusion,
-          financial inclusion, education, and healthcare as fundamental human rights.
-        </p>
-      </div>
-      <div className={styles.cardsContainer}>
-        <div className={styles.card + ' ' + styles.story}>
-          <div className={styles.islamicPattern}></div>
-          <div className={styles.cardContent}>
-            <h3 className={styles.cardTitle}>Our Story</h3>
-            <p className={styles.cardText}>
-              Before 2001, Mr. Muhammad Aslam Khan Kakkarh was affiliated with
-              the Punjab Rural Support Program (PRSP) where he worked
-              with marginalized families and witnessed their struggles
-              firsthand. Learning from his experiences, he founded
-              Akhuwat and decided to dedicate his life to providing
-              support to those in need.
-            </p>
-            <button className={styles.readMore}>
-              <span>+</span>
-            </button>
-          </div>
+    <section className={styles.identitySection}>
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <h2>Who We Are</h2>
+          <p>
+            Helpline Welfare Trust is committed to creating positive change through
+            sustainable social welfare initiatives, guided by the principles of
+            compassion and community service.
+          </p>
         </div>
-        <div className={styles.card + ' ' + styles.work}>
-          <div className={styles.islamicPattern}></div>
-          <div className={styles.cardContent}>
-            <h3 className={styles.cardTitle}>Our Work</h3>
-            <p className={styles.cardText}>
-              Helpline offers interest-free loans such as Qarz-e-Hassan
-              to financially disadvantaged families and individuals.
-              Helpline provides three types of loans; enterprise,
-              agriculture, and housing. Beyond the realm of microfinance,
-              Helpline also works in the areas of education, healthcare
-              services, transgender support, and disaster relief.
-            </p>
-            <button className={styles.readMore}>
-              <span>+</span>
-            </button>
-          </div>
+        <div className={styles.identityGrid}>
+          {identityItems.map((item) => (
+            <div key={item.id} className={styles.identityCard}>
+              <div className={styles.cardHeader}>
+                <div className={styles.iconContainer}>
+                  <img src={item.icon} alt={item.title} />
+                </div>
+                <h3>{item.title}</h3>
+              </div>
+              <div className={styles.cardContent}>
+                <p>{item.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

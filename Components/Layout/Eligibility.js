@@ -6,7 +6,7 @@ function Eligibility() {
   const data = HelplineData.HelplineCriteriaData;
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>HELPLINE CRITERIA OF WELFARE SERVICES</h1>
+      <h1 className={styles.title}>CRITERIA FOR HELPLINE SUPPORT</h1>
       <div className={styles.criteriaContainer}>
         {data.map((item) => (
           <div key={item.id} className={styles.criteriaItem}>

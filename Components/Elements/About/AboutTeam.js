@@ -5,12 +5,27 @@ import styles from "../../../public/css/AboutTeam.module.css";
 
 export default function AboutTeam() {
   const team = HelplineData.team;
+
   const executives = team.filter((member) =>
-    ["Chief Executive Officer", "GM (Admin & HR)", "GM (Education)"].includes(
-      member.designation
-    )
+    [
+      "Managing Trustee",
+      "GM (Admin & HR)",
+      "GM (Education)",
+      "Administrator KMC",
+    ].includes(member.designation)
   );
-  const ADMIN_SUPPORT = team.filter((member) =>
+
+  const advisers = team.filter((member) =>
+    [
+      "Education Advisor",
+      "Advisor",
+      "Media Consultant",
+      "Technology Consultant",
+      "Marketing Consultant",
+    ].includes(member.designation)
+  );
+
+  const adminSupport = team.filter((member) =>
     [
       "Manager Purchases",
       "Manager Admin & Support",
@@ -18,49 +33,47 @@ export default function AboutTeam() {
       "Manager Transport",
     ].includes(member.designation)
   );
-  const hrManagement = team.filter((member) =>
+
+  const financeTeam = team.filter((member) =>
     ["Senior Manager Accounts", "Manager Accounts"].includes(member.designation)
   );
 
   const mediaTeam = team.filter((member) =>
-    ["Manager Media", "Manager Media", "Media Executive"].includes(
-      member.designation
-    )
+    ["Manager Media", "Media Executive"].includes(member.designation)
   );
 
   const renderTeamSection = (members, title) => (
-    <div className={styles.teamSection}>
-      <div className={styles.sectionHeader}>
-        <h2>{title}</h2>
-      </div>
-      <div className={styles.teamGrid}>
-        {members.map((member) => (
-          <div key={member.id} className={styles.teamCard}>
-            <div className={styles.imageContainer}>
-              <img src={member.image} alt={member.name} />
-              <div className={styles.cardOverlay}></div>
+    members.length > 0 && (
+      <div className={styles.teamSection}>
+        <div className={styles.sectionHeader}>
+          <h2>{title}</h2>
+        </div>
+        <div className={styles.teamGrid}>
+          {members.map((member) => (
+            <div key={member.id} className={styles.teamCard}>
+              <div className={styles.imageContainer}>
+                <img src={member.image} alt={member.name} />
+                <div className={styles.cardOverlay}></div>
+              </div>
+              <div className={styles.cardContent}>
+                <h3>{member.name}</h3>
+                <p>{member.designation}</p>
+                <Link
+                  href={{
+                    pathname: "/volunteer-details",
+                    query: { id: member.id },
+                  }}
+                >
+                  <button className={styles.viewProfileButton}>
+                    <span>View Profile</span>
+                  </button>
+                </Link>
+              </div>
             </div>
-            <div className={styles.cardContent}>
-              <h3>{member.name}</h3>
-              <p style={{ color: "#071BB3", fontSize: "1.2rem" }}>
-                {member.designation}
-              </p>
-
-              <Link
-                href={{
-                  pathname: "/volunteer-details",
-                  query: { id: member.id },
-                }}
-              >
-                <button className={styles.viewProfileButton}>
-                  <span>View Profile</span>
-                </button>
-              </Link>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    )
   );
 
   return (
@@ -69,8 +82,9 @@ export default function AboutTeam() {
         <h1>Our Team</h1>
       </div>
       {renderTeamSection(executives, "Team Executives")}
-      {renderTeamSection(ADMIN_SUPPORT, "Admin & Support")}
-      {renderTeamSection(hrManagement, "Finance")}
+      {renderTeamSection(advisers, "Advisors & Consultants")}
+      {renderTeamSection(adminSupport, "Admin & Support")}
+      {renderTeamSection(financeTeam, "Finance")}
       {renderTeamSection(mediaTeam, "Media & Technology")}
     </div>
   );

@@ -1,5 +1,5 @@
 .container {
-  max-width: 800px;
+  max-width: 1350px;
   margin: 30px auto;
   padding: 20px;
   font-family: "Arial", sans-serif;
@@ -23,14 +23,14 @@
 }
 
 .chairmanimage img {
-  float: left;
+  /* float: left; */
   width: 150px;
   height: 150px;
-  margin-top: 40px;
+  /* margin-top: 40px;
   margin-right: 20px;
   border-radius: 8%;
   border: 4px solid #1e3b55;
-  box-shadow: 0 8px 16px rgba(30, 59, 85, 0.2);
+  box-shadow: 0 8px 16px rgba(30, 59, 85, 0.2); */
 }
 
 .messagecontent h2 {

@@ -11,12 +11,19 @@ export default function AboutTeam() {
   const ADMIN_SUPPORT = team.filter((member) =>
     ["President", "Vice President"].includes(member.designation)
   );
-  const hrManagement = team.filter((member) =>
+  const Adviser = team.filter((member) =>
     [
-      "Chief Executive Officer",
-      "General Secretary",
-      "Finance Secretary",
+      "Education Advisor",
+      "Advisor",
+      "Media Consultant",
+      "Technology Consultant",
+      "Marketing Consultant",
     ].includes(member.designation)
+  );
+  const hrManagement = team.filter((member) =>
+    ["Managing Trustee", "General Secretary", "Finance Secretary"].includes(
+      member.designation
+    )
   );
 
   const renderTeamSection = (members, title) => (
@@ -62,6 +69,7 @@ export default function AboutTeam() {
       {renderTeamSection(executives, "Chairman")}
       {renderTeamSection(ADMIN_SUPPORT, "President")}
       {renderTeamSection(hrManagement, "Exectuive Member")}
+      {renderTeamSection(Adviser, "Advisors / Consultants")}
     </div>
   );
 }

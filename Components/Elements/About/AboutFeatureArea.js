@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutFeatureArea() {
   return (
     //about feature area start
-    <div className="about_features_area soft-grey-2 pt-205 pb-390">
+    <div className="about_features_area soft-grey-2 ">
       <div className="container">
         <div className="row">
           <div className="col-xxl-12">

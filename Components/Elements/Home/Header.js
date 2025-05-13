@@ -107,9 +107,7 @@ export default function Header() {
             <h6 style={{ color: "#f15b43", fontWeight: "bold" }}>
               Core Values
             </h6>
-            <p style={{ color: "#343434" }}>
-              Honestly, Sincerity, Service & Commitment
-            </p>
+            <p style={{ color: "#343434" }}>Sincerity, Service & Commitment</p>
           </div>
 
           <div className={styles.visionMissionContainer}>
