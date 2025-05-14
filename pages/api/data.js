@@ -147,26 +147,57 @@ export const HelplineData = {
     {
       id: 1,
       icon: "📝",
-      description: "Accepts application from deserving families",
+      description: "Accept Application from deserving family",
     },
     {
       id: 2,
       icon: "🔍",
-      description: "Our team investigates the applicant",
+      description: "Investigates the Applicant",
     },
     {
       id: 3,
       icon: "🤝",
-      description:
-        "Provides them immediate help in terms of cash or in services",
+      description: "Provide immediate Help in terms of Cash/ Service",
     },
     {
       id: 4,
       icon: "💵",
-      description: "Rehabilitates them by providing a financial opportunity",
+      description: "Rehabilitate by providing financial Support",
     },
   ],
   ownSchools: [
+    {
+      id: 23,
+      category: ["Own School"],
+      img: "/img/bg/breadcrumb_bg_4.jpg",
+      img1: "/img/causes/alkitab3.jpg",
+      img2: "/img/causes/alkitab4.jpg",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+      description:
+        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. ",
+
+      desc: "Al-Kitab Education System School Shaikhupura (Abid Town ).",
+      ActualName: "Al-Kitab Higher Secondary School",
+      detail2:
+        "At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development.",
+      detail3:
+        "We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
+      color: "#65cabb",
+    },
+    {
+      id: 18,
+      category: ["Own School"],
+      img: "/img/causes/irtiqa.jpeg",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+      ActualName: "Irtaqa-e-Itfal High School",
+      description:
+        "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
+
+      desc: "Al-Kitab Education System School Lahore (Manawan).",
+      color: "#65cabb",
+    },
     {
       id: 33,
       category: ["Own School"],
@@ -177,34 +208,8 @@ export const HelplineData = {
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
         "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
-
-      desc: "Al-Kitab School (Gullowali, Rajanpur).",
-      color: "#65cabb",
-    },
-    {
-      id: 23,
-      category: ["Own School"],
-      img: "/img/causes/alkitab2.jpg",
-      img1: "/img/causes/alkitab3.jpg",
-      img2: "/img/causes/alkitab4.jpg",
-      detail:
-        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
-      description:
-        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
-
-      desc: "Al Kitab Education System (Rana Town).",
-      color: "#65cabb",
-    },
-    {
-      id: 24,
-      category: ["Own School"],
-      img: "/img/causes/alkitabghani1.jpg",
-      detail:
-        "Al-Kitab School offers free education, fostering growth and community service.",
-      description:
-        "Al-Kitab School, located in Chani Goth, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The school focuses on academic excellence and offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects. The school prioritises academic performance and aims to instil moral values and a sense of community service among its students. In addition, the school provides extracurricular activities that help to develop the student’s skills and talents. The school also organizes community service activities to encourage the students to give back to society. The Al-Kitab School is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The school also provides free uniforms, textbooks, and school supplies.",
-
-      desc: "Al Kitab Education System  (Chani Goth).",
+      ActualName: "Al-Kitab Education System School Rajanpur",
+      desc: "Al-Kitab Education System School Rajanpur (Gullowali).",
       color: "#5fb35b",
     },
     {
@@ -212,22 +217,25 @@ export const HelplineData = {
       category: ["Own School"],
       img: "/img/causes/rehmat.jpeg",
       detail:
-        "Aligarh Complex offers free education, breaking poverty through knowledge.",
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
         "Aligarh Educational Complex in Gojra is a project owned by Helpline NGO, aimed at providing free education to underprivileged students. The complex comprises a school, a computer lab, a library, and a hostel. The school has a team of highly qualified teachers who are committed to providing quality education to children from low-income families. The computer lab at the complex is equipped with the latest technology and offers students the opportunity to learn computer skills. The library is stocked with a wide range of books, which provides students with access to a wealth of knowledge and information. The hostel offers comfortable accommodation for students who live far away from the school and ensures that they have a safe and secure environment to study in. Aligarh Educational Complex in Gojra is making a significant contribution to the community it serves. The school’s focus on providing quality education to underprivileged children has helped to break the cycle of poverty and provide a brighter future for many families.",
+      ActualName: "Ch Rehmat Ali Higher Secondary School for Boys",
+      desc: "Al-Kitab Education System School, TobaTekSingh (Gojra).",
 
-      desc: "Ch Rehmat Ali Higher Secondary School for Boys",
       color: "#f15b43",
     },
     {
       id: 26,
       category: ["Own School"],
       img: "/img/causes/girlsschool.jpeg",
-      detail: "Free education for brighter futures.",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
         "CH. Rahmat Ali Superior Higher Secondary School, located in the Alighar Education Complex in Gojra, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The institution offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects, with a focus on academic excellence. In addition to academic subjects, the school also provides extracurricular activities that help to develop the student’s skills and talents. The institution encourages students to participate in sports, debates, and other activities that enable them to develop their leadership skills and teamwork abilities. The Alighar Education Complex is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The institution also provides free uniforms, textbooks, and school supplies to the students.",
-
-      desc: "Iman Maryam Girls Higher Secondary School Alighar Education Complex (Gojra)",
+      desc: "Al-Kitab Education System School, TobaTekSingh (Gojra).",
+      ActualName:
+        "Iman Maryam Girls Higher Secondary School Alighar Education Complex",
       color: "#65cabb",
     },
     {
@@ -236,39 +244,64 @@ export const HelplineData = {
       img: "/img/causes/eman1.jpeg",
       img1: "/img/causes/eman2.jpeg",
       img2: "/img/causes/eman3.jpeg",
-      detail: "Free education for brighter futures.",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
         "Emman Maryam Smart School, Alighar Education Complex (Gojra) is a remarkable institution that is supported by Helpline NGO. The school is dedicated to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and enthusiastic, despite the financial challenges they may face. They are committed to their education and strive to excel academically. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been crucial in making this possible. By providing financial assistance, Helpline NGO is helping to ensure that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are designed to cater to the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
 
-      desc: "Emman Maryam Smart School Alighar Education Complex (Gojra)",
-      color: "#65cabb",
+      desc: "Al-Kitab Education System School, TobaTekSingh (Gojra).",
+      ActualName: "Emman Maryam Smart School Alighar Education Complex",
+      color: "#5fb35b",
     },
     {
-      id: 18,
+      id: 24,
       category: ["Own School"],
-      img: "/img/causes/irtiqa.jpeg",
-      detail: "Empowering underprivileged youth through quality education.",
+      img: "/img/causes/alkitabghani1.jpg",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
-        "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
+        "Al-Kitab School, located in Chani Goth, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The school focuses on academic excellence and offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects. The school prioritises academic performance and aims to instil moral values and a sense of community service among its students. In addition, the school provides extracurricular activities that help to develop the student’s skills and talents. The school also organizes community service activities to encourage the students to give back to society. The Al-Kitab School is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The school also provides free uniforms, textbooks, and school supplies.",
 
-      desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
+      desc: "Al-Kitab Education System School,  Bahawalpur  (Chani Goth).",
+      ActualName: "Al-Kitab Education System School,  Bahawalpur",
+      color: "#5fb35b",
+    },
+    {
+      id: 39,
+      category: ["Own School"],
+      img: "/img/bg/breadcrumb_bg_4.jpg",
+      img1: "/img/causes/alkitab3.jpg",
+      img2: "/img/causes/alkitab4.jpg",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+      description:
+        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. ",
+
+      desc: "Al-Kitab School of Technology Shaikhupura (Abid Town ).",
+      ActualName: "Al-Kitab School of Technology ",
+      detail2:
+        "At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development.",
+      detail3:
+        "We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
       color: "#65cabb",
     },
   ],
   adoptedSchools: [
     {
-      id: 19,
+      id: 38,
       category: ["Adopted Schools"],
-      img: "/img/causes/nimro1.jpg",
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
+      img: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
+      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(1).jpg",
+      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(2).jpg",
+      img2: "/img/causes/PHOTO-2025-02-19-11-45-31(3).jpg",
       detail:
-        "GPS. Nimro Sharif School empowers students with quality education.",
+        "GPS Ando Muhajir School empowers students with quality education.",
       description:
         "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
       pbar: "pbar_1",
-
-      desc: "The Govt GPS. Nimro Sharif School",
+      ActualName: "Benazir Public Girls School",
+      ActualName: "Benazir Public Girls School",
+      desc: "Benazir Public Girls School, Nawabshah",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -283,7 +316,8 @@ export const HelplineData = {
       description:
         "The support provided by a helpline NGO to Govt. Misri Bheel School has been critical in ensuring that underprivileged students in the community have access to quality education. The NGO has taken on the responsibility of running the school, providing financial support, and ensuring that students have access to essential supplies and resources. Moreover, the NGO’s support for the school’s operations has been instrumental in keeping the school running and providing quality education to students who otherwise may not have had access to it. The NGO has worked closely with the school’s administration to ensure that the school is well-maintained and that students have access to necessary resources such as textbooks and school supplies.",
 
-      desc: "The Govt GPS. Misri Bheel School (Tando Allah Yar)",
+      desc: "Sindh Govt Primary School, TandoAllahYar (Misri Bheel) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#65cabb",
     },
@@ -298,10 +332,29 @@ export const HelplineData = {
       description:
         "The Helpline Social Welfare Foundation’s adoption of Govt. Nabi Baksh Gabool School is a remarkable example of a community-based organization taking the initiative to support underprivileged students and uplift the education system. The Foundation has assumed full responsibility for the school, providing much-needed financial aid and resources to ensure that students receive a quality education.<br>Through this partnership, the Foundation has been able to offer an array of programs and resources to support students’ academic achievement, including scholarships, mentorship programs, and academic support services. The Foundation has also focused on ensuring that the school is well-maintained and that students have access to critical resources and supplies.",
 
-      desc: "Govt GPS. Nabi Baksh Gabool School (Tando Allah Yar)",
+      desc: "Sindh Govt Primary School, TandoAllahYar (Nabi Baksh Gabool) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
     },
+    {
+      id: 19,
+      category: ["Adopted Schools"],
+      img: "/img/causes/nimro1.jpg",
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS. Nimro Sharif School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+
+      desc: "Sindh Govt Primary School, Mirpurkhas (Nimro Sharif) ",
+      ActualName: "Sindh Govt Primary School",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+
     {
       id: 22,
       category: ["Adopted Schools"],
@@ -312,10 +365,10 @@ export const HelplineData = {
         "GPS. Sardar Khan Laghari School empowers students with quality education.",
       description:
         "The Helpline Social Welfare Foundation’s adoption of Govt. Sardar Khan Laghari School is a commendable initiative aimed at improving the quality of education for underprivileged students. By taking on the full responsibility of supporting the school, the Foundation has helped to stabilize its operations and ensure its sustainability in the long run. In addition to supporting students’ academic success, the Foundation has worked to ensure that the school is well-maintained and equipped with the necessary resources and supplies. This has helped to create a conducive learning environment that promotes students’ well-being and academic achievement.",
-
-      desc: "GPS. Sardar Khan Laghari School (Mirpurkhas)",
+      desc: "Sindh Govt Primary School, Mirpurkhas (Sardar Khan Laghari) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      color: "#f15b43",
+      color: "#65cabb",
     },
     {
       id: 9,
@@ -328,7 +381,8 @@ export const HelplineData = {
       description:
         "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
       progressData: "65",
-      desc: "GPS Roru Goth School (Mirpurkhas).",
+      desc: "Sindh Govt Primary School, Mirpurkhas (Roru Goth) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -342,7 +396,8 @@ export const HelplineData = {
         "GPS. Bagliar Mithi School empowers students with quality education.",
       description:
         "Govt. Bagliar Mithi School is a beacon of hope for underprivileged students who might not otherwise have access to quality education. With the help of a helpline NGO, the school can provide support to students facing financial and other challenges. This support can come in many forms, including scholarships, tuition assistance, and other resources designed to help students succeed in their studies. The work that is being done by Govt. Bagliar Mithi School and the helpline NGO are genuinely inspiring. By providing opportunities for education to students who might not otherwise have access to it, they are helping to break the cycle of poverty and create a brighter future for the next generation. The dedication and hard work of the teachers and staff at the school, as well as the generosity of the NGO supporters, is making a real difference in the lives of these students and is something that should be celebrated and supported by all members of the community.",
-      desc: "The Govt GPS. Bagliar Mithi School (Tharparkar).",
+      desc: "Sindh Govt Primary School, Tharparkar (Bagliar Mithi) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#65cabb",
     },
@@ -356,8 +411,8 @@ export const HelplineData = {
         "Govt. Kakrario Saman Mian School empowers students with quality education.",
       description:
         "The adoption of Govt. Kakrario Saman Mian School a helpline NGO has been a game-changer for the school, its students, and its teachers. The NGO has taken on the responsibility of supporting the school’s operations by providing financial assistance for the payment of teachers’ salaries, as well as other essential needs such as textbooks, school supplies, and maintenance of facilities. This support has been critical for the school, which serves a predominantly low-income student population. Through this partnership, the helpline NGO has been able to provide a range of resources and programs to support students’ learning and academic achievement. These resources include scholarships, mentorship programs, and academic support services, such as tutoring and study skills workshops. By providing these opportunities to underprivileged students, the NGO is helping to level the playing field and give these students a chance to succeed.",
-
-      desc: "Govt GPS. Kakrario Saman Mian School (Tharparkar)",
+      desc: "Sindh Govt Primary School, Tharparkar (Kakrario Saman Mian) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
     },
@@ -371,7 +426,8 @@ export const HelplineData = {
         "GPS. Misali Goth School empowers students with quality education.",
       description:
         "Helpline NGO’s support for the Govt. Misali Goth School is highly commendable, as it recognizes the importance of education in the development of communities. By providing financial assistance to the school, Helpline NGO is helping to ensure that students have access to quality education and a supportive learning environment. In addition to supporting the school itself, Helpline NGO also provides salaries to the employees, which is a significant contribution to the livelihoods of the staff. The provision of salaries to the employees is essential, as it helps to ensure that the school can attract and retain qualified and dedicated teachers and staff. This, in turn, contributes to the quality of education provided to students, and ultimately, to the school’s success. By providing this support, Helpline NGO is playing an essential role in the development of education in the community and is making a positive impact on the lives of both students and employees.",
-      desc: "The Govt GPS. Misali Goth School",
+      desc: "Sindh Govt Primary School, Tharparkar (Misali Goth) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -385,8 +441,8 @@ export const HelplineData = {
         "GPS. Katho Samma School empowers students with quality education.",
       description:
         "The adoption of Govt. Katho Samma School by a helpline NGO has had a transformative impact on the school, its students, and its teachers. The NGO has taken on the responsibility of providing financial assistance for the school’s operations, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been critical for the school, which serves a predominantly low-income student population. Furthermore, the support that the NGO provides for the school’s teachers is invaluable. The NGO recognizes the vital role that teachers play in shaping students’ lives and is committed to ensuring that they are compensated fairly for their hard work. This support helps to incentivize high-quality teaching, which is essential for creating a positive and effective learning environment for students.",
-
-      desc: "The Govt GPS. Katho Samma School",
+      desc: "Sindh Govt Primary School, Tharparkar (Katho Samma) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#65cabb",
     },
@@ -401,26 +457,10 @@ export const HelplineData = {
       description:
         "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
       pbar: "pbar_1",
-
-      desc: "GPS Qazi Muhammad Ashraf (Mirpurkhas)",
+      desc: "Sindh Govt Primary School, Tharparkar (Nimro Sharif) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
-    },
-    {
-      id: 35,
-      category: ["Adopted Schools"],
-      img: "/img/causes/PHOTO-2025-02-19-11-39-49.jpg",
-      img1: "/img/causes/PHOTO-2025-02-19-11-40-10(1).jpg",
-      img2: "/img/causes/PHOTO-2025-02-19-11-40-10(2).jpg",
-      detail:
-        "GPS Nazar Hussain Arain School empowers students with quality education.",
-      description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
-      pbar: "pbar_1",
-
-      desc: "GPS Nazar Hussain Arain (Mirpurkhas)",
-      adopted: "Adopted",
-      color: "#65cabb",
     },
     {
       id: 37,
@@ -435,8 +475,7 @@ export const HelplineData = {
       description:
         "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
       pbar: "pbar_1",
-
-      desc: "GPS Nazar Hussain Arain (Tando Allah Yar)",
+      desc: "Sindh Govt Primary School, Tharparkar (Nimro Sharif) ",
       adopted: "Adopted",
       color: "#65cabb",
     },
@@ -451,25 +490,40 @@ export const HelplineData = {
       description:
         "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
       pbar: "pbar_1",
-
-      desc: "GPS Ando Muhajir (Tando Allah Yar)",
+      desc: "Sindh Govt Primary School, Tharparkar (Ando Muhajir) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
     {
-      id: 38,
+      id: 40,
       category: ["Adopted Schools"],
-      img: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
-      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(1).jpg",
-      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(2).jpg",
-      img2: "/img/causes/PHOTO-2025-02-19-11-45-31(3).jpg",
+      img: "/img/causes/nimro1.jpg",
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
       detail:
         "GPS Ando Muhajir School empowers students with quality education.",
       description:
         "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
       pbar: "pbar_1",
-
-      desc: "Benazir Higher Secondary School",
+      desc: "Sindh Govt Primary School (Boys), Karachi (Sammu Goth) ",
+      ActualName: "Sindh Govt Primary School",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 41,
+      category: ["Adopted Schools"],
+      img: "/img/causes/nimro1.jpg",
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Ando Muhajir School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+      desc: "Sindh Govt Primary School (Girls), Karachi (Sammu Goth) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -479,6 +533,7 @@ export const HelplineData = {
       id: 1,
       category: ["House Constructions"],
       img: "/img/causes/houseconstruction1.jpeg",
+      ActualName: "House Constructions",
 
       img1: "/img/causes/construction2.jpeg",
       img2: "/img/causes/constructions1.jpeg",
@@ -495,6 +550,7 @@ export const HelplineData = {
       img: "/img/causes/houseconstruction2.jpeg",
       img1: "/img/causes/houseconstruction3.jpeg",
       img2: "/img/causes/houseconstruction4.jpeg",
+      ActualName: "House Constructions",
       detail:
         "Floods hit Pakistan; Matti ul haq, Helpline provide economical housing solutions.",
       description:
@@ -510,6 +566,7 @@ export const HelplineData = {
 
       img1: "/img/causes/houseconstruction3.jpeg",
       img2: "/img/causes/houseconstruction4.jpeg",
+      ActualName: "House Constructions",
       detail:
         "Floods devastate Pakistan as Abdul Akbar and Helpline step up with affordable housing solutions.",
       description:
@@ -525,6 +582,7 @@ export const HelplineData = {
 
       img1: "/img/causes/houseconstruction3.jpeg",
       img2: "/img/causes/houseconstruction4.jpeg",
+      ActualName: "House Constructions",
       detail:
         "Floods hit Pakistan; Junaid Aftab, Helpline provide economical housing solutions.",
       description:
@@ -538,6 +596,7 @@ export const HelplineData = {
       img: "/img/causes/karbathwater.jpg",
       img1: "/img/causes/water1.jpg",
       img2: "/img/causes/water2.jpg",
+      ActualName: "Water Supply in KARBATH",
       detail:
         "Helpline ensures clean water in KARBATH: filtration plants, solar wells, hand pumps.",
       description:
@@ -552,6 +611,7 @@ export const HelplineData = {
       img: "/img/causes/cause2.jpg",
       img1: "/img/causes/punjabwater2.jpg",
       img2: "/img/causes/punjabwater.jpg",
+      ActualName: "Water Supply in PUNJAB",
       detail:
         "Helpline ensures clean water in PUNJAB: filtration plants, solar wells, hand pumps.",
       description:
@@ -566,6 +626,7 @@ export const HelplineData = {
       img: "/img/causes/cause3.jpg",
       img1: "/img/causes/water1.jpg",
       img2: "/img/causes/water2.jpg",
+      ActualName: "Water Supply in KPK",
       detail:
         "Helpline ensures clean water in KPK: filtration plants, solar wells, hand pumps.",
       description:
@@ -587,6 +648,7 @@ export const HelplineData = {
 
       img1: "/img/causes/blochistanwater.jpg",
       img2: "/img/causes/blochistanwater2.jpg",
+      ActualName: "Water Supply in BALOCHISTAN",
       detail:
         "Helpline ensures clean water in BALOCHISTAN: filtration plants, hand pumps.",
       description:
@@ -601,14 +663,16 @@ export const HelplineData = {
       img: "/img/causes/roruschool.jpg",
       img1: "/img/causes/roru1.jpg",
       img2: "/img/causes/roru2.jpg",
+      ActualName: "Sindh Govt Primary School",
       detail:
         "Govt. Roru Goth School empowers students with quality education.",
       description:
         "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
       progressData: "65",
       desc: "GPS Roru Goth School (Mirpurkhas)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      color: "#f15b43",
+      color: "#5fb35b",
     },
     {
       id: 10,
@@ -616,13 +680,15 @@ export const HelplineData = {
       img: "/img/causes/cause14.jpg",
       img1: "/img/causes/gpsbaglair1.jpg",
       img2: "/img/causes/gpsbaglair2.jpg",
+      ActualName: "Sindh Govt Primary School",
       detail:
         "GPS. Bagliar Mithi School empowers students with quality education.",
       description:
         "Govt. Bagliar Mithi School is a beacon of hope for underprivileged students who might not otherwise have access to quality education. With the help of a helpline NGO, the school can provide support to students facing financial and other challenges. This support can come in many forms, including scholarships, tuition assistance, and other resources designed to help students succeed in their studies. The work that is being done by Govt. Bagliar Mithi School and the helpline NGO are genuinely inspiring. By providing opportunities for education to students who might not otherwise have access to it, they are helping to break the cycle of poverty and create a brighter future for the next generation. The dedication and hard work of the teachers and staff at the school, as well as the generosity of the NGO supporters, is making a real difference in the lives of these students and is something that should be celebrated and supported by all members of the community.",
       desc: "The Govt GPS. Bagliar Mithi School (Tharparkar)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      color: "#65cabb",
+      color: "#5fb35b",
     },
     {
       id: 11,
@@ -630,12 +696,14 @@ export const HelplineData = {
       img: "/img/causes/kaktario1.jpg",
       img1: "/img/causes/kaktario2.jpg",
       img2: "/img/causes/kaktario3.jpg",
+      ActualName: "Sindh Govt Primary School",
       detail:
         "Govt. Kakrario Saman Mian School empowers students with quality education.",
       description:
         "The adoption of Govt. Kakrario Saman Mian School a helpline NGO has been a game-changer for the school, its students, and its teachers. The NGO has taken on the responsibility of supporting the school’s operations by providing financial assistance for the payment of teachers’ salaries, as well as other essential needs such as textbooks, school supplies, and maintenance of facilities. This support has been critical for the school, which serves a predominantly low-income student population. Through this partnership, the helpline NGO has been able to provide a range of resources and programs to support students’ learning and academic achievement. These resources include scholarships, mentorship programs, and academic support services, such as tutoring and study skills workshops. By providing these opportunities to underprivileged students, the NGO is helping to level the playing field and give these students a chance to succeed.",
 
       desc: "Govt GPS. Kakrario Saman Mian School (Tharparkar)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
     },
@@ -650,6 +718,7 @@ export const HelplineData = {
       description:
         "Helpline NGO’s support for the Govt. Misali Goth School is highly commendable, as it recognizes the importance of education in the development of communities. By providing financial assistance to the school, Helpline NGO is helping to ensure that students have access to quality education and a supportive learning environment. In addition to supporting the school itself, Helpline NGO also provides salaries to the employees, which is a significant contribution to the livelihoods of the staff. The provision of salaries to the employees is essential, as it helps to ensure that the school can attract and retain qualified and dedicated teachers and staff. This, in turn, contributes to the quality of education provided to students, and ultimately, to the school’s success. By providing this support, Helpline NGO is playing an essential role in the development of education in the community and is making a positive impact on the lives of both students and employees.",
       desc: "The Govt GPS. Misali Goth School",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -665,6 +734,7 @@ export const HelplineData = {
         "The adoption of Govt. Katho Samma School by a helpline NGO has had a transformative impact on the school, its students, and its teachers. The NGO has taken on the responsibility of providing financial assistance for the school’s operations, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been critical for the school, which serves a predominantly low-income student population. Furthermore, the support that the NGO provides for the school’s teachers is invaluable. The NGO recognizes the vital role that teachers play in shaping students’ lives and is committed to ensuring that they are compensated fairly for their hard work. This support helps to incentivize high-quality teaching, which is essential for creating a positive and effective learning environment for students.",
 
       desc: "The Govt GPS. Katho Samma School",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -681,6 +751,7 @@ export const HelplineData = {
       pbar: "pbar_1",
 
       desc: "GPS Qazi Muhammad Ashraf (Mirpurkhas)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -697,6 +768,7 @@ export const HelplineData = {
       pbar: "pbar_1",
 
       desc: "GPS Nazar Hussain Arain (Mirpurkhas)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -706,6 +778,7 @@ export const HelplineData = {
       img: "/img/causes/cause10.jpg",
       img1: "/img/causes/medicalkarbath1.jpeg",
       img2: "/img/causes/karbathmedical.jpg",
+      ActualName: "Karbath Medical Centre",
       detail:
         "Karbath Medical Centre provides free quality healthcare to underserved patients.",
       description:
@@ -720,6 +793,7 @@ export const HelplineData = {
       img: "/img/causes/cause11.jpg",
       img1: "/img/causes/hajramedical1.jpg",
       img2: "/img/causes/hajramedical2.jpg",
+      ActualName: "Hajra Bibi Memorial Trust Hospital",
       detail:
         "Haji Hospital offers free healthcare, expanding under Helpline since 2012.",
       description:
@@ -734,6 +808,7 @@ export const HelplineData = {
       img: "/img/causes/cause12.jpg",
       img1: "/img/causes/cataract1.jpg",
       img2: "/img/causes/cataract2.jpeg",
+      ActualName: "Cataract Surgeries Across Pakistan",
       detail:
         "Helpline funds cataract surgeries, restoring vision for underprivileged Pakistanis.",
       description:
@@ -748,6 +823,7 @@ export const HelplineData = {
       img: "/img/causes/mithimedicalcamp1.jpg",
       img1: "/img/causes/mithi1.png",
       img2: "/img/causes/mithi2.jpg",
+      ActualName: "Helpline Mobile Unit & Dispensary, Mithi (Sindh)",
       detail:
         "Helpline Mobile Unit provides free healthcare and medicines in Mithi.",
       description:
@@ -765,7 +841,7 @@ export const HelplineData = {
       detail: "Empowering underprivileged youth through quality education.",
       description:
         "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
-
+      ActualName: "Irtaqa-e-Itfal High School",
       desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
       color: "#65cabb",
     },
@@ -782,8 +858,9 @@ export const HelplineData = {
       pbar: "pbar_1",
 
       desc: "The Govt GPS. Nimro Sharif School",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      color: "#f15b43",
+      color: "#5fb35b",
     },
     {
       id: 20,
@@ -797,6 +874,7 @@ export const HelplineData = {
         "The support provided by a helpline NGO to Govt. Misri Bheel School has been critical in ensuring that underprivileged students in the community have access to quality education. The NGO has taken on the responsibility of running the school, providing financial support, and ensuring that students have access to essential supplies and resources. Moreover, the NGO’s support for the school’s operations has been instrumental in keeping the school running and providing quality education to students who otherwise may not have had access to it. The NGO has worked closely with the school’s administration to ensure that the school is well-maintained and that students have access to necessary resources such as textbooks and school supplies.",
 
       desc: "The Govt GPS. Misri Bheel School (Tando Allah Yar)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#65cabb",
     },
@@ -812,6 +890,7 @@ export const HelplineData = {
         "The Helpline Social Welfare Foundation’s adoption of Govt. Nabi Baksh Gabool School is a remarkable example of a community-based organization taking the initiative to support underprivileged students and uplift the education system. The Foundation has assumed full responsibility for the school, providing much-needed financial aid and resources to ensure that students receive a quality education.<br>Through this partnership, the Foundation has been able to offer an array of programs and resources to support students’ academic achievement, including scholarships, mentorship programs, and academic support services. The Foundation has also focused on ensuring that the school is well-maintained and that students have access to critical resources and supplies.",
 
       desc: "Govt GPS. Nabi Baksh Gabool School (Tando Allah Yar)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
     },
@@ -827,8 +906,9 @@ export const HelplineData = {
         "The Helpline Social Welfare Foundation’s adoption of Govt. Sardar Khan Laghari School is a commendable initiative aimed at improving the quality of education for underprivileged students. By taking on the full responsibility of supporting the school, the Foundation has helped to stabilize its operations and ensure its sustainability in the long run. In addition to supporting students’ academic success, the Foundation has worked to ensure that the school is well-maintained and equipped with the necessary resources and supplies. This has helped to create a conducive learning environment that promotes students’ well-being and academic achievement.",
 
       desc: "GPS. Sardar Khan Laghari School (Mirpurkhas)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      color: "#f15b43",
+      color: "#65cabb",
     },
     {
       id: 36,
@@ -843,6 +923,7 @@ export const HelplineData = {
       pbar: "pbar_1",
 
       desc: "GPS Ando Muhajir (Tando Allah Yar)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -859,21 +940,27 @@ export const HelplineData = {
       pbar: "pbar_1",
 
       desc: "GPS Nazar Hussain Arain (Tando Allah Yar)",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      color: "#65cabb",
+      color: "#f15b43",
     },
     {
       id: 23,
       category: ["Education"],
-      img: "/img/causes/alkitab2.jpg",
+      img: "/img/bg/breadcrumb_bg_4.jpg",
       img1: "/img/causes/alkitab3.jpg",
       img2: "/img/causes/alkitab4.jpg",
       detail:
-        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+        "Al-Kitab School offers free education, fostering growth and community service.",
       description:
-        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
+        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. ",
 
-      desc: "Al Kitab Education System (Rana Town).",
+      desc: "Al-Kitab Education System (Rana Town).",
+      ActualName: "Al-Kitab Higher Secondary School",
+      detail2:
+        "At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development.",
+      detail3:
+        "We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
       color: "#65cabb",
     },
     {
@@ -886,7 +973,7 @@ export const HelplineData = {
         "Al-Kitab School offers free education, fostering growth and community service.",
       description:
         "Al-Kitab School, located in Chani Goth, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The school focuses on academic excellence and offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects. The school prioritises academic performance and aims to instil moral values and a sense of community service among its students. In addition, the school provides extracurricular activities that help to develop the student’s skills and talents. The school also organizes community service activities to encourage the students to give back to society. The Al-Kitab School is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The school also provides free uniforms, textbooks, and school supplies.",
-
+      ActualName: "Al-Kitab Education System",
       desc: "Al Kitab Education System  (Chani Goth).",
       color: "#5fb35b",
     },
@@ -896,11 +983,12 @@ export const HelplineData = {
       img: "/img/causes/rehmat.jpeg",
       img1: "/img/causes/rehmat2.jpeg",
       img2: "/img/causes/rehmat3.jpeg",
+      ActualName: "Rehmat Education Complex, Gojra.",
       detail:
         "Aligarh Complex offers free education, breaking poverty through knowledge.",
       description:
         "Aligarh Educational Complex in Gojra is a project owned by Helpline NGO, aimed at providing free education to underprivileged students. The complex comprises a school, a computer lab, a library, and a hostel. The school has a team of highly qualified teachers who are committed to providing quality education to children from low-income families. The computer lab at the complex is equipped with the latest technology and offers students the opportunity to learn computer skills. The library is stocked with a wide range of books, which provides students with access to a wealth of knowledge and information. The hostel offers comfortable accommodation for students who live far away from the school and ensures that they have a safe and secure environment to study in. Aligarh Educational Complex in Gojra is making a significant contribution to the community it serves. The school’s focus on providing quality education to underprivileged children has helped to break the cycle of poverty and provide a brighter future for many families.",
-
+      ActualName: "Ch Rehmat Ali Higher Secondary School for Boys",
       desc: "Aligarh Educational Complex (Gojra)",
       color: "#f15b43",
     },
@@ -913,7 +1001,8 @@ export const HelplineData = {
       detail: "Free education for brighter futures.",
       description:
         "CH. Rahmat Ali Superior Higher Secondary School, located in the Alighar Education Complex in Gojra, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The institution offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects, with a focus on academic excellence. In addition to academic subjects, the school also provides extracurricular activities that help to develop the student’s skills and talents. The institution encourages students to participate in sports, debates, and other activities that enable them to develop their leadership skills and teamwork abilities. The Alighar Education Complex is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The institution also provides free uniforms, textbooks, and school supplies to the students.",
-
+      ActualName:
+        "Iman Maryam Girls Higher Secondary School Alighar Education Complex",
       desc: "Iman Maryam Girls Higher Secondary School Alighar Education Complex (Gojra)",
       color: "#65cabb",
     },
@@ -924,7 +1013,7 @@ export const HelplineData = {
       detail: "Free education for brighter futures.",
       description:
         "Emman Maryam Smart School, Alighar Education Complex (Gojra) is a remarkable institution that is supported by Helpline NGO. The school is dedicated to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and enthusiastic, despite the financial challenges they may face. They are committed to their education and strive to excel academically. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been crucial in making this possible. By providing financial assistance, Helpline NGO is helping to ensure that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are designed to cater to the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
-
+      ActualName: "Emman Maryam Smart School Alighar Education Complex",
       desc: "Emman Maryam Smart School Alighar Education Complex (Gojra)",
       color: "#65cabb",
     },
@@ -934,6 +1023,7 @@ export const HelplineData = {
       category: ["Medical"],
       img: "/img/causes/jinah1.jpg",
       detail: "Helpline provided free meals to patients at Jinnah Hospital.",
+      ActualName: "Jinnah Hospital, Lahore.",
       description:
         "Jinnah Hospital is one of the largest hospitals in Lahore, servicing over 1 million patients each year. In 2019, Helpline Social Welfare Foundation served free meals for patients at Jinnah Hospital, showing their commitment to assisting those in need. The initiative provided over 1,000 meals to patients and their families, helping to ease the burden of affording food. All the patients and their families greatly appreciated this generous gesture and were very thankful for the assistance. The initiative also raised awareness about the importance of providing aid to those in need, and it has been praised by many for its impact.",
 
@@ -944,6 +1034,7 @@ export const HelplineData = {
       id: 29,
       category: ["Medical"],
       img: "/img/causes/Jinnah2.jpg",
+      ActualName: "Munshi Hospital, Lahore.",
       detail: "Helpline provided free meals to patients at Munshi Hospital.",
       description:
         "Mian Muhammad Munshi Hospital is a government–run hospital in Lahore, Pakistan. It is a charitable hospital providing medical care to people of all economic backgrounds. The Helpline Social Welfare Foundation recently served free meals to patients at Mian Muhammad Munshi Hospital. This initiative was taken to provide nutritious and hygienic meals to those in need and to show the foundation’s commitment to the community. The hospital’s staff was thankful for the generous gesture and appreciated the foundation for their kind-heartedness.",
@@ -955,6 +1046,7 @@ export const HelplineData = {
       id: 30,
       category: ["Medical"],
       img: "/img/causes/general1.jpg",
+      ActualName: "General Hospital, Lahore.",
       detail: "Helpline provided free meals to patients at General Hospital.",
       description:
         "Helpline Social Welfare Foundation recently provided free meals to patients at General Hospital in Lahore, Pakistan. This act of kindness was made possible by generous donations from several individuals and organizations, which allowed the foundation to provide meals to patients and their families. In addition to providing meals, the foundation also distributed bedsheets and blankets to patients who needed them. This genuinely heartwarming gesture enabled many people to have a better hospital stay. The foundation’s mission is to provide essential services to people in need, and this service at General Hospital is a testament to their commitment.",
@@ -966,6 +1058,7 @@ export const HelplineData = {
       id: 31,
       category: ["Medical"],
       img: "/img/causes/khawaja.jpg",
+      ActualName: "Kot Khawaja Saeed, Lahore.",
       detail: "Helpline provided free meals to patients at Kot Khawaja Saeed.",
       description:
         "Helpline Social Welfare Foundation recently organized a unique initiative in the Government Hospital Kot Khawaja Saeed, providing free meals to patients. This noble cause was a great success, as the Hospital staff, patients and their families appreciated this kind gesture. The meals were prepared and distributed by the volunteers of the Foundation, and they brought smiles to the faces of the patients. It was a great way to show the hospital’s commitment to its patients’ well-being and ensure they have access to nutritious meals. This Helpline Social Welfare Foundation initiative was a great success, and it is hoped that Helpline will take up more such initiatives in the future to help the people of Pakistan.",
@@ -983,9 +1076,9 @@ export const HelplineData = {
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
         "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
-
-      desc: "Al-Kitab School (Gullowali, Rajanpur).",
-      color: "#65cabb",
+      ActualName: "Al-Kitab Education System School Rajanpur",
+      desc: "Al-Kitab Education System School Rajanpur (Gullowali).",
+      color: "#5fb35b",
     },
     {
       id: 38,
@@ -1000,6 +1093,58 @@ export const HelplineData = {
       pbar: "pbar_1",
 
       desc: "Benazir Higher Secondary School",
+      ActualName: "Benazir Public Girls School",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 39,
+      category: ["Own School"],
+      img: "/img/bg/breadcrumb_bg_4.jpg",
+      img1: "/img/causes/alkitab3.jpg",
+      img2: "/img/causes/alkitab4.jpg",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+      description:
+        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. ",
+
+      desc: "Al-Kitab School of Technology Shaikhupura (Abid Town ).",
+      ActualName: "Al-Kitab School of Technology ",
+      detail2:
+        "At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development.",
+      detail3:
+        "We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
+      color: "#65cabb",
+    },
+    {
+      id: 40,
+      category: ["Adopted Schools"],
+      img: "/img/causes/nimro1.jpg",
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Ando Muhajir School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+      desc: "Sindh Govt Primary School (Boys), Karachi (Sammu Goth) ",
+      ActualName: "Sindh Govt Primary School",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 41,
+      category: ["Adopted Schools"],
+      img: "/img/causes/nimro1.jpg",
+      img1: "/img/causes/nimro2.jpg",
+      img2: "/img/causes/nimro3.jpg",
+      detail:
+        "GPS Ando Muhajir School empowers students with quality education.",
+      description:
+        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+      pbar: "pbar_1",
+      desc: "Sindh Govt Primary School (Girls), Karachi (Sammu Goth) ",
+      ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#f15b43",
     },
@@ -1051,10 +1196,22 @@ export const HelplineData = {
   ],
   team: [
     {
+      id: 0,
+      designation: "Managing Trustee",
+      name: "Muhammad Iqbal Khan",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
       id: 1,
-      designation: "General Manager",
-      name: "Colonel Muhammad Ali",
-      image: "/img/team/member13.jpg",
+      designation: "GM (Admin & HR)",
+      name: "Colonel  Muhammad Ali (Retd)",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1064,9 +1221,9 @@ export const HelplineData = {
     },
     {
       id: 2,
-      designation: "General Manager EDU (Punjab)",
-      name: "M.A Naeem Khan (Retd)",
-      image: "/img/team/member13.jpg",
+      designation: "GM (Education)",
+      name: "Mr Mudasir Ahmad",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1076,9 +1233,9 @@ export const HelplineData = {
     },
     {
       id: 3,
-      designation: "General Manager Accounts",
-      name: "Mr Hameed Hassan khan",
-      image: "/img/team/member13.jpg",
+      designation: "Senior Manager Accounts",
+      name: "Mr Hamid Hassan khan",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1088,9 +1245,9 @@ export const HelplineData = {
     },
     {
       id: 4,
-      designation: "Senior National Coordinator",
+      designation: "Manager Admin & Support",
       name: "Mr Sarfraz Ahmad Bhullar",
-      image: "/img/team/member13.jpg",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1100,9 +1257,9 @@ export const HelplineData = {
     },
     {
       id: 5,
-      designation: "National Coordinator",
+      designation: "Manager Media/ Coord ",
       name: "Mr Hafiz Bilal Nurani",
-      image: "/img/team/member13.jpg",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1112,9 +1269,9 @@ export const HelplineData = {
     },
     {
       id: 6,
-      designation: "Community Welfare Manager",
+      designation: "Manager Welfare & Health",
       name: "Mr Atif Hussain",
-      image: "/img/team/member13.jpg",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1124,9 +1281,9 @@ export const HelplineData = {
     },
     {
       id: 7,
-      designation: "Liaison Manager",
+      designation: "Manager Media",
       name: "Mr Abid Ali Abid",
-      image: "/img/team/member13.jpg",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1136,9 +1293,9 @@ export const HelplineData = {
     },
     {
       id: 8,
-      designation: "Cashier",
+      designation: "Manager Accounts",
       name: "Mr Faisal Mushtaq",
-      image: "/img/team/member13.jpg",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1148,9 +1305,9 @@ export const HelplineData = {
     },
     {
       id: 9,
-      designation: "Designer",
-      name: "Mr Adeem Mansoor",
-      image: "/img/team/member13.jpg",
+      designation: "Manager Media",
+      name: "Hafiz Bilal Arshad",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1160,9 +1317,9 @@ export const HelplineData = {
     },
     {
       id: 12,
-      designation: "Manager Purchase",
+      designation: "Manager Purchases",
       name: "Mr Mehmood Ali joiya",
-      image: "/img/team/member13.jpg",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1173,8 +1330,152 @@ export const HelplineData = {
     {
       id: 13,
       designation: "Manager Transport",
-      name: "Mr Amanat Ali",
-      image: "/img/team/member13.jpg",
+      name: "Rashid Nisar",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    // {
+    //   id: 14,
+    //   designation: "Software  Engineer",
+    //   name: "Syed Mudasir Hussain Shah",
+    //   image: "/img/team/iconimage.png",
+    //   socialLinks: [
+    //     { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+    //     { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+    //     { platform: "behance", icon: "fab fa-behance", url: "#" },
+    //     { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+    //   ],
+    // },
+    {
+      id: 15,
+      designation: "Media Executive",
+      name: "Ms Arj Zahara",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 16,
+      designation: "Chairman",
+      name: "Muhammad Aslam Khan Kakkarh",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 17,
+      designation: "President",
+      name: "Khalil Ahmad Malik",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 18,
+      designation: "Vice President",
+      name: "Ms Lubna Yaqoob Tahir",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 19,
+      designation: "General Secretary",
+      name: "Ikhlaq ur Rehman",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 20,
+      designation: "Finance Secretary",
+      name: "No Name",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 21,
+      designation: "Administrator KMC",
+      name: "COL Zahoor Hussain (Retd)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 22,
+      designation: "Education Advisor",
+      name: "Aijaz Hussain Kazi (Former Secretary)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 23,
+      designation: "Marketing Consultant",
+      name: "Brigadier Zaheer Ahmad (Retd)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 24,
+      designation: "Technology Consultant",
+      name: "Col Waqar Ahmad (Retd)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 25,
+      designation: "Media Consultant",
+      name: "Amir Hashim Khakwani",
+      image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
@@ -1183,42 +1484,18 @@ export const HelplineData = {
       ],
     },
   ],
-  certificationData: [
-    {
-      id: 1,
-      title: "Certification",
-      announcement:
-        "We are proud to announce that Helpline, a dedicated social welfare organization, has been certified by the Pakistan Center of Philanthropy (PCP) and is registered with the Federal Board of Revenue (FBR). These certifications demonstrate our unwavering commitment to transparency, accountability, and excellence in all our endeavors.",
-      details:
-        "The certification from PCP highlights our adherence to the highest standards in governance, financial management, and program implementation. Being registered with the FBR empowers us to accept donations domestically and internationally, enhancing trust and credibility among donors.",
-      conclusion:
-        "Join us in making a lasting impact. Together, we can transform lives and create a brighter future.",
-      img: [
-        {
-          id: 1,
-          src: "/img/about/PCP-certificate2.jpg",
-          alt: "FBR Certificate",
-        },
-        {
-          id: 2,
-          src: "/img/about/PCP-certificate1.jpeg",
-          alt: "PCP Certificate",
-        },
-      ],
-    },
-  ],
+
   journeyData: [
     {
-      title:
-        "HELPLINE is 'Bridging the Gap between Have and Have not' on the Principles of",
+      title: "'Bridging the Gap Between the Haves and the Have-Nots'",
       title1: '"MAWAKHAT-E-MADINAH"',
       announcement:
-        "Helpline Social Welfare Charity Organization is built on the fundamental concept of Mawakhat, which is an Arabic term that refers to the bond of brotherhood and solidarity between individuals or groups of people. Mawakhat embodies the spirit of social responsibility, where people from different backgrounds and communities come together to support one another in times of need. At Helpline Social Welfare Charity Organization, this concept of Mawakhat is the cornerstone of our work, and we strive to build stronger communities by fostering a sense of collective responsibility and empathy. We believe that everyone deserves equal opportunities and access to basic necessities such as food, education, and healthcare, regardless of their background or socioeconomic status. Through our various initiatives and programs, we aim to create a more equitable society where people can live with dignity and respect. Our team of dedicated volunteers works tirelessly to provide assistance and support to those in need, and we are committed to making a positive impact in the lives of the people we serve. Overall, Helpline Social Welfare Charity Organization is grounded in the principles of Mawakhat, and we believe that by working together, we can create a better world for everyone.",
+        "Helpline Social Welfare Organization is built on the fundamental concept of Mawakhat, which is an Arabic term that refers to the bond of brotherhood and solidarity between individuals or groups of people. Mawakhat embodies the spirit of social responsibility, where people from different backgrounds and communities come together to support one another in times of need. At Helpline Social Welfare Charity Organization, this concept of Mawakhat is the cornerstone of our work, and we strive to build stronger communities by fostering a sense of collective responsibility and empathy. We believe that everyone deserves equal opportunities and access to basic necessities such as food, education, and healthcare, regardless of their background or socioeconomic status. Through our various initiatives and programs, we aim to create a more equitable society where people can live with dignity and respect. Our team of dedicated volunteers works tirelessly to provide assistance and support to those in need, and we are committed to making a positive impact in the lives of the people we serve. Overall, Helpline Social Welfare Charity Organization is grounded in the principles of Mawakhat, and we believe that by working together, we can create a better world for everyone.",
       announcement1:
         "Helpline started its journey with the private construction of a school in Pak Patan, Punjab in 1993 which got completed in the year 2000.The basic purpose of Helpline is Betterment of the academic activities of Government Schools and concentration towards providing basic necessities of life, especially support of poor students. Helpline’s proper registration was done in the year 2000 which included academic improvement of Government schools, wellness of prisoners and supply of free food to patients in Public Hospitals.",
       details:
         "The certification from PCP highlights our adherence to the highest standards in governance, financial management, and program implementation. Being registered with the FBR empowers us to accept donations domestically and internationally, enhancing trust and credibility among donors.",
-      conclusion: "Overview of Helpline’s Massive Work Over the Years",
+      conclusion: "Massive Work Over the Years",
       datayearly: [
         {
           id: 1,
@@ -1359,7 +1636,7 @@ export const HelplineData = {
             "In the year 2023, So far, Helpline distributed 3005 ration packages in Ramzan, and undertook the sacred act of Qurbani, sacrificing 527 animals.",
         },
         {
-          id: 23,
+          id: 24,
           year: "2024",
           detail:
             "In 2024, Helpline distributed ration packages among 18000 deserving families during Ramzan and supported families in need. Our Al-kitab Educational System reached over 6,000 students across Pakistan, with 7 schools in Punjab and 13 adopted government schools in interior Sindh, expanding access toquality education for underprivileged children. 1000 free Cataract operations. Free treatment of 3000 free medical care.",
@@ -1802,32 +2079,58 @@ The 500 individuals who benefitted from this initiative are now equipped with th
         Qurbani is a great Sunnah of Ibrahim (AS) and the dearest deed to Allah (SWT). As you are preparing to commemorate Prophet Ibrahim (AS) dedication through Qurbani on this Eid-ul-Adha. Alkhidmat urges you to remember millions of underprivileged and undernourished families in Pakistan who eagerly await Eid-ul-Adha throughout the whole year to eat nutritious meat. Alkhidmat Foundation Pakistan is doing Qurbani Fi Sabeel Lillah to distribute nutritious meat to millions of underprivileged and undernourished Pakistanis on this Eid-ul-Adha. This year, Alkhidmat is also doing Qurbani specifically for the oppressed Palestinian families in Gaza. Take advantage of Alkhidmat online Qurbani Fi Sabeel Lillah
     `,
   },
-  swiperData: [
-    {
-      image: "img/causes/qurbani1.jpg",
-      detailHeader: "Qurbani",
-      detail:
-        "At Al Kitab School in Rana Town, we are organizing a qurbani event in collaboration with the Hasene Team and the Helpline Social Media Organization.",
-    },
-    {
-      image: "img/causes/qurbani2.jpg",
-      detailHeader: "Qurbani Meat",
-      detail:
-        "The Hasene team and Helpline Social Media Organization are distributing Qurbani meat to needy individuals in Rana Town’s Al Kitab School.",
-    },
-    {
-      image: "img/causes/qurbani3.jpg",
-      detailHeader: "Community Support",
-      detail:
-        "The event aims to support underprivileged families by providing essential resources and spreading joy during the festive season.",
-    },
-    {
-      image: "img/causes/qurbani4.jpg",
-      detailHeader: "Helping Hands",
-      detail:
-        "Join us in this noble cause as we collaborate to bring smiles and relief to those in need.",
-    },
-  ],
+  // swiperData: [
+  //   {
+  //     image: "img/causes/qurbani1.jpg",
+  //     detailHeader: "Al-kitab Educational Complex, Shekhupura (Abid Town )",
+  //     year: "Qurbani 2020",
+  //     detail:
+  //       "At Al Kitab School in Rana Town, we are organizing a qurbani event in collaboration with the Hasene Team and the Helpline Social Media Organization.",
+  //   },
+  //   {
+  //     image: "img/causes/qurbani1.jpg",
+  //     detailHeader: "Al-kitab Educational Complex, Shekhupura (Abid Town )",
+  //     year: "Qurbani 2020",
+  //     detail:
+  //       "At Al Kitab School in Rana Town, we are organizing a qurbani event in collaboration with the Hasene Team and the Helpline Social Media Organization.",
+  //   },
+  //   {
+  //     image: "img/causes/qurbani1.jpg",
+  //     detailHeader: "Al-kitab Educational Complex, Shekhupura (Abid Town )",
+  //     year: "Qurbani 2020",
+  //     detail:
+  //       "At Al Kitab School in Rana Town, we are organizing a qurbani event in collaboration with the Hasene Team and the Helpline Social Media Organization.",
+  //   },
+  //   {
+  //     image: "img/causes/qurbani2.jpg",
+  //     detailHeader: "Qurbani Meat",
+  //     year: "Qurbani 2021",
+
+  //     detail:
+  //       "The Hasene team and Helpline Social Media Organization are distributing Qurbani meat to needy individuals in Rana Town’s Al Kitab School.",
+  //   },
+  //   {
+  //     image: "img/causes/qurbani3.jpg",
+  //     detailHeader: "Community Support",
+  //     year: "Qurbani 2022",
+  //     detail:
+  //       "The event aims to support underprivileged families by providing essential resources and spreading joy during the festive season.",
+  //   },
+  //   {
+  //     image: "img/causes/qurbani4.jpg",
+  //     detailHeader: "Helping Hands",
+  //     year: "Qurbani 2023",
+  //     detail:
+  //       "Join us in this noble cause as we collaborate to bring smiles and relief to those in need.",
+  //   },
+  //   {
+  //     image: "img/causes/qurbani4.jpg",
+  //     detailHeader: "Helping Hands",
+  //     year: "Qurbani 2024",
+  //     detail:
+  //       "Join us in this noble cause as we collaborate to bring smiles and relief to those in need.",
+  //   },
+  // ],
   MasjidContent: {
     title: "HELPLINE Masjid PROGRAM",
     supportButtonText: "SUPPORTING APPEAL",
@@ -1951,60 +2254,62 @@ Helpline have realized that providing access to technology and digital education
     headerBg: "img/causes/itlabsbg.png",
     videoSrc: "https://www.youtube.com/embed/txy5egSzmUY",
     heading: "Helpline Registrations",
-    description: `
-This year, with your generous support, we’ve achieved incredible milestones in transforming lives. From providing clean water and distributing meals to underserved families to organizing healthcare camps and establishing IT labs in schools, your contributions have made a profound impact. Our education initiatives have empowered children with quality learning, while medical camps brought essential care to those in need. We also supported families with sustainable housing and vocational training. These achievements highlight the power of collective action and compassion. Thank you for standing with us and believing in our mission to build a brighter, better future for all.
+    description1: `
+Helpline Welfare Trust is proud to be officially recognized by multiple esteemed regulatory bodies, underscoring our unwavering commitment to transparency, accountability, and service to humanity. We are certified by the Pakistan Centre for Philanthropy (PCP), a recognition that reflects our adherence to high standards in governance, financial management, and social impact.
+
     `,
+    description2: `Additionally, Helpline is registered with the Federal Board of Revenue (FBR), enabling us to receive both domestic and international donations with full legal standing—building trust with individuals, corporations, and institutions alike. Furthermore, Helpline is formally registered with the Charity Commission under the name Helpline Welfare Trust, reinforcing our legal status as a credible, nonprofit organization. These certifications and registrations collectively empower us to expand our reach, ensure responsible use of donor funds, and continue transforming lives through our social welfare initiatives.`,
     detailHeader: "Helpline IT Labs",
   },
   pdfDocuments: [
     {
       id: 1,
-      title: "2014",
+      title: "2013-14",
       pdf: "/img/pdfs/HELPLINE-2014.pdf",
     },
     {
       id: 2,
-      title: "2015",
+      title: "2014-15",
       pdf: "/img/pdfs/HELPLINE-2015.pdf",
     },
     {
       id: 3,
-      title: "2016",
+      title: "2015-16",
       pdf: "/img/pdfs/HELPLINE-2016.pdf",
     },
     {
       id: 4,
-      title: "2017",
+      title: "2016-17",
       pdf: "/img/pdfs/HELPLINE-2017.pdf",
     },
     {
       id: 5,
-      title: "2018",
+      title: "2017-18",
       pdf: "/img/pdfs/HELPLINE-2018.pdf",
     },
     {
       id: 6,
-      title: "2019",
+      title: "2018-19",
       pdf: "/img/pdfs/HELPLINE-2019.pdf",
     },
     {
       id: 7,
-      title: "2020",
+      title: "2019-20",
       pdf: "/img/pdfs/HELPLINE-2020.pdf",
     },
     {
       id: 8,
-      title: "2021",
+      title: "2020-21",
       pdf: "/img/pdfs/HELPLINE-2021.pdf",
     },
     {
       id: 9,
-      title: "2022",
+      title: "2021-22",
       pdf: "/img/pdfs/HELPLINE-2022.pdf",
     },
     {
       id: 10,
-      title: "2023",
+      title: "2022-23",
       pdf: "/img/pdfs/HELPLINE-2023.pdf",
     },
     {

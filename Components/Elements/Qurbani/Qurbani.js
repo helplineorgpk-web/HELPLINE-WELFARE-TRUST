@@ -1,55 +1,75 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import { useRouter } from "next/router";
 import styles from "../../../public/css/Qurbani.module.css";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 export default function Qurbani({ swiperData }) {
-  return (
-    <div className={styles.container}>
-      <div className={styles.innerContainer}>
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          breakpoints={{
-            768: {
-              slidesPerView: 2,
-            },
-          }}
-          className={styles.swiperContainer}
-        >
-          {swiperData.map((item, index) => (
-            <SwiperSlide key={index} className={styles.swiperSlide}>
-              <div
-                className={styles.slideContent}
-                style={{ backgroundImage: `url(${item.image})` }}
-              >
-                <div className={styles.textOverlay}>
-                  <h2 className={styles.detailHeader}>{item.detailHeader}</h2>
-                  <p className={styles.detail}>{item.detail}</p>
+  const router = useRouter();
+  const groupedByYear = swiperData.reduce((acc, item) => {
+    const year = item.year;
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(item);
+    return acc;
+  }, {});
+
+  const sortedYears = Object.keys(groupedByYear).sort((a, b) => {
+    const yearA = parseInt(a.split(" ")[1]);
+    const yearB = parseInt(b.split(" ")[1]);
+    return yearB - yearA;
+  });
+
+  const handleSeeMore = (id) => {
+    router.push(`/qurbani/${id}`);
+  };
+
+  const renderQurbaniSection = (year, items) => (
+    <div key={year} className={styles.qurbaniSection}>
+      <div className={styles.yearHeader}>
+        <h2>{year}</h2>
+      </div>
+      <div className={styles.qurbaniGrid}>
+        {items.map((item) => (
+          <div key={item.id} className={styles.qurbaniCard}>
+            <div className={styles.imageContainer}>
+              <img src={item.image} alt={item.detailHeader} />
+              <div className={styles.cardOverlay}>
+                <div className={styles.locationBadge}>
+                  <span className={styles.locationIcon}>📍</span>
+                  {item.location}
                 </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            </div>
+            <div className={styles.cardContent}>
+              <h3>{item.detailHeader}</h3>
+              <p>{item.detail}</p>
+              <button
+                onClick={() => handleSeeMore(item.id)}
+                className={styles.seeMoreButton}
+              >
+                See More
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
+    </div>
+  );
+
+  return (
+    <div className={styles.qurbaniContainer}>
+      <div className={styles.mainHeader}>
+        <h1>Qurbani Programs</h1>
+        <p>Supporting communities through our annual Qurbani initiatives</p>
+      </div>
+      {sortedYears.map((year) => (
+        <React.Fragment key={year}>
+          {renderQurbaniSection(year, groupedByYear[year])}
+          {year !== sortedYears[sortedYears.length - 1] && (
+            <div className={styles.sectionDivider} />
+          )}
+        </React.Fragment>
+      ))}
     </div>
   );
 }

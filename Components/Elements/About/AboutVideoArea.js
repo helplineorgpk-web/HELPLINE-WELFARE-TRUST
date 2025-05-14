@@ -6,7 +6,10 @@ import Link from "next/link";
 export default function AboutVideoArea() {
   const [isShow, setShow] = useState(false);
   return (
-    <div className="about_videos_area mtm-300">
+    <div
+      className="about_videos_area mtm-300"
+      style={{ backgroundColor: "#f1fdfc" }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xxl-12">

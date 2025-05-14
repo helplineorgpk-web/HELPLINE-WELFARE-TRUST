@@ -102,8 +102,11 @@ export default function Header2({ toggleTrueFalseInfo }) {
             <div>
               <div className={styles.marqueeContainer}>
                 <div className={styles.marquee}>
-                  EDUCATION - HEALTH - WELFARE - REHABILITATION - CAPACITY
-                  BUILDING - SKILL DEVELOPMENT - COMMUNITY DEVELOPMENT
+                  <span>EDUCATION </span>- <span>HEALTH </span>-{" "}
+                  <span>WELFARE </span>- <span>REHABILITATION </span>-
+                  <span>CAPACITY BUILDING </span>-{" "}
+                  <span>SKILL DEVELOPMENT </span>-{" "}
+                  <span>COMMUNITY DEVELOPMENT</span>
                 </div>
               </div>
             </div>

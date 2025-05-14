@@ -22,7 +22,7 @@ export default function CauseDetails() {
 
   return (
     <Layout2>
-      <CauseBreadCrumb desc={cause.desc} />
+      <CauseBreadCrumb actualName={cause.ActualName} title={cause.desc} />
       <CauseDetailsArea
         title={cause.desc}
         image={cause.img}
@@ -30,6 +30,9 @@ export default function CauseDetails() {
         detail={cause.description}
         img1={cause.img1}
         img2={cause.img2}
+        actualName={cause.ActualName}
+        detail2={cause.detail2}
+        detail3={cause.detail3}
       />
     </Layout2>
   );

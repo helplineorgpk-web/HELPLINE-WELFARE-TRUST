@@ -13,6 +13,25 @@ export default function Header1({ toggleTrueFalseInfo }) {
         background: "white",
       }}
     >
+      <div className="header_top_area d-none d-lg-block">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="top_mailing">
+              <p
+                style={{
+                  color: "white",
+                  textAlign: "center",
+                  fontWeight: "600",
+                  fontSize: "26px",
+                  paddingTop: "10px",
+                }}
+              >
+                HELPLINE WELFARE TRUST
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="sticky-header" className="header_menu_area res_padd">
         <div className="container">
           <div className="row align-items-center">
@@ -55,8 +74,11 @@ export default function Header1({ toggleTrueFalseInfo }) {
             <div>
               <div className={styles.marqueeContainer}>
                 <div className={styles.marquee}>
-                  EDUCATION - HEALTH - WELFARE - REHABILITATION - CAPACITY
-                  BUILDING - SKILL DEVELOPMENT - COMMUNITY DEVELOPMENT
+                  <span>EDUCATION </span>- <span>HEALTH </span>-{" "}
+                  <span>WELFARE </span>- <span>REHABILITATION </span>-
+                  <span>CAPACITY BUILDING </span>-{" "}
+                  <span>SKILL DEVELOPMENT </span>-{" "}
+                  <span>COMMUNITY DEVELOPMENT</span>
                 </div>
               </div>
             </div>

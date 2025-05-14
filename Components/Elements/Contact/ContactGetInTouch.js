@@ -61,6 +61,7 @@ export default function ContactGetInTouch() {
       className="get_intouch_area pt-120 pb-120"
       style={{ background: "url(/img/bg/contact_map.png)" }}
     >
+      <h3 className="text-center" style={{marginBottom: "80px"}}>Helpline Welfare Trust<span style={{fontSize: "16px"}}>®️</span></h3>
       <div className="container">
         <div className="row">
           <div className="col-xxl-6 col-xl-6 col-lg-7 order-1 order-lg-0">
@@ -117,7 +118,7 @@ export default function ContactGetInTouch() {
                   </div>
                   <div className="col-xxl-12">
                     <button type="submit" className="contact_btn">
-                      Get A Quote
+                      Submit
                     </button>
                   </div>
                 </div>
@@ -141,7 +142,8 @@ export default function ContactGetInTouch() {
                   <div className="contact_location_text">
                     <span>Location</span>
                     <h5 className="contact_address_title">
-                      HOUSE # 705/A-1, Township, Lahore Pakistan
+                      HOUSE# 705,SectorA-1,GECHS, PECO Road, Township, Lahore
+                      Pakistan
                     </h5>
                   </div>
                 </div>

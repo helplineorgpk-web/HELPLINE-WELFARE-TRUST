@@ -8,6 +8,9 @@ export default function CauseDetailsArea({
   detail,
   img1,
   img2,
+  actualName,
+  detail2,
+  detail3,
 }) {
   return (
     <div className="cause_details_area pt-120 pb-80">
@@ -25,8 +28,10 @@ export default function CauseDetailsArea({
                       {category}
                     </Link>
                   </div>
-                  <h4 className="details_title">{title}</h4>
+                  <h4 className="details_title">{actualName || title}</h4>
                   <p>{detail}</p>
+                  <p>{detail2}</p>
+                  <p>{detail3}</p>
                   <div className="feature_progress_wrapper mb-25 mt-35">
                     <div className="progress feature_progress"></div>
                   </div>
@@ -65,7 +70,9 @@ export default function CauseDetailsArea({
                       Muhammad Iqbal Khan
                     </Link>
                   </h5>
-                  <span className="person_surname">Founder,Helpline Co.</span>
+                  <span className="person_surname">
+                    Cheif Executive Officer.
+                  </span>
                 </div>
                 <div className="feature_buttons widget_buttons">
                   <Link

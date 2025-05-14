@@ -1,115 +1,183 @@
-.container {
-  background: linear-gradient(135deg, #65cabb, #c6fbf3);
-  padding: 40px 10px;
-  border-radius: 8px;
-}
-
-.innerContainer {
+.qurbaniContainer {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
+  padding: 2rem;
 }
 
-.swiperContainer {
-  width: 100%;
-  height: auto;
-  color: #65cabb;
+.mainHeader {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.swiperSlide {
+.mainHeader h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.mainHeader p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.qurbaniSection {
+  margin-bottom: 4rem;
+}
+
+.yearHeader {
   position: relative;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.yearHeader h2 {
+  font-size: 2rem;
+  color: #f15b43;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-bottom: 3px solid #f15b43;
+}
+
+.qurbaniGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.qurbaniCard {
+  background: #fff;
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.slideContent {
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.qurbaniCard:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer {
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 20px;
-  color: #fff;
-  transition: all 0.3s ease;
+  width: 100%;
+  padding-top: 66.67%; /* 3:2 aspect ratio */
+  overflow: hidden;
 }
 
-.slideContent:hover .textOverlay {
-  background: rgba(0, 0, 0, 0.7);
+.imageContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.qurbaniCard:hover .imageContainer img {
   transform: scale(1.05);
 }
 
-.textOverlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 70%;
-  transition: background 0.3s ease, transform 0.3s ease;
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
 }
 
-.detailHeader {
-  font-size: 24px;
-  font-family: "Kollektif Bold", Arial, sans-serif;
-  margin-bottom: 10px;
-  color: #ffb800;
+.locationBadge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.detail {
-  font-size: 16px;
-  font-family: "Inter Regular", Arial, sans-serif;
-  line-height: 1.6;
+.locationIcon {
+  margin-right: 0.5rem;
 }
 
-/* Adjustments for smaller devices */
-@media screen and (max-width: 768px) {
-  .innerContainer {
-    max-width: 100%;
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardContent h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.cardContent p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.seeMoreButton {
+  background: #f15b43;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.seeMoreButton:hover {
+  background: #d64b35;
+  transform: translateY(-2px);
+}
+
+.sectionDivider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ddd, transparent);
+  margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .qurbaniContainer {
+    padding: 1rem;
   }
 
-  .slideContent {
-    height: 300px;
-    padding: 15px;
+  .mainHeader h1 {
+    font-size: 2rem;
   }
 
-  .textOverlay {
-    padding: 15px;
-    max-width: 90%;
+  .yearHeader h2 {
+    font-size: 1.5rem;
   }
 
-  .detailHeader {
-    font-size: 20px;
+  .qurbaniGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
   }
 
-  .detail {
-    font-size: 14px;
-  }
-
-  .swiperContainer {
-    margin: 0 auto;
-    width: 95%;
+  .cardContent h3 {
+    font-size: 1.1rem;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .slideContent {
-    height: 250px;
-    padding: 10px;
+@media (max-width: 480px) {
+  .mainHeader h1 {
+    font-size: 1.75rem;
   }
 
-  .textOverlay {
-    padding: 10px;
-    max-width: 95%;
+  .yearHeader h2 {
+    font-size: 1.25rem;
   }
 
-  .detailHeader {
-    font-size: 18px;
-  }
-
-  .detail {
-    font-size: 12px;
+  .qurbaniGrid {
+    grid-template-columns: 1fr;
   }
 }

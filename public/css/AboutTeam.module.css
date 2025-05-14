@@ -1,0 +1,273 @@
+.teamContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+  position: relative;
+border-top: 4px solid red;
+}
+
+.mainHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.designation {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4357f1;
+}
+
+.mainHeader::before {
+  content: "👥";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+.mainHeader h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(45deg, #2d3436 30%, #636e72 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.mainHeader p {
+  color: #636e72;
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.teamSection {
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+.sectionHeader {
+  text-align: left;
+  margin-bottom: 3rem;
+  position: relative;
+  padding: 1rem 2rem;
+  border-left: 5px solid #f15b43;
+  background: linear-gradient(90deg, rgba(241, 91, 67, 0.1), transparent);
+  border-radius: 0 8px 8px 0;
+}
+
+.sectionHeader h2 {
+  font-size: 2.2rem;
+  background: linear-gradient(45deg, #2d3436, #636e72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  margin: 0;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  perspective: 1000px;
+}
+
+.teamCard {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  transform-style: preserve-3d;
+  border: 1px solid rgba(241, 91, 67, 0.1);
+}
+
+.teamCard:hover {
+  transform: translateY(-15px) rotateX(5deg);
+  box-shadow: 0 30px 50px rgba(241, 91, 67, 0.2);
+  border-color: rgba(241, 91, 67, 0.3);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f15b43, #ff8f70);
+}
+
+.imageContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.teamCard:hover .imageContainer img {
+  transform: scale(1.15) rotate(-3deg);
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  z-index: 2;
+}
+
+.designationBadge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 0.7rem 1.4rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: #f15b43;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  transform: translateY(0);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.teamCard:hover .designationBadge {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(241, 91, 67, 0.2);
+}
+
+.designationIcon {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.cardContent {
+  padding: 2rem;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.cardContent h3 {
+  font-size: 1.4rem;
+  color: #2d3436;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.teamCard:hover .cardContent h3 {
+  background: linear-gradient(45deg, #f15b43, #ff8f70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardContent p {
+  color: #636e72;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+}
+
+.viewProfileButton {
+  background: linear-gradient(135deg, #f15b43, #ff8f70);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.viewProfileButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(241, 91, 67, 0.3);
+}
+
+.sectionDivider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #f15b43, transparent);
+  margin: 5rem 0;
+  opacity: 0.2;
+  border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+  .teamGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .mainHeader h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mainHeader h1 {
+    font-size: 2.5rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+
+  .cardContent {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .teamContainer {
+    padding: 3rem 1rem;
+  }
+
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mainHeader h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .mainHeader p {
+    font-size: 1.1rem;
+  }
+
+  .sectionHeader {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.75rem;
+  }
+
+  .cardContent h3 {
+    font-size: 1.3rem;
+  }
+}

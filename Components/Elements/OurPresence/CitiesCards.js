@@ -35,7 +35,7 @@ export default function CitiesCards() {
         transition={{ duration: 0.6 }}
         className={styles.mainTitle}
       >
-        Our Presence Across Pakistan
+        Our Presence - Pakistan
       </motion.h2>
       <div className={styles.cardsGrid}>
         {citiesData.cities.map((city, index) => (

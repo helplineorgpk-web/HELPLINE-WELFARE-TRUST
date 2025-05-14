@@ -1,0 +1,116 @@
+.container {
+  max-width: 100%;
+  padding: 6rem 8rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.header {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #263b5e;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  text-align: left;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mission {
+  background-color: #f15b43;
+  color: #ffffff;
+}
+
+.vision {
+  background-color: #263b5e;
+  color: #ffffff;
+}
+
+.objective {
+  background-color: #65cabb;
+  color: #263b5e;
+}
+
+.card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.mission h3, .vision h3 {
+  color: #ffffff;
+}
+
+.objective h3 {
+  color: #263b5e;
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.mission p, .vision p {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.objective p {
+  color: #263b5e;
+  opacity: 0.9;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 6rem 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4rem 2rem;
+  }
+
+  .header h2 {
+    font-size: 2.2rem;
+  }
+
+  .cardsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+}

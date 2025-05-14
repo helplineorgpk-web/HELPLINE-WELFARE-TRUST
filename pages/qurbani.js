@@ -1,18 +1,14 @@
 import React from "react";
 import Layout2 from "../Components/Layout/Layout2";
-import { HelplineData } from "../pages/api/data";
-import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
 import Qurbani from "../Components/Elements/Qurbani/Qurbani";
+import { qurbaniData } from "./api/qurbaniData";
+import QurbaniHeader from "../Components/Elements/Qurbani/QurbaniHeader";
 
-export default function qurbani() {
-  const Data = HelplineData.swiperData;
+export default function QurbaniPage() {
   return (
     <Layout2>
-      <DisasterHeader
-        content={HelplineData.qurbaniContent}
-        image={HelplineData.qurbaniContent.headerBg}
-      />
-      <Qurbani swiperData={Data} />
+      <QurbaniHeader />
+      <Qurbani swiperData={qurbaniData} />
     </Layout2>
   );
 }

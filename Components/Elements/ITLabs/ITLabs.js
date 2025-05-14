@@ -1,81 +1,62 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import Link from 'next/link';
 import styles from "../../../public/css/Itlab.module.css";
 import { HelplineData } from "../../../pages/api/data";
 
 const ITLabs = () => {
-  const RashanData = HelplineData.ITData;
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleNext = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === RashanData.length - 1 ? 0 : prevIndex + 1
-      );
-      setIsAnimating(false);
-    }, 500);
-  };
-
-  const handlePrev = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? RashanData.length - 1 : prevIndex - 1
-      );
-      setIsAnimating(false);
-    }, 500);
-  };
-
-  useEffect(() => {
-    const autoSlide = setInterval(handleNext, 5000);
-    return () => clearInterval(autoSlide);
-  }, []);
-
-  const currentSlide = RashanData[currentIndex];
+  const labData = HelplineData.ITData;
 
   return (
-    <section>
-      <div className={styles.slide}>
-        <div className={styles.overlay}>
-          <h3 className={styles.heading}>IT Labs Program In Cities</h3>
-          <div className={styles.contentWrapper}>
-            <div
-              className={`${styles.textSection} ${
-                isAnimating ? styles.textAnimate : ""
-              }`}
-            >
-              <h4 className={styles.programTitle}>{currentSlide.title}</h4>
-              <p className={styles.description}>{currentSlide.description}</p>
-              <h2 className={styles.programTitle}>
-                {currentSlide.programTitle}
-              </h2>
-            </div>
-            <div
-              className={`${styles.imageSection} ${
-                isAnimating ? styles.imageAnimate : ""
-              }`}
-            >
+    <div className={styles.container}>
+      <h1 className={styles.heading}>IT Labs Training Programs</h1>
+      <p className={styles.subtitle}>Discover our comprehensive range of IT training programs designed to help you succeed in the digital world.</p>
+      
+      <div className={styles.cardGrid}>
+        {labData.map((lab, index) => (
+          <div key={index} className={styles.card}>
+            <div className={styles.cardImageWrapper}>
               <img
-                src={currentSlide.image}
-                alt={currentSlide.title}
-                className={styles.image}
+                src={lab.image}
+                alt={lab.title}
+                className={styles.cardImage}
               />
+              <div className={styles.cardOverlay}>
+                <p className={styles.location}>{lab.title}</p>
+              </div>
+            </div>
+            
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>{lab.programTitle}</h2>
+              <p className={styles.cardDescription}>{lab.description}</p>
+              
+              <div className={styles.stats}>
+                <div className={styles.stat}>
+                  <span className={styles.statNumber}>50+</span>
+                  <span className={styles.statLabel}>Students</span>
+                </div>
+                <div className={styles.stat}>
+                  <span className={styles.statNumber}>4</span>
+                  <span className={styles.statLabel}>Courses</span>
+                </div>
+                <div className={styles.stat}>
+                  <span className={styles.statNumber}>95%</span>
+                  <span className={styles.statLabel}>Success</span>
+                </div>
+              </div>
+              
+              <div className={styles.cardActions}>
+                <Link href="/learn-more" className={styles.learnMore}>
+                  Learn More
+                </Link>
+                <Link href="/enroll" className={styles.enroll}>
+                  Enroll Now
+                </Link>
+              </div>
             </div>
           </div>
-          <div className={styles.controls}>
-            <button className={styles.arrow} onClick={handlePrev}>
-              &#9664;
-            </button>
-            <button className={styles.arrow} onClick={handleNext}>
-              &#9654;
-            </button>
-          </div>
-        </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 

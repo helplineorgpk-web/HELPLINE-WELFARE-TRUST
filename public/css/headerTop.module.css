@@ -14,6 +14,8 @@
   gap: 40px;
   text-wrap: nowrap;
   animation: marquee-scroll 15s linear infinite;
+  font-weight: bold;
+
 }
 
 @keyframes marquee-scroll {

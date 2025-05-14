@@ -7,14 +7,21 @@ const ChairmanMessage = () => {
     <div className={styles.container}>
       <div className={styles.chairmansection}>
         <div className={styles.chairmanname}>
-          <h3>Muhammad Iqbal Khan (FCA)</h3>
+          <h4
+            className={styles.chairmanheading}
+            style={{ textDecoration: "underline" }}
+          >
+            CHAIRMAN MESSAGE
+          </h4>
+          <h5 className={styles.chairmanposition}>
+            Muhammad Aslam Khan Kakkarh
+          </h5>
         </div>
         <div className={styles.chairmanmessage}>
           <div className={styles.chairmanimage}>
-            <img src="img/team/ceo.png" alt="Chairman" />
+            {/* <img src="img/team/ceo.png" alt="Chairman" />s */}
           </div>
           <div className={styles.messagecontent}>
-            <h2>CHIEF EXECUTIVE OFFICER</h2>
             <p>
               I believe that Allah Almighty has assigned to every person
               generally and a Muslim particularly the duty of serving other
@@ -23,7 +30,6 @@ const ChairmanMessage = () => {
               to see Helpline® growing and approaching people all over Pakistan.
               I am in a state of continuous learning from day one being part of
               Helpline and have learnt important lessons such as;
-              <br />
               <br />
             </p>
             <p>
@@ -49,11 +55,6 @@ const ChairmanMessage = () => {
               organization. Come & join us.
             </p>
           </div>
-        </div>
-        <div className="header-sing d-inline-block ml-20 d-none d-xl-block mt-3 text-center">
-          <Link href="/volunteer" className="g_btn hbtn_1 to_right1 rad-30">
-            join now<span></span>
-          </Link>
         </div>
       </div>
     </div>

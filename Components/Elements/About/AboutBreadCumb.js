@@ -22,7 +22,7 @@ export default function AboutBreadCumb({ content }) {
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h2>{content ? content : "About Us"}</h2>
+                <h2>{content ? content : "Helpline Founding Members"}</h2>
               </div>
             </div>
           </div>

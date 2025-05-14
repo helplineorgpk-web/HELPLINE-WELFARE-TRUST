@@ -1,0 +1,135 @@
+.identitySection {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e3b55;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #65cabb, #1e9c91);
+  border-radius: 2px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.identityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.identityCard {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(101, 202, 187, 0.1);
+}
+
+.identityCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(101, 202, 187, 0.15);
+  border-color: rgba(101, 202, 187, 0.3);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.iconContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #65cabb, #1e9c91);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.iconContainer img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.cardHeader h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e3b55;
+  margin: 0;
+}
+
+.cardContent {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .identitySection {
+    padding: 4rem 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .identityGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cardHeader h3 {
+    font-size: 1.3rem;
+  }
+
+  .cardContent {
+    font-size: 1rem;
+  }
+}

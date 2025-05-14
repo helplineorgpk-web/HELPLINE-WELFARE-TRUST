@@ -4,23 +4,29 @@ import { HelplineData } from "../../../pages/api/data";
 
 function Journey() {
   const data = HelplineData.journeyData[0];
+  const sortedYearlyData = [...data.datayearly].sort((a, b) => {
+    const yearA = parseInt(a.year.split('-')[0]);
+    const yearB = parseInt(b.year.split('-')[0]);
+    return yearB - yearA;
+  });
+
   return (
     <section className={styles.certificationSection}>
       <div className={styles.container}>
         <div className={styles.certificationContent}>
-          <h4 className={styles.certificationTitle}>{data.title}</h4>
           <h2 className={styles.certificationTitle}>{data.title1}</h2>
+          <h4 className={styles.certificationTitle}>{data.title}</h4>
 
           <p className={styles.certificationAnnouncement}>
             {data.announcement}
           </p>
+        </div>
           <h4 className={styles.certificationConclusion}>{data.conclusion}</h4>
           <p className={styles.certificationAnnouncement}>
             {data.announcement1}
           </p>
-        </div>
         <div className={styles.certificationImages}>
-          {data.datayearly.map((item) => (
+          {sortedYearlyData.map((item) => (
             <div key={item.id} className={styles.certificationItem}>
               <h2 className={styles.certificationTitle}>{item.year}</h2>
               <p className={styles.certificationAnnouncement}>{item.detail}</p>
