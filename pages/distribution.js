@@ -1,9 +1,10 @@
 import React from "react";
 import Layout2 from "../Components/Layout/Layout2";
 import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
-import { HelplineData } from "../pages/api/data";
+import { HelplineData } from "./api/data";
 import HasneDistribution from "../Components/Elements/Hasne/HasneDistribution";
-export default function rajanpur() {
+import HasneDistribute from "./hasneDistribution";
+export default function Distribution() {
   const data = HelplineData.HelplineRajanpurData;
   return (
     <Layout2>
@@ -12,6 +13,7 @@ export default function rajanpur() {
         image={HelplineData.HelplineRajanpurData.headerBg}
       />
       <HasneDistribution data={data} />
+      <HasneDistribute />
     </Layout2>
   );
 }

@@ -46,6 +46,32 @@ export default function CauseRecentCause({ categories, causes }) {
   return (
     <section className="causes_area gray-bg pt-120 pb-85">
       <div className="container">
+        <div style={{ marginBottom: "2rem" }}>
+          <h3 style={{
+            fontSize: "2.5rem",
+            marginBottom: "1.5rem",
+            textAlign: "center",
+            fontWeight: 600,
+            color: "#2c3e50"
+          }}>
+            Our Education Projects
+          </h3>
+          <p style={{
+            textAlign: "center",
+            color: "#2c3e50",
+            lineHeight: 1.8,
+            maxWidth: "900px",
+            margin: "0 auto",
+            fontSize: "1.1rem"
+          }}>
+            Helpline is engaged in various philanthropic activities all over
+            Pakistan. Our main focus is QUALITY EDUCATION for under privileged
+            children in remote rural areas of the country. We have devised
+            "Al-Kitab Education System" which, besides imparting free quality
+            education (Religious/Modern), encompasses the community development
+            plans for the needy families of these students.
+          </p>
+        </div>
         <div className="row">
           <div className="col-xxl-12 text-center">
             <div className="cause_button_wrapper mb-25">

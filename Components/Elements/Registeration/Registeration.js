@@ -12,41 +12,22 @@ const Registration = () => {
 
   return (
     <section className={styles.registrationSection}>
-      <h3 className={styles.heading}>Certificates</h3>
+      <h3 className={styles.heading}>Registration / Certificates</h3>
       <div className={styles.certificatesGrid}>
-        <motion.div
-          className={styles.container}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h1 className={styles.heading}>Tax Exemption Certificate</h1>
-          <div className={styles.buttonContainer}>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              onClick={() =>
-                handleOpenPDF("/img/pdfs/TaxPayer-Registration-Certificate.pdf")
-              }
-            >
-              <a className={`${styles.button} ${styles.primary}`}>2025-26</a>
-            </motion.div>
-          </div>
-        </motion.div>
-
         <motion.div
           className={styles.container}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <h1 className={styles.heading}>FBR Registration</h1>
+          <h1 className={styles.heading}> Fedral Board of Revenue</h1>
           <div className={styles.buttonContainer}>
             <motion.div
               whileHover={{ scale: 1.05 }}
               onClick={() => handleOpenPDF("/img/pdfs/fbr.pdf")}
             >
               <a className={`${styles.button} ${styles.secondary}`}>
-                FBR Certificate
+                NPO Certificate
               </a>
             </motion.div>
           </div>
@@ -58,7 +39,7 @@ const Registration = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h1 className={styles.heading}>PCP Certification</h1>
+          <h1 className={styles.heading}>Pakistan Centre for Philanthropy</h1>
           <div className={styles.buttonContainer}>
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -77,7 +58,7 @@ const Registration = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <h1 className={styles.heading}>Punjab Charity Commission</h1>
+          <h1 className={styles.heading}>Punjab Cherity Commission</h1>
           <div className={styles.buttonContainer}>
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -85,7 +66,29 @@ const Registration = () => {
                 handleOpenPDF("/img/pdfs/PunjabCherityCommission.pdf")
               }
             >
-              <a className={`${styles.button} ${styles.quaternary}`}>2025-26</a>
+              <a className={`${styles.button} ${styles.quaternary}`}>
+                PCC Certificate
+              </a>
+            </motion.div>
+          </div>
+        </motion.div>
+        <motion.div
+          className={styles.container}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h1 className={styles.heading}>Fedral Board of Revenue</h1>
+          <div className={styles.buttonContainer}>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              onClick={() =>
+                handleOpenPDF("/img/pdfs/TaxPayer-Registration-Certificate.pdf")
+              }
+            >
+              <a className={`${styles.button} ${styles.primary}`}>
+                Tax Exemption
+              </a>
             </motion.div>
           </div>
         </motion.div>

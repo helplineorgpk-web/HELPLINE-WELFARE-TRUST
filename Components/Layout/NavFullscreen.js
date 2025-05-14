@@ -26,7 +26,7 @@ export default function NavFullscreen() {
               <Link href="/ourjourney">Our Journey</Link>
             </li>
             <li>
-              <Link href="/registration">Registration Documents</Link>
+              <Link href="/registration">Registrations</Link>
             </li>
           </ul>
         </li>
@@ -49,19 +49,55 @@ export default function NavFullscreen() {
                   <Link href="/orphanage">Orphanage Home</Link>
                 </li>
                 <li>
-                  <Link href="/vocationalTrainingCenters">
-                    Skills Development
-                  </Link>
+                  <Link href="/taleem-e-Quran">Quran Education</Link>
                 </li>
+              </ul>
+            </li>
+            <li className="menu-item-has-children">
+              <Link href="/digitalSkill" className="innerli">
+                Digital Skills
+              </Link>
+              {/* <ul className="submenu">
                 <li>
                   <Link href="/vocationalTrainingCenters">
                     Vocational Centers
                   </Link>
                 </li>
-              </ul>
+                <li>
+                  <Link href="/itlab">IT Labs</Link>
+                </li>
+              </ul> */}
             </li>
             <li>
-              <Link href="/health">Health</Link>
+              <Link href="/health" className="innerli">
+                Health <span> ▶</span>
+              </Link>
+              <ul className="submenu">
+                <li>
+                  <Link href="/water">Clean Water Program</Link>
+                </li>
+                <li>
+                  <Link href="/cataract">Cataract Program</Link>
+                </li>
+                <li>
+                  <Link href="/familyWelfare">Medicine Service</Link>
+                </li>
+              </ul>
+            </li>
+
+            <li className="menu-item-has-children">
+              <Link href="#" className="innerli">
+                Welfare
+                <span> ▶</span>
+              </Link>
+              <ul className="submenu">
+                <li>
+                  <Link href="/distribution">Distribution</Link>
+                </li>
+                <li>
+                  <Link href="/rashan">Rashan Program</Link>
+                </li>
+              </ul>
             </li>
             <li className="menu-item-has-children">
               <Link href="#" className="innerli">
@@ -73,57 +109,18 @@ export default function NavFullscreen() {
                   <Link href="/islamicactivity">Islamic Activity</Link>
                 </li>
                 <li>
-                  <Link href="/taleem-e-Quran">Taleem e Quran</Link>
+                  <Link href="/masjid">Masjid Maktab</Link>
                 </li>
                 <li>
-                  <Link href="/qurbani">Qurbani Program</Link>
+                  <Link href="/qurbani">Qurbani Package</Link>
                 </li>
                 <li>
-                  <Link href="/masjid">Masjid Program</Link>
-                </li>
-              </ul>
-            </li>
-            <li className="menu-item-has-children">
-              <Link href="#" className="innerli">
-                Distribution
-                <span> ▶</span>
-              </Link>
-              <ul className="submenu">
-                <li>
-                  <Link href="/hasneDistribution">
-                    Helpline & Hasne Distribution
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/rajanpur">Rajanpur Gullowali Distribution</Link>
+                  <Link href="/ramzanprogram">Ramzan Package</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="/rashan">Rashan Program</Link>
-            </li>
-            <li>
-              <Link href="/disaster">Disaster Management</Link>
-            </li>
-            <li>
-              <Link href="/familyWelfare">Family Welfare</Link>
-            </li>
-            <li>
-              <Link href="/water">Clean Water Program</Link>
-            </li>
-            <li>
-              <Link href="/cataract">Cataract Program</Link>
-            </li>
-            <li className="menu-item-has-children">
-              <Link href="/itlab">Digital Skills</Link>
-              <ul className="submenu">
-                <li>
-                  <Link href="/itlab">IT Labs</Link>
-                </li>
-                <li>
-                  <Link href="/itform">IT Labs Form</Link>
-                </li>
-              </ul>
+              <Link href="/disaster">Rehabilitation</Link>
             </li>
           </ul>
         </li>

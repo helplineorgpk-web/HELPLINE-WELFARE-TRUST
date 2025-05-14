@@ -21,20 +21,22 @@ function DisasterHeader({ content, image }) {
         </div>
       </div>
       <div className={styles.content}>
+        <div className={styles.desContainer}>
+          <h2 className={styles.heading}>{content.heading}</h2>
+          <p className={styles.description}>{content.description1}</p>
+          <p className={styles.description}>{content.description2}</p>
+
+        </div>
         <div className={styles.videoWrapper}>
           <iframe
             className={styles.videoIframe}
             width="560"
             height="315"
-            src={content.videoSrc}
+            src="https://www.youtube.com/embed/GWD4sUwkroA"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-        </div>
-        <div className={styles.desContainer}>
-          <h2 className={styles.heading}>{content.heading}</h2>
-          <p className={styles.description}>{content.description}</p>
         </div>
       </div>
     </section>

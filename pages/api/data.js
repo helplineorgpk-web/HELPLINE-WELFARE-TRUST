@@ -2254,9 +2254,11 @@ Helpline have realized that providing access to technology and digital education
     headerBg: "img/causes/itlabsbg.png",
     videoSrc: "https://www.youtube.com/embed/txy5egSzmUY",
     heading: "Helpline Registrations",
-    description: `
-This year, with your generous support, we’ve achieved incredible milestones in transforming lives. From providing clean water and distributing meals to underserved families to organizing healthcare camps and establishing IT labs in schools, your contributions have made a profound impact. Our education initiatives have empowered children with quality learning, while medical camps brought essential care to those in need. We also supported families with sustainable housing and vocational training. These achievements highlight the power of collective action and compassion. Thank you for standing with us and believing in our mission to build a brighter, better future for all.
+    description1: `
+Helpline Welfare Trust is proud to be officially recognized by multiple esteemed regulatory bodies, underscoring our unwavering commitment to transparency, accountability, and service to humanity. We are certified by the Pakistan Centre for Philanthropy (PCP), a recognition that reflects our adherence to high standards in governance, financial management, and social impact.
+
     `,
+    description2: `Additionally, Helpline is registered with the Federal Board of Revenue (FBR), enabling us to receive both domestic and international donations with full legal standing—building trust with individuals, corporations, and institutions alike. Furthermore, Helpline is formally registered with the Charity Commission under the name Helpline Welfare Trust, reinforcing our legal status as a credible, nonprofit organization. These certifications and registrations collectively empower us to expand our reach, ensure responsible use of donor funds, and continue transforming lives through our social welfare initiatives.`,
     detailHeader: "Helpline IT Labs",
   },
   pdfDocuments: [

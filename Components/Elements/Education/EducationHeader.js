@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function EducationHeader() {
   return (
-    //breadcrumb area start
     <section
       className="breadcrumb_area breadcrumb_overlay"
       style={{ backgroundImage: "url(/img/causes/School-1-scaled.jpg)" }}
@@ -34,6 +33,5 @@ export default function EducationHeader() {
         </div>
       </div>
     </section>
-    //breadcrumb area end
   );
 }
