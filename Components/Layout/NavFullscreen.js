@@ -6,7 +6,7 @@ export default function NavFullscreen() {
     <nav id="mobile-menu">
       <ul>
         <li className="menu-item-has-children">
-          <Link href="/about">About Us</Link>
+          <Link href="/">About Us</Link>
           <ul className="sub-menu">
             <li>
               <Link href="/about">Introduction</Link>
@@ -32,7 +32,7 @@ export default function NavFullscreen() {
         </li>
 
         <li className="menu-item-has-children">
-          <Link href="/cause">Projects</Link>
+          <Link href="/">Projects</Link>
           <ul className="sub-menu">
             <li>
               <Link href="/edu" className="innerli">
@@ -125,7 +125,7 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/event">Get Registered</Link>
+          <Link href="/">Get Registered</Link>
           <ul className="sub-menu">
             <li>
               <Link href="/needy">Needy support/ Medical</Link>
@@ -139,7 +139,7 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/event">Join us</Link>
+          <Link href="/">Join us</Link>
           <ul className="sub-menu">
             <li>
               <Link href="/donation">Donor</Link>

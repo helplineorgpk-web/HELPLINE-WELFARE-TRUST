@@ -6,21 +6,21 @@ export default function OurIdentity() {
     {
       id: 1,
       title: "Our Vision",
-      icon: "/img/icons/vision.png",
+      icon: "/img/icons/vision.svg",
       description:
         "To create a society based on the principles of Mawakhat-e-Madina, where every individual has access to basic necessities and opportunities for growth.",
     },
     {
       id: 2,
       title: "Our Mission",
-      icon: "/img/icons/mission.png",
+      icon: "/img/icons/mission.svg",
       description:
         "To bridge the gap between the privileged and underprivileged through sustainable initiatives in education, healthcare, and social welfare.",
     },
     {
       id: 3,
       title: "Our Values",
-      icon: "/img/icons/values.png",
+      icon: "/img/icons/values.svg",
       description:
         "Transparency, compassion, and dedication guide our every action. We believe in empowering communities through collective responsibility and mutual support.",
     },
