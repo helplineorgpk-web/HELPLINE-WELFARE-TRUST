@@ -9,6 +9,8 @@ const Consultant = () => {
     fullName: "",
     email: "",
     contact: "",
+    city: "",
+    country: "",
     profession: "",
     expertise: "",
     experience: "",
@@ -47,6 +49,8 @@ const Consultant = () => {
   👤 Full Name: ${fullName}
   📧 Email: ${email}
   📞 Contact Number: ${contact}
+  🌆 City: ${city}
+  🌍 Country: ${country}
   💼 Current Profession: ${profession}
   🧠 Areas of Expertise: ${expertise}
   📆 Years of Experience: ${experience}
@@ -83,6 +87,8 @@ const Consultant = () => {
             fullName: "",
             email: "",
             contact: "",
+            city: "",
+            country: "",
             profession: "",
             expertise: "",
             experience: "",
@@ -105,8 +111,21 @@ const Consultant = () => {
   return (
     <Layout2>
       <Container className="py-5">
-        <h4 className="text-center mb-4">Consultant & Friend Registration</h4>
-        <Form onSubmit={handleSubmit}>
+        <div
+          style={{
+            textAlign: "center",
+            background: "#52FBD9E8",
+            padding: "20px",
+            borderRadius: "15px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <h4 className="text-center mb-4">Become Consultant/ Advisor</h4>
+        </div>
+
+        <Form onSubmit={handleSubmit} style={{ marginTop: "40px" }}>
           <Row>
             <Col md={6}>
               <Form.Group className="mb-3">
@@ -154,6 +173,33 @@ const Consultant = () => {
                   type="text"
                   name="profession"
                   value={formData.profession}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col md={6}>
+              <Form.Group className="mb-3">
+                <Form.Label>City</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Col>
+            <Col md={6}>
+              <Form.Group className="mb-3">
+                <Form.Label>Country</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="country"
+                  value={formData.country}
                   onChange={handleChange}
                   required
                 />

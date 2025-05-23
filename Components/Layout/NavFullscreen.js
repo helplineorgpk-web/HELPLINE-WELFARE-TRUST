@@ -63,24 +63,18 @@ export default function NavFullscreen() {
                     Vocational Centers
                   </Link>
                 </li>
-                <li>
-                  <Link href="/itlab">IT Labs</Link>
-                </li>
               </ul> */}
             </li>
             <li>
-              <Link href="/health" className="innerli">
+              <Link href="/" className="innerli">
                 Health <span> ▶</span>
               </Link>
               <ul className="submenu">
                 <li>
+                  <Link href="/health">Medical Projects</Link>
+                </li>
+                <li>
                   <Link href="/water">Clean Water Program</Link>
-                </li>
-                <li>
-                  <Link href="/cataract">Cataract Program</Link>
-                </li>
-                <li>
-                  <Link href="/familyWelfare">Medicine Service</Link>
                 </li>
               </ul>
             </li>
@@ -115,7 +109,7 @@ export default function NavFullscreen() {
                   <Link href="/qurbani">Qurbani Package</Link>
                 </li>
                 <li>
-                  <Link href="/ramzanprogram">Ramzan Package</Link>
+                  <Link href="/ramzanRashan">Ramzan Package</Link>
                 </li>
               </ul>
             </li>
@@ -124,9 +118,30 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
+
+        <li className="menu-item-has-children">
+          <Link href="/">Join us</Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/sponsor">Donor/ Sponsor</Link>
+            </li>
+            <li>
+              <Link href="/consultant">Consultant/ Advisor</Link>
+            </li>
+            <li>
+              <Link href="/reformerFriend">Reformer/ Friend</Link>
+            </li>
+            <li>
+              <Link href="/volunteer">Volunteer</Link>
+            </li>
+          </ul>
+        </li>
         <li className="menu-item-has-children">
           <Link href="/">Get Registered</Link>
           <ul className="sub-menu">
+          <li>
+              <Link href="/educationForm">Education Support</Link>
+            </li>
             <li>
               <Link href="/needy">Needy support/ Medical</Link>
             </li>
@@ -135,23 +150,6 @@ export default function NavFullscreen() {
             </li>
             <li>
               <Link href="/studentSkillWorker">Student/ Skill Worker</Link>
-            </li>
-          </ul>
-        </li>
-        <li className="menu-item-has-children">
-          <Link href="/">Join us</Link>
-          <ul className="sub-menu">
-            <li>
-              <Link href="/donation">Donor</Link>
-            </li>
-            <li>
-              <Link href="/sponsor">Sponsor</Link>
-            </li>
-            <li>
-              <Link href="/volunteer">Volunteer</Link>
-            </li>
-            <li>
-              <Link href="/consultant">Consultant & Friend</Link>
             </li>
           </ul>
         </li>

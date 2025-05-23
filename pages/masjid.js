@@ -2,7 +2,7 @@ import React from "react";
 import Layout2 from "../Components/Layout/Layout2";
 import { HelplineData } from "../pages/api/data";
 import DisasterHeader from "../Components/Elements/Disaster/DisasterHeader";
-import Qurbani from "../Components/Elements/Qurbani/Qurbani";
+import MasjidProgram from "../Components/Elements/Masjid/MasjidProgram";
 
 export default function masjid() {
   const Data = HelplineData.masjidData;
@@ -12,7 +12,7 @@ export default function masjid() {
         content={HelplineData.MasjidContent}
         image={HelplineData.MasjidContent.headerBg}
       />
-      <Qurbani swiperData={Data} />
+      <MasjidProgram swiperData={Data} />
     </Layout2>
   );
 }

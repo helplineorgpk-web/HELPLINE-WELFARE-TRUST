@@ -10,6 +10,8 @@ const StudentSkillWorker = () => {
     fullName: "",
     email: "",
     contact: "",
+    city: "",
+    country: "",
     category: "",
     currentStatus: "",
     institution: "",
@@ -50,6 +52,8 @@ const StudentSkillWorker = () => {
       👤 Full Name: ${fullName}
       📧 Email: ${email}
       📞 Contact: ${contact}
+      🌆 City: ${city}
+      🌍 Country: ${country}
       🏷️ Category: ${category}
       📌 Current Status: ${currentStatus}
       🏫 Institution/Organization: ${institution}
@@ -81,6 +85,8 @@ const StudentSkillWorker = () => {
         fullName: "",
         email: "",
         contact: "",
+        city: "",
+        country: "",
         category: "",
         currentStatus: "",
         institution: "",
@@ -158,6 +164,33 @@ const StudentSkillWorker = () => {
                   <option value="student">Student</option>
                   <option value="skillWorker">Skill Worker</option>
                 </Form.Select>
+              </Form.Group>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col md={6}>
+              <Form.Group className="mb-3">
+                <Form.Label>City</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Col>
+            <Col md={6}>
+              <Form.Group className="mb-3">
+                <Form.Label>Country</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="country"
+                  value={formData.country}
+                  onChange={handleChange}
+                  required
+                />
               </Form.Group>
             </Col>
           </Row>

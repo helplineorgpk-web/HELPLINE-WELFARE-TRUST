@@ -24,8 +24,9 @@ function DisasterHeader({ content, image }) {
         <div className={styles.desContainer}>
           <h2 className={styles.heading}>{content.heading}</h2>
           <p className={styles.description}>{content.description1}</p>
-          <p className={styles.description}>{content.description2}</p>
+          <p className={styles.description}>{content.description}</p>
 
+          <p className={styles.description}>{content.description2}</p>
         </div>
         <div className={styles.videoWrapper}>
           <iframe

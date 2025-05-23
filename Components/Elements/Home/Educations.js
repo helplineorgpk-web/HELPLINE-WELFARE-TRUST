@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function Educations() {
   const cards = [
     {
-      title: "7 Own School In Punjab",
+      title: "8 Own School In Punjab",
       image: "/img/causes/cause13.jpg",
       description:
         "A network of schools providing quality education in Punjab.",
       href: "/ownSchools",
     },
     {
-      title: "13 Adopted Schools",
+      title: "15 Adopted Schools",
       image: "/img/causes/bheel2.jpg",
       description: "Supporting and nurturing adopted schools with passion.",
       href: "/adoptedSchools",

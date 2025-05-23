@@ -1,86 +1,143 @@
 .container {
-  max-width: 1350px;
-  margin: 30px auto;
-  padding: 20px;
-  font-family: "Arial", sans-serif;
-  background: linear-gradient(145deg, #ffffff, #f0f0f0);
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  padding: 2rem;
+  background: #65cabb;
+  margin: 2rem;
+  border-radius: 30px;
 }
 
-.chairmansection {
-  padding: 20px;
+.chairmanSection {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.chairmanmessage {
-  padding: 20px;
-  background: linear-gradient(145deg, #263b5e);
-  border-radius: 12px;
-  color: #ffffff;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
+.chairmanHeading {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-decoration: underline;
 }
 
-.chairmanimage img {
-  /* float: left; */
-  width: 150px;
-  height: 150px;
-  /* margin-top: 40px;
-  margin-right: 20px;
-  border-radius: 8%;
-  border: 4px solid #1e3b55;
-  box-shadow: 0 8px 16px rgba(30, 59, 85, 0.2); */
+.messageContent {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  padding: 0 1.5rem;
 }
 
-.messagecontent h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #ffffff;
+.profileSection {
+  flex-shrink: 0;
+  text-align: center;
 }
 
-.messagecontent p {
-  font-size: 14px;
+.imageWrapper {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.chairmanImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.chairmanName {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+
+.chairmanTitle {
+  color: white;
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.messageText {
+  color: white;
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin: 10px;
-  color: #f0f0f0;
-  text-align: justify;
 }
 
-.chairmanname {
-  margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #1e3b55;
-  text-align: center;
+.lessonsList {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
 }
 
-.joinnowwrapper{
-  text-align: center;
+.lessonsList li {
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .messageContent {
+    gap: 3rem;
+  }
+
+  .imageWrapper {
+    width: 250px;
+  }
 }
 
 @media (max-width: 768px) {
-  .chairmanimage img {
-    float: none;
-    display: block;
-    margin: 0 auto 15px auto;
-    width: 100px;
-    height: 100px;
+  .messageContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
-  .messagecontent h2 {
-    font-size: 18px;
+  .profileSection {
+    margin-bottom: 1rem;
   }
 
-  .messagecontent p {
-    font-size: 12px;
+  .imageWrapper {
+    width: 200px;
   }
 
-  .chairmanname {
-    font-size: 16px;
+  .chairmanHeading {
+    font-size: 1.75rem;
+  }
+
+  .messageText {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .lessonsList {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .chairmanHeading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .imageWrapper {
+    width: 180px;
+  }
+
+  .chairmanName {
+    font-size: 1.25rem;
+  }
+
+  .chairmanTitle {
+    font-size: 1rem;
+  }
+
+  .messageText {
+    font-size: 0.95rem;
+  }
+
+  .lessonsList {
+    margin: 1rem 0;
+    padding-left: 1rem;
   }
 }

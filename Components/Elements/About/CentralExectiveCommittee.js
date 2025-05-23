@@ -5,12 +5,21 @@ import styles from "../../../public/css/CentralExectiveCommittee.module.css";
 
 export default function AboutTeam() {
   const team = HelplineData.team;
+
   const executives = team.filter((member) =>
     ["Chairman"].includes(member.designation)
   );
+
   const ADMIN_SUPPORT = team.filter((member) =>
-    ["President", "Vice President"].includes(member.designation)
+    ["Managing Trustee", "President"].includes(member.designation)
   );
+
+  const hrManagement = team.filter((member) =>
+    ["Vice President", "General Secretary", "Finance Secretary"].includes(
+      member.designation
+    )
+  );
+
   const Adviser = team.filter((member) =>
     [
       "Education Advisor",
@@ -19,11 +28,6 @@ export default function AboutTeam() {
       "Technology Consultant",
       "Marketing Consultant",
     ].includes(member.designation)
-  );
-  const hrManagement = team.filter((member) =>
-    ["Managing Trustee", "General Secretary", "Finance Secretary"].includes(
-      member.designation
-    )
   );
 
   const renderTeamSection = (members, title) => (
@@ -64,11 +68,11 @@ export default function AboutTeam() {
   return (
     <div className={styles.teamContainer}>
       <div className={styles.mainHeader}>
-        <h1>Central Exective Committee</h1>
+        <h1>Central Executive Committee</h1>
       </div>
       {renderTeamSection(executives, "Chairman")}
       {renderTeamSection(ADMIN_SUPPORT, "President")}
-      {renderTeamSection(hrManagement, "Exectuive Member")}
+      {renderTeamSection(hrManagement, "Executive Members")}
       {renderTeamSection(Adviser, "Advisors / Consultants")}
     </div>
   );

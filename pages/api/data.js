@@ -790,7 +790,7 @@ export const HelplineData = {
     {
       id: 15,
       category: ["Medical"],
-      img: "/img/causes/cause11.jpg",
+      img: "/img/causes/hajramedical1.jpg",
       img1: "/img/causes/hajramedical1.jpg",
       img2: "/img/causes/hajramedical2.jpg",
       ActualName: "Hajra Bibi Memorial Trust Hospital",
@@ -1483,6 +1483,43 @@ export const HelplineData = {
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
+    {
+      id: 26,
+      designation: "Reagional Heads",
+      name:"Khushnood Ahmad Khan",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 27,
+      designation: "Reagional Heads",
+      name: "Brigadier MohyuDin Ghazalli (Retd)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+
+    {
+      id: 28,
+      designation: "Reagional Heads",
+      name:"Ms Nuzhat Fatima (Former Secretary)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
   ],
 
   journeyData: [
@@ -1956,7 +1993,7 @@ export const HelplineData = {
     supportButtonText: "SUPPORTING APPEAL",
     videoSrc:
       "https://www.youtube.com/embed/7p8vBnWjJes?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fhelpline.org.pk&amp;widgetid=3",
-    heading: "Helpline Family Welfare Management System",
+    heading: "Family Welfare Management System",
     description: `
      Pakistan is facing multifarious social problems for years ranging from poverty to civic ignorance and lack of basic facilities of life. People face severe problems in terms of health, education, and the economy. The country stands at 152nd position in Human Development Index (HDI) and almost 51% of Pakistan’s population is deprived of basic necessities (health, education, etc.).” The best amongst you is the one who helps others.
     `,
@@ -2143,30 +2180,35 @@ The 500 individuals who benefitted from this initiative are now equipped with th
   },
   masjidData: [
     {
+      year: "Masjid 2024",
       image: "img/causes/masjid1.png",
       detailHeader: "Andu Mahajir Masjid",
       detail:
         "Andu Mahajir Masjid, backed by Helpline NGO, unites the community with education, healthcare, and social support, fostering harmony and togetherness.",
     },
     {
+      year: "Masjid 2024",
       image: "img/causes/masjid2.png",
       detailHeader: "Bilal Masjid Misalli Goth(TJM)",
       detail:
         "Bilal Masjid in Misalli Goth, supported by Helpline NGO, is a center for prayer, Islamic learning, healthcare, and social aid, promoting unity and community well-being.",
     },
     {
+      year: "Masjid 2024",
       image: "img/causes/masjid3.png",
       detailHeader: "Jamia Masjid Fatima Bhagliar Thar",
       detail:
         "Jamia Masjid Fatima Bhagliar Thar, supported by Helpline NGO, serves as a community hub in Thar, providing prayers, education, healthcare, and vital social services.",
     },
     {
+      year: "Masjid 2024 ",
       image: "img/causes/masjid4.png",
       detailHeader: "Kakrario Madrasa Tharparker",
       detail:
         "Kakrario Madrasa Tharparker, supported by Helpline NGO, is a vital center for Islamic education, providing knowledge, food, clothing, and shelter to students in need.",
     },
     {
+      year: "Masjid 2024",
       image: "img/causes/masjid5.png",
       detailHeader: "Katho Sama Madrasa",
       detail:
@@ -2187,7 +2229,7 @@ The 500 individuals who benefitted from this initiative are now equipped with th
       "The Helpline organization is proud to introduce an initiative focused on distributing shoes, clothes, and school bags to the students of Al-Kitab School in Rana Town, Lahore. This project is aimed at supporting students from underprivileged backgrounds by providing them with essential items that play a critical role in their everyday lives and educational journey.Many students in this area face significant challenges, including the lack of basic necessities such as appropriate clothing, footwear, and school supplies. These seemingly small yet crucial items can affect their confidence, comfort, and ability to engage fully in their studies. By providing new shoes, clothes, and school bags, we aim to alleviate some of these difficulties, ensuring that these young learners can attend school with dignity and focus on what truly matters: their education.This initiative goes beyond just providing material goods—it’s about empowering these children to believe in themselves and their potential. When students feel cared for and properly equipped, their self-esteem rises, and they are more likely to stay motivated in school, fostering a positive learning environment.The distribution of these essential items is part of our broader mission at Helpline to make education accessible and enriching for all children, regardless of their financial background. With the right support, these students can unlock their potential and work toward a brighter, more promising future.We invite you to be part of this meaningful cause. By contributing to this initiative, you can directly impact the lives of these students and help shape a future where every child has the opportunity to succeed. Together, we can make a difference and empower the next generation to achieve their dreams.",
   },
   HelplineRajanpurData: {
-    title: "Helpline Rajanpur Gullowali Program",
+    title: "Distribution Program",
     supportButtonText: "SUPPORTING APPEAL",
     headerBg: "img/causes/hasnebg.jpg",
     videoSrc: "https://www.youtube.com/embed/LVtB6r7dlzU",

@@ -15,9 +15,12 @@
   text-wrap: nowrap;
   animation: marquee-scroll 15s linear infinite;
   font-weight: bold;
-
 }
-
+.marqueeContainer:hover .marquee,
+.marquee:hover {
+  animation-play-state: paused !important;
+  cursor: pointer;
+}
 @keyframes marquee-scroll {
   from {
     transform: translateX(-100%);
