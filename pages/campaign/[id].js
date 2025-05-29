@@ -68,7 +68,7 @@ const campaignsData = [
     id: "qurbani-2025",
     title: "Qurbani Program 2025",
     description: "Participate in our Qurbani program to help distribute meat to deserving families",
-    image: "/img/causes/PHOTO-2025-02-19-11-45-30.jpg",
+    image: "/img/Campaigns/reallygreatsite.png",
     details: {
       goal: 2000000,
       raised: 800000,
@@ -155,7 +155,7 @@ export default function CampaignDetail() {
         <Row>
           <Col lg={8}>
             <Card className="mb-4">
-              <Card.Img variant="top" src={campaign.image} style={{ height: "400px", objectFit: "cover" }} />
+              <Card.Img variant="top" src={campaign.image} style={{ height: "1000px", objectFit: "cover" }} />
               <Card.Body>
                 <div className="d-flex justify-content-between align-items-center mb-3">
                   <h1 className="h2 mb-0">{campaign.title}</h1>

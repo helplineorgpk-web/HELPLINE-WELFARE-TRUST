@@ -18,7 +18,7 @@ export default function Educations() {
       href: "/adoptedSchools",
     },
     {
-      title: "Orphanage Children",
+      title: "Orphanage Home",
       image: "/img/orphanage/PHOTO-2025-02-19-11-48-26.jpg",
       description: "Empowering orphanage children with education and care.",
       href: "/orphanage",

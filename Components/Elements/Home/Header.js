@@ -12,7 +12,8 @@ const campaignsData = [
   {
     id: "education-support",
     title: "Education Support Program",
-    description: "Support underprivileged students with education expenses and supplies",
+    description:
+      "Support underprivileged students with education expenses and supplies",
     image: "/img/causes/School-1-scaled.jpg",
     details: {
       goal: 1500000,
@@ -21,22 +22,35 @@ const campaignsData = [
         {
           name: "School Supplies Kit",
           price: 3000,
-          items: ["Textbooks", "Notebooks", "Stationery Set", "School Bag", "Uniform"]
+          items: [
+            "Textbooks",
+            "Notebooks",
+            "Stationery Set",
+            "School Bag",
+            "Uniform",
+          ],
         },
         {
           name: "Annual Scholarship",
           price: 25000,
-          items: ["School Fees", "Books", "Uniform", "Transportation", "Supplies"]
-        }
+          items: [
+            "School Fees",
+            "Books",
+            "Uniform",
+            "Transportation",
+            "Supplies",
+          ],
+        },
       ],
-      endDate: "2025-07-31"
+      endDate: "2025-07-31",
     },
-    status: "active"
+    status: "active",
   },
   {
     id: "medical-aid",
     title: "Medical Support Initiative",
-    description: "Help provide medical care and support to those who cannot afford it",
+    description:
+      "Help provide medical care and support to those who cannot afford it",
     image: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
     details: {
       goal: 2000000,
@@ -45,23 +59,24 @@ const campaignsData = [
         {
           name: "Basic Health Package",
           price: 5000,
-          description: "Basic medical checkup and medicine support"
+          description: "Basic medical checkup and medicine support",
         },
         {
           name: "Surgery Support",
           price: 50000,
-          description: "Support for major medical procedures"
-        }
+          description: "Support for major medical procedures",
+        },
       ],
-      endDate: "2025-12-31"
+      endDate: "2025-12-31",
     },
-    status: "active"
+    status: "active",
   },
   {
     id: "qurbani-2025",
     title: "Qurbani Program 2025",
-    description: "Participate in our Qurbani program to help distribute meat to deserving families",
-    image: "/img/causes/PHOTO-2025-02-19-11-45-30.jpg",
+    description:
+      "Participate in our Qurbani program to help distribute meat to deserving families",
+    image: "/img/Campaigns/reallygreatsite.png",
     details: {
       goal: 2000000,
       raised: 800000,
@@ -69,22 +84,22 @@ const campaignsData = [
         {
           name: "Goat Share",
           price: 25000,
-          description: "1/7th share in a collective sacrifice"
+          description: "1/7th share in a collective sacrifice",
         },
         {
           name: "Full Goat",
           price: 175000,
-          description: "Complete sacrifice of one goat"
+          description: "Complete sacrifice of one goat",
         },
         {
           name: "Cow Share",
           price: 20000,
-          description: "1/7th share in a cow"
-        }
+          description: "1/7th share in a cow",
+        },
       ],
-      endDate: "2025-06-15"
+      endDate: "2025-06-15",
     },
-    status: "upcoming"
+    status: "upcoming",
   },
   {
     id: "ramzan-2025",
@@ -98,18 +113,35 @@ const campaignsData = [
         {
           name: "Basic Package",
           price: 5000,
-          items: ["10kg Flour", "5kg Rice", "3kg Sugar", "3L Cooking Oil", "1kg Dates", "Tea", "Spices"]
+          items: [
+            "10kg Flour",
+            "5kg Rice",
+            "3kg Sugar",
+            "3L Cooking Oil",
+            "1kg Dates",
+            "Tea",
+            "Spices",
+          ],
         },
         {
           name: "Family Package",
           price: 8000,
-          items: ["20kg Flour", "10kg Rice", "5kg Sugar", "5L Cooking Oil", "2kg Dates", "Tea", "Spices", "Lentils"]
-        }
+          items: [
+            "20kg Flour",
+            "10kg Rice",
+            "5kg Sugar",
+            "5L Cooking Oil",
+            "2kg Dates",
+            "Tea",
+            "Spices",
+            "Lentils",
+          ],
+        },
       ],
-      endDate: "2025-03-15"
+      endDate: "2025-03-15",
     },
-    status: "upcoming"
-  }
+    status: "upcoming",
+  },
 ];
 
 const sliderData = {
@@ -188,7 +220,7 @@ export default function Header() {
 
           <h1 className={styles.headline}>
             Helpline <br />{" "}
-            <span className={styles.welfare}>Welfare Trust</span>
+            <span className={styles.welfare}>Welfare Trust <span style={{ fontSize: "20px" }}>®</span></span>
           </h1>
           <p className={styles.subtext}>
             Charity isn’t just a task, it’s a sacred calling to serve humanity

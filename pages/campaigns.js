@@ -56,7 +56,7 @@ const campaignsData = [
     id: "qurbani-2025",
     title: "Qurbani Program 2025",
     description: "Participate in our Qurbani program to help distribute meat to deserving families",
-    image: "/img/causes/PHOTO-2025-02-19-11-45-30.jpg",
+    image: "/img/Campaigns/reallygreatsite.png",
     details: {
       goal: 2000000,
       raised: 800000,
