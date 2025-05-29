@@ -1,0 +1,347 @@
+/* --- PAGE SECTION STYLES --- */
+.main {
+  padding: 40px 0;
+  background: #ffffff;
+}
+
+.rashanpage {
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.rashandetails {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rashandetails h3 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.rashandetails p {
+  color: #666;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* --- CARD GRID --- */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+/* --- CARD FLIP LAYOUT --- */
+.card {
+  perspective: 1200px;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover .cardInner {
+  transform: rotateY(180deg);
+}
+
+/* --- FRONT / BACK --- */
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardFront {
+  background: #ffffff;
+}
+
+.cardBack {
+  background: linear-gradient(135deg, #1a5f7a 0%, #0d2b36 100%);
+  transform: rotateY(180deg);
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --- IMAGE + OVERLAY --- */
+.cardImage {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .cardImage img {
+  transform: scale(1.05);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  color: white;
+}
+
+/* --- CARD TEXT --- */
+.cardTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #ffffff, #e0e0e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardProgramTitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.cardBack .cardTitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ffffff, #e0e0e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.6;
+  position: relative;
+  padding-top: 20px;
+  color: #ffffff;
+}
+
+.cardDescription::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* --- STATS --- */
+.cardStats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- JOURNEY SECTION --- */
+.journeyContainer {
+  background-color: #ffffff;
+  padding: 50px 0;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.journeyContent {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.journeyTitle {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* --- FILTER BUTTONS --- */
+.yearButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.yearButton {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #f0f2f5;
+  color: #34495e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.yearButton:hover,
+.activeYear {
+  background: #27ae60;
+  color: white;
+}
+
+/* --- TABLE --- */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.distributionTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.distributionTable th,
+.distributionTable td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.distributionTable th {
+  background: #27ae60;
+  color: white;
+  font-weight: 600;
+}
+
+.distributionTable tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .card {
+    height: 420px;
+  }
+
+  .cardTitle {
+    font-size: 1.6rem;
+  }
+
+  .cardProgramTitle {
+    font-size: 1rem;
+  }
+
+  .cardDescription {
+    font-size: 0.95rem;
+  }
+
+  .statValue {
+    font-size: 1.3rem;
+  }
+
+  .statLabel {
+    font-size: 0.75rem;
+  }
+
+  .journeyTitle,
+  .sectiontitle {
+    font-size: 1.8rem;
+  }
+
+  .colmd6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    height: 400px;
+  }
+
+  .cardTitle {
+    font-size: 1.4rem;
+  }
+
+  .cardProgramTitle {
+    font-size: 0.95rem;
+  }
+
+  .cardDescription {
+    font-size: 0.9rem;
+  }
+
+  .statValue {
+    font-size: 1.1rem;
+  }
+
+  .statLabel {
+    font-size: 0.7rem;
+  }
+}

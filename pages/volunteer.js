@@ -9,8 +9,8 @@ export default function volunteer() {
   return (
     <Layout2>
       <VolunteerBreadCrumb />
-      <VolunteerAbout />
       <JoinAsVolunteer />
+      <VolunteerAbout />
     </Layout2>
   );
 }

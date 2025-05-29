@@ -20,6 +20,9 @@ export default function CauseRecentCause({ categories, causes }) {
     if (categories?.AdoptedSchools) {
       return "Adopted Schools";
     }
+    if (categories?.Medical) {
+      return "Medical";
+    }
   });
 
   const [projects, setProjects] = useState([]);

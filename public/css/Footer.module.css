@@ -1,41 +1,138 @@
 .cityContainer {
   background-color: #f9f9f9;
-  padding: 15px;
+  padding: 15px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
+
 .ourPresence {
   border-right: 1px solid #ff0a0a;
-  padding-right: 5px;
+  padding-right: 20px;
   font-style: italic;
   font-weight: 600;
+  white-space: nowrap;
 }
+
 .city {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   align-items: center;
-  width: 75%;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0 20px;
 }
+
+.image {
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
 .seeMore {
   border-left: 1px solid #ff0a0a;
-  padding-left: 5px;
+  padding-left: 20px;
   font-style: italic;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
+
 .seeMore:hover {
   color: #ff0000;
 }
+
 .cityName {
-  font-size: bold;
   font-weight: 600;
   color: #000;
   border-bottom: 2px solid #ff0a0a;
   cursor: pointer;
+  padding: 5px;
+  margin: 0;
 }
+
 .cityName:hover {
   color: #ff0000;
+}
+
+@media (max-width: 1024px) {
+  .cityContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .ourPresence {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ff0a0a;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+  }
+
+  .city {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+
+  .cityName {
+    font-size: 15px;
+  }
+
+  .seeMore {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #ff0a0a;
+    padding: 10px 0 0 0;
+    margin-top: 10px;
+  }
+
+  .image {
+    height: 35px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    height: 30px;
+    width: 60px;
+  }
+
+  .city {
+    gap: 12px;
+  }
+
+  .cityName {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cityContainer {
+    padding: 10px;
+  }
+
+  .image {
+    height: 25px;
+    width: 50px;
+  }
+
+  .city {
+    gap: 10px;
+  }
+
+  .cityName {
+    font-size: 13px;
+  }
 }

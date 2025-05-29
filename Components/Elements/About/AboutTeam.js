@@ -15,16 +15,6 @@ export default function AboutTeam() {
     ].includes(member.designation)
   );
 
-  const advisers = team.filter((member) =>
-    [
-      "Education Advisor",
-      "Advisor",
-      "Media Consultant",
-      "Technology Consultant",
-      "Marketing Consultant",
-    ].includes(member.designation)
-  );
-
   const adminSupport = team.filter((member) =>
     [
       "Manager Purchases",
@@ -32,6 +22,10 @@ export default function AboutTeam() {
       "Manager Welfare & Health",
       "Manager Transport",
     ].includes(member.designation)
+  );
+
+  const regionalHeads = team.filter((member) =>
+    ["Reagional Heads"].includes(member.designation)
   );
 
   const financeTeam = team.filter((member) =>
@@ -82,7 +76,7 @@ export default function AboutTeam() {
         <h1>Our Team</h1>
       </div>
       {renderTeamSection(executives, "Team Executives")}
-      {renderTeamSection(advisers, "Advisors & Consultants")}
+      {renderTeamSection(regionalHeads, "Reagional Heads")}
       {renderTeamSection(adminSupport, "Admin & Support")}
       {renderTeamSection(financeTeam, "Finance")}
       {renderTeamSection(mediaTeam, "Media & Technology")}

@@ -8,7 +8,6 @@
   font-size: 2.5rem;
   font-weight: 800;
   color: #1e9c91;
-  text-align: center;
   margin-bottom: 2.5rem;
   position: relative;
   display: inline-block;
@@ -19,7 +18,6 @@
   position: absolute;
   width: 60px;
   height: 3px;
-  background: linear-gradient(90deg, #f15b43, #7ec8ea);
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
@@ -28,15 +26,21 @@
 
 .teamSection {
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sectionHeader h2 {
-  font-size: 1.8rem;
-  color: #1e9c91;
+  font-size: 2.2rem;
+  background: linear-gradient(45deg, #2d3436, #636e72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  margin: 0;
   text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
   display: inline-block;
+  position: relative;
 }
 
 .sectionHeader h2::after {
@@ -44,7 +48,6 @@
   position: absolute;
   width: 40px;
   height: 2px;
-  background: linear-gradient(90deg, #f15b43, #7ec8ea);
   bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
@@ -52,23 +55,26 @@
 }
 
 .teamGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  justify-items: center;
+  margin-top: 20px;
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .teamCard {
-  background: white;
-  border-radius: 15px;
+  background: #ffffff;
+  border-radius: 20px;
   overflow: hidden;
-  width: 100%;
-  max-width: 280px;
-  box-shadow: 0 8px 20px rgba(30, 156, 145, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
+  width: 100%;
+  max-width: 200px;
+  transform-style: preserve-3d;
 }
 
 .teamCard:hover {
@@ -77,25 +83,31 @@
 }
 
 .imageContainer {
-  width: 100%;
-  height: 0;
-  padding-top: 100%;
   position: relative;
-  background: linear-gradient(135deg, #65cabb, #7ec8ea);
+  width: 100%;
+  padding-top: 80%;
+  overflow: hidden;
 }
 
 .imageContainer img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease;
 }
 
-.teamCard:hover .imageContainer img {
-  transform: scale(1.05);
+.teamCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #f15b43, #7ec8ea);
+  z-index: 1;
 }
 
 .cardOverlay {
@@ -105,42 +117,47 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    to top,
-    rgba(30, 156, 145, 0.4),
-    rgba(126, 200, 234, 0.1)
+    to bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.5)
   );
 }
 
 .cardContent {
-  padding: 1.2rem;
+  padding: 0.5rem;
   text-align: center;
-  background-color: #ffffff;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 .cardContent h3 {
-  font-size: 1.2rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  color: #1e9c91;
+  color: #2d3436;
   margin-bottom: 0.4rem;
+  word-break: break-word;
 }
 
 .cardContent p {
-  font-size: 1rem;
-  color: #65cabb;
-  font-weight: 500;
+  color: #636e72;
+  font-size: 0.75rem;
+  line-height: 1.4;
   margin-bottom: 1rem;
+  word-break: break-word;
 }
 
 .viewProfileButton {
-  background: #f15b43;
+  background: linear-gradient(135deg, #f15b43, #ff8f70);
   color: white;
-  font-weight: 600;
-  padding: 0.5rem 1.2rem;
   border: none;
-  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  width: 100%;
+  transition: all 0.4s ease;
 }
 
 .viewProfileButton:hover {
@@ -148,34 +165,55 @@
   transform: translateY(-2px);
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
-  .teamContainer {
-    padding: 3rem 1rem;
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .teamCard {
+    width: 100%;
+    max-width: none;
+  }
+
+  .imageContainer {
+    padding-top: 100%;
+  }
+
+  .imageContainer img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .teamCard {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .imageContainer img {
+    width: 75%;
+    height: 75%;
   }
 
   .mainHeader h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .sectionHeader h2 {
     font-size: 1.4rem;
   }
 
-  .teamGrid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .teamCard {
-    max-width: 240px;
-  }
-
-  .cardContent {
-    padding: 1rem;
-  }
-
   .cardContent h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .cardContent p {
@@ -183,7 +221,7 @@
   }
 
   .viewProfileButton {
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0.8rem;
     font-size: 0.85rem;
   }
 }

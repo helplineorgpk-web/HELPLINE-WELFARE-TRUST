@@ -1,0 +1,33 @@
+.ramzanContainer {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.distributionSection {
+  margin: 40px 0;
+  padding: 30px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.areaSection {
+  margin-top: 40px;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .ramzanContainer {
+    padding: 20px 0;
+  }
+
+  .distributionSection,
+  .areaSection {
+    margin: 20px 0;
+    padding: 20px 10px;
+  }
+}

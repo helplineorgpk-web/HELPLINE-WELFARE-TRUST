@@ -54,7 +54,7 @@ border-top: 4px solid red;
 }
 
 .sectionHeader {
-  text-align: left;
+  text-align: center;
   margin-bottom: 3rem;
   position: relative;
   padding: 1rem 2rem;
@@ -74,9 +74,12 @@ border-top: 4px solid red;
 
 .teamGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2.5rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
   perspective: 1000px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .teamCard {
@@ -91,7 +94,7 @@ border-top: 4px solid red;
 }
 
 .teamCard:hover {
-  transform: translateY(-15px) rotateX(5deg);
+  transform: translateY(-8px) rotateX(5deg);
   box-shadow: 0 30px 50px rgba(241, 91, 67, 0.2);
   border-color: rgba(241, 91, 67, 0.3);
 }
@@ -99,23 +102,23 @@ border-top: 4px solid red;
 .imageContainer {
   position: relative;
   width: 100%;
-  padding-top: 100%;
+  padding-top: 80%;
   overflow: hidden;
-  background: linear-gradient(135deg, #f15b43, #ff8f70);
 }
 
 .imageContainer img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .teamCard:hover .imageContainer img {
-  transform: scale(1.15) rotate(-3deg);
+  transform: translate(-50%, -50%) scale(1.15);
 }
 
 .cardOverlay {
@@ -153,14 +156,15 @@ border-top: 4px solid red;
 }
 
 .cardContent {
-  padding: 2rem;
+  padding: 0.5rem;
   background: #ffffff;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .cardContent h3 {
-  font-size: 1.4rem;
+  font-size: 0.85rem;
   color: #2d3436;
   margin-bottom: 0.8rem;
   font-weight: 700;
@@ -175,16 +179,16 @@ border-top: 4px solid red;
 
 .cardContent p {
   color: #636e72;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin-bottom: 1.8rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
 .viewProfileButton {
   background: linear-gradient(135deg, #f15b43, #ff8f70);
   color: white;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
   cursor: pointer;
   font-weight: 600;
@@ -212,8 +216,8 @@ border-top: 4px solid red;
 
 @media (max-width: 1200px) {
   .teamGrid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
   }
 
   .mainHeader h1 {
@@ -223,7 +227,7 @@ border-top: 4px solid red;
 
 @media (max-width: 992px) {
   .teamGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .mainHeader h1 {

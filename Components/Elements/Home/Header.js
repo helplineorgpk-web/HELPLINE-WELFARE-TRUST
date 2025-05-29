@@ -8,27 +8,151 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+const campaignsData = [
+  {
+    id: "education-support",
+    title: "Education Support Program",
+    description:
+      "Support underprivileged students with education expenses and supplies",
+    image: "/img/causes/School-1-scaled.jpg",
+    details: {
+      goal: 1500000,
+      raised: 750000,
+      packages: [
+        {
+          name: "School Supplies Kit",
+          price: 3000,
+          items: [
+            "Textbooks",
+            "Notebooks",
+            "Stationery Set",
+            "School Bag",
+            "Uniform",
+          ],
+        },
+        {
+          name: "Annual Scholarship",
+          price: 25000,
+          items: [
+            "School Fees",
+            "Books",
+            "Uniform",
+            "Transportation",
+            "Supplies",
+          ],
+        },
+      ],
+      endDate: "2025-07-31",
+    },
+    status: "active",
+  },
+  {
+    id: "medical-aid",
+    title: "Medical Support Initiative",
+    description:
+      "Help provide medical care and support to those who cannot afford it",
+    image: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
+    details: {
+      goal: 2000000,
+      raised: 1200000,
+      packages: [
+        {
+          name: "Basic Health Package",
+          price: 5000,
+          description: "Basic medical checkup and medicine support",
+        },
+        {
+          name: "Surgery Support",
+          price: 50000,
+          description: "Support for major medical procedures",
+        },
+      ],
+      endDate: "2025-12-31",
+    },
+    status: "active",
+  },
+  {
+    id: "qurbani-2025",
+    title: "Qurbani Program 2025",
+    description:
+      "Participate in our Qurbani program to help distribute meat to deserving families",
+    image: "/img/Campaigns/reallygreatsite.png",
+    details: {
+      goal: 2000000,
+      raised: 800000,
+      packages: [
+        {
+          name: "Goat Share",
+          price: 25000,
+          description: "1/7th share in a collective sacrifice",
+        },
+        {
+          name: "Full Goat",
+          price: 175000,
+          description: "Complete sacrifice of one goat",
+        },
+        {
+          name: "Cow Share",
+          price: 20000,
+          description: "1/7th share in a cow",
+        },
+      ],
+      endDate: "2025-06-15",
+    },
+    status: "upcoming",
+  },
+  {
+    id: "ramzan-2025",
+    title: "Ramzan Food Package 2025",
+    description: "Provide essential food items to families during Ramzan",
+    image: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
+    details: {
+      goal: 1000000,
+      raised: 300000,
+      packages: [
+        {
+          name: "Basic Package",
+          price: 5000,
+          items: [
+            "10kg Flour",
+            "5kg Rice",
+            "3kg Sugar",
+            "3L Cooking Oil",
+            "1kg Dates",
+            "Tea",
+            "Spices",
+          ],
+        },
+        {
+          name: "Family Package",
+          price: 8000,
+          items: [
+            "20kg Flour",
+            "10kg Rice",
+            "5kg Sugar",
+            "5L Cooking Oil",
+            "2kg Dates",
+            "Tea",
+            "Spices",
+            "Lentils",
+          ],
+        },
+      ],
+      endDate: "2025-03-15",
+    },
+    status: "upcoming",
+  },
+];
+
 const sliderData = {
-  slider1: [
-    {
-      id: 1,
-      News: "Campaigns Alert",
-      title: "Islamic Programs",
-      project: "Ramzan Rashan 2025",
-      content:
-        "Helpline distributes Ramzan rations, 2 tons of dates, and organizes a Sports Gala for students.",
-      image1: "/img/causes/rashan1.jpeg",
-    },
-    {
-      id: 3,
-      News: "Campaigns Alert",
-      title: "Islamic Programs",
-      project: "Qurbani 2025",
-      content:
-        "Helpline performs Qurbani for the underprivileged, distributes fresh meat, and ensures hygienic packaging and delivery.",
-      image1: "/img/Campaigns/reallygreatsite.png",
-    },
-  ],
+  slider1: campaignsData.map((campaign) => ({
+    id: campaign.id,
+    News: "Campaigns Alert",
+    title: "Islamic Programs",
+    project: campaign.title,
+    content: campaign.description,
+    image1: campaign.image,
+  })),
 };
 
 const idealProjects = [
@@ -96,7 +220,7 @@ export default function Header() {
 
           <h1 className={styles.headline}>
             Helpline <br />{" "}
-            <span className={styles.welfare}>Welfare Trust</span>
+            <span className={styles.welfare}>Welfare Trust <span style={{ fontSize: "20px" }}>®</span></span>
           </h1>
           <p className={styles.subtext}>
             Charity isn’t just a task, it’s a sacred calling to serve humanity
@@ -148,7 +272,7 @@ export default function Header() {
                 autoplay={
                   isPaused
                     ? false
-                    : { delay: 2000, disableOnInteraction: false }
+                    : { delay: 4000, disableOnInteraction: false }
                 }
                 loop={true}
                 modules={[Autoplay]}
@@ -172,9 +296,20 @@ export default function Header() {
                         />
                       </div>
                     </div>
-                    <Link href="/donation" className={styles.donate_now}>
-                      Donate Now
-                    </Link>
+                    <div className={styles.slideButtons}>
+                      <Link
+                        href={`/campaign/${slide.id}#donate`}
+                        className={styles.donate_now}
+                      >
+                        Donate Now
+                      </Link>
+                      <Link
+                        href={`/campaign/${slide.id}`}
+                        className={styles.campaign_details}
+                      >
+                        Campaign Details
+                      </Link>
+                    </div>
                   </SwiperSlide>
                 ))}
               </Swiper>

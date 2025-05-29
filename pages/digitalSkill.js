@@ -5,7 +5,6 @@ import { HelplineData } from "./api/data";
 import ITLabs from "../Components/Elements/ITLabs/ITLabs";
 import DigiSkills from "../Components/Elements/ITLabs/DigiSkills";
 export default function ItLab() {
-  const data = HelplineData.HelplineItLabsData;
   return (
     <Layout2>
       <DisasterHeader

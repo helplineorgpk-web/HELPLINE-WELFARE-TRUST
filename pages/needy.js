@@ -9,6 +9,8 @@ const NeedySupport = () => {
     fullName: "",
     contact: "",
     email: "",
+    city: "",
+    country: "",
     address: "",
     supportType: "",
     medicalCondition: "",
@@ -42,6 +44,8 @@ const NeedySupport = () => {
     👤 Full Name: ${fullName}
     📞 Contact: ${contact}
     📧 Email: ${email}
+    🌆 City: ${city}
+    🌍 Country: ${country}
     📍 Address: ${address}
     🛠️ Type of Support Needed: ${supportType}
     🩺 Medical Condition: ${medicalCondition || "N/A"}
@@ -75,6 +79,8 @@ const NeedySupport = () => {
             fullName: "",
             contact: "",
             email: "",
+            city: "",
+            country: "",
             address: "",
             supportType: "",
             medicalCondition: "",
@@ -94,7 +100,7 @@ const NeedySupport = () => {
   return (
     <Layout2>
       <Container className="py-5">
-        <h4 className="text-center mb-4">Needy Support / Medical Assistance</h4>
+        <h4 className="text-center mb-4">Medical/ Needy Support</h4>
         <Form onSubmit={handleSubmit}>
           <Row>
             <Col md={6}>
@@ -133,6 +139,33 @@ const NeedySupport = () => {
               required
             />
           </Form.Group>
+
+          <Row>
+            <Col md={6}>
+              <Form.Group className="mb-3">
+                <Form.Label>City</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Col>
+            <Col md={6}>
+              <Form.Group className="mb-3">
+                <Form.Label>Country</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="country"
+                  value={formData.country}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Col>
+          </Row>
 
           <Form.Group className="mb-3">
             <Form.Label>Address</Form.Label>

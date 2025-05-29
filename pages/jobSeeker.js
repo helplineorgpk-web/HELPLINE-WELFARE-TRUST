@@ -10,6 +10,8 @@ const JobSeeker = () => {
     fullName: "",
     email: "",
     contact: "",
+    city: "",
+    country: "",
     education: "",
     experience: "",
     skills: "",
@@ -49,6 +51,8 @@ const JobSeeker = () => {
       👤 Full Name: ${fullName}
       📧 Email: ${email}
       📞 Contact: ${contact}
+      🌆 City: ${city}
+      🌍 Country: ${country}
       🎓 Education: ${education}
       💼 Experience: ${experience} years
       🛠️ Skills: ${skills}
@@ -80,6 +84,8 @@ const JobSeeker = () => {
         fullName: "",
         email: "",
         contact: "",
+        city: "",
+        country: "",
         education: "",
         experience: "",
         skills: "",
@@ -148,6 +154,33 @@ const JobSeeker = () => {
                   type="text"
                   name="education"
                   value={formData.education}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col md={6}>
+              <Form.Group className="mb-3">
+                <Form.Label>City</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Col>
+            <Col md={6}>
+              <Form.Group className="mb-3">
+                <Form.Label>Country</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="country"
+                  value={formData.country}
                   onChange={handleChange}
                   required
                 />

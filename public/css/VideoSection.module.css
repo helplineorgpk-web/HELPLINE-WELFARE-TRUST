@@ -1,0 +1,183 @@
+.videoSection {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  margin: 40px 0;
+}
+
+.videoWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.contentBox {
+  padding: 20px;
+}
+
+.contentBox h2 {
+  font-size: 2rem;
+  color: #263b5d;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.contentBox h3 {
+  font-size: 1.4rem;
+  color: #f15b43;
+  margin-bottom: 20px;
+}
+
+.contentBox p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.videoContainer {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.videoFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .videoWrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contentBox {
+    padding: 0;
+  }
+
+  .contentBox h2 {
+    font-size: 1.6rem;
+  }
+
+  .contentBox h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.muwakhatSection {
+  padding: 40px 0 80px;
+  background-color: #ffffff;
+}
+
+.muwakhatWrapper {
+  text-align: center;
+}
+
+.muwakhatWrapper h2 {
+  font-size: 2rem;
+  color: #263b5d;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.imageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.muwakhatImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.interviewSection {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.interviewWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.interviewContent {
+  padding: 20px;
+}
+
+.interviewContent h2 {
+  font-size: 2rem;
+  color: #263b5d;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.interviewContent p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .interviewWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .interviewContent {
+    order: 1;
+  }
+
+  .videoContainer {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .videoSection,
+  .muwakhatSection,
+  .interviewSection {
+    padding: 40px 0;
+  }
+
+  .contentBox h2,
+  .muwakhatWrapper h2,
+  .interviewContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .contentBox h3 {
+    font-size: 1.1rem;
+  }
+
+  .contentBox p,
+  .interviewContent p {
+    font-size: 0.95rem;
+  }
+
+  .imageContainer {
+    margin: 0 15px;
+  }
+
+  .interviewContent {
+    padding: 0;
+  }
+}

@@ -14,10 +14,13 @@ export default function AboutArea() {
               <div className="row mb-40">
                 <div className="col-12 custom_col">
                   <Link href="/about" className="about_img w_img">
-                    <img src="/img/causes/cause_sbig.jpg" alt="img" />
+                    <img src="/img/causes/School-1-scaled.jpg" alt="img" />
                     <div className="about_img_text theme-2">
-                      <i className="flaticon-water-drop"></i>
-                      <h6 className="img_text">Pure Water</h6>
+                      <i className="flaticon-doctor"></i>
+
+                      <h6 style={{ color: "#65cabb", fontSize: "20px" }}>
+                        Education Services
+                      </h6>
                     </div>
                   </Link>
                 </div>
@@ -25,19 +28,19 @@ export default function AboutArea() {
               <div className="row gutter_40">
                 <div className="col-xxl-6 col-md-6 col-sm-6 custom_col mb-40">
                   <Link href="/about" className="about_img w_img rad-50p fix">
-                    <img src="/img/about/about_sm1.jpg" alt="img" />
+                    <img src="/img/causes/blochistanwater.jpg" alt="img" />
                     <div className="about_img_text theme-no1">
-                      <i className="flaticon-doctor"></i>
-                      <h6 className="img_text">Education</h6>
+                      <i className="flaticon-water-drop"></i>
+                      <h6 style={{ color: "#fecd01" }}>Clean Water Services</h6>
                     </div>
                   </Link>
                 </div>
                 <div className="col-xxl-6 col-md-6 col-sm-6 custom_col mb-40">
                   <Link href="/about" className="about_img w_img">
-                    <img src="/img/about/about_sm2.jpg" alt="img" />
+                    <img src="/img/causes/cause10.jpg" alt="img" />
                     <div className="about_img_text theme-no">
                       <i className="flaticon-stethoscope"></i>
-                      <h6 className="img_text">Medical & Health</h6>
+                      <h6 style={{ color: "#ffb974" }}>Health Services</h6>
                     </div>
                   </Link>
                 </div>
@@ -80,9 +83,9 @@ export default function AboutArea() {
                     className="about_review text-center mb-30"
                     style={{ background: "url(/img/about/about_review.jpg)" }}
                   >
-                    <span className="author">Mahatma Gandhi.</span>
+                    <span style={{textWrap:"nowrap"}}>PROPHET MUHAMMAD(ﷺ)</span>
                     <h5 className="review_text">
-                      Be the change that you wish to see in the world
+                      You gain no victory or livelihood except through the poor amongst you.
                     </h5>
                   </div>
                 </div>

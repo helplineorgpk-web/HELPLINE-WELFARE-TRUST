@@ -1,6 +1,8 @@
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+
+  background: linear-gradient(135deg, #eef5f9, #ffffff);
+  font-family: "Poppins", sans-serif;
   position: relative;
   overflow: hidden;
 }
@@ -16,24 +18,24 @@
 }
 
 .container::before {
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, rgba(101, 202, 187, 0.5), rgba(214, 203, 198, 0.5));
   top: -300px;
   right: -200px;
   opacity: 0.1;
 }
 
 .container::after {
-  background: linear-gradient(135deg, #818cf8 0%, #6366f1 100%);
+  background: linear-gradient(135deg, rgba(101, 202, 187, 0.5), rgba(214, 203, 198, 0.5));
   bottom: -300px;
   left: -200px;
   opacity: 0.1;
 }
 
 .titleBackground {
-  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  background: linear-gradient(135deg, rgba(101, 202, 187, 0.5), rgba(214, 203, 198, 0.5));
   padding: 5rem 2rem;
   text-align: center;
-  color: white;
+  color: #263b5d;
   position: relative;
   margin-bottom: 5rem;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -45,7 +47,7 @@
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   animation: fadeInDown 0.8s ease-out;
-  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, #f15b43);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,12 +55,12 @@
 }
 
 .subtitle {
-  font-size: 1.4rem;
-  opacity: 0.95;
-  animation: fadeInUp 0.8s ease-out;
-  max-width: 800px;
+  font-size: 1.2rem;
+  color: #34495e;
+  line-height: 1.8;
+  max-width: 600px;
   margin: 0 auto;
-  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .content {
@@ -75,9 +77,10 @@
 }
 
 .section h2 {
-  font-size: 2.5rem;
-  color: #1e293b;
-  margin-bottom: 3rem;
+  font-size: 2.8rem;
+  color: #263b5d;
+  font-weight: bold;
+  margin-bottom: 1rem;
   text-align: center;
   position: relative;
   padding-bottom: 1rem;
@@ -91,7 +94,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  background: linear-gradient(90deg, #65cabb, #d6cbc6);
   border-radius: 2px;
 }
 
@@ -103,22 +106,22 @@
 }
 
 .programCard {
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 250, 250, 1));
   padding: 2.5rem;
   border-radius: 1.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(101, 202, 187, 0.1), 0 10px 10px -5px rgba(101, 202, 187, 0.04);
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(101, 202, 187, 0.2);
 }
 
 .programCard:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 30px -5px rgba(101, 202, 187, 0.15);
 }
 
 .programCard h3 {
-  color: #1e293b;
+  color: #263b5d;
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
   position: relative;
@@ -132,12 +135,12 @@
   left: 0;
   width: 50px;
   height: 3px;
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  background: linear-gradient(90deg, #65cabb, #d6cbc6);
   border-radius: 1.5px;
 }
 
 .programCard p {
-  color: #475569;
+  color: #34495e;
   margin-bottom: 2rem;
   line-height: 1.7;
   font-size: 1.1rem;
@@ -149,7 +152,7 @@
 }
 
 .programCard ul li {
-  color: #475569;
+  color: #34495e;
   padding: 0.75rem 0;
   padding-left: 2rem;
   position: relative;
@@ -163,7 +166,7 @@
 
 .programCard ul li::before {
   content: '→';
-  color: #3b82f6;
+  color: #263b5d;
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -183,9 +186,9 @@
 .feature {
   text-align: center;
   padding: 3rem 2rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 250, 250, 1));
   border-radius: 1.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(101, 202, 187, 0.1);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -198,22 +201,22 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  background: linear-gradient(90deg, #65cabb, #d6cbc6);
 }
 
 .feature:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 30px -5px rgba(101, 202, 187, 0.15);
 }
 
 .feature h3 {
-  color: #1e293b;
+  color: #263b5d;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .feature p {
-  color: #475569;
+  color: #34495e;
   font-size: 1.1rem;
   line-height: 1.7;
 }
@@ -225,17 +228,17 @@
 }
 
 .testimonial {
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 250, 250, 1));
   padding: 2.5rem;
   border-radius: 1.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(101, 202, 187, 0.1);
   transition: all 0.3s ease;
   position: relative;
 }
 
 .testimonial:hover {
   transform: translateY(-5px);
-  box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 30px -5px rgba(101, 202, 187, 0.15);
 }
 
 .testimonial::before {
@@ -244,13 +247,13 @@
   top: 1rem;
   left: 1.5rem;
   font-size: 4rem;
-  color: #3b82f6;
+  color: #65cabb;
   opacity: 0.2;
   font-family: serif;
 }
 
 .testimonial p {
-  color: #1e293b;
+  color: #263b5d;
   font-style: italic;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
@@ -260,7 +263,7 @@
 }
 
 .testimonial cite {
-  color: #475569;
+  color: #34495e;
   font-style: normal;
   font-weight: 600;
   display: block;

@@ -52,7 +52,7 @@ export default function Header1({ toggleTrueFalseInfo }) {
                     href="/donation"
                     className="g_btn hbtn_1 to_right1 rad-30"
                   >
-                    Make Donation<span></span>
+                    Donate Now<span></span>
                   </Link>
                 </div>
                 <div className="hamburger-menu menu-bar info-bar d-d-block ml-20">

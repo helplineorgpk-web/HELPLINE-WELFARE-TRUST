@@ -3,7 +3,7 @@ import { HelplineData } from "../../../pages/api/data";
 import styles from "../../../public/css/Images.module.css";
 
 function Images() {
-  const images = HelplineData.images;
+  const images = HelplineData.causes;
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const openImage = (index) => {
@@ -30,7 +30,7 @@ function Images() {
         {images.map((item, index) => (
           <div key={item.id} className={styles.galleryItem}>
             <img
-              src={item.image}
+              src={item.img}
               alt={`Image ${item.id}`}
               className={styles.image}
               onClick={() => openImage(index)}
@@ -63,7 +63,7 @@ function Images() {
             &#10095;
           </span>
           <img
-            src={images[selectedIndex].image}
+            src={images[selectedIndex].img}
             alt={`Image ${selectedIndex + 1}`}
             className={styles.modalImage}
           />

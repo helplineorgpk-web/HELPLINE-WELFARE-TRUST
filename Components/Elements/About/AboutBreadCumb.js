@@ -23,6 +23,9 @@ export default function AboutBreadCumb({ content }) {
               </ul>
               <div className="breadcrumb_title">
                 <h2>{content ? content : "Helpline Founding Members"}</h2>
+                <p style={{ fontSize: "40px", color: "#ffae02" }}>
+                  Consultancy Board
+                </p>
               </div>
             </div>
           </div>

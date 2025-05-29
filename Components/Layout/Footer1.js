@@ -72,11 +72,10 @@ export default function Footer1() {
                 <div className={style.city}>
                   <p className={style.cityName}>Lahore</p>
                   <p className={style.cityName}>Karachi</p>
-                  <p className={style.cityName}>Islamabad</p>
                   <p className={style.cityName}>Hyderabad</p>
                   <p className={style.cityName}>Gojra</p>
                   <p className={style.cityName}>Bahawalpur</p>
-                  <p className={style.cityName}>Gujrat</p>
+                  <p className={style.cityName}>Abbottabad</p>
                 </div>
                 <Link href="/ourPresence" className={style.seeMore}>
                   See More
