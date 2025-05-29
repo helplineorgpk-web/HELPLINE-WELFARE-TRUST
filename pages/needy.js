@@ -100,7 +100,7 @@ const NeedySupport = () => {
   return (
     <Layout2>
       <Container className="py-5">
-        <h4 className="text-center mb-4">Needy Support / Medical Assistance</h4>
+        <h4 className="text-center mb-4">Medical/ Needy Support</h4>
         <Form onSubmit={handleSubmit}>
           <Row>
             <Col md={6}>

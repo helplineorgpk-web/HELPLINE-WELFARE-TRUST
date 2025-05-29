@@ -3,10 +3,12 @@ import Link from "next/link";
 
 export default function NavFullscreen() {
   return (
-    <nav id="mobile-menu">
+    <nav id="mobile-menu" style={{ marginTop: "25px" }}>
       <ul>
         <li className="menu-item-has-children">
-          <Link href="/">About Us</Link>
+          <Link href="/" style={{ whiteSpace: "nowrap" }}>
+            About Us
+          </Link>
           <ul className="sub-menu">
             <li>
               <Link href="/about">Introduction</Link>
@@ -118,9 +120,40 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
-
         <li className="menu-item-has-children">
-          <Link href="/">Join us</Link>
+          <Link href="#" style={{ whiteSpace: "nowrap" }}>
+            Muwakhat
+          </Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/mawakhat-e-Madina">Muwakhat-e-Madina</Link>
+            </li>
+            <li>
+              <Link href="/darulTarbiyah">Dar Ul Tarbiyah</Link>
+            </li>
+            <li>
+              <Link href="/darulEhsan">Dar Ul Ehsan</Link>
+            </li>
+          </ul>
+        </li>
+        <li className="menu-item-has-children">
+          <Link href="/">Compaign</Link>
+          <ul className="sub-menu">
+            <li>
+              <Link href="/campaigns">Compaigns</Link>
+            </li>
+            <li>
+              <Link href="/videos">Videos</Link>
+            </li>
+            <li>
+              <Link href="/images">Images</Link>
+            </li>
+          </ul>
+        </li>
+        <li className="menu-item-has-children">
+          <Link href="/" style={{ whiteSpace: "nowrap" }}>
+            Join us
+          </Link>
           <ul className="sub-menu">
             <li>
               <Link href="/sponsor">Donor/ Sponsor</Link>
@@ -137,13 +170,15 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/">Get Registered</Link>
+          <Link href="/" style={{ whiteSpace: "nowrap" }}>
+            Registration
+          </Link>
           <ul className="sub-menu">
-          <li>
+            <li>
               <Link href="/educationForm">Education Support</Link>
             </li>
             <li>
-              <Link href="/needy">Needy support/ Medical</Link>
+              <Link href="/needy">Medical/ Needy Support</Link>
             </li>
             <li>
               <Link href="/jobSeeker">Job seeker/ Internee</Link>
@@ -154,19 +189,9 @@ export default function NavFullscreen() {
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/"> Media</Link>
-          <ul className="sub-menu">
-            <li>
-              <Link href="/videos">Videos</Link>
-            </li>
-            <li>
-              <Link href="/images">Images</Link>
-            </li>
-          </ul>
-        </li>
-
-        <li className="menu-item-has-children">
-          <Link href="/contact">Contact Us</Link>
+          <Link href="/contact" style={{ whiteSpace: "nowrap" }}>
+            Contact Us
+          </Link>
         </li>
       </ul>
     </nav>

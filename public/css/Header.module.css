@@ -222,7 +222,7 @@
 
 .sideSlider {
   overflow: hidden;
-  height: 460px;
+  height: 480px;
   width: 350px;
   border-radius: 12px;
   padding: 12px;
@@ -317,13 +317,39 @@
   padding: 5px;
 }
 
-.donate_now {
-  background: #f15b43;
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin-top: 5px;
-  cursor: pointer;
+.cardButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.donate_now,
+.campaign_details {
+  padding: 8px 16px;
   color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.donate_now {
+  background-color: #f15b43;
+}
+
+.campaign_details {
+  background-color: #343434;
+}
+
+.donate_now:hover {
+  background-color: #d94c36;
+  transform: translateY(-2px);
+}
+
+.campaign_details:hover {
+  background-color: #222;
+  transform: translateY(-2px);
 }
 
 /* NEW STYLES FOR ALIGNMENT FIX */
@@ -382,4 +408,43 @@
   .missionBox {
     flex: 1 1 100%;
   }
+}
+
+.slideButtons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.donate_now,
+.campaign_details {
+  flex: 1;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.donate_now {
+  background: #f15b43;
+}
+
+.campaign_details {
+  background: #1d9c91;
+}
+
+.donate_now:hover {
+  background: #d94c36;
+  transform: translateY(-2px);
+}
+
+.campaign_details:hover {
+  background: #167e76;
+  transform: translateY(-2px);
 }
