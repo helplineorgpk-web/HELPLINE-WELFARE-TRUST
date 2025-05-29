@@ -10,7 +10,9 @@ export default function NavMobile() {
   return (
     <ul className="metismenu text-muted" id="metismenu">
       <li className="menu-item-has-children">
-        <Link href="/about" className="has-arrow">About Us</Link>
+        <Link href="/about" className="has-arrow">
+          About Us
+        </Link>
         <ul className="sub-menu">
           <li>
             <Link href="/about">Introduction</Link>
@@ -34,10 +36,14 @@ export default function NavMobile() {
       </li>
 
       <li className="menu-item-has-children">
-        <Link href="/cause" className="has-arrow">Projects</Link>
+        <Link href="/cause" className="has-arrow">
+          Projects
+        </Link>
         <ul className="sub-menu">
           <li className="menu-item-has-children">
-            <Link href="/edu" className="has-arrow">Education</Link>
+            <Link href="/edu" className="has-arrow">
+              Education
+            </Link>
             <ul className="sub-menu">
               <li>
                 <Link href="/ownSchools">Owned Schools</Link>
@@ -54,10 +60,14 @@ export default function NavMobile() {
             </ul>
           </li>
           <li>
-            <Link href="/itlab" className="has-arrow">Digital Skills</Link>
+            <Link href="/itlab" className="has-arrow">
+              Digital Skills
+            </Link>
           </li>
           <li className="menu-item-has-children">
-            <Link href="/health" className="has-arrow">Health</Link>
+            <Link href="/health" className="has-arrow">
+              Health
+            </Link>
             <ul className="sub-menu">
               <li>
                 <Link href="/water">Clean Water Program</Link>
@@ -71,7 +81,9 @@ export default function NavMobile() {
             </ul>
           </li>
           <li className="menu-item-has-children">
-            <Link href="#" className="has-arrow">Welfare</Link>
+            <Link href="#" className="has-arrow">
+              Welfare
+            </Link>
             <ul className="sub-menu">
               <li>
                 <Link href="/distribution">Distribution</Link>
@@ -82,7 +94,9 @@ export default function NavMobile() {
             </ul>
           </li>
           <li className="menu-item-has-children">
-            <Link href="#" className="has-arrow">Islamic Program</Link>
+            <Link href="#" className="has-arrow">
+              Islamic Program
+            </Link>
             <ul className="sub-menu">
               <li>
                 <Link href="/islamicactivity">Islamic Activity</Link>
@@ -103,9 +117,29 @@ export default function NavMobile() {
           </li>
         </ul>
       </li>
-
       <li className="menu-item-has-children">
-        <Link href="/event" className="has-arrow">Get Registered</Link>
+        <Link href="#" className="has-arrow" style={{ whiteSpace: "nowrap" }}>
+          Muwakhat
+        </Link>
+        <ul className="sub-menu">
+          <li>
+            <Link href="/mawakhat-e-Madina">Muwakhat-e-Madina</Link>
+          </li>
+          <li>
+            <Link href="/darulTarbiyah">Dar Ul Tarbiyah</Link>
+          </li>
+          <li>
+            <Link href="/darulEhsan">Dar Ul Ehsan</Link>
+          </li>
+          <li>
+            <Link href="/sahoolatCenter">Sahoolat Center</Link>
+          </li>
+        </ul>
+      </li>
+      <li className="menu-item-has-children">
+        <Link href="/event" className="has-arrow">
+          Get Registered
+        </Link>
         <ul className="sub-menu">
           <li>
             <Link href="/needy">Needy support/ Medical</Link>
@@ -120,7 +154,9 @@ export default function NavMobile() {
       </li>
 
       <li className="menu-item-has-children">
-        <Link href="/event" className="has-arrow">Join us</Link>
+        <Link href="/event" className="has-arrow">
+          Join us
+        </Link>
         <ul className="sub-menu">
           <li>
             <Link href="/donation">Donor</Link>
@@ -138,7 +174,9 @@ export default function NavMobile() {
       </li>
 
       <li className="menu-item-has-children">
-        <Link href="/" className="has-arrow">Media</Link>
+        <Link href="/" className="has-arrow">
+          Media
+        </Link>
         <ul className="sub-menu">
           <li>
             <Link href="/videos">Videos</Link>

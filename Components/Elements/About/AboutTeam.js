@@ -36,7 +36,7 @@ export default function AboutTeam() {
     ["Manager Media", "Media Executive"].includes(member.designation)
   );
 
-  const renderTeamSection = (members, title) => (
+  const renderTeamSection = (members, title) =>
     members.length > 0 && (
       <div className={styles.teamSection}>
         <div className={styles.sectionHeader}>
@@ -67,16 +67,15 @@ export default function AboutTeam() {
           ))}
         </div>
       </div>
-    )
-  );
+    );
 
   return (
     <div className={styles.teamContainer}>
+      {renderTeamSection(regionalHeads, "Reagional Heads")}
       <div className={styles.mainHeader}>
-        <h1>Our Team</h1>
+        <h1>Head Office Team</h1>
       </div>
       {renderTeamSection(executives, "Team Executives")}
-      {renderTeamSection(regionalHeads, "Reagional Heads")}
       {renderTeamSection(adminSupport, "Admin & Support")}
       {renderTeamSection(financeTeam, "Finance")}
       {renderTeamSection(mediaTeam, "Media & Technology")}

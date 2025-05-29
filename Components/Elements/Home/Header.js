@@ -10,68 +10,6 @@ import { useRouter } from "next/router";
 
 const campaignsData = [
   {
-    id: "education-support",
-    title: "Education Support Program",
-    description:
-      "Support underprivileged students with education expenses and supplies",
-    image: "/img/causes/School-1-scaled.jpg",
-    details: {
-      goal: 1500000,
-      raised: 750000,
-      packages: [
-        {
-          name: "School Supplies Kit",
-          price: 3000,
-          items: [
-            "Textbooks",
-            "Notebooks",
-            "Stationery Set",
-            "School Bag",
-            "Uniform",
-          ],
-        },
-        {
-          name: "Annual Scholarship",
-          price: 25000,
-          items: [
-            "School Fees",
-            "Books",
-            "Uniform",
-            "Transportation",
-            "Supplies",
-          ],
-        },
-      ],
-      endDate: "2025-07-31",
-    },
-    status: "active",
-  },
-  {
-    id: "medical-aid",
-    title: "Medical Support Initiative",
-    description:
-      "Help provide medical care and support to those who cannot afford it",
-    image: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
-    details: {
-      goal: 2000000,
-      raised: 1200000,
-      packages: [
-        {
-          name: "Basic Health Package",
-          price: 5000,
-          description: "Basic medical checkup and medicine support",
-        },
-        {
-          name: "Surgery Support",
-          price: 50000,
-          description: "Support for major medical procedures",
-        },
-      ],
-      endDate: "2025-12-31",
-    },
-    status: "active",
-  },
-  {
     id: "qurbani-2025",
     title: "Qurbani Program 2025",
     description:
@@ -105,7 +43,7 @@ const campaignsData = [
     id: "ramzan-2025",
     title: "Ramzan Food Package 2025",
     description: "Provide essential food items to families during Ramzan",
-    image: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
+    image: "/img/rashan/bahawalpurrashan2.jpg",
     details: {
       goal: 1000000,
       raised: 300000,
@@ -204,15 +142,7 @@ export default function Header() {
     <div className={styles.mainContainer}>
       <div className={styles.leftSection}>
         <div className={styles.contentArea}>
-          {/* <div className={styles.marqueeContainer}>
-          <div className={styles.marquee}>
-            <span>EDUCATION</span> - <span>HEALTH</span> -<span>WELFARE</span> -{" "}
-            <span>REHABILITATION</span> -<span>CAPACITY BUILDING</span> -{" "}
-            <span>SKILL DEVELOPMENT</span> -<span>COMMUNITY DEVELOPMENT</span>
-          </div>
-        </div> */}
           <div className={styles.headerNewTag}>
-            <span className={styles.newLabel}>NEW</span>
             <span className={styles.brand}>
               HELPLINE <span className={styles.airo}>Pakistan</span>
             </span>
@@ -220,7 +150,19 @@ export default function Header() {
 
           <h1 className={styles.headline}>
             Helpline <br />{" "}
-            <span className={styles.welfare}>Welfare Trust <span style={{ fontSize: "20px" }}>®</span></span>
+            <span className={styles.welfare} style={{ position: "relative" }}>
+              Welfare Trust
+              <span
+                style={{
+                  fontSize: "20px",
+                  position: "absolute",
+                  top: "0px",
+                  right: "-18px",
+                }}
+              >
+                ®
+              </span>
+            </span>
           </h1>
           <p className={styles.subtext}>
             Charity isn’t just a task, it’s a sacred calling to serve humanity

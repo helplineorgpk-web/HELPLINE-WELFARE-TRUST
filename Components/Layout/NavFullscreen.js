@@ -134,13 +134,16 @@ export default function NavFullscreen() {
             <li>
               <Link href="/darulEhsan">Dar Ul Ehsan</Link>
             </li>
+            <li>
+              <Link href="/sahoolatCenter">Sahoolat Center</Link>
+            </li>
           </ul>
         </li>
         <li className="menu-item-has-children">
-          <Link href="/">Compaign</Link>
+          <Link href="/">Campaign</Link>
           <ul className="sub-menu">
             <li>
-              <Link href="/campaigns">Compaigns</Link>
+              <Link href="/campaigns">Campaigns</Link>
             </li>
             <li>
               <Link href="/videos">Videos</Link>

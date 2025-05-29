@@ -1,143 +1,136 @@
 .container {
-  padding: 2rem;
-  background: #65cabb;
-  margin: 2rem;
-  border-radius: 30px;
+  padding: 60px 0;
+  background: #DCEDFF;
 }
 
 .chairmanSection {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .chairmanHeading {
-  color: white;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  text-decoration: underline;
+  color: #66cbbb;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 40px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chairmanHeading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #66cbbb;
 }
 
 .messageContent {
-  display: flex;
-  gap: 4rem;
-  align-items: flex-start;
-  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
 }
 
 .profileSection {
-  flex-shrink: 0;
   text-align: center;
 }
 
 .imageWrapper {
-  width: 300px;
-  height: auto;
-  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background: white;
 }
 
 .chairmanImage {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  display: block;
+}
+
+.chairmanInfo {
+  padding: 15px;
+  background: #66cbbb;
+  color: white;
 }
 
 .chairmanName {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin: 0 0 5px;
   color: white;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  white-space: nowrap;
 }
 
 .chairmanTitle {
+  margin: 0;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   color: white;
-  font-size: 1.25rem;
-  white-space: nowrap;
 }
 
 .messageText {
-  color: white;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  color: #444;
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  line-height: 1.8;
+}
+
+.messageText p {
+  margin-bottom: 20px;
 }
 
 .lessonsList {
-  margin: 1.5rem 0;
-  padding-left: 1.5rem;
+  padding-left: 20px;
+  margin: 20px 0;
 }
 
 .lessonsList li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 10px;
+  color: #444;
+  position: relative;
+  padding-left: 20px;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .messageContent {
-    gap: 3rem;
-  }
+.lessonsList li::before {
+  content: "•";
+  color: #66cbbb;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
 
-  .imageWrapper {
-    width: 250px;
-  }
+.signature {
+  margin-top: 30px;
+}
+
+.signatureName {
+  color: #66cbbb;
+  font-weight: 500;
+  margin: 0;
+}
+
+.signatureTitle {
+  color: #666;
+  margin: 5px 0 0;
 }
 
 @media (max-width: 768px) {
   .messageContent {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .profileSection {
-    margin-bottom: 1rem;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .imageWrapper {
-    width: 200px;
+    max-width: 300px;
+    margin: 0 auto 20px;
   }
 
-  .chairmanHeading {
-    font-size: 1.75rem;
-  }
-
-  .messageText {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .lessonsList {
-    text-align: left;
-  }
-}
-
-@media (max-width: 480px) {
   .container {
-    padding: 1rem;
-  }
-
-  .chairmanHeading {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .imageWrapper {
-    width: 180px;
-  }
-
-  .chairmanName {
-    font-size: 1.25rem;
-  }
-
-  .chairmanTitle {
-    font-size: 1rem;
-  }
-
-  .messageText {
-    font-size: 0.95rem;
-  }
-
-  .lessonsList {
-    margin: 1rem 0;
-    padding-left: 1rem;
+    padding: 40px 0;
   }
 }
