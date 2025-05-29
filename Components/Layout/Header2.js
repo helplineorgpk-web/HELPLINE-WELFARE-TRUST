@@ -47,7 +47,7 @@ export default function Header2({ toggleTrueFalseInfo }) {
                   <i className="fab fa-youtube"></i>
                 </Link>
                 <Link
-                  href="https://www.instagram.com/helpline.socialwelfare/"
+                  href="https://www.instagram.com/helplineorg/?utm_source=qr"
                   target="_blank"
                   className="pinterest"
                 >
