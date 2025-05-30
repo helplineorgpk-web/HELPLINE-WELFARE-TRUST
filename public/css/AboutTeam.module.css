@@ -4,7 +4,7 @@
   padding: 8rem 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
   position: relative;
-border-top: 4px solid red;
+  border-top: 4px solid red;
 }
 
 .mainHeader {
@@ -36,7 +36,7 @@ border-top: 4px solid red;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1.5rem;
   font-weight: 800;
-  text-transform: uppercase;
+
   letter-spacing: 3px;
 }
 

@@ -1366,7 +1366,7 @@ export const HelplineData = {
     {
       id: 16,
       designation: "Chairman",
-      name: "Muhammad Aslam Khan Kakkarh",
+      name: "Muhammad Aslam Khan Kakarh (engr)",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
@@ -1462,7 +1462,7 @@ export const HelplineData = {
     {
       id: 24,
       designation: "Technology Consultant",
-      name: "Col Waqar Ahmad (Retd)",
+      name: "Colonel Waqar Ahmad (Retd)",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
@@ -1486,7 +1486,7 @@ export const HelplineData = {
     {
       id: 26,
       designation: "Reagional Heads",
-      name:"Khushnood Ahmad Khan",
+      name: "Khushnood Ahmad Khan",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
@@ -1511,7 +1511,31 @@ export const HelplineData = {
     {
       id: 28,
       designation: "Reagional Heads",
-      name:"Ms Nuzhat Fatima (Former Secretary)",
+      name: "Ms Nuzhat Fatima (Former Secretary)",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 29,
+      designation: "Director Quran Academy",
+      name: "Akhlas Ahmad",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 30,
+      designation: "Chairperson",
+      name: "Ms Lubna Yaqoob Tahir",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },

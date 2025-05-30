@@ -27,6 +27,7 @@ export default function AboutTeam() {
       "Media Consultant",
       "Technology Consultant",
       "Marketing Consultant",
+      "Director Quran Academy"
     ].includes(member.designation)
   );
 
@@ -71,8 +72,8 @@ export default function AboutTeam() {
         <h1>Central Executive Committee</h1>
       </div>
       {renderTeamSection(executives, "Chairman")}
-      {renderTeamSection(ADMIN_SUPPORT, "President")}
-      {renderTeamSection(hrManagement, "Executive Members")}
+      {renderTeamSection(ADMIN_SUPPORT, "")}
+      {renderTeamSection(hrManagement, "")}
       {renderTeamSection(Adviser, "Advisors / Consultants")}
     </div>
   );

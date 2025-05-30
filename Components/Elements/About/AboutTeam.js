@@ -25,7 +25,7 @@ export default function AboutTeam() {
   );
 
   const regionalHeads = team.filter((member) =>
-    ["Reagional Heads"].includes(member.designation)
+    ["Chairperson", "Reagional Heads"].includes(member.designation)
   );
 
   const financeTeam = team.filter((member) =>
