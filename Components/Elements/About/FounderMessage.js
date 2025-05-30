@@ -6,7 +6,7 @@ export default function FounderMessage() {
     <div className={styles.container}>
       <div className={styles.founderSection}>
         <h4 className={styles.founderHeading}>GENERAL SECRETARY MESSAGE</h4>
-        
+
         <div className={styles.messageContent}>
           <div className={styles.profileSection}>
             <div className={styles.imageWrapper}>
@@ -17,7 +17,9 @@ export default function FounderMessage() {
               />
               <div className={styles.founderInfo}>
                 <h5 className={styles.founderName}>Mian Akhalq Ur Rehman</h5>
-                <p className={styles.founderTitle}>Founder & General Secretary</p>
+                <p className={styles.founderTitle}>
+                  Founder & General Secretary
+                </p>
               </div>
             </div>
           </div>
@@ -42,13 +44,12 @@ export default function FounderMessage() {
               Our commitment to serving humanity is unwavering, and we continue
               to expand our reach to touch more lives and create positive
               change. Together, we can build a stronger, more compassionate
-              society that upholds the values of brotherhood and mutual
-              support.
+              society that upholds the values of brotherhood and mutual support.
             </p>
 
             <div className={styles.signature}>
               <p className={styles.signatureName}>Mian Akhalq Ur Rehman</p>
-              <p className={styles.signatureTitle}>Founder & General Secretary</p>
+              <p className={styles.signatureTitle}>General Secretary</p>
             </div>
           </div>
         </div>
