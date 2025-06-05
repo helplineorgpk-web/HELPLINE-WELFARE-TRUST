@@ -11,13 +11,16 @@ export default function AboutTeam() {
   );
 
   const ADMIN_SUPPORT = team.filter((member) =>
-    ["Managing Trustee", "President"].includes(member.designation)
+    ["President", "Vice President"].includes(member.designation)
   );
 
   const hrManagement = team.filter((member) =>
-    ["Vice President", "General Secretary", "Finance Secretary"].includes(
-      member.designation
-    )
+    [
+    
+      "Managing Trustee",
+      "General Secretary",
+      "Finance Secretary",
+    ].includes(member.designation)
   );
 
   const Adviser = team.filter((member) =>
@@ -27,7 +30,7 @@ export default function AboutTeam() {
       "Media Consultant",
       "Technology Consultant",
       "Marketing Consultant",
-      "Director Quran Academy"
+      "Director Quran Academy",
     ].includes(member.designation)
   );
 

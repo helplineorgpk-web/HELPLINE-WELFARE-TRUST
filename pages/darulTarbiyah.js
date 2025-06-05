@@ -55,12 +55,12 @@ export default function DarulTarbiyah() {
                   <ul className={styles.initiativesList}>
                     {[
                       "Capacity Building",
-                      "Personnelity Development",
+                      "Personality Development",
                       "Professional Development",
                       "Character Building & Child Grooming",
                       "Career Counseling",
-                      "phychological Counseling",
-                      "Intershipship",
+                      "Psychological Counseling",
+                      "Internship",
                       "Skills Development Workshops",
                       "Job Placement",
                       "Character Building Sessions",

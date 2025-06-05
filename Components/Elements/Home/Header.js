@@ -12,6 +12,7 @@ const campaignsData = [
   {
     id: "qurbani-2025",
     title: "Qurbani Program 2025",
+    href: "/qurbani",
     description:
       "Participate in our Qurbani program to help distribute meat to deserving families",
     image: "/img/Campaigns/reallygreatsite.png",
@@ -40,43 +41,86 @@ const campaignsData = [
     status: "upcoming",
   },
   {
-    id: "ramzan-2025",
-    title: "Ramzan Food Package 2025",
-    description: "Provide essential food items to families during Ramzan",
-    image: "/img/rashan/bahawalpurrashan2.jpg",
+    id: "school-masjid-project",
+    title: "School Masjid Project",
+    href: "/campaigns",
+    description:
+      "Building integrated school and masjid facilities to uplift communities.",
+    image: "/img/Campaigns/MASJID.jpg",
     details: {
       goal: 1000000,
-      raised: 300000,
+      raised: 250000,
       packages: [
         {
           name: "Basic Package",
           price: 5000,
-          items: [
-            "10kg Flour",
-            "5kg Rice",
-            "3kg Sugar",
-            "3L Cooking Oil",
-            "1kg Dates",
-            "Tea",
-            "Spices",
-          ],
-        },
-        {
-          name: "Family Package",
-          price: 8000,
-          items: [
-            "20kg Flour",
-            "10kg Rice",
-            "5kg Sugar",
-            "5L Cooking Oil",
-            "2kg Dates",
-            "Tea",
-            "Spices",
-            "Lentils",
-          ],
+          description: "Support with basic contribution",
         },
       ],
-      endDate: "2025-03-15",
+      endDate: "2025-06-30",
+    },
+    status: "upcoming",
+  },
+  {
+    id: "vocational-training-center",
+    title: "Vocational Training Center",
+    href: "/vocationalTrainingCenters",
+    description:
+      "Equip youth with technical skills for sustainable employment.",
+    image: "/img/Campaigns/Vocational.png",
+    details: {
+      goal: 1000000,
+      raised: 250000,
+      packages: [
+        {
+          name: "Basic Package",
+          price: 5000,
+          description: "Support with basic contribution",
+        },
+      ],
+      endDate: "2025-06-30",
+    },
+    status: "upcoming",
+  },
+  {
+    id: "rashan-program",
+    title: "Rashan Program",
+    href: "/rashan",
+    description:
+      "Provide essential food supplies to struggling families across Pakistan.",
+    image: "/img/Campaigns/Grocery.png",
+    details: {
+      goal: 1000000,
+      raised: 250000,
+      packages: [
+        {
+          name: "Basic Package",
+          price: 5000,
+          description: "Support with basic contribution",
+        },
+      ],
+      endDate: "2025-06-30",
+    },
+    status: "upcoming",
+  },
+  {
+    id: "support-the-student",
+    title: "Support the Student",
+    href: "/campaigns",
+    description:
+      "Sponsor students’ education, ensuring they don’t drop out due to financial constraints.",
+    image: "/img/Campaigns/student.png",
+    details: {
+      goal: 1000000,
+      raised: 250000,
+      packages: [
+        {
+          name: "Basic Package",
+          price: 5000,
+          description: "Support with basic contribution",
+        },
+      ],
+      endDate: "2025-06-30",
     },
     status: "upcoming",
   },
@@ -90,6 +134,7 @@ const sliderData = {
     project: campaign.title,
     content: campaign.description,
     image1: campaign.image,
+    href: campaign.href,
   })),
 };
 
@@ -134,10 +179,6 @@ export default function Header() {
     router.push("/donation");
   };
 
-  const handleProjectLearnMore = () => {
-    router.push(`/cause-details?id=23`);
-  };
-
   return (
     <div className={styles.mainContainer}>
       <div className={styles.leftSection}>
@@ -180,15 +221,15 @@ export default function Header() {
             <div className={styles.visionBox}>
               <h6 className={styles.sectionHeading}>Vision</h6>
               <p>
-                A world where every individual in distress finds a listening
-                ear, timely help, and renewed hope.
+                Building Islamic Welfare Society on the Golden Principles of
+                "Mawakhat-e-Madina"
               </p>
             </div>
             <div className={styles.missionBox}>
               <h6 className={styles.sectionHeading}>Mission</h6>
               <p>
-                Providing immediate support, and hope to those in crisis through
-                compassionate helpline services.
+                Mobilize society to elevate the have-nots through religious,
+                modern education, and technical training.
               </p>
             </div>
           </div>
@@ -209,7 +250,7 @@ export default function Header() {
             >
               <Swiper
                 direction="vertical"
-                spaceBetween={20}
+                spaceBetween={30}
                 slidesPerView={1}
                 autoplay={
                   isPaused
@@ -223,8 +264,11 @@ export default function Header() {
                 {sliderData.slider1.map((slide) => (
                   <SwiperSlide key={slide.id} className={styles.slideItem}>
                     <h5 className={styles.news}>{slide.News}</h5>
-                    <div className={styles.card}>
-                      <h3 className={styles.slideTitle}>{slide.title}</h3>
+                    <div
+                      className={styles.card}
+                      style={{ width: "360px", height: "520px" }}
+                    >
+                      {/* <h3 className={styles.slideTitle}>{slide.title}</h3> */}
                       <div className={styles.imageCard}>
                         <div className={styles.cardContent}>
                           <h6 className={styles.project}>{slide.project}</h6>
@@ -232,25 +276,22 @@ export default function Header() {
                         <Image
                           src={slide.image1}
                           alt={slide.title}
-                          width={200}
-                          height={235}
+                          width={560}
+                          height={400}
                           className={styles.cardImage}
                         />
                       </div>
-                    </div>
-                    <div className={styles.slideButtons}>
-                      <Link
-                        href={`/campaign/${slide.id}#donate`}
-                        className={styles.donate_now}
-                      >
-                        Donate Now
-                      </Link>
-                      <Link
-                        href={`/campaign/${slide.id}`}
-                        className={styles.campaign_details}
-                      >
-                        Campaign Details
-                      </Link>
+                      <div className={styles.slideButtons}>
+                        <Link href={slide.href} className={styles.donate_now}>
+                          Donate Now
+                        </Link>
+                        <Link
+                          href={slide.href}
+                          className={styles.campaign_details}
+                        >
+                          Campaign Details
+                        </Link>
+                      </div>
                     </div>
                   </SwiperSlide>
                 ))}

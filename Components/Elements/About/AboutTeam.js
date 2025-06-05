@@ -21,11 +21,17 @@ export default function AboutTeam() {
       "Manager Admin & Support",
       "Manager Welfare & Health",
       "Manager Transport",
+      "Senior Manager Accounts",
+      "Manager Accounts",
     ].includes(member.designation)
   );
 
   const regionalHeads = team.filter((member) =>
-    ["Chairperson", "Reagional Heads"].includes(member.designation)
+    [
+      "Reagional Heads (Sindh)",
+      "Reagional Heads (North)",
+      "Reagional Heads (South)",
+    ].includes(member.designation)
   );
 
   const financeTeam = team.filter((member) =>
@@ -76,8 +82,7 @@ export default function AboutTeam() {
         <h1>Head Office Team</h1>
       </div>
       {renderTeamSection(executives, "Team Executives")}
-      {renderTeamSection(adminSupport, "Admin & Support")}
-      {renderTeamSection(financeTeam, "Finance")}
+      {renderTeamSection(adminSupport, "Finance Admin & Support", "Finance")}
       {renderTeamSection(mediaTeam, "Media & Technology")}
     </div>
   );

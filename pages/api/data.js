@@ -1366,7 +1366,7 @@ export const HelplineData = {
     {
       id: 16,
       designation: "Chairman",
-      name: "Muhammad Aslam Khan Kakarh (engr)",
+      name: "Muhammad Aslam Khan Kakarh (Engr)",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
@@ -1485,7 +1485,7 @@ export const HelplineData = {
     },
     {
       id: 26,
-      designation: "Reagional Heads",
+      designation: "Reagional Heads (Sindh)",
       name: "Khushnood Ahmad Khan",
       image: "/img/team/iconimage.png",
       socialLinks: [
@@ -1497,7 +1497,7 @@ export const HelplineData = {
     },
     {
       id: 27,
-      designation: "Reagional Heads",
+      designation: "Reagional Heads (South)",
       name: "Brigadier MohyuDin Ghazalli (Retd)",
       image: "/img/team/iconimage.png",
       socialLinks: [
@@ -1510,7 +1510,7 @@ export const HelplineData = {
 
     {
       id: 28,
-      designation: "Reagional Heads",
+      designation: "Reagional Heads (North)",
       name: "Ms Nuzhat Fatima (Former Secretary)",
       image: "/img/team/iconimage.png",
       socialLinks: [
