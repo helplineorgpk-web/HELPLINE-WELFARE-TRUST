@@ -15,7 +15,7 @@ export default function OurIdentity() {
       title: "Our Mission",
       icon: "/img/icons/mission.svg",
       description:
-        "To bridge the gap between the privileged and underprivileged through sustainable initiatives in education, healthcare, and social welfare.",
+        "Mobilize the society to elevate the HAVE NOT’s through religious as well as modern education, technical training to make them productive members of Pakistani society.",
     },
     {
       id: 3,
@@ -32,9 +32,9 @@ export default function OurIdentity() {
         <div className={styles.header}>
           <h2>Who We Are</h2>
           <p>
-            Helpline Welfare Trust is committed to creating positive change through
-            sustainable social welfare initiatives, guided by the principles of
-            compassion and community service.
+            Helpline Welfare Trust is committed to creating positive change
+            through sustainable social welfare initiatives, guided by the
+            principles of compassion and community service.
           </p>
         </div>
         <div className={styles.identityGrid}>

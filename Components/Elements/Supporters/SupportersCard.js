@@ -13,11 +13,11 @@ export default function SupportersCard() {
       website: "https://www.henkel.com/",
     },
     {
-      name: "Service Industries",
-      logo: "/img/sponser/Servis_logo.png",
+      name: "HP Travel & tour",
+      logo: "/img/sponser/hplogo.png",
       description:
         "Empowering communities through quality footwear and sustainable practices",
-      website: "https://www.servis.com",
+      website: "https://hptraveltours.com/",
     },
     {
       name: "Asia Poultry Feeds",

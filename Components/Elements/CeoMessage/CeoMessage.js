@@ -57,8 +57,8 @@ export default function ChairmanMessage() {
             </p>
 
             <div className={styles.signature}>
-              <p className={styles.signatureName}>Muhammad Iqbal Khan (FCA)</p>
-              <p className={styles.signatureTitle}>Managing Trustee</p>
+              <span className={styles.signatureName}>Muhammad Iqbal Khan (FCA)</span>
+              <span className={styles.signatureTitle}>Managing Trustee</span>
             </div>
           </div>
         </div>

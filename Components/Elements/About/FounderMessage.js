@@ -5,7 +5,7 @@ export default function FounderMessage() {
   return (
     <div className={styles.container}>
       <div className={styles.founderSection}>
-        <h4 className={styles.founderHeading}>GENERAL SECRETARY MESSAGE</h4>
+        <h4 className={styles.founderHeading}>FOUNDER MESSAGE</h4>
 
         <div className={styles.messageContent}>
           <div className={styles.profileSection}>
@@ -17,9 +17,7 @@ export default function FounderMessage() {
               />
               <div className={styles.founderInfo}>
                 <h5 className={styles.founderName}>Mian Akhalq Ur Rehman</h5>
-                <p className={styles.founderTitle}>
-                  Founder & General Secretary
-                </p>
+                <p className={styles.founderTitle}>The Founder</p>
               </div>
             </div>
           </div>
@@ -48,8 +46,8 @@ export default function FounderMessage() {
             </p>
 
             <div className={styles.signature}>
-              <p className={styles.signatureName}>Mian Akhalq Ur Rehman</p>
-              <p className={styles.signatureTitle}>General Secretary</p>
+              <span className={styles.signatureName}>Mian Akhalq Ur Rehman</span>
+              <span className={styles.signaturesec}>General Secretary</span>
             </div>
           </div>
         </div>
