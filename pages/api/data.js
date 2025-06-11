@@ -1339,18 +1339,6 @@ export const HelplineData = {
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
-    // {
-    //   id: 14,
-    //   designation: "Software  Engineer",
-    //   name: "Syed Mudasir Hussain Shah",
-    //   image: "/img/team/iconimage.png",
-    //   socialLinks: [
-    //     { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-    //     { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-    //     { platform: "behance", icon: "fab fa-behance", url: "#" },
-    //     { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-    //   ],
-    // },
     {
       id: 15,
       designation: "Media Executive",
@@ -1498,7 +1486,7 @@ export const HelplineData = {
     {
       id: 27,
       designation: "Reagional Heads (South)",
-      name: "Brigadier MohyuDin Ghazalli (Retd)",
+      name: "Brigadier Moeen ud Din Ghazalli (Retd)",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
@@ -1507,7 +1495,6 @@ export const HelplineData = {
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
-
     {
       id: 28,
       designation: "Reagional Heads (North)",
@@ -1536,6 +1523,66 @@ export const HelplineData = {
       id: 30,
       designation: "Chairperson",
       name: "Ms Lubna Yaqoob Tahir",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 31,
+      designation: "Friend",
+      name: "Mr Muhammad Arif Mehr",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 32,
+      designation: "Friend",
+      name: "Brig (Retd) Zahid Hussain Goryaya",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 33,
+      designation: "Friend",
+      name: "Lt (Retd) Zubair Ahmad Chughtai",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 34,
+      designation: "Friend",
+      name: "Squadron Leader (Retd) Naeem Ahmad Khan",
+      image: "/img/team/iconimage.png",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "behance", icon: "fab fa-behance", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
+    {
+      id: 35,
+      designation: "Friend",
+      name: "Professor (Retd) Ahmad Sohaib",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
