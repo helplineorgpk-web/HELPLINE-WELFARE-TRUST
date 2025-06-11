@@ -9,41 +9,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const campaignsData = [
-  {
-    id: "qurbani-2025",
-    title: "Qurbani Program 2025",
-    href: "/qurbani",
-    description:
-      "Participate in our Qurbani program to help distribute meat to deserving families",
-    image: "/img/Campaigns/reallygreatsite.png",
-    details: {
-      goal: 2000000,
-      raised: 800000,
-      packages: [
-        {
-          name: "Goat Share",
-          price: 25000,
-          description: "1/7th share in a collective sacrifice",
-        },
-        {
-          name: "Full Goat",
-          price: 175000,
-          description: "Complete sacrifice of one goat",
-        },
-        {
-          name: "Cow Share",
-          price: 20000,
-          description: "1/7th share in a cow",
-        },
-      ],
-      endDate: "2025-06-15",
-    },
-    status: "upcoming",
-  },
+
   {
     id: "school-masjid-project",
     title: "School Masjid Project",
-    href: "/campaigns",
+    href: "/masjid",
     description:
       "Building integrated school and masjid facilities to uplift communities.",
     image: "/img/Campaigns/MASJID.jpg",
