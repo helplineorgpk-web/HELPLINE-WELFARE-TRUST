@@ -53,41 +53,47 @@
 }
 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 5rem 2rem;
-  background-color: #f8fafc;
-  background-image: radial-gradient(
-      circle at 10% 20%,
-      rgba(59, 130, 246, 0.05) 0%,
-      transparent 20%
-    ),
-    radial-gradient(
-      circle at 90% 80%,
-      rgba(59, 130, 246, 0.05) 0%,
-      transparent 20%
-    ),
-    url("data:image/svg+xml,<svg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'><path d='M30 0L37 23L60 30L37 37L30 60L23 37L0 30L23 23L30 0Z' fill='%233b82f610'/></svg>"),
-    linear-gradient(135deg, #f8fafc, #f1f5f9, #f8fafc);
-  background-size: auto, auto, 60px 60px, 100% 100%;
-  min-height: 100vh;
   position: relative;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
-  overflow-x: hidden;
+  padding: 1rem;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 16%;
 }
 
-.backgroundOverlay {
+.estimateBanner {
+  position: relative;
+  background: #1e3a8a;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.ribbonEnd {
   position: absolute;
+  right: -15px;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(248, 250, 252, 0.8) 0%,
-    rgba(241, 245, 249, 0.9) 100%
-  );
-  z-index: 0;
+  width: 15px;
+  background: #1e40af;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 440px) {
+  .container {
+    margin-top: 5%;
+  }
 }
 
 .title {
@@ -178,78 +184,100 @@
 .imageGrid {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  margin: 3rem 0;
-  animation: fadeIn 1s ease 0.6s backwards;
-  z-index: 1;
-  position: relative;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+@media (min-width: 992px) {
+  .imageGrid {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 .heroImageWrapper {
   position: relative;
-  border-radius: 25px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  transition: all 0.4s ease;
-  max-width: 1000px;
-  margin: 0 auto;
+  flex: 1;
 }
 
 .heroImage {
   width: 100%;
   height: auto;
-  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .heroImage {
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
+
+.imageCard {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  aspect-ratio: 4/3;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.heroImageWrapper:hover .heroImage {
-  transform: scale(1.03);
+.imageCard:hover .image {
+  transform: scale(1.1);
 }
 
-.imageCaption {
+.imageOverlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  background: linear-gradient(to top, rgba(30, 58, 138, 0.8), transparent);
   color: white;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
-  font-size: 1.1rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
 }
 
-.heroImageWrapper:hover .imageCaption {
-  opacity: 1;
+.imageCard:hover .imageOverlay {
+  transform: translateY(0);
 }
 
 .posterSection {
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-  color: white;
-  padding: 4.5rem 3.5rem;
-  border-radius: 30px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.2) inset;
-  margin: 3rem auto;
-  position: relative;
-  overflow: hidden;
-  animation: fadeIn 1s ease 0.6s backwards, glow 3s ease-in-out infinite;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  max-width: 1000px;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  flex: 1;
 }
 
-.posterSection::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("data:image/svg+xml,<svg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'><path d='M20 0L24 16L40 20L24 24L20 40L16 24L0 20L16 16L20 0Z' fill='%23ffffff10'/></svg>")
-    repeat;
-  opacity: 0.1;
+@media (max-width: 768px) {
+  .posterSection {
+    padding: 1rem;
+  }
 }
 
 .posterContent {
@@ -267,7 +295,7 @@
   font-weight: 800;
   letter-spacing: 3px;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #1e3a8a;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   font-family: "Montserrat", sans-serif;
 }
@@ -292,7 +320,7 @@
   line-height: 1.9;
   max-width: 800px;
   margin: 0 auto;
-  color: #e0e7ff;
+  color: #334155;
   text-align: center;
 }
 
@@ -319,7 +347,7 @@
 .quoteText {
   font-size: 1.3rem;
   font-style: italic;
-  color: #ffffff;
+  color: #1e3a8a;
   margin-bottom: 0.5rem;
   padding-left: 2rem;
 }
@@ -347,7 +375,7 @@
   width: fit-content;
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
+  color: #1e3a8a;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   letter-spacing: 3px;
   position: relative;
@@ -409,13 +437,13 @@
 
 .costLabel {
   font-size: 1.3rem;
-  color: #f8fafc;
+  color: #f15b43;
   font-weight: 600;
 }
 
 .costValue {
   font-size: 1.4rem;
-  color: #ffffff;
+  color: #1e9c91;
   font-weight: 700;
 }
 
@@ -432,13 +460,13 @@
 
 .totalLabel {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #1e3a8a;
   font-weight: 700;
 }
 
 .totalValue {
   font-size: 1.8rem;
-  color: #ffffff;
+  color: #1e3a8a;
   font-weight: 800;
 }
 

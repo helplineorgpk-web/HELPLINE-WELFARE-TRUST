@@ -28,10 +28,10 @@ export default function AboutArea() {
               <div className="row gutter_40">
                 <div className="col-xxl-6 col-md-6 col-sm-6 custom_col mb-40">
                   <Link href="/about" className="about_img w_img rad-50p fix">
-                    <img src="/img/causes/blochistanwater.jpg" alt="img" />
+                    <img src="/img/causes/houseconstruction2.jpeg" alt="img" />
                     <div className="about_img_text theme-no1">
                       <i className="flaticon-water-drop"></i>
-                      <h6 style={{ color: "#fecd01" }}>Clean Water Services</h6>
+                      <h6 style={{ color: "#fecd01" }}>Welfare Services</h6>
                     </div>
                   </Link>
                 </div>
@@ -55,13 +55,9 @@ export default function AboutArea() {
                 </span>
                 <h3 className="title">
                   Building Bridges of Compassion
-                  {/* Fight for right cause <br /> for save the world */}
                 </h3>
               </div>
               <p className="mb-45">
-                {/* NewLook unlike many traditional plastic surgery centers in San
-                Diego, are industry recognized experts in a wide variety of
-                cosmetic procedure and are dedicated to providing customers. */}
                 Since 1992, Helpline has been dedicated to fostering a just and
                 equitable society inspired by the timeless principle of
                 Mawakhath-e-Madina. Guided by unity, compassion, and collective

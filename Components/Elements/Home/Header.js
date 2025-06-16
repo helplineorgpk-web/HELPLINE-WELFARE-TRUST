@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const campaignsData = [
+export const campaignsData = [
 
   {
     id: "school-masjid-project",
@@ -76,7 +76,7 @@ const campaignsData = [
   {
     id: "support-the-student",
     title: "Support the Student",
-    href: "/campaigns",
+    href: "/student-support",
     description:
       "Sponsor students’ education, ensuring they don’t drop out due to financial constraints.",
     image: "/img/Campaigns/student.png",

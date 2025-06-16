@@ -8,14 +8,12 @@ export default function FriendsReformers() {
   const team = HelplineData.team;
 
   const FriendsReformers = team.filter((member) =>
-    ["Friend"].includes(member.designation)
+    ["Friend/Reformer"].includes(member.designation)
   );
 
   const renderTeamSection = (members, title) => (
     <div className={styles.teamSection}>
-      <div className={styles.sectionHeader}>
-        <h2>{title}</h2>
-      </div>
+      
       <div className={styles.teamGrid}>
         {members.map((member) => (
           <div key={member.id} className={styles.teamCard}>
@@ -51,11 +49,13 @@ export default function FriendsReformers() {
       background: "#E5F0FD",
       padding: "4rem 2rem",
       textAlign: "center",
+      borderTop: "4px solid red",
+      borderBottom: "4px solid red",
     }}>
       <div className={styles.mainHeader}>
         <h1>Friends/Reformers</h1>
       </div>
-      {renderTeamSection(FriendsReformers, "Friends")}
+      {renderTeamSection(FriendsReformers, "Friends/Reformers")}
     </div>
   );
 }
