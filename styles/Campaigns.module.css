@@ -1,0 +1,113 @@
+.campaignCard {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+  overflow: hidden;
+  background-color: #FAF1F0;
+  border-radius: 10px;
+}
+
+.campaignCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 66.67%; 
+  overflow: hidden;
+}
+
+.image {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.3s ease;
+}
+
+.campaignCard:hover .image {
+  transform: scale(1.05);
+
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  overflow: hidden;
+}
+
+.progressBar {
+  background: linear-gradient(90deg, #1e9c91 0%, #187e76 100%);
+  transition: width 0.6s ease;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.actionButton {
+  background-color: #1e9c91;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: #187e76;
+}
+
+.cardFooter {
+  background-color: transparent;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 4px;
+}
+
+.badgeUpcoming {
+  background-color: #1e9c91;
+  color: white;
+}
+
+.badgeActive {
+  background-color: #28a745;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    height: 200px;
+  }
+  
+  .cardDescription {
+    min-height: auto;
+  }
+}

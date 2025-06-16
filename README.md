@@ -24,4 +24,3 @@ Follow these steps to set up the project locally:
 ## Use Prettier
 
 npx prettier --write .
-npx prettier --write .

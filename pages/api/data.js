@@ -1533,8 +1533,8 @@ export const HelplineData = {
     },
     {
       id: 31,
-      designation: "Friend",
-      name: "Mr Muhammad Arif Mehr",
+      designation: "Friend/Reformer",
+      name: "Muhammad Arif Mehr",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
@@ -1545,8 +1545,8 @@ export const HelplineData = {
     },
     {
       id: 32,
-      designation: "Friend",
-      name: "Brig (Retd) Zahid Hussain Goryaya",
+      designation: "Friend/Reformer",
+      name: "Brig Zahid Hussain Goryaya (Retd)",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
@@ -1557,8 +1557,8 @@ export const HelplineData = {
     },
     {
       id: 33,
-      designation: "Friend",
-      name: "Lt (Retd) Zubair Ahmad Chughtai",
+      designation: "Friend/Reformer",
+      name: "Colonel Zubair Ahmad Chughtai (Retd)",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
@@ -1569,8 +1569,8 @@ export const HelplineData = {
     },
     {
       id: 34,
-      designation: "Friend",
-      name: "Squadron Leader (Retd) Naeem Ahmad Khan",
+      designation: "Friend/Reformer",
+      name: "Sqn Ldr Muhammad Naeem Ahmad Khan (Retd)",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
@@ -1581,8 +1581,8 @@ export const HelplineData = {
     },
     {
       id: 35,
-      designation: "Friend",
-      name: "Professor (Retd) Ahmad Sohaib",
+      designation: "Friend/Reformer",
+      name: "Professor Ahmad Sohaib (Retd)",
       image: "/img/team/iconimage.png",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },

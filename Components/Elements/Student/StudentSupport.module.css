@@ -1,0 +1,418 @@
+.container {
+  position: relative;
+  padding: 1rem;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 440px) {
+  .container {
+    margin-top: 5%;
+  }
+}
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.title span {
+  color: #3498db;
+}
+
+.descriptionContainer {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 2rem;
+}
+
+.arabicCalligraphy {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.arabicCalligraphy span {
+  display: block;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Fixed image grid section */
+.imageGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+@media (min-width: 992px) {
+  .imageGrid {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.heroImageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .heroImage {
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
+
+.posterSection {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .posterSection {
+    padding: 1rem;
+  }
+}
+
+.posterContent {
+  width: 100%;
+}
+
+.posterHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.posterTitle {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.posterSubtitle {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.posterBody {
+  margin-bottom: 2rem;
+}
+
+.posterDescription {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 2rem;
+}
+
+.quoteContainer {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.quoteIcon {
+  font-size: 3rem;
+  color: #3498db;
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+}
+
+.quoteText {
+  font-style: italic;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.quoteReference {
+  color: #7f8c8d;
+  text-align: right;
+}
+
+.estimateBanner {
+  position: relative;
+  background: #3498db;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.ribbonEnd {
+  position: absolute;
+  right: -15px;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  background: #2980b9;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.costBreakdown {
+  margin-top: 2rem;
+}
+
+.costItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.costLabel {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.costValue {
+  color: #3498db;
+}
+
+.totalCost {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  background: #f8f9fa;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.totalLabel {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.totalValue {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #3498db;
+}
+
+.gallerySection {
+  margin: 4rem 0;
+}
+
+.galleryTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.imageGrids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .imageGrids {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.imageCard {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper {
+  position: relative;
+  padding-top: 75%;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.contactInfo {
+  position: relative;
+  z-index: 2;
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+.contactHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contactTitle {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.contactSubtitle {
+  color: #7f8c8d;
+}
+
+.contactItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+}
+
+@media (max-width: 768px) {
+  .contactItems {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contactIcon {
+  font-size: 2rem;
+}
+
+.contactText span {
+  display: block;
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.contactText p {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.donationCta {
+  text-align: center;
+}
+
+.donateButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #3498db;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .donateButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.donateButton:hover {
+  background: #2980b9;
+}
+
+.buttonIcon {
+  font-size: 1.2rem;
+}
+
+.donationNote {
+  margin-top: 1rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
