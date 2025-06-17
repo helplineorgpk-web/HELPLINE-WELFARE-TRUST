@@ -31,11 +31,6 @@ const records = {
       { province: "AJK", beneficiaries: 0, amount: "Rs 0" },
       { province: "Total", beneficiaries: 8555, amount: "Rs 16,243,702" },
     ],
-    // images: [
-    //   "/img/2020/image1.jpg",
-    //   "/img/2020/image2.jpg",
-    //   "/img/2020/image3.jpg",
-    // ],
   },
 };
 
@@ -46,7 +41,9 @@ function RashanDistributionJourney() {
     setSelectedYear(year);
   };
 
-  const selectedRecord = records[selectedYear];
+  const sortedYears = Object.keys(records).sort((a, b) => b - a);
+
+  const selectedRecord = records[selectedYear] || { data: [] };
 
   return (
     <section className="container">
@@ -54,19 +51,22 @@ function RashanDistributionJourney() {
         <div className="container">
           <h3>Rashan Program in Provinces</h3>
           <p>
-            By helping mankind, Pak Helpline distributed 11,644 Ramzan Rashan
-            packages among the needy families and individuals in 2019. The
-            packages include Atta, Ghee, Rice, Sugar, Daal, and tea. In
-            different areas of Pakistan like Punjab (Gojra, Bahawalpur, R.Y.
-            Khan, Rajan Pur, Sheikhupura, and Lahore), Sindh, Baluchistan, KPK,
-            and Kashmir, the program has been running since 1992.
+            By helping mankind, Pak Helpline distributed{" "}
+            {records[selectedYear]?.data.find((r) => r.province === "Total")
+              ?.beneficiaries || ""}{" "}
+            Ramzan Rashan packages among the needy families and individuals in{" "}
+            {selectedYear}. The packages include Atta, Ghee, Rice, Sugar, Daal,
+            and tea. In different areas of Pakistan like Punjab (Gojra,
+            Bahawalpur, R.Y. Khan, Rajan Pur, Sheikhupura, and Lahore), Sindh,
+            Baluchistan, KPK, and Kashmir, the program has been running since
+            1992.
           </p>
         </div>
       </section>
       <div className={styles.rashanPage}>
         <h2 className={styles.title}>Helpline Rashan Program Table</h2>
         <div className={styles.buttons}>
-          {Object.keys(records).map((year) => (
+          {sortedYears.map((year) => (
             <button
               key={year}
               onClick={() => handleYearChange(year)}
@@ -96,13 +96,6 @@ function RashanDistributionJourney() {
             ))}
           </tbody>
         </table>
-        {/* <div className={styles.imageGrid}>
-        {selectedRecord.images.map((image, index) => (
-          <div key={index} className={styles.imageWrapper}>
-            <img src={image} alt={`Rashan ${selectedYear} - ${index + 1}`} />
-          </div>
-        ))}
-      </div> */}
       </div>
     </section>
   );
