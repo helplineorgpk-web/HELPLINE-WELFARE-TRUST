@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function CauseBreadCrumb({ actualName }) {
+export default function HistoryHeader() {
   return (
     <section
       className="breadcrumb_area breadcrumb_overlay"
@@ -13,10 +13,10 @@ export default function CauseBreadCrumb({ actualName }) {
             <div className="breadcrumb_section">
               <ul className="breadcrumb-list volunteer_breadcrumb">
                 <li className="bhas_border">
-                  <Link href="/">Home</Link>
+                  <Link href="/">Cause Details</Link>
                 </li>
                 <li>
-                  <span className="active">Cause Details</span>
+                  <span className="active">Our History</span>
                 </li>
               </ul>
               <div>
@@ -27,7 +27,7 @@ export default function CauseBreadCrumb({ actualName }) {
                     fontWeight: "bold",
                   }}
                 >
-                  {actualName || title}
+                  History
                 </p>
               </div>
             </div>
@@ -35,6 +35,5 @@ export default function CauseBreadCrumb({ actualName }) {
         </div>
       </div>
     </section>
-    //breadcrumb area end
   );
 }

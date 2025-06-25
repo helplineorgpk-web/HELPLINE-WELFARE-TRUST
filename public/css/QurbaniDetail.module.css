@@ -14,9 +14,14 @@
 .imageContainer {
   position: relative;
   width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
+  height: 600px;
+  overflow: hidden;
+}
+
+.detailImage {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 
 .imageOverlay {

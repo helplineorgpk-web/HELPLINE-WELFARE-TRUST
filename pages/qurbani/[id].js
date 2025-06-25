@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import styles from "../../public/css/QurbaniDetail.module.css";
 import { qurbaniData } from "../../pages/api/qurbaniData";
 import Layout2 from "../../Components/Layout/Layout2";
+import Image from "next/image";
 
 export default function QurbaniDetail() {
   const router = useRouter();
@@ -34,10 +35,14 @@ export default function QurbaniDetail() {
     <Layout2>
       <div className={styles.container}>
         <div className={styles.detailContainer}>
-          <div
-            className={styles.imageContainer}
-            style={{ backgroundImage: `url(${qurbaniItem.image})` }}
-          >
+          <div className={styles.imageContainer}>
+            <Image
+              src={qurbaniItem.image}
+              alt={qurbaniItem.detailHeader}
+              className={styles.detailImage}
+              width={800}
+              height={900}
+            />
             <div className={styles.imageOverlay}>
               <div className={styles.yearBadge}>{qurbaniItem.year}</div>
               {qurbaniItem.location && (

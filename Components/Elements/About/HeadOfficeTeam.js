@@ -3,28 +3,38 @@ import Link from "next/link";
 import { HelplineData } from "../../../pages/api/data";
 import styles from "../../../public/css/CentralExectiveCommittee.module.css";
 
-export default function AboutTeam() {
+export default function HeadOfficeTeam() {
   const team = HelplineData.team;
-
   const executives = team.filter((member) =>
-    ["Chairman"].includes(member.designation)
+    [
+      "Managing Trustee",
+      "GM (Admin & HR)",
+      "GM (Education)",
+      "Administrator KMC",
+    ].includes(member.designation)
   );
 
-  const ADMIN_SUPPORT = team.filter((member) =>
-    ["President", "Vice President"].includes(member.designation)
+  const adminSupport = team.filter((member) =>
+    [
+      "Senior Manager Purchases",
+      "Manager Admin & Support",
+      "Manager Welfare & Health",
+      "Manager Transport",
+      "Senior Manager Accounts",
+      "Junior Manager Accounts",
+    ].includes(member.designation)
   );
 
-  const hrManagement = team.filter((member) =>
-    ["Managing Trustee", "General Secretary", "Finance Secretary"].includes(
-      member.designation
-    )
+  const financeTeam = team.filter((member) =>
+    ["Senior Manager Accounts", "Manager Accounts"].includes(member.designation)
+  );
+
+  const mediaTeam = team.filter((member) =>
+    ["Manager Media", "Media Executive"].includes(member.designation)
   );
 
   const renderTeamSection = (members, title) => (
     <div className={styles.teamSection}>
-      <div className={styles.sectionHeader}>
-        <h2>{title}</h2>
-      </div>
       <div className={styles.teamGrid}>
         {members.map((member) => (
           <div key={member.id} className={styles.teamCard}>
@@ -56,13 +66,21 @@ export default function AboutTeam() {
   );
 
   return (
-    <div className={styles.teamContainer}>
+    <div
+      style={{
+        background: "rgb(246 243 254)",
+        padding: "4rem 2rem",
+        textAlign: "center",
+        borderTop: "4px solid red",
+        borderBottom: "4px solid red",
+      }}
+    >
       <div className={styles.mainHeader}>
-        <h1>Central Executive Committee</h1>
+        <h1>Head Office Team</h1>
       </div>
-      {renderTeamSection(executives, "Chairman")}
-      {renderTeamSection(ADMIN_SUPPORT, "")}
-      {renderTeamSection(hrManagement, "")}
+      {renderTeamSection(executives, "Team Executives")}
+      {renderTeamSection(adminSupport, "Finance Admin & Support", "Finance")}
+      {renderTeamSection(mediaTeam, "Media & Technology")}
     </div>
   );
 }
