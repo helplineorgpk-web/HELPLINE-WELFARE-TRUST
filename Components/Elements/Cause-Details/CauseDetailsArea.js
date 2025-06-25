@@ -11,6 +11,7 @@ export default function CauseDetailsArea({
   actualName,
   detail2,
   detail3,
+  history,
 }) {
   return (
     <div className="cause_details_area pt-120 pb-80">
@@ -116,6 +117,24 @@ export default function CauseDetailsArea({
                   </ul>
                   <p>Thank you for making a difference.</p>
                 </div>
+              </div>
+              <div
+                style={{
+                  marginTop: "20px",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <Link
+                  href={{
+                    pathname: '/history',
+                    query: { history: JSON.stringify(history) },
+                  }}
+                  className="g_btn hbtn_1 to_right1 i_left rad-30"
+                >
+                  <i className="fal fa-clock"></i> Our History
+                  <span></span>
+                </Link>
               </div>
             </div>
           </div>

@@ -33,6 +33,7 @@ export default function CauseDetails() {
         actualName={cause.ActualName}
         detail2={cause.detail2}
         detail3={cause.detail3}
+        history={cause.history}
       />
     </Layout2>
   );

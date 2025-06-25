@@ -3,7 +3,7 @@ export const qurbaniData = [
     id: "1",
     year: "Qurbani 2024",
     location: "Al-Kitab Educational Complex, Shekhupura",
-    image: "img/causes/qurbani1.jpg",
+    image: "/img/qurbani/qurbani2024/4.png",
     detailHeader: "Al-Kitab Educational Complex",
     detail:
       "Join our upcoming Qurbani distribution event at Al-Kitab Educational Complex. We aim to serve over 1,500 families this year with your support.",
@@ -29,7 +29,7 @@ export const qurbaniData = [
     id: "2",
     year: "Qurbani 2024",
     location: "Al-Kitab Educational Complex, Rajanpur",
-    image: "img/causes/qurbani2.jpg",
+    image: "/img/qurbani/qurbani2024/3.png",
     detailHeader: "Al-Kitab Educational Complex",
     detail:
       "Our second distribution center in Gulberg area will cater to urban communities, ensuring wider reach and accessibility.",
@@ -55,7 +55,7 @@ export const qurbaniData = [
     id: "3",
     year: "Qurbani 2024",
     location: "Al-Kitab School, Bahawalpur ",
-    image: "img/causes/qurbani3.jpg",
+    image: "/img/qurbani/qurbani2024/1.png",
     detailHeader: "Al-Kitab School",
     detail:
       "Expanding our reach to rural areas through a dedicated distribution network serving multiple villages.",
@@ -81,7 +81,7 @@ export const qurbaniData = [
     id: "4",
     year: "Qurbani 2024",
     location: "Al-Kitab  School, TanduALLahYar",
-    image: "img/causes/qurbani4.jpg",
+    image: "/img/qurbani/qurbani2024/2.png",
     detailHeader: "Al-Kitab School",
     detail:
       "Successfully completed our largest Qurbani distribution to date, serving over 1,200 families in collaboration with local volunteers.",
@@ -107,7 +107,7 @@ export const qurbaniData = [
     id: "5",
     year: "Qurbani 2023",
     location: "Al-Kitab Educational Complex, Shekhupura",
-    image: "img/causes/qurbani1.jpg",
+    image: "/img/qurbani/qurbani2023/4.jpg",
     detailHeader: "Al-Kitab Educational Complex",
     detail:
       "Join our upcoming Qurbani distribution event at Al-Kitab Educational Complex. We aim to serve over 1,500 families this year with your support.",
@@ -132,8 +132,8 @@ export const qurbaniData = [
   {
     id: "6",
     year: "Qurbani 2023",
-    location: "Al-Kitab Educational Complex, Rajanpur",
-    image: "img/causes/qurbani2.jpg",
+    image: "/img/qurbani/qurbani2023/3.jpg",
+    location: "Al-Kitab Educational Complex",
     detailHeader: "Al-Kitab Educational Complex",
     detail:
       "Our second distribution center in Gulberg area will cater to urban communities, ensuring wider reach and accessibility.",
@@ -159,7 +159,7 @@ export const qurbaniData = [
     id: "7",
     year: "Qurbani 2023",
     location: "Al-Kitab School, Bahawalpur ",
-    image: "img/causes/qurbani3.jpg",
+    image: "/img/qurbani/qurbani2023/2.jpg",
     detailHeader: "Al-Kitab School",
     detail:
       "Expanding our reach to rural areas through a dedicated distribution network serving multiple villages.",
@@ -185,7 +185,7 @@ export const qurbaniData = [
     id: "8",
     year: "Qurbani 2023",
     location: "Al-Kitab  School, TanduALLahYar",
-    image: "img/causes/qurbani4.jpg",
+    image: "/img/qurbani/qurbani2023/1.jpg",
     detailHeader: "Al-Kitab School",
     detail:
       "Successfully completed our largest Qurbani distribution to date, serving over 1,200 families in collaboration with local volunteers.",
@@ -211,7 +211,7 @@ export const qurbaniData = [
     id: "9",
     year: "Qurbani 2022",
     location: "Al-Kitab Educational Complex, Shekhupura",
-    image: "img/causes/qurbani1.jpg",
+    image: "/img/qurbani/qurbani2022/4.png",
     detailHeader: "Al-Kitab Educational Complex",
     detail:
       "Join our upcoming Qurbani distribution event at Al-Kitab Educational Complex. We aim to serve over 1,500 families this year with your support.",
@@ -237,7 +237,7 @@ export const qurbaniData = [
     id: "10",
     year: "Qurbani 2022",
     location: "Al-Kitab Educational Complex, Rajanpur",
-    image: "img/causes/qurbani2.jpg",
+    image: "/img/qurbani/qurbani2022/3.png",
     detailHeader: "Al-Kitab Educational Complex",
     detail:
       "Our second distribution center in Gulberg area will cater to urban communities, ensuring wider reach and accessibility.",
@@ -263,7 +263,7 @@ export const qurbaniData = [
     id: "11",
     year: "Qurbani 2022",
     location: "Al-Kitab School, Bahawalpur ",
-    image: "img/causes/qurbani3.jpg",
+    image: "/img/qurbani/qurbani2022/2.png",
     detailHeader: "Al-Kitab School",
     detail:
       "Expanding our reach to rural areas through a dedicated distribution network serving multiple villages.",
@@ -289,7 +289,7 @@ export const qurbaniData = [
     id: "12",
     year: "Qurbani 2022",
     location: "Al-Kitab  School, TanduALLahYar",
-    image: "img/causes/qurbani4.jpg",
+    image: "/img/qurbani/qurbani2022/1.png",
     detailHeader: "Al-Kitab School",
     detail:
       "Successfully completed our largest Qurbani distribution to date, serving over 1,200 families in collaboration with local volunteers.",
@@ -315,7 +315,7 @@ export const qurbaniData = [
     id: "13",
     year: "Qurbani 2021",
     location: "Al-Kitab Educational Complex, Shekhupura",
-    image: "img/causes/qurbani1.jpg",
+    image: "/img/qurbani/qurbani2021/4.png",
     detailHeader: "Al-Kitab Educational Complex",
     detail:
       "Join our upcoming Qurbani distribution event at Al-Kitab Educational Complex. We aim to serve over 1,500 families this year with your support.",
@@ -341,7 +341,7 @@ export const qurbaniData = [
     id: "14",
     year: "Qurbani 2021",
     location: "Al-Kitab Educational Complex, Rajanpur",
-    image: "img/causes/qurbani2.jpg",
+    image: "/img/qurbani/qurbani2021/3.png",
     detailHeader: "Al-Kitab Educational Complex",
     detail:
       "Our second distribution center in Gulberg area will cater to urban communities, ensuring wider reach and accessibility.",
@@ -367,7 +367,7 @@ export const qurbaniData = [
     id: "15",
     year: "Qurbani 2021",
     location: "Al-Kitab School, Bahawalpur ",
-    image: "img/causes/qurbani3.jpg",
+    image: "/img/qurbani/qurbani2021/2.png",
     detailHeader: "Al-Kitab School",
     detail:
       "Expanding our reach to rural areas through a dedicated distribution network serving multiple villages.",
@@ -393,7 +393,7 @@ export const qurbaniData = [
     id: "16",
     year: "Qurbani 2021",
     location: "Al-Kitab  School, TanduALLahYar",
-    image: "img/causes/qurbani4.jpg",
+    image: "/img/qurbani/qurbani2021/1.png",
     detailHeader: "Al-Kitab School",
     detail:
       "Successfully completed our largest Qurbani distribution to date, serving over 1,200 families in collaboration with local volunteers.",

@@ -3,28 +3,18 @@ import Link from "next/link";
 import { HelplineData } from "../../../pages/api/data";
 import styles from "../../../public/css/CentralExectiveCommittee.module.css";
 
-export default function AboutTeam() {
+export default function EducationWing() {
   const team = HelplineData.team;
-
-  const executives = team.filter((member) =>
-    ["Chairman"].includes(member.designation)
-  );
-
-  const ADMIN_SUPPORT = team.filter((member) =>
-    ["President", "Vice President"].includes(member.designation)
-  );
-
-  const hrManagement = team.filter((member) =>
-    ["Managing Trustee", "General Secretary", "Finance Secretary"].includes(
-      member.designation
-    )
+  const regionalHeads = team.filter((member) =>
+    [
+      "Reagional Heads (Sindh)",
+      "Reagional Heads (North)",
+      "Reagional Heads (South)",
+    ].includes(member.designation)
   );
 
   const renderTeamSection = (members, title) => (
     <div className={styles.teamSection}>
-      <div className={styles.sectionHeader}>
-        <h2>{title}</h2>
-      </div>
       <div className={styles.teamGrid}>
         {members.map((member) => (
           <div key={member.id} className={styles.teamCard}>
@@ -56,13 +46,19 @@ export default function AboutTeam() {
   );
 
   return (
-    <div className={styles.teamContainer}>
+    <div
+      style={{
+        background: "rgb(254 252 243)",
+        padding: "4rem 2rem",
+        textAlign: "center",
+        borderTop: "4px solid red",
+        borderBottom: "4px solid red",
+      }}
+    >
       <div className={styles.mainHeader}>
-        <h1>Central Executive Committee</h1>
+        <h1>Reagional Heads</h1>
       </div>
-      {renderTeamSection(executives, "Chairman")}
-      {renderTeamSection(ADMIN_SUPPORT, "")}
-      {renderTeamSection(hrManagement, "")}
+      {renderTeamSection(regionalHeads, "Reagional Heads")}
     </div>
   );
 }
