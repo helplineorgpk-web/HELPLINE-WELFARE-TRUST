@@ -121,10 +121,10 @@ export const HelplineData = {
   ],
   donationMethods: [
     {
-      title: "Direct Deposit",
+      title: "JAZZ CASH ",
       description:
-        "Direct deposits or transfers can be made into our accounts at any of the banks.",
-      buttonLabel: "Bank Details",
+        "Direct deposits or transfers can be made into our Jazzcash accounts at any of the banks.",
+      buttonLabel: "03009433160",
       buttonType: "bankButton",
       href: "./donation",
     },

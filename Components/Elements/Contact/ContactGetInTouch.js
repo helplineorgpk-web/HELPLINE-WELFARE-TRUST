@@ -154,11 +154,57 @@ export default function ContactGetInTouch() {
                     <i className="far fa-map-marker-alt"></i>
                   </Link>
                   <div className="contact_location_text">
-                    <span>Location</span>
+                    <span>Head Office Location</span>
                     <h5 className="contact_address_title">
                       House# 705, Sector A-1, Govt Employees Co-op Housing
                       Society (GECHS), PECO Road, Township, Lahore Pakistan
                     </h5>
+                  </div>
+                </div>
+                <div className="single_contact_location theme-6">
+                  <Link href="#" className="icon">
+                    <i className="far fa-map-marker-alt"></i>
+                  </Link>
+                  <div className="contact_location_text">
+                    <span>Education Wing Location</span>
+                    <h5 className="contact_address_title">
+                      House# 315, Sector C, Faisal Town, Lahore Pakistan
+                    </h5>
+                  </div>
+                </div>
+                <div className="single_contact_location theme-2">
+                  <Link href="tel:+92-42-3515 7374" className="icon">
+                    <i className="fal fa-phone"></i>
+                  </Link>
+                  <div className="contact_location_text">
+                    <span>Head Office Phone</span>
+                    <Link
+                      href="tel:+92-42-3515 7374"
+                      className="contact_address_title"
+                    >
+                      +92-42-3515 7374
+                    </Link>
+                    <Link
+                      href="tel:+92-42-35110164"
+                      style={{ marginLeft: "10px" }}
+                      className="contact_address_title"
+                    >
+                      +92-42-35110164
+                    </Link>
+                  </div>
+                </div>
+                <div className="single_contact_location theme-2">
+                  <Link href="tel:+92-42-3515 7374" className="icon">
+                    <i className="fal fa-phone"></i>
+                  </Link>
+                  <div className="contact_location_text">
+                    <span>Education Wing Phone</span>
+                    <Link
+                      href="tel:+92-42-3515 7374"
+                      className="contact_address_title"
+                    >
+                      042-35195200
+                    </Link>
                   </div>
                 </div>
                 <div className="single_contact_location theme-1">
@@ -172,26 +218,6 @@ export default function ContactGetInTouch() {
                       className="contact_address_title"
                     >
                       info@helpline.org.pk
-                    </Link>
-                  </div>
-                </div>
-                <div className="single_contact_location theme-2">
-                  <Link href="tel:+92-42-3515 7374" className="icon">
-                    <i className="fal fa-phone"></i>
-                  </Link>
-                  <div className="contact_location_text">
-                    <span>Phone</span>
-                    <Link
-                      href="tel:+92-42-3515 7374"
-                      className="contact_address_title"
-                    >
-                      +92-42-3515 7374
-                    </Link>
-                    <Link
-                      href="tel:+92-42-35110164"
-                      className="contact_address_title"
-                    >
-                      +92-42-35110164
                     </Link>
                   </div>
                 </div>
