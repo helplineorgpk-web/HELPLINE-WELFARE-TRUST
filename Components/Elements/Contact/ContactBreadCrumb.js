@@ -11,7 +11,7 @@ export default function ContactBreadCrumb() {
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
-            <div className="breadcrumb_section">
+            {/* <div className="breadcrumb_section">
               <ul className="breadcrumb-list volunteer_breadcrumb">
                 <li className="bhas_border">
                   <Link href="/" className="text-white">
@@ -25,7 +25,7 @@ export default function ContactBreadCrumb() {
               <div className="breadcrumb_title">
                 <h2>Get In Touch</h2>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

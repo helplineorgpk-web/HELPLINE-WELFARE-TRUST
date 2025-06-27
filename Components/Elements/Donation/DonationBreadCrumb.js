@@ -3,10 +3,23 @@ import Link from "next/link";
 
 export default function DonationBreadCrumb() {
   return (
-    //breadcrumb area start
     <section
-      className="breadcrumb_area breadcrumb_overlay"
-      style={{ background: "url(/img/bg/breadcrum_bg_2.jpg)" }}
+      className="breadcrumb_area"
+      style={{
+        backgroundImage: "url(/img/causes/donatenow.png) object-fit: cover",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        minHeight: "500px",
+        padding: "80px 0",
+        position: "relative",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        color: "#fff",
+        boxShadow: "inset 0 0 60px rgba(0,0,0,0.6)",
+      }}
     >
       <div className="container">
         <div className="row">
@@ -14,7 +27,7 @@ export default function DonationBreadCrumb() {
             <div className="breadcrumb_section">
               <ul className="breadcrumb-list volunteer_breadcrumb">
                 <li className="bhas_border">
-                  <Link href="/" className="text-white">
+                  <Link href="/" className="text-black">
                     Home
                   </Link>
                 </li>
@@ -30,6 +43,5 @@ export default function DonationBreadCrumb() {
         </div>
       </div>
     </section>
-    //breadcrumb area end
   );
 }
