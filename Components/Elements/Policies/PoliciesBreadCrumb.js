@@ -24,11 +24,11 @@ export default function DonationBreadCrumb() {
                   </Link>
                 </li>
                 <li>
-                  <span className="active">Donation</span>
+                  <span className="active">Policies</span>
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h2>Make Donation</h2>
+                <h2>Our Policies</h2>
               </div>
             </div>
           </div>

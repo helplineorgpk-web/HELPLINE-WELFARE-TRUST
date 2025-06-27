@@ -8,21 +8,16 @@ import "./../public/css/datepicker.min.css";
 import "./../public/css/magnific-popup.css";
 import "./../public/css/nice-select.css";
 import "metismenujs/style";
+import "./../public/css/policies.css";
 import "../styles/globals.css";
 import Head from "next/head";
+import { DefaultSeo } from 'next-seo';
 
-export default function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
         <meta charset="utf-8" />
-        <title>HelpLine</title>
-        <meta
-          name="description"
-          content="Non-profit Social Welfare Organization"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <link rel="manifest" href="site.webmanifest" />
         <link
           rel="shortcut icon"
@@ -30,6 +25,37 @@ export default function MyApp({ Component, pageProps }) {
           href="./img/favicon.ico"
         />
       </Head>
+      <DefaultSeo
+        title="Helpline - Transforming Lives Through Welfare"
+        description="Helpline is a leading non-profit social welfare organization dedicated to providing education, healthcare, and disaster relief to communities in need across Pakistan."
+        openGraph={{
+          type: 'website',
+          locale: 'en_PK',
+          url: 'https://helplinewelfare.org/',
+          siteName: 'Helpline Welfare',
+          images: [
+            {
+              url: 'https://helplinewelfare.org/img/logo.png',
+              width: 1200,
+              height: 630,
+              alt: 'Helpline Welfare Organization',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '@helplinewelfare',
+          site: '@helplinewelfare',
+          cardType: 'summary_large_image',
+        }}
+        additionalMetaTags={[{
+          name: 'keywords',
+          content: 'charity, welfare, education, healthcare, disaster relief, pakistan, ngo, non-profit'
+        },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1'
+        }]}
+      />
       <Component {...pageProps} />
     </>
   );
