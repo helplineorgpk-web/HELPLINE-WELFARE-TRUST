@@ -1,8 +1,25 @@
+# Allow all web crawlers
 User-agent: *
 Allow: /
 
-# Sitemaps
+# Sitemap location
 Sitemap: https://helplinewelfare.org/sitemap.xml
 
-# Crawl-delay
+# Prevent crawling of sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Optimize crawl rate
 Crawl-delay: 10
+
+# Additional rules for specific bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5

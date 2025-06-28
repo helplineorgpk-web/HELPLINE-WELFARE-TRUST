@@ -19,6 +19,7 @@
     "framer-motion": "^12.11.1",
     "metismenujs": "^1.4.0",
     "next": "^15.3.2",
+    "next-seo": "^6.8.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.2",
     "react-datepicker": "^7.6.0",

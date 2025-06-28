@@ -32,6 +32,9 @@ export default function NavMobile() {
           <li>
             <Link href="/registration">Registrations</Link>
           </li>
+          <li>
+            <Link href="/policies">Our Policies</Link>
+          </li>
         </ul>
       </li>
 

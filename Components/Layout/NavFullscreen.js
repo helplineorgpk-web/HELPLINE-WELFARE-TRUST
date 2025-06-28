@@ -30,6 +30,9 @@ export default function NavFullscreen() {
             <li>
               <Link href="/registration">Registrations</Link>
             </li>
+            <li>
+              <Link href="/policies">Our policies</Link>
+            </li>
           </ul>
         </li>
 
