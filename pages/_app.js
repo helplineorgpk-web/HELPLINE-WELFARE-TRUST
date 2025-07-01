@@ -7,56 +7,96 @@ import "./../public/css/icofont.min.css";
 import "./../public/css/datepicker.min.css";
 import "./../public/css/magnific-popup.css";
 import "./../public/css/nice-select.css";
-import "metismenujs/style";
+import "metismenujs/dist/metismenujs.css";
 import "./../public/css/policies.css";
 import "../styles/globals.css";
 import Head from "next/head";
 import { DefaultSeo } from 'next-seo';
+import { defaultSEO } from '../config/seo.config';
+import Script from 'next/script';
 
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
-        <link rel="manifest" href="site.webmanifest" />
-        <link
-          rel="shortcut icon"
-          type="image/x-icon"
-          href="./img/favicon.ico"
-        />
+        <meta charSet="utf-8" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+        <link rel="apple-touch-icon" href="/img/logo-192.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/img/logo-144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </Head>
-      <DefaultSeo
-        title="Helpline - Transforming Lives Through Welfare"
-        description="Helpline is a leading non-profit social welfare organization dedicated to providing education, healthcare, and disaster relief to communities in need across Pakistan."
-        openGraph={{
-          type: 'website',
-          locale: 'en_PK',
-          url: 'https://helplinewelfare.org/',
-          siteName: 'Helpline Welfare',
-          images: [
-            {
-              url: 'https://helplinewelfare.org/img/logo.png',
-              width: 1200,
-              height: 630,
-              alt: 'Helpline Welfare Organization',
-            },
-          ],
+
+      <DefaultSeo {...defaultSEO} />
+
+      {/* Google Tag Manager */}
+      <Script
+        id="gtm"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-XXXXXX');
+          `,
         }}
-        twitter={{
-          handle: '@helplinewelfare',
-          site: '@helplinewelfare',
-          cardType: 'summary_large_image',
-        }}
-        additionalMetaTags={[{
-          name: 'keywords',
-          content: 'charity, welfare, education, healthcare, disaster relief, pakistan, ngo, non-profit'
-        },
-        {
-          name: 'viewport',
-          content: 'width=device-width, initial-scale=1'
-        }]}
       />
+
+      {/* Schema.org Organization Data */}
+      <Script
+        id="schema-org"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "NGO",
+            "name": "Helpline Welfare Organization",
+            "url": "https://helplinewelfare.org",
+            "logo": "https://helplinewelfare.org/img/logo.png",
+            "sameAs": [
+              "https://facebook.com/helplinewelfare",
+              "https://twitter.com/helplinewelfare",
+              "https://instagram.com/helplinewelfare",
+              "https://linkedin.com/company/helplinewelfare"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+92-XXXXXXXXXX",
+              "contactType": "customer service"
+            }
+          })
+        }}
+      />
+
       <Component {...pageProps} />
+
+      {/* Structured Data for Website */}
+      <Script
+        id="website-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://helplinewelfare.org",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://helplinewelfare.org/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })
+        }}
+      />
     </>
   );
 }
