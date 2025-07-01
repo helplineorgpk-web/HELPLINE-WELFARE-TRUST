@@ -1,0 +1,74 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "NGO",
+      "@id": "https://helplinewelfare.org/#organization",
+      "name": "Helpline Welfare Organization",
+      "url": "https://helplinewelfare.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://helplinewelfare.org/img/logo.png",
+        "width": "192",
+        "height": "192"
+      },
+      "sameAs": [
+        "https://facebook.com/helplinewelfare",
+        "https://twitter.com/helplinewelfare",
+        "https://instagram.com/helplinewelfare",
+        "https://linkedin.com/company/helplinewelfare"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PK",
+        "addressRegion": "Pakistan"
+      },
+      "description": "Helpline is a leading non-profit social welfare organization dedicated to providing education, healthcare, and disaster relief to communities in need across Pakistan.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Pakistan"
+      },
+      "foundingDate": "YYYY",
+      "email": "contact@helplinewelfare.org",
+      "telephone": "+92XXXXXXXXXX"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://helplinewelfare.org/#website",
+      "url": "https://helplinewelfare.org",
+      "name": "Helpline Welfare Organization",
+      "publisher": {
+        "@id": "https://helplinewelfare.org/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://helplinewelfare.org/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": ["en", "ur"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://helplinewelfare.org/#webpage",
+      "url": "https://helplinewelfare.org",
+      "name": "Helpline - Transforming Lives Through Welfare in Pakistan",
+      "isPartOf": {
+        "@id": "https://helplinewelfare.org/#website"
+      },
+      "about": {
+        "@id": "https://helplinewelfare.org/#organization"
+      },
+      "description": "Join Helpline in our mission to provide education, healthcare, and disaster relief to communities across Pakistan. Make a difference today.",
+      "inLanguage": ["en", "ur"]
+    },
+    {
+      "@type": "DonateAction",
+      "name": "Donate to Helpline Welfare",
+      "url": "https://helplinewelfare.org/donation",
+      "description": "Support our mission by donating to our various causes including education, healthcare, and disaster relief.",
+      "recipient": {
+        "@id": "https://helplinewelfare.org/#organization"
+      }
+    }
+  ]
+}
