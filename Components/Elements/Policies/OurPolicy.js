@@ -7,12 +7,12 @@ export default function OurPolicy() {
       <div className={styles.container}>
         <div className={styles.documentWrapper}>
           <div className={styles.documentHeader}>
-            <h1 className={styles.documentTitle}>HELPLINE WELFARE TRUST (HWT) TERMS OF SERVICE</h1>
+            <h1 className={styles.documentTitle}>HELPLINE WELFARE TRUST (HLWT) TERMS OF SERVICE</h1>
           </div>
 
           <div className={styles.section}>
             <p className={styles.paragraph}>
-              Welcome to the HWT website (https://helplinewelfaretrust.org). By continuing to browse and use our website, you agree to comply with and be bound by the following terms of service, which, together with our Privacy Policy and Cookies Settings, decide HWT relationship with you about this website. Please do not use our website if you disagree with any of these terms and conditions. The term 'HWT', 'we', or 'us' refers to the owner of the website. The term 'you' refers to the user or viewer of our website.
+              Welcome to the HLWT website (https://helplinewelfaretrust.org). By continuing to browse and use our website, you agree to comply with and be bound by the following terms of service, which, together with our Privacy Policy and Cookies Settings, decide HLWT relationship with you about this website. Please do not use our website if you disagree with any of these terms and conditions. The term 'HLWT', 'we', or 'us' refers to the owner of the website. The term 'you' refers to the user or viewer of our website.
             </p>
           </div>
 
@@ -50,17 +50,17 @@ export default function OurPolicy() {
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>Prohibited Activities and Usage</h2>
-            <p className={styles.paragraph}>When using HWT services, users are expressly prohibited from engaging in unauthorized activities, including:</p>
+            <p className={styles.paragraph}>When using HLWT services, users are expressly prohibited from engaging in unauthorized activities, including:</p>
             <ul className={styles.list}>
-              <li className={styles.listItem}>Accessing any part of the services,</li>
-              <li className={styles.listItem}>Content,</li>
-              <li className={styles.listItem}>Data, or information without proper permission or after access revocation.</li>
-              <li className={styles.listItem}>Employing robots, spiders, scripts, or any automated means for data mining or scraping.</li>
-              <li className={styles.listItem}>Using the content for software development, including machine learning or artificial intelligence models.</li>
-              <li className={styles.listItem}>Employing devices to circumvent access restrictions or security features.</li>
-              <li className={styles.listItem}>Caching or archiving of content, except for legitimate public search engine purposes.</li>
+              <li className={styles.listItem}> Accessing any part of the services,</li>
+              <li className={styles.listItem}> Content,</li>
+              <li className={styles.listItem}> Data, or information without proper permission or after access revocation.</li>
+              <li className={styles.listItem}> Employing robots, spiders, scripts, or any automated means for data mining or scraping.</li>
+              <li className={styles.listItem}> Using the content for software development, including machine learning or artificial intelligence models.</li>
+              <li className={styles.listItem}> Employing devices to circumvent access restrictions or security features.</li>
+              <li className={styles.listItem}> Caching or archiving of content, except for legitimate public search engine purposes.</li>
             </ul>
-            <p className={styles.paragraph}>Users are required to adhere to these terms and conditions to ensure lawful and ethical use of the services provided by HWT.</p>
+            <p className={styles.paragraph}>Users are required to adhere to these terms and conditions to ensure lawful and ethical use of the services provided by HLWT.</p>
           </div>
 
           <div className={styles.section}>
@@ -71,10 +71,10 @@ export default function OurPolicy() {
           </div>
 
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>HWT Payment Gateway Policy</h2>
+            <h2 className={styles.sectionTitle}>HLWT Payment Gateway Policy</h2>
             <h3 className={styles.sectionTitle}>Privacy Policy</h3>
             <p className={styles.paragraph}>
-              HWT highly values the trust you place in us when you provide us your personal information and is dedicated to uphold the confidentiality of the personal information of its esteemed donors.
+              HLWT highly values the trust you place in us when you provide us your personal information and is dedicated to uphold the confidentiality of the personal information of its esteemed donors.
             </p>
             <ul className={styles.list}>
               <li className={styles.listItem}>We may collect your name, address, telephone number, or email address as well as your payment information when you contribute, through our website, either over the phone or by mailing in a check.</li>
@@ -93,14 +93,19 @@ export default function OurPolicy() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>Refund & Category Change Policy</h2>
             <p className={styles.paragraph}>
-              After donating, donors cannot request refunds if they think that the donation amount was transferred by mistake. Moreover, donation amount once transferred in any category (Islamic Microfinance, Education Services, Community development program, Families Support Program, and Health Services etc.) will not be transferable in any other category. All donation categories are fully explained and donors are free to contact us to get more info about our programs.
+              After donating, donors can request refunds if they think that the donation amount was transferred by mistake under following conditions.
+a-If the donated amount is lying unspent in HLWT account.
+b-If the refund request has been received in same financial year.
+c-Donor will have to provide personal details like Mailing Address, CNIC/ Passport Number, Telephone/ Mobile phone number, Bank Account details.
+
+Moreover, donation amount once transferred in any category (Islamic Microfinance, Education Services, Community development program, Families Support Program, and Health Services etc.) will not be transferable in any other category. All donation categories are fully explained and donors are free to contact us to get more info about our programs.
             </p>
           </div>
 
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>HWT Cookie Policy</h2>
+            <h2 className={styles.sectionTitle}>HLWT Cookie Policy</h2>
             <p className={styles.paragraph}>
-              This website uses cookies. By using this website and agreeing to this policy, you consent to HWT's use of cookies under the terms outlined below.
+              This website uses cookies. By using this website and agreeing to this policy, you consent to HLWT's use of cookies under the terms outlined below.
             </p>
             <h3 className={styles.sectionTitle}>About Cookies</h3>
             <p className={styles.paragraph}>
@@ -114,7 +119,7 @@ export default function OurPolicy() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>Trademark</h2>
             <p className={styles.paragraph}>
-              HWT uses the following cookies on this website for the following purposes:
+              HLWT uses the following cookies on this website for the following purposes:
             </p>
             <ul className={styles.list}>
               <li className={styles.listItem}>Geographical Information: To obtain geographic information on who is viewing our website.</li>
@@ -125,7 +130,7 @@ export default function OurPolicy() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>Google Cookies</h2>
             <p className={styles.paragraph}>
-              HWT uses Google Analytics to analyze the use of this website. Google Analytics generates statistical and other information about website use through cookies stored on users' browsers. The information generated is used to create reports about website usage. Google will store and use this information through its privacy policy, which is available in Google's Cookie Policy.
+              HLWT uses Google Analytics to analyze the use of this website. Google Analytics generates statistical and other information about website use through cookies stored on users' browsers. The information generated is used to create reports about website usage. Google will store and use this information through its privacy policy, which is available in Google's Cookie Policy.
             </p>
           </div>
 
@@ -139,7 +144,7 @@ export default function OurPolicy() {
           <div className={styles.contactInfo}>
             <h2 className={styles.sectionTitle}>Contact Information</h2>
             <p className={styles.paragraph}>
-              If you have any questions, queries, concerns or comments about HWT Donor's Privacy Policy and HWT's privacy and security practices, you can contact our head-office.
+              If you have any questions, queries, concerns or comments about HLWT Donor's Privacy Policy and HLWT's privacy and security practices, you can contact our head-office.
             </p>
             <p className={styles.paragraph}>
               Address: House # 705, Street # 11, GECHS, Sector A1, Township, Lahore.<br />
