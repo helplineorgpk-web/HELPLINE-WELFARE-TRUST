@@ -1,7 +1,7 @@
 export const defaultSEO = {
-  titleTemplate: '%s | Helpline Welfare Organization',
-  defaultTitle: 'Helpline - Transforming Lives Through Welfare in Pakistan',
-  description: 'Join Helpline in our mission to provide education, healthcare, and disaster relief to communities across Pakistan. Make a difference today.',
+  titleTemplate: '%s | Helpline Welfare Organization - Leading NGO in Pakistan',
+  defaultTitle: 'Helpline Welfare Organization - Transforming Lives Through Education, Healthcare & Relief',
+  description: 'Join Helpline Welfare Organization, Pakistan\'s trusted NGO providing education, healthcare, and disaster relief since 2000. Make a lasting impact on communities in need.',
   openGraph: {
     type: 'website',
     locale: 'en_PK',
@@ -12,7 +12,13 @@ export const defaultSEO = {
         url: 'https://helplinewelfare.org/img/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Helpline Welfare Organization',
+        alt: 'Helpline Welfare Organization - Transforming Lives in Pakistan',
+      },
+      {
+        url: 'https://helplinewelfare.org/img/banner.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Helpline Welfare Projects and Initiatives',
       },
     ],
   },
@@ -37,19 +43,51 @@ export const defaultSEO = {
       name: 'theme-color',
       content: '#ffffff',
     },
+    {
+      name: 'keywords',
+      content: 'NGO Pakistan, welfare organization, charity, education, healthcare, disaster relief, donate pakistan, humanitarian aid, social welfare, community development, poverty alleviation, emergency response, medical assistance, school support',
+    },
+    {
+      name: 'author',
+      content: 'Helpline Welfare Organization',
+    },
+    {
+      name: 'robots',
+      content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+    },
+    {
+      name: 'geo.region',
+      content: 'PK',
+    },
+    {
+      name: 'geo.position',
+      content: 'your-latitude;your-longitude',
+    },
+    {
+      name: 'ICBM',
+      content: 'your-latitude, your-longitude',
+    },
   ],
 };
 
 export const pageSEO = {
   home: {
-    title: 'Transforming Lives Through Welfare in Pakistan',
-    description: 'Helpline is dedicated to providing education, healthcare, and disaster relief to communities in need across Pakistan. Join us in making a difference.',
-    keywords: 'charity pakistan, welfare organization, education charity, healthcare ngo, disaster relief',
+    title: 'Helpline Welfare Organization - Leading NGO in Pakistan | Education, Healthcare & Relief',
+    description: 'Helpline Welfare Organization is Pakistan\'s trusted NGO dedicated to transforming lives through education, healthcare, and disaster relief. Join our mission to create lasting positive change.',
+    keywords: 'charity pakistan, welfare organization, education charity, healthcare ngo, disaster relief, donate to pakistan, best ngo pakistan',
+    schema: {
+      '@type': 'Organization',
+      'mainEntityOfPage': 'https://helplinewelfare.org',
+    }
   },
   about: {
-    title: 'About Our Mission & Vision',
-    description: 'Learn about Helpline\'s mission, vision, and our commitment to transforming lives through sustainable welfare initiatives in Pakistan.',
-    keywords: 'about helpline, welfare mission, ngo pakistan, charity organization',
+    title: 'About Helpline Welfare Organization | Our Mission, Vision & Impact',
+    description: 'Discover Helpline\'s journey of transforming lives in Pakistan since 2000. Learn about our mission, vision, achievements, and commitment to sustainable welfare initiatives.',
+    keywords: 'about helpline, welfare mission, ngo pakistan, charity organization, pakistan welfare organization, ngo achievements',
+    schema: {
+      '@type': 'AboutPage',
+      'mainEntityOfPage': 'https://helplinewelfare.org/about',
+    }
   },
   donation: {
     title: 'Support Our Cause - Donate Now',
