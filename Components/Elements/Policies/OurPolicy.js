@@ -19,10 +19,10 @@ export default function OurPolicy() {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>Information</h2>
             <p className={styles.paragraph}>The use of this website is subject to the following terms of use:</p>
-            <ul className={styles.list}>
-              <li className={styles.listItem}>Content Use: The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
-              <li className={styles.listItem}>External Links: From time to time, this website may include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the linked website(s). We have no responsibility for the content of the linked website(s).</li>
-            </ul>
+            <p className={styles.paragraph}>
+              1.Content Use: The content of the pages of this website is for your general information and use only. It is subject to change without notice.<br />
+              2.External Links: From time to time, this website may include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the linked website(s). We have no responsibility for the content of the linked website(s).
+            </p>
           </div>
 
           <div className={styles.section}>
@@ -41,25 +41,25 @@ export default function OurPolicy() {
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>Liability</h2>
-            <ul className={styles.list}>
-              <li className={styles.listItem}>Unauthorized Use: Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.</li>
-              <li className={styles.listItem}>No Warranties: Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness, or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors, and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</li>
-              <li className={styles.listItem}>User Responsibility: Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your responsibility to ensure that any products, services, or information available through this website meet your specific requirements.</li>
-            </ul>
+            <p className={styles.paragraph}>
+              1. Unauthorized Use: Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.<br />
+              2. No Warranties: Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness, or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors, and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.<br />
+              3. User Responsibility: Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your responsibility to ensure that any products, services, or information available through this website meet your specific requirements.
+            </p>
           </div>
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>Prohibited Activities and Usage</h2>
-            <p className={styles.paragraph}>When using HLWT services, users are expressly prohibited from engaging in unauthorized activities, including:</p>
-            <ul className={styles.list}>
-              <li className={styles.listItem}> Accessing any part of the services,</li>
-              <li className={styles.listItem}> Content,</li>
-              <li className={styles.listItem}> Data, or information without proper permission or after access revocation.</li>
-              <li className={styles.listItem}> Employing robots, spiders, scripts, or any automated means for data mining or scraping.</li>
-              <li className={styles.listItem}> Using the content for software development, including machine learning or artificial intelligence models.</li>
-              <li className={styles.listItem}> Employing devices to circumvent access restrictions or security features.</li>
-              <li className={styles.listItem}> Caching or archiving of content, except for legitimate public search engine purposes.</li>
-            </ul>
+            <p className={styles.paragraph}>
+              When using HLWT services, users are expressly prohibited from engaging in unauthorized activities, including:<br />
+              1.Accessing any part of the services,<br />
+              2.Content,<br />
+              3.Data, or information without proper permission or after access revocation.<br />
+              4.Employing robots, spiders, scripts, or any automated means for data mining or scraping.<br />
+              5.Using the content for software development, including machine learning or artificial intelligence models.<br />
+              6.Employing devices to circumvent access restrictions or security features.<br />
+              7.Caching or archiving of content, except for legitimate public search engine purposes.
+            </p>
             <p className={styles.paragraph}>Users are required to adhere to these terms and conditions to ensure lawful and ethical use of the services provided by HLWT.</p>
           </div>
 
@@ -72,15 +72,15 @@ export default function OurPolicy() {
 
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>HLWT Payment Gateway Policy</h2>
-            <h3 className={styles.sectionTitle}>Privacy Policy</h3>
+            <h3 className={styles.subSectionTitle}>Privacy Policy</h3>
             <p className={styles.paragraph}>
               HLWT highly values the trust you place in us when you provide us your personal information and is dedicated to uphold the confidentiality of the personal information of its esteemed donors.
             </p>
-            <ul className={styles.list}>
-              <li className={styles.listItem}>We may collect your name, address, telephone number, or email address as well as your payment information when you contribute, through our website, either over the phone or by mailing in a check.</li>
-              <li className={styles.listItem}>We will not trade, share, or sell a donor's personal information, collected through the website or via any other business activities, with anyone else, at all.</li>
-              <li className={styles.listItem}>We will gather the payment info, billing address, apart from some other information vital to further proceed a donation or an event registration.</li>
-            </ul>
+            <p className={styles.paragraph}>
+              1. We may collect your name, address, telephone number, or email address as well as your payment information when you contribute, through our website, either over the phone or by mailing in a check.<br />
+              2. We will not trade, share, or sell a donor's personal information, collected through the website or via any other business activities, with anyone else, at all.<br />
+              3. We will gather the payment info, billing address, apart from some other information vital to further proceed a donation or an event registration.
+            </p>
           </div>
 
           <div className={styles.section}>
@@ -94,11 +94,15 @@ export default function OurPolicy() {
             <h2 className={styles.sectionTitle}>Refund & Category Change Policy</h2>
             <p className={styles.paragraph}>
               After donating, donors can request refunds if they think that the donation amount was transferred by mistake under following conditions.
-a-If the donated amount is lying unspent in HLWT account.
-b-If the refund request has been received in same financial year.
-c-Donor will have to provide personal details like Mailing Address, CNIC/ Passport Number, Telephone/ Mobile phone number, Bank Account details.
-
-Moreover, donation amount once transferred in any category (Islamic Microfinance, Education Services, Community development program, Families Support Program, and Health Services etc.) will not be transferable in any other category. All donation categories are fully explained and donors are free to contact us to get more info about our programs.
+            </p>
+            <p className={styles.paragraph}>
+              a-If the donated amount is lying unspent in HLWT account.<br />
+              b-If the refund request has been received in same financial year.<br />
+              c-Donor will have to provide personal details like Mailing Address, CNIC/ Passport Number, Telephone/ Mobile phone number, Bank Account details.<br />
+              d-The case for return of disputed amount, if agreed by competent authority, will be forwarded to concerned bank for return to the donor through proper channel.
+            </p>
+            <p className={styles.paragraph}>
+              Moreover, donation amount once transferred in any category (Islamic Microfinance, Education Services, Community development program, Families Support Program, and Health Services etc.) will not be transferable in any other category. All donation categories are fully explained and donors are free to contact us to get more info about our programs.
             </p>
           </div>
 
@@ -107,7 +111,7 @@ Moreover, donation amount once transferred in any category (Islamic Microfinance
             <p className={styles.paragraph}>
               This website uses cookies. By using this website and agreeing to this policy, you consent to HLWT's use of cookies under the terms outlined below.
             </p>
-            <h3 className={styles.sectionTitle}>About Cookies</h3>
+            <h3 className={styles.subSectionTitle}>About Cookies</h3>
             <p className={styles.paragraph}>
               Cookies are small text files sent and stored by web browsers on your device. The information is then sent back to the server each time the browser requests a page from the server, allowing the server to identify and track web browsers.
             </p>
@@ -120,11 +124,9 @@ Moreover, donation amount once transferred in any category (Islamic Microfinance
             <h2 className={styles.sectionTitle}>Trademark</h2>
             <p className={styles.paragraph}>
               HLWT uses the following cookies on this website for the following purposes:
+              Geographical Information: To obtain geographic information on who is viewing our website.
+              Visitor Monitoring: To monitor the number of visitors and understand what content is most relevant to our audience.
             </p>
-            <ul className={styles.list}>
-              <li className={styles.listItem}>Geographical Information: To obtain geographic information on who is viewing our website.</li>
-              <li className={styles.listItem}>Visitor Monitoring: To monitor the number of visitors and understand what content is most relevant to our audience.</li>
-            </ul>
           </div>
 
           <div className={styles.section}>
