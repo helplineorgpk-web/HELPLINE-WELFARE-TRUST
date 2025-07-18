@@ -723,7 +723,7 @@ export const HelplineData = {
         "Floods hit Pakistan; Abdul Akbar, Helpline provide economical housing solutions.",
       description:
         "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-      desc: "House Constructions Project In Rajanpur",
+      desc: "House Constructions For Flood Effectives In Rajanpur",
       color: "#5fb35b",
       history: [
         {
@@ -790,7 +790,7 @@ export const HelplineData = {
       description:
         "In response, Matti ul Haq and the Helpline organization have stepped forward to provide shelter to displaced families ahead of the harsh winter season. An economical model house has been carefully designed to ensure safety and comfort for the affected. Detailed blueprints and cost estimates for these model houses are being shared with compassionate individuals who wish to contribute to this humanitarian effort.",
 
-      desc: "House Constructions Project In Rajanpur",
+      desc: "House Constructions For Flood Effectives In Rajanpur",
       color: "#f15b43",
     },
     {
@@ -806,7 +806,7 @@ export const HelplineData = {
       description:
         "In response to the devastating floods that have ravaged Pakistan, Chaudhary Amir and the Helpline organization have taken a significant step to address the urgent need for shelter among displaced families. Recognizing the widespread destruction, they have developed an economical housing solution to provide safe and affordable accommodations. This initiative features a specially designed model house that ensures both security and sustainability for those affected. Blueprints and cost estimates for these homes are being shared with donors who wish to contribute to this critical cause. By enabling families to rebuild their lives with dignity and stability, this program serves as a lifeline for countless individuals, fostering hope and resilience in the face of unprecedented challenges.",
 
-      desc: "House Constructions Project In Rajanpur",
+      desc: "House Constructions For Flood Effectives In Rajanpur",
       color: "#65cabb",
     },
     {
@@ -821,7 +821,7 @@ export const HelplineData = {
         "Floods hit Pakistan; Junaid Aftab, Helpline provide economical housing solutions.",
       description:
         "In the wake of catastrophic floods that devastated Pakistan, Junaid Aftab and the Helpline organization have launched a life-changing initiative to support affected families. With countless homes swept away and lives disrupted, they have developed economical housing solutions to provide safe, affordable shelter. This initiative includes a thoughtfully designed model house that balances security, durability, and cost-effectiveness, addressing the urgent need for shelter before the harsh winter arrives.Detailed blueprints and cost estimates for these homes are being shared with kind-hearted donors eager to contribute to rebuilding efforts. By enabling families to regain stability and rebuild their lives with dignity, this program offers hope and resilience to those grappling with the aftermath of this climate disaster.",
-      desc: "House Constructions Project In Rajanpur",
+      desc: "House Constructions For Flood Effectives In Rajanpur",
       color: "#5fb35b",
       history: [
         {
@@ -1707,7 +1707,7 @@ export const HelplineData = {
       description:
         "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
 
-      desc: "House Constructions Project In Rajanpur",
+      desc: "House Constructions For Flood Effectives In Rajanpur",
       color: "#f15b43",
     },
     {
@@ -2457,78 +2457,78 @@ export const HelplineData = {
   videoData: [
     {
       id: 1,
-      src: "https://www.youtube.com/embed/SsDAXkU1BiU?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=1",
+      videoId: "SsDAXkU1BiU",
       title: "YouTube video player 1",
     },
     {
       id: 2,
-      src: "https://www.youtube.com/embed/qIWgzMfnCYk?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=3",
+      videoId: "qIWgzMfnCYk",
       title: "YouTube video player 2",
     },
     {
       id: 3,
-      src: "https://www.youtube.com/embed/SG9EJl9oihQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=5",
+      videoId: "SG9EJl9oihQ",
       title: "YouTube video player 3",
     },
     {
       id: 4,
-      src: "https://www.youtube.com/embed/icydKjkJhXs?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=7",
+      videoId: "icydKjkJhXs",
       title: "Qurbani - Eid UL Azha Message 2019",
     },
     {
       id: 5,
-      src: "https://www.youtube.com/embed/o2bU86CxKWQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=9",
+      videoId: "o2bU86CxKWQ",
       title: "Qubani Program by Pak Helpline",
     },
     {
       id: 6,
-      src: "https://www.youtube.com/embed/e1DF3RJT1xA?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
+      videoId: "e1DF3RJT1xA",
       title: "Distribution of 500 Rations to Deserving Families of Lahore",
     },
     {
       id: 7,
-      src: "https://www.youtube.com/embed/p9N0r1P-RYQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=1",
+      videoId: "p9N0r1P-RYQ",
       title: "YouTube video player 1",
     },
     {
       id: 8,
-      src: "https://www.youtube.com/embed/5xZLbU1bYGI?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=3",
+      videoId: "5xZLbU1bYGI",
       title: "YouTube video player 2",
     },
     {
       id: 9,
-      src: "https://www.youtube.com/embed/8RAQOETPHhk?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=5",
+      videoId: "8RAQOETPHhk",
       title: "YouTube video player 3",
     },
     {
       id: 10,
-      src: "https://www.youtube.com/embed/Zed6wEaHiag?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=7",
+      videoId: "Zed6wEaHiag",
       title: "Qurbani - Eid UL Azha Message 2019",
     },
     {
       id: 11,
-      src: "https://www.youtube.com/embed/qYl8uuP5rd0?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=9",
+      videoId: "qYl8uuP5rd0",
       title: "Qubani Program by Pak Helpline",
     },
     {
       id: 12,
-      src: "https://www.youtube.com/embed/jedMB4nbdjE?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
+      videoId: "jedMB4nbdjE",
       title: "Distribution of 500 Rations to Deserving Families of Lahore",
     },
     {
       id: 13,
-      src: "https://www.youtube.com/embed/T0AQTnVL4jc?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=7",
+      videoId: "T0AQTnVL4jc",
       title: "Qurbani - Eid UL Azha Message 2019",
     },
     {
       id: 14,
-      src: "https://www.youtube.com/embed/-WjRhXXI75Y?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=9",
+      videoId: "-WjRhXXI75Y",
       title: "Qubani Program by Pak Helpline",
     },
     {
       id: 15,
-      src: "https://www.youtube.com/embed/0FArIwxbYOQ?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fhelpline.org.pk&widgetid=11",
-      title: "Distribution of 500 Rations to Deserving Families of Lahore",
+      videoId: "0FArIwxbYOQ",
+        title: "Distribution of 500 Rations to Deserving Families of Lahore",
     },
   ],
   RashanData: [
@@ -2864,11 +2864,11 @@ The 500 individuals who benefitted from this initiative are now equipped with th
   //   },
   // ],
   MasjidContent: {
-    title: "HELPLINE Masjid PROGRAM",
+    title: "HELPLINE Masjid School Program",
     supportButtonText: "SUPPORTING APPEAL",
     headerBg: "img/causes/masjidbg.jpg",
     videoSrc: "https://www.youtube.com/embed/6JoodIjZILk",
-    heading: "Helpline Masjid Program",
+    heading: "Helpline Masjid School Program",
     description: `
      By supporting Masjid Schools, Helpline is helping to provide a valuable service to communities where students can learn Islamic studies and other subjects such as Arabic and Quranic studies on the basis of Muakhaat-e-Madina. Helpline has adopted 6 Masjid schools as a means of improving educational opportunities for underprivileged children.
     `,

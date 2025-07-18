@@ -14,19 +14,17 @@ export default function Rashan() {
                 <h2 className={styles.sectiontitle}>Rashan Program</h2>
                 <div className={styles.line}></div>
                 <p>
-                  Helpline distributed every year a wide range of rashan among
-                  the needy families and individuals. From every passing year,
-                  our organization is moving ahead and trying to improve the
-                  basic needs and conditions of the poor people where about in
-                  Pakistan.
+                  As per latest survay, 45% of Pakistan's population living
+                  bellow the poverty line. The most effected segment of our
+                  society is those women and children who have extremly megar
+                  income and our unable to have basic food.Helpline has develope
+                  a comprihensive program, augmented by a strong varification
+                  process to support such Families by avoiding them basic food.
                 </p>
                 <p>
-                  The major contribution in food packages is distributing to
-                  poor families and disabled persons registered in this office.
-                  The packages include Atta, Ghee, Rice, Sugar, Daal, and tea.
-                  In other cities, a cash amount is sent according to their
-                  demand. Helpline has been distributing rashan packages since
-                  1992.
+                  Helpline, with the help of our worthy doners, has been
+                  distributing rashan packages in all the provinces of Pakistan since 1992. The packages include
+                  Atta, Ghee, Rice, Sugar, Daal, and tea. 
                 </p>
               </div>
 
@@ -44,8 +42,6 @@ export default function Rashan() {
           </div>
         </div>
       </section>
-
-  
     </div>
   );
 }

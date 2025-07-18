@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./VocationalTrainingCampaign.module.css";
 import Link from "next/link";
+import Programs from "./programs";
 
 export default function VocationalTrainingCampaign() {
   return (
@@ -14,12 +15,20 @@ export default function VocationalTrainingCampaign() {
 
       <div className={styles.descriptionContainer}>
         <p className={styles.description}>
-          Join our mission to empower individuals through skill development and vocational training.
-          Our Vocational Training Center provides quality education and hands-on experience in various
-          technical fields to help create sustainable livelihoods.
+          A skilled person is many times better equipped than an unskilled one.
+          A good vocational training center can completely transform the life of
+          a person living in financially challenged circumstances. This program
+          has been designed to uplift the poor masses and empower them to
+          overcome their hardships. Providing such training is one of the best
+          forms of support that can be offered to a destitute individual under
+          the umbrella of{" "}
+          <span style={{ fontWeight: "bold", color: "#f15b43" }}>
+            MAWAKHAT-E-MADINA
+          </span>
+          .
         </p>
       </div>
-
+      <Programs />
       <section className={styles.imageGrid}>
         <div className={styles.heroImageWrapper}>
           <Image
@@ -37,8 +46,9 @@ export default function VocationalTrainingCampaign() {
             <div className={styles.posterHeader}>
               <h2 className={styles.posterTitle}>Training Programs</h2>
               <p className={styles.posterDescription}>
-                We offer comprehensive training in various technical fields to help
-                individuals gain valuable skills for employment and entrepreneurship.
+                We offer 6 months training in various technical fields to help
+                individuals gain valuable skills for employment and
+                entrepreneurship.
               </p>
             </div>
 
@@ -48,7 +58,9 @@ export default function VocationalTrainingCampaign() {
                 Empowering individuals through skill development is the key to
                 creating sustainable livelihoods and stronger communities.
               </p>
-              <p className={styles.quoteReference}>- Vocational Training Initiative</p>
+              <p className={styles.quoteReference}>
+                - Vocational Training Initiative
+              </p>
             </div>
 
             <div className={styles.estimateBanner}>
@@ -67,7 +79,7 @@ export default function VocationalTrainingCampaign() {
               </div>
               <div className={styles.costItem}>
                 <span className={styles.costLabel}>Monthly Expense</span>
-                <span className={styles.costValue}>PKR 635,000</span>
+                <span className={styles.costValue}>PKR 1.3 million (per month)</span>
               </div>
               <div className={styles.totalCost}>
                 <span className={styles.totalLabel}>TOTAL SETUP COST</span>

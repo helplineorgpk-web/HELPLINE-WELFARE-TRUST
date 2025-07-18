@@ -9,15 +9,17 @@ export default function StudentSupport() {
       <div className={styles.backgroundOverlay}></div>
 
       <h1 className={styles.title}>
-        <span>Support</span> the Student
+        <span>Support</span> A Student
       </h1>
 
       <div className={styles.descriptionContainer}>
         <p className={styles.description}>
-          Join our mission to empower students through education. Our Support
-          the Student Campaign ensures that no student has to abandon their
-          education due to financial constraints. Together, we can build a
-          brighter future for deserving students.
+          Join Helpline to bring out of school children to school. our mission
+          is to support destitude Families empower their children through
+          education. Our Support A Student Campaign has succeeded in bringing
+          over 2000 such children Who's parents cannot afford to send their
+          children to schools. Together, we can build a brighter future for such
+          deserving students.
         </p>
         <div className={styles.arabicCalligraphy}>
           <span>طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</span>
@@ -29,7 +31,7 @@ export default function StudentSupport() {
         <div className={styles.heroImageWrapper}>
           <Image
             src="/img/Campaigns/student.png"
-            alt="Support the Student Campaign"
+            alt="Support A Student Campaign"
             width={600}
             height={600}
             className={styles.heroImage}
@@ -40,17 +42,17 @@ export default function StudentSupport() {
         <section className={styles.posterSection}>
           <div className={styles.posterContent}>
             <div className={styles.posterHeader}>
-              <h2 className={styles.posterTitle}>STUDENT SUPPORT</h2>
+              <h2 className={styles.posterTitle}>STUDENT A SUPPORT</h2>
               <h3 className={styles.posterSubtitle}>
                 - EMPOWER THROUGH EDUCATION -
               </h3>
             </div>
             <div className={styles.posterBody}>
               <p className={styles.posterDescription}>
-                Your contribution can help a student continue their education
-                and achieve their dreams. Each sponsorship package covers
-                essential educational expenses including tuition, books, and
-                supplies.
+                Your contribution can help an out of school student to seek
+                brighter future achieve their dreams. Each sponsorship package
+                covers essential educational expenses including tuition, books,
+                and supplies.
               </p>
               <div className={styles.quoteContainer}>
                 <div className={styles.quoteIcon}>❝</div>
@@ -70,19 +72,17 @@ export default function StudentSupport() {
             <div className={styles.costBreakdown}>
               <div className={styles.costItem}>
                 <span className={styles.costLabel}>CAMPAIGN GOAL</span>
-                <span className={styles.costValue}>PKR 1,000,000</span>
+                <span className={styles.costValue}>
+                  PKR 211.2 Million (per year)
+                </span>
               </div>
               <div className={styles.costItem}>
                 <span className={styles.costLabel}>RAISED SO FAR</span>
-                <span className={styles.costValue}>PKR 250,000</span>
+                <span className={styles.costValue}>PKR 27.6 Million</span>
               </div>
               <div className={styles.costItem}>
                 <span className={styles.costLabel}>BASIC PACKAGE</span>
-                <span className={styles.costValue}>PKR 5,000</span>
-              </div>
-              <div className={styles.totalCost}>
-                <span className={styles.totalLabel}>END DATE</span>
-                <span className={styles.totalValue}>30 JUNE 2025</span>
+                <span className={styles.costValue}>PKR 2200</span>
               </div>
             </div>
           </div>

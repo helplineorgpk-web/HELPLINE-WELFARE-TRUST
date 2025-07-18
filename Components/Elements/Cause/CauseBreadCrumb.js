@@ -3,10 +3,9 @@ import Link from "next/link";
 
 export default function CauseBreadCrumb() {
   return (
-    //breadcrumb area start
     <section
       className="breadcrumb_area breadcrumb_overlay"
-      style={{ background: "url(/img/bg/breadcrum_bg_2.jpg)" }}
+      style={{ background: "url(/img/bg/breadcrum_bg_2.jpg)" , backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <div className="container">
         <div className="row">
@@ -30,6 +29,5 @@ export default function CauseBreadCrumb() {
         </div>
       </div>
     </section>
-    // breadcrumb area end
   );
 }
