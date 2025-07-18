@@ -23,7 +23,7 @@ export default function SupportStudentHeader() {
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h2>Student Support Programs</h2>
+                <h2>Student A Support</h2>
               </div>
             </div>
           </div>

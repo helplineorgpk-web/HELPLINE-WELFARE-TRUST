@@ -71,19 +71,12 @@ export default function RashanCampaign() {
             <div className={styles.costBreakdown}>
               <div className={styles.costItem}>
                 <span className={styles.costLabel}>BASIC PACKAGE</span>
-                <span className={styles.costValue}>PKR 5,000</span>
+                <span className={styles.costValue}>PKR 6,000</span>
               </div>
-              <div className={styles.costItem}>
-                <span className={styles.costLabel}>STANDARD PACKAGE</span>
-                <span className={styles.costValue}>PKR 10,000</span>
-              </div>
-              <div className={styles.costItem}>
-                <span className={styles.costLabel}>PREMIUM PACKAGE</span>
-                <span className={styles.costValue}>PKR 15,000</span>
-              </div>
+
               <div className={styles.totalCost}>
                 <span className={styles.totalLabel}>MONTHLY TARGET</span>
-                <span className={styles.totalValue}>100 FAMILIES</span>
+                <span className={styles.totalValue}>100+ FAMILIES</span>
               </div>
             </div>
           </div>

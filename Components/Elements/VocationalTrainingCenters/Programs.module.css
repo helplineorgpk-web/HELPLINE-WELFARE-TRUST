@@ -1,0 +1,104 @@
+.programsContainer {
+  background-color: #f8fafc;
+  padding: 48px 24px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.programsTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.programsGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .programsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .programsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.programCard {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.programCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.programImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #d1d5db;
+  filter: brightness(0.95);
+  transition: filter 0.3s ease;
+}
+
+.programCard:hover .programImage {
+  filter: brightness(1.05);
+}
+
+.programContent {
+  padding: 24px;
+}
+
+.programTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #dc2626;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+.programDescription {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.programCost {
+  font-size: 18px;
+  font-weight: 600;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.costLabel {
+  color: #059669;
+}
+
+.costValue {
+  color: #111827;
+}
+
+/* Optional hover effect for cost */
+.programCard:hover .programCost {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}

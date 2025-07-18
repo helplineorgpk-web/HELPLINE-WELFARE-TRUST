@@ -28,7 +28,9 @@ export default function OurIntro() {
   return (
     <>
       <section className={styles.introSection}>
-        <h2 style={{textAlign: "center", marginBottom: "80px"}}>Welcome to Helpline</h2>
+        <h2 style={{ textAlign: "center", marginBottom: "80px" }}>
+          Welcome to Helpline
+        </h2>
         <div className={styles.container}>
           <div className={styles.content}>
             <div className={styles.header}>

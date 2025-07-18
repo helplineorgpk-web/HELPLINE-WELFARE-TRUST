@@ -71,7 +71,7 @@ const campaignsData = [
   },
   {
     id: "support-the-student",
-    title: "Support the Student",
+    title: "Support A Student",
     href: "/student-support",
     description:
       "Sponsor students' education, ensuring they don't drop out due to financial constraints.",
