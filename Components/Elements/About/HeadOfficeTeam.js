@@ -25,12 +25,8 @@ export default function HeadOfficeTeam() {
     ].includes(member.designation)
   );
 
-  const financeTeam = team.filter((member) =>
-    ["Senior Manager Accounts", "Manager Accounts"].includes(member.designation)
-  );
-
   const mediaTeam = team.filter((member) =>
-    ["Manager Media", "Media Executive"].includes(member.designation)
+    ["Software Developer","Manager Media", "Media Executive"].includes(member.designation)
   );
 
   const renderTeamSection = (members, title) => (
@@ -40,7 +36,6 @@ export default function HeadOfficeTeam() {
           <div key={member.id} className={styles.teamCard}>
             <div className={styles.imageContainer}>
               <img src={member.image} alt={member.name} />
-              <div className={styles.cardOverlay}></div>
             </div>
             <div className={styles.cardContent}>
               <h3>{member.name}</h3>

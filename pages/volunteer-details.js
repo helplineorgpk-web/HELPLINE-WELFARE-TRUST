@@ -26,11 +26,7 @@ export default function VolunteerDetails() {
   return (
     <Layout2>
       <VolunteerDetailsArea />
-      <VolunteerDetailsTeam
-        name={volunteer.name}
-        designation={volunteer.designation}
-        image={volunteer.image}
-      />
+      <VolunteerDetailsTeam member={volunteer} />
     </Layout2>
   );
 }

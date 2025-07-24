@@ -30,7 +30,6 @@ export default function AboutTeam() {
           <div key={member.id} className={styles.teamCard}>
             <div className={styles.imageContainer}>
               <img src={member.image} alt={member.name} />
-              <div className={styles.cardOverlay}></div>
             </div>
             <div className={styles.cardContent}>
               <h3>{member.name}</h3>
@@ -58,7 +57,7 @@ export default function AboutTeam() {
   return (
     <div className={styles.teamContainer}>
       <div className={styles.mainHeader}>
-        <h1>Central Executive Committee</h1>
+        <h1>BOARD OF TRUSTEE</h1>
       </div>
       {renderTeamSection(executives, "Chairman")}
       {renderTeamSection(ADMIN_SUPPORT, "")}

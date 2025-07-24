@@ -1766,28 +1766,43 @@ export const HelplineData = {
       color: "#f15b43",
     },
   ],
+
   team: [
     {
       id: 0,
       designation: "Managing Trustee",
       name: "Muhammad Iqbal Khan",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/MUHAMMADIQBALKHAN.jpg",
+      description:
+        "As Managing Trustee at Helpline NGO, Muhammad Iqbal Khan brings extensive experience in humanitarian work and organizational leadership. His dedication to serving the community has been instrumental in driving our mission forward.",
+      email: "info@iy.com.pk",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Faisal Town, Lahore",
+      detailedDescription:
+        "Muhammad Iqbal Khan has been serving as the Managing Trustee of Helpline NGO, where he oversees the organization's strategic initiatives and day-to-day operations. Under his leadership, the organization has expanded its reach and impact across multiple regions. His vision for community development and social welfare has helped establish numerous successful programs in education, healthcare, and disaster relief.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
     {
       id: 1,
       designation: "GM (Admin & HR)",
-      name: "Colonel  Muhammad Ali (Retd)",
-      image: "/img/team/iconimage.png",
+      name: "Colonel Muhammad Ali (Retd)",
+      image: "/img/organization/Ali.jpg",
+      description:
+        "Colonel Muhammad Ali (Retd) serves as the General Manager of Administration and Human Resources at Helpline NGO. With his military background and extensive management experience, he ensures efficient operations and effective human resource management.",
+      email: "muhammad.ali@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Lahore",
+      detailedDescription:
+        "Colonel Muhammad Ali brings a wealth of experience from his distinguished military career to his role as GM (Admin & HR). His expertise in organizational management and leadership has been crucial in streamlining our administrative processes and developing our human resources capabilities. He has implemented several successful initiatives to improve operational efficiency and staff development.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1795,11 +1810,18 @@ export const HelplineData = {
       id: 2,
       designation: "GM (Education)",
       name: "Mr Mudasir Ahmad",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/gmeducation.png",
+      description:
+        "Mr Mudasir Ahmad leads our education initiatives as the General Manager of Education. His expertise in educational management and curriculum development has been vital in expanding our educational programs.",
+      email: "mudasir.ahmad@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Education Department, Lahore",
+      detailedDescription:
+        "As GM (Education), Mr Mudasir Ahmad has been instrumental in developing and implementing educational programs that have benefited thousands of students. His focus on quality education and innovative teaching methods has helped raise the standards of education in our schools and educational centers.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1807,11 +1829,18 @@ export const HelplineData = {
       id: 3,
       designation: "Senior Manager Accounts",
       name: "Mr Hamid Hassan khan",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/hamid.jpg",
+      description:
+        "Mr Hamid Hassan Khan serves as the Senior Manager Accounts, overseeing all financial operations and ensuring fiscal transparency for Helpline NGO.",
+      email: "hamid.khan@helpline.org",
+      workingArea: "Karachi, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Lahore",
+      detailedDescription:
+        "Mr. Hamid Hassan Khan is responsible for managing the financial health of Helpline NGO. His expertise in accounting and financial management ensures that all funds are utilized efficiently and transparently to maximize our impact on the community. He plays a vital role in budgeting, financial reporting, and compliance.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1819,11 +1848,18 @@ export const HelplineData = {
       id: 4,
       designation: "Manager Admin & Support",
       name: "Mr Sarfraz Ahmad Bhullar",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/sarfraz.jpg",
+      description:
+        "Mr Sarfraz Ahmad Bhullar manages administrative functions and provides essential support to ensure the smooth operation of Helpline NGO.",
+      email: "sarfraz.bhullar@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Lahore",
+      detailedDescription:
+        "Mr. Sarfraz Ahmad Bhullar is key to maintaining efficient administrative operations. His role involves managing office logistics, coordinating support services, and ensuring that all departments have the resources they need to function effectively. He is dedicated to creating a supportive and organized work environment.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1831,11 +1867,18 @@ export const HelplineData = {
       id: 5,
       designation: "Manager Media/ Coord ",
       name: "Mr Hafiz Bilal Nurani",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/bilalnurani.jpg",
+      description:
+        "Mr Hafiz Bilal Nurani oversees media relations and coordination, ensuring effective communication of Helpline NGO's mission and activities.",
+      email: "bilal.nurani@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Media Department, Lahore",
+      detailedDescription:
+        "Mr. Hafiz Bilal Nurani is responsible for managing Helpline NGO's public image and communication strategies. He coordinates media outreach, creates compelling content, and ensures that our message reaches a broad audience, fostering greater awareness and support for our initiatives.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1843,35 +1886,64 @@ export const HelplineData = {
       id: 6,
       designation: "Manager Welfare & Health",
       name: "Mr Atif Hussain",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/ATIF.jpg",
+      description:
+        "Mr Atif Hussain is the Manager of Welfare & Health, dedicated to developing and implementing programs that improve community well-being and access to healthcare.",
+      email: "atif.hussain@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Health Department, Lahore",
+      detailedDescription:
+        "Mr. Atif Hussain leads our efforts in welfare and health, focusing on initiatives that provide essential health services and promote overall community well-being. He is instrumental in organizing health camps, medical aid programs, and awareness campaigns to address critical health needs.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
     {
       id: 7,
-      designation: "Manager Media",
-      name: "Mr Abid Ali Abid",
-      image: "/img/team/iconimage.png",
+      designation: "Software Developer",
+      name: "Syed Mudasir Bukhari",
+      image: "/img/organization/mudasirdp.JPG",
+      description:
+        "Syed Mudasir Bukhari is a Software Developer at Helpline NGO, contributing to the development and maintenance of internal systems and digital platforms that support the organization’s operations.",
+      email: "smudasir256@gmail.com",
+      workingArea: "PIESTACK Dha Phase 5, Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Green Cap Housing Society Lahore, Pakistan",
+      detailedDescription:
+        "As a Software Developer at Helpline NGO, I’m dedicated to creating reliable and efficient digital solutions that support our mission. I focus on building tools that make our internal processes smoother, our data more secure, and our outreach more effective. Whether it's developing intuitive user interfaces or maintaining robust backend systems, I aim to use technology to make a real impact on the communities we serve.",
       socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
-        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+        {
+          platform: "facebook",
+          icon: "fab fa-facebook-f",
+          url: "https://www.facebook.com/syed.mudasir.shah.911658/",
+        },
+        {
+          platform: "youtube",
+          icon: "fab fa-youtube",
+          url: "https://www.youtube.com/@Syedmudasirbukharivlogs",
+        },
       ],
     },
+
     {
       id: 8,
       designation: "Junior Manager Accounts",
       name: "Mr Faisal Mushtaq",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/faisal.jpg",
+      description:
+        "Mr Faisal Mushtaq assists in managing the accounts and financial records of Helpline NGO, ensuring accuracy and compliance.",
+      email: "faisal.mushtaq@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Lahore",
+      detailedDescription:
+        "Mr. Faisal Mushtaq supports the senior accounts team in day-to-day financial operations. His responsibilities include data entry, reconciliation, and preparing financial reports, contributing to the overall financial integrity of the organization.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1879,11 +1951,18 @@ export const HelplineData = {
       id: 9,
       designation: "Manager Media",
       name: "Hafiz Bilal Arshad",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/bilalnurani.jpg",
+      description:
+        "Hafiz Bilal Arshad is a Manager Media, responsible for crafting and disseminating the organization's message to the public and stakeholders.",
+      email: "bilal.arshad@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Media Department, Lahore",
+      detailedDescription:
+        "Hafiz Bilal Arshad focuses on media engagement and public relations. He develops communication strategies, manages press releases, and coordinates with media outlets to highlight Helpline NGO's impactful work and raise public awareness.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1891,11 +1970,18 @@ export const HelplineData = {
       id: 12,
       designation: "Senior Manager Purchases",
       name: "Mr Mehmood Ali joiya",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/mehmoodjoya.jpg",
+      description:
+        "Mr Mehmood Ali Joiya is the Senior Manager Purchases, overseeing procurement processes to ensure efficient and cost-effective acquisition of resources for Helpline NGO.",
+      email: "mehmood.joiya@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Lahore",
+      detailedDescription:
+        "Mr. Mehmood Ali Joiya leads the purchasing department, responsible for all procurement activities. He ensures that all goods and services are acquired in a timely and efficient manner, adhering to budget constraints and quality standards, which is crucial for the smooth operation of our various programs.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1903,23 +1989,37 @@ export const HelplineData = {
       id: 13,
       designation: "Manager Transport",
       name: "Rashid Nisar",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/rashid.jpg",
+      description:
+        "Rashid Nisar serves as the Manager Transport, overseeing the logistics and transportation needs of Helpline NGO's operations.",
+      email: "rashid.nisar@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Logistics Department, Lahore",
+      detailedDescription:
+        "Rashid Nisar ensures that all transportation for Helpline NGO's various projects and staff is managed effectively. His responsibilities include fleet management, route planning, and ensuring the timely delivery of aid and resources, which is vital for our field operations.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
     {
       id: 15,
       designation: "Media Executive",
-      name: "Ms Arj Zahara",
-      image: "/img/team/iconimage.png",
+      name: "Usama Mansoor",
+      image: "/img/organization/usama.jpg",
+      description:
+        "Usama Mansoor is a Media Executive, supporting the media team in creating engaging content and managing communication channels for Helpline NGO.",
+      email: "arj.zahara@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Media Department, Lahore",
+      detailedDescription:
+        "Usama Mansoor contributes to the daily operations of the media department, assisting with content creation, social media management, and public relations activities. Her efforts help amplify Helpline NGO's voice and reach a broader audience.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1927,11 +2027,25 @@ export const HelplineData = {
       id: 16,
       designation: "Chairman",
       name: "Muhammad Aslam Khan Kakarh (Engr)",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/MASLAMKHANKAKKAR.jpg",
+      description:
+        "As Chairman of Helpline NGO, Engineer Muhammad Aslam Khan Kakarh provides strategic leadership and vision to our organization. His engineering background and humanitarian commitment drive our innovative approach to community service.",
+      email: "Principal@sheltersasseociates.com",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Lahore",
+      detailedDescription: `
+Dear Friends,  
+At Helpline Welfare Trust we believe in a world where every child has the right to education, every woman the opportunity to thrive, and every family access to healthcare. This year, with your support, we’ve taken meaningful strides toward this vision—enrolling underprivileged children in schools, empowering women through vocational training, and providing medical care to marginalized communities.  
+Education ignites potential, skills build independence, and healthcare restores dignity. Every life transformed is a testament to the power of collective action. Yet, the journey continues. With your partnership, we can reach more lives, break more barriers, and create lasting change.  
+Thank you for standing with us. Together, let’s build a future where no one is left behind.  `,
       socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        {
+          platform: "facebook",
+          icon: "fab fa-facebook-f",
+          url: "https://www.facebook.com/sheltersasseociates",
+        },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1939,11 +2053,19 @@ export const HelplineData = {
       id: 17,
       designation: "President",
       name: "Khalil Ahmad Malik",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/KHALILAHMADMALIK.jpg",
+      description:
+        "Khalil Ahmad Malik serves as the President of Helpline NGO, bringing years of experience in organizational leadership and community development. His strategic vision and dedication have been crucial to our growth and impact.",
+      email: "malikpapermart47@gmail.com",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Main Urdu bazaar, Lahore",
+      detailedDescription: `Dear Changemakers,  
+Every child’s education, every woman’s economic independence, and every family’s healthcare access fuels my passion at Helpline Welfare Trust. This year, we’ve turned challenges into opportunities—through classrooms built, skills mastered, and lives healed.  
+Your belief in our mission empowers marginalized communities to thrive with dignity. Together, we’re not just offering aid, but restoring hope and rewriting futures. The journey continues, and your support remains our strongest pillar. `,
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1951,11 +2073,19 @@ export const HelplineData = {
       id: 18,
       designation: "Vice President",
       name: "Ms Lubna Yaqoob Tahir",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/lubna.png",
+      description:
+        "Ms Lubna Yaqoob Tahir serves as the Vice President of Helpline NGO, bringing valuable expertise in program management and community engagement. Her focus on women's empowerment and education has strengthened our initiatives in these crucial areas.",
+      email: "lubnayaqoob60@gmail.com",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Lahore",
+      detailedDescription: `Dear Friends,  
+                           At Helpline Welfare Trust, we believe in empowering lives through education, skills, and healthcare. This year, we’ve supported destitute children’s education, enabled women with vocational training, and provided healthcare to underserved communities. Every skill learned, every child educated, and every life healed strengthens our collective future.  
+                            Your support fuels this transformation. Together, we’re not just changing lives—we’re building a more equitable world where dignity and opportunity thrive.  `,
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1963,23 +2093,39 @@ export const HelplineData = {
       id: 19,
       designation: "General Secretary",
       name: "Ikhlaq ur Rehman",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/MIANAKHLAQURREHMAN.jpg",
+      description:
+        "Ikhlaq ur Rehman serves as the General Secretary, responsible for the overall administration and coordination of Helpline NGO's activities and records.",
+      email: "helpline.org.pk@gmail.com",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline Welfare Trust Head Office, Lahore",
+      detailedDescription: `With a heart full of gratitude and humility, I extend my deepest thanks to each of you for your unwavering support and generosity. Your kindness has been the driving force behind our Welfare Trust’s mission to uplift the most vulnerable members of society—destitute children, marginalized families, and underserved women—guiding them toward a life of dignity, purpose, and faith. We strongly believe that the system based on the concept of MAWAKHAT-E-MADINA, which guide each memeber of nation to contriubute his/her and ensure basic right to every deserving member of the nation
+       is the only WAY FORWAR to again stand tall among the nations of the world. Our Trust is committed to providing free modern and religious education, ensuring that underprivileged children receive not only academic knowledge but also moral and spiritual grounding. We believe that true education shapes character, instilling values of compassion, integrity, and service to humanity. So, we work tirelessly to promote social harmony, bridging divides and uniting people under the universal message of TAWHEED and MAWAKHAT-E-MADINA. Recognizing that sustainable change requires holistic empowerment, we have launched initiatives for skill development, vocational training, and micro-finance support for women and struggling families, enabling them to become self-reliant and respected members of society.  
+Your contributions are not just donations—they are investments in a brighter, more equitable future. Together, we are sowing seeds of hope, justice, and unity. Let us continue this sacred mission with renewed dedication.  
+May the Almighty bless you abundantly for your kindness.  `,
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
     {
       id: 20,
       designation: "Finance Secretary",
-      name: "No Name",
-      image: "/img/team/iconimage.png",
+      name: "Malik Mumtaz Awan",
+      image: "/img/organization/MALIKMUMTAZAWAN.jpg",
+      description:
+        "Malik Mumtaz Awan is the Finance Secretary, managing all financial affairs and ensuring accountability and proper utilization of funds for Helpline NGO.",
+      email: "mumtaz.awan@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Valencia Town, Lahore",
+      detailedDescription:
+        "As Finance Secretary, Malik Mumtaz Awan is central to the financial governance of Helpline NGO. He oversees budgeting, financial reporting, and compliance with financial regulations, ensuring transparency and responsible management of resources to support our humanitarian efforts.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1987,11 +2133,18 @@ export const HelplineData = {
       id: 21,
       designation: "Administrator KMC",
       name: "COL Zahoor Hussain (Retd)",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/zahoor.jpg",
+      description:
+        "Colonel Zahoor Hussain (Retd) serves as the Administrator for KMC (Karachi Metropolitan Corporation) initiatives at Helpline NGO, leveraging his experience for local governance and development projects.",
+      email: "zahoor.hussain@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO KMC Office, Lahore",
+      detailedDescription:
+        "Colonel Zahoor Hussain (Retd) utilizes his extensive administrative background to manage projects in collaboration with KMC. His role is vital in streamlining urban development and community welfare initiatives within Karachi, ensuring effective execution and positive impact.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -1999,11 +2152,18 @@ export const HelplineData = {
       id: 22,
       designation: "Education Advisor",
       name: "Aijaz Hussain Kazi (Former Secretary)",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/ajazqazi.jpg",
+      description:
+        "Aijaz Hussain Kazi, a former Secretary, acts as an Education Advisor, providing expert guidance for Helpline NGO's educational strategies and programs.",
+      email: "aijaz.kazi@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Education Department, Lahore",
+      detailedDescription:
+        "With his background as a former Secretary, Aijaz Hussain Kazi offers invaluable insights into educational policy and implementation. He advises on curriculum development, teacher training, and strategies to improve educational access and quality across Helpline NGO's initiatives.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2012,10 +2172,17 @@ export const HelplineData = {
       designation: "Marketing Consultant",
       name: "Brigadier Zaheer Ahmad (Retd)",
       image: "/img/team/iconimage.png",
+      description:
+        "Brigadier Zaheer Ahmad (Retd) serves as a Marketing Consultant, providing strategic advice on promoting Helpline NGO's mission and fundraising efforts.",
+      email: "zaheer.ahmad@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Karachi",
+      detailedDescription:
+        "Brigadier Zaheer Ahmad (Retd) brings his strategic planning expertise to enhance Helpline NGO's marketing and outreach. He advises on public relations campaigns, donor engagement, and effective communication strategies to broaden our support base and increase awareness of our work.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2023,11 +2190,18 @@ export const HelplineData = {
       id: 24,
       designation: "Tech Consultant",
       name: "Colonel Waqar Ahmad (Retd)",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/waqar.jpg",
+      description:
+        "Colonel Waqar Ahmad (Retd) is our Tech Consultant, offering expert advice on technological solutions to enhance Helpline NGO's operations and digital presence.",
+      email: "waqar.ahmad@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Karachi",
+      detailedDescription:
+        "Colonel Waqar Ahmad (Retd) provides strategic guidance on integrating technology into Helpline NGO's work. His expertise covers areas from data management and IT infrastructure to digital communication tools, ensuring that the organization leverages modern technology for greater efficiency and impact.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2035,59 +2209,94 @@ export const HelplineData = {
       id: 25,
       designation: "Media Consultant",
       name: "Amir Hashim Khakwani",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/KHAKWANI.jpg",
+      description:
+        "Amir Hashim Khakwani serves as a Media Consultant, advising Helpline NGO on effective media strategies and public communication.",
+      email: "amir.khakwani@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Media Department, Lahore",
+      detailedDescription:
+        "Amir Hashim Khakwani's role as Media Consultant involves providing expert advice on media relations, content development, and public outreach. He helps shape the narrative around Helpline NGO's work, ensuring consistent and impactful communication across various media platforms.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
     {
       id: 26,
-      designation: "Reagional Heads (Sindh)",
+      designation: "Regional Head (Sindh)",
       name: "Khushnood Ahmad Khan",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/khushnod.jpg",
+      description:
+        "Khushnood Ahmad Khan is the Regional Head for Sindh, overseeing Helpline NGO's operations and initiatives within the Sindh province.",
+      email: "khushnood.khan@helpline.org",
+      workingArea: "Sindh, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Regional Office, Sindh",
+      detailedDescription:
+        "As Regional Head, Khushnood Ahmad Khan is responsible for the strategic planning and execution of all Helpline NGO programs in Sindh. He works closely with local communities and stakeholders to identify needs and implement effective solutions, ensuring our efforts are responsive to regional contexts.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
     {
       id: 27,
-      designation: "Reagional Heads (South)",
+      designation: "Regional Head (South)",
       name: "Brigadier Moeen ud Din Ghazalli (Retd)",
       image: "/img/team/iconimage.png",
+      description:
+        "Brigadier Moeen ud Din Ghazalli (Retd) serves as the Regional Head for the Southern regions, leading and coordinating Helpline NGO's activities in those areas.",
+      email: "moeen.ghazalli@helpline.org",
+      workingArea: "Southern Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Regional Office, Southern Pakistan",
+      detailedDescription:
+        "Brigadier Moeen ud Din Ghazalli (Retd) brings his leadership and organizational skills to manage Helpline NGO's operations in the southern regions. He focuses on developing and overseeing projects that address specific humanitarian needs in these diverse communities.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
     {
       id: 28,
-      designation: "Reagional Heads (North)",
+      designation: "Regional Head (North)",
       name: "Ms Nuzhat Fatima (Former Secretary)",
       image: "/img/team/iconimage.png",
+      description:
+        "Ms Nuzhat Fatima, a former Secretary, is the Regional Head for the Northern regions, guiding Helpline NGO's initiatives and partnerships in Northern Pakistan.",
+      email: "nuzhat.fatima@helpline.org",
+      workingArea: "Northern Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Regional Office, Northern Pakistan",
+      detailedDescription:
+        "Ms. Nuzhat Fatima applies her extensive administrative experience to oversee Helpline NGO's projects in the northern parts of Pakistan. She focuses on strategic development, community engagement, and ensuring the effective delivery of aid and support to communities in these areas.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
     {
       id: 29,
-      designation: "Dir Quran Academy",
+      designation: "Director Quran Academy",
       name: "Akhlas Ahmad",
       image: "/img/team/iconimage.png",
+      description:
+        "Akhlas Ahmad is the Director of Quran Academy, leading educational programs focused on religious studies and Quranic education.",
+      email: "akhlas.ahmad@helpline.org",
+      workingArea: "Karachi, Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Quran Academy, Karachi",
+      detailedDescription:
+        "As Director of the Quran Academy, Akhlas Ahmad is dedicated to promoting religious education and moral values. He develops and supervises programs that provide access to quality Quranic studies, contributing to community spiritual development.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2096,10 +2305,17 @@ export const HelplineData = {
       designation: "Chairperson",
       name: "Ms Lubna Yaqoob Tahir",
       image: "/img/team/iconimage.png",
+      description:
+        "Ms Lubna Yaqoob Tahir serves as the Chairperson, providing leadership and strategic direction for key organizational committees and initiatives.",
+      email: "chairperson@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Head Office, Karachi",
+      detailedDescription:
+        "Ms. Lubna Yaqoob Tahir, also serving as Vice President, takes on the role of Chairperson for specific internal committees and special projects. Her leadership in this capacity helps drive particular initiatives, often focusing on women's empowerment and educational programs.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2107,11 +2323,18 @@ export const HelplineData = {
       id: 31,
       designation: "Friend/Reformer",
       name: "Muhammad Arif Mehr",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/arifmehar.jpg",
+      description:
+        "Muhammad Arif Mehr is a Friend/Reformer, contributing to Helpline NGO's mission through his dedication and advocacy for social change.",
+      email: "arif.mehr@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Associate, Pakistan",
+      detailedDescription:
+        "Muhammad Arif Mehr supports Helpline NGO's objectives by promoting its values and advocating for its causes within his network and community. His commitment helps expand our reach and impact, encouraging broader participation in humanitarian efforts.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2120,10 +2343,17 @@ export const HelplineData = {
       designation: "Friend/Reformer",
       name: "Brig Zahid Hussain Goryaya (Retd)",
       image: "/img/team/iconimage.png",
+      description:
+        "Brigadier Zahid Hussain Goryaya (Retd) is a Friend/Reformer, lending his experience and support to various initiatives of Helpline NGO.",
+      email: "zahid.goryaya@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Associate, Pakistan",
+      detailedDescription:
+        "Brigadier Zahid Hussain Goryaya (Retd) contributes to Helpline NGO through his advisory role and participation in reform-oriented projects. His valuable insights help in streamlining processes and enhancing the effectiveness of our humanitarian programs.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2131,11 +2361,18 @@ export const HelplineData = {
       id: 33,
       designation: "Friend/Reformer",
       name: "Colonel Zubair Ahmad Chughtai (Retd)",
-      image: "/img/team/iconimage.png",
+      image: "/img/organization/zubair.jpg",
+      description:
+        "Colonel Zubair Ahmad Chughtai (Retd) acts as a Friend/Reformer, providing valuable input and support for Helpline NGO's various community development projects.",
+      email: "zubair.chughtai@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Associate, Pakistan",
+      detailedDescription:
+        "Colonel Zubair Ahmad Chughtai (Retd) supports Helpline NGO by bringing his experience to bear on initiatives aimed at community improvement and reform. His dedication helps ensure that our projects are well-planned and effectively executed for maximum benefit.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2144,10 +2381,17 @@ export const HelplineData = {
       designation: "Friend/Reformer",
       name: "Sqn Ldr Muhammad Naeem Ahmad Khan (Retd)",
       image: "/img/team/iconimage.png",
+      description:
+        "Squadron Leader Muhammad Naeem Ahmad Khan (Retd) is a Friend/Reformer, contributing his insights and efforts to Helpline NGO's reformative and developmental initiatives.",
+      email: "naeem.khan@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Associate, Pakistan",
+      detailedDescription:
+        "Squadron Leader Muhammad Naeem Ahmad Khan (Retd) is an active supporter of Helpline NGO, participating in efforts to bring positive change and improve community welfare. His contributions are vital in fostering innovation and effectiveness within our programs.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2156,10 +2400,17 @@ export const HelplineData = {
       designation: "Friend/Reformer",
       name: "Professor Ahmad Sohaib (Retd)",
       image: "/img/team/iconimage.png",
+      description:
+        "Professor Ahmad Sohaib (Retd) is a Friend/Reformer, lending his academic and intellectual expertise to guide Helpline NGO's initiatives for social reform and community betterment.",
+      email: "ahmad.sohaib@helpline.org",
+      workingArea: "Pakistan",
+      nationality: "Pakistani",
+      address: "Helpline NGO Associate, Pakistan",
+      detailedDescription:
+        "Professor Ahmad Sohaib (Retd) provides strategic counsel to Helpline NGO, particularly in areas requiring academic rigor and intellectual insight. His guidance helps in developing evidence-based programs and fostering long-term, sustainable reforms in the communities we serve.",
       socialLinks: [
         { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
         { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "behance", icon: "fab fa-behance", url: "#" },
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
@@ -2528,7 +2779,7 @@ export const HelplineData = {
     {
       id: 15,
       videoId: "0FArIwxbYOQ",
-        title: "Distribution of 500 Rations to Deserving Families of Lahore",
+      title: "Distribution of 500 Rations to Deserving Families of Lahore",
     },
   ],
   RashanData: [

@@ -24,7 +24,6 @@ export default function EducationWing() {
           <div key={member.id} className={styles.teamCard}>
             <div className={styles.imageContainer}>
               <img src={member.image} alt={member.name} />
-              <div className={styles.cardOverlay}></div>
             </div>
             <div className={styles.cardContent}>
               <h3>{member.name}</h3>
