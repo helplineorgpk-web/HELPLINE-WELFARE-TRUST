@@ -11,9 +11,11 @@ export default function Header1({ toggleTrueFalseInfo }) {
       className="header-area header-transparent"
       style={{
         background: "white",
+        paddingTop: "10px",
+        paddingBottom: "10px",
       }}
     >
-      <div className="header_top_area d-none d-lg-block">
+      {/* <div className="header_top_area d-none d-lg-block">
         <div className="container">
           <div className="row align-items-center">
             <div className="top_mailing">
@@ -31,7 +33,7 @@ export default function Header1({ toggleTrueFalseInfo }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div id="sticky-header" className="header_menu_area res_padd">
         <div className="container">
           <div className="row align-items-center">
@@ -68,7 +70,7 @@ export default function Header1({ toggleTrueFalseInfo }) {
           </div>
         </div>
       </div>
-      <div className={`${styles.header_top_area} d-none d-lg-block`}>
+      {/* <div className={`${styles.header_top_area} d-none d-lg-block`}>
         <div className="container">
           <div className="row align-items-center">
             <div>
@@ -84,7 +86,7 @@ export default function Header1({ toggleTrueFalseInfo }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </header>
   );
 }

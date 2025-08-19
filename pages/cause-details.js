@@ -30,10 +30,24 @@ export default function CauseDetails() {
         detail={cause.description}
         img1={cause.img1}
         img2={cause.img2}
+        img3={cause.img3}
+        img4={cause.img4}
+        img5={cause.img5}
+        img6={cause.img6}
+        img7={cause.img7}
+        img8={cause.img8}
         actualName={cause.ActualName}
         detail2={cause.detail2}
         detail3={cause.detail3}
-        history={cause.history}
+        historyTitle={cause.historyTitle}
+        upgradeTitle={cause.UpgradeTitle}
+        futureTitle={cause.FutureTitle}
+        detail4={cause.detail4}
+        link={cause.link}
+        link1={cause.link1}
+        link2={cause.link2}
+        link3={cause.link3}
+
       />
     </Layout2>
   );

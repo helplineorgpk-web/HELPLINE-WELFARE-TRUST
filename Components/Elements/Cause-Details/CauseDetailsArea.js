@@ -11,7 +11,20 @@ export default function CauseDetailsArea({
   actualName,
   detail2,
   detail3,
-  history,
+  historyTitle,
+  upgradeTitle,
+  futureTitle,
+  detail4,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  link,
+  link1,
+  link2,
+  link3,
 }) {
   return (
     <div className="cause_details_area pt-120 pb-80">
@@ -31,28 +44,278 @@ export default function CauseDetailsArea({
                   </div>
                   <h4 className="details_title">{actualName || title}</h4>
                   <p>{detail}</p>
+                  <div style={{ textAlign: "center", margin: "2rem 0" }}>
+                    {link && (
+                      <Link
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          padding: "12px 24px",
+                          backgroundColor: "#EB2525",
+                          color: "white",
+                          borderRadius: "6px",
+                          textDecoration: "none",
+                          fontWeight: 500,
+                          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+                          transition: "background-color 0.2s",
+                        }}
+                        onMouseOver={(e) =>
+                          (e.currentTarget.style.backgroundColor = "#D81D1D")
+                        }
+                        onMouseOut={(e) =>
+                          (e.currentTarget.style.backgroundColor = "#EB2525")
+                        }
+                      >
+                        <svg
+                          style={{
+                            width: "20px",
+                            height: "20px",
+                            marginRight: "8px",
+                          }}
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        Watch Video
+                      </Link>
+                    )}
+                  </div>
+                  {img1 && (
+                    <div className="row mb-45">
+                      <div className="col-6 w_img">
+                        <img src={img1} alt="img" />
+                      </div>
+                      <div className="col-6 w_img">
+                        <img src={img2} alt="img" />
+                      </div>
+                    </div>
+                  )}
+                  <h4 className="details_title">{historyTitle}</h4>
                   <p>{detail2}</p>
-                  <p>{detail3}</p>
-                  <div className="feature_progress_wrapper mb-25 mt-35">
-                    <div className="progress feature_progress"></div>
+                  <div style={{ textAlign: "center", margin: "2rem 0" }}>
+                    {link1 && (
+                      <Link
+                        href={link1}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          padding: "12px 24px",
+                          backgroundColor: "#EB2525",
+                          color: "white",
+                          borderRadius: "6px",
+                          textDecoration: "none",
+                          fontWeight: 500,
+                          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+                          transition: "background-color 0.2s",
+                        }}
+                        onMouseOver={(e) =>
+                          (e.currentTarget.style.backgroundColor = "#D81D1D")
+                        }
+                        onMouseOut={(e) =>
+                          (e.currentTarget.style.backgroundColor = "#EB2525")
+                        }
+                      >
+                        <svg
+                          style={{
+                            width: "20px",
+                            height: "20px",
+                            marginRight: "8px",
+                          }}
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        Watch Video
+                      </Link>
+                    )}
                   </div>
-                </div>
+                  {img3 && (
+                    <div className="row mb-45">
+                      <div className="col-6 w_img">
+                        <img src={img3} alt="img" />
+                      </div>
+                      <div className="col-6 w_img">
+                        <img src={img4} alt="img" />
+                      </div>
+                    </div>
+                  )}
 
-                {img1 && (
-                  <div className="row mb-45">
-                    <div className="col-6 w_img">
-                      <img src={img1} alt="img" />
-                    </div>
-                    <div className="col-6 w_img">
-                      <img src={img2} alt="img" />
-                    </div>
+                  <h4 className="details_title">{upgradeTitle}</h4>
+
+                  <p>{detail3}</p>
+                  <div style={{ textAlign: "center", margin: "2rem 0" }}>
+                    {link2 && (
+                      <Link
+                        href={link2}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          padding: "12px 24px",
+                          backgroundColor: "#EB2525",
+                          color: "white",
+                          borderRadius: "6px",
+                          textDecoration: "none",
+                          fontWeight: 500,
+                          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+                          transition: "background-color 0.2s",
+                        }}
+                        onMouseOver={(e) =>
+                          (e.currentTarget.style.backgroundColor = "#D81D1D")
+                        }
+                        onMouseOut={(e) =>
+                          (e.currentTarget.style.backgroundColor = "#EB2525")
+                        }
+                      >
+                        <svg
+                          style={{
+                            width: "20px",
+                            height: "20px",
+                            marginRight: "8px",
+                          }}
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        Watch Video
+                      </Link>
+                    )}
                   </div>
-                )}
+                  {img5 && (
+                    <div className="row mb-45">
+                      <div className="col-6 w_img">
+                        <img src={img5} alt="img" />
+                      </div>
+                      <div className="col-6 w_img">
+                        <img src={img6} alt="img" />
+                      </div>
+                    </div>
+                  )}
+                  <h4 className="details_title">{futureTitle}</h4>
+
+                  <p>{detail4}</p>
+                  <div style={{ textAlign: "center", margin: "2rem 0" }}>
+                    {link3 && (
+                      <Link
+                        href={link3}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          padding: "12px 24px",
+                          backgroundColor: "#EB2525",
+                          color: "white",
+                          borderRadius: "6px",
+                          textDecoration: "none",
+                          fontWeight: 500,
+                          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+                          transition: "background-color 0.2s",
+                        }}
+                        onMouseOver={(e) =>
+                          (e.currentTarget.style.backgroundColor = "#D81D1D")
+                        }
+                        onMouseOut={(e) =>
+                          (e.currentTarget.style.backgroundColor = "#EB2525")
+                        }
+                      >
+                        <svg
+                          style={{
+                            width: "20px",
+                            height: "20px",
+                            marginRight: "8px",
+                          }}
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        Watch Video
+                      </Link>
+                    )}
+                  </div>
+                  {img7 && (
+                    <div className="row mb-45">
+                      <div className="col-6 w_img">
+                        <img src={img7} alt="img" />
+                      </div>
+                      <div className="col-6 w_img">
+                        <img src={img8} alt="img" />
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
           <div className="col-xxl-4 col-xl-4 col-lg-5">
             <div className="single_sidebar_wrapper pl-15 mb-40">
+              <div
+                className="single_widget has_border person_widget text-center mb-40"
+                style={{
+                  position: "relative",
+                  backgroundImage: "url('/img/about/DESERVING.webp')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  overflow: "hidden",
+                  borderRadius: "10px",
+                }}
+              >
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    backgroundColor: "rgba(0 0 0 / 0.6)",
+                    zIndex: 1,
+                  }}
+                ></div>
+
+                <div style={{ position: "relative", zIndex: 2 }}>
+                  <h5 style={{ color: "white" }}>Deserving Families of our Own Students</h5>
+                  <div className="feature_buttons widget_buttons">
+                    <Link
+                      href="/communityCenter"
+                      className="g_btn hbtn_1 to_right1 i_left rad-30"
+                    >
+                      <i className="fal fa-heart"></i>SEE LIST<span></span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
               <div className="single_widget has_border person_widget text-center mb-40">
                 <div className="widget_person_img">
                   <Link href="/volunteer-details">
@@ -117,24 +380,6 @@ export default function CauseDetailsArea({
                   </ul>
                   <p>Thank you for making a difference.</p>
                 </div>
-              </div>
-              <div
-                style={{
-                  marginTop: "20px",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <Link
-                  href={{
-                    pathname: '/history',
-                    query: { history: JSON.stringify(history) },
-                  }}
-                  className="g_btn hbtn_1 to_right1 i_left rad-30"
-                >
-                  <i className="fal fa-clock"></i> Our History
-                  <span></span>
-                </Link>
               </div>
             </div>
           </div>

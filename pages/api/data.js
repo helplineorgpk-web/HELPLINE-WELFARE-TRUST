@@ -170,205 +170,216 @@ export const HelplineData = {
       id: 23,
       category: ["Own School"],
       img: "/img/bg/breadcrumb_bg_4.jpg",
-      img1: "/img/causes/alkitab3.jpg",
-      img2: "/img/causes/alkitab4.jpg",
+      img1: "/img/causes/DJI_0010.JPG",
+      img2: "/img/causes/DJI_0018.JPG",
+      img3: "/img/causes/alkitab5.jpg",
+      img4: "/img/causes/alkitab6.jpg",
+      img5: "/img/causes/alkitab3.jpg",
+      img6: "/img/causes/alkitab4.jpg",
+      img7: "/img/causes/alkitab5.jpg",
+      img8: "/img/causes/alkitab6.jpg",
+      link: "https://youtu.be/uW6QxzriY1A?si=bsuocjM5FYuLZO2t",
+      link3: "https://youtu.be/6RliogbPdII?si=gPU5sn8s3w26g0Dh",
+      ActualName: "Al-Kitab Higher Secondary School",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
-        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. ",
-
+        "Al-Kitab Higher Secondary School – Empowering Through Free Education As of today, Al-Kitab Higher Secondary School stands as a remarkable beacon of hope and transformation in Rana Town, Lahore. The school is currently providing completely free-of-cost education to over 1,100 students, including 645 girls and more than 500 boys. This milestone is not just a number—it represents lives changed, futures reshaped, and a community uplifted through the power of education. ",
+      historyTitle: "History of Al-Kitab Higher Secondary School",
+      UpgradeTitle: "Upgradation of Al-Kitab Higher Secondary School",
+      FutureTitle: "Future of Al-Kitab Higher Secondary School",
       desc: "Al-Kitab Education System School Shaikhupura (Abid Town ).",
-      ActualName: "Al-Kitab Higher Secondary School",
       detail2:
-        "At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development.",
+        "The journey of Al-Kitab School began humbly in 2015, on a 10-acre piece of donated land that once housed an abandoned poultry farm. What started with only 15 students and a handful of committed educators has now become a full-fledged educational institution serving hundreds of underprivileged families. The founders envisioned a school that would provide quality education to children who otherwise had no access to learning, and today that vision has become a thriving reality.",
       detail3:
         "We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
-      color: "#65cabb",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrentialalll abid town rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
+      detail4:
+        "Despite its success, Al-Kitab Higher Secondary School has now reached its maximum capacity. The existing infrastructure can no longer accommodate the growing demand for admissions. With more and more families seeking a better future for their children, the school is in urgent need of a new six-story building to continue expanding its life-changing mission. Without this crucial development, many children will remain out of school, trapped in the cycle of poverty and illiteracy.Al-Kitab Higher Secondary School is a living testament to what can be achieved with dedication, vision, and community support. But the journey is far from over—the next step requires collective effort to build more space, provide more opportunities, and transform even more lives.",
+      color: "#f15b43",
     },
     {
       id: 18,
       category: ["Own School"],
-      img: "/img/causes/irtiqa.jpeg",
+      img: "/img/causes/irtiqa.png",
+      img1: "/img/causes/irtiqa1.jpg",
+      img2: "/img/causes/irtiqa2.png",
+      img3: "/img/causes/DSC_0172.JPG",
+      img4: "/img/causes/DSC_0290.JPG",
+      img5: "/img/causes/irtiqafuture1.JPG",
+      img6: "/img/causes/future2.JPG",
+      img7: "/img/causes/waterirtiqa.JPG",
+      img8: "/img/causes/waterirtiqa2.JPG",
+
+      link: "https://www.youtube.com/watch?v=3ZCDpJxgIGk",
+      link2: "https://www.youtube.com/watch?v=UuphWKN263I",
+      ActualName: "Irtaqa-e-Itfal High School",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
-      ActualName: "Irtaqa-e-Itfal High School",
       description:
-        "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
-
+        "Irtaqa-e-Itfal School – A Beacon of Hope in Manawan, Lahore Transforming Lives Through Free Education and Community Support Irtaqa-e-Itfal School, located in the heart of Manawan, Lahore, stands as a shining example of compassion, resilience, and empowerment. Dedicated to uplifting the lives of the underprivileged, the school provides free-of-cost quality education to over 1,000 deserving students—most of whom were previously out of school due to financial hardship.",
       desc: "Al-Kitab Education System School Lahore (Manawan).",
+      historyTitle: "Holistic Approach of Irtaqa-e-Itfal High Schooll",
+      UpgradeTitle: "Securing Futures of Irtaqa-e-Itfal High School",
+      FutureTitle: "Clean Water for Irtaqa-e-Itfal High School",
+      detail2:
+        "Beyond Books: A Holistic Approach to Uplift Communities Education at Irtaqa-e-Itfal goes beyond the classroom. The school ensures that every student receives: Free uniforms, textbooks, and school supplies Regular medical check-ups to monitor and maintain student health Nutritious dry rations for the most deserving families, helping combat food insecurity",
+      detail3:
+        "Empowering Mothers, Securing Futures Recognizing the crucial role of women in breaking the cycle of poverty, Irtaqa-e-Itfal School also offers vocational training in stitching and embroidery to single mothers of enrolled students. This initiative helps women gain valuable skills to earn a sustainable livelihood and support their families with dignity.",
+      detail4:
+        "Clean Water for All In response to the pressing issue of waterborne illnesses in the area, the school has installed a Reverse Osmosis (RO) filtration plant, providing clean, safe drinking water to not just the school community but also the local residents. At Irtaqa-e-Itfal School, we believe that every child deserves a chance to learn, grow, and thrive—regardless of their background. With your support, we can continue to transform lives, one child and one family at a time. Join us in building a brighter, more equitable future for the children of Manawan.",
       color: "#65cabb",
     },
     {
       id: 33,
       category: ["Own School"],
-      img: "/img/causes/cause13.jpg",
-      img1: "/img/causes/alkitab3.jpg",
-      img2: "/img/causes/alkitab4.jpg",
+      img: "/img/causes/futureplan1.png",
+      img1: "/img/causes/gullowali2.jpg",
+      img2: "/img/causes/gullowali3.jpg",
+      img3: "/img/causes/underconstruction2.jpg",
+      img4: "/img/causes/gullowali111.jpg",
+      img7: "/img/causes/futureplan1.png",
+      img8: "/img/causes/futureplan2.png",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
-      description:
-        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
-      ActualName: "Al-Kitab Education System School Rajanpur",
+      ActualName: "Al-Kitab School Rajanpur (Gullowali)",
+
       desc: "Al-Kitab Education System School Rajanpur (Gullowali).",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrentialalll rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
+      description:
+        "Al-Kitab School Rajanpur (Gullowali) is a project of Helpline Welfare Trust NGO, dedicated to providing quality education to children from underprivileged backgrounds in one of the most underserved areas of the region. The school is being established with the vision of creating an accessible learning environment where every child, regardless of financial circumstances, can receive an excellent education. More than 75% of students will study free of cost with full NGO support, while the remaining will pay a minimal fee to help cover basic operational expenses. Alongside a strong academic curriculum, the school will also focus on personal growth, character development, and creating opportunities for a brighter future.",
+      historyTitle: "Under Construction Al-Kitab School Rajanpur (Gullowali)",
+      detail2:
+        "Currently under construction, Al-Kitab School will fill a critical educational gap in a community where, within a 25 km radius, only a handful of primary schools exist. This makes the project not just important but essential for ensuring that children have access to quality learning. The institution will also prioritize women’s education, offering Islamic studies and Quran learning programs, so that future generations grow up with strong moral, ethical, and spiritual foundations. To bring this vision to life, we urgently need donations for construction, furnishing, and classroom setup. Your support will directly contribute to opening doors of knowledge, hope, and opportunity for the children and families of Rajanpur.",
+      FutureTitle: "Future of Al-Kitab School Rajanpur (Gullowali)",
+      detail4:
+        "Our long-term vision for Al-Kitab School is to expand beyond primary and secondary education, growing step-by-step into a college and eventually a full-fledged university. This will allow students from the community to pursue higher education without leaving their hometown, breaking the cycle of limited opportunities in the region. By integrating both modern academics and Islamic education, we aim to create a balanced and capable generation that can lead with knowledge, values, and faith. Your contributions today will not only help complete the school but will lay the foundation for an educational institution that will transform lives for decades to come.",
     },
     {
       id: 25,
       category: ["Own School"],
       img: "/img/causes/rehmat.jpeg",
+      img1: "/img/causes/chrehmat1.png",
+      img2: "/img/causes/rehmat2.png",
+      img3: "/img/causes/rehmat3.png",
+      img4: "/img/causes/rehmat4.png",
+      // img5: "/img/causes/alkitab3.jpg",
+      // img6: "/img/causes/alkitab4.jpg",
+      // img7: "/img/causes/alkitab5.jpg",
+      // img8: "/img/causes/alkitab6.jpg",
+      // link: "https://youtu.be/uW6QxzriY1A?si=bsuocjM5FYuLZO2t",
+      // link3: "https://youtu.be/6RliogbPdII?si=gPU5sn8s3w26g0Dh",
+      ActualName: "Ch Rehmat Ali Higher Secondary School for Boys",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
         "Aligarh Educational Complex in Gojra is a project owned by Helpline NGO, aimed at providing free education to underprivileged students. The complex comprises a school, a computer lab, a library, and a hostel. The school has a team of highly qualified teachers who are committed to providing quality education to children from low-income families. The computer lab at the complex is equipped with the latest technology and offers students the opportunity to learn computer skills. The library is stocked with a wide range of books, which provides students with access to a wealth of knowledge and information. The hostel offers comfortable accommodation for students who live far away from the school and ensures that they have a safe and secure environment to study in. Aligarh Educational Complex in Gojra is making a significant contribution to the community it serves. The school’s focus on providing quality education to underprivileged children has helped to break the cycle of poverty and provide a brighter future for many families.",
-      ActualName: "Ch Rehmat Ali Higher Secondary School for Boys",
-      desc: "Al-Kitab Education System School, TobaTekSingh (Gojra).",
 
+      desc: "Al-Kitab Education System School, TobaTekSingh (Gojra).",
+      historyTitle: "Holistic Approach of Aligarh Educational Complex",
+      UpgradeTitle: "Securing Futures of Aligarh Educational Complex",
+      FutureTitle: "Clean Water for Aligarh Educational Complex",
+      detail2:
+        "Beyond Books: A Holistic Approach to Uplift Communities Education at Irtaqa-e-Itfal goes beyond the classroom. The school ensures that every student receives: Free uniforms, textbooks, and school supplies Regular medical check-ups to monitor and maintain student health Nutritious dry rations for the most deserving families, helping combat food insecurity",
+      detail3:
+        "Empowering Mothers, Securing Futures Recognizing the crucial role of women in breaking the cycle of poverty, Irtaqa-e-Itfal School also offers vocational training in stitching and embroidery to single mothers of enrolled students. This initiative helps women gain valuable skills to earn a sustainable livelihood and support their families with dignity.",
+      detail4:
+        "Clean Water for All In response to the pressing issue of waterborne illnesses in that slum area, the school has installed a Reverse Osmosis (RO) filtration plant, providing clean, safe drinking water to not just the school community but also the local residents. At Irtaqa-e-Itfal School, we believe that every child deserves a chance to learn, grow, and thrive—regardless of their religion and background. With your support, we can continue to transform lives, every child and every family. Join us in building a brighter, more equitable future for the children of Manawan.",
       color: "#f15b43",
     },
     {
       id: 26,
       category: ["Own School"],
-      img: "/img/causes/girlsschool.jpeg",
-      detail:
-        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
-      description:
-        "CH. Rahmat Ali Superior Higher Secondary School, located in the Alighar Education Complex in Gojra, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The institution offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects, with a focus on academic excellence. In addition to academic subjects, the school also provides extracurricular activities that help to develop the student’s skills and talents. The institution encourages students to participate in sports, debates, and other activities that enable them to develop their leadership skills and teamwork abilities. The Alighar Education Complex is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The institution also provides free uniforms, textbooks, and school supplies to the students.",
-      desc: "Al-Kitab Education System School, TobaTekSingh (Gojra).",
+      img: "/img/causes/imanmaryam.png",
+      img1: "/img/causes/sideangle.png",
+      img2: "/img/causes/maryamgirls.png",
+      img3: "/img/causes/roote.jpg",
+      img4: "/img/causes/rooted1.jpg",
+      img7: "/img/causes/womenedu1.jpg",
+      img8: "/img/causes/womenedu2.jpg",
+
+      link: "",
+      link3: "",
       ActualName:
         "Iman Maryam Girls Higher Secondary School Alighar Education Complex",
+      detail: "Free education for brighter futures.",
+      description: `Aligarh Educational Complex – A Legacy of Learning and Service  
+    The Aligarh Educational Complex, located in 244 G.B, continues to be a source of empowerment for over 1,400 students across three schools. Among them is:
+    Iman Maryam Girls’ Higher Secondary School – serving more than 600 girls with access to free, high-quality education and pick-and-drop services.  
+    This initiative ensures that no girl is held back due to financial hardship or travel difficulties, allowing them to focus fully on their studies and future.`,
+      desc: "Iman Maryam Girls Higher Secondary School Alighar Education Complex (Gojra)",
+      historyTitle: "A Vision Rooted in Empowerment",
+      UpgradeTitle: "Helpline’s Ongoing Commitment to Girls’ Education",
+      FutureTitle: "Building Confident, Educated Women for Tomorrow",
+      detail2: `Founded in 2002 in response to overwhelming demand after the boys’ school launch, Iman Maryam Girls’ Higher Secondary School was established to offer equal opportunity education for girls.  
+    It was built on a separate, purpose-built campus and even included hostel facilities to accommodate students from distant areas.  
+    In 2013, Helpline Lahore adopted the management of the entire complex after the founder’s passing, enhancing operations, modernizing infrastructure, and ensuring uninterrupted educational support for hundreds of girls.`,
+      detail3: `Helpline Lahore continues to drive the school’s growth with targeted investments and initiatives.  
+    👧 Free Uniforms, Textbooks, and Stationery – removing all cost barriers  
+    🏗️ Renovation of Girls' School Campus – 2.2 Million PKR spent to uplift learning conditions  
+    💼 Qualified Female Educators – appointed through rigorous staff replacement drive  
+    🎯 Emphasis on Holistic Development – academic, leadership, and extracurricular training  
+    🚌 Transportation Services – enabling safe travel from remote areas  
+    🌾 Rural Outreach – benefiting young girls from 22 surrounding villages`,
+      detail4:
+        "Through strategic investment and deep compassion, Helpline Lahore ensures the school continues to empower the next generation of confident, educated women—each ready to lead, uplift, and transform her community.",
       color: "#65cabb",
     },
+
     {
       id: 27,
       category: ["Own School"],
-      img: "/img/causes/eman1.jpeg",
-      img1: "/img/causes/eman2.jpeg",
-      img2: "/img/causes/eman3.jpeg",
-      detail:
-        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
-      description:
-        "Emman Maryam Smart School, Alighar Education Complex (Gojra) is a remarkable institution that is supported by Helpline NGO. The school is dedicated to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and enthusiastic, despite the financial challenges they may face. They are committed to their education and strive to excel academically. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been crucial in making this possible. By providing financial assistance, Helpline NGO is helping to ensure that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are designed to cater to the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
+      img: "/img/causes/smart2.png",
+      img1: "/img/causes/smart.png",
+      img2: "/img/causes/eman1.jpeg",
 
-      desc: "Al-Kitab Education System School, TobaTekSingh (Gojra).",
+      img5: "/img/causes/foundition1.png",
+      img6: "/img/causes/foundition2.png",
+      img7: "/img/causes/begin.JPG",
+      img8: "/img/causes/begin1.JPG",
+      link: "https://www.youtube.com/shorts/7sh2krvAEZY",
+      link3: "https://www.youtube.com/watch?v=_hliltW3iEM",
       ActualName: "Emman Maryam Smart School Alighar Education Complex",
+      detail: "Free education for brighter futures.",
+      description: `Aligarh Educational Complex – A Legacy of Learning and Service  
+    Within the same powerful framework of educational empowerment, the Emman Maryam Smart School caters to more than 300 primary-level children.  
+    This school represents the foundation of lifelong learning, where underprivileged children receive quality education, loving mentorship, and the confidence to dream bigger.`,
+      desc: "Emman Maryam Smart School Alighar Education Complex (Gojra)",
+      historyTitle: "Where Young Minds Begin Their Journey",
+      UpgradeTitle: "Helpline’s Focus on Foundational Learning",
+      FutureTitle: "Smart Kids, Brighter Futures",
+      detail2: `Established as the third arm of the Aligarh Educational Complex, the Smart School focuses on early childhood and primary education for children who may otherwise have no access to schools.  
+    The vision is simple yet powerful—begin education early, make it fun and effective, and empower children for higher success later in life.  
+    When Helpline Lahore took charge in 2013, they prioritized this segment by investing in purpose-built infrastructure and child-friendly learning spaces.`,
+      detail3: `Helpline Lahore’s mission for the Smart School is rooted in technology, engagement, and equity.  
+    🏫 Brand-New Smart School Campus – fully constructed for a cost of 0.3 Million PKR  
+    🧸 Early Learning Tools & Resources – age-appropriate, interactive, and engaging  
+    💻 Computer Lab Setup – 24 systems installed to develop digital literacy early  
+    🪑 Smart School Furniture – 0.25 Million PKR spent on child-friendly furnishings  
+    👩‍🏫 Qualified Primary Teachers – passionate and trained to handle young learners  
+    📚 Personalized Learning Paths – ensuring no child is left behind  
+    🌍 Strong Community Support – reaching children from surrounding rural villages`,
+      detail4:
+        "With its tailored focus on primary education, the Emman Maryam Smart School prepares young children to enter the future with curiosity, resilience, and purpose—paving the way for a brighter Pakistan.",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 24,
       category: ["Own School"],
       img: "/img/causes/alkitabghani1.jpg",
+      img1: "/img/causes/1.jpg",
+      img2: "/img/causes/2.jpg",
+      img3: "/img/causes/chani11.jpg",
+      img4: "/img/causes/chani22.jpg",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
-        "Al-Kitab School, located in Chani Goth, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The school focuses on academic excellence and offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects. The school prioritises academic performance and aims to instil moral values and a sense of community service among its students. In addition, the school provides extracurricular activities that help to develop the student’s skills and talents. The school also organizes community service activities to encourage the students to give back to society. The Al-Kitab School is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The school also provides free uniforms, textbooks, and school supplies.",
-
+        "Alkitab Primary School was established in 2021 in a small village of Tehsil Ahmedpur Sharqia by Helpline, a nonprofit organization. The school building was generously donated by Mr. Jam Jazoor Bux. Starting with just 15 out-of-school children from nearby villages, the school has grown significantly and now educates 83 students. With a dedicated team of six teachers, Alkitab Primary School provides quality education to underprivileged children, helping bridge the educational gap in the region. The institution remains committed to empowering young minds and fostering community development through learning.",
+      historyTitle: "The Green Growth Initiative ",
+      detail2:
+        "The Green Growth Initiative was launched in 2021 by Helpline, a nonprofit organization, to promote environmental awareness and sustainability in Tehsil Ahmedpur Sharqia. The project began with the generous support of local community members, who donated land for a small nursery. Starting with just 50 saplings, the initiative has expanded into a vibrant green space with over 1,000 plants and trees. Managed by a dedicated team of volunteers, the program not only enhances the beauty of the surroundings but also educates local residents, especially children, about the importance of environmental conservation. Through regular planting drives and community engagement, the Green Growth Initiative continues to inspire a culture of care for nature and a greener future for the region.",
       desc: "Al-Kitab Education System School,  Bahawalpur  (Chani Goth).",
       ActualName: "Al-Kitab Education System School,  Bahawalpur",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 39,
@@ -394,35 +405,76 @@ export const HelplineData = {
     {
       id: 38,
       category: ["Adopted Schools"],
-      img: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
-      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(1).jpg",
-      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(2).jpg",
-      img2: "/img/causes/PHOTO-2025-02-19-11-45-31(3).jpg",
+      img: "/img/causes/banazir1.png",
+      img1: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
+      img2: "/img/causes/banazir2.png",
+      img3: "/img/causes/banazir5.png",
+      img4: "/img/causes/banazir4.png",
+      img5: "/img/causes/banazir3.png",
+      img6: "/img/causes/benazir6.png",
       detail:
-        "GPS Ando Muhajir School empowers students with quality education.",
-      description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+        "Empowering girls through quality education and comprehensive support services.",
+      description: `Benazir Public Girls School – A Beacon of Hope for Girls' Education  
+    Located in a community where educational opportunities for girls were once limited, Benazir Public Girls School has emerged as a transformative institution under Helpline's dedicated support.  
+    Through comprehensive adoption, this school now serves hundreds of young girls, providing them with free, high-quality education and the tools they need to build brighter futures for themselves and their families.`,
       pbar: "pbar_1",
+      desc: "Benazir Public Girls School",
       ActualName: "Benazir Public Girls School",
-      ActualName: "Benazir Public Girls School",
-      desc: "Benazir Public Girls School, Nawabshah",
       adopted: "Adopted",
+      historyTitle: "From Struggling Institution to Center of Excellence",
+      UpgradeTitle: "Helpline's Transformative Investment in Girls' Education",
+      FutureTitle: "Building Tomorrow's Female Leaders",
+      detail2: `Before Helpline's intervention, Benazir Public Girls School faced significant challenges that threatened its ability to provide quality education.  
+    The school struggled with inadequate infrastructure, insufficient teaching resources, and financial constraints that limited its capacity to serve the community effectively.  
+    Recognizing the critical importance of girls' education in breaking cycles of poverty, Helpline stepped in to adopt the school, transforming it into a model institution that now stands as a pillar of educational excellence in the region.`,
+      detail3: `Helpline's comprehensive support has revolutionized every aspect of the school's operations and educational delivery.  
+    👩‍🏫 Qualified Female Teachers – ensuring culturally appropriate and inspiring role models  
+    📚 Complete Educational Resources – textbooks, supplies, and learning materials provided free  
+    🏗️ Infrastructure Improvements – upgraded classrooms, facilities, and learning environments  
+    🍎 Nutritional Support – meal programs to ensure students can focus on learning  
+    🚌 Safe Transportation – enabling girls from distant areas to attend school safely  
+    💡 Technology Integration – computer labs and digital learning tools  
+    🎓 Scholarship Programs – supporting exceptional students to pursue higher education  
+    👥 Community Engagement – working with families to promote girls' education`,
+      detail4:
+        "Through sustained commitment and strategic investment, Helpline continues to ensure that Benazir Public Girls School serves as a catalyst for social change, empowering young women to become confident leaders, skilled professionals, and positive change-makers in their communities. Every girl who graduates from this institution carries with her the potential to transform not just her own life, but the lives of countless others around her.",
       color: "#f15b43",
     },
     {
       id: 20,
       category: ["Adopted Schools"],
-      img: "/img/causes/bheel2.jpg",
-      img1: "/img/causes/bheel1.jpg",
-      img2: "/img/causes/bheel3.jpg",
+      img: "/img/causes/masari.jpg",
+      img1: "/img/causes/misari1.png",
+      img2: "/img/causes/masari2.jpg",
+      img3: "/img/causes/misari3.png",
+      img4: "/img/causes/misari4.png",
+      img5: "/img/causes/misari5.png",
+      img6: "/img/causes/misari6.png",
       detail:
-        "GPS. Misri Bheel School empowers students with quality education.",
-      description:
-        "The support provided by a helpline NGO to Govt. Misri Bheel School has been critical in ensuring that underprivileged students in the community have access to quality education. The NGO has taken on the responsibility of running the school, providing financial support, and ensuring that students have access to essential supplies and resources. Moreover, the NGO’s support for the school’s operations has been instrumental in keeping the school running and providing quality education to students who otherwise may not have had access to it. The NGO has worked closely with the school’s administration to ensure that the school is well-maintained and that students have access to necessary resources such as textbooks and school supplies.",
-
-      desc: "Sindh Govt Primary School, TandoAllahYar (Misri Bheel) ",
+        "Breathing life back into abandoned dreams through education and hope.",
+      description: `Govt GPS. Misri Bheel School – From Closure to Revival  
+    What was once a closed and abandoned government school in the remote community of Misri Bheel, Tando Allah Yar, has been transformed into a thriving center of learning through Helpline's dedicated intervention.  
+    This remarkable story of educational resurrection demonstrates how strategic adoption and comprehensive renewal can restore hope to communities where children's futures once seemed forgotten.`,
+      desc: "Govt GPS. Misri Bheel School (Tando Allah Yar)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
+      historyTitle: "From Abandoned Classrooms to Educational Renaissance",
+      UpgradeTitle: "Helpline's Complete School Revival Initiative",
+      FutureTitle: "Sustaining Educational Excellence in Rural Communities",
+      detail2: `The story of Govt GPS. Misri Bheel School is one of abandonment turned into opportunity. Located in the rural area of Tando Allah Yar, this government primary school had been closed for years due to lack of resources, infrastructure decay, and administrative neglect.  
+    The building stood empty, classrooms gathered dust, and an entire generation of children in the community faced the prospect of growing up without access to formal education.  
+    When Helpline discovered this abandoned institution, they saw not just empty rooms, but untapped potential and a community crying out for educational opportunity.`,
+      detail3: `Helpline's comprehensive revival of Misri Bheel School involved complete reconstruction and renewal of every aspect of the institution.  
+    🏗️ Complete Infrastructure Renovation – rebuilding classrooms, roofs, and essential facilities from the ground up  
+    👩‍🏫 Qualified Teaching Staff – recruiting and training dedicated educators committed to rural education  
+    📚 Educational Resources – providing textbooks, learning materials, and classroom supplies  
+    💡 Modern Learning Environment – installing proper lighting, ventilation, and learning aids  
+    🍎 Nutritional Programs – ensuring students receive proper meals to support their learning  
+    🚌 Transportation Solutions – addressing mobility challenges for students from distant areas  
+    💰 Financial Sustainability – covering operational costs including teacher salaries and maintenance  
+    👥 Community Engagement – working with local families to promote education and school attendance`,
+      detail4:
+        "Today, Govt GPS. Misri Bheel School stands as a powerful testament to what can be achieved when dedication meets opportunity. From a closed and forgotten building, it has become a beacon of hope for rural education, proving that no community is too remote and no challenge too great when there is commitment to transforming lives through learning. The school now serves as a model for rural educational revival across the region.",
       color: "#65cabb",
     },
     {
@@ -440,32 +492,6 @@ export const HelplineData = {
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 19,
@@ -545,32 +571,6 @@ export const HelplineData = {
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 12,
@@ -617,32 +617,6 @@ export const HelplineData = {
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 37,
@@ -725,58 +699,6 @@ export const HelplineData = {
         "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
       desc: "House Constructions For Flood Effectives In Rajanpur",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrentialall rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 2,
@@ -823,32 +745,6 @@ export const HelplineData = {
         "In the wake of catastrophic floods that devastated Pakistan, Junaid Aftab and the Helpline organization have launched a life-changing initiative to support affected families. With countless homes swept away and lives disrupted, they have developed economical housing solutions to provide safe, affordable shelter. This initiative includes a thoughtfully designed model house that balances security, durability, and cost-effectiveness, addressing the urgent need for shelter before the harsh winter arrives.Detailed blueprints and cost estimates for these homes are being shared with kind-hearted donors eager to contribute to rebuilding efforts. By enabling families to regain stability and rebuild their lives with dignity, this program offers hope and resilience to those grappling with the aftermath of this climate disaster.",
       desc: "House Constructions For Flood Effectives In Rajanpur",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 5,
@@ -916,32 +812,6 @@ export const HelplineData = {
 
       desc: "CLEAN WATER PROJECT IN BALOCHISTAN",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 9,
@@ -959,32 +829,6 @@ export const HelplineData = {
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 10,
@@ -1001,32 +845,6 @@ export const HelplineData = {
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 11,
@@ -1044,32 +862,6 @@ export const HelplineData = {
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 12,
@@ -1165,32 +957,6 @@ export const HelplineData = {
 
       desc: "Hajra Bibi Memorial Trust Hospital.",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 16,
@@ -1224,15 +990,34 @@ export const HelplineData = {
     },
     {
       id: 18,
-      category: ["Education"],
-      img: "/img/causes/irtiqa.jpeg",
+      category: ["Own School"],
+      img: "/img/causes/irtiqa.png",
       img1: "/img/causes/irtiqa1.jpg",
-      img2: "/img/causes/irtiqa2.jpg",
-      detail: "Empowering underprivileged youth through quality education.",
-      description:
-        "Irtaqa-e-Itfal High School Manawan is a renowned educational institution that has become a benchmark for other schools in the area. The school is committed to providing quality education to students from underprivileged backgrounds and has been successful in producing graduates who have gone on to become successful professionals in various fields. In addition to providing quality education, the school also undertakes community development programs at the grassroots level. These programs focus on education, health, and vocational training sectors with the aim of alleviating poverty, empowering women, and eliminating child labour in the country. By providing job-oriented education, the school aims to equip its students with the skills and knowledge they need to succeed in the workforce. Irtaqa-e-Itfal High School Manawan is a beacon of hope for the community it serves. The school recognizes the challenges faced by underprivileged families and works tirelessly to provide them with the support they need to succeed.",
+      img2: "/img/causes/irtiqa2.png",
+      img3: "/img/causes/DSC_0172.JPG",
+      img4: "/img/causes/DSC_0290.JPG",
+      img5: "/img/causes/irtiqafuture1.JPG",
+      img6: "/img/causes/future2.JPG",
+      img7: "/img/causes/waterirtiqa.JPG",
+      img8: "/img/causes/waterirtiqa2.JPG",
+
+      link: "https://www.youtube.com/watch?v=3ZCDpJxgIGk",
+      link2: "https://www.youtube.com/watch?v=UuphWKN263I",
       ActualName: "Irtaqa-e-Itfal High School",
-      desc: "Helpline Education Program Idara-e-Nazariya-e-Pakistan.",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+      description:
+        "Irtaqa-e-Itfal School – A Beacon of Hope in Manawan, Lahore Transforming Lives Through Free Education and Community Support Irtaqa-e-Itfal School, located in the heart of Manawan, Lahore, stands as a shining example of compassion, resilience, and empowerment. Dedicated to uplifting the lives of the underprivileged, the school provides free-of-cost quality education to over 1,000 deserving students—most of whom were previously out of school due to financial hardship.",
+      desc: "Al-Kitab Education System School Lahore (Manawan).",
+      historyTitle: "Holistic Approach of Irtaqa-e-Itfal High Schooll",
+      UpgradeTitle: "Securing Futures of Irtaqa-e-Itfal High School",
+      FutureTitle: "Clean Water for Irtaqa-e-Itfal High School",
+      detail2:
+        "Beyond Books: A Holistic Approach to Uplift Communities Education at Irtaqa-e-Itfal goes beyond the classroom. The school ensures that every student receives: Free uniforms, textbooks, and school supplies Regular medical check-ups to monitor and maintain student health Nutritious dry rations for the most deserving families, helping combat food insecurity",
+      detail3:
+        "Empowering Mothers, Securing Futures Recognizing the crucial role of women in breaking the cycle of poverty, Irtaqa-e-Itfal School also offers vocational training in stitching and embroidery to single mothers of enrolled students. This initiative helps women gain valuable skills to earn a sustainable livelihood and support their families with dignity.",
+      detail4:
+        "Clean Water for All In response to the pressing issue of waterborne illnesses in the area, the school has installed a Reverse Osmosis (RO) filtration plant, providing clean, safe drinking water to not just the school community but also the local residents. At Irtaqa-e-Itfal School, we believe that every child deserves a chance to learn, grow, and thrive—regardless of their background. With your support, we can continue to transform lives, one child and one family at a time. Join us in building a brighter, more equitable future for the children of Manawan.",
       color: "#65cabb",
     },
     {
@@ -1251,47 +1036,42 @@ export const HelplineData = {
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 20,
       category: ["Education"],
-      img: "/img/causes/bheel2.jpg",
-      img1: "/img/causes/bheel1.jpg",
-      img2: "/img/causes/bheel3.jpg",
+      img: "/img/causes/masari.jpg",
+      img1: "/img/causes/misari1.png",
+      img2: "/img/causes/masari2.jpg",
+      img3: "/img/causes/misari3.png",
+      img4: "/img/causes/misari4.png",
+      img5: "/img/causes/misari5.png",
+      img6: "/img/causes/misari6.png",
       detail:
-        "GPS. Misri Bheel School empowers students with quality education.",
-      description:
-        "The support provided by a helpline NGO to Govt. Misri Bheel School has been critical in ensuring that underprivileged students in the community have access to quality education. The NGO has taken on the responsibility of running the school, providing financial support, and ensuring that students have access to essential supplies and resources. Moreover, the NGO’s support for the school’s operations has been instrumental in keeping the school running and providing quality education to students who otherwise may not have had access to it. The NGO has worked closely with the school’s administration to ensure that the school is well-maintained and that students have access to necessary resources such as textbooks and school supplies.",
-
-      desc: "The Govt GPS. Misri Bheel School (Tando Allah Yar)",
+        "Breathing life back into abandoned dreams through education and hope.",
+      description: `Govt GPS. Misri Bheel School – From Closure to Revival  
+    What was once a closed and abandoned government school in the remote community of Misri Bheel, Tando Allah Yar, has been transformed into a thriving center of learning through Helpline's dedicated intervention.  
+    This remarkable story of educational resurrection demonstrates how strategic adoption and comprehensive renewal can restore hope to communities where children's futures once seemed forgotten.`,
+      desc: "Govt GPS. Misri Bheel School (Tando Allah Yar)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
+      historyTitle: "From Abandoned Classrooms to Educational Renaissance",
+      UpgradeTitle: "Helpline's Complete School Revival Initiative",
+      FutureTitle: "Sustaining Educational Excellence in Rural Communities",
+      detail2: `The story of Govt GPS. Misri Bheel School is one of abandonment turned into opportunity. Located in the rural area of Tando Allah Yar, this government primary school had been closed for years due to lack of resources, infrastructure decay, and administrative neglect.  
+    The building stood empty, classrooms gathered dust, and an entire generation of children in the community faced the prospect of growing up without access to formal education.  
+    When Helpline discovered this abandoned institution, they saw not just empty rooms, but untapped potential and a community crying out for educational opportunity.`,
+      detail3: `Helpline's comprehensive revival of Misri Bheel School involved complete reconstruction and renewal of every aspect of the institution.  
+    🏗️ Complete Infrastructure Renovation – rebuilding classrooms, roofs, and essential facilities from the ground up  
+    👩‍🏫 Qualified Teaching Staff – recruiting and training dedicated educators committed to rural education  
+    📚 Educational Resources – providing textbooks, learning materials, and classroom supplies  
+    💡 Modern Learning Environment – installing proper lighting, ventilation, and learning aids  
+    🍎 Nutritional Programs – ensuring students receive proper meals to support their learning  
+    🚌 Transportation Solutions – addressing mobility challenges for students from distant areas  
+    💰 Financial Sustainability – covering operational costs including teacher salaries and maintenance  
+    👥 Community Engagement – working with local families to promote education and school attendance`,
+      detail4:
+        "Today, Govt GPS. Misri Bheel School stands as a powerful testament to what can be achieved when dedication meets opportunity. From a closed and forgotten building, it has become a beacon of hope for rural education, proving that no community is too remote and no challenge too great when there is commitment to transforming lives through learning. The school now serves as a model for rural educational revival across the region.",
       color: "#65cabb",
     },
     {
@@ -1309,32 +1089,6 @@ export const HelplineData = {
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 22,
@@ -1390,126 +1144,173 @@ export const HelplineData = {
       id: 23,
       category: ["Education"],
       img: "/img/bg/breadcrumb_bg_4.jpg",
-      img1: "/img/causes/alkitab3.jpg",
-      img2: "/img/causes/alkitab4.jpg",
+      img1: "/img/causes/DJI_0010.JPG",
+      img2: "/img/causes/DJI_0018.JPG",
+      img3: "/img/causes/history.jpg",
+      img4: "/img/causes/history.png",
+      img5: "/img/causes/upgraded.png",
+      img6: "/img/causes/upgraded1.JPG",
+      img7: "/img/causes/future.jpg",
+      img8: "/img/causes/future1.jpg",
+      link: "https://youtu.be/uW6QxzriY1A?si=bsuocjM5FYuLZO2t",
+
+      link3: "https://youtu.be/6RliogbPdII?si=gPU5sn8s3w26g0Dh",
       detail:
         "Al-Kitab School offers free education, fostering growth and community service.",
       description:
-        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. ",
-
+        "Al-Kitab Higher Secondary School – Empowering Through Free Education As of today, Al-Kitab Higher Secondary School stands as a remarkable beacon of hope and transformation in Rana Town, Lahore. The school is currently providing completely free-of-cost education to over 1,100 students, including 645 girls and more than 500 boys. This milestone is not just a number—it represents lives changed, futures reshaped, and a community uplifted through the power of education.",
+      historyTitle: "History of Al-Kitab Higher Secondary School",
+      UpgradeTitle: "Upgradation of Al-Kitab Higher Secondary School",
+      FutureTitle: "Future of Al-Kitab Higher Secondary School",
       desc: "Al-Kitab Education System (Rana Town).",
       ActualName: "Al-Kitab Higher Secondary School",
       detail2:
-        "At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development.",
+        "The journey of Al-Kitab School began humbly in 2015, on a 10-acre piece of donated land that once housed an abandoned poultry farm. What started with only 15 students and a handful of committed educators has now become a full-fledged educational institution serving hundreds of underprivileged families. The founders envisioned a school that would provide quality education to children who otherwise had no access to learning, and today that vision has become a thriving reality.",
       detail3:
-        "We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
-      color: "#65cabb",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrentialalll abid town rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
+        "In just a decade, the school has achieved extraordinary success. It now boasts a state-of-the-art library, a fully equipped computer lab, and a vocational training center offering courses in stitching and embroidery, particularly empowering young girls with practical skills. The school doesn’t just support students—it supports entire families. Parents of enrolled students receive monthly dry ration packages, easing their financial burdens and encouraging them to prioritize education over child labor. Many of the children who were once forced into hard labor by desperate circumstances are now active participants in co-curricular activities, discovering talents and building confidence that once seemed impossible.",
+      detail4:
+        "Despite its success, Al-Kitab Higher Secondary School has now reached its maximum capacity. The existing infrastructure can no longer accommodate the growing demand for admissions. With more and more families seeking a better future for their children, the school is in urgent need of a new six-story building to continue expanding its life-changing mission. Without this crucial development, many children will remain out of school, trapped in the cycle of poverty and illiteracy.Al-Kitab Higher Secondary School is a living testament to what can be achieved with dedication, vision, and community support. But the journey is far from over—the next step requires collective effort to build more space, provide more opportunities, and transform even more lives.",
+      color: "#f15b43",
     },
     {
       id: 24,
       category: ["Education"],
       img: "/img/causes/alkitabghani1.jpg",
-      img1: "/img/causes/alkitabghani2.jpg",
-      img2: "/img/causes/alkitabghani3.jpg",
+      img1: "/img/causes/1.jpg",
+      img2: "/img/causes/2.jpg",
+      img3: "/img/causes/chani11.jpg",
+      img4: "/img/causes/chani22.jpg",
       detail:
         "Al-Kitab School offers free education, fostering growth and community service.",
       description:
-        "Al-Kitab School, located in Chani Goth, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The school focuses on academic excellence and offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects. The school prioritises academic performance and aims to instil moral values and a sense of community service among its students. In addition, the school provides extracurricular activities that help to develop the student’s skills and talents. The school also organizes community service activities to encourage the students to give back to society. The Al-Kitab School is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The school also provides free uniforms, textbooks, and school supplies.",
-      ActualName: "Al-Kitab Education System",
+        "Alkitab Primary School was established in 2021 in a small village of Tehsil Ahmedpur Sharqia by Helpline, a nonprofit organization. The school building was generously donated by Mr. Jam Jazoor Bux. Starting with just 15 out-of-school children from nearby villages, the school has grown significantly and now educates 83 students. With a dedicated team of six teachers, Alkitab Primary School provides quality education to underprivileged children, helping bridge the educational gap in the region. The institution remains committed to empowering young minds and fostering community development through learning.",
+      historyTitle: "The Green Growth Initiative ",
+      detail2:
+        "The Green Growth Initiative was launched in 2021 by Helpline, a nonprofit organization, to promote environmental awareness and sustainability in Tehsil Ahmedpur Sharqia. The project began with the generous support of local community members, who donated land for a small nursery. Starting with just 50 saplings, the initiative has expanded into a vibrant green space with over 1,000 plants and trees. Managed by a dedicated team of volunteers, the program not only enhances the beauty of the surroundings but also educates local residents, especially children, about the importance of environmental conservation. Through regular planting drives and community engagement, the Green Growth Initiative continues to inspire a culture of care for nature and a greener future for the region.",
+      ActualName: "Al-Kitab Education System (Chani Goth)",
       desc: "Al Kitab Education System  (Chani Goth).",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 25,
-      category: ["Education"],
+      category: ["Own School"],
       img: "/img/causes/rehmat.jpeg",
-      img1: "/img/causes/rehmat2.jpeg",
-      img2: "/img/causes/rehmat3.jpeg",
-      ActualName: "Rehmat Education Complex, Gojra.",
-      detail:
-        "Aligarh Complex offers free education, breaking poverty through knowledge.",
-      description:
-        "Aligarh Educational Complex in Gojra is a project owned by Helpline NGO, aimed at providing free education to underprivileged students. The complex comprises a school, a computer lab, a library, and a hostel. The school has a team of highly qualified teachers who are committed to providing quality education to children from low-income families. The computer lab at the complex is equipped with the latest technology and offers students the opportunity to learn computer skills. The library is stocked with a wide range of books, which provides students with access to a wealth of knowledge and information. The hostel offers comfortable accommodation for students who live far away from the school and ensures that they have a safe and secure environment to study in. Aligarh Educational Complex in Gojra is making a significant contribution to the community it serves. The school’s focus on providing quality education to underprivileged children has helped to break the cycle of poverty and provide a brighter future for many families.",
+      img1: "/img/causes/chrehmat1.png",
+      img2: "/img/causes/rehmat2.png",
+      img3: "/img/causes/rehmat3.png",
+      img4: "/img/causes/rehmat4.png",
+      // img5: "/img/causes/alkitab3.jpg",
+      // img6: "/img/causes/alkitab4.jpg",
+      // img7: "/img/causes/alkitab5.jpg",
+      // img8: "/img/causes/alkitab6.jpg",
+      // link: "https://youtu.be/uW6QxzriY1A?si=bsuocjM5FYuLZO2t",
+      // link3: "https://youtu.be/6RliogbPdII?si=gPU5sn8s3w26g0Dh",
       ActualName: "Ch Rehmat Ali Higher Secondary School for Boys",
-      desc: "Aligarh Educational Complex (Gojra)",
+      detail:
+        "Al-Kitab provides free education to underprivileged children, ensuring growth.",
+      description: `Aligarh Educational Complex – A Legacy of Learning and Service
+The Aligarh Educational Complex, located in 244 G.B, stands as a beacon of hope and opportunity for over 1,400 students across three thriving institutions. These schools include:
+Ch. Rehmat Ali Boys' Higher Secondary School, educating more than 500 boys,
+Eman Maryam Girls' Higher Secondary School, empowering over 600 girls, and
+Eman Maryam Smart School, nurturing over 300 primary-level children.
+What sets this complex apart is its free-of-cost quality education, coupled with complimentary pick-and-drop transportation for every student—ensuring that distance and affordability are never barriers to learning.`,
+
+      desc: "Al-Kitab Education System School, TobaTekSingh (Gojra).",
+      historyTitle: "A Visionary Beginning and a New Chapter",
+      UpgradeTitle: "Beyond Cost: Pak Helpline's Transformational Role",
+      FutureTitle: "Unwavering Commitment for Aligarh Educational Complex",
+      detail2:
+        "Founded in December 2001 by the late Chaudhry Ali Asphar, a visionary dedicated to uplifting the underserved through education, the Aligarh Educational Complex began with the establishment of the Boys’ Higher Secondary School. With overwhelming community response, a Girls’ Higher Secondary School followed in 2002. A separate, purpose-built campus for girls and a hostel offering free accommodation quickly came into existence, further expanding the founder's dream.Although not originally a Helpline project, the complex became a part of Helpline Lahore's mission in 2013, following Chaudhry Ali Asphar’s passing. Recognizing the impact of this educational legacy, Helpline took over its management and infused it with new life—revamping the buildings, expanding facilities, and preserving the institution’s commitment to educational excellence.",
+      detail3: `Helpline Lahore reassured families across the region by continuing and enhancing the founder’s vision. Their investment and dedication brought renewed vitality to the complex.
+💼 Key Initiatives and Investments by Helpline:
+🚌 New Mazda Buses for safer, efficient student transportation
+🏫 Smart School Campus Setup – built with modern classrooms and digital facilities
+💸 Smart School Building Construction – costing 0.3 Million PKR
+Girls’ School Renovation – completed at a cost of 2.2 Million PKR
+🪑 Furniture for Smart School – 0.25 Million PKR invested
+💻 Computer Labs with 24 Systems – 0.12 Million PKR dedicated to tech-enhanced learning
+🎓 BS Program Initiative – providing pathways for higher education
+👨‍🏫 Staff Replacement Drive – ensuring highly qualified, dedicated educators
+🧺 Poverty Alleviation Program – supporting over 22 rural villages through education`,
+      detail4:
+        "Through unwavering commitment, generous investment, and a passion for transforming lives, Helpline Lahore has ensured that the Aligarh Educational Complex not only honors its past but builds a brighter future for thousands of students across the region.",
       color: "#f15b43",
     },
     {
       id: 26,
       category: ["Education"],
-      img: "/img/causes/girlsschool.jpeg",
-      img1: "/img/causes/girlsschool2.jpeg",
-      img2: "/img/causes/girlsschool3.jpeg",
-      detail: "Free education for brighter futures.",
-      description:
-        "CH. Rahmat Ali Superior Higher Secondary School, located in the Alighar Education Complex in Gojra, is a remarkable institution owned by Helpline NGO. The school provides free education to children from financially struggling families in the surrounding areas. The institution offers a comprehensive curriculum that includes language, mathematics, science, and social studies, among other subjects, with a focus on academic excellence. In addition to academic subjects, the school also provides extracurricular activities that help to develop the student’s skills and talents. The institution encourages students to participate in sports, debates, and other activities that enable them to develop their leadership skills and teamwork abilities. The Alighar Education Complex is staffed with highly qualified and experienced teachers who are dedicated to ensuring that each child receives a quality education. The institution also provides free uniforms, textbooks, and school supplies to the students.",
+      img: "/img/causes/imanmaryam.png",
+      img1: "/img/causes/sideangle.png",
+      img2: "/img/causes/maryamgirls.png",
+      img3: "/img/causes/roote.jpg",
+      img4: "/img/causes/rooted1.jpg",
+      img7: "/img/causes/womenedu1.jpg",
+      img8: "/img/causes/womenedu2.jpg",
+      link: "",
+      link3: "",
       ActualName:
         "Iman Maryam Girls Higher Secondary School Alighar Education Complex",
+      detail: "Free education for brighter futures.",
+      description: `Aligarh Educational Complex – A Legacy of Learning and Service  
+    The Aligarh Educational Complex, located in 244 G.B, continues to be a source of empowerment for over 1,400 students across three schools. Among them is:
+    Iman Maryam Girls’ Higher Secondary School – serving more than 600 girls with access to free, high-quality education and pick-and-drop services.  
+    This initiative ensures that no girl is held back due to financial hardship or travel difficulties, allowing them to focus fully on their studies and future.`,
       desc: "Iman Maryam Girls Higher Secondary School Alighar Education Complex (Gojra)",
+      historyTitle: "A Vision Rooted in Empowerment",
+      UpgradeTitle: "Helpline’s Ongoing Commitment to Girls’ Education",
+      FutureTitle: "Building Confident, Educated Women for Tomorrow",
+      detail2: `Founded in 2002 in response to overwhelming demand after the boys’ school launch, Iman Maryam Girls’ Higher Secondary School was established to offer equal opportunity education for girls.  
+    It was built on a separate, purpose-built campus and even included hostel facilities to accommodate students from distant areas.  
+    In 2013, Helpline Lahore adopted the management of the entire complex after the founder’s passing, enhancing operations, modernizing infrastructure, and ensuring uninterrupted educational support for hundreds of girls.`,
+      detail3: `Helpline Lahore continues to drive the school’s growth with targeted investments and initiatives.  
+    👧 Free Uniforms, Textbooks, and Stationery – removing all cost barriers  
+    🏗️ Renovation of Girls' School Campus – 2.2 Million PKR spent to uplift learning conditions  
+    💼 Qualified Female Educators – appointed through rigorous staff replacement drive  
+    🎯 Emphasis on Holistic Development – academic, leadership, and extracurricular training  
+    🚌 Transportation Services – enabling safe travel from remote areas  
+    🌾 Rural Outreach – benefiting young girls from 22 surrounding villages`,
+      detail4:
+        "Through strategic investment and deep compassion, Helpline Lahore ensures the school continues to empower the next generation of confident, educated women—each ready to lead, uplift, and transform her community.",
       color: "#65cabb",
     },
+
     {
       id: 27,
       category: ["Education"],
-      img: "/img/causes/eman1.jpeg",
-      detail: "Free education for brighter futures.",
-      description:
-        "Emman Maryam Smart School, Alighar Education Complex (Gojra) is a remarkable institution that is supported by Helpline NGO. The school is dedicated to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and enthusiastic, despite the financial challenges they may face. They are committed to their education and strive to excel academically. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been crucial in making this possible. By providing financial assistance, Helpline NGO is helping to ensure that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are designed to cater to the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
+      img: "/img/causes/smart2.png",
+      img1: "/img/causes/smart.png",
+      img2: "/img/causes/eman1.jpeg",
+
+      img5: "/img/causes/foundition1.png",
+      img6: "/img/causes/foundition2.png",
+      img7: "/img/causes/begin.JPG",
+      img8: "/img/causes/begin1.JPG",
+
+      link: "https://www.youtube.com/shorts/7sh2krvAEZY",
+      link3: "https://www.youtube.com/watch?v=_hliltW3iEM",
       ActualName: "Emman Maryam Smart School Alighar Education Complex",
+      detail: "Free education for brighter futures.",
+      description: `Aligarh Educational Complex – A Legacy of Learning and Service  
+    Within the same powerful framework of educational empowerment, the Emman Maryam Smart School caters to more than 300 primary-level children.  
+    This school represents the foundation of lifelong learning, where underprivileged children receive quality education, loving mentorship, and the confidence to dream bigger.`,
       desc: "Emman Maryam Smart School Alighar Education Complex (Gojra)",
-      color: "#65cabb",
+      historyTitle: "Where Young Minds Begin Their Journey",
+      UpgradeTitle: "Helpline’s Focus on Foundational Learning",
+      FutureTitle: "Smart Kids, Brighter Futures",
+      detail2: `Established as the third arm of the Aligarh Educational Complex, the Smart School focuses on early childhood and primary education for children who may otherwise have no access to schools.  
+    The vision is simple yet powerful—begin education early, make it fun and effective, and empower children for higher success later in life.  
+    When Helpline Lahore took charge in 2013, they prioritized this segment by investing in purpose-built infrastructure and child-friendly learning spaces.`,
+      detail3: `Helpline Lahore’s mission for the Smart School is rooted in technology, engagement, and equity.  
+    🏫 Brand-New Smart School Campus – fully constructed for a cost of 0.3 Million PKR  
+    🧸 Early Learning Tools & Resources – age-appropriate, interactive, and engaging  
+    💻 Computer Lab Setup – 24 systems installed to develop digital literacy early  
+    🪑 Smart School Furniture – 0.25 Million PKR spent on child-friendly furnishings  
+    👩‍🏫 Qualified Primary Teachers – passionate and trained to handle young learners  
+    📚 Personalized Learning Paths – ensuring no child is left behind  
+    🌍 Strong Community Support – reaching children from surrounding rural villages`,
+      detail4:
+        "With its tailored focus on primary education, the Emman Maryam Smart School prepares young children to enter the future with curiosity, resilience, and purpose—paving the way for a brighter Pakistan.",
+      color: "#5fb35b",
     },
 
     {
@@ -1563,58 +1364,63 @@ export const HelplineData = {
     {
       id: 33,
       category: ["Own School"],
-      img: "/img/causes/cause13.jpg",
-      img1: "/img/causes/alkitab3.jpg",
-      img2: "/img/causes/alkitab4.jpg",
+      img: "/img/causes/futureplan1.png",
+      img1: "/img/causes/gullowali2.jpg",
+      img2: "/img/causes/gullowali3.jpg",
+      img3: "/img/causes/underconstruction2.jpg",
+      img4: "/img/causes/gullowali111.jpg",
+      img7: "/img/causes/futureplan1.png",
+      img8: "/img/causes/futureplan2.png",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
-        "Al-Kitab is a school that was established by Helpline NGO with the objective of providing quality education to children from underprivileged backgrounds. The school has a unique fee structure where more than 75 % of students receive support from the NGO and are able to attend the school for free. The remaining 25 % of students pay a minimal fee, which is used to cover basic operational expenses. At Al-Kitab, we believe that every child deserves access to quality education, regardless of their financial background. Our curriculum is designed to provide a well-rounded education that focuses on academic excellence, personal growth, and character development. We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
-      ActualName: "Al-Kitab Education System School Rajanpur",
+        "Al-Kitab School Rajanpur (Gullowali) is a project of Helpline Welfare Trust NGO, dedicated to providing quality education to children from underprivileged backgrounds in one of the most underserved areas of the region. The school is being established with the vision of creating an accessible learning environment where every child, regardless of financial circumstances, can receive an excellent education. More than 75% of students will study free of cost with full NGO support, while the remaining will pay a minimal fee to help cover basic operational expenses. Alongside a strong academic curriculum, the school will also focus on personal growth, character development, and creating opportunities for a brighter future.",
+      historyTitle: "Under Construction Al-Kitab School Rajanpur (Gullowali)",
+      detail2:
+        "Currently under construction, Al-Kitab School will fill a critical educational gap in a community where, within a 25 km radius, only a handful of primary schools exist. This makes the project not just important but essential for ensuring that children have access to quality learning. The institution will also prioritize women’s education, offering Islamic studies and Quran learning programs, so that future generations grow up with strong moral, ethical, and spiritual foundations. To bring this vision to life, we urgently need donations for construction, furnishing, and classroom setup. Your support will directly contribute to opening doors of knowledge, hope, and opportunity for the children and families of Rajanpur.",
+      FutureTitle: "Future of Al-Kitab School Rajanpur (Gullowali)",
+      detail4:
+        "Our long-term vision for Al-Kitab School is to expand beyond primary and secondary education, growing step-by-step into a college and eventually a full-fledged university. This will allow students from the community to pursue higher education without leaving their hometown, breaking the cycle of limited opportunities in the region. By integrating both modern academics and Islamic education, we aim to create a balanced and capable generation that can lead with knowledge, values, and faith. Your contributions today will not only help complete the school but will lay the foundation for an educational institution that will transform lives for decades to come.",
+      ActualName: "Al-Kitab School Rajanpur (Gullowali)",
       desc: "Al-Kitab Education System School Rajanpur (Gullowali).",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 38,
-      category: ["Adopted Schools"],
-      img: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
-      img1: "/img/causes/PHOTO-2025-02-19-11-45-31(2).jpg",
-      img2: "/img/causes/PHOTO-2025-02-19-11-45-31(3).jpg",
+      category: ["Education"],
+      img: "/img/causes/banazir1.png",
+      img1: "/img/causes/PHOTO-2025-02-19-11-45-31.jpg",
+      img2: "/img/causes/banazir2.png",
+      img3: "/img/causes/banazir5.png",
+      img4: "/img/causes/banazir4.png",
+      img5: "/img/causes/banazir3.png",
+      img6: "/img/causes/benazir6.png",
       detail:
-        "GPS Ando Muhajir School empowers students with quality education.",
-      description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+        "Empowering girls through quality education and comprehensive support services.",
+      description: `Benazir Public Girls School – A Beacon of Hope for Girls' Education  
+    Located in a community where educational opportunities for girls were once limited, Benazir Public Girls School has emerged as a transformative institution under Helpline's dedicated support.  
+    Through comprehensive adoption, this school now serves hundreds of young girls, providing them with free, high-quality education and the tools they need to build brighter futures for themselves and their families.`,
       pbar: "pbar_1",
-
-      desc: "Benazir Higher Secondary School",
+      desc: "Benazir Public Girls School",
       ActualName: "Benazir Public Girls School",
       adopted: "Adopted",
+      historyTitle: "From Struggling Institution to Center of Excellence",
+      UpgradeTitle: "Helpline's Transformative Investment in Girls' Education",
+      FutureTitle: "Building Tomorrow's Female Leaders",
+      detail2: `Before Helpline's intervention, Benazir Public Girls School faced significant challenges that threatened its ability to provide quality education.  
+    The school struggled with inadequate infrastructure, insufficient teaching resources, and financial constraints that limited its capacity to serve the community effectively.  
+    Recognizing the critical importance of girls' education in breaking cycles of poverty, Helpline stepped in to adopt the school, transforming it into a model institution that now stands as a pillar of educational excellence in the region.`,
+      detail3: `Helpline's comprehensive support has revolutionized every aspect of the school's operations and educational delivery.  
+    👩‍🏫 Qualified Female Teachers – ensuring culturally appropriate and inspiring role models  
+    📚 Complete Educational Resources – textbooks, supplies, and learning materials provided free  
+    🏗️ Infrastructure Improvements – upgraded classrooms, facilities, and learning environments  
+    🍎 Nutritional Support – meal programs to ensure students can focus on learning  
+    🚌 Safe Transportation – enabling girls from distant areas to attend school safely  
+    💡 Technology Integration – computer labs and digital learning tools  
+    🎓 Scholarship Programs – supporting exceptional students to pursue higher education  
+    👥 Community Engagement – working with families to promote girls' education`,
+      detail4:
+        "Through sustained commitment and strategic investment, Helpline continues to ensure that Benazir Public Girls School serves as a catalyst for social change, empowering young women to become confident leaders, skilled professionals, and positive change-makers in their communities. Every girl who graduates from this institution carries with her the potential to transform not just her own life, but the lives of countless others around her.",
       color: "#f15b43",
     },
     {
@@ -1635,32 +1441,6 @@ export const HelplineData = {
       detail3:
         "We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
       color: "#65cabb",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrentialalll abid town rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 40,
@@ -1723,32 +1503,6 @@ export const HelplineData = {
 
       desc: "CLEAN WATER PROJECT IN BALOCHISTAN",
       color: "#5fb35b",
-      history: [
-        {
-          year: "2022",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2023",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2024",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-        {
-          year: "2025",
-          image: "/img/causes/houseconstruction1.jpeg",
-          description:
-            "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-        },
-      ],
     },
     {
       id: 9,
