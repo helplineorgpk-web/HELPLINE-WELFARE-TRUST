@@ -94,6 +94,9 @@ export default function NavMobile() {
               <li>
                 <Link href="/rashan">Rashan Program</Link>
               </li>
+              <li>
+                <Link href="/communityCenter">Community Center</Link>
+              </li>
             </ul>
           </li>
           <li className="menu-item-has-children">

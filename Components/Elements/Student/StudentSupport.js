@@ -6,8 +6,6 @@ import Link from "next/link";
 export default function StudentSupport() {
   return (
     <main className={styles.container}>
-      <div className={styles.backgroundOverlay}></div>
-
       <h1 className={styles.title}>
         <span>Support</span> A Student
       </h1>
