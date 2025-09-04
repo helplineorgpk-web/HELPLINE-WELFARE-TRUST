@@ -370,11 +370,16 @@ export const HelplineData = {
       img2: "/img/causes/2.jpg",
       img3: "/img/causes/chani11.jpg",
       img4: "/img/causes/chani22.jpg",
+      img5: "/img/causes/chani5.jpg",
+      img6: "/img/causes/chani6.jpg",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
         "Alkitab Primary School was established in 2021 in a small village of Tehsil Ahmedpur Sharqia by Helpline, a nonprofit organization. The school building was generously donated by Mr. Jam Jazoor Bux. Starting with just 15 out-of-school children from nearby villages, the school has grown significantly and now educates 83 students. With a dedicated team of six teachers, Alkitab Primary School provides quality education to underprivileged children, helping bridge the educational gap in the region. The institution remains committed to empowering young minds and fostering community development through learning.",
       historyTitle: "The Green Growth Initiative ",
+      UpgradeTitle: "Celebrating the Independence Day",
+      detail3:
+        "The Independence Day celebration at Al-Kitab Education System School, Bahawalpur (Chani Goth) was a vibrant and patriotic event filled with joy and enthusiasm. The program began with the hoisting of the national flag, followed by the recitation of the national anthem, creating a spirit of unity and pride among students and teachers. Children showcased their talents through speeches, national songs, and tableaus that highlighted the sacrifices of our heroes and the importance of freedom. The school premises were decorated with green and white flags, balloons, and banners, giving a festive look to the occasion. Teachers delivered motivational talks on the value of independence and the role of youth in building a stronger Pakistan. With active participation from parents and community members, the event fostered a sense of belonging, patriotism, and commitment to the nation’s progress, making the day truly memorable for everyone involved.",
       detail2:
         "The Green Growth Initiative was launched in 2021 by Helpline, a nonprofit organization, to promote environmental awareness and sustainability in Tehsil Ahmedpur Sharqia. The project began with the generous support of local community members, who donated land for a small nursery. Starting with just 50 saplings, the initiative has expanded into a vibrant green space with over 1,000 plants and trees. Managed by a dedicated team of volunteers, the program not only enhances the beauty of the surroundings but also educates local residents, especially children, about the importance of environmental conservation. Through regular planting drives and community engagement, the Green Growth Initiative continues to inspire a culture of care for nature and a greener future for the region.",
       desc: "Al-Kitab Education System School,  Bahawalpur  (Chani Goth).",
@@ -414,30 +419,26 @@ export const HelplineData = {
       img6: "/img/causes/benazir6.png",
       detail:
         "Empowering girls through quality education and comprehensive support services.",
-      description: `Benazir Public Girls School – A Beacon of Hope for Girls' Education  
-    Located in a community where educational opportunities for girls were once limited, Benazir Public Girls School has emerged as a transformative institution under Helpline's dedicated support.  
-    Through comprehensive adoption, this school now serves hundreds of young girls, providing them with free, high-quality education and the tools they need to build brighter futures for themselves and their families.`,
+      description: `Established in memory of the late Prime Minister of Pakistan, Benazir Bhutto, the school was founded with the vision of empowering young girls through education in a community where opportunities for them were scarce. Today, it stands as a proud institution educating more than 2,200 underprivileged girls of the area, offering them a chance to break barriers and build better futures. Recently, Helpline adopted the school, taking full responsibility for its operations and development, ensuring that the mission of accessible, quality education for girls continues to grow stronger every day.`,
       pbar: "pbar_1",
-      desc: "Benazir Public Girls School",
-      ActualName: "Benazir Public Girls School",
+      desc: "Benazir Public Girls Higher Secondary School (Nawabshah)",
+      ActualName: "Benazir Public Girls Higher Secondary School",
       adopted: "Adopted",
       historyTitle: "From Struggling Institution to Center of Excellence",
       UpgradeTitle: "Helpline's Transformative Investment in Girls' Education",
       FutureTitle: "Building Tomorrow's Female Leaders",
-      detail2: `Before Helpline's intervention, Benazir Public Girls School faced significant challenges that threatened its ability to provide quality education.  
-    The school struggled with inadequate infrastructure, insufficient teaching resources, and financial constraints that limited its capacity to serve the community effectively.  
-    Recognizing the critical importance of girls' education in breaking cycles of poverty, Helpline stepped in to adopt the school, transforming it into a model institution that now stands as a pillar of educational excellence in the region.`,
-      detail3: `Helpline's comprehensive support has revolutionized every aspect of the school's operations and educational delivery.  
-    👩‍🏫 Qualified Female Teachers – ensuring culturally appropriate and inspiring role models  
-    📚 Complete Educational Resources – textbooks, supplies, and learning materials provided free  
-    🏗️ Infrastructure Improvements – upgraded classrooms, facilities, and learning environments  
-    🍎 Nutritional Support – meal programs to ensure students can focus on learning  
-    🚌 Safe Transportation – enabling girls from distant areas to attend school safely  
-    💡 Technology Integration – computer labs and digital learning tools  
-    🎓 Scholarship Programs – supporting exceptional students to pursue higher education  
-    👥 Community Engagement – working with families to promote girls' education`,
+      detail2: `Before Helpline’s intervention, Benazir Public Girls School faced significant challenges that threatened its survival. Inadequate infrastructure, lack of resources, and financial constraints limited its ability to serve the community effectively. Recognizing the transformative power of girls’ education in breaking the cycle of poverty, Helpline stepped in and revitalized the institution. Today, it has become a model school and a pillar of educational excellence in the region.`,
+      detail3: `Helpline’s comprehensive adoption has strengthened every aspect of the school’s operations and academic delivery:
+   Qualified Female Teachers – providing culturally appropriate role models
+   Complete Educational Resources – free textbooks, stationery, and supplies
+   Infrastructure Improvements – upgraded classrooms, safe buildings, and modern facilities
+   Nutritional Support – meal programs so students can focus on learning
+   Safe Transportation – enabling girls from distant areas to attend school securely
+   Technology Integration – computer labs and digital learning opportunities
+   Scholarship Programs – helping exceptional students pursue higher education
+   Community Engagement – collaborating with families to encourage and sustain girls’ education`,
       detail4:
-        "Through sustained commitment and strategic investment, Helpline continues to ensure that Benazir Public Girls School serves as a catalyst for social change, empowering young women to become confident leaders, skilled professionals, and positive change-makers in their communities. Every girl who graduates from this institution carries with her the potential to transform not just her own life, but the lives of countless others around her.",
+        "With its renewed strength, Benazir Public Girls School now acts as a catalyst for social change. Each girl who studies here is empowered with the knowledge, confidence, and skills to shape a brighter future—not just for herself but for her family and community. Through Helpline’s sustained commitment, the school continues to produce future leaders, professionals, and change-makers who carry forward the legacy of resilience, empowerment, and progress.",
       color: "#f15b43",
     },
     {
@@ -458,70 +459,66 @@ export const HelplineData = {
       desc: "Govt GPS. Misri Bheel School (Tando Allah Yar)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      historyTitle: "From Abandoned Classrooms to Educational Renaissance",
-      UpgradeTitle: "Helpline's Complete School Revival Initiative",
-      FutureTitle: "Sustaining Educational Excellence in Rural Communities",
-      detail2: `The story of Govt GPS. Misri Bheel School is one of abandonment turned into opportunity. Located in the rural area of Tando Allah Yar, this government primary school had been closed for years due to lack of resources, infrastructure decay, and administrative neglect.  
-    The building stood empty, classrooms gathered dust, and an entire generation of children in the community faced the prospect of growing up without access to formal education.  
-    When Helpline discovered this abandoned institution, they saw not just empty rooms, but untapped potential and a community crying out for educational opportunity.`,
-      detail3: `Helpline's comprehensive revival of Misri Bheel School involved complete reconstruction and renewal of every aspect of the institution.  
-    🏗️ Complete Infrastructure Renovation – rebuilding classrooms, roofs, and essential facilities from the ground up  
-    👩‍🏫 Qualified Teaching Staff – recruiting and training dedicated educators committed to rural education  
-    📚 Educational Resources – providing textbooks, learning materials, and classroom supplies  
-    💡 Modern Learning Environment – installing proper lighting, ventilation, and learning aids  
-    🍎 Nutritional Programs – ensuring students receive proper meals to support their learning  
-    🚌 Transportation Solutions – addressing mobility challenges for students from distant areas  
-    💰 Financial Sustainability – covering operational costs including teacher salaries and maintenance  
-    👥 Community Engagement – working with local families to promote education and school attendance`,
-      detail4:
-        "Today, Govt GPS. Misri Bheel School stands as a powerful testament to what can be achieved when dedication meets opportunity. From a closed and forgotten building, it has become a beacon of hope for rural education, proving that no community is too remote and no challenge too great when there is commitment to transforming lives through learning. The school now serves as a model for rural educational revival across the region.",
       color: "#65cabb",
     },
     {
       id: 21,
       category: ["Adopted Schools"],
-      img: "/img/causes/nabibakhsh1.jpg",
-      img1: "/img/causes/nabibakhsh.jpg",
-      img2: "/img/causes/nabibakhsh2.jpg",
+      img: "/img/causes/nabibakhsh.png",
+      img1: "/img/causes/nabibakhsh1.png",
+      img2: "/img/causes/nabibakhsh2.png",
+      img3: "/img/causes/nabibakhsh3.png",
+      img4: "/img/causes/nabibakhsh4.png",
+      img5: "/img/causes/nabibakhsh5.png",
+      img6: "/img/causes/nabibakhsh6.png",
       detail:
-        "GPS. Nabi Baksh Gabool School empowers students with quality education.",
-      description:
-        "The Helpline Social Welfare Foundation’s adoption of Govt. Nabi Baksh Gabool School is a remarkable example of a community-based organization taking the initiative to support underprivileged students and uplift the education system. The Foundation has assumed full responsibility for the school, providing much-needed financial aid and resources to ensure that students receive a quality education.<br>Through this partnership, the Foundation has been able to offer an array of programs and resources to support students’ academic achievement, including scholarships, mentorship programs, and academic support services. The Foundation has also focused on ensuring that the school is well-maintained and that students have access to critical resources and supplies.",
-
-      desc: "Sindh Govt Primary School, TandoAllahYar (Nabi Baksh Gabool) ",
+        "Transforming educational challenges into opportunities for rural excellence.",
+      description: `Govt GPS. Nabi Baksh Gabool School – A Story of Educational Transformation  
+    In the rural landscape of Tando Allah Yar, Govt GPS. Nabi Baksh Gabool School stands as a powerful example of how strategic adoption can transform struggling educational institutions into thriving centers of learning.  
+    Through Helpline Welfare Trust's comprehensive intervention, this government primary school has evolved from a resource-starved institution into a beacon of hope for quality education in underserved communities.`,
+      desc: "Govt GPS. Nabi Baksh Gabool School (Tando Allah Yar)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
+
       color: "#5fb35b",
     },
     {
       id: 19,
       category: ["Adopted Schools"],
-      img: "/img/causes/nimro1.jpg",
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
+      img: "/img/causes/nimro.jpg",
+      img1: "/img/causes/nimro.jpg",
+      img2: "/img/causes/nimro1.jpg",
+      img3: "/img/causes/nimro2.jpg",
+      img4: "/img/causes/nimro3.jpg",
+      img5: "/img/causes/nimro4.jpg",
+      img6: "/img/causes/nimro5.jpg",
+
       detail:
         "GPS. Nimro Sharif School empowers students with quality education.",
       description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+        "Adoption Narrative: Once a neglected, low-enrollment campus with inadequate infrastructure and learning resources, Govt. Nimro Sharif School has been revitalized by Helpline Welfare Trust. Through comprehensive repairs, provision of teachers and learning materials, WASH facilities, and community re-enrolment efforts, the school now operates as a safe, well-resourced primary campus with regular classes, higher attendance, and improved learning outcomes.",
       pbar: "pbar_1",
-
       desc: "Sindh Govt Primary School, Mirpurkhas (Nimro Sharif) ",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      color: "#f15b43",
+      color: "#5fb35b",
     },
 
     {
       id: 22,
       category: ["Adopted Schools"],
-      img: "/img/causes/sardar1.jpg",
-      img1: "/img/causes/sardar2.jpg",
-      img2: "/img/causes/sardar3.jpg",
+      img: "/img/causes/laghari.jpg",
+      img1: "/img/causes/laghari1.jpg",
+      img2: "/img/causes/laghari2.jpg",
+      img3: "/img/causes/laghari3.jpg",
+      img4: "/img/causes/laghari4.jpg",
+
       detail:
         "GPS. Sardar Khan Laghari School empowers students with quality education.",
       description:
-        "The Helpline Social Welfare Foundation’s adoption of Govt. Sardar Khan Laghari School is a commendable initiative aimed at improving the quality of education for underprivileged students. By taking on the full responsibility of supporting the school, the Foundation has helped to stabilize its operations and ensure its sustainability in the long run. In addition to supporting students’ academic success, the Foundation has worked to ensure that the school is well-maintained and equipped with the necessary resources and supplies. This has helped to create a conducive learning environment that promotes students’ well-being and academic achievement.",
-      desc: "Sindh Govt Primary School, Mirpurkhas (Sardar Khan Laghari) ",
+        "Helpline Welfare Trust has adopted Govt. Sardar Khan Laghari School from the government and comprehensively renewed it for a better future of Pakistan. What was once an under-resourced campus with low attendance and weak learning outcomes now operates as a well-maintained, student-centered school—equipped with repaired classrooms, reliable WASH facilities, qualified teachers, and complete learning materials. Through community outreach and re-enrolment drives, attendance and retention have improved, and students are receiving consistent, quality education in a safe environment.",
+
+      desc: "GPS. Sardar Khan Laghari School (Mirpurkhas)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#65cabb",
@@ -529,40 +526,48 @@ export const HelplineData = {
     {
       id: 9,
       category: ["Adopted Schools"],
-      img: "/img/causes/roruschool.jpg",
-      img1: "/img/causes/roru1.jpg",
-      img2: "/img/causes/roru2.jpg",
+      img: "/img/causes/rorugoth.jpg",
+      img1: "/img/causes/rorugoth1.jpg",
+      img2: "/img/causes/rorugoth2.jpg",
+      img3: "/img/causes/rorugoth3.jpg",
+      img4: "/img/causes/rorugoth4.jpg",
+      ActualName: "Sindh Govt Primary School",
       detail:
         "Govt. Roru Goth School empowers students with quality education.",
       description:
-        "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
+        "Helpline Welfare Trust has adopted and renewed Govt. Roru Goth School to secure a better future for Pakistan’s children. What was once an under-resourced campus with poor infrastructure and low attendance is now a functioning, well-equipped school—featuring repaired classrooms, reliable WASH facilities, qualified teachers, and complete learning materials. With active community engagement and re-enrolment, students now attend regularly and benefit from consistent, quality education in a safe and supportive environment.",
       progressData: "65",
-      desc: "Sindh Govt Primary School, Mirpurkhas (Roru Goth) ",
+      desc: "GPS Roru Goth School (Mirpurkhas)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      color: "#f15b43",
+      color: "#5fb35b",
     },
     {
       id: 10,
       category: ["Adopted Schools"],
-      img: "/img/causes/cause14.jpg",
-      img1: "/img/causes/gpsbaglair1.jpg",
-      img2: "/img/causes/gpsbaglair2.jpg",
+      img: "/img/causes/baglair.jpg",
+      img1: "/img/causes/baglair1.jpg",
+      img2: "/img/causes/baglair2.jpg",
+      img3: "/img/causes/baglair3.jpg",
+      img4: "/img/causes/baglair4.jpg",
+      ActualName: "Sindh Govt Primary School",
       detail:
         "GPS. Bagliar Mithi School empowers students with quality education.",
       description:
-        "Govt. Bagliar Mithi School is a beacon of hope for underprivileged students who might not otherwise have access to quality education. With the help of a helpline NGO, the school can provide support to students facing financial and other challenges. This support can come in many forms, including scholarships, tuition assistance, and other resources designed to help students succeed in their studies. The work that is being done by Govt. Bagliar Mithi School and the helpline NGO are genuinely inspiring. By providing opportunities for education to students who might not otherwise have access to it, they are helping to break the cycle of poverty and create a brighter future for the next generation. The dedication and hard work of the teachers and staff at the school, as well as the generosity of the NGO supporters, is making a real difference in the lives of these students and is something that should be celebrated and supported by all members of the community.",
-      desc: "Sindh Govt Primary School, Tharparkar (Bagliar Mithi) ",
+        "Helpline Welfare Trust has adopted and renewed Govt. Bagliar Mithi School to secure a better future for Pakistan’s children. Once closed and forgotten, Govt. Bagliar Mithi School has been adopted and fully renewed by Helpline Welfare Trust. Through infrastructure repairs, provision of qualified teachers, complete learning materials, and restored WASH facilities, the campus has been brought back to life. With active community engagement and re-enrolment, the school now delivers consistent, quality primary education—turning a shuttered building into a thriving, hopeful future for the children of Tharparkar.",
+      desc: "The Govt GPS. Bagliar Mithi School (Tharparkar)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      color: "#65cabb",
+      color: "#5fb35b",
     },
     {
       id: 11,
       category: ["Adopted Schools"],
-      img: "/img/causes/kaktario1.jpg",
-      img1: "/img/causes/kaktario2.jpg",
-      img2: "/img/causes/kaktario3.jpg",
+      img: "/img/causes/kakrio.jpg",
+      img1: "/img/causes/kakrio3.jpg",
+      img2: "/img/causes/kakrio4.jpg",
+      img3: "/img/causes/kakrio1.jpg",
+      img4: "/img/causes/kakrio2.jpg",
       detail:
         "Govt. Kakrario Saman Mian School empowers students with quality education.",
       description:
@@ -575,9 +580,13 @@ export const HelplineData = {
     {
       id: 12,
       category: ["Adopted Schools"],
-      img: "/img/causes/cause16.jpg",
-      img1: "/img/causes/gpsmisali.jpg",
-      img2: "/img/causes/gpsmisali1.jpg",
+      img: "/img/causes/misaligoth.jpg",
+      img1: "/img/causes/misaligoth1.jpg",
+      img2: "/img/causes/misaligoth2.jpg",
+      img3: "/img/causes/misaligoth3.jpg",
+      img4: "/img/causes/misaligoth4.jpg",
+      img5: "/img/causes/misaligoth5.jpg",
+      img6: "/img/causes/misaligoth6.jpg",
       detail:
         "GPS. Misali Goth School empowers students with quality education.",
       description:
@@ -602,50 +611,53 @@ export const HelplineData = {
       adopted: "Adopted",
       color: "#65cabb",
     },
-    {
-      id: 34,
-      category: ["Adopted Schools"],
-      img: "/img/causes/nimro1.jpg",
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
-      detail:
-        "GPS Qazi Muhammad Ashraf School empowers students with quality education.",
-      description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
-      pbar: "pbar_1",
-      desc: "Sindh Govt Primary School, Tharparkar (Nimro Sharif) ",
-      ActualName: "Sindh Govt Primary School",
-      adopted: "Adopted",
-      color: "#5fb35b",
-    },
-    {
-      id: 37,
-      category: ["Adopted Schools"],
-      img: "/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg",
-      img1: "/img/causes/PHOTO-2025-02-19-11-40-10(1).jpg",
-      img2: "/img/causes/PHOTO-2025-02-19-11-40-10(2).jpg",
-      img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
-      img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
-      detail:
-        "GPS Nazar Hussain Arain School empowers students with quality education.",
-      description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
-      pbar: "pbar_1",
-      desc: "Sindh Govt Primary School, Tharparkar (Nimro Sharif) ",
-      adopted: "Adopted",
-      color: "#65cabb",
-    },
+    // {
+    //   id: 34,
+    //   category: ["Adopted Schools"],
+    //   img: "/img/causes/nimro1.jpg",
+    //   img1: "/img/causes/nimro2.jpg",
+    //   img2: "/img/causes/nimro3.jpg",
+    //   detail:
+    //     "GPS Qazi Muhammad Ashraf School empowers students with quality education.",
+    //   description:
+    //     "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+    //   pbar: "pbar_1",
+    //   desc: "Sindh Govt Primary School, Tharparkar (Nimro Sharif) ",
+    //   ActualName: "Sindh Govt Primary School",
+    //   adopted: "Adopted",
+    //   color: "#5fb35b",
+    // },
+    // {
+    //   id: 37,
+    //   category: ["Adopted Schools"],
+    //   img: "/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg",
+    //   img1: "/img/causes/PHOTO-2025-02-19-11-40-10(1).jpg",
+    //   img2: "/img/causes/PHOTO-2025-02-19-11-40-10(2).jpg",
+    //   img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
+    //   img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
+    //   detail:
+    //     "GPS Nazar Hussain Arain School empowers students with quality education.",
+    //   description:
+    //     "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+    //   pbar: "pbar_1",
+    //   desc: "Sindh Govt Primary School, Tharparkar (Nimro Sharif) ",
+    //   adopted: "Adopted",
+    //   color: "#65cabb",
+    // },
     {
       id: 36,
       category: ["Adopted Schools"],
-      img: "/img/causes/nimro1.jpg",
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
+      img: "/img/causes/andumahajir.jpg",
+      img1: "/img/causes/andumahajir1.jpg",
+      img2: "/img/causes/andumahajir2.jpg",
+      img3: "/img/causes/andumahajir3.jpg",
+      img4: "/img/causes/andumahajir4.jpg",
+      img5: "/img/causes/andumahajir5.jpg",
+      img6: "/img/causes/andumahajir6.jpg",
       detail:
         "GPS Ando Muhajir School empowers students with quality education.",
       description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
-      pbar: "pbar_1",
+        "The NGO has extended its support to GPS Ando Muhajir, Tando Allah Yar, taking responsibility for the financial stability of the school by covering teachers’ salaries and ensuring the provision of essential learning materials and classroom resources. This assistance has been a lifeline for the school, which primarily educates children from economically disadvantaged families. The adoption of GPS Ando Muhajir by Helpline demonstrates how committed organizations can uplift struggling public schools and bring about meaningful change in the education sector. By empowering teachers with adequate resources and enabling students to access quality education, the NGO is not only strengthening the school’s foundation but also creating long-lasting positive effects on the wider community.",
       desc: "Sindh Govt Primary School, Tharparkar (Ando Muhajir) ",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
@@ -667,22 +679,22 @@ export const HelplineData = {
       adopted: "Adopted",
       color: "#f15b43",
     },
-    {
-      id: 41,
-      category: ["Adopted Schools"],
-      img: "/img/causes/nimro1.jpg",
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
-      detail:
-        "GPS Ando Muhajir School empowers students with quality education.",
-      description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
-      pbar: "pbar_1",
-      desc: "Sindh Govt Primary School (Girls), Karachi (Sammu Goth) ",
-      ActualName: "Sindh Govt Primary School",
-      adopted: "Adopted",
-      color: "#f15b43",
-    },
+    // {
+    //   id: 41,
+    //   category: ["Adopted Schools"],
+    //   img: "/img/causes/nimro1.jpg",
+    //   img1: "/img/causes/nimro2.jpg",
+    //   img2: "/img/causes/nimro3.jpg",
+    //   detail:
+    //     "GPS Ando Muhajir School empowers students with quality education.",
+    //   description:
+    //     "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+    //   pbar: "pbar_1",
+    //   desc: "Sindh Govt Primary School (Girls), Karachi (Sammu Goth) ",
+    //   ActualName: "Sindh Govt Primary School",
+    //   adopted: "Adopted",
+    //   color: "#f15b43",
+    // },
   ],
   causes: [
     {
@@ -816,14 +828,16 @@ export const HelplineData = {
     {
       id: 9,
       category: ["Education"],
-      img: "/img/causes/roruschool.jpg",
-      img1: "/img/causes/roru1.jpg",
-      img2: "/img/causes/roru2.jpg",
+      img: "/img/causes/rorugoth.jpg",
+      img1: "/img/causes/rorugoth1.jpg",
+      img2: "/img/causes/rorugoth2.jpg",
+      img3: "/img/causes/rorugoth3.jpg",
+      img4: "/img/causes/rorugoth4.jpg",
       ActualName: "Sindh Govt Primary School",
       detail:
         "Govt. Roru Goth School empowers students with quality education.",
       description:
-        "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
+        "Helpline Welfare Trust has adopted and renewed Govt. Roru Goth School to secure a better future for Pakistan’s children. What was once an under-resourced campus with poor infrastructure and low attendance is now a functioning, well-equipped school—featuring repaired classrooms, reliable WASH facilities, qualified teachers, and complete learning materials. With active community engagement and re-enrolment, students now attend regularly and benefit from consistent, quality education in a safe and supportive environment.",
       progressData: "65",
       desc: "GPS Roru Goth School (Mirpurkhas)",
       ActualName: "Sindh Govt Primary School",
@@ -833,14 +847,16 @@ export const HelplineData = {
     {
       id: 10,
       category: ["Education"],
-      img: "/img/causes/cause14.jpg",
-      img1: "/img/causes/gpsbaglair1.jpg",
-      img2: "/img/causes/gpsbaglair2.jpg",
+      img: "/img/causes/baglair.jpg",
+      img1: "/img/causes/baglair1.jpg",
+      img2: "/img/causes/baglair2.jpg",
+      img3: "/img/causes/baglair3.jpg",
+      img4: "/img/causes/baglair4.jpg",
       ActualName: "Sindh Govt Primary School",
       detail:
         "GPS. Bagliar Mithi School empowers students with quality education.",
       description:
-        "Govt. Bagliar Mithi School is a beacon of hope for underprivileged students who might not otherwise have access to quality education. With the help of a helpline NGO, the school can provide support to students facing financial and other challenges. This support can come in many forms, including scholarships, tuition assistance, and other resources designed to help students succeed in their studies. The work that is being done by Govt. Bagliar Mithi School and the helpline NGO are genuinely inspiring. By providing opportunities for education to students who might not otherwise have access to it, they are helping to break the cycle of poverty and create a brighter future for the next generation. The dedication and hard work of the teachers and staff at the school, as well as the generosity of the NGO supporters, is making a real difference in the lives of these students and is something that should be celebrated and supported by all members of the community.",
+        "Helpline Welfare Trust has adopted and renewed Govt. Bagliar Mithi School to secure a better future for Pakistan’s children. Once closed and forgotten, Govt. Bagliar Mithi School has been adopted and fully renewed by Helpline Welfare Trust. Through infrastructure repairs, provision of qualified teachers, complete learning materials, and restored WASH facilities, the campus has been brought back to life. With active community engagement and re-enrolment, the school now delivers consistent, quality primary education—turning a shuttered building into a thriving, hopeful future for the children of Tharparkar.",
       desc: "The Govt GPS. Bagliar Mithi School (Tharparkar)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
@@ -849,9 +865,11 @@ export const HelplineData = {
     {
       id: 11,
       category: ["Education"],
-      img: "/img/causes/kaktario1.jpg",
-      img1: "/img/causes/kaktario2.jpg",
-      img2: "/img/causes/kaktario3.jpg",
+      img: "/img/causes/kakrio.jpg",
+      img1: "/img/causes/kakrio3.jpg",
+      img2: "/img/causes/kakrio4.jpg",
+      img3: "/img/causes/kakrio1.jpg",
+      img4: "/img/causes/kakrio2.jpg",
       ActualName: "Sindh Govt Primary School",
       detail:
         "Govt. Kakrario Saman Mian School empowers students with quality education.",
@@ -866,9 +884,13 @@ export const HelplineData = {
     {
       id: 12,
       category: ["Education"],
-      img: "/img/causes/cause16.jpg",
-      img1: "/img/causes/gpsmisali.jpg",
-      img2: "/img/causes/gpsmisali1.jpg",
+      img: "/img/causes/misaligoth.jpg",
+      img1: "/img/causes/misaligoth1.jpg",
+      img2: "/img/causes/misaligoth2.jpg",
+      img3: "/img/causes/misaligoth3.jpg",
+      img4: "/img/causes/misaligoth4.jpg",
+      img5: "/img/causes/misaligoth5.jpg",
+      img6: "/img/causes/misaligoth6.jpg",
       detail:
         "GPS. Misali Goth School empowers students with quality education.",
       description:
@@ -894,23 +916,23 @@ export const HelplineData = {
       adopted: "Adopted",
       color: "#f15b43",
     },
-    {
-      id: 34,
-      category: ["Education"],
-      img: "/img/causes/nimro1.jpg",
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
-      detail:
-        "GPS Qazi Muhammad Ashraf School empowers students with quality education.",
-      description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
-      pbar: "pbar_1",
+    // {
+    //   id: 34,
+    //   category: ["Education"],
+    //   img: "/img/causes/nimro1.jpg",
+    //   img1: "/img/causes/nimro2.jpg",
+    //   img2: "/img/causes/nimro3.jpg",
+    //   detail:
+    //     "GPS Qazi Muhammad Ashraf School empowers students with quality education.",
+    //   description:
+    //     "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+    //   pbar: "pbar_1",
 
-      desc: "GPS Qazi Muhammad Ashraf (Mirpurkhas)",
-      ActualName: "Sindh Govt Primary School",
-      adopted: "Adopted",
-      color: "#f15b43",
-    },
+    //   desc: "GPS Qazi Muhammad Ashraf (Mirpurkhas)",
+    //   ActualName: "Sindh Govt Primary School",
+    //   adopted: "Adopted",
+    //   color: "#f15b43",
+    // },
     {
       id: 35,
       category: ["Education"],
@@ -943,21 +965,21 @@ export const HelplineData = {
       desc: "Karbath Medical Centre Hospital.",
       color: "#65cabb",
     },
-    {
-      id: 15,
-      category: ["Medical"],
-      img: "/img/causes/hajramedical1.jpg",
-      img1: "/img/causes/hajramedical1.jpg",
-      img2: "/img/causes/hajramedical2.jpg",
-      ActualName: "Hajra Bibi Memorial Trust Hospital",
-      detail:
-        "Haji Hospital offers free healthcare, expanding under Helpline since 2012.",
-      description:
-        "Haji Muhammad Sadiq Hajra Bibi Hospital was commissioned on 1st June 2001 at 18 km Sheikhupura-Faisalabad Road spread on 2.3 acres of land. It is a 50 bedded Hospital with Laboratory, X-ray, Operation Theatre, Gynecology Deptt, Eye Deptt, Pharmacy, etc. At the time of its inception, it was the only health facility within a radius of 20 km. The daily influx of patients was 150-200. In this hospital, poor and needy patients are provided treatment free of cost. The hospital was handed over to Helpline in 2012 and since then we are working on its expansion plans to improve the health facilities.",
+    // {
+    //   id: 15,
+    //   category: ["Medical"],
+    //   img: "/img/causes/hajramedical1.jpg",
+    //   img1: "/img/causes/hajramedical1.jpg",
+    //   img2: "/img/causes/hajramedical2.jpg",
+    //   ActualName: "Hajra Bibi Memorial Trust Hospital",
+    //   detail:
+    //     "Haji Hospital offers free healthcare, expanding under Helpline since 2012.",
+    //   description:
+    //     "Haji Muhammad Sadiq Hajra Bibi Hospital was commissioned on 1st June 2001 at 18 km Sheikhupura-Faisalabad Road spread on 2.3 acres of land. It is a 50 bedded Hospital with Laboratory, X-ray, Operation Theatre, Gynecology Deptt, Eye Deptt, Pharmacy, etc. At the time of its inception, it was the only health facility within a radius of 20 km. The daily influx of patients was 150-200. In this hospital, poor and needy patients are provided treatment free of cost. The hospital was handed over to Helpline in 2012 and since then we are working on its expansion plans to improve the health facilities.",
 
-      desc: "Hajra Bibi Memorial Trust Hospital.",
-      color: "#5fb35b",
-    },
+    //   desc: "Hajra Bibi Memorial Trust Hospital.",
+    //   color: "#5fb35b",
+    // },
     {
       id: 16,
       category: ["Medical"],
@@ -1023,16 +1045,20 @@ export const HelplineData = {
     {
       id: 19,
       category: ["Education"],
-      img: "/img/causes/nimro1.jpg",
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
+      img: "/img/causes/nimro.jpg",
+      img1: "/img/causes/nimro.jpg",
+      img2: "/img/causes/nimro1.jpg",
+      img3: "/img/causes/nimro2.jpg",
+      img4: "/img/causes/nimro3.jpg",
+      img5: "/img/causes/nimro4.jpg",
+      img6: "/img/causes/nimro5.jpg",
+
       detail:
         "GPS. Nimro Sharif School empowers students with quality education.",
       description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+        "Once a neglected, low-enrollment campus with inadequate infrastructure and learning resources, Govt. Nimro Sharif School has been revitalized by Helpline Welfare Trust. Through comprehensive repairs, provision of teachers and learning materials, WASH facilities, and community re-enrolment efforts, the school now operates as a safe, well-resourced primary campus with regular classes, higher attendance, and improved learning outcomes.",
       pbar: "pbar_1",
-
-      desc: "The Govt GPS. Nimro Sharif School",
+      desc: "Sindh Govt Primary School, Mirpurkhas (Nimro Sharif) ",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
       color: "#5fb35b",
@@ -1055,51 +1081,43 @@ export const HelplineData = {
       desc: "Govt GPS. Misri Bheel School (Tando Allah Yar)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
-      historyTitle: "From Abandoned Classrooms to Educational Renaissance",
-      UpgradeTitle: "Helpline's Complete School Revival Initiative",
-      FutureTitle: "Sustaining Educational Excellence in Rural Communities",
-      detail2: `The story of Govt GPS. Misri Bheel School is one of abandonment turned into opportunity. Located in the rural area of Tando Allah Yar, this government primary school had been closed for years due to lack of resources, infrastructure decay, and administrative neglect.  
-    The building stood empty, classrooms gathered dust, and an entire generation of children in the community faced the prospect of growing up without access to formal education.  
-    When Helpline discovered this abandoned institution, they saw not just empty rooms, but untapped potential and a community crying out for educational opportunity.`,
-      detail3: `Helpline's comprehensive revival of Misri Bheel School involved complete reconstruction and renewal of every aspect of the institution.  
-    🏗️ Complete Infrastructure Renovation – rebuilding classrooms, roofs, and essential facilities from the ground up  
-    👩‍🏫 Qualified Teaching Staff – recruiting and training dedicated educators committed to rural education  
-    📚 Educational Resources – providing textbooks, learning materials, and classroom supplies  
-    💡 Modern Learning Environment – installing proper lighting, ventilation, and learning aids  
-    🍎 Nutritional Programs – ensuring students receive proper meals to support their learning  
-    🚌 Transportation Solutions – addressing mobility challenges for students from distant areas  
-    💰 Financial Sustainability – covering operational costs including teacher salaries and maintenance  
-    👥 Community Engagement – working with local families to promote education and school attendance`,
-      detail4:
-        "Today, Govt GPS. Misri Bheel School stands as a powerful testament to what can be achieved when dedication meets opportunity. From a closed and forgotten building, it has become a beacon of hope for rural education, proving that no community is too remote and no challenge too great when there is commitment to transforming lives through learning. The school now serves as a model for rural educational revival across the region.",
+
       color: "#65cabb",
     },
     {
       id: 21,
       category: ["Education"],
-      img: "/img/causes/nabibakhsh1.jpg",
-      img1: "/img/causes/nabibakhsh.jpg",
-      img2: "/img/causes/nabibakhsh2.jpg",
+      img: "/img/causes/nabibakhsh.png",
+      img1: "/img/causes/nabibakhsh1.png",
+      img2: "/img/causes/nabibakhsh2.png",
+      img3: "/img/causes/nabibakhsh3.png",
+      img4: "/img/causes/nabibakhsh4.png",
+      img5: "/img/causes/nabibakhsh5.png",
+      img6: "/img/causes/nabibakhsh6.png",
       detail:
-        "GPS. Nabi Baksh Gabool School empowers students with quality education.",
-      description:
-        "The Helpline Social Welfare Foundation’s adoption of Govt. Nabi Baksh Gabool School is a remarkable example of a community-based organization taking the initiative to support underprivileged students and uplift the education system. The Foundation has assumed full responsibility for the school, providing much-needed financial aid and resources to ensure that students receive a quality education.<br>Through this partnership, the Foundation has been able to offer an array of programs and resources to support students’ academic achievement, including scholarships, mentorship programs, and academic support services. The Foundation has also focused on ensuring that the school is well-maintained and that students have access to critical resources and supplies.",
-
+        "Transforming educational challenges into opportunities for rural excellence.",
+      description: `Govt GPS. Nabi Baksh Gabool School – A Story of Educational Transformation  
+    In the rural landscape of Tando Allah Yar, Govt GPS. Nabi Baksh Gabool School stands as a powerful example of how strategic adoption can transform struggling educational institutions into thriving centers of learning.  
+    Through Helpline Welfare Trust's comprehensive intervention, this government primary school has evolved from a resource-starved institution into a beacon of hope for quality education in underserved communities.`,
       desc: "Govt GPS. Nabi Baksh Gabool School (Tando Allah Yar)",
       ActualName: "Sindh Govt Primary School",
       adopted: "Adopted",
+
       color: "#5fb35b",
     },
     {
       id: 22,
       category: ["Education"],
-      img: "/img/causes/sardar1.jpg",
-      img1: "/img/causes/sardar2.jpg",
-      img2: "/img/causes/sardar3.jpg",
+      img: "/img/causes/laghari.jpg",
+      img1: "/img/causes/laghari1.jpg",
+      img2: "/img/causes/laghari2.jpg",
+      img3: "/img/causes/laghari3.jpg",
+      img4: "/img/causes/laghari4.jpg",
+
       detail:
         "GPS. Sardar Khan Laghari School empowers students with quality education.",
       description:
-        "The Helpline Social Welfare Foundation’s adoption of Govt. Sardar Khan Laghari School is a commendable initiative aimed at improving the quality of education for underprivileged students. By taking on the full responsibility of supporting the school, the Foundation has helped to stabilize its operations and ensure its sustainability in the long run. In addition to supporting students’ academic success, the Foundation has worked to ensure that the school is well-maintained and equipped with the necessary resources and supplies. This has helped to create a conducive learning environment that promotes students’ well-being and academic achievement.",
+        "Helpline Welfare Trust has adopted Govt. Sardar Khan Laghari School from the government and comprehensively renewed it for a better future of Pakistan. What was once an under-resourced campus with low attendance and weak learning outcomes now operates as a well-maintained, student-centered school—equipped with repaired classrooms, reliable WASH facilities, qualified teachers, and complete learning materials. Through community outreach and re-enrolment drives, attendance and retention have improved, and students are receiving consistent, quality education in a safe environment.",
 
       desc: "GPS. Sardar Khan Laghari School (Mirpurkhas)",
       ActualName: "Sindh Govt Primary School",
@@ -1109,13 +1127,17 @@ export const HelplineData = {
     {
       id: 36,
       category: ["Education"],
-      img: "/img/causes/nimro1.jpg",
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
+      img: "/img/causes/andumahajir.jpg",
+      img1: "/img/causes/andumahajir1.jpg",
+      img2: "/img/causes/andumahajir2.jpg",
+      img3: "/img/causes/andumahajir3.jpg",
+      img4: "/img/causes/andumahajir4.jpg",
+      img5: "/img/causes/andumahajir5.jpg",
+      img6: "/img/causes/andumahajir6.jpg",
       detail:
         "GPS Ando Muhajir School empowers students with quality education.",
       description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+        "The NGO has extended its support to GPS Ando Muhajir, Tando Allah Yar, taking responsibility for the financial stability of the school by covering teachers’ salaries and ensuring the provision of essential learning materials and classroom resources. This assistance has been a lifeline for the school, which primarily educates children from economically disadvantaged families. The adoption of GPS Ando Muhajir by Helpline demonstrates how committed organizations can uplift struggling public schools and bring about meaningful change in the education sector. By empowering teachers with adequate resources and enabling students to access quality education, the NGO is not only strengthening the school’s foundation but also creating long-lasting positive effects on the wider community.",
       pbar: "pbar_1",
 
       desc: "GPS Ando Muhajir (Tando Allah Yar)",
@@ -1123,23 +1145,23 @@ export const HelplineData = {
       adopted: "Adopted",
       color: "#f15b43",
     },
-    {
-      id: 37,
-      category: ["Education"],
-      img: "/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg",
-      img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
-      img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
-      detail:
-        "GPS Nazar Hussain Arain School empowers students with quality education.",
-      description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
-      pbar: "pbar_1",
+    // {
+    //   id: 37,
+    //   category: ["Education"],
+    //   img: "/img/causes/PHOTO-2025-02-19-11-40-10(3).jpg",
+    //   img1: "/img/causes/PHOTO-2025-02-19-11-40-10.jpg",
+    //   img2: "/img/causes/PHOTO-2025-02-19-11-41-45.jpg",
+    //   detail:
+    //     "GPS Nazar Hussain Arain School empowers students with quality education.",
+    //   description:
+    //     "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+    //   pbar: "pbar_1",
 
-      desc: "GPS Nazar Hussain Arain (Tando Allah Yar)",
-      ActualName: "Sindh Govt Primary School",
-      adopted: "Adopted",
-      color: "#f15b43",
-    },
+    //   desc: "GPS Nazar Hussain Arain (Tando Allah Yar)",
+    //   ActualName: "Sindh Govt Primary School",
+    //   adopted: "Adopted",
+    //   color: "#f15b43",
+    // },
     {
       id: 23,
       category: ["Education"],
@@ -1180,11 +1202,16 @@ export const HelplineData = {
       img2: "/img/causes/2.jpg",
       img3: "/img/causes/chani11.jpg",
       img4: "/img/causes/chani22.jpg",
+      img5: "/img/causes/chani5.jpg",
+      img6: "/img/causes/chani6.jpg",
       detail:
         "Al-Kitab School offers free education, fostering growth and community service.",
       description:
         "Alkitab Primary School was established in 2021 in a small village of Tehsil Ahmedpur Sharqia by Helpline, a nonprofit organization. The school building was generously donated by Mr. Jam Jazoor Bux. Starting with just 15 out-of-school children from nearby villages, the school has grown significantly and now educates 83 students. With a dedicated team of six teachers, Alkitab Primary School provides quality education to underprivileged children, helping bridge the educational gap in the region. The institution remains committed to empowering young minds and fostering community development through learning.",
       historyTitle: "The Green Growth Initiative ",
+      UpgradeTitle: "Celebrating the Independence Day",
+      detail3:
+        "The Independence Day celebration at Al-Kitab Education System School, Bahawalpur (Chani Goth) was a vibrant and patriotic event filled with joy and enthusiasm. The program began with the hoisting of the national flag, followed by the recitation of the national anthem, creating a spirit of unity and pride among students and teachers. Children showcased their talents through speeches, national songs, and tableaus that highlighted the sacrifices of our heroes and the importance of freedom. The school premises were decorated with green and white flags, balloons, and banners, giving a festive look to the occasion. Teachers delivered motivational talks on the value of independence and the role of youth in building a stronger Pakistan. With active participation from parents and community members, the event fostered a sense of belonging, patriotism, and commitment to the nation’s progress, making the day truly memorable for everyone involved.",
       detail2:
         "The Green Growth Initiative was launched in 2021 by Helpline, a nonprofit organization, to promote environmental awareness and sustainability in Tehsil Ahmedpur Sharqia. The project began with the generous support of local community members, who donated land for a small nursery. Starting with just 50 saplings, the initiative has expanded into a vibrant green space with over 1,000 plants and trees. Managed by a dedicated team of volunteers, the program not only enhances the beauty of the surroundings but also educates local residents, especially children, about the importance of environmental conservation. Through regular planting drives and community engagement, the Green Growth Initiative continues to inspire a culture of care for nature and a greener future for the region.",
       ActualName: "Al-Kitab Education System (Chani Goth)",
@@ -1397,30 +1424,26 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       img6: "/img/causes/benazir6.png",
       detail:
         "Empowering girls through quality education and comprehensive support services.",
-      description: `Benazir Public Girls School – A Beacon of Hope for Girls' Education  
-    Located in a community where educational opportunities for girls were once limited, Benazir Public Girls School has emerged as a transformative institution under Helpline's dedicated support.  
-    Through comprehensive adoption, this school now serves hundreds of young girls, providing them with free, high-quality education and the tools they need to build brighter futures for themselves and their families.`,
+      description: `Established in memory of the late Prime Minister of Pakistan, Benazir Bhutto, the school was founded with the vision of empowering young girls through education in a community where opportunities for them were scarce. Today, it stands as a proud institution educating more than 2,200 underprivileged girls of the area, offering them a chance to break barriers and build better futures. Recently, Helpline adopted the school, taking full responsibility for its operations and development, ensuring that the mission of accessible, quality education for girls continues to grow stronger every day.`,
       pbar: "pbar_1",
-      desc: "Benazir Public Girls School",
-      ActualName: "Benazir Public Girls School",
+      desc: "Benazir Public Girls Higher Secondary School (Nawabshah)",
+      ActualName: "Benazir Public Girls Higher Secondary School",
       adopted: "Adopted",
       historyTitle: "From Struggling Institution to Center of Excellence",
       UpgradeTitle: "Helpline's Transformative Investment in Girls' Education",
       FutureTitle: "Building Tomorrow's Female Leaders",
-      detail2: `Before Helpline's intervention, Benazir Public Girls School faced significant challenges that threatened its ability to provide quality education.  
-    The school struggled with inadequate infrastructure, insufficient teaching resources, and financial constraints that limited its capacity to serve the community effectively.  
-    Recognizing the critical importance of girls' education in breaking cycles of poverty, Helpline stepped in to adopt the school, transforming it into a model institution that now stands as a pillar of educational excellence in the region.`,
-      detail3: `Helpline's comprehensive support has revolutionized every aspect of the school's operations and educational delivery.  
-    👩‍🏫 Qualified Female Teachers – ensuring culturally appropriate and inspiring role models  
-    📚 Complete Educational Resources – textbooks, supplies, and learning materials provided free  
-    🏗️ Infrastructure Improvements – upgraded classrooms, facilities, and learning environments  
-    🍎 Nutritional Support – meal programs to ensure students can focus on learning  
-    🚌 Safe Transportation – enabling girls from distant areas to attend school safely  
-    💡 Technology Integration – computer labs and digital learning tools  
-    🎓 Scholarship Programs – supporting exceptional students to pursue higher education  
-    👥 Community Engagement – working with families to promote girls' education`,
+      detail2: `Before Helpline’s intervention, Benazir Public Girls School faced significant challenges that threatened its survival. Inadequate infrastructure, lack of resources, and financial constraints limited its ability to serve the community effectively. Recognizing the transformative power of girls’ education in breaking the cycle of poverty, Helpline stepped in and revitalized the institution. Today, it has become a model school and a pillar of educational excellence in the region.`,
+      detail3: `Helpline’s comprehensive adoption has strengthened every aspect of the school’s operations and academic delivery:
+   Qualified Female Teachers – providing culturally appropriate role models
+   Complete Educational Resources – free textbooks, stationery, and supplies
+   Infrastructure Improvements – upgraded classrooms, safe buildings, and modern facilities
+   Nutritional Support – meal programs so students can focus on learning
+   Safe Transportation – enabling girls from distant areas to attend school securely
+   Technology Integration – computer labs and digital learning opportunities
+   Scholarship Programs – helping exceptional students pursue higher education
+   Community Engagement – collaborating with families to encourage and sustain girls’ education`,
       detail4:
-        "Through sustained commitment and strategic investment, Helpline continues to ensure that Benazir Public Girls School serves as a catalyst for social change, empowering young women to become confident leaders, skilled professionals, and positive change-makers in their communities. Every girl who graduates from this institution carries with her the potential to transform not just her own life, but the lives of countless others around her.",
+        "With its renewed strength, Benazir Public Girls School now acts as a catalyst for social change. Each girl who studies here is empowered with the knowledge, confidence, and skills to shape a brighter future—not just for herself but for her family and community. Through Helpline’s sustained commitment, the school continues to produce future leaders, professionals, and change-makers who carry forward the legacy of resilience, empowerment, and progress.",
       color: "#f15b43",
     },
     {
@@ -1458,22 +1481,22 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       adopted: "Adopted",
       color: "#f15b43",
     },
-    {
-      id: 41,
-      category: ["Adopted Schools"],
-      img: "/img/causes/nimro1.jpg",
-      img1: "/img/causes/nimro2.jpg",
-      img2: "/img/causes/nimro3.jpg",
-      detail:
-        "GPS Ando Muhajir School empowers students with quality education.",
-      description:
-        "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
-      pbar: "pbar_1",
-      desc: "Sindh Govt Primary School (Girls), Karachi (Sammu Goth) ",
-      ActualName: "Sindh Govt Primary School",
-      adopted: "Adopted",
-      color: "#f15b43",
-    },
+    // {
+    //   id: 41,
+    //   category: ["Adopted Schools"],
+    //   img: "/img/causes/nimro1.jpg",
+    //   img1: "/img/causes/nimro2.jpg",
+    //   img2: "/img/causes/nimro3.jpg",
+    //   detail:
+    //     "GPS Ando Muhajir School empowers students with quality education.",
+    //   description:
+    //     "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
+    //   pbar: "pbar_1",
+    //   desc: "Sindh Govt Primary School (Girls), Karachi (Sammu Goth) ",
+    //   ActualName: "Sindh Govt Primary School",
+    //   adopted: "Adopted",
+    //   color: "#f15b43",
+    // },
   ],
   homeCauses: [
     {
@@ -1864,25 +1887,25 @@ May the Almighty bless you abundantly for your kindness.  `,
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
-    {
-      id: 20,
-      designation: "Finance Secretary",
-      name: "Malik Mumtaz Awan",
-      image: "/img/organization/MALIKMUMTAZAWAN.jpg",
-      description:
-        "Malik Mumtaz Awan is the Finance Secretary, managing all financial affairs and ensuring accountability and proper utilization of funds for Helpline NGO.",
-      email: "mumtaz.awan@helpline.org",
-      workingArea: "Lahore, Pakistan",
-      nationality: "Pakistani",
-      address: "Valencia Town, Lahore",
-      detailedDescription:
-        "As Finance Secretary, Malik Mumtaz Awan is central to the financial governance of Helpline NGO. He oversees budgeting, financial reporting, and compliance with financial regulations, ensuring transparency and responsible management of resources to support our humanitarian efforts.",
-      socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-      ],
-    },
+    // {
+    //   id: 20,
+    //   designation: "Finance Secretary",
+    //   name: "Malik Mumtaz Awan",
+    //   image: "/img/organization/MALIKMUMTAZAWAN.jpg",
+    //   description:
+    //     "Malik Mumtaz Awan is the Finance Secretary, managing all financial affairs and ensuring accountability and proper utilization of funds for Helpline NGO.",
+    //   email: "mumtaz.awan@helpline.org",
+    //   workingArea: "Lahore, Pakistan",
+    //   nationality: "Pakistani",
+    //   address: "Valencia Town, Lahore",
+    //   detailedDescription:
+    //     "As Finance Secretary, Malik Mumtaz Awan is central to the financial governance of Helpline NGO. He oversees budgeting, financial reporting, and compliance with financial regulations, ensuring transparency and responsible management of resources to support our humanitarian efforts.",
+    //   socialLinks: [
+    //     { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+    //     { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+    //     { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+    //   ],
+    // },
     {
       id: 21,
       designation: "Administrator KMC",
