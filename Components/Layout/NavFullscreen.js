@@ -91,7 +91,7 @@ export default function NavFullscreen() {
               </Link>
               <ul className="submenu">
                 <li>
-                  <Link href="/distribution">Distribution</Link>
+                  <Link href="/distribution">Food Program</Link>
                 </li>
                 <li>
                   <Link href="/rashan">Rashan Program</Link>

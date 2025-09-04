@@ -8,7 +8,6 @@ export default async function handler(req, res) {
 
   const EXTERNAL_DATA_URL = 'https://helplinewelfare.org';
 
-  // Initialize the feed
   const feed = new Feed({
     title: 'Helpline Welfare Organization',
     description: 'Updates from Helpline Welfare Organization - Transforming Lives Through Welfare in Pakistan',
@@ -31,10 +30,6 @@ export default async function handler(req, res) {
       link: EXTERNAL_DATA_URL,
     },
   });
-
-  // Add items to the feed
-  // This is where you would typically fetch your blog posts or news items from your database
-  // For now, we'll add a sample item
   feed.addItem({
     title: 'Latest News from Helpline',
     id: `${EXTERNAL_DATA_URL}/news/latest`,
@@ -52,13 +47,11 @@ export default async function handler(req, res) {
     image: `${EXTERNAL_DATA_URL}/img/news/latest.jpg`,
   });
 
-  // Set cache control headers
   res.setHeader(
     'Cache-Control',
     'public, s-maxage=3600, stale-while-revalidate=1800'
   );
 
-  // Set content type based on the requested format
   const format = req.query.format || 'rss';
   let output;
   switch (format) {
