@@ -138,9 +138,10 @@ export const HelplineData = {
     {
       title: "Donate Online",
       description:
-        "You can donate online using any Visa or MasterCard anywhere from the World.",
+        "You can donate online using any Visa or MasterCard anywhere from the World. Secure payment powered by UBL Pay.",
       buttonLabel: "Donate Now",
       buttonType: "donateButton",
+      href: "/donation",
     },
   ],
   HelplineCriteriaData: [
@@ -965,21 +966,21 @@ export const HelplineData = {
       desc: "Karbath Medical Centre Hospital.",
       color: "#65cabb",
     },
-    // {
-    //   id: 15,
-    //   category: ["Medical"],
-    //   img: "/img/causes/hajramedical1.jpg",
-    //   img1: "/img/causes/hajramedical1.jpg",
-    //   img2: "/img/causes/hajramedical2.jpg",
-    //   ActualName: "Hajra Bibi Memorial Trust Hospital",
-    //   detail:
-    //     "Haji Hospital offers free healthcare, expanding under Helpline since 2012.",
-    //   description:
-    //     "Haji Muhammad Sadiq Hajra Bibi Hospital was commissioned on 1st June 2001 at 18 km Sheikhupura-Faisalabad Road spread on 2.3 acres of land. It is a 50 bedded Hospital with Laboratory, X-ray, Operation Theatre, Gynecology Deptt, Eye Deptt, Pharmacy, etc. At the time of its inception, it was the only health facility within a radius of 20 km. The daily influx of patients was 150-200. In this hospital, poor and needy patients are provided treatment free of cost. The hospital was handed over to Helpline in 2012 and since then we are working on its expansion plans to improve the health facilities.",
+    {
+      id: 15,
+      category: ["Medical"],
+      img: "/img/causes/hajramedical1.jpg",
+      img1: "/img/causes/hajramedical1.jpg",
+      img2: "/img/causes/hajramedical2.jpg",
+      ActualName: "Hajra Bibi Memorial Trust Hospital",
+      detail:
+        "Haji Hospital offers free healthcare, expanding under Helpline since 2012.",
+      description:
+        "Haji Muhammad Sadiq Hajra Bibi Hospital was commissioned on 1st June 2001 at 18 km Sheikhupura-Faisalabad Road spread on 2.3 acres of land. It is a 50 bedded Hospital with Laboratory, X-ray, Operation Theatre, Gynecology Deptt, Eye Deptt, Pharmacy, etc. At the time of its inception, it was the only health facility within a radius of 20 km. The daily influx of patients was 150-200. In this hospital, poor and needy patients are provided treatment free of cost. The hospital was handed over to Helpline in 2012 and since then we are working on its expansion plans to improve the health facilities.",
 
-    //   desc: "Hajra Bibi Memorial Trust Hospital.",
-    //   color: "#5fb35b",
-    // },
+      desc: "Hajra Bibi Memorial Trust Hospital.",
+      color: "#5fb35b",
+    },
     {
       id: 16,
       category: ["Medical"],
@@ -1887,25 +1888,25 @@ May the Almighty bless you abundantly for your kindness.  `,
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
-    // {
-    //   id: 20,
-    //   designation: "Finance Secretary",
-    //   name: "Malik Mumtaz Awan",
-    //   image: "/img/organization/MALIKMUMTAZAWAN.jpg",
-    //   description:
-    //     "Malik Mumtaz Awan is the Finance Secretary, managing all financial affairs and ensuring accountability and proper utilization of funds for Helpline NGO.",
-    //   email: "mumtaz.awan@helpline.org",
-    //   workingArea: "Lahore, Pakistan",
-    //   nationality: "Pakistani",
-    //   address: "Valencia Town, Lahore",
-    //   detailedDescription:
-    //     "As Finance Secretary, Malik Mumtaz Awan is central to the financial governance of Helpline NGO. He oversees budgeting, financial reporting, and compliance with financial regulations, ensuring transparency and responsible management of resources to support our humanitarian efforts.",
-    //   socialLinks: [
-    //     { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-    //     { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-    //     { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-    //   ],
-    // },
+    {
+      id: 20,
+      designation: "Finance Secretary",
+      name: "Malik Mumtaz Awan",
+      image: "/img/organization/MALIKMUMTAZAWAN.jpg",
+      description:
+        "Malik Mumtaz Awan is the Finance Secretary, managing all financial affairs and ensuring accountability and proper utilization of funds for Helpline NGO.",
+      email: "mumtaz.awan@helpline.org",
+      workingArea: "Lahore, Pakistan",
+      nationality: "Pakistani",
+      address: "Valencia Town, Lahore",
+      detailedDescription:
+        "As Finance Secretary, Malik Mumtaz Awan is central to the financial governance of Helpline NGO. He oversees budgeting, financial reporting, and compliance with financial regulations, ensuring transparency and responsible management of resources to support our humanitarian efforts.",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
     {
       id: 21,
       designation: "Administrator KMC",
