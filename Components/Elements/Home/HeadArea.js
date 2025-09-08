@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
 import styles from "../../../public/css/headArea.module.css";
-import PaymentModal from "./PaymentModal";
 
 const bgImages = [
   "/img/causes/Masjid.jpg",
@@ -19,96 +17,10 @@ const bgImages = [
 export default function HeadArea() {
   const [selectedCause, setSelectedCause] = useState("Support A Student");
   const [amount, setAmount] = useState("");
-  const router = useRouter();
-
-  const [showPaymentModal, setShowPaymentModal] = useState(false);
-  const [paymentLoading, setPaymentLoading] = useState(false);
-  const [paymentError, setPaymentError] = useState(null);
-  const [paymentResult, setPaymentResult] = useState(null);
-
-  // EPG user-provided fields (used by register/finalize APIs)
-  const [epgCustomer, setEpgCustomer] = useState("");
-  const [epgUserName, setEpgUserName] = useState("");
-  const [epgPassword, setEpgPassword] = useState("");
-  const [epgStore, setEpgStore] = useState("");
-  const [epgTerminal, setEpgTerminal] = useState("");
-  const [epgChannel, setEpgChannel] = useState("");
-  const [epgCurrency, setEpgCurrency] = useState("");
-  const [epgOrderName, setEpgOrderName] = useState("");
-  const [epgOrderId, setEpgOrderId] = useState("");
-  const [epgTransactionHint, setEpgTransactionHint] = useState("");
-  const [epgReturnPath, setEpgReturnPath] = useState("");
-  const [epgFinalizationUrl, setEpgFinalizationUrl] = useState("");
-
-  const buildEpgRegisterPayload = () => {
-    const payload = { amount: String(amount) };
-    if (epgCustomer) payload.customer = epgCustomer;
-    if (epgUserName) payload.userName = epgUserName;
-    if (epgPassword) payload.password = epgPassword;
-    if (epgStore) payload.store = epgStore;
-    if (epgTerminal) payload.terminal = epgTerminal;
-    if (epgChannel) payload.channel = epgChannel;
-    if (epgCurrency) payload.currency = epgCurrency;
-    if (epgOrderName) payload.orderName = epgOrderName;
-    if (epgOrderId) payload.orderId = epgOrderId;
-    if (epgTransactionHint) payload.transactionHint = epgTransactionHint;
-    if (epgReturnPath) payload.returnPath = epgReturnPath;
-    return payload;
-  };
-
-  const buildEpgFinalizePayload = (transactionId) => {
-    const payload = { transactionId };
-    if (epgCustomer) payload.customer = epgCustomer;
-    if (epgUserName) payload.userName = epgUserName;
-    if (epgPassword) payload.password = epgPassword;
-    if (epgFinalizationUrl) payload.finalizationUrl = epgFinalizationUrl;
-    return payload;
-  };
 
   const handleCauseChange = (event) => {
     setSelectedCause(event.target.value);
     setAmount("");
-  };
-
-  useEffect(() => {
-    if (!router || !router.isReady) return;
-    const txId = router.query?.transactionId;
-    if (!txId || typeof txId !== "string") return;
-
-    const finalize = async () => {
-      try {
-        setShowPaymentModal(true);
-        setPaymentLoading(true);
-        setPaymentError(null);
-        setPaymentResult(null);
-        const res = await fetch("/api/epg/finalize", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(buildEpgFinalizePayload(txId)),
-        });
-        const data = await res.json();
-        if (!res.ok) throw new Error(data?.error || "Finalization failed");
-        setPaymentResult(data);
-      } catch (e) {
-        setPaymentError(e.message || "Something went wrong");
-      } finally {
-        setPaymentLoading(false);
-      }
-    };
-
-    finalize();
-
-    const cleaned = { ...router.query };
-    delete cleaned.transactionId;
-    router.replace({ pathname: router.pathname, query: cleaned }, undefined, {
-      shallow: true,
-    });
-  }, [router]);
-
-  const closePaymentModal = () => {
-    setShowPaymentModal(false);
-    setPaymentResult(null);
-    setPaymentError(null);
   };
 
   const handleAmountSelect = (amount) => {
@@ -120,70 +32,6 @@ export default function HeadArea() {
     setAmount(numericAmount);
   };
 
-  const handleDonate = async (e) => {
-    if (e && typeof e.preventDefault === "function") e.preventDefault();
-    try {
-      if (!amount || String(amount).trim() === "") {
-        alert("Please enter an amount first.");
-        return;
-      }
-      const regRes = await fetch("/api/epg/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(buildEpgRegisterPayload()),
-      });
-      const regData = await regRes.json();
-      if (!regRes.ok) {
-        console.error("EPG register error:", regData);
-        alert(regData?.error || "Failed to initiate payment.");
-        return;
-      }
-      const { paymentPortal, transactionId } = regData;
-      if (!paymentPortal || !transactionId) {
-        alert("Payment gateway did not return a valid response.");
-        return;
-      }
-      const isLocalReturn =
-        typeof paymentPortal === "string" &&
-        paymentPortal.startsWith("/api/epg/return");
-      if (isLocalReturn) {
-        setShowPaymentModal(true);
-        setPaymentLoading(true);
-        setPaymentError(null);
-        setPaymentResult(null);
-        try {
-          const finRes = await fetch("/api/epg/finalize", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(buildEpgFinalizePayload(transactionId)),
-          });
-          const finData = await finRes.json();
-          if (!finRes.ok)
-            throw new Error(finData?.error || "Finalization failed");
-          setPaymentResult(finData);
-        } catch (e) {
-          setPaymentError(e.message || "Something went wrong");
-        } finally {
-          setPaymentLoading(false);
-        }
-        return;
-      }
-
-      const form = document.createElement("form");
-      form.method = "POST";
-      form.action = paymentPortal;
-      const input = document.createElement("input");
-      input.type = "hidden";
-      input.name = "TransactionID";
-      input.value = transactionId;
-      form.appendChild(input);
-      document.body.appendChild(form);
-      form.submit();
-    } catch (err) {
-      console.error("Donation API request failed:", err);
-      alert("Something went wrong. Please try again.");
-    }
-  };
   return (
     <div className={styles.head_area_wrapper}>
       <Swiper
@@ -217,7 +65,7 @@ export default function HeadArea() {
                         <option value="Support A Student">
                           Support A Student
                         </option>
-                        <option value="Masjid Maktub">Masjid School</option>
+                        <option value="Masjid Maktub">Masjid Maktub</option>
                         <option value="Rashan Package">Rashan Package</option>
                         <option value="Vocational Training Center">
                           Vocational Training Center
@@ -343,9 +191,7 @@ export default function HeadArea() {
                           setAmount(e.target.value.replace(/[^0-9]/g, ""))
                         }
                       />
-                      <button type="button" onClick={(e) => handleDonate(e)}>
-                        Donate
-                      </button>
+                      <button>Donate</button>
                     </div>
                   </div>
                 </div>
@@ -364,19 +210,6 @@ export default function HeadArea() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <PaymentModal 
-        show={showPaymentModal} 
-        onClose={closePaymentModal}
-        amount={amount || '0'}
-        description={`${selectedCause} Donation`}
-        onSuccess={(data) => {
-          console.log('Payment successful:', data);
-          closePaymentModal();
-        }}
-        onError={(error) => {
-          console.error('Payment error:', error);
-        }}
-      />
       <div className={styles.wave}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
