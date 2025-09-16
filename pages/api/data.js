@@ -1888,25 +1888,25 @@ May the Almighty bless you abundantly for your kindness.  `,
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
-    {
-      id: 20,
-      designation: "Finance Secretary",
-      name: "Malik Mumtaz Awan",
-      image: "/img/organization/MALIKMUMTAZAWAN.jpg",
-      description:
-        "Malik Mumtaz Awan is the Finance Secretary, managing all financial affairs and ensuring accountability and proper utilization of funds for Helpline NGO.",
-      email: "mumtaz.awan@helpline.org",
-      workingArea: "Lahore, Pakistan",
-      nationality: "Pakistani",
-      address: "Valencia Town, Lahore",
-      detailedDescription:
-        "As Finance Secretary, Malik Mumtaz Awan is central to the financial governance of Helpline NGO. He oversees budgeting, financial reporting, and compliance with financial regulations, ensuring transparency and responsible management of resources to support our humanitarian efforts.",
-      socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-      ],
-    },
+    // {
+    //   id: 20,
+    //   designation: "Finance Secretary",
+    //   name: "Malik Mumtaz Awan",
+    //   image: "/img/organization/MALIKMUMTAZAWAN.jpg",
+    //   description:
+    //     "Malik Mumtaz Awan is the Finance Secretary, managing all financial affairs and ensuring accountability and proper utilization of funds for Helpline NGO.",
+    //   email: "mumtaz.awan@helpline.org",
+    //   workingArea: "Lahore, Pakistan",
+    //   nationality: "Pakistani",
+    //   address: "Valencia Town, Lahore",
+    //   detailedDescription:
+    //     "As Finance Secretary, Malik Mumtaz Awan is central to the financial governance of Helpline NGO. He oversees budgeting, financial reporting, and compliance with financial regulations, ensuring transparency and responsible management of resources to support our humanitarian efforts.",
+    //   socialLinks: [
+    //     { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+    //     { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+    //     { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+    //   ],
+    // },
     {
       id: 21,
       designation: "Administrator KMC",

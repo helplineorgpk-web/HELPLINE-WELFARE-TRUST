@@ -1,17 +1,14 @@
-/**
- * UBL Payment Gateway API Routes
- * Handles payment registration, finalization, and other payment operations
- */
+
 
 import UBLPaymentGateway from '../../utils/ublPaymentGateway';
+import FraudPreventionService from '../../utils/fraudPrevention';
 
-// Initialize payment gateway (use sandbox for development)
 const paymentGateway = new UBLPaymentGateway(process.env.NODE_ENV === 'production' ? 'production' : 'sandbox');
+const fraudService = new FraudPreventionService();
 
 export default async function handler(req, res) {
   const { method, body } = req;
 
-  // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
@@ -28,6 +25,9 @@ export default async function handler(req, res) {
         switch (action) {
           case 'register':
             return await handleRegistration(req, res, data);
+          
+          case 'validate_transaction':
+            return await handleTransactionValidation(req, res, data);
           
           case 'finalize':
             return await handleFinalization(req, res, data);
@@ -67,7 +67,7 @@ export default async function handler(req, res) {
 }
 
 /**
- * Handle payment registration
+ * Handle payment registration with fraud prevention
  */
 async function handleRegistration(req, res, data) {
   const {
@@ -77,7 +77,10 @@ async function handleRegistration(req, res, data) {
     orderInfo = '',
     returnPath,
     transactionHint = 'CPT:Y;VCC:Y;',
-    language = 'en'
+    language = 'en',
+    customerId,
+    cardToken,
+    ipAddress
   } = data;
 
   // Validate required fields
@@ -93,6 +96,36 @@ async function handleRegistration(req, res, data) {
     return res.status(400).json({
       success: false,
       error: 'Invalid amount'
+    });
+  }
+
+  // Fraud prevention validation
+  if (customerId) {
+    const fraudValidation = await fraudService.validateTransaction({
+      customerId,
+      amount: parseFloat(amount),
+      cardToken,
+      ipAddress: ipAddress || req.connection.remoteAddress,
+      transactionId: null,
+      orderId: null
+    });
+
+    if (!fraudValidation.allowed) {
+      return res.status(403).json({
+        success: false,
+        error: 'Transaction blocked by fraud prevention system',
+        reason: fraudValidation.reason,
+        riskLevel: fraudValidation.riskLevel
+      });
+    }
+
+    // Log fraud validation result
+    console.log('Fraud Validation Result:', {
+      customerId,
+      amount,
+      allowed: fraudValidation.allowed,
+      riskLevel: fraudValidation.riskLevel,
+      recommendations: fraudValidation.recommendations
     });
   }
 
@@ -112,17 +145,61 @@ async function handleRegistration(req, res, data) {
     transactionId: result.transactionId,
     amount,
     currency,
-    success: result.success
+    success: result.success,
+    customerId,
+    fraudChecked: !!customerId
   });
 
   return res.status(result.success ? 200 : 400).json(result);
 }
 
 /**
- * Handle payment finalization
+ * Handle transaction validation (fraud prevention check only)
+ */
+async function handleTransactionValidation(req, res, data) {
+  const {
+    customerId,
+    amount,
+    cardToken,
+    ipAddress
+  } = data;
+
+  if (!customerId || !amount) {
+    return res.status(400).json({
+      success: false,
+      error: 'Customer ID and amount are required'
+    });
+  }
+
+  try {
+    const validationResult = await fraudService.validateTransaction({
+      customerId,
+      amount: parseFloat(amount),
+      cardToken,
+      ipAddress: ipAddress || req.connection.remoteAddress,
+      transactionId: null,
+      orderId: null
+    });
+
+    return res.status(200).json({
+      success: true,
+      validation: validationResult
+    });
+
+  } catch (error) {
+    console.error('Transaction validation error:', error);
+    return res.status(500).json({
+      success: false,
+      error: 'Transaction validation failed'
+    });
+  }
+}
+
+/**
+ * Handle payment finalization with fraud prevention recording
  */
 async function handleFinalization(req, res, data) {
-  const { transactionId } = data;
+  const { transactionId, customerId, amount, cardToken, ipAddress } = data;
 
   if (!transactionId) {
     return res.status(400).json({
@@ -133,11 +210,30 @@ async function handleFinalization(req, res, data) {
 
   const result = await paymentGateway.finalizePayment(transactionId);
 
+  // Record successful transaction for fraud prevention
+  if (result.success && customerId) {
+    try {
+      fraudService.recordTransaction({
+        customerId,
+        transactionId,
+        amount: parseFloat(amount) || 0,
+        cardToken: cardToken || result.cardToken,
+        ipAddress: ipAddress || req.connection.remoteAddress,
+        orderId: result.orderId,
+        approvalCode: result.approvalCode
+      });
+    } catch (error) {
+      console.error('Error recording transaction for fraud prevention:', error);
+    }
+  }
+
   // Log transaction for tracking
   console.log('Payment Finalization:', {
     transactionId,
     success: result.success,
-    approvalCode: result.approvalCode
+    approvalCode: result.approvalCode,
+    customerId,
+    fraudRecorded: !!customerId
   });
 
   return res.status(result.success ? 200 : 400).json(result);
