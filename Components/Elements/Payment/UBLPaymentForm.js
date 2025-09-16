@@ -22,6 +22,7 @@ const UBLPaymentForm = ({
   
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  console.log("error", error);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -67,13 +68,13 @@ const UBLPaymentForm = ({
         action: 'register',
         amount: parseFloat(formData.amount),
         currency: formData.currency,
-        orderName: `${formData.donationType} - ${formData.donorName}`,
+        orderName: ` ${formData.donorName}`,
         orderInfo: `Donation by ${formData.donorName} (${formData.donorEmail}) for ${formData.donationType}`,
         returnPath: `${window.location.origin}/payment/callback`,
         transactionHint: 'CPT:Y;VCC:Y;',
         language: 'en'
       };
-
+console.log("paymentData", paymentData);
       // Call registration API
       const response = await fetch('/api/ubl-payment', {
         method: 'POST',
@@ -202,9 +203,8 @@ const UBLPaymentForm = ({
               placeholder="Enter amount"
             />
           </div>
-
           <div className={styles.formGroup}>
-            <label htmlFor="donorName">Full Name</label>
+            <label htmlFor="donorName">Enter Your Name</label>
             <input
               type="text"
               id="donorName"
@@ -212,6 +212,7 @@ const UBLPaymentForm = ({
               value={formData.donorName}
               onChange={handleInputChange}
               required
+              maxLength={255}
               placeholder="Enter your full name"
             />
           </div>
