@@ -1,0 +1,226 @@
+/* UBL Payment Form Styles */
+.paymentFormContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.paymentForm {
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h3 {
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  color: #2c3e50;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.formGroup input,
+.formGroup select {
+  padding: 12px 16px;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background: #fff;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.formGroup input::placeholder {
+  color: #bdc3c7;
+}
+
+.errorMessage {
+  background: #fee;
+  color: #e74c3c;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: linear-gradient(135deg, #2980b9, #1f618d);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.submitButton:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.paymentInfo {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.securityInfo,
+.acceptedCards {
+  margin-bottom: 20px;
+}
+
+.securityInfo h4,
+.acceptedCards h4 {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.securityInfo p {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cardLogos {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cardLogos img {
+  height: 30px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.cardLogos img:hover {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .paymentFormContainer {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .header h3 {
+    font-size: 24px;
+  }
+  
+  .formGroup input,
+  .formGroup select {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  .submitButton {
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+  
+  .cardLogos {
+    justify-content: center;
+  }
+}
+
+/* Loading State */
+.submitButton:disabled {
+  position: relative;
+}
+
+.submitButton:disabled::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Form Validation Styles */
+.formGroup input:invalid,
+.formGroup select:invalid {
+  border-color: #e74c3c;
+}
+
+.formGroup input:valid,
+.formGroup select:valid {
+  border-color: #27ae60;
+}
+
+/* Focus States */
+.formGroup input:focus:invalid,
+.formGroup select:focus:invalid {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.formGroup input:focus:valid,
+.formGroup select:focus:valid {
+  border-color: #27ae60;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+}

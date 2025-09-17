@@ -136,3 +136,62 @@
     font-size: 13px;
   }
 }
+
+/* Payment Provider Footer Styles */
+.payment_provider_footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.payment_provider_footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.footer_payment_logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_payment_logo {
+  height: 25px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer_payment_logo:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .payment_provider_footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .footer_payment_logos {
+    justify-content: center;
+  }
+  
+  .footer_payment_logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment_provider_footer p {
+    font-size: 12px;
+  }
+  
+  .footer_payment_logo {
+    height: 18px;
+  }
+}

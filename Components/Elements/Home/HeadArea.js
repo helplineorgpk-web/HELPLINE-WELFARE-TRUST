@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import UBLPaymentForm from "../Payment/UBLPaymentForm";
 
 import styles from "../../../public/css/headArea.module.css";
 
@@ -17,6 +18,7 @@ const bgImages = [
 export default function HeadArea() {
   const [selectedCause, setSelectedCause] = useState("Support A Student");
   const [amount, setAmount] = useState("");
+  const [showPaymentForm, setShowPaymentForm] = useState(false);
 
   const handleCauseChange = (event) => {
     setSelectedCause(event.target.value);
@@ -30,6 +32,19 @@ export default function HeadArea() {
     }
     const numericAmount = amount.replace(/[^0-9]/g, "");
     setAmount(numericAmount);
+  };
+
+  const handlePaymentInitiated = (paymentData) => {
+    console.log('Payment initiated:', paymentData);
+  };
+
+  const handlePaymentCompleted = (paymentData) => {
+    console.log('Payment completed:', paymentData);
+    setShowPaymentForm(false);
+  };
+
+  const handlePaymentFailed = (error) => {
+    console.error('Payment failed:', error);
   };
 
   return (
@@ -191,7 +206,7 @@ export default function HeadArea() {
                           setAmount(e.target.value.replace(/[^0-9]/g, ""))
                         }
                       />
-                      <button>Donate</button>
+                      <button onClick={() => setShowPaymentForm(true)}>Donate</button>
                     </div>
                   </div>
                 </div>
@@ -223,6 +238,30 @@ export default function HeadArea() {
           ></path>
         </svg>
       </div>
+
+      {/* Payment Form Modal */}
+      {showPaymentForm && (
+        <div className={styles.paymentModal}>
+          <div className={styles.paymentModalContent}>
+            <div className={styles.paymentModalHeader}>
+              <h3>Make a Donation</h3>
+              <button 
+                onClick={() => setShowPaymentForm(false)}
+                className={styles.closeButton}
+              >
+                ×
+              </button>
+            </div>
+            <UBLPaymentForm
+              donationAmount={amount ? parseFloat(amount) : 0}
+              donationType={selectedCause}
+              onPaymentInitiated={handlePaymentInitiated}
+              onPaymentCompleted={handlePaymentCompleted}
+              onPaymentFailed={handlePaymentFailed}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
