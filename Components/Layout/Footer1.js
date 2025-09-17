@@ -303,22 +303,25 @@ export default function Footer1() {
             </div>
           </div>
         </div>
-        {/* <div className="footer_copyright_area ">
+        <div className="footer_copyright_area">
           <div className="container">
             <div className="row">
-              <div className="col-xxl-12 text-center">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <p>
-                  Design by{" "}
-                  <strong>
-                    <Link href="https://www.codeviztech.com/">
-                      <a target="_blank">CodeViz Technology</a>
-                    </Link>
-                  </strong>
+                  © 2024 Helpline Welfare Trust. All rights reserved.
                 </p>
+              </div>
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <div className="payment_provider_footer">
+                  <p>Payment powered by</p>
+                  <div className="footer_payment_logos">
+                    <img width={100} src="/img/payment/ubl-visa-mastercard.gif" alt="UBL Pay" className="footer_payment_logo" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </footer>
     </>
   );
