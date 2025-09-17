@@ -11,8 +11,125 @@ const PaymentCallback = () => {
   const [debugInfo, setDebugInfo] = useState('');
   const [isProcessing, setIsProcessing] = useState(true);
   const hasProcessed = useRef(false);
+  const hasFinalized = useRef(false);
 
-  console.log('isProcessing state:', isProcessing, 'setIsProcessing function:', typeof setIsProcessing);
+
+  // Function to handle finalization with duplicate prevention
+  const finalizeTransaction = async (transactionId, paymentInfo = null) => {
+    if (hasFinalized.current) {
+      return;
+    }
+
+    hasFinalized.current = true;
+
+    try {
+      const response = await fetch('/api/ubl-payment', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          action: 'finalize',
+          transactionId: transactionId
+        })
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('API Error Response:', {
+          status: response.status,
+          statusText: response.statusText,
+          body: errorText
+        });
+        
+        // Handle 400 errors as failed payments instead of throwing
+        try {
+          const errorResult = JSON.parse(errorText);
+          
+          // Check if it's a duplicate finalization error
+          if (errorResult.error && errorResult.error.includes('failed previous finalize request')) {
+            // Try to query the transaction status instead
+            const queryResponse = await fetch('/api/ubl-payment', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                action: 'query',
+                transactionId: transactionId
+              })
+            });
+            
+            if (queryResponse.ok) {
+              const queryResult = await queryResponse.json();
+              if (queryResult.success) {
+                setPaymentStatus('success');
+                setPaymentData({
+                  transactionId: transactionId,
+                  amount: paymentInfo?.amount || 0,
+                  status: 'success',
+                  donorInfo: paymentInfo?.donorInfo || null
+                });
+                return;
+              }
+            }
+          }
+          
+          setError(errorResult.error || 'Payment failed');
+          setPaymentStatus('failed');
+          
+          // Set payment data for failed transaction display
+          setPaymentData({
+            transactionId: transactionId,
+            amount: paymentInfo?.amount || 0,
+            status: 'failed',
+            error: errorResult.error
+          });
+          
+          return;
+        } catch (parseError) {
+          // If we can't parse the error, fall back to throwing
+          throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
+        }
+      }
+
+      const result = await response.json();
+
+      if (result.success) {
+        setPaymentStatus('success');
+        
+        // Store successful payment data
+        const successData = {
+          ...result,
+          transactionId: transactionId,
+          amount: paymentInfo?.amount || 0,
+          timestamp: new Date().toISOString(),
+          donorInfo: paymentInfo?.donorInfo || null
+        };
+        
+        sessionStorage.setItem('lastPayment', JSON.stringify(successData));
+        
+        // Clear pending transaction data
+        sessionStorage.removeItem('pendingTransaction');
+        sessionStorage.removeItem('paymentData');
+        
+        
+      } else {
+        setError(result.error || 'Payment finalization failed');
+        setPaymentStatus('failed');
+      }
+    } catch (error) {
+      console.error('Finalization error:', error);
+      setError('Payment processing failed. Please try again.');
+      setPaymentStatus('failed');
+    } finally {
+      try {
+        setIsProcessing(false);
+      } catch (e) {
+        console.error('Error calling setIsProcessing:', e);
+      }
+    }
+  };
 
   useEffect(() => {
 
@@ -53,23 +170,19 @@ const PaymentCallback = () => {
         };
         
         setDebugInfo(JSON.stringify(debugData, null, 2));
-        console.log('Payment Callback Debug:', debugData);
 
         // If no TransactionID found, check if we have a stored transaction
         if (!transactionId) {
-          console.log('No transaction ID found in URL parameters, checking sessionStorage...');
           
           // Check if we have a pending transaction in sessionStorage
           const pendingTransaction = sessionStorage.getItem('pendingTransaction');
           if (pendingTransaction) {
             try {
               const pendingData = JSON.parse(pendingTransaction);
-              console.log('Found pending transaction:', pendingData);
               
               // Use the stored transaction ID
               const storedTransactionId = pendingData.transactionId;
               if (storedTransactionId) {
-                console.log('Using stored transaction ID:', storedTransactionId);
                 
                 // Set payment data for display
                 setPaymentData({
@@ -79,79 +192,10 @@ const PaymentCallback = () => {
                 });
                 
                 // Call finalization API with stored transaction ID
-                console.log('Calling finalization API with stored transaction ID:', storedTransactionId);
-                const response = await fetch('/api/ubl-payment', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json',
-                  },
-                  body: JSON.stringify({
-                    action: 'finalize',
-                    transactionId: storedTransactionId
-                  })
+                await finalizeTransaction(storedTransactionId, {
+                  amount: pendingData.amount,
+                  donorInfo: pendingData.donorInfo
                 });
-
-                if (!response.ok) {
-                  const errorText = await response.text();
-                  console.error('API Error Response:', {
-                    status: response.status,
-                    statusText: response.statusText,
-                    body: errorText
-                  });
-                  
-                  // Handle 400 errors as failed payments instead of throwing
-                  try {
-                    const errorResult = JSON.parse(errorText);
-                    setError(errorResult.error || 'Payment failed');
-                    setPaymentStatus('failed');
-                    
-                    // Set payment data for failed transaction display
-                    setPaymentData({
-                      transactionId: storedTransactionId,
-                      amount: pendingData.amount,
-                      status: 'failed',
-                      error: errorResult.error
-                    });
-                    
-                    try {
-                      setIsProcessing(false);
-                    } catch (e) {
-                      console.error('Error calling setIsProcessing:', e);
-                    }
-                    return;
-                  } catch (parseError) {
-                    // If we can't parse the error, fall back to throwing
-                    throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
-                  }
-                }
-
-                const result = await response.json();
-
-                if (result.success) {
-                  setPaymentStatus('success');
-                  
-                  // Store successful payment data
-                  const successData = {
-                    ...result,
-                    transactionId: storedTransactionId,
-                    amount: pendingData.amount,
-                    timestamp: new Date().toISOString(),
-                    donorInfo: pendingData.donorInfo || null
-                  };
-                  
-                  sessionStorage.setItem('lastPayment', JSON.stringify(successData));
-                  
-                  // Clear pending transaction data
-                  sessionStorage.removeItem('pendingTransaction');
-                  sessionStorage.removeItem('paymentData');
-                  
-                  // Log successful payment
-                  console.log('Payment successful:', successData);
-                  
-                } else {
-                  setError(result.error || 'Payment finalization failed');
-                  setPaymentStatus('failed');
-                }
                 return;
               }
             } catch (parseError) {
@@ -165,88 +209,20 @@ const PaymentCallback = () => {
             try {
               const paymentData = JSON.parse(storedPaymentData);
               if (paymentData.transactionId) {
-                console.log('Found transaction ID in paymentData:', paymentData.transactionId);
                 
                 // Set payment data for display
                 setPaymentData(paymentData);
                 
                 // Call finalization API
-                console.log('Calling finalization API with paymentData transaction ID:', paymentData.transactionId);
-                const response = await fetch('/api/ubl-payment', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json',
-                  },
-                  body: JSON.stringify({
-                    action: 'finalize',
-                    transactionId: paymentData.transactionId
-                  })
-                });
-
-                if (!response.ok) {
-                  const errorText = await response.text();
-                  console.error('API Error Response:', {
-                    status: response.status,
-                    statusText: response.statusText,
-                    body: errorText
-                  });
-                  
-                  // Handle 400 errors as failed payments instead of throwing
-                  try {
-                    const errorResult = JSON.parse(errorText);
-                    setError(errorResult.error || 'Payment failed');
-                    setPaymentStatus('failed');
-                    
-                    // Set payment data for failed transaction display
-                    setPaymentData({
-                      transactionId: paymentData.transactionId,
-                      amount: paymentData.amount,
-                      status: 'failed',
-                      error: errorResult.error
-                    });
-                    
-                    try {
-                      setIsProcessing(false);
-                    } catch (e) {
-                      console.error('Error calling setIsProcessing:', e);
-                    }
-                    return;
-                  } catch (parseError) {
-                    // If we can't parse the error, fall back to throwing
-                    throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
-                  }
-                }
-
-                const result = await response.json();
-
-                if (result.success) {
-                  setPaymentStatus('success');
-                  
-                  // Store successful payment data
-                  const successData = {
-                    ...result,
-                    transactionId: paymentData.transactionId,
+                await finalizeTransaction(paymentData.transactionId, {
                     amount: paymentData.amount,
-                    timestamp: new Date().toISOString(),
                     donorInfo: {
                       name: paymentData.donorName,
                       email: paymentData.donorEmail,
                       phone: paymentData.donorPhone,
                       donationType: paymentData.donationType
                     }
-                  };
-                  
-                  sessionStorage.setItem('lastPayment', JSON.stringify(successData));
-                  
-                  // Clear payment data
-                  sessionStorage.removeItem('paymentData');
-                  
-                  console.log('Payment successful:', successData);
-                  
-                } else {
-                  setError(result.error || 'Payment finalization failed');
-                  setPaymentStatus('failed');
-                }
+                });
                 return;
               }
             } catch (parseError) {
@@ -271,97 +247,11 @@ const PaymentCallback = () => {
         }
 
         // Call finalization API
-        console.log('Calling finalization API with URL transaction ID:', transactionId);
-        const response = await fetch('/api/ubl-payment', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            action: 'finalize',
-            transactionId: transactionId
-          })
+        const storedPaymentInfo = storedData ? JSON.parse(storedData) : null;
+        await finalizeTransaction(transactionId, {
+          amount: storedPaymentInfo?.amount || null,
+          donorInfo: storedPaymentInfo?.donorInfo || null
         });
-
-        if (!response.ok) {
-          const errorText = await response.text();
-          console.error('API Error Response:', {
-            status: response.status,
-            statusText: response.statusText,
-            body: errorText
-          });
-          
-          // Handle 400 errors as failed payments instead of throwing
-          try {
-            const errorResult = JSON.parse(errorText);
-            setError(errorResult.error || 'Payment failed');
-            setPaymentStatus('failed');
-            
-            // Set payment data for failed transaction display
-            setPaymentData({
-              transactionId: transactionId,
-              amount: storedData ? JSON.parse(storedData).amount : null,
-              status: 'failed',
-              error: errorResult.error
-            });
-            
-            try {
-              setIsProcessing(false);
-            } catch (e) {
-              console.error('Error calling setIsProcessing:', e);
-            }
-            return;
-          } catch (parseError) {
-            // If we can't parse the error, fall back to throwing
-            throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
-          }
-        }
-
-        const result = await response.json();
-
-        if (result.success) {
-          setPaymentStatus('success');
-          try {
-          setIsProcessing(false);
-          } catch (e) {
-            console.error('Error calling setIsProcessing:', e);
-          }
-          
-          // Store successful payment data
-          const successData = {
-            ...result,
-            transactionId,
-            timestamp: new Date().toISOString(),
-            donorInfo: storedData ? JSON.parse(storedData) : null
-          };
-          
-          sessionStorage.setItem('lastPayment', JSON.stringify(successData));
-          
-          // Clear payment data from session
-          sessionStorage.removeItem('paymentData');
-          
-          // Log successful payment
-          console.log('Payment successful:', successData);
-          
-        } else {
-          setError(result.error || 'Payment finalization failed');
-          setPaymentStatus('failed');
-          
-          // Set payment data for failed transaction display
-          if (transactionId) {
-            setPaymentData({
-              transactionId: transactionId,
-              amount: storedData ? JSON.parse(storedData).amount : null,
-              status: 'failed'
-            });
-          }
-          
-          try {
-          setIsProcessing(false);
-          } catch (e) {
-            console.error('Error calling setIsProcessing:', e);
-          }
-        }
       } catch (error) {
         console.error('Payment processing error:', error);
         
