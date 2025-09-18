@@ -16,7 +16,7 @@ const UBL_CONFIG = {
   },
   // Production Configuration (to be updated with live credentials)
   PRODUCTION: {
-    baseURL: 'https://ipg.comtrust.ae:2443/',
+    baseURL: 'https://ipg.comtrust.ae:2443',
     customer: process.env.UBL_CUSTOMER_ID,
     store: process.env.UBL_STORE_ID || '0000',
     terminal: process.env.UBL_TERMINAL_ID || '0000',
