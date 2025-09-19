@@ -3,7 +3,7 @@
 const UBL_CONFIG = {
   // Sandbox Configuration (for testing)
   SANDBOX: {
-    baseURL: 'https://ipg.comtrust.ae:2443',
+    baseURL: 'https://ipg.comtrust.ae:2443/',
     customer: 'HELPLINE WELFARE',
     store: '0000',
     terminal: '0000',
@@ -12,12 +12,12 @@ const UBL_CONFIG = {
   },
   // Production Configuration (live credentials)
   PRODUCTION: {
-    baseURL: 'https://ipg.comtrust.ae:2443',
-    customer: process.env.UBL_CUSTOMER_ID || 'HELPLINE WELFARE',
-    store: process.env.UBL_STORE_ID || '0000',
-    terminal: process.env.UBL_TERMINAL_ID || '0000',
-    username: process.env.UBL_USERNAME || 'HELPLINE_Mudasir',
-    password: process.env.UBL_PASSWORD || 'PakistanHLP786@'
+    baseURL: 'https://ipg.comtrust.ae:2443/',
+    customer: 'HELPLINE WELFARE',
+    store: '0000',
+    terminal: '0000',
+    username: 'HELPLINE_Mudasir',
+    password: 'PakistanHLP786@'
   }
 };
 
