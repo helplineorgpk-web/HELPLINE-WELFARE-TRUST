@@ -45,19 +45,12 @@ class UBLPaymentGateway {
     });
   }
 
-  /**
-   * Generate unique Order ID
-   */
   generateOrderId() {
-    const timestamp = Date.now().toString().slice(-10); // Last 10 digits
+    const timestamp = Date.now().toString().slice(-10); 
     const random = Math.floor(Math.random() * 1000).toString().padStart(3, '0');
-    return `${timestamp}${random}`; // 13 digits total, under 16 limit
+    return `${timestamp}${random}`;
   }
 
-  /**
-   * Registration API Call
-   * Initiates a payment transaction
-   */
   async registerPayment(paymentData) {
     const {
       amount,
