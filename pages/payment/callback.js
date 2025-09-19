@@ -17,10 +17,12 @@ const PaymentCallback = () => {
   // Function to handle finalization with duplicate prevention
   const finalizeTransaction = async (transactionId, paymentInfo = null) => {
     if (hasFinalized.current) {
+      console.log('Finalization already in progress, skipping...');
       return;
     }
 
     hasFinalized.current = true;
+    console.log('Starting finalization for transaction:', transactionId);
 
     try {
       const response = await fetch('/api/ubl-payment', {
@@ -30,7 +32,11 @@ const PaymentCallback = () => {
         },
         body: JSON.stringify({
           action: 'finalize',
-          transactionId: transactionId
+          transactionId: transactionId,
+          customerId: paymentInfo?.customerId,
+          amount: paymentInfo?.amount,
+          cardToken: paymentInfo?.cardToken,
+          ipAddress: paymentInfo?.ipAddress
         })
       });
 
@@ -102,17 +108,22 @@ const PaymentCallback = () => {
         const successData = {
           ...result,
           transactionId: transactionId,
-          amount: paymentInfo?.amount || 0,
+          amount: paymentInfo?.amount || result.amount || 0,
           timestamp: new Date().toISOString(),
-          donorInfo: paymentInfo?.donorInfo || null
+          donorInfo: paymentInfo?.donorInfo || null,
+          approvalCode: result.approvalCode,
+          cardNumber: result.cardNumber,
+          cardBrand: result.cardBrand
         };
         
+        setPaymentData(successData);
         sessionStorage.setItem('lastPayment', JSON.stringify(successData));
         
         // Clear pending transaction data
         sessionStorage.removeItem('pendingTransaction');
         sessionStorage.removeItem('paymentData');
         
+        console.log('Payment finalized successfully:', successData);
         
       } else {
         setError(result.error || 'Payment finalization failed');
@@ -120,7 +131,16 @@ const PaymentCallback = () => {
       }
     } catch (error) {
       console.error('Finalization error:', error);
-      setError('Payment processing failed. Please try again.');
+      
+      // Set payment data for failed transaction display
+      setPaymentData({
+        transactionId: transactionId,
+        amount: paymentInfo?.amount || 0,
+        status: 'failed',
+        error: error.message
+      });
+      
+      setError(`Payment processing failed: ${error.message}`);
       setPaymentStatus('failed');
     } finally {
       try {
@@ -230,10 +250,19 @@ const PaymentCallback = () => {
             }
           }
           
-          setError(`Transaction ID not found. Debug info: ${JSON.stringify(debugData)}`);
+          setError(`Transaction ID not found. Please check your payment status or contact support.`);
           setPaymentStatus('failed');
+          
+          // Set payment data for failed transaction display
+          setPaymentData({
+            transactionId: null,
+            amount: null,
+            status: 'failed',
+            error: 'Transaction ID not found'
+          });
+          
           try {
-          setIsProcessing(false);
+            setIsProcessing(false);
           } catch (e) {
             console.error('Error calling setIsProcessing:', e);
           }
@@ -242,15 +271,32 @@ const PaymentCallback = () => {
 
         // Get stored payment data
         const storedData = sessionStorage.getItem('paymentData');
+        const pendingTransaction = sessionStorage.getItem('pendingTransaction');
+        
+        let paymentInfo = null;
         if (storedData) {
-          setPaymentData(JSON.parse(storedData));
+          try {
+            paymentInfo = JSON.parse(storedData);
+            setPaymentData(paymentInfo);
+          } catch (e) {
+            console.error('Error parsing stored payment data:', e);
+          }
+        } else if (pendingTransaction) {
+          try {
+            paymentInfo = JSON.parse(pendingTransaction);
+            setPaymentData(paymentInfo);
+          } catch (e) {
+            console.error('Error parsing pending transaction data:', e);
+          }
         }
 
         // Call finalization API
-        const storedPaymentInfo = storedData ? JSON.parse(storedData) : null;
         await finalizeTransaction(transactionId, {
-          amount: storedPaymentInfo?.amount || null,
-          donorInfo: storedPaymentInfo?.donorInfo || null
+          amount: paymentInfo?.amount || null,
+          donorInfo: paymentInfo?.donorInfo || null,
+          customerId: paymentInfo?.customerId || null,
+          cardToken: paymentInfo?.cardToken || null,
+          ipAddress: paymentInfo?.ipAddress || null
         });
       } catch (error) {
         console.error('Payment processing error:', error);
