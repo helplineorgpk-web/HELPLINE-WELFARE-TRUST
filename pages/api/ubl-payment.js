@@ -3,7 +3,7 @@
 import UBLPaymentGateway from '../../utils/ublPaymentGateway';
 import FraudPreventionService from '../../utils/fraudPrevention';
 
-const paymentGateway = new UBLPaymentGateway(process.env.NODE_ENV === 'production' ? 'production' : 'sandbox');
+const paymentGateway = new UBLPaymentGateway(process.env.UBL_ENV || 'sandbox');
 const fraudService = new FraudPreventionService();
 
 export default async function handler(req, res) {

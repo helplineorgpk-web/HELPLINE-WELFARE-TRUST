@@ -1,34 +1,48 @@
-/**
- * UBL Payment Gateway Integration Service
- * Based on Etisalat Payment Gateway REST API v1.6
- */
+
 
 const UBL_CONFIG = {
-  // Sandbox Configuration
+  // Sandbox Configuration (for testing)
   SANDBOX: {
-    baseURL: 'https://demo-ipg.ctdev.comtrust.ae:2443',
-    customer: 'Demo Merchant',
+    baseURL: 'https://ipg.comtrust.ae:2443/',
+    customer: 'HELPLINE WELFARE',
     store: '0000',
     terminal: '0000',
-    username: 'Demo_fY9c',
-    password: 'Comtrust@20182018'
-    
+    username: 'HELPLINE_Mudasir',
+    password: 'PakistanHLP786@'
   },
-  // Production Configuration (to be updated with live credentials)
+  // Production Configuration (live credentials)
   PRODUCTION: {
     baseURL: 'https://ipg.comtrust.ae:2443/',
-    customer: process.env.UBL_CUSTOMER_ID,
-    store: process.env.UBL_STORE_ID || '0000',
-    terminal: process.env.UBL_TERMINAL_ID || '0000',
-    username: process.env.UBL_USERNAME,
-    password: process.env.UBL_PASSWORD
+    customer: 'HELPLINE WELFARE',
+    store: '0000',
+    terminal: '0000',
+    username: 'HELPLINE_Mudasir',
+    password: 'PakistanHLP786@'
   }
 };
 
 class UBLPaymentGateway {
   constructor(environment = 'production') {
-    this.config = UBL_CONFIG[environment.toUpperCase()];
-    this.environment = environment;
+    // Use UBL_ENV environment variable if available, otherwise fall back to parameter
+    const env = process.env.UBL_ENV || environment;
+    this.config = UBL_CONFIG[env.toUpperCase()];
+    this.environment = env;
+    
+    // Validate that required credentials are present
+    if (!this.config.username || !this.config.password) {
+      throw new Error('UBL Payment Gateway: Missing username or password credentials');
+    }
+    
+    // Debug logging
+    console.log('UBL Payment Gateway Config:', {
+      environment: this.environment,
+      baseURL: this.config.baseURL,
+      customer: this.config.customer,
+      store: this.config.store,
+      terminal: this.config.terminal,
+      username: this.config.username,
+      hasPassword: !!this.config.password
+    });
   }
 
   /**
@@ -76,6 +90,9 @@ class UBLPaymentGateway {
       }
     };
 
+    // Debug logging
+    console.log('UBL Registration Request:', JSON.stringify(requestBody, null, 2));
+
     try {
       const response = await fetch(`${this.config.baseURL}`, {
         method: 'POST',
@@ -87,6 +104,9 @@ class UBLPaymentGateway {
       });
 
       const data = await response.json();
+      
+      // Debug logging
+      console.log('UBL Registration Response:', JSON.stringify(data, null, 2));
       
       if (data.Transaction && data.Transaction.ResponseCode === '0') {
         return {
