@@ -3,14 +3,13 @@ import { useRouter } from 'next/router';
 import Layout2 from '../../Components/Layout/Layout2';
 import styles from './PaymentCallback.module.css';
 
-const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStatus }) => {
+const PaymentCallback = () => {
   const router = useRouter();
-  const [paymentStatus, setPaymentStatus] = useState(initialStatus || 'processing');
-  const [paymentData, setPaymentData] = useState(initialPaymentData || null);
+  const [paymentStatus, setPaymentStatus] = useState('processing');
+  const [paymentData, setPaymentData] = useState(null);
   const [error, setError] = useState('');
   const [debugInfo, setDebugInfo] = useState('');
   const [isProcessing, setIsProcessing] = useState(true);
-  const [isClient, setIsClient] = useState(false);
   const hasProcessed = useRef(false);
   const hasFinalized = useRef(false);
 
@@ -24,6 +23,9 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
 
     hasFinalized.current = true;
     console.log('Starting finalization for transaction:', transactionId);
+    
+    // Ensure we're in processing state during recovery attempts
+    setPaymentStatus('processing');
 
     try {
       const response = await fetch('/api/ubl-payment', {
@@ -46,12 +48,18 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
           body: errorText
         });
         
-        // Handle 400 errors as failed payments instead of throwing
+        // Handle 400 errors - check for specific error types before showing failure
         try {
           const errorResult = JSON.parse(errorText);
           
-          // Check if it's a duplicate finalization error
-          if (errorResult.error && errorResult.error.includes('failed previous finalize request')) {
+          // Check if it's a duplicate finalization error or any other recoverable error
+          if (errorResult.error && (
+            errorResult.error.includes('failed previous finalize request') ||
+            errorResult.error.includes('duplicate') ||
+            errorResult.error.includes('already processed')
+          )) {
+            console.log('Detected recoverable error, querying transaction status...');
+            
             // Try to query the transaction status instead
             const queryResponse = await fetch('/api/ubl-payment', {
               method: 'POST',
@@ -67,6 +75,38 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
             if (queryResponse.ok) {
               const queryResult = await queryResponse.json();
               if (queryResult.success) {
+                console.log('Transaction query successful, setting status to success');
+                setPaymentStatus('success');
+                setPaymentData({
+                  transactionId: transactionId,
+                  amount: paymentInfo?.amount || 0,
+                  status: 'success',
+                  donorInfo: paymentInfo?.donorInfo || null
+                });
+                return;
+              }
+            }
+            
+            // If query also fails, try one more time with finalization after a short delay
+            console.log('Query failed, retrying finalization after delay...');
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            
+            const retryResponse = await fetch('/api/ubl-payment', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                action: 'finalize',
+                transactionId: transactionId,
+                customerId: paymentInfo?.customerId || 'HELPLINE WELFARE'
+              })
+            });
+            
+            if (retryResponse.ok) {
+              const retryResult = await retryResponse.json();
+              if (retryResult.success) {
+                console.log('Retry finalization successful');
                 setPaymentStatus('success');
                 setPaymentData({
                   transactionId: transactionId,
@@ -79,6 +119,8 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
             }
           }
           
+          // Only show failure if we've exhausted all recovery attempts
+          console.log('All recovery attempts failed, showing payment failed');
           setError(errorResult.error || 'Payment failed');
           setPaymentStatus('failed');
           
@@ -149,16 +191,7 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
     }
   };
 
-  // Set client-side flag
   useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  useEffect(() => {
-    // Only run on client-side
-    if (!isClient) {
-      return;
-    }
 
     if (hasProcessed.current) {
       return;
@@ -175,11 +208,6 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
 
     const processPayment = async () => {
       try {
-        // Check if we have initial transaction ID from server-side
-        if (initialTransactionId) {
-          await finalizeTransaction(initialTransactionId, initialPaymentData);
-          return;
-        }
        
         const urlParams = new URLSearchParams(window.location.search);
         const hashParams = new URLSearchParams(window.location.hash.substring(1));
@@ -205,13 +233,6 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
 
         // If no TransactionID found, check if we have a stored transaction
         if (!transactionId) {
-          // If we're on server-side or no transaction ID, show error
-          if (!isClient) {
-            setError('Transaction ID not found. Please check your payment status or contact support.');
-            setPaymentStatus('failed');
-            setIsProcessing(false);
-            return;
-          }
           
           // Check if we have a pending transaction in sessionStorage
           const pendingTransaction = sessionStorage.getItem('pendingTransaction');
@@ -357,7 +378,7 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
     return () => {
       clearTimeout(timeoutId);
     };
-  }, [isClient, initialTransactionId, initialPaymentData]); // Include dependencies
+  }, []); // Empty dependency array since we only want this to run once
 
   const handleRetry = () => {
     router.push('/donation');
@@ -368,27 +389,6 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
   };
 
   const renderContent = () => {
-    // Show loading state if not yet client-side
-    if (!isClient) {
-      return (
-        <div
-          style={{
-            height: "80vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-            textAlign: "center",
-            gap: 8,
-            padding: 16,
-          }}
-        >
-          <h2 style={{ margin: 0 }}>Loading...</h2>
-          <p style={{ margin: 0 }}>Please wait while we load your payment status...</p>
-        </div>
-      );
-    }
-
     switch (paymentStatus) {
       case "processing":
         return (
@@ -725,29 +725,3 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
 };
 
 export default PaymentCallback;
-
-// Server-side rendering support
-export async function getServerSideProps(context) {
-  const { query, req } = context;
-  
-  // Extract transaction ID from query parameters
-  const transactionId = 
-    query.TransactionID || 
-    query.transactionId || 
-    query.transaction_id;
-
-  // Extract payment data from query parameters if available
-  const paymentData = query.paymentData ? JSON.parse(decodeURIComponent(query.paymentData)) : null;
-
-  // Set initial status based on whether we have transaction ID
-  const initialStatus = transactionId ? 'processing' : 'failed';
-
-  return {
-    props: {
-      initialTransactionId: transactionId || null,
-      initialPaymentData: paymentData || null,
-      initialStatus,
-      userAgent: req.headers['user-agent'] || '',
-    },
-  };
-}

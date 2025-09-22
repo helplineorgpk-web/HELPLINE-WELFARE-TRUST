@@ -13,11 +13,11 @@ const UBL_CONFIG = {
   // Production Configuration (live credentials)
   PRODUCTION: {
     baseURL: 'https://ipg.comtrust.ae:2443',
-    customer: 'HELPLINE WELFARE',
-    store: '0000',
-    terminal: '0000',
-    username: 'HELPLINE_Mudasir',
-    password: 'PakistanHLP786@'
+    customer: process.env.UBL_CUSTOMER_ID,
+    store: process.env.UBL_STORE_ID,
+    terminal: process.env.UBL_TERMINAL_ID,
+    username: process.env.UBL_USERNAME,
+    password: process.env.UBL_PASSWORD
   }
 };
 
