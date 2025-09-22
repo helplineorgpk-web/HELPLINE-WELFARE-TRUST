@@ -10,6 +10,7 @@ const PaymentCallback = () => {
   const [error, setError] = useState('');
   const [debugInfo, setDebugInfo] = useState('');
   const [isProcessing, setIsProcessing] = useState(true);
+  const [isClient, setIsClient] = useState(false);
   const hasProcessed = useRef(false);
   const hasFinalized = useRef(false);
 
@@ -192,7 +193,9 @@ const PaymentCallback = () => {
   };
 
   useEffect(() => {
-
+    // Set client-side flag
+    setIsClient(true);
+    
     if (hasProcessed.current) {
       return;
     }
@@ -389,6 +392,38 @@ const PaymentCallback = () => {
   };
 
   const renderContent = () => {
+    // Show loading state while hydrating
+    if (!isClient) {
+      return (
+        <div
+          style={{
+            height: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            textAlign: "center",
+            gap: 8,
+            padding: 16,
+          }}
+        >
+          <div
+            style={{
+              width: 48,
+              height: 48,
+              border: "4px solid #f3f3f3",
+              borderTop: "4px solid #3498db",
+              borderRadius: "50%",
+              animation: "spin 2s linear infinite",
+              marginBottom: 12,
+            }}
+          />
+          <h2 style={{ margin: 0 }}>Loading...</h2>
+          <p style={{ margin: 0 }}>Please wait while we load the payment page...</p>
+        </div>
+      );
+    }
+
     switch (paymentStatus) {
       case "processing":
         return (
@@ -714,6 +749,12 @@ const PaymentCallback = () => {
 
   return (
     <Layout2>
+      <style jsx>{`
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      `}</style>
       <div className={styles.container}>
         <div className={styles.content}
         >
