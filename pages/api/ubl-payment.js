@@ -21,23 +21,10 @@ export default async function handler(req, res) {
 
   try {
     switch (method) {
-      case 'GET':
-        // Handle GET requests for query actions
-        const { action: getAction, ...queryData } = req.query;
-        
-        if (getAction === 'query') {
-          return await handleQuery(req, res, queryData);
-        }
-        
-        return res.status(400).json({
-          success: false,
-          error: 'Invalid action for GET request'
-        });
-
       case 'POST':
-        const { action: postAction, ...data } = body;
+        const { action, ...data } = body;
 
-        switch (postAction) {
+        switch (action) {
           case 'register':
             return await handleRegistration(req, res, data);
           

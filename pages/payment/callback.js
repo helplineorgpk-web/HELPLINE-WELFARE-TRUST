@@ -25,20 +25,19 @@ const PaymentCallback = () => {
     console.log('Starting finalization for transaction:', transactionId);
 
     try {
-      // Use GET request with query parameters for the callback API
-      const params = new URLSearchParams({
-        TransactionID: transactionId,
-        ...(paymentInfo?.customerId && { customerId: paymentInfo.customerId }),
-        ...(paymentInfo?.amount && { amount: paymentInfo.amount }),
-        ...(paymentInfo?.cardToken && { cardToken: paymentInfo.cardToken }),
-        ...(paymentInfo?.ipAddress && { ipAddress: paymentInfo.ipAddress })
-      });
-
-      const response = await fetch(`/api/payment-callback?${params}`, {
-        method: 'GET',
+      const response = await fetch('/api/ubl-payment', {
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-        }
+        },
+        body: JSON.stringify({
+          action: 'finalize',
+          transactionId: transactionId,
+          customerId: paymentInfo?.customerId,
+          amount: paymentInfo?.amount,
+          cardToken: paymentInfo?.cardToken,
+          ipAddress: paymentInfo?.ipAddress
+        })
       });
 
       if (!response.ok) {
@@ -56,11 +55,15 @@ const PaymentCallback = () => {
           // Check if it's a duplicate finalization error
           if (errorResult.error && errorResult.error.includes('failed previous finalize request')) {
             // Try to query the transaction status instead
-            const queryResponse = await fetch(`/api/ubl-payment?action=query&transactionId=${transactionId}`, {
-              method: 'GET',
+            const queryResponse = await fetch('/api/ubl-payment', {
+              method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
-              }
+              },
+              body: JSON.stringify({
+                action: 'query',
+                transactionId: transactionId
+              })
             });
             
             if (queryResponse.ok) {
