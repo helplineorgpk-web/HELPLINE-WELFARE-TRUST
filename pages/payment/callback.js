@@ -23,6 +23,9 @@ const PaymentCallback = () => {
 
     hasFinalized.current = true;
     console.log('Starting finalization for transaction:', transactionId);
+    
+    // Ensure we're in processing state during recovery attempts
+    setPaymentStatus('processing');
 
     try {
       const response = await fetch('/api/ubl-payment', {
@@ -33,10 +36,7 @@ const PaymentCallback = () => {
         body: JSON.stringify({
           action: 'finalize',
           transactionId: transactionId,
-          customerId: paymentInfo?.customerId,
-          amount: paymentInfo?.amount,
-          cardToken: paymentInfo?.cardToken,
-          ipAddress: paymentInfo?.ipAddress
+          customerId: paymentInfo?.customerId || 'HELPLINE WELFARE'
         })
       });
 
@@ -48,12 +48,18 @@ const PaymentCallback = () => {
           body: errorText
         });
         
-        // Handle 400 errors as failed payments instead of throwing
+        // Handle 400 errors - check for specific error types before showing failure
         try {
           const errorResult = JSON.parse(errorText);
           
-          // Check if it's a duplicate finalization error
-          if (errorResult.error && errorResult.error.includes('failed previous finalize request')) {
+          // Check if it's a duplicate finalization error or any other recoverable error
+          if (errorResult.error && (
+            errorResult.error.includes('failed previous finalize request') ||
+            errorResult.error.includes('duplicate') ||
+            errorResult.error.includes('already processed')
+          )) {
+            console.log('Detected recoverable error, querying transaction status...');
+            
             // Try to query the transaction status instead
             const queryResponse = await fetch('/api/ubl-payment', {
               method: 'POST',
@@ -69,6 +75,38 @@ const PaymentCallback = () => {
             if (queryResponse.ok) {
               const queryResult = await queryResponse.json();
               if (queryResult.success) {
+                console.log('Transaction query successful, setting status to success');
+                setPaymentStatus('success');
+                setPaymentData({
+                  transactionId: transactionId,
+                  amount: paymentInfo?.amount || 0,
+                  status: 'success',
+                  donorInfo: paymentInfo?.donorInfo || null
+                });
+                return;
+              }
+            }
+            
+            // If query also fails, try one more time with finalization after a short delay
+            console.log('Query failed, retrying finalization after delay...');
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            
+            const retryResponse = await fetch('/api/ubl-payment', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                action: 'finalize',
+                transactionId: transactionId,
+                customerId: paymentInfo?.customerId || 'HELPLINE WELFARE'
+              })
+            });
+            
+            if (retryResponse.ok) {
+              const retryResult = await retryResponse.json();
+              if (retryResult.success) {
+                console.log('Retry finalization successful');
                 setPaymentStatus('success');
                 setPaymentData({
                   transactionId: transactionId,
@@ -81,6 +119,8 @@ const PaymentCallback = () => {
             }
           }
           
+          // Only show failure if we've exhausted all recovery attempts
+          console.log('All recovery attempts failed, showing payment failed');
           setError(errorResult.error || 'Payment failed');
           setPaymentStatus('failed');
           
