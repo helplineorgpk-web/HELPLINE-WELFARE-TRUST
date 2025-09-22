@@ -2,8 +2,16 @@
 
 const UBL_CONFIG = {
   // Sandbox Configuration (for testing)
+  // SANDBOX: {
+  //   baseURL: 'https://demo-ipg.ctdev.comtrust.ae:2443',
+  //   customer: 'Demo Merchant',
+  //   store: '0000',
+  //   terminal: '0000',
+  //   username: 'Demo_fY9c',
+  //   password: 'Comtrust@20182018'
+  // },
   SANDBOX: {
-    baseURL: 'https://ipg.comtrust.ae:2443/',
+    baseURL: 'https://ipg.comtrust.ae:2443',
     customer: 'HELPLINE WELFARE',
     store: '0000',
     terminal: '0000',
@@ -12,7 +20,7 @@ const UBL_CONFIG = {
   },
   // Production Configuration (live credentials)
   PRODUCTION: {
-    baseURL: 'https://ipg.comtrust.ae:2443/',
+    baseURL: 'https://ipg.comtrust.ae:2443',
     customer: 'HELPLINE WELFARE',
     store: '0000',
     terminal: '0000',
