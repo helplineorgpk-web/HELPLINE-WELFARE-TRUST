@@ -9,13 +9,21 @@ const fraudService = new FraudPreventionService();
 export default async function handler(req, res) {
   const { method, body } = req;
 
+  // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader('Access-Control-Max-Age', '86400');
 
+  // Handle preflight requests
   if (method === 'OPTIONS') {
     return res.status(200).end();
   }
+
+  // Add security headers
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('X-XSS-Protection', '1; mode=block');
 
   try {
     switch (method) {
