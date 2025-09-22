@@ -34,10 +34,7 @@ const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStat
         body: JSON.stringify({
           action: 'finalize',
           transactionId: transactionId,
-          customerId: paymentInfo?.customerId,
-          amount: paymentInfo?.amount,
-          cardToken: paymentInfo?.cardToken,
-          ipAddress: paymentInfo?.ipAddress
+          customerId: paymentInfo?.customerId || 'HELPLINE WELFARE'
         })
       });
 
