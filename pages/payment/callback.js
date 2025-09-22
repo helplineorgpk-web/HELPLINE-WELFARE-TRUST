@@ -3,13 +3,14 @@ import { useRouter } from 'next/router';
 import Layout2 from '../../Components/Layout/Layout2';
 import styles from './PaymentCallback.module.css';
 
-const PaymentCallback = () => {
+const PaymentCallback = ({ initialTransactionId, initialPaymentData, initialStatus }) => {
   const router = useRouter();
-  const [paymentStatus, setPaymentStatus] = useState('processing');
-  const [paymentData, setPaymentData] = useState(null);
+  const [paymentStatus, setPaymentStatus] = useState(initialStatus || 'processing');
+  const [paymentData, setPaymentData] = useState(initialPaymentData || null);
   const [error, setError] = useState('');
   const [debugInfo, setDebugInfo] = useState('');
   const [isProcessing, setIsProcessing] = useState(true);
+  const [isClient, setIsClient] = useState(false);
   const hasProcessed = useRef(false);
   const hasFinalized = useRef(false);
 
@@ -151,7 +152,16 @@ const PaymentCallback = () => {
     }
   };
 
+  // Set client-side flag
   useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    // Only run on client-side
+    if (!isClient) {
+      return;
+    }
 
     if (hasProcessed.current) {
       return;
@@ -168,6 +178,11 @@ const PaymentCallback = () => {
 
     const processPayment = async () => {
       try {
+        // Check if we have initial transaction ID from server-side
+        if (initialTransactionId) {
+          await finalizeTransaction(initialTransactionId, initialPaymentData);
+          return;
+        }
        
         const urlParams = new URLSearchParams(window.location.search);
         const hashParams = new URLSearchParams(window.location.hash.substring(1));
@@ -193,6 +208,13 @@ const PaymentCallback = () => {
 
         // If no TransactionID found, check if we have a stored transaction
         if (!transactionId) {
+          // If we're on server-side or no transaction ID, show error
+          if (!isClient) {
+            setError('Transaction ID not found. Please check your payment status or contact support.');
+            setPaymentStatus('failed');
+            setIsProcessing(false);
+            return;
+          }
           
           // Check if we have a pending transaction in sessionStorage
           const pendingTransaction = sessionStorage.getItem('pendingTransaction');
@@ -338,7 +360,7 @@ const PaymentCallback = () => {
     return () => {
       clearTimeout(timeoutId);
     };
-  }, []); // Empty dependency array since we only want this to run once
+  }, [isClient, initialTransactionId, initialPaymentData]); // Include dependencies
 
   const handleRetry = () => {
     router.push('/donation');
@@ -349,6 +371,27 @@ const PaymentCallback = () => {
   };
 
   const renderContent = () => {
+    // Show loading state if not yet client-side
+    if (!isClient) {
+      return (
+        <div
+          style={{
+            height: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            textAlign: "center",
+            gap: 8,
+            padding: 16,
+          }}
+        >
+          <h2 style={{ margin: 0 }}>Loading...</h2>
+          <p style={{ margin: 0 }}>Please wait while we load your payment status...</p>
+        </div>
+      );
+    }
+
     switch (paymentStatus) {
       case "processing":
         return (
@@ -685,3 +728,29 @@ const PaymentCallback = () => {
 };
 
 export default PaymentCallback;
+
+// Server-side rendering support
+export async function getServerSideProps(context) {
+  const { query, req } = context;
+  
+  // Extract transaction ID from query parameters
+  const transactionId = 
+    query.TransactionID || 
+    query.transactionId || 
+    query.transaction_id;
+
+  // Extract payment data from query parameters if available
+  const paymentData = query.paymentData ? JSON.parse(decodeURIComponent(query.paymentData)) : null;
+
+  // Set initial status based on whether we have transaction ID
+  const initialStatus = transactionId ? 'processing' : 'failed';
+
+  return {
+    props: {
+      initialTransactionId: transactionId || null,
+      initialPaymentData: paymentData || null,
+      initialStatus,
+      userAgent: req.headers['user-agent'] || '',
+    },
+  };
+}
