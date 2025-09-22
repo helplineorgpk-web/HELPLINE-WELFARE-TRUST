@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Layout2 from '../../Components/Layout/Layout2';
 import styles from './PaymentCallback.module.css';
 
-const PaymentCallback = () => {
+const PaymentCallback = ({ initialTransactionId, initialPaymentData }) => {
   const router = useRouter();
   const [paymentStatus, setPaymentStatus] = useState('processing');
   const [paymentData, setPaymentData] = useState(null);
@@ -158,11 +158,15 @@ const PaymentCallback = () => {
         };
         
         setPaymentData(successData);
-        sessionStorage.setItem('lastPayment', JSON.stringify(successData));
         
-        // Clear pending transaction data
-        sessionStorage.removeItem('pendingTransaction');
-        sessionStorage.removeItem('paymentData');
+        // Only access sessionStorage on client-side
+        if (typeof window !== 'undefined') {
+          sessionStorage.setItem('lastPayment', JSON.stringify(successData));
+          
+          // Clear pending transaction data
+          sessionStorage.removeItem('pendingTransaction');
+          sessionStorage.removeItem('paymentData');
+        }
         
         console.log('Payment finalized successfully:', successData);
         
@@ -211,85 +215,97 @@ const PaymentCallback = () => {
 
     const processPayment = async () => {
       try {
-       
-        const urlParams = new URLSearchParams(window.location.search);
-        const hashParams = new URLSearchParams(window.location.hash.substring(1));
+        // Use initial data from server-side rendering if available
+        let transactionId = initialTransactionId;
         
-        const transactionId = 
-          urlParams.get('TransactionID') || 
-          urlParams.get('transactionId') || 
-          urlParams.get('transaction_id') ||
-          hashParams.get('TransactionID') || 
-          hashParams.get('transactionId') || 
-          hashParams.get('transaction_id');
+        // Only access window.location on client-side
+        if (typeof window !== 'undefined') {
+          const urlParams = new URLSearchParams(window.location.search);
+          const hashParams = new URLSearchParams(window.location.hash.substring(1));
+          
+          transactionId = transactionId || 
+            urlParams.get('TransactionID') || 
+            urlParams.get('transactionId') || 
+            urlParams.get('transaction_id') ||
+            hashParams.get('TransactionID') || 
+            hashParams.get('transactionId') || 
+            hashParams.get('transaction_id');
+        }
 
-        // Debug information
-        const debugData = {
-          fullUrl: window.location.href,
-          searchParams: Object.fromEntries(urlParams.entries()),
-          hashParams: Object.fromEntries(hashParams.entries()),
-          pathname: window.location.pathname,
-          foundTransactionId: transactionId
-        };
-        
-        setDebugInfo(JSON.stringify(debugData, null, 2));
+        // Debug information (only on client-side)
+        if (typeof window !== 'undefined') {
+          const urlParams = new URLSearchParams(window.location.search);
+          const hashParams = new URLSearchParams(window.location.hash.substring(1));
+          
+          const debugData = {
+            fullUrl: window.location.href,
+            searchParams: Object.fromEntries(urlParams.entries()),
+            hashParams: Object.fromEntries(hashParams.entries()),
+            pathname: window.location.pathname,
+            foundTransactionId: transactionId
+          };
+          
+          setDebugInfo(JSON.stringify(debugData, null, 2));
+        }
 
         // If no TransactionID found, check if we have a stored transaction
         if (!transactionId) {
           
-          // Check if we have a pending transaction in sessionStorage
-          const pendingTransaction = sessionStorage.getItem('pendingTransaction');
-          if (pendingTransaction) {
-            try {
-              const pendingData = JSON.parse(pendingTransaction);
-              
-              // Use the stored transaction ID
-              const storedTransactionId = pendingData.transactionId;
-              if (storedTransactionId) {
+          // Check if we have a pending transaction in sessionStorage (only on client-side)
+          if (typeof window !== 'undefined') {
+            const pendingTransaction = sessionStorage.getItem('pendingTransaction');
+            if (pendingTransaction) {
+              try {
+                const pendingData = JSON.parse(pendingTransaction);
                 
-                // Set payment data for display
-                setPaymentData({
-                  transactionId: storedTransactionId,
-                  amount: pendingData.amount,
-                  donorInfo: pendingData.donorInfo
-                });
-                
-                // Call finalization API with stored transaction ID
-                await finalizeTransaction(storedTransactionId, {
-                  amount: pendingData.amount,
-                  donorInfo: pendingData.donorInfo
-                });
-                return;
+                // Use the stored transaction ID
+                const storedTransactionId = pendingData.transactionId;
+                if (storedTransactionId) {
+                  
+                  // Set payment data for display
+                  setPaymentData({
+                    transactionId: storedTransactionId,
+                    amount: pendingData.amount,
+                    donorInfo: pendingData.donorInfo
+                  });
+                  
+                  // Call finalization API with stored transaction ID
+                  await finalizeTransaction(storedTransactionId, {
+                    amount: pendingData.amount,
+                    donorInfo: pendingData.donorInfo
+                  });
+                  return;
+                }
+              } catch (parseError) {
+                console.error('Error parsing pending transaction:', parseError);
               }
-            } catch (parseError) {
-              console.error('Error parsing pending transaction:', parseError);
             }
-          }
-          
-          // Also check regular paymentData as fallback
-          const storedPaymentData = sessionStorage.getItem('paymentData');
-          if (storedPaymentData) {
-            try {
-              const paymentData = JSON.parse(storedPaymentData);
-              if (paymentData.transactionId) {
-                
-                // Set payment data for display
-                setPaymentData(paymentData);
-                
-                // Call finalization API
-                await finalizeTransaction(paymentData.transactionId, {
-                    amount: paymentData.amount,
-                    donorInfo: {
-                      name: paymentData.donorName,
-                      email: paymentData.donorEmail,
-                      phone: paymentData.donorPhone,
-                      donationType: paymentData.donationType
-                    }
-                });
-                return;
+            
+            // Also check regular paymentData as fallback
+            const storedPaymentData = sessionStorage.getItem('paymentData');
+            if (storedPaymentData) {
+              try {
+                const paymentData = JSON.parse(storedPaymentData);
+                if (paymentData.transactionId) {
+                  
+                  // Set payment data for display
+                  setPaymentData(paymentData);
+                  
+                  // Call finalization API
+                  await finalizeTransaction(paymentData.transactionId, {
+                      amount: paymentData.amount,
+                      donorInfo: {
+                        name: paymentData.donorName,
+                        email: paymentData.donorEmail,
+                        phone: paymentData.donorPhone,
+                        donationType: paymentData.donationType
+                      }
+                  });
+                  return;
+                }
+              } catch (parseError) {
+                console.error('Error parsing payment data:', parseError);
               }
-            } catch (parseError) {
-              console.error('Error parsing payment data:', parseError);
             }
           }
           
@@ -312,24 +328,27 @@ const PaymentCallback = () => {
           return;
         }
 
-        // Get stored payment data
-        const storedData = sessionStorage.getItem('paymentData');
-        const pendingTransaction = sessionStorage.getItem('pendingTransaction');
+        // Get stored payment data (only on client-side)
+        let paymentInfo = initialPaymentData || null;
         
-        let paymentInfo = null;
-        if (storedData) {
-          try {
-            paymentInfo = JSON.parse(storedData);
-            setPaymentData(paymentInfo);
-          } catch (e) {
-            console.error('Error parsing stored payment data:', e);
-          }
-        } else if (pendingTransaction) {
-          try {
-            paymentInfo = JSON.parse(pendingTransaction);
-            setPaymentData(paymentInfo);
-          } catch (e) {
-            console.error('Error parsing pending transaction data:', e);
+        if (typeof window !== 'undefined') {
+          const storedData = sessionStorage.getItem('paymentData');
+          const pendingTransaction = sessionStorage.getItem('pendingTransaction');
+          
+          if (storedData) {
+            try {
+              paymentInfo = JSON.parse(storedData);
+              setPaymentData(paymentInfo);
+            } catch (e) {
+              console.error('Error parsing stored payment data:', e);
+            }
+          } else if (pendingTransaction) {
+            try {
+              paymentInfo = JSON.parse(pendingTransaction);
+              setPaymentData(paymentInfo);
+            } catch (e) {
+              console.error('Error parsing pending transaction data:', e);
+            }
           }
         }
 
@@ -344,16 +363,20 @@ const PaymentCallback = () => {
       } catch (error) {
         console.error('Payment processing error:', error);
         
-        // Extract transaction ID for display
-        const urlParams = new URLSearchParams(window.location.search);
-        const hashParams = new URLSearchParams(window.location.hash.substring(1));
-        const transactionId = 
-          urlParams.get('TransactionID') || 
-          urlParams.get('transactionId') || 
-          urlParams.get('transaction_id') ||
-          hashParams.get('TransactionID') || 
-          hashParams.get('transactionId') || 
-          hashParams.get('transaction_id');
+        // Extract transaction ID for display (only on client-side)
+        let transactionId = initialTransactionId;
+        
+        if (typeof window !== 'undefined') {
+          const urlParams = new URLSearchParams(window.location.search);
+          const hashParams = new URLSearchParams(window.location.hash.substring(1));
+          transactionId = transactionId || 
+            urlParams.get('TransactionID') || 
+            urlParams.get('transactionId') || 
+            urlParams.get('transaction_id') ||
+            hashParams.get('TransactionID') || 
+            hashParams.get('transactionId') || 
+            hashParams.get('transaction_id');
+        }
         
         // Set payment data for failed transaction display
         if (transactionId) {
@@ -766,3 +789,34 @@ const PaymentCallback = () => {
 };
 
 export default PaymentCallback;
+
+// Server-side rendering support
+export async function getServerSideProps(context) {
+  const { query } = context;
+  
+  // Extract transaction ID from query parameters
+  const transactionId = 
+    query.TransactionID || 
+    query.transactionId || 
+    query.transaction_id || 
+    null;
+  
+  // Extract other relevant payment data
+  const initialPaymentData = {
+    transactionId,
+    amount: query.amount ? parseFloat(query.amount) : null,
+    donorInfo: query.donorName ? {
+      name: query.donorName,
+      email: query.donorEmail,
+      phone: query.donorPhone,
+      donationType: query.donationType
+    } : null
+  };
+  
+  return {
+    props: {
+      initialTransactionId: transactionId,
+      initialPaymentData: initialPaymentData
+    }
+  };
+}
