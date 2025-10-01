@@ -399,12 +399,13 @@
 @media (max-width: 768px) {
   .mainContainer {
     flex-direction: column;
-    padding: 1rem;
-    /* margin-top: 2rem; */
+    padding: 0.5rem;
+    margin-top: 1rem;
   }
 
   .leftSection {
-    padding: 2rem;
+    padding: 1rem;
+    flex-direction: column;
   }
 
   .rightSection {
@@ -413,11 +414,85 @@
   }
 
   .headline {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .sliders {
-    display: none;
+    display: block;
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .sideSlider {
+    max-width: 100%;
+    height: auto;
+    min-height: 400px;
+    margin-top: 0;
+    overflow: visible;
+  }
+
+  .card {
+    max-width: 100%;
+    height: auto;
+    min-height: 380px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .imageCard {
+    height: 280px;
+    padding: 10px;
+  }
+
+  .slideItem {
+    padding: 10px;
+    height: auto;
+  }
+
+  .slideButtons {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .donate_now,
+  .campaign_details {
+    font-size: 12px;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .news {
+    font-size: 11px;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+  }
+
+  .swiperContainer {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .swiperContainer .swiper-pagination {
+    bottom: 5px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .swiperContainer .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Ensure content doesn't get cut off */
+  .swiper-slide {
+    height: auto !important;
+  }
+
+  .swiper-wrapper {
+    height: auto !important;
   }
 
   .visionMissionContainer {
@@ -443,6 +518,9 @@
   
   .imageCard {
     height: 450px;
+  }
+  .mainContainer{ 
+    margin-top: 10rem;
   }
 }
 

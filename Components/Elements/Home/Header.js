@@ -243,67 +243,62 @@ export default function Header() {
           </div>
         </div>
 
-        {!isMobile && (
-          <div className={styles.sliders}>
-            <div
-              className={styles.sideSlider}
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
+        <div className={styles.sliders}>
+          <div
+            className={styles.sideSlider}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
+            <Swiper
+              direction="horizontal"
+              spaceBetween={30}
+              slidesPerView={1}
+              autoplay={
+                isPaused
+                  ? false
+                  : { delay: 6000, disableOnInteraction: false }
+              }
+              loop={true}
+              pagination={{ clickable: true }}
+              modules={[Autoplay, Pagination]}
+              className={styles.swiperContainer}
             >
-              <Swiper
-                direction="horizontal"
-                spaceBetween={30}
-                slidesPerView={1}
-                autoplay={
-                  isPaused
-                    ? false
-                    : { delay: 6000, disableOnInteraction: false }
-                }
-                loop={true}
-                pagination={{ clickable: true }}
-                modules={[Autoplay, Pagination]}
-                className={styles.swiperContainer}
-              >
-                {sliderData.slider1.map((slide) => (
-                  <SwiperSlide key={slide.id} className={styles.slideItem}>
-                    <h5 className={styles.news}>{slide.News}</h5>
-                    <div
-                      className={styles.card}
-                      style={{ width: "450px", height: "600px" }}
-                    >
-                      <div className={styles.imageCard}>
-                        <div className={styles.cardContent}>
-                          {/* <h6 className={styles.project}>{slide.project}</h6> */}
-                        </div>
-                        <Image
-                          src={slide.image1}
-                          alt={slide.title}
-                          width={400}
-                          height={350}
-                          className={styles.cardImage}
-                        />
-                      </div>
-                      <div className={styles.slideButtons}>
-                        <button 
-                          className={styles.donate_now}
-                          onClick={handleDonateClick}
-                        >
-                          Donate Now
-                        </button>
-                        <Link
-                          href={slide.href}
-                          className={styles.campaign_details}
-                        >
-                          Campaign Details
-                        </Link>
-                      </div>
+              {sliderData.slider1.map((slide) => (
+                <SwiperSlide key={slide.id} className={styles.slideItem}>
+                  <h5 className={styles.news}>{slide.News}</h5>
+                  <div
+                    className={styles.card}
+                  >
+                    <div className={styles.imageCard}>
+                  
+                      <Image
+                        src={slide.image1}
+                        alt={slide.title}
+                        width={400}
+                        height={350}
+                        className={styles.cardImage}
+                      />
                     </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+                    <div className={styles.slideButtons}>
+                      <button 
+                        className={styles.donate_now}
+                        onClick={handleDonateClick}
+                      >
+                        Donate Now
+                      </button>
+                      <Link
+                        href={slide.href}
+                        className={styles.campaign_details}
+                      >
+                        Campaign Details
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
-        )}
+        </div>
       </div>
 
       <div className={styles.rightSection}>
@@ -361,7 +356,6 @@ export default function Header() {
         ))}
       </div>
       
-      {/* Payment Form Modal */}
       {showPaymentForm && (
         <div className={styles.paymentModal}>
           <div className={styles.paymentModalContent}>
