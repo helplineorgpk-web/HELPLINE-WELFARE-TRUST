@@ -1,12 +1,14 @@
 import styles from "../../../public/css/Header.module.css";
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/pagination";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import UBLPaymentForm from "../Payment/UBLPaymentForm";
 
 export const campaignsData = [
 
@@ -112,8 +114,10 @@ const idealProjects = [
   {
     id: 1,
     title: "Al-Kitab Education System",
-    description: "Empowering children through quality education",
+    description: "Empowering every child with quality education, life skills, and the chance to thrive.",
     image: "/img/causes/School-1-scaled.jpg",
+    image2:  "/img/causes/future.jpg",
+
     stats: {
       students: "8000+",
       teachers: "400+",
@@ -126,6 +130,9 @@ const idealProjects = [
 export default function Header() {
   const [isPaused, setIsPaused] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [selectedCause, setSelectedCause] = useState("Support A Student");
+  const [amount, setAmount] = useState("");
+  const [showPaymentForm, setShowPaymentForm] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -145,8 +152,39 @@ export default function Header() {
     };
   }, []);
 
+  const handleCauseChange = (event) => {
+    setSelectedCause(event.target.value);
+    setAmount("");
+  };
+
+  const handleAmountSelect = (amount) => {
+    if (amount === "") {
+      setAmount("");
+      return;
+    }
+    const numericAmount = amount.replace(/[^0-9]/g, "");
+    setAmount(numericAmount);
+  };
+
   const handleDonateClick = () => {
-    router.push("/donation");
+    setShowPaymentForm(true);
+  };
+
+  const handlePaymentInitiated = (paymentData) => {
+    console.log('Payment initiated:', paymentData);
+  };
+
+  const handlePaymentCompleted = (paymentData) => {
+    console.log('Payment completed:', paymentData);
+    setShowPaymentForm(false);
+  };
+
+  const handlePaymentFailed = (error) => {
+    console.error('Payment failed:', error);
+  };
+
+  const handleProjectLearnMore = (slug) => {
+    router.push(`/learn-more?project=${slug}`);
   };
 
   return (
@@ -203,12 +241,6 @@ export default function Header() {
               </p>
             </div>
           </div>
-
-          <div className={styles.ctaButtons}>
-            <button className={styles.btnPrimary} onClick={handleDonateClick}>
-              Donate Now
-            </button>
-          </div>
         </div>
 
         {!isMobile && (
@@ -219,16 +251,17 @@ export default function Header() {
               onMouseLeave={() => setIsPaused(false)}
             >
               <Swiper
-                direction="vertical"
+                direction="horizontal"
                 spaceBetween={30}
                 slidesPerView={1}
                 autoplay={
                   isPaused
                     ? false
-                    : { delay: 4000, disableOnInteraction: false }
+                    : { delay: 6000, disableOnInteraction: false }
                 }
                 loop={true}
-                modules={[Autoplay]}
+                pagination={{ clickable: true }}
+                modules={[Autoplay, Pagination]}
                 className={styles.swiperContainer}
               >
                 {sliderData.slider1.map((slide) => (
@@ -236,25 +269,27 @@ export default function Header() {
                     <h5 className={styles.news}>{slide.News}</h5>
                     <div
                       className={styles.card}
-                      style={{ width: "360px", height: "520px" }}
+                      style={{ width: "450px", height: "600px" }}
                     >
-                      {/* <h3 className={styles.slideTitle}>{slide.title}</h3> */}
                       <div className={styles.imageCard}>
                         <div className={styles.cardContent}>
-                          <h6 className={styles.project}>{slide.project}</h6>
+                          {/* <h6 className={styles.project}>{slide.project}</h6> */}
                         </div>
                         <Image
                           src={slide.image1}
                           alt={slide.title}
-                          width={560}
-                          height={400}
+                          width={400}
+                          height={350}
                           className={styles.cardImage}
                         />
                       </div>
                       <div className={styles.slideButtons}>
-                        <Link href={slide.href} className={styles.donate_now}>
+                        <button 
+                          className={styles.donate_now}
+                          onClick={handleDonateClick}
+                        >
                           Donate Now
-                        </Link>
+                        </button>
                         <Link
                           href={slide.href}
                           className={styles.campaign_details}
@@ -308,6 +343,13 @@ export default function Header() {
                 height={150}
                 className={styles.rightSectionImage}
               />
+              <Image
+                src={project.image2}
+                alt={project.title}
+                width={300}
+                height={150}
+                className={styles.rightSectionImage}
+              />
             </div>
             <button
               className={styles.btnWhite}
@@ -318,6 +360,30 @@ export default function Header() {
           </div>
         ))}
       </div>
+      
+      {/* Payment Form Modal */}
+      {showPaymentForm && (
+        <div className={styles.paymentModal}>
+          <div className={styles.paymentModalContent}>
+            <div className={styles.paymentModalHeader}>
+              <h3>Make a Donation</h3>
+              <button 
+                onClick={() => setShowPaymentForm(false)}
+                className={styles.closeButton}
+              >
+                ×
+              </button>
+            </div>
+            <UBLPaymentForm
+              donationAmount={amount ? parseFloat(amount) : 0}
+              donationType={selectedCause}
+              onPaymentInitiated={handlePaymentInitiated}
+              onPaymentCompleted={handlePaymentCompleted}
+              onPaymentFailed={handlePaymentFailed}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
