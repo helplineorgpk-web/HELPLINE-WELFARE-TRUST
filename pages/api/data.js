@@ -121,10 +121,10 @@ export const HelplineData = {
   ],
   donationMethods: [
     {
-      title: "JAZZ CASH ",
+      title: "JAZZ CASH / EasyPaisa ",
       description:
-        "Direct deposits or transfers can be made into our Jazzcash accounts at any of the banks.",
-      buttonLabel: "03009433160",
+        "Direct deposits or transfers can be made into our UBL Account at any of the banks.",
+      buttonLabel: "063563501118170",
       buttonType: "bankButton",
       href: "./donation",
     },
@@ -173,12 +173,12 @@ export const HelplineData = {
       img: "/img/bg/breadcrumb_bg_4.jpg",
       img1: "/img/causes/DJI_0010.JPG",
       img2: "/img/causes/DJI_0018.JPG",
-      img3: "/img/causes/alkitab5.jpg",
-      img4: "/img/causes/alkitab6.jpg",
-      img5: "/img/causes/alkitab3.jpg",
-      img6: "/img/causes/alkitab4.jpg",
-      img7: "/img/causes/alkitab5.jpg",
-      img8: "/img/causes/alkitab6.jpg",
+      img3: "/img/causes/history.jpg",
+      img4: "/img/causes/history.png",
+      img5: "/img/causes/upgraded.png",
+      img6: "/img/causes/upgraded1.JPG",
+      img7: "/img/causes/future.jpg",
+      img8: "/img/causes/future1.jpg",
       link: "https://youtu.be/uW6QxzriY1A?si=bsuocjM5FYuLZO2t",
       link3: "https://youtu.be/6RliogbPdII?si=gPU5sn8s3w26g0Dh",
       ActualName: "Al-Kitab Higher Secondary School",
@@ -1554,7 +1554,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "As Managing Trustee at Helpline NGO, Muhammad Iqbal Khan brings extensive experience in humanitarian work and organizational leadership. His dedication to serving the community has been instrumental in driving our mission forward.",
       email: "info@iy.com.pk",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Faisal Town, Lahore",
       detailedDescription:
@@ -1573,7 +1573,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "Colonel Muhammad Ali (Retd) serves as the General Manager of Administration and Human Resources at Helpline NGO. With his military background and extensive management experience, he ensures efficient operations and effective human resource management.",
       email: "muhammad.ali@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Head Office, Lahore",
       detailedDescription:
@@ -1592,7 +1592,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "Mr Mudasir Ahmad leads our education initiatives as the General Manager of Education. His expertise in educational management and curriculum development has been vital in expanding our educational programs.",
       email: "mudasir.ahmad@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Education Department, Lahore",
       detailedDescription:
@@ -1630,7 +1630,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "Mr Sarfraz Ahmad Bhullar manages administrative functions and provides essential support to ensure the smooth operation of Helpline NGO.",
       email: "sarfraz.bhullar@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Head Office, Lahore",
       detailedDescription:
@@ -1649,7 +1649,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "Mr Hafiz Bilal Nurani oversees media relations and coordination, ensuring effective communication of Helpline NGO's mission and activities.",
       email: "bilal.nurani@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Media Department, Lahore",
       detailedDescription:
@@ -1668,7 +1668,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "Mr Atif Hussain is the Manager of Welfare & Health, dedicated to developing and implementing programs that improve community well-being and access to healthcare.",
       email: "atif.hussain@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Health Department, Lahore",
       detailedDescription:
@@ -1714,7 +1714,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "Mr Faisal Mushtaq assists in managing the accounts and financial records of Helpline NGO, ensuring accuracy and compliance.",
       email: "faisal.mushtaq@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Head Office, Lahore",
       detailedDescription:
@@ -1733,7 +1733,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "Hafiz Bilal Arshad is a Manager Media, responsible for crafting and disseminating the organization's message to the public and stakeholders.",
       email: "bilal.arshad@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Media Department, Lahore",
       detailedDescription:
@@ -1752,7 +1752,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "Mr Mehmood Ali Joiya is the Senior Manager Purchases, overseeing procurement processes to ensure efficient and cost-effective acquisition of resources for Helpline NGO.",
       email: "mehmood.joiya@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Head Office, Lahore",
       detailedDescription:
@@ -1771,7 +1771,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "Rashid Nisar serves as the Manager Transport, overseeing the logistics and transportation needs of Helpline NGO's operations.",
       email: "rashid.nisar@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Logistics Department, Lahore",
       detailedDescription:
@@ -1782,25 +1782,25 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
-    {
-      id: 15,
-      designation: "Media Executive",
-      name: "Usama Mansoor",
-      image: "/img/organization/usama.jpg",
-      description:
-        "Usama Mansoor is a Media Executive, supporting the media team in creating engaging content and managing communication channels for Helpline NGO.",
-      email: "arj.zahara@helpline.org",
-      workingArea: "Lahore, Pakistan",
-      nationality: "Pakistani",
-      address: "Helpline NGO Media Department, Lahore",
-      detailedDescription:
-        "Usama Mansoor contributes to the daily operations of the media department, assisting with content creation, social media management, and public relations activities. Her efforts help amplify Helpline NGO's voice and reach a broader audience.",
-      socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-      ],
-    },
+    // {
+    //   id: 15,
+    //   designation: "Media Executive",
+    //   name: "Usama Mansoor",
+    //   image: "/img/organization/usama.jpg",
+    //   description:
+    //     "Usama Mansoor is a Media Executive, supporting the media team in creating engaging content and managing communication channels for Helpline NGO.",
+    //   email: "arj.zahara@helpline.org",
+    //   workingArea: "Punjab, Pakistan",
+    //   nationality: "Pakistani",
+    //   address: "Helpline NGO Media Department, Lahore",
+    //   detailedDescription:
+    //     "Usama Mansoor contributes to the daily operations of the media department, assisting with content creation, social media management, and public relations activities. Her efforts help amplify Helpline NGO's voice and reach a broader audience.",
+    //   socialLinks: [
+    //     { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+    //     { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+    //     { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+    //   ],
+    // },
     {
       id: 16,
       designation: "Chairman",
@@ -1809,7 +1809,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       description:
         "As Chairman of Helpline NGO, Engineer Muhammad Aslam Khan Kakarh provides strategic leadership and vision to our organization. His engineering background and humanitarian commitment drive our innovative approach to community service.",
       email: "Principal@sheltersasseociates.com",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Head Office, Lahore",
       detailedDescription: `
@@ -1835,7 +1835,7 @@ Thank you for standing with us. Together, let’s build a future where no one is
       description:
         "Khalil Ahmad Malik serves as the President of Helpline NGO, bringing years of experience in organizational leadership and community development. His strategic vision and dedication have been crucial to our growth and impact.",
       email: "malikpapermart47@gmail.com",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Main Urdu bazaar, Lahore",
       detailedDescription: `Dear Changemakers,  
@@ -1855,7 +1855,7 @@ Your belief in our mission empowers marginalized communities to thrive with dign
       description:
         "Ms Lubna Yaqoob Tahir serves as the Vice President of Helpline NGO, bringing valuable expertise in program management and community engagement. Her focus on women's empowerment and education has strengthened our initiatives in these crucial areas.",
       email: "lubnayaqoob60@gmail.com",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO Head Office, Lahore",
       detailedDescription: `Dear Friends,  
@@ -1875,7 +1875,7 @@ Your belief in our mission empowers marginalized communities to thrive with dign
       description:
         "Ikhlaq ur Rehman serves as the General Secretary, responsible for the overall administration and coordination of Helpline NGO's activities and records.",
       email: "helpline.org.pk@gmail.com",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline Welfare Trust Head Office, Lahore",
       detailedDescription: `With a heart full of gratitude and humility, I extend my deepest thanks to each of you for your unwavering support and generosity. Your kindness has been the driving force behind our Welfare Trust’s mission to uplift the most vulnerable members of society—destitute children, marginalized families, and underserved women—guiding them toward a life of dignity, purpose, and faith. We strongly believe that the system based on the concept of MAWAKHAT-E-MADINA, which guide each memeber of nation to contriubute his/her and ensure basic right to every deserving member of the nation
@@ -1888,25 +1888,25 @@ May the Almighty bless you abundantly for your kindness.  `,
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
-    // {
-    //   id: 20,
-    //   designation: "Finance Secretary",
-    //   name: "Malik Mumtaz Awan",
-    //   image: "/img/organization/MALIKMUMTAZAWAN.jpg",
-    //   description:
-    //     "Malik Mumtaz Awan is the Finance Secretary, managing all financial affairs and ensuring accountability and proper utilization of funds for Helpline NGO.",
-    //   email: "mumtaz.awan@helpline.org",
-    //   workingArea: "Lahore, Pakistan",
-    //   nationality: "Pakistani",
-    //   address: "Valencia Town, Lahore",
-    //   detailedDescription:
-    //     "As Finance Secretary, Malik Mumtaz Awan is central to the financial governance of Helpline NGO. He oversees budgeting, financial reporting, and compliance with financial regulations, ensuring transparency and responsible management of resources to support our humanitarian efforts.",
-    //   socialLinks: [
-    //     { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-    //     { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-    //     { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-    //   ],
-    // },
+    {
+      id: 20,
+      designation: "Finance Secretary",
+      name: "GP Capt Malik Mumtaz Awan (Retd)",
+      image: "/img/team/iconimage.png",
+      description:
+        "Malik Mumtaz Awan is the Finance Secretary, managing all financial affairs and ensuring accountability and proper utilization of funds for Helpline NGO.",
+      email: "",
+      workingArea: "Punjab, Pakistan",
+      nationality: "Pakistani",
+      address: "Valencia Town, Lahore",
+      detailedDescription:
+        "As Finance Secretary, Malik Mumtaz Awan is central to the financial governance of Helpline NGO. He oversees budgeting, financial reporting, and compliance with financial regulations, ensuring transparency and responsible management of resources to support our humanitarian efforts.",
+      socialLinks: [
+        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+      ],
+    },
     {
       id: 21,
       designation: "Administrator KMC",
@@ -1915,7 +1915,7 @@ May the Almighty bless you abundantly for your kindness.  `,
       description:
         "Colonel Zahoor Hussain (Retd) serves as the Administrator for KMC (Karachi Metropolitan Corporation) initiatives at Helpline NGO, leveraging his experience for local governance and development projects.",
       email: "zahoor.hussain@helpline.org",
-      workingArea: "Lahore, Pakistan",
+      workingArea: "Punjab, Pakistan",
       nationality: "Pakistani",
       address: "Helpline NGO KMC Office, Lahore",
       detailedDescription:
@@ -1983,25 +1983,25 @@ May the Almighty bless you abundantly for your kindness.  `,
         { platform: "youtube", icon: "fab fa-youtube", url: "#" },
       ],
     },
-    {
-      id: 25,
-      designation: "Media Consultant",
-      name: "Amir Hashim Khakwani",
-      image: "/img/organization/KHAKWANI.jpg",
-      description:
-        "Amir Hashim Khakwani serves as a Media Consultant, advising Helpline NGO on effective media strategies and public communication.",
-      email: "amir.khakwani@helpline.org",
-      workingArea: "Pakistan",
-      nationality: "Pakistani",
-      address: "Helpline NGO Media Department, Lahore",
-      detailedDescription:
-        "Amir Hashim Khakwani's role as Media Consultant involves providing expert advice on media relations, content development, and public outreach. He helps shape the narrative around Helpline NGO's work, ensuring consistent and impactful communication across various media platforms.",
-      socialLinks: [
-        { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
-        { platform: "twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "youtube", icon: "fab fa-youtube", url: "#" },
-      ],
-    },
+    // {
+    //   id: 25,
+    //   designation: "Media Consultant",
+    //   name: "Amir Hashim Khakwani",
+    //   image: "/img/organization/KHAKWANI.jpg",
+    //   description:
+    //     "Amir Hashim Khakwani serves as a Media Consultant, advising Helpline NGO on effective media strategies and public communication.",
+    //   email: "amir.khakwani@helpline.org",
+    //   workingArea: "Pakistan",
+    //   nationality: "Pakistani",
+    //   address: "Helpline NGO Media Department, Lahore",
+    //   detailedDescription:
+    //     "Amir Hashim Khakwani's role as Media Consultant involves providing expert advice on media relations, content development, and public outreach. He helps shape the narrative around Helpline NGO's work, ensuring consistent and impactful communication across various media platforms.",
+    //   socialLinks: [
+    //     { platform: "facebook", icon: "fab fa-facebook-f", url: "#" },
+    //     { platform: "twitter", icon: "fab fa-twitter", url: "#" },
+    //     { platform: "youtube", icon: "fab fa-youtube", url: "#" },
+    //   ],
+    // },
     {
       id: 26,
       designation: "Regional Head (Sindh)",
