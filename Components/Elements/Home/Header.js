@@ -13,6 +13,15 @@ import UBLPaymentForm from "../Payment/UBLPaymentForm";
 export const campaignsData = [
 
   {
+    id: "flood-relief-project",
+    title: "Flood Relief Project",
+    href: "/flood-relief",
+    description:
+      "Providing relief to flood-affected families.",
+    image: "/img/Campaigns/Flood.jpg",
+    status: "upcoming",
+  },
+  {
     id: "school-masjid-project",
     title: "School Masjid Project",
     href: "/masjid",
@@ -190,12 +199,15 @@ export default function Header() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.leftSection}>
-        <div className={styles.contentArea}>
           <div className={styles.headerNewTag}>
             <span className={styles.brand}>
               HELPLINE <span className={styles.airo}>Pakistan</span>
             </span>
+            <p className={styles.tagline}>
+             Working with The spirit of <br /> <span className={styles.airo2}>Mawakhat-e-Madina</span>.
+            </p>
           </div>
+        <div className={styles.contentArea}>
 
           <h1 className={styles.headline}>
             Helpline <br />{" "}
@@ -230,7 +242,7 @@ export default function Header() {
               <h6 className={styles.sectionHeading}>Vision</h6>
               <p>
                 Building Islamic Welfare Society on the Golden Principles of
-                "Mawakhat-e-Madina"
+                <span className={styles.airo1}>Mawakhat-e-Madina</span>
               </p>
             </div>
             <div className={styles.missionBox}>

@@ -5,7 +5,7 @@ export default function CauseBreadCrumb({ actualName }) {
   return (
     <section
       className="breadcrumb_area breadcrumb_overlay"
-      style={{ backgroundImage: "url(/img/causes/School-1-scaled.jpg)" }}
+      style={{ backgroundImage: "url(/img/causes/causeheader.png)" }}
     >
       <div className="container">
         <div className="row">

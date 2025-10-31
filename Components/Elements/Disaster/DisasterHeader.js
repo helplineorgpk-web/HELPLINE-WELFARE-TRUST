@@ -11,13 +11,6 @@ function DisasterHeader({ content, image }) {
       >
         <div className={styles.overlay}>
           <h1 className={styles.title}>{content.title}</h1>
-          {content.supportButtonText && (
-            <a href="/donation">
-              <button className={styles.supportButton}>
-                {content.supportButtonText}
-              </button>
-            </a>
-          )}
         </div>
       </div>
     </section>

@@ -23,6 +23,9 @@ export default function CauseRecentCause({ categories, causes }) {
     if (categories?.Medical) {
       return "Medical";
     }
+    if (categories?.HouseConstructions) {
+      return "House Constructions";
+    }
   });
 
   const [projects, setProjects] = useState([]);
@@ -57,22 +60,21 @@ export default function CauseRecentCause({ categories, causes }) {
             fontWeight: 600,
             color: "#2c3e50"
           }}>
-            Our Education Projects
+            Our Clean Water Projects
           </h3>
           <p style={{
             textAlign: "center",
             color: "#2c3e50",
             lineHeight: 1.8,
-            maxWidth: "900px",
+            maxWidth: "1400px",
             margin: "0 auto",
             fontSize: "1.1rem"
           }}>
-            Helpline is engaged in various philanthropic activities all over
-            Pakistan. Our main focus is QUALITY EDUCATION for under privileged
-            children in remote rural areas of the country. We have devised
-            "Al-Kitab Education System" which, besides imparting free quality
-            education (Religious/Modern), encompasses the community development
-            plans for the needy families of these students.
+Helpline Welfare Trust – Clean Water Project<br/><br/>
+Alhamdulillah, Helpline Welfare Trust has been relentlessly working to ensure that every family in Pakistan has access to one of life’s most basic needs — clean water. Through the grace of Allah and the support of kind-hearted donors, we have successfully installed over 2,000 water pumps across various underprivileged and remote regions of Pakistan, where clean water was once a distant dream. From the scorching deserts of Balochistan to the neglected villages of Sindh, Punjab, and Khyber Pakhtunkhwa, our teams have reached deep into communities that were forced to rely on contaminated or unsafe water sources.<br/><br/>
+Each water pump installed is more than just a source of water — it is a source of life, health, and hope. For countless families, this initiative means no more long walks under the burning sun to fetch water, no more diseases caused by unsafe water, and no more children missing school just to help their mothers carry heavy buckets from faraway wells. Every drop of clean water that flows through these pumps is a testament to compassion, unity, and faith — a reminder that even the smallest act of kindness can transform lives.<br/><br/>
+Our mission is clear and deeply rooted in our belief: a clean and healthy Pakistan is possible when we stand together for humanity. Helpline Welfare Trust continues to expand its clean water initiatives, installing solar-powered tube wells, filtration plants, and hand pumps — all free of cost — to serve the poor and needy. This project is not just about water; it is about dignity, equality, and a better future for generations to come.<br/><br/>
+With every pump we install, we move one step closer to our vision — a Pakistan where no child suffers from thirst, where every drop of water brings blessings, and where compassion flows as freely as the water we provide.
           </p>
         </div>
         <div className="row">
