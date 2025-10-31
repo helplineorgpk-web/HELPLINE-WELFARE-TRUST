@@ -7,6 +7,37 @@ import styles from "../styles/Campaigns.module.css";
 
 const campaignsData = [
   {
+    id: "flood-relief-project",
+    title: "Flood Relief Project",
+    href: "/flood-relief",
+    description:
+      "Providing immediate relief to flood-affected families across Pakistan.",
+    image: "/img/Campaigns/Flood.jpg",
+    details: {
+      goal: 2000000,
+      raised: 750000,
+      packages: [
+        {
+          name: "Emergency Package",
+          price: 10000,
+          description: "Food, water, medical supplies for 1 week",
+        },
+        {
+          name: "Family Package",
+          price: 25000,
+          description: "Complete relief package for 1 month",
+        },
+        {
+          name: "Community Package",
+          price: 50000,
+          description: "Support for multiple families",
+        },
+      ],
+      endDate: "2025-12-31",
+    },
+    status: "Running ",
+  },
+  {
     id: "school-masjid-project",
     title: "School Masjid Project",
     href: "/masjid",

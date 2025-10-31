@@ -50,9 +50,9 @@ export const HelplineData = {
     `,
   },
   HelplineHealthData: {
-    title: "HELPLINE HEALTH",
+    title: "HELPLINE's HEALTH SERVICES",
     supportButtonText: "SUPPORTING APPEAL",
-    headerBg: "img/causes/hospital.jpeg",
+    headerBg: "img/causes/karbathheader.png",
     videoSrc: "https://www.youtube.com/embed/G25BUguOoEc",
     heading: "Helpline Health Projects",
     description: `
@@ -179,8 +179,8 @@ export const HelplineData = {
       img6: "/img/causes/upgraded1.JPG",
       img7: "/img/causes/future.jpg",
       img8: "/img/causes/future1.jpg",
-      link: "https://youtu.be/uW6QxzriY1A?si=bsuocjM5FYuLZO2t",
-      link3: "https://youtu.be/6RliogbPdII?si=gPU5sn8s3w26g0Dh",
+      link: "https://www.youtube.com/embed/uW6QxzriY1A",
+      link3: "https://www.youtube.com/embed/6RliogbPdII",
       ActualName: "Al-Kitab Higher Secondary School",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
@@ -211,8 +211,8 @@ export const HelplineData = {
       img7: "/img/causes/waterirtiqa.JPG",
       img8: "/img/causes/waterirtiqa2.JPG",
 
-      link: "https://www.youtube.com/watch?v=3ZCDpJxgIGk",
-      link2: "https://www.youtube.com/watch?v=UuphWKN263I",
+      link: "https://www.youtube.com/embed/3ZCDpJxgIGk",
+      link2: "https://www.youtube.com/embed/UuphWKN263I",
       ActualName: "Irtaqa-e-Itfal High School",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
@@ -267,8 +267,8 @@ export const HelplineData = {
       // img6: "/img/causes/alkitab4.jpg",
       // img7: "/img/causes/alkitab5.jpg",
       // img8: "/img/causes/alkitab6.jpg",
-      // link: "https://youtu.be/uW6QxzriY1A?si=bsuocjM5FYuLZO2t",
-      // link3: "https://youtu.be/6RliogbPdII?si=gPU5sn8s3w26g0Dh",
+      // link: "https://www.youtube.com/embed/uW6QxzriY1A",
+      // link3: "https://www.youtube.com/embed/6RliogbPdII",
       ActualName: "Ch Rehmat Ali Higher Secondary School for Boys",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
@@ -337,8 +337,8 @@ export const HelplineData = {
       img6: "/img/causes/foundition2.png",
       img7: "/img/causes/begin.JPG",
       img8: "/img/causes/begin1.JPG",
-      link: "https://www.youtube.com/shorts/7sh2krvAEZY",
-      link3: "https://www.youtube.com/watch?v=_hliltW3iEM",
+      link: "https://www.youtube.com/embed/7sh2krvAEZY",
+      link3: "https://www.youtube.com/embed/_hliltW3iEM",
       ActualName: "Emman Maryam Smart School Alighar Education Complex",
       detail: "Free education for brighter futures.",
       description: `Aligarh Educational Complex – A Legacy of Learning and Service  
@@ -376,7 +376,7 @@ export const HelplineData = {
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
       description:
-        "Alkitab Primary School was established in 2021 in a small village of Tehsil Ahmedpur Sharqia by Helpline, a nonprofit organization. The school building was generously donated by Mr. Jam Jazoor Bux. Starting with just 15 out-of-school children from nearby villages, the school has grown significantly and now educates 83 students. With a dedicated team of six teachers, Alkitab Primary School provides quality education to underprivileged children, helping bridge the educational gap in the region. The institution remains committed to empowering young minds and fostering community development through learning.",
+        "Alkitab Primary School was established in 2021 in a small village of Tehsil Ahmedpur Sharqia by Helpline, a nonprofit organization. The school building was generously donated by Mr. Jam Hazoor Bakhsh. Starting with just 15 out-of-school children from nearby villages, the school has grown significantly and now educates 83 students. With a dedicated team of six teachers, Alkitab Primary School provides quality education to underprivileged children, helping bridge the educational gap in the region. The institution remains committed to empowering young minds and fostering community development through learning.",
       historyTitle: "The Green Growth Initiative ",
       UpgradeTitle: "Celebrating the Independence Day",
       detail3:
@@ -928,7 +928,6 @@ export const HelplineData = {
     //   description:
     //     "The NGO has taken on the responsibility of providing financial support to the school, including paying the salaries of the teachers and providing essential supplies and resources for the students. This support has been crucial for the school, which serves a primarily low-income student population. Overall, the adoption of Govt. Nimro Sharif School by the helpline NGO is an outstanding example of how community-based organizations can work together to improve education outcomes for underprivileged students. By providing resources and support for both students and teachers, the NGO is making a significant impact on the lives of those in the community.",
     //   pbar: "pbar_1",
-
     //   desc: "GPS Qazi Muhammad Ashraf (Mirpurkhas)",
     //   ActualName: "Sindh Govt Primary School",
     //   adopted: "Adopted",
@@ -955,31 +954,29 @@ export const HelplineData = {
       id: 14,
       category: ["Medical"],
       img: "/img/causes/cause10.jpg",
-      img1: "/img/causes/medicalkarbath1.jpeg",
-      img2: "/img/causes/karbathmedical.jpg",
-      ActualName: "Karbath Medical Centre",
+      img1: "/img/causes/karbathhospital.JPG",
+      img2: "/img/causes/karbathhospital1.JPG",
+      img3: "/img/causes/karbathhospital2.JPG",
+      img4: "/img/causes/karbathmedical.jpg",
+      img5: "/img/causes/karbathhospital3.JPG",
+      img6: "/img/causes/karbathhospital4.JPG",
+      img7: "/img/causes/labtest.png",
+      img8: "/img/causes/ultrasound.jpg",
       detail:
-        "Karbath Medical Centre provides free quality healthcare to underserved patients.",
+        "Karbath Medical Centre offers comprehensive healthcare services, ensuring quality medical care for all.",
       description:
-        "Karbath Medical Centre is a special medical centre run by the Helpline Social Welfare Foundation. At Karbath Medical Centre, patients who cannot afford expensive fees in private hospitals can get access to free medical services. The centre is equipped with state–of–the–art medical equipment and experienced medical personnel and provides a range of services including general check-ups, immunizations, and treatments for various illnesses and injuries. The centre also provides psychological, social, and educational support to all patients. Karbath Medical Centre is committed to providing quality healthcare to those in need and strives to become a trusted source of care for the community.",
-
+        "Karbath Medical Centre was established by Helpline, a nonprofit organization, to provide accessible healthcare services to underserved communities. The medical centre operates with a dedicated team of qualified doctors, nurses, and medical staff who serve patients with compassion and professionalism. What began as a small facility offering basic care has now grown into a fully equipped medical centre providing comprehensive services — including emergency care, general medicine, pediatrics and gynecology. The centre ensures that every patient, regardless of financial condition, receives quality treatment and attention. Every day, hundreds of poor and deserving individuals walk through its doors seeking help, and none of them are Refused. From medical checkups and lab tests to ultrasounds and homeopathic treatments, everything is provided free of cost to underprivileged and deserving patients. The facility upholds high standards of hygiene, empathy, and care, standing as a symbol of hope and humanity for countless families who once had nowhere else to go for healing.",
+      // historyTitle: "The Healthcare Excellence Initiative",
+      // UpgradeTitle: "Daily Patient Checkups",
+      // FutureTitle: "Patient Support In All Public Sectors Hospitals",
+      // detail3:
+      //   "The Karbath Medical Centre stands as a lifeline for those who arrive with pain, worry, and empty hands but leave with hope and healing. Every day, between 700 and 1200 poor patients from nearby villages come seeking help they cannot afford elsewhere. Many travel long distances, carrying nothing but faith that someone will care for them—and here, they find exactly that. With free medical checkups, the centre ensures that no one is denied treatment because of poverty. The doctors, nurses, and staff serve with compassion and dignity, treating every patient like family. Each smile restored, each tear of relief, tells the story of lives touched by kindness. Supported by Helpline Welfare Trust, Karbath Medical Centre continues to shine as a symbol of humanity—where the poor are not just treated, but respected, healed, and given back the hope they thought they had lost.",
+      // detail2:
+      //   "The Healthcare Excellence Initiative was launched by Helpline, to enhance medical services and healthcare accessibility in the area of Interest. The project began with the generous support of community members and healthcare professionals who donated medical equipment and supplies. Starting with basic medical consultations, the initiative has expanded into a comprehensive healthcare facility offering emergency care, specialized treatments, and preventive medicine. Managed by a dedicated team of medical professionals, the program not only provides immediate healthcare needs but also educates community members about health awareness and preventive care. Through regular health camps, medical awareness programs, and community engagement, the Healthcare Excellence Initiative continues to inspire a culture of health consciousness and accessible medical care for all residents in the region.",
+      // detail4:"Our Medical team has Established links with Social Welfare Department desks in all public Sector Hospitals. Dedicated staff identify deserving Patient Visiting from Various Villages help them in their checkup, lab test and admission, Moreover Deserving Patients also Supporting in buying Medicines, lab tests etc not performed by the public Hospitals.  The Karbath Medical Centre stands as a symbol of hope and healing for the poor and needy who arrive daily in search of care they cannot afford elsewhere. Every day, between 150 to 280 patients receive free ultrasounds, while 100 to 150 patients undergo lab tests, with lowest Possible rates ensuring that no one is denied medical attention due to poverty. Along with these services, free medicines are also provided to those in need, bringing relief to countless families struggling to survive. The doctors, nurses, and staff work tirelessly with compassion and dedication, treating each patient with dignity and respect.",
+      ActualName: "Karbath Medical Centre",
       desc: "Karbath Medical Centre Hospital.",
       color: "#65cabb",
-    },
-    {
-      id: 15,
-      category: ["Medical"],
-      img: "/img/causes/hajramedical1.jpg",
-      img1: "/img/causes/hajramedical1.jpg",
-      img2: "/img/causes/hajramedical2.jpg",
-      ActualName: "Hajra Bibi Memorial Trust Hospital",
-      detail:
-        "Haji Hospital offers free healthcare, expanding under Helpline since 2012.",
-      description:
-        "Haji Muhammad Sadiq Hajra Bibi Hospital was commissioned on 1st June 2001 at 18 km Sheikhupura-Faisalabad Road spread on 2.3 acres of land. It is a 50 bedded Hospital with Laboratory, X-ray, Operation Theatre, Gynecology Deptt, Eye Deptt, Pharmacy, etc. At the time of its inception, it was the only health facility within a radius of 20 km. The daily influx of patients was 150-200. In this hospital, poor and needy patients are provided treatment free of cost. The hospital was handed over to Helpline in 2012 and since then we are working on its expansion plans to improve the health facilities.",
-
-      desc: "Hajra Bibi Memorial Trust Hospital.",
-      color: "#5fb35b",
     },
     {
       id: 16,
@@ -987,28 +984,88 @@ export const HelplineData = {
       img: "/img/causes/cause12.jpg",
       img1: "/img/causes/cataract1.jpg",
       img2: "/img/causes/cataract2.jpeg",
-      ActualName: "Cataract Surgeries Across Pakistan",
+      img3: "/img/causes/catarect3.JPG",
+      img4: "/img/causes/catarect4.JPG",
+      img5: "/img/causes/catarect5.JPG",
+      img6: "/img/causes/catarect6.JPG",
       detail:
-        "Helpline funds cataract surgeries, restoring vision for underprivileged Pakistanis.",
+        "Helpline Welfare Trust conducts free cataract surgeries across Pakistan's cities, funded by generous donations to restore vision for poor families.",
       description:
-        "Helpline has been utilizing generous donations to fund cataract surgeries for underprivileged individuals across Pakistan, transforming lives by restoring vision. Cataracts, a common yet debilitating condition, disproportionately affect those who lack access to adequate healthcare. With the support of donors, Helpline organizes surgical camps in rural and underserved areas, ensuring that people who cannot afford expensive medical treatments receive high-quality care free of charge.Each surgery is performed by experienced ophthalmologists using advanced equipment, ensuring safe and effective outcomes. Beyond surgeries, Helpline also raises awareness about eye health and provides post-operative care to patients. These efforts not only improve individual lives but also empower families and communities, enabling beneficiaries to regain independence and productivity.",
-
+        "Cataract Surgeries Across Pakistan is a humanitarian initiative by Helpline Welfare Trust, funded entirely through generous donations from compassionate individuals and organizations. The program operates surgical camps in major cities across Pakistan, specifically targeting poor and underprivileged families who cannot afford expensive private medical treatments. With the support of these donations, Helpline Welfare Trust organizes specialized cataract surgery camps in urban centers, bringing hope and restored vision to countless families. Each surgery is performed by experienced ophthalmologists using state-of-the-art equipment, ensuring safe and successful outcomes for patients. The program not only provides free cataract surgeries but also covers pre-operative assessments, post-operative care, and follow-up treatments. In 2023, Helpline successfully performed 500 cataract operations worth 7,600,000 rupees, while in 2024, 190 cataract surgeries were conducted valued at 1,197,000 rupees, restoring the gift of sight to hundreds of deserving individuals. Through the unwavering generosity of donors, Helpline Welfare Trust continues to transform lives by restoring vision to poor families across Pakistan, enabling them to regain independence, dignity, and a renewed sense of hope.",
+      historyTitle: "The Donor-Funded Vision Restoration Program",
+      UpgradeTitle: "Celebrating Successful Cataract Surgeries Funded by Donations",
+      detail3:
+        "The Successful Cataract Surgeries celebration, funded by generous donations, was a heartwarming occasion that highlighted Helpline Welfare Trust's achievements in restoring vision to poor families across Pakistan's cities. The event began with a ceremonial ribbon-cutting for new ophthalmic equipment purchased through donor contributions, followed by inspiring speeches from recovered patients and their grateful families. Beneficiaries shared emotional stories of regained independence and gratitude, showcasing the profound impact of donor-funded surgeries on improving lives and restoring hope. The medical team demonstrated their expertise through eye health awareness sessions, free eye examinations, and educational workshops on preventive eye care. The surgical camp premises were decorated with banners celebrating successful surgeries and patient testimonials, acknowledging the generous donors who made it all possible. Community members participated in eye screenings and learned about various eye care services available through the donor-funded program. With active involvement from local healthcare professionals, volunteers, grateful patients, and generous donors, the event fostered a sense of community health awareness and commitment to accessible eye care, making the celebration truly meaningful for everyone involved.",
+      detail2:
+        "The Donor-Funded Vision Restoration Program was launched by Helpline Welfare Trust to enhance eye care services and cataract surgery accessibility for poor families across Pakistan's cities. The project began with the generous support of compassionate donors who contributed funds for ophthalmic equipment, surgical supplies, and medical camp operations. Starting with basic eye examinations and consultations in major cities, the initiative has expanded into a comprehensive eye care program offering free cataract surgeries, specialized treatments, and preventive eye care for underprivileged families. Managed by a dedicated team of ophthalmologists and medical professionals, the program not only provides immediate surgical needs but also educates community members about eye health awareness and preventive care. Through regular surgical camps funded by donations, eye health awareness programs, and community engagement, the Donor-Funded Vision Restoration Program continues to inspire a culture of eye health consciousness and accessible medical care for poor residents across Pakistan's cities.",
+      ActualName: "Cataract Surgeries Across Pakistan",
       desc: "Cataract Surgeries Across Pakistan.",
       color: "#f15b43",
     },
+    {
+      id: 15,
+      category: ["Medical"],
+      img: "/img/causes/freemedical.jpg",
+      img1: "/img/causes/freemedical1.jpg",
+      img2: "/img/causes/freemedical2.jpg",
+      img3: "/img/causes/freemedical3.jpg",
+      img4: "/img/causes/freemedical4.jpg",
+      ActualName: "Free Medical Camp Bahawalpur",
+      UpgradeTitle: "Celebrating Medical Milestones",
+      detail:
+        "Free Medical Camp Bahawalpur offers free healthcare, expanding under Helpline since 2025.",
+      description:
+        "Free Medical Camp Bahawalpur is a comprehensive healthcare initiative launched by Helpline Welfare Trust in 2025, dedicated to providing essential medical services to underserved communities across Pakistan's poorest regions. This mobile healthcare program brings qualified doctors, nurses, and medical equipment directly to rural and urban areas where access to healthcare is limited or non-existent. The camp offers free consultations, diagnostic services, essential medications, emergency care, maternal and child health services, and preventive healthcare education to thousands of beneficiaries. Through partnerships with local healthcare professionals and pharmaceutical companies, Helpline ensures that financial constraints never prevent anyone from receiving quality medical care. The initiative also conducts health awareness sessions, educating communities about disease prevention, hygiene practices, and healthy lifestyle choices. Since its launch, the Free Medical Camp Bahawalpur has become a beacon of hope for countless families, transforming lives and improving health outcomes in Pakistan's most vulnerable communities.",
+      detail2:
+        "The Free Medical Camp Bahawalpur initiative was launched by Helpline Welfare Trust in 2025 to address the critical healthcare needs of underserved communities in Pakistan's rural and urban poor areas. Recognizing that access to quality healthcare remains a luxury for millions of Pakistanis living below the poverty line, Helpline established this comprehensive medical outreach program. The camp operates on a mobile healthcare model, bringing essential medical services directly to communities that lack proper healthcare infrastructure. Starting with basic consultations and emergency care, the initiative has grown into a full-scale medical intervention program that provides free consultations, diagnostic services, essential medications, and preventive healthcare education to thousands of beneficiaries across Bahawalpur and surrounding regions.",
+      detail3:
+        "The Free Medical Camp Bahawalpur has become a beacon of hope for countless families who previously had no access to healthcare services. Each camp is staffed by qualified doctors, nurses, and medical technicians who volunteer their time and expertise to serve the community. The program offers comprehensive medical services including general health check-ups, blood pressure monitoring, diabetes screening, maternal and child health services, and emergency medical care. Patients receive free consultations, diagnostic tests, and essential medications, ensuring that financial constraints never become a barrier to receiving quality healthcare. The camp also conducts health awareness sessions, educating community members about preventive care, hygiene practices, and disease management. Through partnerships with local healthcare professionals and pharmaceutical companies, Helpline ensures that every patient receives the best possible care regardless of their economic status.",
+      desc: "Free Medical Camp Bahawalpur",
+      color: "#5fb35b",
+    },
+    {
+      id: 43,
+      category: ["Medical"],
+      img: "/img/causes/freemedical.jpg",
+      img1: "/img/causes/freemedical1.jpg",
+      img2: "/img/causes/freemedical2.jpg",
+      img3: "/img/causes/freemedical3.jpg",
+      img4: "/img/causes/freemedical4.jpg",
+      ActualName: "School Medical Camp (Al-Kitab School)",
+      UpgradeTitle: "Celebrating Medical Milestones",
+      detail:
+        "Free Medical Camp Bahawalpur offers free healthcare, expanding under Helpline since 2025.",
+      description:
+        "Free Medical Camp Bahawalpur is a comprehensive healthcare initiative launched by Helpline Welfare Trust in 2025, dedicated to providing essential medical services to underserved communities across Pakistan's poorest regions. This mobile healthcare program brings qualified doctors, nurses, and medical equipment directly to rural and urban areas where access to healthcare is limited or non-existent. The camp offers free consultations, diagnostic services, essential medications, emergency care, maternal and child health services, and preventive healthcare education to thousands of beneficiaries. Through partnerships with local healthcare professionals and pharmaceutical companies, Helpline ensures that financial constraints never prevent anyone from receiving quality medical care. The initiative also conducts health awareness sessions, educating communities about disease prevention, hygiene practices, and healthy lifestyle choices. Since its launch, the Free Medical Camp Bahawalpur has become a beacon of hope for countless families, transforming lives and improving health outcomes in Pakistan's most vulnerable communities.",
+      detail2:
+        "The Free Medical Camp Bahawalpur initiative was launched by Helpline Welfare Trust in 2025 to address the critical healthcare needs of underserved communities in Pakistan's rural and urban poor areas. Recognizing that access to quality healthcare remains a luxury for millions of Pakistanis living below the poverty line, Helpline established this comprehensive medical outreach program. The camp operates on a mobile healthcare model, bringing essential medical services directly to communities that lack proper healthcare infrastructure. Starting with basic consultations and emergency care, the initiative has grown into a full-scale medical intervention program that provides free consultations, diagnostic services, essential medications, and preventive healthcare education to thousands of beneficiaries across Bahawalpur and surrounding regions.",
+      detail3:
+        "The Free Medical Camp Bahawalpur has become a beacon of hope for countless families who previously had no access to healthcare services. Each camp is staffed by qualified doctors, nurses, and medical technicians who volunteer their time and expertise to serve the community. The program offers comprehensive medical services including general health check-ups, blood pressure monitoring, diabetes screening, maternal and child health services, and emergency medical care. Patients receive free consultations, diagnostic tests, and essential medications, ensuring that financial constraints never become a barrier to receiving quality healthcare. The camp also conducts health awareness sessions, educating community members about preventive care, hygiene practices, and disease management. Through partnerships with local healthcare professionals and pharmaceutical companies, Helpline ensures that every patient receives the best possible care regardless of their economic status.",
+      desc: "School Medical Camp (Al-Kitab School)",
+      color: "#5fb35b",
+    },
+ 
     {
       id: 17,
       category: ["Medical"],
       img: "/img/causes/mithimedicalcamp1.jpg",
       img1: "/img/causes/mithi1.png",
       img2: "/img/causes/mithi2.jpg",
-      ActualName: "Helpline Mobile Unit & Dispensary, Mithi (Sindh)",
+      img3: "/img/causes/mbldispensary.1jpg.jpg",
+      img4: "/img/causes/mbldispensary.jpg",
+      link: "https://www.youtube.com/embed/qYl8uuP5rd0",
       detail:
-        "Helpline Mobile Unit provides free healthcare and medicines in Mithi.",
+        "Helpline Mobile Unit & Dispensary brings free healthcare and medicines to poor areas across Pakistan, funded by generous donations.",
       description:
-        "Helpline Mobile Unit & Dispensary, located in Mithi, Sindh, is an initiative of Helpline Social Welfare Foundation. This project was launched with the aim of providing free medicines to patients in rural areas, who often lack access to basic medical care due to financial constraints. The dispensary is equipped with a variety of medicines, including antibiotics, antivirals, antifungals, and other essential drugs. Furthermore, the dispensary also provides free consultation and medical advice. The dispensary is staffed by trained medical personnel, who work hard to ensure that patients receive the best possible care. The Helpline Mobile Unit & Dispensary also provides health education and preventive healthcare services to the local community. This has helped to reduce the burden of disease in the area, as well as alleviating the financial burden of medical care.",
-
-      desc: "HELPLINE MOBILE UNIT & DISPENSARY, MITHI (Sindh)",
+        "Helpline Mobile Unit & Dispensary was established by Helpline Welfare Trust to provide accessible healthcare services to poor and underserved areas across Pakistan. The program operates with a dedicated team of qualified doctors, nurses, and medical staff who are committed to serving patients in remote and impoverished communities. Starting with basic medical consultations, the initiative has expanded to offer comprehensive healthcare including free medicines, emergency care, general medicine, and preventive healthcare services. The mobile units are equipped with essential medicines, medical equipment, and maintain the highest standards of patient care and safety. Helpline Mobile Unit & Dispensary continues to bridge the healthcare gap by providing free medical services and medicines to poor families who cannot afford expensive private healthcare, making quality medical care accessible to all residents of Nearly Unaccessible areas of THAR DESERT.",
+      // historyTitle: "The Mobile Healthcare Initiative for Poor Areas",
+      // UpgradeTitle: "Celebrating Mobile Healthcare Success in Underserved Communities",
+      // detail3:
+      //   "The Mobile Healthcare Success celebration in underserved communities was a heartwarming occasion that highlighted Helpline Welfare Trust's achievements in providing healthcare to poor areas across Pakistan. The event began with a ceremonial ribbon-cutting for new mobile medical equipment, followed by inspiring speeches from recovered patients and their grateful families from various poor communities. Beneficiaries shared emotional stories of regained health and gratitude, showcasing the profound impact of mobile healthcare services on improving lives and restoring hope in impoverished areas. The medical team demonstrated their expertise through health awareness sessions, free medical check-ups, and educational workshops on preventive healthcare. The mobile dispensary premises were decorated with banners celebrating successful treatments and patient testimonials from poor communities. Community members participated in health screenings and learned about various medical services available through the mobile healthcare program. With active involvement from local healthcare professionals, volunteers, grateful patients from poor areas, and generous donors, the event fostered a sense of community health awareness and commitment to accessible healthcare, making the celebration truly meaningful for everyone involved.",
+      // detail2:
+      //   "The Mobile Healthcare Initiative for Poor Areas was launched by Helpline Welfare Trust to enhance medical services and healthcare accessibility in underserved communities across Pakistan. The project began with the generous support of compassionate donors who contributed funds for mobile medical units, essential medicines, and medical equipment. Starting with basic medical consultations in poor rural areas, the initiative has expanded into a comprehensive mobile healthcare program offering free medical services, essential medicines, specialized treatments, and preventive healthcare for underprivileged families. Managed by a dedicated team of medical professionals and volunteers, the program not only provides immediate healthcare needs but also educates community members about health awareness and preventive care. Through regular mobile medical camps, health awareness programs, and community engagement in poor areas, the Mobile Healthcare Initiative continues to inspire a culture of health consciousness and accessible medical care for all residents in underserved communities across Pakistan.",
+      ActualName: "Helpline Mobile Unit & Dispensary, Mithi (Sindh)",
+      desc: "Helpline Mobile Unit & Dispensary , Mithi (Sindh)",
       color: "#f15b43",
     },
     {
@@ -1024,8 +1081,8 @@ export const HelplineData = {
       img7: "/img/causes/waterirtiqa.JPG",
       img8: "/img/causes/waterirtiqa2.JPG",
 
-      link: "https://www.youtube.com/watch?v=3ZCDpJxgIGk",
-      link2: "https://www.youtube.com/watch?v=UuphWKN263I",
+      link: "https://www.youtube.com/embed/3ZCDpJxgIGk",
+      link2: "https://www.youtube.com/embed/UuphWKN263I",
       ActualName: "Irtaqa-e-Itfal High School",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
@@ -1175,9 +1232,8 @@ export const HelplineData = {
       img6: "/img/causes/upgraded1.JPG",
       img7: "/img/causes/future.jpg",
       img8: "/img/causes/future1.jpg",
-      link: "https://youtu.be/uW6QxzriY1A?si=bsuocjM5FYuLZO2t",
-
-      link3: "https://youtu.be/6RliogbPdII?si=gPU5sn8s3w26g0Dh",
+      link: "https://www.youtube.com/embed/uW6QxzriY1A",
+      link3: "https://www.youtube.com/embed/6RliogbPdII",
       detail:
         "Al-Kitab School offers free education, fostering growth and community service.",
       description:
@@ -1208,7 +1264,7 @@ export const HelplineData = {
       detail:
         "Al-Kitab School offers free education, fostering growth and community service.",
       description:
-        "Alkitab Primary School was established in 2021 in a small village of Tehsil Ahmedpur Sharqia by Helpline, a nonprofit organization. The school building was generously donated by Mr. Jam Jazoor Bux. Starting with just 15 out-of-school children from nearby villages, the school has grown significantly and now educates 83 students. With a dedicated team of six teachers, Alkitab Primary School provides quality education to underprivileged children, helping bridge the educational gap in the region. The institution remains committed to empowering young minds and fostering community development through learning.",
+        "Alkitab Primary School was established in 2021 in a small village of Tehsil Ahmedpur Sharqia by Helpline, a nonprofit organization. The school building was generously donated by Mr. Jam Huzoor bakhsh. Starting with just 15 out-of-school children from nearby villages, the school has grown significantly and now educates 83 students. With a dedicated team of six teachers, Alkitab Primary School provides quality education to underprivileged children, helping bridge the educational gap in the region. The institution remains committed to empowering young minds and fostering community development through learning.",
       historyTitle: "The Green Growth Initiative ",
       UpgradeTitle: "Celebrating the Independence Day",
       detail3:
@@ -1231,8 +1287,8 @@ export const HelplineData = {
       // img6: "/img/causes/alkitab4.jpg",
       // img7: "/img/causes/alkitab5.jpg",
       // img8: "/img/causes/alkitab6.jpg",
-      // link: "https://youtu.be/uW6QxzriY1A?si=bsuocjM5FYuLZO2t",
-      // link3: "https://youtu.be/6RliogbPdII?si=gPU5sn8s3w26g0Dh",
+      // link: "https://www.youtube.com/embed/uW6QxzriY1A",
+      // link3: "https://www.youtube.com/embed/6RliogbPdII",
       ActualName: "Ch Rehmat Ali Higher Secondary School for Boys",
       detail:
         "Al-Kitab provides free education to underprivileged children, ensuring growth.",
@@ -1314,8 +1370,8 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       img7: "/img/causes/begin.JPG",
       img8: "/img/causes/begin1.JPG",
 
-      link: "https://www.youtube.com/shorts/7sh2krvAEZY",
-      link3: "https://www.youtube.com/watch?v=_hliltW3iEM",
+      link: "https://www.youtube.com/embed/7sh2krvAEZY",
+      link3: "https://www.youtube.com/embed/_hliltW3iEM",
       ActualName: "Emman Maryam Smart School Alighar Education Complex",
       detail: "Free education for brighter futures.",
       description: `Aligarh Educational Complex – A Legacy of Learning and Service  
@@ -1343,7 +1399,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
 
     {
       id: 28,
-      category: ["Medical"],
+      category: ["Food"],
       img: "/img/causes/jinah1.jpg",
       detail: "Helpline provided free meals to patients at Jinnah Hospital.",
       ActualName: "Jinnah Hospital, Lahore.",
@@ -1355,7 +1411,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
     },
     {
       id: 29,
-      category: ["Medical"],
+      category: ["Food"],
       img: "/img/causes/Jinnah2.jpg",
       ActualName: "Munshi Hospital, Lahore.",
       detail: "Helpline provided free meals to patients at Munshi Hospital.",
@@ -1367,7 +1423,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
     },
     {
       id: 30,
-      category: ["Medical"],
+      category: ["Food"],
       img: "/img/causes/general1.jpg",
       ActualName: "General Hospital, Lahore.",
       detail: "Helpline provided free meals to patients at General Hospital.",
@@ -1379,7 +1435,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
     },
     {
       id: 31,
-      category: ["Medical"],
+      category: ["Food"],
       img: "/img/causes/khawaja.jpg",
       ActualName: "Kot Khawaja Saeed, Lahore.",
       detail: "Helpline provided free meals to patients at Kot Khawaja Saeed.",
@@ -1498,6 +1554,37 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
     //   adopted: "Adopted",
     //   color: "#f15b43",
     // },
+    {
+      id: 42,
+      category: ["Medical"],
+      img: "/img/causes/walkin1.jpg",
+      img1: "/img/causes/walkin.jpg",
+      img2: "/img/causes/walkin2.png",
+      detail:
+        "Walkin Patients are provided with free medical treatment.",
+      description:
+        "Every day, countless deserving patients come to us in search of hope, and we make sure no one leaves without care. From free OPD consultations and life-saving medicines to providing wheelchairs and artificial limbs, our mission is to bring dignity and relief to those who cannot afford treatment. These small acts of compassion often mean the world to someone struggling to walk, work, or live without pain. Our yearly expenditure of ₨ 6,391,296 for walk-in patients reflects not just numbers, but thousands of stories of lives touched and restored. Each rupee spent carries a purpose—to heal, to uplift, and to remind every person who walks through our doors that humanity still cares.",
+      pbar: "pbar_1",
+      desc: "Walkin Patients Coming for Treatment in Helpline Headoffice",
+      ActualName: "Walkin Patients are provided with free medical treatment.",
+      adopted: "Adopted",
+      color: "#f15b43",
+    },
+    {
+      id: 44,
+      category: ["Water"],
+      img: "/img/water/IMG_20201101_124923.jpg",
+      img1: "/img/water/IMG_20201101_134556.jpg",
+      img2: "/img/water/IMG_20201101_134630.jpg",
+      ActualName: "Free Clean Water Project – Balochistan",
+      detail:
+        "Helpline Welfare has launched a free-of-cost clean water project in Balochistan, installing water filtration plants, solar tube wells, and hand pumps to ensure access to safe drinking water for poor and underserved communities.",
+      description:
+        "Helpline Welfare is committed to providing clean water to deprived regions across Pakistan. In Balochistan, the organization has installed free water filtration plants and solar-powered tube wells to help families who lack access to safe drinking water. Through this ongoing initiative, over 1,500 hand pumps have also been installed in remote villages, ensuring that thousands of people can now enjoy clean, safe water free of cost.",
+      desc: "Free Clean Water Project by Helpline Welfare in Balochistan",
+      color: "#65cabb",
+    }
+    
   ],
   homeCauses: [
     {

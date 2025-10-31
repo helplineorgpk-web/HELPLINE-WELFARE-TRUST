@@ -5,6 +5,44 @@ import { Container, Row, Col, Card, ListGroup, Button } from 'react-bootstrap';
 
 const campaignsData = [
   {
+    id: "flood-relief-project",
+    title: "Flood Relief Project",
+    description: "Providing immediate relief to flood-affected families across Pakistan",
+    image: "/img/Campaigns/Flood.jpg",
+    details: {
+      goal: 2000000,
+      raised: 750000,
+      packages: [
+        {
+          name: "Emergency Package",
+          price: 10000,
+          description: "Food, water, medical supplies for 1 week",
+          items: ["Food supplies", "Clean water (20L)", "Basic medical kit", "Emergency blankets", "Flashlight & batteries"]
+        },
+        {
+          name: "Family Package",
+          price: 25000,
+          description: "Complete relief package for 1 month",
+          items: ["Food supplies", "Clean water (100L)", "Complete medical kit", "Temporary shelter materials", "Essential household items", "Clothing & blankets"]
+        },
+        {
+          name: "Community Package",
+          price: 50000,
+          description: "Support for multiple families",
+          items: ["Food supplies for 2 months", "Water purification system", "Medical supplies for 10 families", "Rebuilding materials", "Educational supplies", "Livelihood support"]
+        }
+      ],
+      endDate: "2025-12-31"
+    },
+    status: "active",
+    longDescription: "Floods have devastated communities across Pakistan, leaving thousands of families without homes, food, or basic necessities. Our Flood Relief Project provides immediate emergency assistance to affected families, including food supplies, clean water, medical aid, temporary shelter, and essential household items. We work closely with local communities to ensure aid reaches those most in need and help families rebuild their lives after these devastating natural disasters.",
+    impact: [
+      { value: "3200+", label: "Families Helped" },
+      { value: "PKR 44M", label: "Relief Distributed" },
+      { value: "5", label: "Provinces Covered" }
+    ]
+  },
+  {
     id: "education-support",
     title: "Education Support Program",
     description: "Support underprivileged students with education expenses and supplies",

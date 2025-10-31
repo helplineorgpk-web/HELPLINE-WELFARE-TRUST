@@ -46,47 +46,34 @@ export default function CauseDetailsArea({
                   <p>{detail}</p>
                   <div style={{ textAlign: "center", margin: "2rem 0" }}>
                     {link && (
-                      <Link
-                        href={link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          padding: "12px 24px",
-                          backgroundColor: "#EB2525",
-                          color: "white",
-                          borderRadius: "6px",
-                          textDecoration: "none",
-                          fontWeight: 500,
-                          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
-                          transition: "background-color 0.2s",
-                        }}
-                        onMouseOver={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#D81D1D")
-                        }
-                        onMouseOut={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#EB2525")
-                        }
-                      >
-                        <svg
+                      <div style={{
+                        position: "relative",
+                        width: "100%",
+                        maxWidth: "800px",
+                        margin: "0 auto",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        height: 0,
+                        overflow: "hidden",
+                        borderRadius: "12px",
+                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
+                      }}>
+                        <iframe
+                          src={link}
+                          title={`${actualName || title} - Video`}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerPolicy="strict-origin-when-cross-origin"
+                          allowFullScreen
                           style={{
-                            width: "20px",
-                            height: "20px",
-                            marginRight: "8px",
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            border: 0
                           }}
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        Watch Video
-                      </Link>
+                        ></iframe>
+                      </div>
                     )}
                   </div>
                   {img1 && (
@@ -102,49 +89,37 @@ export default function CauseDetailsArea({
                   <h4 className="details_title">{historyTitle}</h4>
                   <p>{detail2}</p>
                   <div style={{ textAlign: "center", margin: "2rem 0" }}>
-                    {link1 && (
-                      <Link
-                        href={link1}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          padding: "12px 24px",
-                          backgroundColor: "#EB2525",
-                          color: "white",
-                          borderRadius: "6px",
-                          textDecoration: "none",
-                          fontWeight: 500,
-                          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
-                          transition: "background-color 0.2s",
-                        }}
-                        onMouseOver={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#D81D1D")
-                        }
-                        onMouseOut={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#EB2525")
-                        }
-                      >
-                        <svg
-                          style={{
-                            width: "20px",
-                            height: "20px",
-                            marginRight: "8px",
-                          }}
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        Watch Video
-                      </Link>
-                    )}
+
+             {link1 && (
+              <div style={{
+                position: "relative",
+                width: "100%",
+                maxWidth: "800px",
+                margin: "0 auto",
+                paddingBottom: "56.25%", // 16:9 aspect ratio
+                height: 0,
+                overflow: "hidden",
+                borderRadius: "12px",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
+              }}>
+                <iframe
+                  src={link1}
+                  title={`${actualName || title} - History Video`}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    border: 0
+                  }}
+                ></iframe>
+              </div>
+             )}
                   </div>
                   {img3 && (
                     <div className="row mb-45">
@@ -161,49 +136,38 @@ export default function CauseDetailsArea({
 
                   <p>{detail3}</p>
                   <div style={{ textAlign: "center", margin: "2rem 0" }}>
-                    {link2 && (
-                      <Link
-                        href={link2}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          padding: "12px 24px",
-                          backgroundColor: "#EB2525",
-                          color: "white",
-                          borderRadius: "6px",
-                          textDecoration: "none",
-                          fontWeight: 500,
-                          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
-                          transition: "background-color 0.2s",
-                        }}
-                        onMouseOver={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#D81D1D")
-                        }
-                        onMouseOut={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#EB2525")
-                        }
-                      >
-                        <svg
-                          style={{
-                            width: "20px",
-                            height: "20px",
-                            marginRight: "8px",
-                          }}
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        Watch Video
-                      </Link>
-                    )}
+
+                      {link2 && (
+                        <div style={{
+                          position: "relative",
+                          width: "100%",
+                          maxWidth: "800px",
+                          margin: "0 auto",
+                          paddingBottom: "56.25%", // 16:9 aspect ratio
+                          height: 0,
+                          overflow: "hidden",
+                          borderRadius: "12px",
+                          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
+                        }}>
+                          <iframe
+                            src={link2}
+                            title={`${actualName || title} - Upgrade Video`}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: "100%",
+                              border: 0
+                            }}
+                          ></iframe>
+                        </div>
+           )}
+
                   </div>
                   {img5 && (
                     <div className="row mb-45">
@@ -219,48 +183,35 @@ export default function CauseDetailsArea({
 
                   <p>{detail4}</p>
                   <div style={{ textAlign: "center", margin: "2rem 0" }}>
-                    {link3 && (
-                      <Link
-                        href={link3}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          padding: "12px 24px",
-                          backgroundColor: "#EB2525",
-                          color: "white",
-                          borderRadius: "6px",
-                          textDecoration: "none",
-                          fontWeight: 500,
-                          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
-                          transition: "background-color 0.2s",
-                        }}
-                        onMouseOver={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#D81D1D")
-                        }
-                        onMouseOut={(e) =>
-                          (e.currentTarget.style.backgroundColor = "#EB2525")
-                        }
-                      >
-                        <svg
-                          style={{
-                            width: "20px",
-                            height: "20px",
-                            marginRight: "8px",
-                          }}
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        Watch Video
-                      </Link>
+                       {link3 && (
+                        <div style={{
+                          position: "relative",
+                          width: "100%",
+                          maxWidth: "800px",
+                          margin: "0 auto",
+                          paddingBottom: "56.25%", // 16:9 aspect ratio
+                          height: 0,
+                          overflow: "hidden",
+                          borderRadius: "12px",
+                          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
+                        }}>
+                          <iframe
+                            src={link3}
+                            title={`${actualName || title} - Future Video`}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: "100%",
+                              border: 0
+                            }}
+                          ></iframe>
+                        </div>
                     )}
                   </div>
                   {img7 && (

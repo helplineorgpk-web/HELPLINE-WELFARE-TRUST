@@ -36,14 +36,46 @@
   text-align: center;
   height: 100%;
 }
-
+.contentArea{
+  margin-top: 10%;
+}
 .headerNewTag {
+  position: absolute;
   display: flex;
-  align-items: center;
+justify-content: space-between;
   gap: 0.5rem;
+  align-items: center;
   margin-bottom: 1.5rem;
+  width: 90%;
 }
 
+.tagline {
+  font-size: 1rem;
+  color: #000000;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.visionMissionText{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.airo1{
+  color: #bb0808;
+  font-weight: 600;
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
+}
+.airo2{
+  color: #bb0808;
+  font-weight: 600;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
+}
 .brand {
   font-weight: 600;
   color: #575757;
@@ -211,6 +243,7 @@
 .sliders {
   margin-left: 2.5rem;
   position: relative;
+  margin-top: 10%;
 }
 
 .sideSlider {
@@ -415,6 +448,10 @@
 
   .headline {
     font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
   }
 
   .sliders {
