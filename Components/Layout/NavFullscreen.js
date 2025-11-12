@@ -58,17 +58,17 @@ export default function NavFullscreen() {
                 </li>
               </ul>
             </li>
-            <li className="menu-item-has-children">
-              <Link href="/digitalSkill" className="innerli">
-                Digital Skills
-              </Link>
-              {/* <ul className="submenu">
-                <li>
+            <li>
                   <Link href="/vocationalTrainingCenters">
                     Vocational Centers
                   </Link>
                 </li>
-              </ul> */}
+   
+            <li className="menu-item-has-children">
+              <Link href="/digitalSkill" className="innerli">
+                Digital Skills
+              </Link>
+        
             </li>
             <li>
               <Link href="/" className="innerli">

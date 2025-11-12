@@ -1,4 +1,37 @@
 export const records = {
+  "2025": {
+    data: [
+      {
+        province: "Punjab",
+        beneficiaries: "1,000",
+        amount: "5,000,000"
+      }
+    ]
+  },
+  "2024": {
+    data: [
+      {
+        province: "Punjab",
+        beneficiaries: "1,761",
+        amount: "8,805,000"
+      },
+      {
+        province: "Sindh",
+        beneficiaries: "400",
+        amount: "2,000,000"
+      },
+      {
+        province: "Balochistan",
+        beneficiaries: "400",
+        amount: "2,000,000"
+      },
+      {
+        province: "Kashmir",
+        beneficiaries: "620",
+        amount: "3,100,000"
+      }
+    ]
+  },
   "2023": {
     data: [
       {

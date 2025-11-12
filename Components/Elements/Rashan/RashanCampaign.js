@@ -113,33 +113,6 @@ export default function RashanCampaign() {
       </section>
 
       <section className={styles.contactInfo}>
-        <div className={styles.contactHeader}>
-          <h3 className={styles.contactTitle}>Contact Us</h3>
-          <p className={styles.contactSubtitle}>For donations and inquiries</p>
-        </div>
-        <div className={styles.contactItems}>
-          <div className={styles.contactItem}>
-            <div className={styles.contactIcon}>📞</div>
-            <div className={styles.contactText}>
-              <span>Phone</span>
-              <p>+92 300 1234567</p>
-            </div>
-          </div>
-          <div className={styles.contactItem}>
-            <div className={styles.contactIcon}>📧</div>
-            <div className={styles.contactText}>
-              <span>Email</span>
-              <p>rashan@helpline.org</p>
-            </div>
-          </div>
-          <div className={styles.contactItem}>
-            <div className={styles.contactIcon}>🏢</div>
-            <div className={styles.contactText}>
-              <span>Address</span>
-              <p>Helpline Office, Lahore, Pakistan</p>
-            </div>
-          </div>
-        </div>
         <div className={styles.donationCta}>
           <Link href="/donation" className={styles.donateButton}>
             Donate Now
