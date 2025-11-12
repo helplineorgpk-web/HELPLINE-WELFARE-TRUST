@@ -5,6 +5,7 @@ import Rashan from "../Components/Elements/Rashan/Rashan";
 import RashanDistributionJourney from "../Components/Elements/Rashan/RashanDistributionJourney";
 import RashanDistributionArea from "../Components/Elements/Rashan/RashanDistributionArea";
 import RashanCampaign from "../Components/Elements/Rashan/RashanCampaign";
+// import RashanGallery from "../Components/Elements/Rashan/RashanGallery";
 
 export default function Images() {
   const img = "/img/causes/cause24.jpg";
@@ -20,6 +21,7 @@ export default function Images() {
       <RashanCampaign />
       <RashanDistributionJourney />
       <RashanDistributionArea />
+      {/* <RashanGallery /> */}
     </Layout2>
   );
 }

@@ -12,9 +12,9 @@ export default function RamzanRashanInfo() {
                 <h2 className={styles.sectiontitle}>Ramzan Rashan Program</h2>
                 <div className={styles.line}></div>
                 <p>
-                  Helpline distributed every year a wide range of rashan among
-                  the needy families and individuals during the blessed month of Ramzan. 
-                  From every passing year, the number of beneficiaries is increasing.
+                  Helpline distributs every year a wide range of rashan among
+                  the needy families and individuals during the Specially blessed month of Ramzan. 
+      
                 </p>
               </div>
               <div className={styles.colmd6}>

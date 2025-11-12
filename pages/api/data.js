@@ -762,69 +762,69 @@ export const HelplineData = {
     {
       id: 5,
       category: ["Water"],
-      img: "/img/causes/karbathwater.jpg",
-      img1: "/img/causes/water1.jpg",
-      img2: "/img/causes/water2.jpg",
-      ActualName: "Water Supply in KARBATH",
+      img: "/img/water/IMG_20201101_124923.jpg",
+      img1: "/img/water/IMG_20201101_134556.jpg",
+      img2: "/img/water/IMG_20201101_134630.jpg",
+      ActualName: "Free Clean Water Project – Balochistan",
       detail:
-        "Helpline ensures clean water in KARBATH: filtration plants, solar wells, hand pumps.",
+        "Helpline Welfare has launched a free-of-cost clean water project in Balochistan, installing water filtration plants, solar tube wells, and hand pumps to ensure access to safe drinking water for poor and underserved communities.",
       description:
-        "Provision of clean water to deprived areas is one of the main objectives of Helpline. In this regard, two water filtration plants costing Rs 1.8 Million have already been installed at Karbath and Kahna. A solar tube well has also been installed in a remote area of Khuzdar Baluchistan. Helpline has successfully installed about 1,500 hand pumps in various areas inhabited by underprivileged families.",
-
-      desc: "CLEAN WATER PROJECT IN KARBATH",
+        "In the arid lands of Khuzdar, Balochistan, families once struggled with illness and hardship caused by contaminated water, but Helpline Welfare Trust has brought hope through the installation of solar-powered water pumps, providing clean, safe water right in their villages. Each drop now symbolizes life and relief — children stay healthy, mothers no longer walk miles in the scorching heat, and entire communities can finally thrive, moving one step closer to a cleaner, healthier Pakistan.",
+      desc: "Free Clean Water Project by Helpline Welfare in Balochistan",
       color: "#65cabb",
     },
     {
       id: 6,
       category: ["Water"],
-      img: "/img/causes/cause2.jpg",
-      img1: "/img/causes/punjabwater2.jpg",
-      img2: "/img/causes/punjabwater.jpg",
-      ActualName: "Water Supply in PUNJAB",
+      img: "/img/water/Filter1.jpg",
+      img1: "/img/water/Filter2.jpg",
+      img2: "/img/water/Filter3.jpg",
+      img3: "/img/water/Filter4.jpg",
+      img4: "/img/water/Filter5.jpg",
+      img5: "/img/water/Filter6.jpg",
+      img6: "/img/water/Filter7.jpg",
+      historyDescription: "Every child deserves the gift of clean water—a foundation for health, growth, and a brighter tomorrow. At Al-Kitab School in Abid Town, Helpline Welfare has transformed this dream into reality by installing a water filtration plant, ensuring that each student can quench their thirst with safe, pure water as they pursue their education.",
+      ActualName: "Water Filtration Plant Installation in Al-Kitab School (Abid Town )",
       detail:
-        "Helpline ensures clean water in PUNJAB: filtration plants, solar wells, hand pumps.",
+        "Every child deserves the gift of clean water—a foundation for health, growth, and a brighter tomorrow.",
       description:
-        "Provision of clean water to deprived areas is a key objective of Helpline. In Punjab, two water filtration plants costing Rs 1.8 Million have been installed to serve communities in need. To address the water needs of rural communities, Helpline has also successfully installed over 1,500 hand pumps in various underprivileged areas across the province. These efforts aim to ensure access to safe drinking water for families in need, improving health and quality of life in the region.",
-
-      desc: "CLEAN WATER PROJECT IN PUNJAB",
-      color: "#f15b43",
+        "Imagine a child's joy when they can drink water without fear—water that nurtures their bodies, sharpens their minds, and fuels their dreams. At Al-Kitab School in Abid Town, Helpline Welfare Trust has turned this vision into reality by installing a state-of-the-art RO water filtration plant. This isn’t just infrastructure; it’s a promise—a promise of clean water for a healthy life and a brighter future. Every sip these children take strengthens their health, boosts their immunity, and keeps their learning uninterrupted. The RO plant not only serves the students and staff of Al-Kitab School but also benefits the surrounding community, ensuring that families in the area have access to safe, purified drinking water. With each drop, we are protecting lives, empowering education, and investing in a healthier, more hopeful tomorrow for all.",
+      desc: "Clean Water for Healthy Life, Healthy Future - Al-Kitab School (Abid Town)",
+      color: "#65cabb",
     },
     {
       id: 7,
       category: ["Water"],
-      img: "/img/causes/cause3.jpg",
-      img1: "/img/causes/water1.jpg",
-      img2: "/img/causes/water2.jpg",
-      ActualName: "Water Supply in KPK",
+      img: "/img/water/tandufilter1.jpg",
+      img1: "/img/water/tandufilter2.jpg",
+      img2: "/img/water/tandufilter3.jpg",
+      img3: "/img/water/tandufilter4.jpg",
+      img4: "/img/water/tandufilter5.jpg",
+      historyDescription: "Every child deserves the gift of clean water—a foundation for health, growth, and a brighter tomorrow. At Tandu School in Allahayar City, Helpline Welfare has transformed this dream into reality by installing a water filtration plant, ensuring that each student can quench their thirst with safe, pure water as they pursue their education.",
+      ActualName: "Water Filtration Plant Installation in Tandu Allahayar City",
       detail:
-        "Helpline ensures clean water in KPK: filtration plants, solar wells, hand pumps.",
+        "Every child deserves the gift of clean water—a foundation for health, growth, and a brighter tomorrow.",
       description:
-        "In KPK, Helpline has initiated a clean water plant project to provide safe drinking water to underserved communities. This project aims to address the critical need for access to clean and hygienic water, which is essential for maintaining health and well-being. Helpline is committed to ensuring that this project is successful and that clean water is available for all those in need.",
-      img1: "/img/causes/cause4.jpg",
-      img2: "/img/causes/kpkwater2.jpg",
-      detail:
-        "Helpline ensures clean water in KPK: filtration plants, solar wells, hand pumps.",
-      description:
-        "In KPK, Helpline has initiated a clean water plant project to provide safe drinking water to underserved communities. This project aims to address the critical need for access to clean and hygienic water, which is essential for maintaining health and well-being. Helpline is committed to expanding its efforts in the future by implementing larger and more impactful clean water initiatives across the region. These upcoming projects are currently in the planning stages and will soon be launched to benefit countless families, ensuring sustainable access to clean water. Through these efforts, Helpline aims to make a significant difference in improving the quality of life for those living in water-scarce areas of KPK.",
-
-      desc: "CLEAN WATER PROJECT IN KPK",
+        "Imagine a child’s joy when they can drink water without fear—water that nurtures their body and fuels their dreams. At Tandu School in Allahayar City, Helpline Welfare Trust has made this possible by installing a state-of-the-art RO water filtration plant. This isn’t just a facility; it’s a lifeline. The plant provides free, clean drinking water not only to students and staff but also to families from nearby slum areas, protecting them from waterborne diseases and giving them hope for a healthier, brighter future.",
+      desc: "Clean Water for Healthy Life, Healthy Future - Tandu Allahayar City",
       color: "#65cabb",
     },
     {
       id: 8,
       category: ["Water"],
-      img: "/img/causes/cause4.jpg",
-
-      img1: "/img/causes/blochistanwater.jpg",
-      img2: "/img/causes/blochistanwater2.jpg",
-      ActualName: "Water Supply in BALOCHISTAN",
+      img: "/img/water/kmcfilter1.jpg",
+      img1: "/img/water/kmcfilter2.jpg",
+      img2: "/img/water/kmcfilter3.jpg",
+      img3: "/img/water/kmcfilter4.jpg",
+      img4: "/img/water/kmcfilter5.jpg",
+      historyDescription: "In a place where healing begins, clean water becomes a lifeline—a source of purity that supports recovery, strengthens hope, and nurtures wellness. At Karbath Medical Centre (KMC) in Karachi, Helpline Welfare has installed a water filtration plant, ensuring that every patient, visitor, and healthcare worker has access to safe, pure drinking water as they journey toward health and healing.",
+      ActualName: "Water Filtration Plant Installation in Karbath Medical Centre (KMC)",
       detail:
-        "Helpline ensures clean water in BALOCHISTAN: filtration plants, hand pumps.",
+        "In a place where healing begins, clean water becomes a lifeline—a source of purity that supports recovery, strengthens hope, and nurtures wellness.",
       description:
-        "Helpline is dedicated to ensuring access to clean water in Balochistan, particularly in underserved areas like Khuzdar. Recognizing the urgent need for safe drinking water, the organization has implemented impactful projects to improve water availability for local communities. These initiatives include the installation of advanced water filtration plants, which provide purified water to hundreds of families daily, reducing the risk of waterborne diseases. In addition, Helpline has successfully installed numerous hand pumps in remote villages, empowering underprivileged families with easy access to clean water near their homes. These projects not only improve health and hygiene but also save time and effort for women and children who often travel long distances for water. Helpline remains committed to expanding these efforts.",
-
-      desc: "CLEAN WATER PROJECT IN BALOCHISTAN",
-      color: "#5fb35b",
+        "Picture a patient in recovery, taking that first sip of pure, refreshing water—a moment that brings relief, comfort, and hope on the path to healing. At Karbath Medical Centre (KMC) in Karachi, Helpline Welfare Trust has made this possible by installing a modern RO water filtration plant. This isn’t merely an addition to the facility—it’s a symbol of care and commitment to health. In a place where every drop counts, access to clean water ensures that patients recover safely, visitors stay worry-free, and medical staff remain energized as they serve others. The plant guarantees safe hydration, reduces the risk of infection, and strengthens the foundation of recovery for everyone who walks through KMC’s doors. This initiative goes beyond infrastructure—it reflects compassion, safeguards wellness, and upholds the true spirit of healing.",
+      desc: "Clean Water for Healthy Life, Healthy Future - Karbath Medical Centre (KMC)",
+      color: "#65cabb",
     },
     {
       id: 9,
@@ -1573,18 +1573,90 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
     {
       id: 44,
       category: ["Water"],
-      img: "/img/water/IMG_20201101_124923.jpg",
-      img1: "/img/water/IMG_20201101_134556.jpg",
-      img2: "/img/water/IMG_20201101_134630.jpg",
-      ActualName: "Free Clean Water Project – Balochistan",
+      img: "/img/causes/karbathwater.jpg",
+      img1: "/img/causes/water1.jpg",
+      img2: "/img/causes/water2.jpg",
+      ActualName: "Water Supply in KARBATH",
       detail:
-        "Helpline Welfare has launched a free-of-cost clean water project in Balochistan, installing water filtration plants, solar tube wells, and hand pumps to ensure access to safe drinking water for poor and underserved communities.",
+        "Helpline ensures clean water in KARBATH: filtration plants, solar wells, hand pumps.",
       description:
-        "Helpline Welfare is committed to providing clean water to deprived regions across Pakistan. In Balochistan, the organization has installed free water filtration plants and solar-powered tube wells to help families who lack access to safe drinking water. Through this ongoing initiative, over 1,500 hand pumps have also been installed in remote villages, ensuring that thousands of people can now enjoy clean, safe water free of cost.",
-      desc: "Free Clean Water Project by Helpline Welfare in Balochistan",
+        "Provision of clean water to deprived areas is one of the main objectives of Helpline. In this regard, two water filtration plants costing Rs 1.8 Million have already been installed at Karbath and Kahna. A solar tube well has also been installed in a remote area of Khuzdar Baluchistan. Helpline has successfully installed about 1,500 hand pumps in various areas inhabited by underprivileged families.",
+
+      desc: "CLEAN WATER PROJECT IN KARBATH",
       color: "#65cabb",
-    }
-    
+    },
+    {
+      id: 45,
+      category: ["Water"],
+      img: "/img/causes/cause2.jpg",
+      img1: "/img/causes/punjabwater2.jpg",
+      img2: "/img/causes/punjabwater.jpg",
+      ActualName: "Water Supply in PUNJAB",
+      detail:
+        "Helpline ensures clean water in PUNJAB: filtration plants, solar wells, hand pumps.",
+      description:
+        "Provision of clean water to deprived areas is a key objective of Helpline. In Punjab, two water filtration plants costing Rs 1.8 Million have been installed to serve communities in need. To address the water needs of rural communities, Helpline has also successfully installed over 1,500 hand pumps in various underprivileged areas across the province. These efforts aim to ensure access to safe drinking water for families in need, improving health and quality of life in the region.",
+
+      desc: "CLEAN WATER PROJECT IN PUNJAB",
+      color: "#f15b43",
+    },
+    {
+      id: 46,
+      category: ["Water"],
+      img: "/img/causes/cause3.jpg",
+      img1: "/img/causes/water1.jpg",
+      img2: "/img/causes/water2.jpg",
+      ActualName: "Water Supply in KPK",
+      detail:
+        "Helpline ensures clean water in KPK: filtration plants, solar wells, hand pumps.",
+      description:
+        "In KPK, Helpline has initiated a clean water plant project to provide safe drinking water to underserved communities. This project aims to address the critical need for access to clean and hygienic water, which is essential for maintaining health and well-being. Helpline is committed to ensuring that this project is successful and that clean water is available for all those in need.",
+      img1: "/img/causes/cause4.jpg",
+      img2: "/img/causes/kpkwater2.jpg",
+      detail:
+        "Helpline ensures clean water in KPK: filtration plants, solar wells, hand pumps.",
+      description:
+        "In KPK, Helpline has initiated a clean water plant project to provide safe drinking water to underserved communities. This project aims to address the critical need for access to clean and hygienic water, which is essential for maintaining health and well-being. Helpline is committed to expanding its efforts in the future by implementing larger and more impactful clean water initiatives across the region. These upcoming projects are currently in the planning stages and will soon be launched to benefit countless families, ensuring sustainable access to clean water. Through these efforts, Helpline aims to make a significant difference in improving the quality of life for those living in water-scarce areas of KPK.",
+
+      desc: "CLEAN WATER PROJECT IN KPK",
+      color: "#65cabb",
+    },
+    {
+      id: 47,
+      category: ["Water"],
+      img: "/img/causes/cause4.jpg",
+
+      img1: "/img/causes/blochistanwater.jpg",
+      img2: "/img/causes/blochistanwater2.jpg",
+      ActualName: "Water Supply in BALOCHISTAN",
+      detail:
+        "Helpline ensures clean water in BALOCHISTAN: filtration plants, hand pumps.",
+      description:
+        "Helpline is dedicated to ensuring access to clean water in Balochistan, particularly in underserved areas like Khuzdar. Recognizing the urgent need for safe drinking water, the organization has implemented impactful projects to improve water availability for local communities. These initiatives include the installation of advanced water filtration plants, which provide purified water to hundreds of families daily, reducing the risk of waterborne diseases. In addition, Helpline has successfully installed numerous hand pumps in remote villages, empowering underprivileged families with easy access to clean water near their homes. These projects not only improve health and hygiene but also save time and effort for women and children who often travel long distances for water. Helpline remains committed to expanding these efforts.",
+
+      desc: "CLEAN WATER PROJECT IN BALOCHISTAN",
+      color: "#5fb35b",
+    },
+
+    {
+      id: 48,
+      category: ["Water"],
+      img: "/img/water/manawanfilter.jpg",
+      img1: "/img/water/manawanfilter1.jpg",
+      img2: "/img/water/manawanfilter2.jpg",
+      img3: "/img/water/manawanfilter3.jpg",
+      img4: "/img/water/manawanfilter4.jpg",
+      img5: "/img/water/manawanfilter5.jpg",
+      img6: "/img/water/manawanfilter6.jpg",
+      historyDescription: "Every child deserves the gift of clean water—a foundation for health, growth, and a brighter tomorrow. At Manawan School in Lahore, Helpline Welfare has transformed this dream into reality by installing a water filtration plant, ensuring that each student can quench their thirst with safe, pure water as they pursue their education.",
+      ActualName: "Water Supply in MANAWAN",
+      detail:
+        "Every child deserves the gift of clean water—a foundation for health, growth, and a brighter tomorrow.",
+      description:
+        "Imagine a child’s relief when they no longer fear the water they drink—water that now strengthens their body and fuels their dreams. In the slum area of Manawan, Lahore, where families once had to buy water just to survive, Helpline Welfare Trust has brought lasting change by installing a state-of-the-art RO water filtration plant. This isn’t just a facility; it’s a lifeline. The plant provides free, clean drinking water not only to Manawan School students and staff but also to nearby slum residents, protecting them from disease and easing their daily struggles. What was once a burden is now a blessing—safe water, good health, and new hope for a better tomorrow.",
+      desc: "Clean Water for Healthy Life, Healthy Future - Manawan School, Lahore",
+      color: "#5fb35b",
+    },
   ],
   homeCauses: [
     {

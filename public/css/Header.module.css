@@ -437,7 +437,7 @@ justify-content: space-between;
   }
 
   .leftSection {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     flex-direction: column;
   }
 
@@ -446,12 +446,61 @@ justify-content: space-between;
     max-width: 100%;
   }
 
+  .headerNewTag {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .brand {
+    font-size: 0.9rem;
+  }
+
+  .contentArea {
+    margin-top: 1rem;
+  }
+
   .headline {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    max-width: 100%;
   }
 
   .tagline {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .airo2 {
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 0.2rem;
+    margin-left: 0;
+  }
+
+  .airo1 {
+    font-size: 0.85rem;
+    display: inline-block;
+  }
+
+  .subtext {
+    font-size: 0.9rem;
+    max-width: 100%;
+    line-height: 1.4;
+  }
+
+  .visionBox,
+  .missionBox {
+    min-width: auto;
+    padding: 0.8rem;
+  }
+
+  .visionBox p,
+  .missionBox p {
+    font-size: 0.85rem;
+    line-height: 1.3;
   }
 
   .sliders {
@@ -534,11 +583,81 @@ justify-content: space-between;
 
   .visionMissionContainer {
     flex-direction: column;
+    gap: 10px;
   }
 
   .visionBox,
   .missionBox {
     flex: 1 1 100%;
+  }
+
+  .rightHeadline {
+    font-size: 1.3rem;
+    max-width: 100%;
+    text-wrap: wrap;
+  }
+
+  .projectStats {
+    padding: 0.8rem;
+  }
+
+  .statNumber {
+    font-size: 1.2rem;
+  }
+
+  .statLabel {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContainer {
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .leftSection {
+    padding: 1rem 0.8rem;
+  }
+
+  .headline {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.7rem;
+  }
+
+  .airo2 {
+    font-size: 1rem;
+  }
+
+  .subtext {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .visionBox,
+  .missionBox {
+    padding: 0.6rem;
+  }
+
+  .visionBox p,
+  .missionBox p {
+    font-size: 0.8rem;
+  }
+
+  .sectionHeading {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 10px;
+    min-height: 350px;
+  }
+
+  .imageCard {
+    height: 240px;
   }
 }
 
