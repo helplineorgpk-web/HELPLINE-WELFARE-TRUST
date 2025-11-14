@@ -176,7 +176,9 @@ export default function Header() {
   };
 
   const handleDonateClick = () => {
+    console.log('Donate button clicked, opening modal');
     setShowPaymentForm(true);
+    console.log('showPaymentForm set to:', true);
   };
 
   const handlePaymentInitiated = (paymentData) => {
@@ -197,7 +199,64 @@ export default function Header() {
   };
 
   return (
-    <div className={styles.mainContainer}>
+    <>
+      {/* Mobile Campaign Banner */}
+      {isMobile && (
+        <div className={styles.mobileCampaignBanner}>
+          <div className={styles.campaignTitle}>
+            <span className={styles.titleRed}>MAWAKHAT-E-MADINA</span>{" "}
+          </div>
+          <div className={styles.campaignImageContainer}>
+            <Swiper
+              direction="horizontal"
+              spaceBetween={0}
+              slidesPerView={1}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              pagination={{ clickable: true }}
+              modules={[Autoplay, Pagination]}
+              className={styles.mobileCampaignSwiper}
+            >
+              {campaignsData.map((campaign) => (
+                <SwiperSlide key={campaign.id}>
+                  <Image
+                    src={campaign.image}
+                    alt={campaign.title}
+                    width={400}
+                    height={300}
+                    className={styles.campaignBannerImage}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <p className={styles.arabicText}>
+            ہمت رکھو ہم ساتھ کھڑے ہیں
+          </p>
+          <button 
+            type="button"
+            className={styles.mobileDonateButton}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              handleDonateClick();
+            }}
+          >
+            Donate Now
+          </button>
+          <div className={styles.impactSection}>
+            <h3 className={styles.impactHeading}>Your Impact In 2024</h3>
+            <p className={styles.impactText}>
+              In 2024, amidst global hardships, Helpline Welfare Trust continues to create a lasting impact through your unwavering support and generosity.
+            </p>
+          </div>
+        </div>
+      )}
+
+      <div className={styles.mainContainer}>
       <div className={styles.leftSection}>
           <div className={styles.headerNewTag}>
             <span className={styles.brand}>
@@ -367,14 +426,30 @@ export default function Header() {
           </div>
         ))}
       </div>
+      </div>
       
+      {/* Payment Modal - Outside mainContainer to ensure it's always accessible */}
       {showPaymentForm && (
-        <div className={styles.paymentModal}>
-          <div className={styles.paymentModalContent}>
+        <div 
+          className={styles.paymentModal}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setShowPaymentForm(false);
+            }
+          }}
+        >
+          <div 
+            className={styles.paymentModalContent}
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className={styles.paymentModalHeader}>
               <h3>Make a Donation</h3>
               <button 
-                onClick={() => setShowPaymentForm(false)}
+                type="button"
+                onClick={() => {
+                  console.log('Closing modal');
+                  setShowPaymentForm(false);
+                }}
                 className={styles.closeButton}
               >
                 ×
@@ -390,6 +465,6 @@ export default function Header() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

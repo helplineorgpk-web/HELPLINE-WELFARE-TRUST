@@ -1,20 +1,76 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "/public/img/logo/logo.png";
 import NavFullscreen from "./NavFullscreen";
 import styles from "../../public/css/headerTop.module.css";
 
 export default function Header1({ toggleTrueFalseInfo }) {
   return (
-    <header
-      className="header-area header-transparent"
-      style={{
-        background: "white",
-        paddingTop: "10px",
-        paddingBottom: "10px",
-      }}
-    >
+    <>
+      <style>{`
+        .header-logo {
+          display: inline-block;
+        }
+        .header-logo img,
+        .header-area .header-logo img {
+          max-width: 60% !important;
+          height: auto !important;
+          width: auto !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          display: block !important;
+          min-width: auto !important;
+        }
+        .mobile-title {
+          display: none;
+        }
+        @media (max-width: 768px) {
+          .header-logo img,
+          .header-area .header-logo img {
+            height: 20% !important;
+            width: auto !important;
+            min-width: auto !important;
+            max-width: 40% !important;
+            object-fit: contain;
+          }
+          .row.align-items-center {
+            position: relative;
+          }
+          .header-right {
+            justify-content: flex-end !important;
+            width: 100%;
+          }
+          .mobile-title {
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+            z-index: 1;
+          }
+          .hamburger-menu {
+            margin-left: auto;
+          }
+        }
+      `}</style>
+      <header
+        className="header-area header-transparent"
+        style={{
+          background: "white",
+          paddingTop: "10px",
+          paddingBottom: "10px",
+        }}
+      >
       {/* <div className="header_top_area d-none d-lg-block">
         <div className="container">
           <div className="row align-items-center">
@@ -38,8 +94,14 @@ export default function Header1({ toggleTrueFalseInfo }) {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
-              <Link href="/" className="logo">
-                <Image src={logo} alt="Logo" />
+              <Link href="/" className="logo header-logo">
+                <Image 
+                  src="/img/logo/logo.png" 
+                  alt="Logo" 
+                  width={250}
+                  height={100}
+                  priority
+                />
               </Link>
             </div>
             <div className="col-xxl-7 col-xl-6 col-lg-8 d-none d-lg-block">
@@ -47,6 +109,7 @@ export default function Header1({ toggleTrueFalseInfo }) {
                 <NavFullscreen />
               </div>
             </div>
+                <p className="mobile-title">HELPLINE <span style={{ color: "red" }}>WELFARE</span> TRUST</p>
             <div className="col-xxl-3 col-xl-4 col-lg-2 col-md-6 col-6">
               <div className="header-right d-flex align-items-center justify-content-end">
                 <div className="header-sing d-inline-block ml-20 d-none d-xl-block">
@@ -88,5 +151,6 @@ export default function Header1({ toggleTrueFalseInfo }) {
         </div>
       </div> */}
     </header>
+    </>
   );
 }
