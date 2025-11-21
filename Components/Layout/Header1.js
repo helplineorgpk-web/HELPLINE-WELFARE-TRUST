@@ -10,9 +10,11 @@ export default function Header1({ toggleTrueFalseInfo }) {
       <style>{`
         .header-logo {
           display: inline-block;
+          position: relative;
         }
         .header-logo img,
-        .header-area .header-logo img {
+        .header-area .header-logo img,
+        .header-logo span {
           max-width: 60% !important;
           height: auto !important;
           width: auto !important;
@@ -20,18 +22,27 @@ export default function Header1({ toggleTrueFalseInfo }) {
           margin: 0 !important;
           display: block !important;
           min-width: auto !important;
+          object-fit: contain !important;
+          -webkit-transform: translateZ(0) !important;
+          transform: translateZ(0) !important;
+          -webkit-backface-visibility: hidden !important;
+          backface-visibility: hidden !important;
         }
         .mobile-title {
           display: none;
         }
         @media (max-width: 768px) {
           .header-logo img,
-          .header-area .header-logo img {
-            height: 20% !important;
+          .header-area .header-logo img,
+          .header-logo span {
+            height: auto !important;
             width: auto !important;
             min-width: auto !important;
             max-width: 40% !important;
-            object-fit: contain;
+            max-height: 200px !important;
+            object-fit: contain !important;
+            -webkit-transform: translateZ(0) !important;
+            transform: translateZ(0) !important;
           }
           .row.align-items-center {
             position: relative;
@@ -60,6 +71,16 @@ export default function Header1({ toggleTrueFalseInfo }) {
           }
           .hamburger-menu {
             margin-left: auto;
+          }
+        }
+        /* iOS Safari specific fixes */
+        @supports (-webkit-touch-callout: none) {
+          .header-logo img,
+          .header-area .header-logo img,
+          .header-logo span {
+            -webkit-transform: translateZ(0) !important;
+            transform: translateZ(0) !important;
+            will-change: auto !important;
           }
         }
       `}</style>
@@ -101,6 +122,14 @@ export default function Header1({ toggleTrueFalseInfo }) {
                   width={250}
                   height={100}
                   priority
+                  sizes="(max-width: 768px) 40vw, 60vw"
+                  style={{
+                    width: 'auto',
+                    height: 'auto',
+                    maxWidth: '100%',
+                    objectFit: 'contain'
+                  }}
+                  unoptimized={false}
                 />
               </Link>
             </div>

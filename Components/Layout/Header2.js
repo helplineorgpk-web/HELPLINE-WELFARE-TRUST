@@ -1,10 +1,90 @@
 import React from "react";
 import NavFullscreen from "./NavFullscreen";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../../public/css/headerTop.module.css";
+
 export default function Header2({ toggleTrueFalseInfo }) {
   return (
-    <header className="header-area">
+    <>
+      <style>{`
+        .header-logo {
+          display: inline-block;
+          position: relative;
+        }
+        .header-logo img,
+        .header-area .header-logo img,
+        .header-logo span {
+          max-width: 60% !important;
+          height: auto !important;
+          width: auto !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          display: block !important;
+          min-width: auto !important;
+          object-fit: contain !important;
+          -webkit-transform: translateZ(0) !important;
+          transform: translateZ(0) !important;
+          -webkit-backface-visibility: hidden !important;
+          backface-visibility: hidden !important;
+        }
+        .mobile-title {
+          display: none;
+        }
+        @media (max-width: 768px) {
+          .header-logo img,
+          .header-area .header-logo img,
+          .header-logo span {
+            height: auto !important;
+            width: auto !important;
+            min-width: auto !important;
+            max-width: 40% !important;
+            max-height: 200px !important;
+            object-fit: contain !important;
+            -webkit-transform: translateZ(0) !important;
+            transform: translateZ(0) !important;
+          }
+          .row.align-items-center {
+            position: relative;
+          }
+          .header-right {
+            justify-content: flex-end !important;
+            width: 100%;
+          }
+          .mobile-title {
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+            z-index: 1;
+          }
+          .hamburger-menu {
+            margin-left: auto;
+          }
+        }
+        /* iOS Safari specific fixes */
+        @supports (-webkit-touch-callout: none) {
+          .header-logo img,
+          .header-area .header-logo img,
+          .header-logo span {
+            -webkit-transform: translateZ(0) !important;
+            transform: translateZ(0) !important;
+            will-change: auto !important;
+          }
+        }
+      `}</style>
+      <header className="header-area">
       <div className="header_top_area d-none d-lg-block">
         <div className="container">
           <div className="row align-items-center">
@@ -62,17 +142,30 @@ export default function Header2({ toggleTrueFalseInfo }) {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
-              <div className="">
-                <Link href="/" className="logo">
-                  <img src="/img/logo/logo.png" alt="Logo" />
-                </Link>
-              </div>
+              <Link href="/" className="logo header-logo mt-2">
+                <Image 
+                  src="/img/logo/logo.png" 
+                  alt="Logo" 
+                  width={250}
+                  height={100}
+                  priority
+                  sizes="(max-width: 768px) 40vw, 60vw"
+                  style={{
+                    width: 'auto',
+                    height: 'auto',
+                    maxWidth: '100%',
+                    objectFit: 'contain',
+                  }}
+                  unoptimized={false}
+                />
+              </Link>
             </div>
             <div className="col-xxl-7 col-xl-7 col-lg-9 d-none d-lg-block">
               <div className="main-menu menu_2 text-center">
                 <NavFullscreen />
               </div>
             </div>
+            <p className="mobile-title">HELPLINE <span style={{ color: "red" }}>WELFARE</span> TRUST</p>
             <div className="col-xxl-3 col-xl-3 col-lg-1 col-md-6 col-6">
               <div className="header-right d-flex align-items-center justify-content-end">
                 <div className="header-sing d-inline-block d-none d-xl-block">
@@ -83,7 +176,7 @@ export default function Header2({ toggleTrueFalseInfo }) {
                     Donate Now<span></span>
                   </Link>
                 </div>
-                <div className="menu-bar d-inline-none d-block d-xl-none">
+                <div className="hamburger-menu menu-bar info-bar d-inline-none d-block d-xl-none ml-20">
                   <button
                     onClick={toggleTrueFalseInfo}
                     className="hamburger-btn open-mobile-menu"
@@ -114,5 +207,6 @@ export default function Header2({ toggleTrueFalseInfo }) {
         </div>
       </div>
     </header>
+    </>
   );
 }

@@ -497,6 +497,12 @@ justify-content: space-between;
     object-fit: contain;
     border-radius: 10px;
     display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .campaignBannerImage:hover {
+    transform: scale(1.02);
   }
 
   .mobileCampaignSwiper .swiper-pagination {
@@ -526,23 +532,33 @@ justify-content: space-between;
     padding: 0.5rem;
   }
 
-  .mobileDonateButton {
-    display: block;
+  .mobileCampaignButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
     width: 90%;
     max-width: 300px;
     margin: 1rem auto;
-    padding: 1rem 2rem;
+    justify-content: center;
+  }
+
+  .mobileDonateButton {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
     background: #ce1126;
     color: white;
     border: none;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 700;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 0 4px 15px rgba(206, 17, 38, 0.3);
     transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
   }
 
   .mobileDonateButton:hover {
@@ -552,6 +568,36 @@ justify-content: space-between;
   }
 
   .mobileDonateButton:active {
+    transform: translateY(0);
+  }
+
+  .mobileCampaignDetailsButton {
+    display: block;
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #1d9c91, #167e76);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(29, 156, 145, 0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .mobileCampaignDetailsButton:hover {
+    background: linear-gradient(135deg, #167e76, #116b63);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(29, 156, 145, 0.4);
+    color: white;
+  }
+
+  .mobileCampaignDetailsButton:active {
     transform: translateY(0);
   }
 

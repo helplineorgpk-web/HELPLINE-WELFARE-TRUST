@@ -12,15 +12,15 @@ import UBLPaymentForm from "../Payment/UBLPaymentForm";
 
 export const campaignsData = [
 
-  {
-    id: "flood-relief-project",
-    title: "Flood Relief Project",
-    href: "/flood-relief",
-    description:
-      "Providing relief to flood-affected families.",
-    image: "/img/Campaigns/Flood.jpg",
-    status: "upcoming",
-  },
+  // {
+  //   id: "flood-relief-project",
+  //   title: "Flood Relief Project",
+  //   href: "/flood-relief",
+  //   description:
+  //     "Providing relief to flood-affected families.",
+  //   image: "/img/Campaigns/Flood.jpg",
+  //   status: "upcoming",
+  // },
   {
     id: "school-masjid-project",
     title: "School Masjid Project",
@@ -222,13 +222,15 @@ export default function Header() {
             >
               {campaignsData.map((campaign) => (
                 <SwiperSlide key={campaign.id}>
-                  <Image
-                    src={campaign.image}
-                    alt={campaign.title}
-                    width={400}
-                    height={300}
-                    className={styles.campaignBannerImage}
-                  />
+                  <Link href={campaign.href}>
+                    <Image
+                      src={campaign.image}
+                      alt={campaign.title}
+                      width={400}
+                      height={300}
+                      className={styles.campaignBannerImage}
+                    />
+                  </Link>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -236,17 +238,19 @@ export default function Header() {
           <p className={styles.arabicText}>
             ہمت رکھو ہم ساتھ کھڑے ہیں
           </p>
-          <button 
-            type="button"
-            className={styles.mobileDonateButton}
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              handleDonateClick();
-            }}
-          >
-            Donate Now
-          </button>
+          <div className={styles.mobileCampaignButtons}>
+            <button 
+              type="button"
+              className={styles.mobileDonateButton}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                handleDonateClick();
+              }}
+            >
+              Donate Now
+            </button>
+          </div>
           <div className={styles.impactSection}>
             <h3 className={styles.impactHeading}>Your Impact In 2024</h3>
             <p className={styles.impactText}>
