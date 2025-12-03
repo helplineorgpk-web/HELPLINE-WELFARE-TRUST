@@ -103,7 +103,7 @@ export default function AboutArea() {
                 <div className="col-6 mb-4">
                   <Link href="/about" className="about_img w_img" style={{ display: 'block', borderRadius: '20px', overflow: 'hidden', position: 'relative' }}>
                     <img
-                      src="/img/causes/cause10.jpg"
+                      src="/img/causes/cause11.jpg"
                       alt="Health Services"
                       style={{
                         width: '100%',

@@ -39,6 +39,16 @@ export default function SideBarMobile({ isToggledInfo, toggleTrueFalseInfo }) {
             </form>
           </div>
 
+          <div className="offset-widget mb-30">
+            <Link
+              href="/blogs"
+              className="g_btn theme1_bg to_right1 rad-30"
+              style={{ width: "100%", textAlign: "center", display: "block" }}
+            >
+              Blogs<span></span>
+            </Link>
+          </div>
+
           <div className="mobile-menu mean-menu">
             <NavMobile />
           </div>

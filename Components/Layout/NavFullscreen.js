@@ -178,7 +178,7 @@ export default function NavFullscreen() {
             </li>
           </ul>
         </li>
-        <li className="menu-item-has-children">
+        {/* <li className="menu-item-has-children">
           <Link href="/" style={{ whiteSpace: "nowrap" }}>
             Registration
           </Link>
@@ -196,7 +196,7 @@ export default function NavFullscreen() {
               <Link href="/studentSkillWorker">Student/ Skill Worker</Link>
             </li>
           </ul>
-        </li>
+        </li> */}
         <li className="menu-item-has-children">
           <Link href="/contact" style={{ whiteSpace: "nowrap" }}>
             Contact Us

@@ -22,9 +22,27 @@ const nextConfig = {
   // Add headers for security and caching
   async rewrites() {
     return [
+      // Note: /sitemap.xml is automatically handled by app/sitemap.ts in Next.js 13+
+      // Keeping other sitemap routes for backward compatibility if needed
       {
-        source: '/sitemap.xml',
+        source: '/sitemap-main.xml',
         destination: '/api/sitemap',
+      },
+      {
+        source: '/sitemap-blogs.xml',
+        destination: '/api/sitemap-blogs',
+      },
+      {
+        source: '/sitemap-campaigns.xml',
+        destination: '/api/sitemap-campaigns',
+      },
+      {
+        source: '/sitemap-qurbani.xml',
+        destination: '/api/sitemap-qurbani',
+      },
+      {
+        source: '/sitemap-supporters.xml',
+        destination: '/api/sitemap-supporters',
       },
     ];
   },
