@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function BlogDetailsBreadCrumb() {
+export default function BlogDetailsBreadCrumb({ title }) {
   return (
     //breadcrumb area start
     <section
@@ -18,12 +18,23 @@ export default function BlogDetailsBreadCrumb() {
                     Home
                   </Link>
                 </li>
+                <li className="bhas_border">
+                  <Link href="/blogs" className="text-white">
+                    Blogs
+                  </Link>
+                </li>
                 <li>
                   <span className="active">Blog Details</span>
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h2>Personal Info</h2>
+                <h3 
+                style={{
+                  fontSize: "40px",
+                  color: "white",
+                  fontWeight: "bold",
+                }}
+                >{title || "Blog Details"}</h3>
               </div>
             </div>
           </div>

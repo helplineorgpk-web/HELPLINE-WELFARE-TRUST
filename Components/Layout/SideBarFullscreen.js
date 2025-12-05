@@ -63,8 +63,8 @@ export default function SideBarFullscreen({
               <Link href="/event" className="theme-2">
                 Events
               </Link>
-              <Link href="/blog" className="theme-2">
-                News
+              <Link href="/blogs" className="theme-2">
+                Blogs
               </Link>
               <Link href="/contact" className="theme-2">
                 Contact

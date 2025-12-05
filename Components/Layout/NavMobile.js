@@ -115,6 +115,7 @@ export default function NavMobile() {
         <li className="menu-item-has-children">
           <Link href="#" className="has-arrow">Media</Link>
           <ul className="sub-menu">
+            <li><Link href="/blogs">Blogs</Link></li>
             <li><Link href="/videos">Videos</Link></li>
             <li><Link href="/images">Images</Link></li>
           </ul>

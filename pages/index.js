@@ -8,6 +8,7 @@ import HeadArea from "../Components/Elements/Home/HeadArea";
 import AllOverPakistan from "../Components/Elements/Home/AllOverPakistan";
 import HelplineProject from "../Components/Elements/Home/HelplineProject";
 import WayToDonate from "../Components/Elements/Home/WayToDonate";
+import BlogsSection from "../Components/Elements/Home/BlogsSection";
 import { HelplineData } from "../pages/api/data";
 import Meta from "../Components/SEO/Meta";
 import Educations from "../Components/Elements/Home/Educations";
@@ -40,6 +41,7 @@ export default function Home() {
           <HelplineProject />
           <WayToDonate />
           <NewsFeed />
+          <BlogsSection />
         </main>
       </Layout1>
     </>

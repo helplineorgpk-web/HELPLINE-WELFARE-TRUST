@@ -83,6 +83,20 @@ export default function Header1({ toggleTrueFalseInfo }) {
             will-change: auto !important;
           }
         }
+        /* Blogs button - reversed colors */
+        .header-sing a[href=/blogs] {
+          background-color: var(--clr-theme-1) !important;
+        }
+        .header-sing a[href=/blogs] span {
+          background-color: var(--clr-theme-2) !important;
+        }
+        .header-sing a[href=/blogs]:hover {
+          color: var(--clr-common-white);
+        }
+        .header-sing a[href=/blogs]:hover span {
+          width: 100%;
+          height: 100%;
+        }
       `}</style>
       <header
         className="header-area header-transparent"
@@ -141,15 +155,25 @@ export default function Header1({ toggleTrueFalseInfo }) {
                 <p className="mobile-title">HELPLINE <span style={{ color: "red" }}>WELFARE</span> TRUST</p>
             <div className="col-xxl-3 col-xl-4 col-lg-2 col-md-6 col-6">
               <div className="header-right d-flex align-items-center justify-content-end">
-                <div className="header-sing d-inline-block ml-20 d-none d-xl-block">
+                <div className="header-sing d-inline-block d-none d-md-block mr-15">
+                  <Link
+                    href="/blogs"
+                    className="g_btn hbtn_1 to_right1 rad-30"
+                    style={{ fontSize: "14px", padding: "0 25px", minWidth: "auto", height: "60px", lineHeight: "60px" }}
+                  >
+                    Blogs<span></span>
+                  </Link>
+                </div>
+                <div className="header-sing d-inline-block d-none d-xl-block">
                   <Link
                     href="/donation"
                     className="g_btn hbtn_1 to_right1 rad-30"
+                    style={{ height: "60px", lineHeight: "60px" }}
                   >
                     Donate Now<span></span>
                   </Link>
                 </div>
-                <div className="hamburger-menu menu-bar info-bar d-d-block ml-20">
+                <div className="hamburger-menu menu-bar info-bar d-inline-none d-block d-xl-none ml-20">
                   <button
                     onClick={toggleTrueFalseInfo}
                     className="hamburger-btn open-mobile-menu"

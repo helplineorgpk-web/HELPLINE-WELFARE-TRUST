@@ -1,26 +1,3 @@
-const sitemapTypes = [
-  {
-    name: 'main',
-    changefreq: 'daily',
-  },
-  {
-    name: 'blog',
-    changefreq: 'daily',
-  },
-  {
-    name: 'events',
-    changefreq: 'daily',
-  },
-  {
-    name: 'campaigns',
-    changefreq: 'weekly',
-  },
-  {
-    name: 'static',
-    changefreq: 'monthly',
-  },
-];
-
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ message: 'Method not allowed' });
@@ -28,19 +5,42 @@ export default async function handler(req, res) {
 
   const EXTERNAL_DATA_URL = 'https://helplinewelfare.org';
 
+  // Define all sitemaps (using cleaner URLs via rewrites)
+  const sitemaps = [
+    {
+      loc: `${EXTERNAL_DATA_URL}/sitemap-main.xml`,
+      name: 'main',
+    },
+    {
+      loc: `${EXTERNAL_DATA_URL}/sitemap-blogs.xml`,
+      name: 'blogs',
+    },
+    {
+      loc: `${EXTERNAL_DATA_URL}/sitemap-campaigns.xml`,
+      name: 'campaigns',
+    },
+    {
+      loc: `${EXTERNAL_DATA_URL}/sitemap-qurbani.xml`,
+      name: 'qurbani',
+    },
+    {
+      loc: `${EXTERNAL_DATA_URL}/sitemap-supporters.xml`,
+      name: 'supporters',
+    },
+  ];
+
   // Generate sitemap index XML
   const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
-    <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${sitemapTypes
-        .map(
-          (type) => `
-        <sitemap>
-          <loc>${EXTERNAL_DATA_URL}/sitemap-${type.name}.xml</loc>
-          <lastmod>${new Date().toISOString()}</lastmod>
-        </sitemap>`
-        )
-        .join('')}
-    </sitemapindex>`;
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemaps
+  .map(
+    (sitemap) => `  <sitemap>
+    <loc>${sitemap.loc}</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
+  </sitemap>`
+  )
+  .join('\n')}
+</sitemapindex>`;
 
   // Cache control headers
   res.setHeader(

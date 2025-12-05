@@ -1,74 +1,9 @@
-# Helpline Welfare Organization Robots.txt
-# https://helplinewelfare.org
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://helplinewelfare.org
 
 # Sitemaps
 Sitemap: https://helplinewelfare.org/sitemap.xml
-
-# Global rules
-User-agent: *
-Allow: /
-Allow: /en/
-Allow: /ur/
-
-# Prevent crawling of sensitive areas and non-public content
-Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
-Disallow: /draft/
-Disallow: /preview/
-Disallow: /temp/
-Disallow: /backend/
-Disallow: /*.json$
-Disallow: /*?*
-Disallow: /*?fbclid=
-Disallow: /*?utm_*
-Disallow: /search?
-
-# Prevent crawling of development/test environments
-Disallow: /dev/
-Disallow: /staging/
-Disallow: /test/
-
-# Media and asset optimization
-Allow: /img/
-Allow: /css/
-Allow: /js/
-Allow: /fonts/
-Allow: /assets/
-Allow: /static/
-
-# Specific bot configurations
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 2
-
-User-agent: Googlebot-Image
-Allow: /img/
-Allow: /assets/images/
-Allow: /static/images/
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 3
-
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 3
-
-# Social media bots
-User-agent: Twitterbot
-Allow: /
-Disallow: /private/
-
-User-agent: facebookexternalhit
-Allow: /
-Disallow: /private/
-
-# Archive bots
-User-agent: ia_archiver
-Allow: /
-Disallow: /private/
-Crawl-delay: 5
-
-# Clean-param directive to handle tracking parameters
-Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&fbclid
