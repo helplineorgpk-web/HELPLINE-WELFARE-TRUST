@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 export default function BlogBreadCrumb() {
   return (
-    //breadcrumb area start
     <section
       className="breadcrumb_area breadcrumb_overlay"
       style={{ background: "url(/img/bg/breadcrum_bg_2.jpg)" }}

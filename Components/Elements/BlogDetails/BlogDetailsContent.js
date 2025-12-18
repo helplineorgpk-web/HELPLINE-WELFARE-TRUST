@@ -23,35 +23,25 @@ export default function BlogDetailsContent({ blog }) {
       const parentRect = parent.getBoundingClientRect();
       
       const sidebarHeight = sidebar.offsetHeight;
-      
-      // Get blog content top position (where blog content starts)
       const blogContentTop = blogContentRect.top + scrollY;
-      
-      // Get blog content bottom position (where blog content ends)
+
       const blogContentBottom = blogContentRect.bottom + scrollY;
       
-      // Get parent top position
       const parentTop = parentRect.top + scrollY;
       
-      // Get initial sidebar position relative to parent
       const sidebarInitialTop = sidebarRect.top + scrollY - parentTop;
       
-      // When sidebar should start being sticky (when blog content starts reaching top of viewport)
-      const stickyStart = blogContentTop - 20; // 20px offset for top spacing
+      const stickyStart = blogContentTop - 20;
       
-      // When sidebar should stop (when blog content ends minus sidebar height)
       const stickyEnd = blogContentBottom - sidebarHeight - 20;
 
       if (scrollY >= stickyStart && scrollY <= stickyEnd) {
-        // Sidebar should be sticky - starts when blog content starts
         setSidebarStyle({
           position: 'fixed',
           top: '20px',
           width: sidebarRect.width + 'px'
         });
       } else if (scrollY > stickyEnd) {
-        // Stop at bottom - position absolutely relative to parent
-        // Calculate top position so sidebar bottom aligns with blog content bottom
         const absoluteTop = blogContentBottom - sidebarHeight - parentTop;
         
         setSidebarStyle({
@@ -60,14 +50,13 @@ export default function BlogDetailsContent({ blog }) {
           width: sidebarRect.width + 'px'
         });
       } else {
-        // Reset to normal position
         setSidebarStyle({});
       }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleScroll);
-    handleScroll(); // Initial call
+    handleScroll();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -113,7 +102,6 @@ export default function BlogDetailsContent({ blog }) {
                   {paragraphs.map((paragraph, index) => {
                     if (paragraph.trim() === '') return null;
                     
-                    // Check if paragraph starts with a number (like "1. ", "2. ", etc.)
                     if (/^\d+\.\s/.test(paragraph.trim())) {
                       return (
                         <div key={index} className="mb-20">
@@ -130,7 +118,6 @@ export default function BlogDetailsContent({ blog }) {
                   })}
                 </div>
 
-                {/* How Can You Support Us Box */}
                 <div className="support_box mt-50 mb-40" style={{
                   background: '#f6f6f6',
                   padding: '40px',
@@ -167,10 +154,10 @@ export default function BlogDetailsContent({ blog }) {
                           border: '1px solid #e8e8e8'
                         }}>
                           <h6 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px', color: '#1a1a1a' }}>
-                            Support a Family
+                            Support a Family (Ration)
                           </h6>
                           <p style={{ margin: 0, color: '#666', fontSize: '16px' }}>
-                            Monthly support for a family in need
+                            <strong>7,000 PKR</strong> per month
                           </p>
                         </div>
                       </div>
@@ -234,7 +221,7 @@ export default function BlogDetailsContent({ blog }) {
                             Kitchen Garden
                           </h6>
                           <p style={{ margin: 0, color: '#666', fontSize: '16px' }}>
-                            Fertilizer & Seeds - <strong>30,000 PKR</strong>
+                            Fertilizer & Seeds - <strong>15,000 PKR</strong>
                           </p>
                         </div>
                       </div>
@@ -256,7 +243,6 @@ export default function BlogDetailsContent({ blog }) {
                       </div>
                     </div>
                     
-                    {/* Skill Development Programs */}
                     <div className="skill_development_section mt-30">
                       <h5 style={{ fontSize: '22px', fontWeight: '600', marginBottom: '20px', color: '#1a1a1a' }}>
                         Vocational Training Center (VTC) - Skill Development Programs
@@ -275,54 +261,6 @@ export default function BlogDetailsContent({ blog }) {
                             </h6>
                             <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
                               <strong>807,000 PKR</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="col-md-6 mb-15">
-                          <div className="support_item" style={{
-                            background: '#fff',
-                            padding: '15px',
-                            borderRadius: '8px',
-                            marginBottom: '10px',
-                            border: '1px solid #e8e8e8'
-                          }}>
-                            <h6 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px', color: '#1a1a1a' }}>
-                              Domestic Tailoring
-                            </h6>
-                            <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
-                              <strong>942,000 PKR</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="col-md-6 mb-15">
-                          <div className="support_item" style={{
-                            background: '#fff',
-                            padding: '15px',
-                            borderRadius: '8px',
-                            marginBottom: '10px',
-                            border: '1px solid #e8e8e8'
-                          }}>
-                            <h6 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px', color: '#1a1a1a' }}>
-                              Electrical Wiring Technician
-                            </h6>
-                            <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
-                              <strong>257,000 PKR</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="col-md-6 mb-15">
-                          <div className="support_item" style={{
-                            background: '#fff',
-                            padding: '15px',
-                            borderRadius: '8px',
-                            marginBottom: '10px',
-                            border: '1px solid #e8e8e8'
-                          }}>
-                            <h6 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px', color: '#1a1a1a' }}>
-                              Electrician
-                            </h6>
-                            <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
-                              <strong>2.08 Million PKR</strong>
                             </p>
                           </div>
                         </div>
@@ -358,22 +296,7 @@ export default function BlogDetailsContent({ blog }) {
                             </p>
                           </div>
                         </div>
-                        <div className="col-md-6 mb-15">
-                          <div className="support_item" style={{
-                            background: '#fff',
-                            padding: '15px',
-                            borderRadius: '8px',
-                            marginBottom: '10px',
-                            border: '1px solid #e8e8e8'
-                          }}>
-                            <h6 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px', color: '#1a1a1a' }}>
-                              Plumber
-                            </h6>
-                            <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
-                              <strong>641,000 PKR</strong>
-                            </p>
-                          </div>
-                        </div>
+              
                         <div className="col-md-6 mb-15">
                           <div className="support_item" style={{
                             background: '#fff',
@@ -387,38 +310,6 @@ export default function BlogDetailsContent({ blog }) {
                             </h6>
                             <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
                               <strong>1.5 Million PKR</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="col-md-6 mb-15">
-                          <div className="support_item" style={{
-                            background: '#fff',
-                            padding: '15px',
-                            borderRadius: '8px',
-                            marginBottom: '10px',
-                            border: '1px solid #e8e8e8'
-                          }}>
-                            <h6 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px', color: '#1a1a1a' }}>
-                              Home Appliances Repair
-                            </h6>
-                            <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
-                              <strong>1.3 Million PKR</strong>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="col-md-6 mb-15">
-                          <div className="support_item" style={{
-                            background: '#fff',
-                            padding: '15px',
-                            borderRadius: '8px',
-                            marginBottom: '10px',
-                            border: '1px solid #e8e8e8'
-                          }}>
-                            <h6 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px', color: '#1a1a1a' }}>
-                              Computer Lab
-                            </h6>
-                            <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>
-                              <strong>970,000 PKR</strong>
                             </p>
                           </div>
                         </div>
