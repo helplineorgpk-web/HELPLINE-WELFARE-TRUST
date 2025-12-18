@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function BlogDetailsCause() {
   return (
     <>
-      {/* cause_details_area start */}
       <div className="blog_details_area pt-120 pb-80">
         <div className="container">
           <div className="row">
