@@ -97,6 +97,20 @@ export default function Header1({ toggleTrueFalseInfo }) {
           width: 100%;
           height: 100%;
         }
+          @keyframes glowing {
+      0% {
+        background-color: #B20000;
+        box-shadow: 0 0 3px #B20000;
+      }
+      50% {
+        background-color: #FF0000;
+        box-shadow: 0 0 40px #FF0000;
+      }
+      100% {
+        background-color: #B20000;
+        box-shadow: 0 0 3px #B20000;
+      }
+    }
       `}</style>
       <header
         className="header-area header-transparent"
@@ -168,7 +182,21 @@ export default function Header1({ toggleTrueFalseInfo }) {
                   <Link
                     href="/donation"
                     className="g_btn hbtn_1 to_right1 rad-30"
-                    style={{ height: "60px", lineHeight: "60px" }}
+                    style={ {
+                        backgroundColor:"#004A7F",
+                        borderRadius:"100px",
+                        border:"none",
+                        color:"#FFFFFF",
+                        cursor:"pointer",
+                        display:"inline-block",
+                        fontFamily:"Arial",
+                        fontSize:"15px",
+                        textAlign:"center",
+                        textDecoration:"none",
+                        height:"60px",
+                        lineHeight:"60px",
+                        animation:"glowing 1500ms infinite",
+                       } }
                   >
                     Donate Now<span></span>
                   </Link>
