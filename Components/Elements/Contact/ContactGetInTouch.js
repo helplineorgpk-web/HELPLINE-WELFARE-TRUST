@@ -11,7 +11,7 @@ export default function ContactGetInTouch() {
   const [message, setMessage] = useState("");
   const [purpose, setPurpose] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const finalMessage = `
     From Contact Us Form 
@@ -27,33 +27,77 @@ export default function ContactGetInTouch() {
       purpose: purpose || "General Inquiry",
     };
 
-    emailjs
-      .send(
-        "service_l4b8zlx",
-        "template_z92hfde",
+    try {
+      const response = await emailjs.send(
+        "service_cb00nwp",
+        "template_2m4dd8r",
         templateParams,
-        "TYoPyIR43vGbLqWLE"
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          toast.success("Your request has been submitted successfully!", {
+        "E2G6lzak44zoyL3Hy"
+      );
+      
+      console.log("SUCCESS!", response.status, response.text);
+      toast.success("Your request has been submitted successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+      setPurpose("");
+    } catch (err) {
+      console.error("EmailJS Error:", err);
+      
+      // Check for Gmail API OAuth errors
+      const errorMessage = err?.text || err?.message || "";
+      if (errorMessage.includes("Invalid grant") || errorMessage.includes("Gmail_API")) {
+        toast.error(
+          "Email service configuration error. Please contact support or try again later.",
+          {
             position: "top-right",
-            autoClose: 3000,
+            autoClose: 5000,
+          }
+        );
+      } else {
+        // Try fallback API route
+        try {
+          const apiResponse = await fetch("/api/send-email", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              to: "info@helpline.org.pk",
+              subject: `Contact Form: ${purpose || "General Inquiry"}`,
+              name: name,
+              email: email,
+              phone: phone,
+              message: finalMessage,
+            }),
           });
-          setName("");
-          setEmail("");
-          setPhone("");
-          setMessage("");
-          setPurpose("");
-        },
-        (err) => {
-          toast.error("Submission failed. Please try again later.", {
+
+          if (apiResponse.ok) {
+            toast.success("Your request has been submitted successfully!", {
+              position: "top-right",
+              autoClose: 3000,
+            });
+            setName("");
+            setEmail("");
+            setPhone("");
+            setMessage("");
+            setPurpose("");
+          } else {
+            throw new Error("API route failed");
+          }
+        } catch (apiErr) {
+          console.error("API Route Error:", apiErr);
+          toast.error("Submission failed. Please try again later or contact us directly.", {
             position: "top-right",
-            autoClose: 3000,
+            autoClose: 5000,
           });
         }
-      );
+      }
+    }
   };
 
   return (

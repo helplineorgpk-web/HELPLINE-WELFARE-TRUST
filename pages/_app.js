@@ -14,6 +14,8 @@ import Head from "next/head";
 import { DefaultSeo } from 'next-seo';
 import { defaultSEO } from '../config/seo.config';
 import Script from 'next/script';
+import WhatsAppButton from '../Components/Common/WhatsAppButton';
+import ChatBot from '../Components/Common/ChatBot';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -79,6 +81,9 @@ export default function App({ Component, pageProps }) {
       />
 
       <Component {...pageProps} />
+
+      <WhatsAppButton />
+      <ChatBot />
 
       {/* Structured Data for Website */}
       <Script
