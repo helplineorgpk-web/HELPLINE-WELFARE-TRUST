@@ -328,13 +328,7 @@ export default function BlogDetailsContent({ blog }) {
                   </div>
                   
                   <div className="text-center mt-30">
-                    <Link href="/donation" className="g_btn" style={{
-                      display: 'inline-block',
-                      background: 'var(--clr-theme-1)',
-                      color: '#fff',
-                      borderRadius: '30px',
-                      transition: 'all 0.3s'
-                    }}>
+                    <Link href="/donation" className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn">
                       Donate Now<span></span>
                     </Link>
                   </div>

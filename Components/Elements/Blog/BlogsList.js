@@ -383,9 +383,8 @@ export default function BlogsList() {
                               {blog.date}
                             </span>
                           </div>
-                          <Link href={`/blog/${blog.id}`} className="read_more_btn">
-                            Read More
-                            <i className="fal fa-arrow-right"></i>
+                          <Link href={`/blog/${blog.id}`} className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn read_more_btn">
+                            Read More<span></span>
                           </Link>
                         </div>
                       </div>

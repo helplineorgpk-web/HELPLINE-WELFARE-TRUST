@@ -31,8 +31,8 @@ export default function Home() {
       />
       <Layout1>
         <main>
-          {/* <HeadArea /> */}
-          <Header />
+          <HeadArea />
+          {/* <Header /> */}
           <Educations />
           <AboutArea />
           <AllOverPakistan />

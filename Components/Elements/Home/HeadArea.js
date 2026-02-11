@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useCallback } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
-
 import styles from "../../../public/css/headArea.module.css";
 
-const bgImages = [
+const BG_IMAGES = [
   "/img/causes/Masjid.jpg",
   "/img/causes/RashanPackage.jpg",
   "/img/causes/StudentSupportProgram.jpg",
@@ -15,36 +14,118 @@ const bgImages = [
   "/img/causes/floodappeal.jpg",
 ];
 
+const MIN_DONATION = 100;
+
+const CAUSE_OPTIONS = [
+  {
+    id: "Support A Student",
+    label: "Support A Student",
+    amounts: [
+      { value: "2200", label: "Monthly Per Student 2,200 PKR" },
+      { value: "24400", label: "Yearly Per Student 24,400 PKR" },
+    ],
+  },
+  {
+    id: "Masjid Maktub",
+    label: "Masjid Maktub",
+    amounts: [
+      { value: "10000", label: "Donate For 1 Prayer Musalla 10,000 PKR" },
+      { value: "20000", label: "Donate For 2 Prayer Musalla 20,000 PKR" },
+    ],
+  },
+  {
+    id: "Rashan Package",
+    label: "Rashan Package",
+    amounts: [{ value: "6000", label: "Monthly Rashan Package 6,000 PKR" }],
+  },
+  {
+    id: "Vocational Training Center",
+    label: "Vocational Training Center",
+    amounts: [
+      { value: "1300000", label: "VTC Monthly PKR 1,300,000" },
+    ],
+  },
+];
+
+function formatAmount(value) {
+  if (!value) return "";
+  return new Intl.NumberFormat("en-PK").format(value);
+}
+
+function parseAmount(value) {
+  return value.replace(/[^0-9]/g, "");
+}
+
 export default function HeadArea() {
-  const [selectedCause, setSelectedCause] = useState("Support A Student");
+  const [selectedCause, setSelectedCause] = useState(CAUSE_OPTIONS[0].id);
   const [amount, setAmount] = useState("");
   const [showPaymentForm, setShowPaymentForm] = useState(false);
+  const [validationError, setValidationError] = useState("");
+  const amountInputRef = useRef(null);
 
-  const handleCauseChange = (event) => {
-    setSelectedCause(event.target.value);
+  const currentCause = CAUSE_OPTIONS.find((c) => c.id === selectedCause);
+  const presetValues = currentCause?.amounts.map((a) => a.value) ?? [];
+  const isPresetAmount = presetValues.includes(amount);
+  const isOtherAmount = amount !== "" && !isPresetAmount;
+
+  const handleCauseChange = useCallback((e) => {
+    setSelectedCause(e.target.value);
     setAmount("");
-  };
+    setValidationError("");
+  }, []);
 
-  const handleAmountSelect = (amount) => {
-    if (amount === "") {
-      setAmount("");
+  const handlePresetSelect = useCallback((value) => {
+    setAmount(value);
+    setValidationError("");
+  }, []);
+
+  const handleOtherAmountClick = useCallback(() => {
+    setAmount("");
+    setValidationError("");
+    setTimeout(() => amountInputRef.current?.focus(), 0);
+  }, []);
+
+  const handleAmountInputChange = useCallback((e) => {
+    const raw = parseAmount(e.target.value);
+    setAmount(raw);
+    setValidationError("");
+  }, []);
+
+  const validateAndOpenPayment = useCallback(() => {
+    setValidationError("");
+    const num = parseInt(amount, 10);
+    if (!amount || isNaN(num)) {
+      setValidationError("Please select or enter a donation amount.");
       return;
     }
-    const numericAmount = amount.replace(/[^0-9]/g, "");
-    setAmount(numericAmount);
-  };
+    if (num < MIN_DONATION) {
+      setValidationError(`Minimum donation is ${formatAmount(String(MIN_DONATION))} PKR.`);
+      return;
+    }
+    setShowPaymentForm(true);
+  }, [amount]);
 
-  const handlePaymentInitiated = (paymentData) => {
-    console.log('Payment initiated:', paymentData);
-  };
+  const handlePaymentInitiated = useCallback((paymentData) => {
+    // Payment flow started; optional: analytics or logging
+  }, []);
 
-  const handlePaymentCompleted = (paymentData) => {
-    console.log('Payment completed:', paymentData);
+  const handlePaymentCompleted = useCallback((paymentData) => {
     setShowPaymentForm(false);
+    setAmount("");
+  }, []);
+
+  const handlePaymentFailed = useCallback((error) => {
+    // Error already shown by UBLPaymentForm; optional: toast or logging
+  }, []);
+
+  const closeModal = useCallback(() => setShowPaymentForm(false), []);
+
+  const handleModalBackdropClick = (e) => {
+    if (e.target === e.currentTarget) closeModal();
   };
 
-  const handlePaymentFailed = (error) => {
-    console.error('Payment failed:', error);
+  const handleModalKeyDown = (e) => {
+    if (e.key === "Escape") closeModal();
   };
 
   return (
@@ -56,7 +137,7 @@ export default function HeadArea() {
         effect="fade"
         loop
       >
-        {bgImages.map((src, index) => (
+        {BG_IMAGES.map((src, index) => (
           <SwiperSlide key={index}>
             <div
               className={styles.head_area}
@@ -65,167 +146,120 @@ export default function HeadArea() {
                 objectFit: "cover",
               }}
             >
-              <div className={styles.overlay}></div>
+              <div className={styles.overlay} aria-hidden="true" />
               <div className={styles.main_container}>
                 <div className={styles.text_container}>
                   <div className={styles.text}>
-                    <div>
-                      <h2 style={{ color: "#f15b43" }}>Donate</h2>
-                      <select
-                        name="donate for cause"
-                        id="donate-cause"
-                        onChange={handleCauseChange}
-                        value={selectedCause}
+                    <h2 style={{ color: "#f15b43" }}>Donate</h2>
+
+                    <label htmlFor="donate-cause" className={styles.sr_only}>
+                      Select cause
+                    </label>
+                    <select
+                      id="donate-cause"
+                      name="donate-cause"
+                      value={selectedCause}
+                      onChange={handleCauseChange}
+                      aria-label="Select cause to donate to"
+                    >
+                      {CAUSE_OPTIONS.map((opt) => (
+                        <option key={opt.id} value={opt.id}>
+                          {opt.label}
+                        </option>
+                      ))}
+                    </select>
+
+                    <div className={styles.donation_details} role="group" aria-label="Donation amount options">
+                      {currentCause?.amounts.map((item) => (
+                        <div
+                          key={item.value}
+                          className={`${styles.detail_card} ${
+                            amount === item.value ? styles.selectedCard : ""
+                          }`}
+                          onClick={() => handlePresetSelect(item.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter" || e.key === " ") {
+                              e.preventDefault();
+                              handlePresetSelect(item.value);
+                            }
+                          }}
+                          role="button"
+                          tabIndex={0}
+                          aria-pressed={amount === item.value}
+                          aria-label={item.label}
+                        >
+                          {item.label}
+                        </div>
+                      ))}
+                      <div
+                        className={`${styles.detail_card} ${
+                          isOtherAmount ? styles.selectedCard : ""
+                        }`}
+                        onClick={handleOtherAmountClick}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            handleOtherAmountClick();
+                          }
+                        }}
+                        role="button"
+                        tabIndex={0}
+                        aria-pressed={isOtherAmount}
+                        aria-label="Enter other amount"
                       >
-                        <option value="Support A Student">
-                          Support A Student
-                        </option>
-                        <option value="Masjid Maktub">Masjid Maktub</option>
-                        <option value="Rashan Package">Rashan Package</option>
-                        <option value="Vocational Training Center">
-                          Vocational Training Center
-                        </option>
-                      </select>
-                    </div>
-
-                    <div className={styles.donation_details}>
-                      {selectedCause === "Support A Student" && (
-                        <div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount === "2200" ? styles.selectedCard : ""
-                            }`}
-                            onClick={() => handleAmountSelect("2200")}
-                          >
-                            Monthly Per Student 2,200 PKR
-                          </div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount === "24400" ? styles.selectedCard : ""
-                            }`}
-                            onClick={() => handleAmountSelect("24400")}
-                          >
-                            Yearly Per Student 24,400 PKR
-                          </div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount && !["2200", "24400"].includes(amount)
-                                ? styles.selectedCard
-                                : ""
-                            }`}
-                            onClick={() => handleAmountSelect("")}
-                          >
-                            Other Amount
-                          </div>
-                        </div>
-                      )}
-                      {selectedCause === "Masjid Maktub" && (
-                        <div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount === "10000" ? styles.selectedCard : ""
-                            }`}
-                            onClick={() => handleAmountSelect("10000")}
-                          >
-                            Donate For 1 Prayer Musalla 10,000 PKR
-                          </div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount === "20000" ? styles.selectedCard : ""
-                            }`}
-                            onClick={() => handleAmountSelect("20000")}
-                          >
-                            Donate For 2 Prayer Musalla 20,000 PKR
-                          </div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount && !["10000", "20000"].includes(amount)
-                                ? styles.selectedCard
-                                : ""
-                            }`}
-                            onClick={() => handleAmountSelect("")}
-                          >
-                            Other Amount
-                          </div>
-                        </div>
-                      )}
-                      {selectedCause === "Rashan Package" && (
-                        <div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount === "6000" ? styles.selectedCard : ""
-                            }`}
-                            onClick={() => handleAmountSelect("6000")}
-                          >
-                            Monthly Rashan Package 6,000 PKR
-                          </div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount && amount !== "6000"
-                                ? styles.selectedCard
-                                : ""
-                            }`}
-                            onClick={() => handleAmountSelect("")}
-                          >
-                            Other Amount
-                          </div>
-                        </div>
-                      )}
-                      {selectedCause === "Vocational Training Center" && (
-                        <div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount === "1300000" ? styles.selectedCard : ""
-                            }`}
-                            onClick={() => handleAmountSelect("1300000")}
-                          >
-                            VTC Monthly PKR 1,300,000
-                          </div>
-                          <div
-                            className={`${styles.detail_card} ${
-                              amount && amount !== "1300000"
-                                ? styles.selectedCard
-                                : ""
-                            }`}
-                            onClick={() => handleAmountSelect("")}
-                          >
-                            Other Amount
-                          </div>
-                        </div>
-                      )}
+                        Other Amount
+                      </div>
                     </div>
 
                     <div>
+                      <label htmlFor="donate-amount" className={styles.sr_only}>
+                        Donation amount (PKR)
+                      </label>
                       <input
+                        ref={amountInputRef}
+                        id="donate-amount"
                         type="text"
-                        placeholder="Enter amount"
-                        value={
-                          amount ? new Intl.NumberFormat().format(amount) : ""
-                        }
-                        onChange={(e) =>
-                          setAmount(e.target.value.replace(/[^0-9]/g, ""))
-                        }
+                        inputMode="numeric"
+                        placeholder="Enter amount (PKR)"
+                        value={formatAmount(amount)}
+                        onChange={handleAmountInputChange}
+                        aria-invalid={!!validationError}
+                        aria-describedby={validationError ? "donate-amount-error" : undefined}
                       />
-                      <button onClick={() => setShowPaymentForm(true)}>Donate</button>
+                      {validationError && (
+                        <p
+                          id="donate-amount-error"
+                          className={styles.validationError}
+                          role="alert"
+                        >
+                          {validationError}
+                        </p>
+                      )}
+                      <button
+                        type="button"
+                        onClick={validateAndOpenPayment}
+                      >
+                        Donate
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className={styles.wave}>
+              <div className={styles.wave} aria-hidden="true">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1440 320"
                   preserveAspectRatio="none"
                   fill="#fff"
                 >
-                  <path d="M0,256L48,245.3C96,235,192,213,288,181.3C384,149,480,107,576,106.7C672,107,768,149,864,165.3C960,181,1056,171,1152,149.3C1248,128,1344,96,1392,80L1440,64V320H0Z"></path>
+                  <path d="M0,256L48,245.3C96,235,192,213,288,181.3C384,149,480,107,576,106.7C672,107,768,149,864,165.3C960,181,1056,171,1152,149.3C1248,128,1344,96,1392,80L1440,64V320H0Z" />
                 </svg>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className={styles.wave}>
+      <div className={styles.wave} aria-hidden="true">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -235,25 +269,33 @@ export default function HeadArea() {
           <path
             className="elementor-shape-fill"
             d="M0,256L48,245.3C96,235,192,213,288,181.3C384,149,480,107,576,106.7C672,107,768,149,864,165.3C960,181,1056,171,1152,149.3C1248,128,1344,96,1392,80L1440,64V320H0Z"
-          ></path>
+          />
         </svg>
       </div>
 
-      {/* Payment Form Modal */}
       {showPaymentForm && (
-        <div className={styles.paymentModal}>
+        <div
+          className={styles.paymentModal}
+          onClick={handleModalBackdropClick}
+          onKeyDown={handleModalKeyDown}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="payment-modal-title"
+        >
           <div className={styles.paymentModalContent}>
             <div className={styles.paymentModalHeader}>
-              <h3>Make a Donation</h3>
-              <button 
-                onClick={() => setShowPaymentForm(false)}
+              <h3 id="payment-modal-title">Make a Donation</h3>
+              <button
+                type="button"
+                onClick={closeModal}
                 className={styles.closeButton}
+                aria-label="Close"
               >
                 ×
               </button>
             </div>
             <UBLPaymentForm
-              donationAmount={amount ? parseFloat(amount) : 0}
+              donationAmount={amount ? parseFloat(amount, 10) : 0}
               donationType={selectedCause}
               onPaymentInitiated={handlePaymentInitiated}
               onPaymentCompleted={handlePaymentCompleted}
@@ -264,4 +306,5 @@ export default function HeadArea() {
       )}
     </div>
   );
-}
+} 
+  

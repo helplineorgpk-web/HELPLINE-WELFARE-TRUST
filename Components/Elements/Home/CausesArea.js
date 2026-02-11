@@ -83,10 +83,9 @@ export default function CausesArea({ causes, data }) {
           <div style={{ textAlign: "center", paddingTop: "50px" }}>
             <Link
               href="/cause"
-              className="g_btn theme1_bg to_right2 i_right rad-30 p-45"
+              className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn"
             >
-              See More<i className="fal fa-long-arrow-right"></i>
-              <span></span>
+              See More<span></span>
             </Link>
           </div>
         </div>

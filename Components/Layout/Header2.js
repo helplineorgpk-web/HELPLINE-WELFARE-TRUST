@@ -206,24 +206,9 @@ export default function Header2({ toggleTrueFalseInfo }) {
                   </Link>
                 </div>
                 <div className="header-sing d-inline-block d-none d-xl-block">
-                <Link
+                  <Link
                     href="/donation"
-                    className="g_btn hbtn_1 to_right1 rad-30"
-                    style={ {
-                        backgroundColor:"#004A7F",
-                        borderRadius:"100px",
-                        border:"none",
-                        color:"#FFFFFF",
-                        cursor:"pointer",
-                        display:"inline-block",
-                        fontFamily:"Arial",
-                        fontSize:"15px",
-                        textAlign:"center",
-                        textDecoration:"none",
-                        height:"60px",
-                        lineHeight:"60px",
-                        animation:"glowing 1500ms infinite",
-                       } }
+                    className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn"
                   >
                     Donate Now<span></span>
                   </Link>

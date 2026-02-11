@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function CTAArea() {
   return (
@@ -34,9 +35,9 @@ export default function CTAArea() {
                 <button className="currency custom_padd mr-15">Custom</button>
               </div>
               <div className="donnar_button text-center">
-                <button className="g_btn theme1_bg to_right2 donation rad-30 p-60 mb-30">
+                <Link href="/donation" className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn p-60 mb-30">
                   Make a Donation<span></span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>

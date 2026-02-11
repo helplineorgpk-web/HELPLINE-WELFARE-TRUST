@@ -80,8 +80,8 @@ export default function Footer2() {
                     </ul>
                   </div>
                   <div className="footer_btn">
-                    <Link href="/donation" className="g_btn fbtn_2 to_right1 p-40 rad-50">
-                      Get Support
+                    <Link href="/donation" className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn p-40">
+                      Get Support<span></span>
                     </Link>
                   </div>
                 </div>

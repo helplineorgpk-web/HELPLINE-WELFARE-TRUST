@@ -42,7 +42,7 @@ export default function SideBarMobile({ isToggledInfo, toggleTrueFalseInfo }) {
           <div className="offset-widget mb-30">
             <Link
               href="/blogs"
-              className="g_btn theme1_bg to_right1 rad-30"
+              className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn"
               style={{ width: "100%", textAlign: "center", display: "block" }}
             >
               Blogs<span></span>

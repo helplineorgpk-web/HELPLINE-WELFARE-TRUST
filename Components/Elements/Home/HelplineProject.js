@@ -35,8 +35,8 @@ function HelplineProject() {
                 <Link href={slide.link} style={styles.description}>
                   {slide.description}
                 </Link>
-                <Link href={slide.link} style={styles.donateButton}>
-                  Donate Now <span></span>
+                <Link href={slide.link} className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn">
+                  Donate Now<span></span>
                 </Link>
               </div>
             </div>
@@ -98,17 +98,6 @@ const styles = {
     fontWeight: "500",
     display: "block",
     marginBottom: "15px",
-  },
-  donateButton: {
-    display: "inline-block",
-    padding: "12px 25px",
-    background: "#ff6f61",
-    color: "#fff",
-    fontSize: "1rem",
-    fontWeight: "600",
-    borderRadius: "50px",
-    textDecoration: "none",
-    transition: "0.3s",
   },
 };
 

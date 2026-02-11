@@ -290,11 +290,8 @@ export default function CauseDetailsArea({
                   </span>
                 </div>
                 <div className="feature_buttons widget_buttons">
-                  <Link
-                    href="/donation"
-                    className="g_btn hbtn_1 to_right1 i_left rad-30"
-                  >
-                    <i className="fal fa-heart"></i>Donate Now<span></span>
+                  <Link href="/donation" className="g_btn hbtn_1 to_right1 i_left rad-30 nav-donate-btn">
+                    <i className="fal fa-heart" aria-hidden /> Donate Now<span></span>
                   </Link>
                   <Link href="#" className="reply_btn theme-2">
                     <i className="fal fa-reply"></i>

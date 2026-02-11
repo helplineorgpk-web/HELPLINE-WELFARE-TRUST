@@ -82,13 +82,13 @@ export default function SliderArea() {
                         >
                           <Link
                             href="/cause"
-                            className="g_btn theme1_bg to_rightout_heading rad-30 mr-20"
+                            className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn mr-20"
                           >
                             Our Causes<span></span>
                           </Link>
                           <Link
                             href="/about"
-                            className="g_btn heading_bg  to_right1 rad-30"
+                            className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn"
                           >
                             Learn More<span></span>
                           </Link>
@@ -149,13 +149,13 @@ export default function SliderArea() {
                         >
                           <Link
                             href="/cause"
-                            className="g_btn theme1_bg to_rightout_heading rad-30 mr-20"
+                            className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn mr-20"
                           >
                             Our Causes<span></span>
                           </Link>
                           <Link
                             href="/about"
-                            className="g_btn heading_bg  to_right1 rad-30"
+                            className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn"
                           >
                             Learn More<span></span>
                           </Link>
@@ -216,13 +216,13 @@ export default function SliderArea() {
                         >
                           <Link
                             href="/cause"
-                            className="g_btn theme1_bg to_rightout_heading rad-30 mr-20"
+                            className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn mr-20"
                           >
                             Our Causes<span></span>
                           </Link>
                           <Link
                             href="/about"
-                            className="g_btn heading_bg  to_right1 rad-30"
+                            className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn"
                           >
                             Learn More<span></span>
                           </Link>

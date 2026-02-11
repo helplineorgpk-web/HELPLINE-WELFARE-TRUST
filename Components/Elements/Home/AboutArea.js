@@ -222,22 +222,8 @@ export default function AboutArea() {
                   "You gain no victory or livelihood except through the poor amongst you."
                 </h5>
               </div>
-              <Link
-                href="/about"
-                className="learn_more_btn"
-                style={{
-                  display: 'inline-block',
-                  padding: '16px 40px',
-                  fontSize: '1.1rem',
-                  fontWeight: '600',
-                  color: '#fff',
-                  background: 'linear-gradient(135deg, #65cabb, #4a90e2)',
-                  borderRadius: '50px',
-                  textDecoration: 'none',
-                  boxShadow: '0 15px 30px rgba(74, 144, 226, 0.3)',
-                }}
-              >
-                Learn More →
+              <Link href="/about" className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn learn_more_btn">
+                Learn More<span></span>
               </Link>
             </div>
           </div>
