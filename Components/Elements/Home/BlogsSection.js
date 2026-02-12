@@ -459,9 +459,8 @@ export default function BlogsSection() {
 
           <div className="row">
             <div className="col-12 text-center mt-60">
-              <Link href="/blogs" className="cta_button">
-                Explore All Articles
-                <i className="fal fa-long-arrow-right"></i>
+              <Link href="/blogs" className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn cta_button">
+                Explore All Articles<span></span>
               </Link>
             </div>
           </div>

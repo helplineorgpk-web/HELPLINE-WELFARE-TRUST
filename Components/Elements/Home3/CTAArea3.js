@@ -18,8 +18,8 @@ export default function CTAArea3() {
                 postman for takeout to children.
               </p>
 
-              <Link href="/donation" className="g_btn red_bg to_right1 rad-50 p-55">
-                Donate Now <span></span>
+              <Link href="/donation" className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn">
+                Donate Now<span></span>
               </Link>
             </div>
           </div>

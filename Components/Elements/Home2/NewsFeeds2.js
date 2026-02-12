@@ -130,8 +130,8 @@ export default function NewsFeeds2() {
         <div className="row">
           <div className="col-xxl-12">
             <div className="single_button text-center mt-10">
-              <Link href="/blog" className="g_btn theme1_bg to_right2 rad-50">
-                More News <span></span>
+              <Link href="/blog" className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn">
+                More News<span></span>
               </Link>
             </div>
           </div>

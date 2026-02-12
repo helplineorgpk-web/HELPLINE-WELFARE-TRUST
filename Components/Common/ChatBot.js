@@ -175,8 +175,102 @@ const knowledgeBase = {
   managerMedia: [
     "Manager Media:\n\n1. Manager Media/Coord: Mr Hafiz Bilal Nurani\n   - Email: bilal.nurani@helpline.org\n   - Oversees media relations and coordination\n\n2. Manager Media: Hafiz Bilal Arshad\n   - Email: bilal.arshad@helpline.org\n   - Crafts and disseminates organization's message",
   ],
+  headOfficeTeam: [
+    "Head Office Team:\n\n👔 Managing Trustee:\nMuhammad Iqbal Khan\n- Oversees all operations and strategic initiatives\n- Part of team since 2003\n- FCA (Fellow Chartered Accountant)\n\n🏢 GM (Admin & HR):\nColonel Muhammad Ali (Retd)\n- Manages administration and human resources\n- Ensures efficient organizational operations\n\n📚 GM (Education):\nMr Mudasir Ahmad\n- Leads all education initiatives and programs\n- Manages educational institutions and curriculum\n\n🏛️ Administrator KMC:\nCOL Zahoor Hussain (Retd)\n- Administers KMC (Khushnood Model Campus) operations\n- Ensures smooth functioning of campus activities\n\n💰 Senior Manager Accounts:\nMr Hamid Hassan Khan\n- Oversees all financial operations and accounting\n- Ensures fiscal transparency and compliance\n\n👥 Manager Admin & Support:\nMr Sarfraz Ahmad Bhullar\n- Manages administrative support services\n- Coordinates office operations and logistics\n\n🏥 Manager Welfare & Health:\nMr Atif Hussain\n- Develops and implements welfare and health programs\n- Organizes health camps and medical aid programs\n\n💼 Junior Manager Accounts:\nMr Faisal Mushtaq\n- Assists in financial operations and accounting\n- Supports senior accounts management\n\n🛒 Senior Manager Purchases:\nMr Mehmood Ali Joiya\n- Manages procurement and purchasing operations\n- Ensures quality and cost-effective acquisitions\n\n🚚 Manager Transport:\nRashid Nisar\n- Manages transportation and logistics\n- Coordinates vehicle operations and maintenance\n\n💻 Software Developer:\nSyed Mudasir Bukhari\n- Develops and maintains software systems\n- Manages IT infrastructure and digital solutions\n\n📺 Manager Media:\nHafiz Bilal Arshad\n- Manages media relations and communications\n- Crafts and disseminates organization's message",
+  ],
+  educationWing: [
+    "Education Wing Team:\n\n🎓 Education Advisor:\nAijaz Hussain Kazi (Former Secretary)\n- Provides strategic guidance on education policies\n- Former Secretary with extensive experience\n- Advises on curriculum and educational initiatives\n\n📊 Marketing Consultant:\nBrigadier Zaheer Ahmad (Retd)\n- Provides marketing and outreach expertise\n- Retired Brigadier with strategic marketing experience\n- Supports education wing's visibility and growth\n\n💻 Tech Consultant:\nColonel Waqar Ahmad (Retd)\n- Provides technology and IT consulting\n- Retired Colonel with technical expertise\n- Supports digital transformation in education",
+  ],
+  regionalHeads: [
+    "Regional Heads:\n\n🌍 Regional Head (Sindh):\nKhushnood Ahmad Khan\n- Manages operations in Sindh province\n- Coordinates programs and initiatives in the region\n- Ensures effective service delivery across Sindh\n\n🌍 Regional Head (South):\nBrigadier Moeen ud Din Ghazalli (Retd)\n- Manages operations in Southern regions\n- Retired Brigadier with leadership experience\n- Coordinates regional programs and activities\n\n🌍 Regional Head (North):\nMs Nuzhat Fatima (Former Secretary)\n- Manages operations in Northern regions\n- Former Secretary with administrative expertise\n- Coordinates regional initiatives and programs",
+  ],
+  friendsReformers: [
+    "Friends/Reformers:\n\n🤝 Muhammad Arif Mehr\n- Friend/Reformer of Helpline Welfare Trust\n- Active supporter and community advocate\n- Contributes to organizational mission and vision\n\n🤝 Brig Zahid Hussain Goryaya (Retd)\n- Friend/Reformer of Helpline Welfare Trust\n- Retired Brigadier with military background\n- Supports organizational initiatives and programs\n\n🤝 Colonel Zubair Ahmad Chughtai (Retd)\n- Friend/Reformer of Helpline Welfare Trust\n- Retired Colonel with leadership experience\n- Active in community service and support\n\n🤝 Sqn Ldr Muhammad Naeem Ahmad Khan (Retd)\n- Friend/Reformer of Helpline Welfare Trust\n- Retired Squadron Leader with aviation background\n- Supports organizational mission and activities\n\n🤝 Professor Ahmad Sohaib (Retd)\n- Friend/Reformer of Helpline Welfare Trust\n- Retired Professor with academic expertise\n- Contributes to educational and community initiatives",
+  ],
+  // Individual person entries for detailed queries
+  muhammadAslamKhan: [
+    "Muhammad Aslam Khan Kakarh (Engr) - Chairman:\n\nMuhammad Aslam Khan Kakarh is the Chairman of Helpline Welfare Trust. He holds an engineering degree and brings strategic leadership and vision to the organization. As Chairman, he provides overall guidance and direction, ensuring the organization stays true to its mission of serving humanity. His engineering background combined with humanitarian commitment makes him a strong leader for the organization.\n\nRole: Chairman\nEmail: Principal@sheltersasseociates.com\n\nHe oversees the strategic direction of Helpline and ensures that all initiatives align with the organization's core values and objectives.",
+  ],
+  khalilAhmadMalik: [
+    "Khalil Ahmad Malik - President:\n\nKhalil Ahmad Malik serves as the President of Helpline Welfare Trust. He provides organizational leadership and focuses on community development initiatives. With a strategic vision for growth and impact, he works to expand Helpline's reach and effectiveness across Pakistan. His leadership helps drive the organization's mission forward.\n\nRole: President\nEmail: malikpapermart47@gmail.com\n\nHe plays a crucial role in organizational leadership and community development, ensuring Helpline continues to make a positive impact on the lives of those in need.",
+  ],
+  lubnaYaqoobTahir: [
+    "Ms Lubna Yaqoob Tahir - Vice President:\n\nMs Lubna Yaqoob Tahir is the Vice President of Helpline Welfare Trust. She focuses on program management and community engagement, with a special emphasis on women's empowerment and education. Her leadership helps ensure that Helpline's programs are inclusive and address the needs of all community members, particularly women and children.\n\nRole: Vice President\nEmail: lubnayaqoob60@gmail.com\n\nShe brings valuable perspective to the leadership team, ensuring that women's voices and needs are represented in all organizational decisions and programs.",
+  ],
+  muhammadIqbalKhan: [
+    "Muhammad Iqbal Khan - Managing Trustee:\n\nMuhammad Iqbal Khan (FCA) is the Managing Trustee of Helpline Welfare Trust. He has been part of the team since 2003 and holds the qualification of FCA (Fellow Chartered Accountant). He oversees strategic initiatives and day-to-day operations, ensuring the organization runs efficiently and effectively. He believes that Allah Almighty has assigned to every person, particularly Muslims, the duty of serving fellow human beings.\n\nRole: Managing Trustee\nEmail: info@iy.com.pk\nPart of team since: 2003\nQualification: FCA (Fellow Chartered Accountant)\n\nHe has seen Helpline grow and reach people all over Pakistan, and his leadership has been instrumental in the organization's success and expansion.",
+  ],
+  ikhlaqUrRehman: [
+    "Ikhlaq ur Rehman (Mian Akhalq Ur Rehman) - General Secretary:\n\nIkhlaq ur Rehman, also known as Mian Akhalq Ur Rehman, is the Founder and General Secretary of Helpline Welfare Trust. He is also the General Secretary of Mawakhat-e-Madina. As the founder, he established Helpline with the vision of creating an organization that embodies the true spirit of brotherhood and community service. He is responsible for overall administration and coordination, as well as organizational records and activities.\n\nRole: General Secretary & Founder\nEmail: helpline.org.pk@gmail.com\n\nHe established Helpline to extend beyond mere charitable work and create lasting bonds within the community that reflect the principles of mutual support and compassion.",
+  ],
+  colonelMuhammadAli: [
+    "Colonel Muhammad Ali (Retd) - GM (Admin & HR):\n\nColonel Muhammad Ali (Retd) serves as the General Manager of Administration and Human Resources at Helpline Welfare Trust. As a retired Colonel, he brings military discipline and organizational expertise to the role. He ensures efficient operations and effective human resource management across the organization.\n\nRole: GM (Admin & HR)\nStatus: Retired Colonel\n\nHe manages all administrative functions and human resources, ensuring that the organization operates smoothly and that staff are well-supported and motivated.",
+  ],
+  mudasirAhmad: [
+    "Mr Mudasir Ahmad - GM (Education):\n\nMr Mudasir Ahmad is the General Manager of Education at Helpline Welfare Trust. He leads all education initiatives and curriculum development across the organization's educational institutions. Under his leadership, Helpline manages 6 own schools and 15 adopted government schools, benefiting thousands of students.\n\nRole: GM (Education)\n\nHe oversees the education wing's operations, ensuring quality education delivery and continuous improvement in educational programs and services.",
+  ],
+  colZahoorHussain: [
+    "COL Zahoor Hussain (Retd) - Administrator KMC:\n\nCOL Zahoor Hussain (Retd) serves as the Administrator of KMC (Khushnood Model Campus) at Helpline Welfare Trust. As a retired Colonel, he brings leadership and administrative expertise to manage the campus operations effectively. He ensures smooth functioning of all campus activities and programs.\n\nRole: Administrator KMC\nStatus: Retired Colonel\n\nHe manages the KMC campus, ensuring that all activities run smoothly and that students and staff have the resources they need.",
+  ],
+  hamidHassanKhan: [
+    "Mr Hamid Hassan Khan - Senior Manager Accounts:\n\nMr Hamid Hassan Khan is the Senior Manager of Accounts at Helpline Welfare Trust. He oversees all financial operations and ensures fiscal transparency and compliance. His role is crucial in maintaining the organization's financial integrity and ensuring that all funds are properly managed and accounted for.\n\nRole: Senior Manager Accounts\n\nHe manages all accounting functions, financial reporting, and ensures compliance with financial regulations and standards.",
+  ],
+  sarfrazAhmadBhullar: [
+    "Mr Sarfraz Ahmad Bhullar - Manager Admin & Support:\n\nMr Sarfraz Ahmad Bhullar serves as the Manager of Admin & Support at Helpline Welfare Trust. He manages administrative support services and coordinates office operations and logistics. His role ensures that all departments have the administrative support they need to function effectively.\n\nRole: Manager Admin & Support\n\nHe coordinates office operations, manages administrative tasks, and ensures smooth day-to-day functioning of the head office.",
+  ],
+  atifHussain: [
+    "Mr Atif Hussain - Manager Welfare & Health:\n\nMr Atif Hussain is the Manager of Welfare & Health at Helpline Welfare Trust. He develops and implements welfare and health programs across the organization. He organizes health camps, medical aid programs, and ensures that communities receive the healthcare support they need.\n\nRole: Manager Welfare & Health\n\nHe coordinates health initiatives including hospitals, clinics, mobile medical camps, and welfare programs that benefit thousands of beneficiaries.",
+  ],
+  faisalMushtaq: [
+    "Mr Faisal Mushtaq - Junior Manager Accounts:\n\nMr Faisal Mushtaq serves as the Junior Manager of Accounts at Helpline Welfare Trust. He assists in financial operations and accounting, supporting the senior accounts management team. His role is essential in maintaining accurate financial records and supporting the organization's financial operations.\n\nRole: Junior Manager Accounts\n\nHe supports the accounts department in managing financial transactions, record-keeping, and financial reporting.",
+  ],
+  mehmoodAliJoiya: [
+    "Mr Mehmood Ali Joiya - Senior Manager Purchases:\n\nMr Mehmood Ali Joiya is the Senior Manager of Purchases at Helpline Welfare Trust. He manages procurement and purchasing operations across the organization. He ensures quality and cost-effective acquisitions, supporting all departments with the resources they need.\n\nRole: Senior Manager Purchases\n\nHe oversees all procurement activities, vendor management, and ensures that purchases are made efficiently and cost-effectively.",
+  ],
+  rashidNisar: [
+    "Rashid Nisar - Manager Transport:\n\nRashid Nisar serves as the Manager of Transport at Helpline Welfare Trust. He manages transportation and logistics operations, coordinating vehicle operations and maintenance. His role ensures that the organization's transportation needs are met efficiently.\n\nRole: Manager Transport\n\nHe coordinates all transportation activities, manages the vehicle fleet, and ensures safe and efficient transport services for organizational operations.",
+  ],
+  syedMudasirBukhari: [
+    "Syed Mudasir Bukhari - Software Developer:\n\nSyed Mudasir Bukhari is the Software Developer at Helpline Welfare Trust. He develops and maintains software systems, managing IT infrastructure and digital solutions for the organization. His technical expertise supports the organization's digital transformation and operational efficiency.\n\nRole: Software Developer\n\nHe develops and maintains software applications, manages IT systems, and supports the organization's digital initiatives and online presence.",
+  ],
+  hafizBilalArshad: [
+    "Hafiz Bilal Arshad - Manager Media:\n\nHafiz Bilal Arshad serves as the Manager of Media at Helpline Welfare Trust. He manages media relations and communications, crafting and disseminating the organization's message to the public. His role is crucial in maintaining the organization's public image and communicating its mission and impact.\n\nRole: Manager Media\n\nHe handles media relations, content creation, social media management, and ensures effective communication of Helpline's activities and achievements.",
+  ],
+  aijazHussainKazi: [
+    "Aijaz Hussain Kazi (Former Secretary) - Education Advisor:\n\nAijaz Hussain Kazi, a Former Secretary, serves as the Education Advisor at Helpline Welfare Trust. He provides strategic guidance on education policies and advises on curriculum and educational initiatives. His extensive experience in public service brings valuable insights to the education wing.\n\nRole: Education Advisor\nBackground: Former Secretary\n\nHe advises on educational policies, curriculum development, and strategic planning for the education programs, ensuring quality and effectiveness.",
+  ],
+  brigZaheerAhmad: [
+    "Brigadier Zaheer Ahmad (Retd) - Marketing Consultant:\n\nBrigadier Zaheer Ahmad (Retd) serves as the Marketing Consultant for the Education Wing at Helpline Welfare Trust. As a retired Brigadier, he brings strategic marketing and outreach expertise. He supports the education wing's visibility and growth through effective marketing strategies.\n\nRole: Marketing Consultant\nStatus: Retired Brigadier\n\nHe provides marketing expertise and strategic guidance to enhance the education wing's outreach and impact in the community.",
+  ],
+  colWaqarAhmad: [
+    "Colonel Waqar Ahmad (Retd) - Tech Consultant:\n\nColonel Waqar Ahmad (Retd) serves as the Tech Consultant for the Education Wing at Helpline Welfare Trust. As a retired Colonel, he brings technical expertise and IT consulting. He supports digital transformation in education and helps integrate technology into educational programs.\n\nRole: Tech Consultant\nStatus: Retired Colonel\n\nHe provides technology consulting and supports the integration of digital solutions in education programs and operations.",
+  ],
+  khushnoodAhmadKhan: [
+    "Khushnood Ahmad Khan - Regional Head (Sindh):\n\nKhushnood Ahmad Khan serves as the Regional Head for Sindh province at Helpline Welfare Trust. He manages all operations in Sindh, coordinating programs and initiatives in the region. He ensures effective service delivery across Sindh, including education, health, and welfare programs.\n\nRole: Regional Head (Sindh)\n\nHe coordinates all Helpline activities in Sindh province, ensuring that communities receive the support and services they need.",
+  ],
+  brigMoeenUdDin: [
+    "Brigadier Moeen ud Din Ghazalli (Retd) - Regional Head (South):\n\nBrigadier Moeen ud Din Ghazalli (Retd) serves as the Regional Head for Southern regions at Helpline Welfare Trust. As a retired Brigadier, he brings leadership experience and strategic vision. He manages operations in Southern regions and coordinates regional programs and activities.\n\nRole: Regional Head (South)\nStatus: Retired Brigadier\n\nHe leads regional operations in the South, ensuring effective program delivery and community support across the region.",
+  ],
+  nuzhatFatima: [
+    "Ms Nuzhat Fatima (Former Secretary) - Regional Head (North):\n\nMs Nuzhat Fatima, a Former Secretary, serves as the Regional Head for Northern regions at Helpline Welfare Trust. With her administrative expertise from public service, she manages operations in Northern regions and coordinates regional initiatives and programs effectively.\n\nRole: Regional Head (North)\nBackground: Former Secretary\n\nShe coordinates all Helpline activities in Northern regions, ensuring efficient program delivery and community support.",
+  ],
+  muhammadArifMehr: [
+    "Muhammad Arif Mehr - Friend/Reformer:\n\nMuhammad Arif Mehr is a Friend/Reformer of Helpline Welfare Trust. As an active supporter and community advocate, he contributes to the organizational mission and vision. Friends/Reformers play a crucial role in supporting Helpline's initiatives and spreading awareness about the organization's work.\n\nRole: Friend/Reformer\n\nHe actively supports Helpline's mission and contributes to community development and social welfare initiatives.",
+  ],
+  brigZahidHussain: [
+    "Brig Zahid Hussain Goryaya (Retd) - Friend/Reformer:\n\nBrig Zahid Hussain Goryaya (Retd) is a Friend/Reformer of Helpline Welfare Trust. As a retired Brigadier with a military background, he brings leadership experience and supports organizational initiatives and programs. Friends/Reformers are valued supporters who contribute to Helpline's mission.\n\nRole: Friend/Reformer\nStatus: Retired Brigadier\n\nHe supports Helpline's initiatives and contributes his expertise to help the organization achieve its goals.",
+  ],
+  colZubairAhmad: [
+    "Colonel Zubair Ahmad Chughtai (Retd) - Friend/Reformer:\n\nColonel Zubair Ahmad Chughtai (Retd) is a Friend/Reformer of Helpline Welfare Trust. As a retired Colonel with leadership experience, he is active in community service and support. Friends/Reformers play an important role in supporting Helpline's mission and programs.\n\nRole: Friend/Reformer\nStatus: Retired Colonel\n\nHe actively supports community service initiatives and contributes to Helpline's mission of serving humanity.",
+  ],
+  sqnLdrMuhammadNaeem: [
+    "Sqn Ldr Muhammad Naeem Ahmad Khan (Retd) - Friend/Reformer:\n\nSqn Ldr Muhammad Naeem Ahmad Khan (Retd) is a Friend/Reformer of Helpline Welfare Trust. As a retired Squadron Leader with an aviation background, he supports the organizational mission and activities. Friends/Reformers are dedicated supporters who help advance Helpline's work.\n\nRole: Friend/Reformer\nStatus: Retired Squadron Leader\n\nHe supports Helpline's mission and contributes his expertise and experience to help the organization serve communities effectively.",
+  ],
+  profAhmadSohaib: [
+    "Professor Ahmad Sohaib (Retd) - Friend/Reformer:\n\nProfessor Ahmad Sohaib (Retd) is a Friend/Reformer of Helpline Welfare Trust. As a retired Professor with academic expertise, he contributes to educational and community initiatives. Friends/Reformers provide valuable support and guidance to help Helpline achieve its mission.\n\nRole: Friend/Reformer\nStatus: Retired Professor\n\nHe contributes his academic expertise to support educational initiatives and community development programs.",
+  ],
   default: [
-    "I'm sorry, I don't have specific information about that. Could you please rephrase your question? I can help you with information about:\n\n• Our mission, vision, and objectives\n• Contact details and addresses\n• Education programs (schools, orphanage, Quran education)\n• Health services (hospitals, clinics, water programs)\n• Vocational training and digital skills\n• Welfare programs (rashan, distribution, disaster relief)\n• Mawakhat-e-Madina initiatives\n• Donation methods\n• Registration and legal information\n• Statistics and impact\n• Volunteer opportunities\n• Organizational structure and leadership\n• Board of Trustees\n• Management team\n• Founder information\n• CEO/Managing Trustee message\n\nPlease ask me about any of these topics!",
+    "I'm sorry, I don't have specific information about that. Could you please rephrase your question? I can help you with information about:\n\n• Our mission, vision, and objectives\n• Contact details and addresses\n• Education programs (schools, orphanage, Quran education)\n• Health services (hospitals, clinics, water programs)\n• Vocational training and digital skills\n• Welfare programs (rashan, distribution, disaster relief)\n• Mawakhat-e-Madina initiatives\n• Donation methods\n• Registration and legal information\n• Statistics and impact\n• Volunteer opportunities\n• Organizational structure and leadership\n• Board of Trustees (Chairman, President, Vice President, Managing Trustee, General Secretary)\n• Head Office Team (GMs, Managers, Staff)\n• Education Wing (Advisors and Consultants)\n• Regional Heads (Sindh, South, North)\n• Friends/Reformers\n• Individual team members by name\n• Management team\n• Founder information\n• CEO/Managing Trustee message\n\nPlease ask me about any of these topics!",
   ],
 };
 
@@ -632,6 +726,259 @@ function getBotResponse(userMessage) {
     )
   ) {
     return knowledgeBase.boardOfTrustees[0];
+  }
+
+  // Head Office Team patterns
+  if (
+    message.match(
+      /\b(head office team|head office|office team|management team|staff|employees)\b/
+    )
+  ) {
+    return knowledgeBase.headOfficeTeam[0];
+  }
+
+  // Education Wing patterns
+  if (
+    message.match(
+      /\b(education wing|education team|education advisor|marketing consultant|tech consultant)\b/
+    )
+  ) {
+    return knowledgeBase.educationWing[0];
+  }
+
+  // Regional Heads patterns
+  if (
+    message.match(
+      /\b(regional head|regional heads|regional|sindh|south|north|regional office)\b/
+    )
+  ) {
+    return knowledgeBase.regionalHeads[0];
+  }
+
+  // Friends/Reformers patterns
+  if (
+    message.match(
+      /\b(friends|reformers|friend reformer|friend\/reformer)\b/
+    )
+  ) {
+    return knowledgeBase.friendsReformers[0];
+  }
+
+  // Individual person name patterns
+  if (
+    message.match(
+      /\b(muhammad aslam khan|aslam khan kakarh|engr aslam|chairman aslam)\b/
+    )
+  ) {
+    return knowledgeBase.muhammadAslamKhan[0];
+  }
+
+  if (
+    message.match(
+      /\b(khalil ahmad malik|khalil malik|president khalil)\b/
+    )
+  ) {
+    return knowledgeBase.khalilAhmadMalik[0];
+  }
+
+  if (
+    message.match(
+      /\b(lubna yaqoob|ms lubna|lubna tahir|vice president lubna)\b/
+    )
+  ) {
+    return knowledgeBase.lubnaYaqoobTahir[0];
+  }
+
+  if (
+    message.match(
+      /\b(muhammad iqbal khan|iqbal khan|managing trustee iqbal|iqbal khan fca)\b/
+    )
+  ) {
+    return knowledgeBase.muhammadIqbalKhan[0];
+  }
+
+  if (
+    message.match(
+      /\b(ikhlaq ur rehman|mian akhalq|akhalq ur rehman|general secretary ikhlaq|founder)\b/
+    )
+  ) {
+    return knowledgeBase.ikhlaqUrRehman[0];
+  }
+
+  if (
+    message.match(
+      /\b(colonel muhammad ali|muhammad ali|col muhammad ali|gm admin|admin hr)\b/
+    )
+  ) {
+    return knowledgeBase.colonelMuhammadAli[0];
+  }
+
+  if (
+    message.match(
+      /\b(mudasir ahmad|gm education|education mudasir)\b/
+    )
+  ) {
+    return knowledgeBase.mudasirAhmad[0];
+  }
+
+  if (
+    message.match(
+      /\b(zahoor hussain|col zahoor|administrator kmc|kmc administrator)\b/
+    )
+  ) {
+    return knowledgeBase.colZahoorHussain[0];
+  }
+
+  if (
+    message.match(
+      /\b(hamid hassan khan|hamid khan|senior manager accounts|accounts manager)\b/
+    )
+  ) {
+    return knowledgeBase.hamidHassanKhan[0];
+  }
+
+  if (
+    message.match(
+      /\b(sarfraz ahmad bhullar|sarfraz bhullar|manager admin|admin support)\b/
+    )
+  ) {
+    return knowledgeBase.sarfrazAhmadBhullar[0];
+  }
+
+  if (
+    message.match(
+      /\b(atif hussain|manager welfare|manager health|welfare health)\b/
+    )
+  ) {
+    return knowledgeBase.atifHussain[0];
+  }
+
+  if (
+    message.match(
+      /\b(faisal mushtaq|junior manager accounts|accounts faisal)\b/
+    )
+  ) {
+    return knowledgeBase.faisalMushtaq[0];
+  }
+
+  if (
+    message.match(
+      /\b(mehmood ali joiya|mehmood joiya|senior manager purchases|purchases manager)\b/
+    )
+  ) {
+    return knowledgeBase.mehmoodAliJoiya[0];
+  }
+
+  if (
+    message.match(
+      /\b(rashid nisar|manager transport|transport manager)\b/
+    )
+  ) {
+    return knowledgeBase.rashidNisar[0];
+  }
+
+  if (
+    message.match(
+      /\b(syed mudasir bukhari|mudasir bukhari|software developer|developer)\b/
+    )
+  ) {
+    return knowledgeBase.syedMudasirBukhari[0];
+  }
+
+  if (
+    message.match(
+      /\b(hafiz bilal arshad|bilal arshad|manager media|media manager bilal)\b/
+    )
+  ) {
+    return knowledgeBase.hafizBilalArshad[0];
+  }
+
+  if (
+    message.match(
+      /\b(aijaz hussain kazi|aijaz kazi|education advisor|former secretary aijaz)\b/
+    )
+  ) {
+    return knowledgeBase.aijazHussainKazi[0];
+  }
+
+  if (
+    message.match(
+      /\b(brigadier zaheer ahmad|zaheer ahmad|brig zaheer|marketing consultant zaheer)\b/
+    )
+  ) {
+    return knowledgeBase.brigZaheerAhmad[0];
+  }
+
+  if (
+    message.match(
+      /\b(colonel waqar ahmad|waqar ahmad|col waqar|tech consultant waqar)\b/
+    )
+  ) {
+    return knowledgeBase.colWaqarAhmad[0];
+  }
+
+  if (
+    message.match(
+      /\b(khushnood ahmad khan|khushnood khan|regional head sindh|sindh head)\b/
+    )
+  ) {
+    return knowledgeBase.khushnoodAhmadKhan[0];
+  }
+
+  if (
+    message.match(
+      /\b(brigadier moeen ud din|moeen ud din|brig moeen|regional head south|south head)\b/
+    )
+  ) {
+    return knowledgeBase.brigMoeenUdDin[0];
+  }
+
+  if (
+    message.match(
+      /\b(nuzhat fatima|ms nuzhat|regional head north|north head|former secretary nuzhat)\b/
+    )
+  ) {
+    return knowledgeBase.nuzhatFatima[0];
+  }
+
+  if (
+    message.match(
+      /\b(muhammad arif mehr|arif mehr|friend reformer arif)\b/
+    )
+  ) {
+    return knowledgeBase.muhammadArifMehr[0];
+  }
+
+  if (
+    message.match(
+      /\b(brig zahid hussain|zahid hussain goryaya|brig zahid|friend reformer zahid)\b/
+    )
+  ) {
+    return knowledgeBase.brigZahidHussain[0];
+  }
+
+  if (
+    message.match(
+      /\b(colonel zubair ahmad|zubair ahmad chughtai|col zubair|friend reformer zubair)\b/
+    )
+  ) {
+    return knowledgeBase.colZubairAhmad[0];
+  }
+
+  if (
+    message.match(
+      /\b(sqn ldr muhammad naeem|muhammad naeem ahmad khan|squadron leader naeem|friend reformer naeem)\b/
+    )
+  ) {
+    return knowledgeBase.sqnLdrMuhammadNaeem[0];
+  }
+
+  if (
+    message.match(
+      /\b(professor ahmad sohaib|ahmad sohaib|prof sohaib|friend reformer sohaib)\b/
+    )
+  ) {
+    return knowledgeBase.profAhmadSohaib[0];
   }
 
   // Default response

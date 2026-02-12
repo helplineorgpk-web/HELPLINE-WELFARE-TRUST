@@ -47,8 +47,8 @@ export default function SliderArea() {
                       <Link href="/cause" className="slider_btn">
                         Medical
                       </Link>
-                      <Link href="/donation" className="g_btn theme1_bg to_right2 rad-50">
-                        Donate Now <span></span>
+                      <Link href="/donation" className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn">
+                        Donate Now<span></span>
                       </Link>
                     </div>
                   </div>

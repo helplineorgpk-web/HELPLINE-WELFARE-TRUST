@@ -386,8 +386,8 @@ export default function FeaturedCauseArea3() {
                                   </div>
                                 </div>
                                 <div className="feature_buttons">
-                                  <Link href="/donation" className="g_btn theme1_bg to_right2 rad-50">
-                                    Donate Now <span></span>
+                                  <Link href="/donation" className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn">
+                                    Donate Now<span></span>
                                   </Link>
                                   <Link href="#">
                                     <a className="reply_btn">
