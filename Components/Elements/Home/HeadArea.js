@@ -7,11 +7,11 @@ import UBLPaymentForm from "../Payment/UBLPaymentForm";
 import styles from "../../../public/css/headArea.module.css";
 
 const BG_IMAGES = [
-  "/img/causes/Masjid.jpg",
-  "/img/causes/RashanPackage.jpg",
-  "/img/causes/StudentSupportProgram.jpg",
-  "/img/causes/VocationalTrainingCenter.jpg",
-  "/img/causes/floodappeal.jpg",
+  "/img/Campaigns/Masjid.jpg",
+  "/img/Campaigns/Ramadan.jpg",
+  "/img/Campaigns/Rashion.jpg",
+  "/img/Campaigns/Student.jpg",
+  "/img/Campaigns/Vocational.jpg",
 ];
 
 const MIN_DONATION = 100;

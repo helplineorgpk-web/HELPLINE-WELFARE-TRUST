@@ -43,7 +43,7 @@ export default function Footer1() {
                   className={style.image}
                 />
                 <Image
-                  src="/img/sponser/nestle.png"
+                  src="/img/sponser/nestlelogo.png"
                   alt="Our Supporters"
                   height={40}
                   width={80}

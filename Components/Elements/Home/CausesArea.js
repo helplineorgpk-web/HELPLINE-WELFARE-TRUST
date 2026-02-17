@@ -58,21 +58,18 @@ export default function CausesArea({ causes, data }) {
                       </div>
                       <div
                         onClick={() => handleNavigation(item)}
+                        className="g_btn hbtn_1 to_right1 nav-donate-btn"
                         style={{
-                          padding: "10px 20px",
-                          backgroundColor: item.color,
-                          color: "#fff",
-                          textAlign: "center",
-                          borderRadius: "5px",
-                          fontWeight: "bold",
                           cursor: "pointer",
                           marginTop: "20px",
-                          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                          transition:
-                            "transform 0.2s ease, box-shadow 0.2s ease",
+                          borderRadius: 10,
+                          padding: "8px 20px",
+                          minHeight: "auto",
+                          height: "auto",
+                          lineHeight: 1.4,
                         }}
                       >
-                        See More
+                        See More<span></span>
                       </div>
                     </div>
                   </div>
