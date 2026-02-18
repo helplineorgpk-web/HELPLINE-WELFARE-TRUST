@@ -7,6 +7,7 @@ import AboutArea from "../Components/Elements/Home/AboutArea";
 import HeadArea from "../Components/Elements/Home/HeadArea";
 import AllOverPakistan from "../Components/Elements/Home/AllOverPakistan";
 import HelplineProject from "../Components/Elements/Home/HelplineProject";
+import MonthlyPrograms from "../Components/Elements/Home/MonthlyPrograms";
 import WayToDonate from "../Components/Elements/Home/WayToDonate";
 import BlogsSection from "../Components/Elements/Home/BlogsSection";
 import ZakatInformationHub from "../Components/Elements/Home/ZakatInformationHub";
@@ -40,6 +41,7 @@ export default function Home() {
           <CausesArea causes={cause} data={data} />
           <SupportArea />
           <ZakatInformationHub />
+          <MonthlyPrograms />
           <HelplineProject />
           <WayToDonate />
           <NewsFeed />
