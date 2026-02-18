@@ -1,0 +1,196 @@
+.container {
+  min-height: 50vh;
+  background: linear-gradient(135deg, #eef5f9, #ffffff);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4rem;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #263b5d;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #65cabb, #d6cbc6);
+  border-radius: 2px;
+}
+
+.section p {
+  color: #34495e;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.infoCard {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(250, 250, 250, 1)
+  );
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 25px -5px rgba(101, 202, 187, 0.1),
+    0 10px 10px -5px rgba(101, 202, 187, 0.04);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(101, 202, 187, 0.2);
+}
+
+.infoCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 30px -5px rgba(101, 202, 187, 0.15);
+}
+
+.infoCard h3 {
+  color: #263b5d;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.infoCard h3::before {
+  content: "";
+  width: 4px;
+  height: 1.25rem;
+  background: linear-gradient(180deg, #65cabb, #4a90e2);
+  border-radius: 2px;
+}
+
+.infoCard p,
+.infoCard ul {
+  color: #34495e;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.infoCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.infoCard ul li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.infoCard ul li::before {
+  content: "✓";
+  color: #65cabb;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.highlightBox {
+  background: linear-gradient(
+    135deg,
+    rgba(101, 202, 187, 0.12),
+    rgba(74, 144, 226, 0.08)
+  );
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(101, 202, 187, 0.25);
+  margin: 2rem 0;
+}
+
+.highlightBox p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #263b5d;
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(101, 202, 187, 0.08),
+    rgba(255, 255, 255, 0.95)
+  );
+  border-radius: 1.25rem;
+  border: 1px solid rgba(101, 202, 187, 0.2);
+}
+
+.ctaSection h3 {
+  color: #263b5d;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.ctaSection p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: linear-gradient(135deg, #65cabb, #4a90e2);
+  color: white !important;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(101, 202, 187, 0.4);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(101, 202, 187, 0.5);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 2rem 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .infoCard {
+    padding: 1.5rem;
+  }
+}

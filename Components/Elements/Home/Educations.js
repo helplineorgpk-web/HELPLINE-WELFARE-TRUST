@@ -32,8 +32,16 @@ export default function Educations() {
   ];
 
   return (
-    <div className={styles.container}>
-      <h3>Al-Kitab Education System</h3>
+    <section className={styles.container} aria-labelledby="education-heading">
+      <header className={styles.sectionHeader}>
+        <p className={styles.sectionLabel}>Our Impact</p>
+        <h2 id="education-heading" className={styles.sectionTitle}>
+          Al-Kitab Education System
+        </h2>
+        <p className={styles.sectionSubtitle}>
+          Quality education and care for thousands of children across Pakistan
+        </p>
+      </header>
       <div className={styles.content_container}>
         {cards.map((card, index) => (
           <div key={index} className={styles.card}>
@@ -46,10 +54,10 @@ export default function Educations() {
               </div>
               <div className={styles.cardBack}>
                 <div className={styles.cardContent}>
-                  <h3 className={styles.cardTitle}>{card.title}</h3>
+                  <h3 className={styles.cardTitleBack}>{card.title}</h3>
                   <p className={styles.cardDescription}>{card.description}</p>
-                  <Link className={`${styles.button} g_btn hbtn_1 to_right1 rad-30 nav-donate-btn`} href={card.href}>
-                    Learn More<span></span>
+                  <Link className={styles.button} href={card.href}>
+                    Learn More
                   </Link>
                 </div>
               </div>
@@ -58,40 +66,55 @@ export default function Educations() {
         ))}
       </div>
       <div className={styles.description}>
-        <p>
-          Education is the key to a brighter future, yet millions of children
-          lack access due to financial constraints. Charity for education
-          services helps bridge this gap by providing quality learning
-          resources, scholarships, and safe environments. By supporting such
-          initiatives, we empower young minds, break the cycle of poverty, and
-          create opportunities for a more equitable society. Education fosters
-          confidence, critical thinking, and better job prospects, strengthening
-          communities and driving progress. Every contribution, big or small,
-          helps turn education from a privilege into a right, ensuring every
-          child has the chance to learn, grow, and succeed. Together, we can
-          create a world where no child is left behind in their pursuit of
-          knowledge.
-        </p>
+        <div className={styles.descriptionContent}>
+          <h3 className={styles.descriptionTitle}>
+            Education is the key to a brighter future
+          </h3>
+          <p className={styles.descriptionText}>
+            Millions of children lack access due to financial constraints.{" "}
+            <strong>Charity for education</strong> helps bridge this gap by
+            providing quality learning resources, scholarships, and safe
+            environments. By supporting our initiatives, we{" "}
+            <strong>empower young minds</strong>, break the cycle of poverty,
+            and create opportunities for a more equitable society.
+          </p>
+          <p className={styles.descriptionText}>
+            Education fosters confidence, critical thinking, and better job
+            prospects, strengthening communities and driving progress. Every
+            contribution, big or small, helps turn education from a privilege
+            into a right—ensuring every child can{" "}
+            <strong>learn, grow, and succeed</strong>. Together, we can create
+            a world where{" "}
+            <strong className={styles.highlight}>no child is left behind</strong>{" "}
+            in their pursuit of knowledge.
+          </p>
+        </div>
         <div className={styles.videoContainer}>
           <div className={styles.videoWrapper}>
-            <video controls className={styles.video}>
+            <video
+              controls
+              className={styles.video}
+              poster="/img/causes/cause13.jpg"
+              preload="metadata"
+              aria-label="Helpline education and orphanage impact video"
+            >
               <source
                 src="/img/orphanage/VIDEO-2025-02-19-12-04-34.mp4"
-                type="video/webm"
+                type="video/mp4"
               />
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
       </div>
-      <div style={{ textAlign: "center" }}>
+      <div className={styles.ctaWrapper}>
         <Link
           href="/cause"
-          className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn"
+          className={`${styles.ctaButton} g_btn hbtn_1 to_right1 rad-30 nav-donate-btn`}
         >
-          See More<span></span>
+          Explore Our Education Programs<span></span>
         </Link>
       </div>
-    </div>
+    </section>
   );
 }

@@ -11,17 +11,37 @@ function WayToDonate() {
       </div>
 
       <div className={styles.blockContainer}>
-        {donationMethods.map((method, index) => (
-          <div className={styles.block} key={index}>
-            <h6 className={styles.blocktitle}>{method.title}</h6>
-            <p>{method.description}</p>
-            <a href={method.href}>
-              <div className={styles[method.buttonType]}>
+        {donationMethods.map((method, index) => {
+          const href =
+            method.href ||
+            (method.buttonType === "callButton"
+              ? `tel:${(method.buttonLabel || "").replace(/\s/g, "")}`
+              : "#");
+          return (
+            <div className={styles.block} key={index}>
+              <h6 className={styles.blocktitle}>{method.title}</h6>
+              <p>{method.description}</p>
+              <a
+                href={href}
+                className="g_btn hbtn_1 to_right1 nav-donate-btn"
+                style={{
+                  cursor: "pointer",
+                  marginTop: "20px",
+                  borderRadius: 10,
+                  padding: "8px 20px",
+                  minHeight: "auto",
+                  height: "auto",
+                  lineHeight: 1.4,
+                  display: "inline-block",
+                  textDecoration: "none",
+                }}
+              >
                 {method.buttonLabel}
-              </div>
-            </a>
-          </div>
-        ))}
+                <span></span>
+              </a>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

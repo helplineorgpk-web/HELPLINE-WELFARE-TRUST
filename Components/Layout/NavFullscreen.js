@@ -122,6 +122,9 @@ export default function NavFullscreen() {
               </ul>
             </li>
             <li>
+              <Link href="/projects/monthly-programs">Monthly Programs</Link>
+            </li>
+            <li>
               <Link href="/disaster">Rehabilitation</Link>
             </li>
           </ul>
