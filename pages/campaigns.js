@@ -18,7 +18,7 @@ const campaignsData = [
     href: "/ramzanRashan",
     description:
       "Provide essential food items to families during the blessed month of Ramadan. Help us ensure no family goes hungry.",
-    image: "/img/Campaigns/Ramadan.jpg",
+    image: "/img/Campaigns/RamadanPackage2.jpg",
     details: {
       goal: 2000000,
       raised: 850000,
@@ -45,7 +45,7 @@ const campaignsData = [
     href: "/rashan",
     description:
       "Provide essential food supplies to struggling families across Pakistan throughout the year.",
-    image: "/img/Campaigns/Rashan.jpg",
+    image: "/img/causes/cause25.jpg",
     details: {
       goal: 1500000,
       raised: 650000,
@@ -66,7 +66,7 @@ const campaignsData = [
     href: "/student-support",
     description:
       "Sponsor students' education, ensuring they don't drop out due to financial constraints.",
-    image: "/img/Campaigns/Student.jpg",
+    image: "/img/Campaigns/HelplineStudentSupport2.jpg",
     details: {
       goal: 1000000,
       raised: 450000,
@@ -92,7 +92,7 @@ const campaignsData = [
     href: "/vocationalTrainingCenters",
     description:
       "Equip youth with technical skills for sustainable employment and self-reliance.",
-    image: "/img/Campaigns/Vocational.jpg",
+    image: "/img/Campaigns/Vocational3.jpg",
     details: {
       goal: 1200000,
       raised: 380000,
@@ -113,7 +113,7 @@ const campaignsData = [
     href: "/masjid",
     description:
       "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
-    image: "/img/Campaigns/Masjid.jpg",
+    image: "/img/Campaigns/MasjidMaktab2.jpg",
     details: {
       goal: 2500000,
       raised: 750000,
@@ -139,7 +139,7 @@ const campaignsData = [
     href: "/flood-relief",
     description:
       "Providing immediate relief to flood-affected families across Pakistan.",
-    image: "/img/Campaigns/Flood.jpg",
+    image: "/img/causes/disasterbg.jpg",
     details: {
       goal: 2000000,
       raised: 1250000,
@@ -165,7 +165,7 @@ const campaignsData = [
     href: "/qurbani",
     description:
       "Participate in our Qurbani program to help distribute meat to deserving families during Eid ul Adha.",
-    image: "/img/Campaigns/reallygreatsite.png",
+    image: "/img/causes/qurbani1.jpg",
     details: {
       goal: 2000000,
       raised: 200000,
