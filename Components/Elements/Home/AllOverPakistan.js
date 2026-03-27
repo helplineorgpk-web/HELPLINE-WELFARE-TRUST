@@ -47,7 +47,7 @@ const AllOverPakistan = () => {
 
         .impact-container {
           width: 100%;
-          max-width: 1200px;
+          max-width: 1320px;
           margin: 0 auto;
           padding: 0 20px;
           text-align: center;

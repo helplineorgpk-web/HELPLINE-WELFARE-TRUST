@@ -88,11 +88,12 @@ export default function MonthlyPrograms() {
     <section style={styles.section} className="monthly-programs-area monthly-programs-section">
       <style>{`
         .monthly-programs-section .container {
-          max-width: 100%;
-          padding-left: 20px;
-          padding-right: 20px;
+          max-width: 1320px;
           margin-left: auto;
           margin-right: auto;
+          width: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
           box-sizing: border-box;
         }
         @media (max-width: 768px) {

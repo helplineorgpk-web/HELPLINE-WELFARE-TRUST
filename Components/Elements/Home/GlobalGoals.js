@@ -87,30 +87,32 @@ export default function GlobalGoals() {
 
   return (
     <section className={styles.container} aria-labelledby="global-goals-heading">
-      <header className={styles.sectionHeader}>
-        <h2 id="global-goals-heading" className={styles.sectionTitle}>
-          How Helpline Welfare Trust Brings The Global Goals To Life
-        </h2>
-        <div className={styles.sectionLine} />
-        <p className={styles.sectionSubtitle}>
-          We work across five interconnected pillars aligned with the United Nations
-          Sustainable Development Goals (SDGs). Below, we show how Helpline Welfare Trust brings
-          these goals to life in Pakistan's most underserved communities.
-        </p>
-      </header>
-      <div className={styles.goalsGrid}>
-        {goals.map((goal, index) => (
-          <div key={index} className={styles.goalCard}>
-            <div
-              className={styles.iconWrapper}
-              style={{ borderColor: goal.color }}
-            >
-              <goal.Icon color={goal.color} />
+      <div className="container">
+        <header className={styles.sectionHeader}>
+          <h2 id="global-goals-heading" className={styles.sectionTitle}>
+            How Helpline Welfare Trust Brings The Global Goals To Life
+          </h2>
+          <div className={styles.sectionLine} />
+          <p className={styles.sectionSubtitle}>
+            We work across five interconnected pillars aligned with the United Nations
+            Sustainable Development Goals (SDGs). Below, we show how Helpline Welfare Trust brings
+            these goals to life in Pakistan's most underserved communities.
+          </p>
+        </header>
+        <div className={styles.goalsGrid}>
+          {goals.map((goal, index) => (
+            <div key={index} className={styles.goalCard}>
+              <div
+                className={styles.iconWrapper}
+                style={{ borderColor: goal.color }}
+              >
+                <goal.Icon color={goal.color} />
+              </div>
+              <h3 className={styles.goalTitle}>{goal.title}</h3>
+              <p className={styles.goalDescription}>{goal.description}</p>
             </div>
-            <h3 className={styles.goalTitle}>{goal.title}</h3>
-            <p className={styles.goalDescription}>{goal.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -51,7 +51,10 @@ export default function NewsFeed() {
     <div className="nfeed_area pt-105 pb-90 nfeed_area_resp">
       <style>{`
         .nfeed_area_resp .container {
-          max-width: 100%;
+          max-width: 1320px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
           padding-left: 20px;
           padding-right: 20px;
           box-sizing: border-box;

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useCallback, useMemo } from "react";
+import React, { useState, useRef, useCallback, useMemo, useEffect } from "react";
 import Image from "next/image";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
 
@@ -34,7 +34,13 @@ const CAUSE_OPTIONS = [
   },
 ];
 
-const HERO_IMAGE = "/img/Campaigns/Ramadan.jpg";
+const HERO_IMAGES = [
+  "/img/Campaigns/Education.jpg",
+  "/img/Campaigns/Medical.jpg",
+  "/img/Campaigns/Food.jpg",
+  "/img/Campaigns/Disaster.jpg",
+  "/img/Campaigns/Environment.jpg",
+];
 const HERO_BLUR =
   "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==";
 
@@ -52,7 +58,16 @@ export default function DonationHeader() {
   const [amount, setAmount] = useState("");
   const [showPaymentForm, setShowPaymentForm] = useState(false);
   const [validationError, setValidationError] = useState("");
+  const [activeSlide, setActiveSlide] = useState(0);
   const amountInputRef = useRef(null);
+
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, 4000);
+
+    return () => clearInterval(slideInterval);
+  }, []);
 
   const currentCause = useMemo(
     () => CAUSE_OPTIONS.find((c) => c.id === selectedCause),
@@ -143,6 +158,11 @@ export default function DonationHeader() {
         .hero-slide-image {
           object-fit: cover;
           object-position: center;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+        .hero-slide-image.active {
+          opacity: 1;
         }
         .hero-overlay {
           display: none;
@@ -390,17 +410,20 @@ export default function DonationHeader() {
 
       <section className="hero-section">
         <div className="hero-image-wrap">
-          <Image
-            src={HERO_IMAGE}
-            alt="Donate"
-            fill
-            priority
-            placeholder="blur"
-            blurDataURL={HERO_BLUR}
-            sizes="100vw"
-            quality={85}
-            className="hero-slide-image"
-          />
+          {HERO_IMAGES.map((img, index) => (
+            <Image
+              key={img}
+              src={img}
+              alt="Donate"
+              fill
+              priority={index === 0}
+              placeholder="blur"
+              blurDataURL={HERO_BLUR}
+              sizes="100vw"
+              quality={85}
+              className={`hero-slide-image ${index === activeSlide ? "active" : ""}`}
+            />
+          ))}
         </div>
 
         <div className="hero-overlay" />

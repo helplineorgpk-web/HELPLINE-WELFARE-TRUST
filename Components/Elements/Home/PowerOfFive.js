@@ -106,7 +106,7 @@ const PowerOfFive = () => {
 
         .power-container {
           width: 100%;
-          max-width: 1200px;
+          max-width: 1320px;
           margin: 0 auto;
           padding: 0 20px;
           box-sizing: border-box;
@@ -361,7 +361,7 @@ const PowerOfFive = () => {
 
         @media (max-width: 768px) {
           .power-section {
-            padding: 50px 16px 80px;
+            padding: 50px 0 80px;
           }
 
           .power-container {
@@ -408,7 +408,7 @@ const PowerOfFive = () => {
 
         @media (max-width: 480px) {
           .power-section {
-            padding: 48px 12px 64px;
+            padding: 48px 0 64px;
           }
 
           .power-container {
