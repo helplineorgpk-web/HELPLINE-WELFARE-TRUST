@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { blogsData } from "../../data/blogsData.js";
-import BlogDetailsBreadCrumb from "../../Components/Elements/BlogDetails/BlogDetailsBreadCrumb";
+import AboutBreadCumb from "../../Components/Elements/About/AboutBreadCumb";
 import BlogDetailsContent from "../../Components/Elements/BlogDetails/BlogDetailsContent";
 import Layout2 from "../../Components/Layout/Layout2";
 
@@ -37,7 +37,11 @@ export default function BlogDetail() {
 
   return (
     <Layout2>
-      <BlogDetailsBreadCrumb title={blog.title} />
+      <AboutBreadCumb
+        title="Blog"
+        description="News, stories from the field, program highlights, and updates on how Helpline Welfare Trust is serving communities across Pakistan."
+        backgroundImage="/img/Campaigns/Blog.jpg"
+      />
       <BlogDetailsContent blog={blog} />
     </Layout2>
   );

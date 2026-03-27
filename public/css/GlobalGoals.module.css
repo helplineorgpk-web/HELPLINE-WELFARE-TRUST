@@ -1,0 +1,163 @@
+.container {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.sectionHeader {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.sectionTitle {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a2a3a;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.sectionLine {
+  width: 60px;
+  height: 3px;
+  background: #5a8a9a;
+  margin: 0 auto 20px;
+}
+
+.sectionSubtitle {
+  font-size: 0.875rem;
+  color: #888;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.goalsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.goalCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.iconWrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1.5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iconWrapper:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 1.75rem;
+}
+
+.goalTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.goalDescription {
+  font-size: 0.8rem;
+  color: #999;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@media (max-width: 992px) {
+  .goalsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 50px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+
+  .goalsGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 0;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .sectionSubtitle {
+    font-size: 12px;
+  }
+
+  .goalCard {
+    padding: 16px 12px;
+  }
+
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .goalTitle {
+    font-size: 0.9rem;
+  }
+
+  .goalDescription {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 32px;
+  }
+
+  .goalsGrid {
+    gap: 28px;
+  }
+}

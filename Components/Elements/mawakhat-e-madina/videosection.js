@@ -17,13 +17,10 @@ export default function VideoSection() {
           <h2
             style={{ fontSize: "2rem", color: "#2c3e50", marginBottom: "20px" }}
           >
-            Mawakhat-e-Madina
+            Muwakhat-e-Madina
           </h2>
           <p style={{ fontSize: "1.1rem", lineHeight: "1.6", color: "#555" }}>
-            The spirit of Mawakhat-e-Madina was built on the pillars of
-            patience, tolerance, sacrifice, gratitude, trust, and brotherhood—
-            where the Muhajir and Ansar stood united not by blood, but by
-            unwavering faith and selfless love for one another.
+            Muwakhat-e-Madina is more than a program title. It is a guiding idea that shapes how Helpline understands service, community, and responsibility. At its heart is the belief that people should not be left alone in hardship, and that stronger members of the community have a duty to support those who are struggling. Helpline&apos;s broader welfare philosophy is built on this spirit of brotherhood, trust, and shared care.
           </p>
 
           <div style={{ marginTop: "30px" }}>

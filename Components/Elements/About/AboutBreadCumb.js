@@ -1,31 +1,51 @@
-import React from "react";
+import React, { useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import styles from "../../../public/css/AboutHeader.module.css";
 
-export default function AboutBreadCumb({ content }) {
+const DEFAULT_DESCRIPTION =
+  "Helpline is a movement of hope and transformation. Since 2000, we have partnered with communities across Pakistan to break the cycle of poverty through education, healthcare, economic empowerment, and social development.";
+const HERO_BLUR =
+  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==";
+
+export default function AboutBreadCumb({ title = "About Us", description = DEFAULT_DESCRIPTION, backgroundImage = "/img/about/aboutus.jpg" }) {
+  const heroImage = useMemo(
+    () => ({
+      src: backgroundImage,
+      alt: `${title} banner`,
+    }),
+    [backgroundImage, title]
+  );
+
   return (
-    <section
-      className="breadcrumb_area breadcrumb_overlay"
-      style={{ backgroundImage: "url(/img/about/aboutus.jpg)", objectFit: "cover" }}
-    >
+    <section className={styles.aboutHero}>
+      <div className={styles.heroBgWrap}>
+        <Image
+          src={heroImage.src}
+          alt={heroImage.alt}
+          fill
+          priority
+          placeholder="blur"
+          blurDataURL={HERO_BLUR}
+          sizes="100vw"
+          quality={78}
+          className={styles.heroBgImage}
+        />
+      </div>
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
-            <div className="breadcrumb_section">
-              <ul
-                className="breadcrumb-list volunteer_breadcrumb"
-                style={{ paddingTop: "45px" }}
-              >
-                <li className="bhas_border">
-                  <Link href="/" className="text-white">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <span className="active">About Us</span>
-                </li>
-              </ul>
-              <div className="breadcrumb_title" >
-                <h2 style={{ color: "white", fontSize: "45px" }}>{content ? content : "Consultancy Board - Founders"}</h2>
+            <div className={styles.aboutHeroContent}>
+              <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+                <Link href="/">Home</Link>
+                <span className={styles.breadcrumbSeparator}>/</span>
+                <span className={styles.breadcrumbCurrent}>{title}</span>
+              </nav>
+              <h1 className={styles.title}>{title}</h1>
+              <p className={styles.description}>{description}</p>
+              <div className={styles.accentBar}>
+                <span className={styles.accentBarLeft} />
+                <span className={styles.accentBarRight} />
               </div>
             </div>
           </div>

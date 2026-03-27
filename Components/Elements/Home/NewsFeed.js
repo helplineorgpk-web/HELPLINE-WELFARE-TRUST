@@ -48,7 +48,67 @@ export default function NewsFeed() {
   };
   const newsFeedData = HelplineData.newsFeedData;
   return (
-    <div className="nfeed_area pt-105 pb-90">
+    <div className="nfeed_area pt-105 pb-90 nfeed_area_resp">
+      <style>{`
+        .nfeed_area_resp .container {
+          max-width: 1320px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
+          box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+          .nfeed_area_resp {
+            padding-top: 60px !important;
+            padding-bottom: 50px !important;
+          }
+          .nfeed_area_resp .container {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          .nfeed_area_resp .section_title .title {
+            font-size: 1.75rem !important;
+          }
+          .nfeed_area_resp .section_title.mb-45 {
+            margin-bottom: 2rem !important;
+          }
+          .nfeed_area_resp .row.justify-content-center > [class*="col-"] {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+          .nfeed_area_resp .newsletter_feed {
+            margin-top: 0.5rem;
+          }
+          .nfeed_area_resp .newsletter_feed .rad-30 {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            padding: 12px 16px;
+            font-size: 16px;
+          }
+        }
+        @media (max-width: 480px) {
+          .nfeed_area_resp {
+            padding-top: 48px !important;
+            padding-bottom: 40px !important;
+          }
+          .nfeed_area_resp .container {
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+          .nfeed_area_resp .section_title .sub_title {
+            font-size: 0.8rem;
+          }
+          .nfeed_area_resp .section_title .title {
+            font-size: 1.5rem !important;
+          }
+          .nfeed_area_resp .nfeed_title .n_title {
+            font-size: 1.25rem !important;
+          }
+        }
+      `}</style>
       <div className="container">
         <div className="row">
           <div className="col-xxl-12">

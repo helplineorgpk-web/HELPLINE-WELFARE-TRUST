@@ -1,17 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import SideBarMobile from "./SideBarMobile";
-import SideBarFullscreen from "./SideBarFullscreen";
 import Search from "./Search";
 import Header1 from "./Header1";
 import Footer1 from "./Footer1";
-import Header2 from "./Header2";
+
 export default function Layout1({ children }) {
   const [isToggled, setToggled] = useState(false);
   const toggleTrueFalse = () => setToggled(!isToggled);
-
-  const [isToggledInfo, setToggledInfo] = useState(false);
-  const toggleTrueFalseInfo = () => setToggledInfo(!isToggledInfo);
 
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
@@ -22,27 +17,28 @@ export default function Layout1({ children }) {
 
   return (
     <>
-      <Header1
-        toggleTrueFalse={toggleTrueFalse}
-        toggleTrueFalseInfo={toggleTrueFalseInfo}
-      />
-
-      <SideBarMobile
-        toggleTrueFalseInfo={toggleTrueFalseInfo}
-        isToggledInfo={isToggledInfo}
-      />
-
-      <SideBarFullscreen
-        toggleTrueFalseInfo={toggleTrueFalseInfo}
-        isToggledInfo={isToggledInfo}
-      />
+      <style>{`
+        html {
+          overflow-x: hidden;
+          max-width: 100%;
+        }
+        body {
+          overflow-x: hidden;
+          max-width: 100%;
+          position: relative;
+        }
+        *, *::before, *::after {
+          box-sizing: border-box;
+        }
+        .layout-wrapper {
+          overflow-x: hidden;
+          max-width: 100%;
+          width: 100%;
+        }
+      `}</style>
+      <Header1 toggleTrueFalse={toggleTrueFalse} />
 
       <Search toggleTrueFalse={toggleTrueFalse} isToggled={isToggled} />
-
-      <div
-        onClick={toggleTrueFalseInfo}
-        className={`offcanvas-overlay ${isToggledInfo ? "overlay-open" : ""}`}
-      ></div>
 
       <a
         href="#"
@@ -58,7 +54,9 @@ export default function Layout1({ children }) {
         </svg>
       </a>
 
-      {children}
+      <div className="layout-wrapper">
+        {children}
+      </div>
 
       <Footer1 />
     </>

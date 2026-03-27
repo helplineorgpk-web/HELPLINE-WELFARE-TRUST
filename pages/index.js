@@ -16,6 +16,8 @@ import Meta from "../Components/SEO/Meta";
 import Educations from "../Components/Elements/Home/Educations";
 import Header from "../Components/Elements/Home/Header";
 import Header2 from "../Components/Layout/Header2";
+import PowerOfFive from "../Components/Elements/Home/PowerOfFive";
+import GlobalGoals from "../Components/Elements/Home/GlobalGoals";
 
 const data = {
   Water: "Recent development",
@@ -33,17 +35,19 @@ export default function Home() {
       />
       <Layout1>
         <main>
-          <HeadArea />
-          {/* <Header /> */}
+          {/* <HeadArea /> */}
+          <Header />
+          <AllOverPakistan /> 
+          <PowerOfFive />
           <Educations />
-          <AboutArea />
-          <AllOverPakistan />
-          <CausesArea causes={cause} data={data} />
-          <SupportArea />
-          <ZakatInformationHub />
+          <GlobalGoals />
+          {/* <AboutArea /> */}
+          {/* <CausesArea causes={cause} data={data} />
+          <SupportArea />  */}
+          {/* <ZakatInformationHub /> */}
           <MonthlyPrograms />
-          <HelplineProject />
-          <WayToDonate />
+          {/* <HelplineProject /> */}
+          {/* <WayToDonate /> */}
           <NewsFeed />
           <BlogsSection />
         </main>

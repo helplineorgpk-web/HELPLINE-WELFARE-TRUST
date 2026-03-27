@@ -1,470 +1,831 @@
-import styles from "../../../public/css/Header.module.css";
-import React, { useState, useEffect } from "react";
+"use client";
+import React, { useState, useRef, useCallback, useMemo, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
 
-export const campaignsData = [
+const MIN_DONATION = 100;
 
-  // {
-  //   id: "flood-relief-project",
-  //   title: "Flood Relief Project",
-  //   href: "/flood-relief",
-  //   description:
-  //     "Providing relief to flood-affected families.",
-  //   image: "/img/Campaigns/Flood.jpg",
-  //   status: "upcoming",
-  // },
+const CAUSE_OPTIONS = [
   {
-    id: "school-masjid-project",
-    title: "School Masjid Project",
-    href: "/masjid",
-    description:
-      "Building integrated school and masjid facilities to uplift communities.",
-    image: "/img/Campaigns/MASJID.jpg",
-    details: {
-      goal: 1000000,
-      raised: 250000,
-      packages: [
-        {
-          name: "Basic Package",
-          price: 5000,
-          description: "Support with basic contribution",
-        },
-      ],
-      endDate: "2025-06-30",
-    },
-    status: "upcoming",
+    id: "Support A Student",
+    label: "Support A Student",
+    amounts: [
+      { value: "2200", label: "Monthly Per Student 2,200 PKR" },
+      { value: "24400", label: "Yearly Per Student 24,400 PKR" },
+    ],
   },
   {
-    id: "vocational-training-center",
-    title: "Vocational Training Center",
-    href: "/vocationalTrainingCenters",
-    description:
-      "Equip youth with technical skills for sustainable employment.",
-    image: "/img/Campaigns/Vocational.png",
-    details: {
-      goal: 1000000,
-      raised: 250000,
-      packages: [
-        {
-          name: "Basic Package",
-          price: 5000,
-          description: "Support with basic contribution",
-        },
-      ],
-      endDate: "2025-06-30",
-    },
-    status: "upcoming",
+    id: "Masjid Maktub",
+    label: "Masjid Maktub",
+    amounts: [
+      { value: "10000", label: "Donate For 1 Prayer Musalla 10,000 PKR" },
+      { value: "20000", label: "Donate For 2 Prayer Musalla 20,000 PKR" },
+    ],
   },
   {
-    id: "rashan-program",
-    title: "Rashan Program",
-    href: "/rashan",
-    description:
-      "Provide essential food supplies to struggling families across Pakistan.",
-    image: "/img/Campaigns/Grocery.png",
-    details: {
-      goal: 1000000,
-      raised: 250000,
-      packages: [
-        {
-          name: "Basic Package",
-          price: 5000,
-          description: "Support with basic contribution",
-        },
-      ],
-      endDate: "2025-06-30",
-    },
-    status: "upcoming",
+    id: "Rashan Package",
+    label: "Rashan Package",
+    amounts: [{ value: "6000", label: "Monthly Rashan Package 6,000 PKR" }],
   },
   {
-    id: "support-the-student",
-    title: "Support A Student",
-    href: "/student-support",
-    description:
-      "Sponsor students’ education, ensuring they don’t drop out due to financial constraints.",
-    image: "/img/Campaigns/student.png",
-    details: {
-      goal: 1000000,
-      raised: 250000,
-      packages: [
-        {
-          name: "Basic Package",
-          price: 5000,
-          description: "Support with basic contribution",
-        },
-      ],
-      endDate: "2025-06-30",
-    },
-    status: "upcoming",
+    id: "Vocational Training Center",
+    label: "Vocational Training Center",
+    amounts: [{ value: "1300000", label: "VTC Monthly PKR 1,300,000" }],
   },
 ];
 
-const sliderData = {
-  slider1: campaignsData.map((campaign) => ({
-    id: campaign.id,
-    News: "Campaigns Alert",
-    title: "Islamic Programs",
-    project: campaign.title,
-    content: campaign.description,
-    image1: campaign.image,
-    href: campaign.href,
-  })),
+const heroSlides = [
+  {
+    image: "/img/Campaigns/RamadanPackage2.jpg",
+    title: "RAMADAN FOOD PACKAGE",
+    subtitle: "Help us provide essential food supplies to families during the blessed month. Your donation ensures no family goes hungry.",
+    link: "/ramzanRashan",
+    heroTitleLine1: "HELPING PEOPLE",
+    heroTitleLine2: "HELP THEMSELVES",
+    heroSubtitle: "This Ramazan be the helping hand that transforms lives and spreads hope.",
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+  },
+  {
+    image: "/img/Campaigns/HelplineStudentSupport2.jpg",
+    title: "SUPPORT A STUDENT",
+    subtitle: "Sponsor students' education and help them build a brighter future. Education is the key to breaking the cycle of poverty.",
+    link: "/student-support",
+    heroTitleLine1: "EDUCATION",
+    heroTitleLine2: "OPENS DOORS",
+    heroSubtitle: "Sponsor a student and help children from underserved communities stay in school.",
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+  },
+  {
+    image: "/img/Campaigns/Vocational3.jpg",
+    title: "VOCATIONAL TRAINING",
+    subtitle: "Equip youth with technical skills for sustainable employment and self-reliance.",
+    link: "/vocationalTrainingCenters",
+    heroTitleLine1: "SKILLS THAT",
+    heroTitleLine2: "CHANGE LIVES",
+    heroSubtitle: "Equip youth with practical skills for employment and self-reliance.",
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+  },
+  {
+    image: "/img/Campaigns/MasjidMaktab2.jpg",
+    title: "SCHOOL MASJID PROJECT",
+    subtitle: "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
+    link: "/masjid",
+    heroTitleLine1: "BUILD",
+    heroTitleLine2: "TOGETHER",
+    heroSubtitle: "Support integrated school and masjid facilities to uplift communities.",
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+  },
+];
+
+function formatAmount(value) {
+  if (!value) return "";
+  return new Intl.NumberFormat("en-PK").format(value);
+}
+
+function parseAmount(value) {
+  return value.replace(/[^0-9]/g, "");
+}
+
+const defaultHeroStyle = {
+  titleHighlightColor: "#f15b43",
+  titleLine2Color: "#fff",
+  titleFontSize: "clamp(36px, 5vw, 56px)",
+  subtitleFontSize: "clamp(16px, 2vw, 20px)",
+  subtitleColor: "rgba(255,255,255,0.95)",
+  linePrimaryColor: "#f15b43",
+  lineSecondaryColor: "#65cabb",
+  titleLetterSpacing: "2px",
 };
 
-const idealProjects = [
-  {
-    id: 1,
-    title: "Al-Kitab Education System",
-    description: "Empowering every child with quality education, life skills, and the chance to thrive.",
-    image: "/img/causes/School-1-scaled.jpg",
-    image2:  "/img/causes/future.jpg",
-
-    stats: {
-      students: "8000+",
-      teachers: "400+",
-      classrooms: "200+",
-    },
-    slug: "al-kitab-school",
-  },
-];
-
-export default function Header() {
-  const [isPaused, setIsPaused] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [selectedCause, setSelectedCause] = useState("Support A Student");
+export default function Header({ slides: slidesProp }) {
+  const [selectedCause, setSelectedCause] = useState(CAUSE_OPTIONS[0].id);
   const [amount, setAmount] = useState("");
   const [showPaymentForm, setShowPaymentForm] = useState(false);
-  const router = useRouter();
+  const [validationError, setValidationError] = useState("");
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const amountInputRef = useRef(null);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    if (typeof window !== "undefined") {
-      handleResize();
-      window.addEventListener("resize", handleResize);
-    }
-
-    return () => {
-      if (typeof window !== "undefined") {
-        window.removeEventListener("resize", handleResize);
-      }
-    };
+    const mql = window.matchMedia("(max-width: 768px)");
+    const handle = () => setIsMobile(mql.matches);
+    handle();
+    mql.addEventListener("change", handle);
+    return () => mql.removeEventListener("change", handle);
   }, []);
 
-  const handleCauseChange = (event) => {
-    setSelectedCause(event.target.value);
-    setAmount("");
-  };
+  const slidesSource = slidesProp && slidesProp.length > 0 ? slidesProp : heroSlides;
 
-  const handleAmountSelect = (amount) => {
-    if (amount === "") {
-      setAmount("");
+  const currentCause = useMemo(
+    () => CAUSE_OPTIONS.find((c) => c.id === selectedCause),
+    [selectedCause]
+  );
+
+  const presetValues = useMemo(
+    () => currentCause?.amounts.map((a) => a.value) ?? [],
+    [currentCause]
+  );
+
+  const isPresetAmount = presetValues.includes(amount);
+  const isOtherAmount = amount !== "" && !isPresetAmount;
+
+  const memoizedSlides = useMemo(
+    () =>
+      slidesSource.map((slide, idx) => ({
+        ...slide,
+        heroTitleLine1: slide.heroTitleLine1 ?? slide.title ?? "HELPING PEOPLE",
+        heroTitleLine2: slide.heroTitleLine2 ?? "HELP THEMSELVES",
+        heroSubtitle: slide.heroSubtitle ?? slide.subtitle ?? "Your support transforms lives.",
+        heroStyle: { ...defaultHeroStyle, ...slide.heroStyle },
+        priority: idx === 0,
+        blurDataURL: slide.blurDataURL ?? "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==",
+      })),
+    [slidesSource]
+  );
+
+  const activeSlide = memoizedSlides[activeSlideIndex] ?? memoizedSlides[0];
+  const heroStyle = activeSlide?.heroStyle ?? defaultHeroStyle;
+
+  const onSlideChange = useCallback((swiper) => {
+    setActiveSlideIndex(swiper.realIndex);
+  }, []);
+
+  const swiperConfig = useMemo(
+    () => ({
+      modules: [Autoplay, EffectFade],
+      effect: "fade",
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      loop: true,
+      className: "hero-slider",
+      onSlideChange,
+    }),
+    [onSlideChange]
+  );
+
+  const causeSelectOptions = useMemo(
+    () =>
+      CAUSE_OPTIONS.map((opt) => (
+        <option key={opt.id} value={opt.id}>
+          {opt.label}
+        </option>
+      )),
+    []
+  );
+
+  const amountButtons = useMemo(
+    () =>
+      currentCause?.amounts.map((item) => ({
+        value: item.value,
+        label: item.label,
+      })) ?? [],
+    [currentCause]
+  );
+
+  const handleCauseChange = useCallback((e) => {
+    setSelectedCause(e.target.value);
+    setAmount("");
+    setValidationError("");
+  }, []);
+
+  const handlePresetSelect = useCallback((value) => {
+    setAmount(value);
+    setValidationError("");
+  }, []);
+
+  const handleOtherAmountClick = useCallback(() => {
+    setAmount("");
+    setValidationError("");
+    setTimeout(() => amountInputRef.current?.focus(), 0);
+  }, []);
+
+  const handleAmountInputChange = useCallback((e) => {
+    const raw = parseAmount(e.target.value);
+    setAmount(raw);
+    setValidationError("");
+  }, []);
+
+  const validateAndOpenPayment = useCallback(() => {
+    setValidationError("");
+    const num = parseInt(amount, 10);
+    if (!amount || isNaN(num)) {
+      setValidationError("Please select or enter a donation amount.");
       return;
     }
-    const numericAmount = amount.replace(/[^0-9]/g, "");
-    setAmount(numericAmount);
-  };
-
-  const handleDonateClick = () => {
-    console.log('Donate button clicked, opening modal');
+    if (num < MIN_DONATION) {
+      setValidationError(`Minimum donation is ${formatAmount(String(MIN_DONATION))} PKR.`);
+      return;
+    }
     setShowPaymentForm(true);
-    console.log('showPaymentForm set to:', true);
-  };
+  }, [amount]);
 
-  const handlePaymentInitiated = (paymentData) => {
-    console.log('Payment initiated:', paymentData);
-  };
-
-  const handlePaymentCompleted = (paymentData) => {
-    console.log('Payment completed:', paymentData);
-    setShowPaymentForm(false);
-  };
-
-  const handlePaymentFailed = (error) => {
-    console.error('Payment failed:', error);
-  };
-
-  const handleProjectLearnMore = (slug) => {
-    router.push(`/learn-more?project=${slug}`);
-  };
+  const closeModal = useCallback(() => setShowPaymentForm(false), []);
 
   return (
     <>
-      {/* Mobile Campaign Banner */}
-      {isMobile && (
-        <div className={styles.mobileCampaignBanner}>
-          <div className={styles.campaignTitle}>
-            <span className={styles.titleRed}>MAWAKHAT-E-MADINA</span>{" "}
-          </div>
-          <div className={styles.campaignImageContainer}>
-            <Swiper
-              direction="horizontal"
-              spaceBetween={0}
-              slidesPerView={1}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-              }}
-              loop={true}
-              pagination={{ clickable: true }}
-              modules={[Autoplay, Pagination]}
-              className={styles.mobileCampaignSwiper}
-            >
-              {campaignsData.map((campaign) => (
-                <SwiperSlide key={campaign.id}>
-                  <Link href={campaign.href}>
-                    <Image
-                      src={campaign.image}
-                      alt={campaign.title}
-                      width={400}
-                      height={300}
-                      className={styles.campaignBannerImage}
-                    />
-                  </Link>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-          <p className={styles.arabicText}>
-            ہمت رکھو ہم ساتھ کھڑے ہیں
-          </p>
-          <div className={styles.mobileCampaignButtons}>
-            <button 
-              type="button"
-              className={styles.mobileDonateButton}
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                handleDonateClick();
-              }}
-            >
-              Donate Now
-            </button>
-          </div>
-          <div className={styles.impactSection}>
-            <h3 className={styles.impactHeading}>Your Impact In 2024</h3>
-            <p className={styles.impactText}>
-              In 2024, amidst global hardships, Helpline Welfare Trust continues to create a lasting impact through your unwavering support and generosity.
-            </p>
-          </div>
-        </div>
-      )}
-
-      <div className={styles.mainContainer}>
-      <div className={styles.leftSection}>
-          <div className={styles.headerNewTag}>
-            <span className={styles.brand}>
-              HELPLINE <span className={styles.airo}>Pakistan</span>
-            </span>
-            <p className={styles.tagline}>
-             Working with The spirit of <br /> <span className={styles.airo2}>Mawakhat-e-Madina</span>.
-            </p>
-          </div>
-        <div className={styles.contentArea}>
-
-          <h1 className={styles.headline}>
-            Helpline <br />{" "}
-            <span className={styles.welfare} style={{ position: "relative" }}>
-              Welfare Trust
-              <span
-                style={{
-                  fontSize: "20px",
-                  position: "absolute",
-                  top: "0px",
-                  right: "-18px",
-                }}
-              >
-                ®
-              </span>
-            </span>
-          </h1>
-          <p className={styles.subtext}>
-            Charity isn’t just a task, it’s a sacred calling to serve humanity
-            with unwavering grace, deep humility, compassion, and true purpose.
-          </p>
-
-          <div style={{ marginBottom: "20px" }}>
-            <h6 style={{ color: "#f15b43", fontWeight: "bold" }}>
-              Core Values
-            </h6>
-            <p style={{ color: "#343434" }}>Sincerity, Service & Commitment</p>
-          </div>
-
-          <div className={styles.visionMissionContainer}>
-            <div className={styles.visionBox}>
-              <h6 className={styles.sectionHeading}>Vision</h6>
-              <p>
-                Building Islamic Welfare Society on the Golden Principles of
-                <span className={styles.airo1}>Mawakhat-e-Madina</span>
-              </p>
-            </div>
-            <div className={styles.missionBox}>
-              <h6 className={styles.sectionHeading}>Mission</h6>
-              <p>
-                Mobilize society to elevate the have-nots through religious,
-                modern education, and technical training.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.sliders}>
-          <div
-            className={styles.sideSlider}
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
-            <Swiper
-              direction="horizontal"
-              spaceBetween={30}
-              slidesPerView={1}
-              autoplay={
-                isPaused
-                  ? false
-                  : { delay: 6000, disableOnInteraction: false }
-              }
-              loop={true}
-              pagination={{ clickable: true }}
-              modules={[Autoplay, Pagination]}
-              className={styles.swiperContainer}
-            >
-              {sliderData.slider1.map((slide) => (
-                <SwiperSlide key={slide.id} className={styles.slideItem}>
-                  <h5 className={styles.news}>{slide.News}</h5>
-                  <div
-                    className={styles.card}
-                  >
-                    <div className={styles.imageCard}>
-                  
-                      <Image
-                        src={slide.image1}
-                        alt={slide.title}
-                        width={400}
-                        height={350}
-                        className={styles.cardImage}
-                      />
-                    </div>
-                    <div className={styles.slideButtons}>
-                      <button 
-                        className={styles.donate_now}
-                        onClick={handleDonateClick}
-                      >
-                        Donate Now
-                      </button>
-                      <Link
-                        href={slide.href}
-                        className={styles.campaign_details}
-                      >
-                        Campaign Details
-                      </Link>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.rightSection}>
-        {idealProjects.map((project) => (
-          <div key={project.id} className={styles.headerContainer}>
-            <div className={styles.projectContent}>
-              <span className={styles.newLabel}>NEW</span>
-              <p className={styles.smallHeading}>Ideal Projects</p>
-              <h2 className={styles.rightHeadline}>{project.title}</h2>
-              <p className={styles.projectDescription}>{project.description}</p>
-              <div className={styles.projectStats}>
-                <div className={styles.stat}>
-                  <span className={styles.statNumber}>
-                    {project.stats.students}
-                  </span>
-                  <span className={styles.statLabel}>Students</span>
-                </div>
-                <div className={styles.stat}>
-                  <span className={styles.statNumber}>
-                    {project.stats.teachers}
-                  </span>
-                  <span className={styles.statLabel}>Teachers</span>
-                </div>
-                <div className={styles.stat}>
-                  <span className={styles.statNumber}>
-                    {project.stats.classrooms}
-                  </span>
-                  <span className={styles.statLabel}>Classrooms</span>
-                </div>
-              </div>
-            </div>
-            <div className={styles.projectImage}>
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={300}
-                height={150}
-                className={styles.rightSectionImage}
-              />
-              <Image
-                src={project.image2}
-                alt={project.title}
-                width={300}
-                height={150}
-                className={styles.rightSectionImage}
-              />
-            </div>
-            <button
-              className={styles.btnWhite}
-              onClick={() => handleProjectLearnMore(project.slug)}
-            >
-              Learn More
-            </button>
-          </div>
-        ))}
-      </div>
-      </div>
-      
-      {/* Payment Modal - Outside mainContainer to ensure it's always accessible */}
-      {showPaymentForm && (
-        <div 
-          className={styles.paymentModal}
-          onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              setShowPaymentForm(false);
+      <style>{`
+        .hero-section {
+          position: relative;
+          width: 100%;
+          max-width: 100vw;
+          height: 100vh;
+          min-height: 100vh;
+          min-height: 100dvh;
+          min-height: -webkit-fill-available;
+          overflow: hidden;
+        }
+        .hero-slider {
+          width: 100%;
+          height: 100%;
+        }
+        .hero-slider .swiper-wrapper {
+          height: 100%;
+        }
+        .hero-slide {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          min-height: 100%;
+        }
+        .hero-slide-image {
+          object-fit: cover;
+          object-position: center;
+        }
+        .hero-overlay {
+          position: absolute;
+          inset: 0;
+          // background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%);
+          z-index: 1;
+        }
+        .hero-content {
+          position: absolute;
+          inset: 0;
+          z-index: 2;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 100px 60px 60px;
+          box-sizing: border-box;
+        }
+        .hero-text {
+          flex: 1;
+          max-width: 600px;
+          min-width: 0;
+        }
+        .hero-title {
+          font-size: clamp(36px, 5vw, 56px);
+          font-weight: 700;
+          color: #fff;
+          line-height: 1.2;
+          margin: 0 0 24px 0;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .hero-subtitle-wrap {
+          margin: 0 0 32px 0;
+          max-width: 520px;
+          padding: 20px 24px 20px 28px;
+          background: linear-gradient(135deg, rgba(0,0,0,0.55) 0%, rgba(38,59,93,0.6) 100%);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 12px;
+          border-left: 4px solid #f15b43;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        }
+        .hero-subtitle {
+          font-size: clamp(16px, 2vw, 20px);
+          font-weight: 500;
+          color: rgba(255,255,255,0.98);
+          line-height: 1.7;
+          margin: 0;
+          text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        }
+        .hero-line {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .hero-line-red {
+          width: 60px;
+          height: 4px;
+          background: #f15b43;
+        }
+        .hero-line-blue {
+          width: 40px;
+          height: 4px;
+          background: #65cabb;
+        }
+        .donate-card-wrapper {
+          position: relative;
+          z-index: 10;
+        }
+        .donate-card {
+          background: #fff;
+          border-radius: 16px;
+          padding: 32px;
+          width: 380px;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+          position: relative;
+          overflow: hidden;
+        }
+        .donate-card::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 5px;
+          background: linear-gradient(90deg, #f15b43 0%, #65cabb 50%, #f15b43 100%);
+          background-size: 200% 100%;
+          animation: gradientSlide 3s ease infinite;
+        }
+        @keyframes gradientSlide {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+        .donate-heading {
+          font-size: 28px;
+          font-weight: 700;
+          color: #263b5d;
+          margin: 0 0 6px 0;
+          text-align: center;
+        }
+        .donate-subheading {
+          font-size: 14px;
+          color: #888;
+          margin: 0 0 24px 0;
+          text-align: center;
+        }
+        .donate-select {
+          width: 100%;
+          padding: 14px 16px;
+          border: 1px solid #e0e0e0;
+          border-radius: 10px;
+          font-size: 15px;
+          color: #333;
+          background: #fff;
+          cursor: pointer;
+          margin-bottom: 16px;
+          appearance: none;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: right 16px center;
+        }
+        .amount-options {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 16px;
+        }
+        .amount-btn {
+          padding: 14px 16px;
+          border: 1px solid #f0e8e6;
+          border-left: 4px solid #f15b43;
+          border-radius: 8px;
+          background: #fff;
+          font-size: 14px;
+          color: #333;
+          cursor: pointer;
+          text-align: left;
+          transition: all 0.2s ease;
+        }
+        .amount-btn:hover {
+          background: #fef8f7;
+        }
+        .amount-btn.selected {
+          background: #f15b43;
+          color: #fff;
+          border-color: #f15b43;
+        }
+        .amount-input {
+          width: 100%;
+          padding: 14px 16px;
+          border: 1px solid #e0e0e0;
+          border-radius: 10px;
+          font-size: 15px;
+          color: #333;
+          margin-bottom: 16px;
+        }
+        .amount-input:focus {
+          outline: none;
+          border-color: #f15b43;
+        }
+        .donate-btn {
+          width: 100%;
+          padding: 16px;
+          background: #f15b43;
+          color: #fff;
+          border: none;
+          border-radius: 10px;
+          font-size: 16px;
+          font-weight: 700;
+          cursor: pointer;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: all 0.3s ease;
+        }
+        .donate-btn:hover {
+          background: #d94832;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(241,91,67,0.3);
+        }
+        .error-msg {
+          color: #e74c3c;
+          font-size: 13px;
+          margin-bottom: 12px;
+          text-align: center;
+        }
+        .payment-modal {
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.6);
+          z-index: 99999;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+        }
+        .payment-modal-content {
+          background: #fff;
+          border-radius: 16px;
+          max-width: 500px;
+          width: 100%;
+          max-height: 90vh;
+          overflow-y: auto;
+          position: relative;
+        }
+        .payment-modal-close {
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          background: none;
+          border: none;
+          font-size: 24px;
+          cursor: pointer;
+          color: #666;
+          z-index: 1;
+        }
+        @media (max-width: 1024px) {
+          .hero-content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 32px 48px;
+            gap: 32px;
+          }
+          .hero-text {
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .hero-title {
+            margin-bottom: 20px;
+            text-align: center;
+          }
+          .hero-subtitle-wrap {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 520px;
+            text-align: center;
+          }
+          .hero-subtitle {
+            text-align: center;
+          }
+          .hero-line {
+            justify-content: center;
+          }
+          .donate-card {
+            width: 100%;
+            max-width: 400px;
+          }
+        }
+        @media (max-width: 768px) {
+          .hero-section {
+            height: 100vh;
+            height: 100dvh;
+            min-height: 100vh;
+            min-height: 100dvh;
+            min-height: -webkit-fill-available;
+          }
+          .hero-slider,
+          .hero-slider .swiper-wrapper,
+          .hero-slide {
+            height: 100% !important;
+            min-height: 100% !important;
+          }
+          .hero-slide .hero-slide-image {
+            position: absolute !important;
+            inset: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+          }
+          .hero-content {
+            padding: 80px 20px 32px;
+            justify-content: center;
+            align-items: center;
+            text-align: center !important;
+            width: 100%;
+            max-width: 100%;
+            left: 0;
+            right: 0;
+          }
+          .hero-text {
+            text-align: center !important;
+            align-items: center;
+            width: 100%;
+            max-width: 100%;
+            flex: none;
+          }
+          .hero-title {
+            font-size: clamp(28px, 8vw, 42px);
+            margin: 0 0 16px 0;
+            letter-spacing: 1px;
+            line-height: 1.15;
+            text-align: center !important;
+            width: 100%;
+          }
+          .hero-subtitle-wrap {
+            margin: 0 auto 24px auto;
+            padding: 16px 18px 16px 22px;
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            text-align: center !important;
+          }
+          .hero-subtitle {
+            font-size: clamp(14px, 3.8vw, 17px);
+            line-height: 1.6;
+            text-align: center !important;
+          }
+          .hero-line {
+            justify-content: center;
+          }
+          .hero-line-red {
+            width: 48px;
+          }
+          .hero-line-blue {
+            width: 32px;
+          }
+          .donate-card {
+            padding: 24px;
+          }
+        }
+        @media (max-width: 480px) {
+          .hero-content {
+            padding: 70px 16px 28px;
+            text-align: center !important;
+            width: 100%;
+            max-width: 100%;
+          }
+          .hero-text {
+            text-align: center !important;
+            align-items: center;
+            width: 100%;
+            max-width: 100%;
+          }
+          .hero-title {
+            font-size: clamp(24px, 7vw, 32px);
+            margin: 0 0 12px 0;
+            letter-spacing: 0.5px;
+            text-align: center !important;
+            width: 100%;
+          }
+          .hero-subtitle-wrap {
+            padding: 14px 16px 14px 20px;
+            margin: 0 auto 20px auto;
+            border-left-width: 3px;
+            text-align: center !important;
+            width: 100%;
+          }
+          .hero-subtitle {
+            font-size: 14px;
+            line-height: 1.55;
+            text-align: center !important;
+          }
+          .hero-line {
+            gap: 6px;
+            justify-content: center;
+          }
+          .hero-line-red {
+            width: 40px;
+            height: 3px;
+          }
+          .hero-line-blue {
+            width: 28px;
+            height: 3px;
+          }
+        }
+        @media (max-width: 360px) {
+          .hero-content {
+            padding: 60px 12px 24px;
+            text-align: center;
+          }
+          .hero-title {
+            font-size: 22px;
+            text-align: center;
+          }
+          .hero-subtitle-wrap {
+            padding: 12px 14px 12px 18px;
+            text-align: center;
+          }
+          .hero-subtitle {
+            font-size: 13px;
+            text-align: center;
+          }
+        }
+        @media (max-width: 768px) {
+          @supports (padding: max(0px)) {
+            .hero-content {
+              padding-top: max(80px, calc(80px + env(safe-area-inset-top)));
+              padding-left: max(16px, env(safe-area-inset-left));
+              padding-right: max(16px, env(safe-area-inset-right));
+              padding-bottom: max(32px, env(safe-area-inset-bottom));
             }
-          }}
-        >
-          <div 
-            className={styles.paymentModalContent}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className={styles.paymentModalHeader}>
-              <h3>Make a Donation</h3>
-              <button 
-                type="button"
-                onClick={() => {
-                  console.log('Closing modal');
-                  setShowPaymentForm(false);
+          }
+        }
+        @media (max-width: 480px) {
+          @supports (padding: max(0px)) {
+            .hero-content {
+              padding-left: max(12px, env(safe-area-inset-left));
+              padding-right: max(12px, env(safe-area-inset-right));
+            }
+          }
+        }
+      `}</style>
+
+      <section className="hero-section">
+        <Swiper {...swiperConfig}>
+          {memoizedSlides.map((slide, idx) => (
+            <SwiperSlide key={slide.image} className="hero-slide">
+              <Image
+                src={slide.image}
+                alt={slide.title}
+                fill
+                priority={slide.priority}
+                loading={slide.priority ? "eager" : "lazy"}
+                placeholder="blur"
+                blurDataURL={slide.blurDataURL}
+                sizes="100vw"
+                quality={85}
+                className="hero-slide-image"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <div className="hero-overlay" />
+
+        <div className="hero-content" style={isMobile ? { textAlign: "center" } : undefined}>
+          <div className="hero-text" style={isMobile ? { textAlign: "center" } : undefined}>
+            <h1
+              className="hero-title"
+              style={{
+                letterSpacing: heroStyle.titleLetterSpacing,
+                fontSize: heroStyle.titleFontSize,
+                ...(isMobile && { textAlign: "center" }),
+              }}
+            >
+              <span style={{ color: heroStyle.titleHighlightColor }}>
+                {activeSlide?.heroTitleLine1 ?? "HELPING PEOPLE"}
+              </span>
+              <br />
+              <span style={{ color: heroStyle.titleLine2Color }}>
+                {activeSlide?.heroTitleLine2 ?? "HELP THEMSELVES"}
+              </span>
+            </h1>
+            <div
+              className="hero-subtitle-wrap"
+              style={{
+                borderLeftColor: heroStyle.titleHighlightColor ?? heroStyle.linePrimaryColor,
+                ...(isMobile && { textAlign: "center" }),
+              }}
+            >
+              <p
+                className="hero-subtitle"
+                style={{
+                  fontSize: heroStyle.subtitleFontSize,
+                  color: heroStyle.subtitleColor,
+                  ...(isMobile && { textAlign: "center" }),
                 }}
-                className={styles.closeButton}
               >
-                ×
+                {activeSlide?.heroSubtitle ??
+                  "This Ramazan be the helping hand that transforms lives and spreads hope."}
+              </p>
+            </div>
+            <div
+              className="hero-line"
+              style={isMobile ? { justifyContent: "center" } : undefined}
+            >
+              <div
+                className="hero-line-red"
+                style={{ background: heroStyle.linePrimaryColor }}
+              />
+              <div
+                className="hero-line-blue"
+                style={{ background: heroStyle.lineSecondaryColor }}
+              />
+            </div>
+          </div>
+
+          {/* <div className="donate-card-wrapper">
+            <div className="donate-card">
+              <h2 className="donate-heading">Make a Difference</h2>
+              <p className="donate-subheading">Your contribution changes lives</p>
+
+              <select
+                value={selectedCause}
+                onChange={handleCauseChange}
+                className="donate-select"
+              >
+                {causeSelectOptions}
+              </select>
+
+              <div className="amount-options">
+                {amountButtons.map((item) => (
+                  <button
+                    key={item.value}
+                    type="button"
+                    className={`amount-btn ${amount === item.value ? "selected" : ""}`}
+                    onClick={() => handlePresetSelect(item.value)}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+                <button
+                  type="button"
+                  className={`amount-btn ${isOtherAmount ? "selected" : ""}`}
+                  onClick={handleOtherAmountClick}
+                >
+                  Other Amount
+                </button>
+              </div>
+
+              <input
+                ref={amountInputRef}
+                type="text"
+                placeholder="Enter amount (PKR)"
+                value={amount ? formatAmount(amount) : ""}
+                onChange={handleAmountInputChange}
+                className="amount-input"
+              />
+
+              {validationError && <p className="error-msg">{validationError}</p>}
+
+              <button
+                type="button"
+                className="donate-btn"
+                onClick={validateAndOpenPayment}
+              >
+                DONATE
               </button>
             </div>
+          </div> */}
+        </div>
+      </section>
+
+      {showPaymentForm && (
+        <div className="payment-modal" onClick={(e) => e.target === e.currentTarget && closeModal()}>
+          <div className="payment-modal-content">
+            <button className="payment-modal-close" onClick={closeModal}>&times;</button>
             <UBLPaymentForm
-              donationAmount={amount ? parseFloat(amount) : 0}
-              donationType={selectedCause}
-              onPaymentInitiated={handlePaymentInitiated}
-              onPaymentCompleted={handlePaymentCompleted}
-              onPaymentFailed={handlePaymentFailed}
+              amount={parseInt(amount, 10)}
+              cause={selectedCause}
+              onPaymentInitiated={() => {}}
+              onPaymentCompleted={() => { setShowPaymentForm(false); setAmount(""); }}
+              onPaymentFailed={() => {}}
             />
           </div>
         </div>

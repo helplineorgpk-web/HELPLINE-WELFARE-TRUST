@@ -1,9 +1,14 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { blogsData } from "../../../data/blogsData";
+import { blogsListItems } from "../../../data/blogsData";
+
+function blogHref(blog) {
+  return `/blog/${blog.slug || blog.id}`;
+}
 
 export default function BlogsSection() {
-  const blogPosts = blogsData.slice(0, 3);
+  const blogPosts = blogsListItems.slice(0, 3);
 
   return (
     <>
@@ -112,8 +117,6 @@ export default function BlogsSection() {
         }
 
         .blog_image {
-          width: 100%;
-          height: 100%;
           object-fit: cover;
           transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -311,6 +314,20 @@ export default function BlogsSection() {
 
         /* Responsive Design */
         @media (max-width: 768px) {
+          .blogs_section_area.pt-120.pb-120 {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+          }
+          
+          .blogs_section_area .container {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          
+          .section_header.mb-60 {
+            margin-bottom: 2.5rem !important;
+          }
+          
           .section_title {
             font-size: 2.25rem;
           }
@@ -331,24 +348,74 @@ export default function BlogsSection() {
             font-size: 1.125rem;
           }
           
+          .blog_excerpt {
+            font-size: 0.8125rem;
+          }
+          
           .cta_button {
             padding: 0.875rem 1.75rem;
+          }
+          
+          .row.mt-60 .col-12 {
+            margin-top: 2.5rem !important;
           }
         }
 
         @media (max-width: 480px) {
+          .blogs_section_area.pt-120.pb-120 {
+            padding-top: 48px !important;
+            padding-bottom: 48px !important;
+          }
+          
+          .blogs_section_area .container {
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+          
           .section_header {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem !important;
           }
           
           .section_title {
             font-size: 1.875rem;
           }
           
+          .section_subtitle {
+            font-size: 0.9rem;
+          }
+          
+          .section_badge {
+            font-size: 0.75rem;
+            padding: 0.4rem 1rem;
+          }
+          
+          .blog_image_container {
+            height: 180px;
+          }
+          
           .blog_meta {
             flex-direction: column;
             align-items: flex-start;
             gap: 0.75rem;
+          }
+          
+          .card_content {
+            padding: 1.25rem;
+          }
+          
+          .blog_title {
+            font-size: 1rem;
+          }
+          
+          .cta_button {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+          }
+        }
+
+        @media (max-width: 360px) {
+          .section_title {
+            font-size: 1.6rem;
           }
         }
 
@@ -405,18 +472,22 @@ export default function BlogsSection() {
 
           {/* Blog Cards */}
           <div className="row g-4">
-            {blogPosts.map((blog) => (
+            {blogPosts.map((blog, index) => (
               <div
                 key={blog.id}
                 className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12"
               >
-                <Link href={`/blog/${blog.id}`} className="blog_card_link">
+                <Link href={blogHref(blog)} className="blog_card_link">
                   <article className="blog_card">
                     <div className="blog_image_container">
-                      <img
+                      <Image
                         src={blog.image}
                         alt={blog.title}
+                        fill
                         className="blog_image"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        priority={index === 0}
+                        quality={75}
                       />
                       <div className="image_overlay"></div>
                       <span className="category_badge" style={{ pointerEvents: 'none' }}>

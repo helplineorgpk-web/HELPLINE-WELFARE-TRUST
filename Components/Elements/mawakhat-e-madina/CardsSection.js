@@ -8,21 +8,21 @@ const CardsSection = () => {
       title: "Dar ul Tarbiyah",
       image: "/img/muwakhat/darultarbiyah.png",
       detail:
-        "Dar ul Tarbiyah is dedicated to providing quality education and character building for the youth.",
+        "A space connected with growth, learning, and character development. Focused on nurturing people in a supportive environment rooted in values and dignity.",
       link: "/darulTarbiyah",
     },
     {
       title: "Dar ul Ehsan",
       image: "/img/muwakhat/darulehsan.png",
       detail:
-        "Dar ul Ehsan serves as a center for spiritual guidance and community welfare.",
+        "A place of support, care, and service that reflects Helpline\u2019s commitment to community well-being and dignified assistance.",
       link: "/darulEhsan",
     },
     {
       title: "Sahoolat Center",
       image: "/img/muwakhat/SAHOLATCENTER.png",
       detail:
-        "Sahoolat Center provides essential support and resources to those in need within our community.",
+        "One of the clearest examples of organized community support. A place where people can access help, guidance, and essential support in a structured and respectful way.",
       link: "/sahoolatCenter",
     },
   ];

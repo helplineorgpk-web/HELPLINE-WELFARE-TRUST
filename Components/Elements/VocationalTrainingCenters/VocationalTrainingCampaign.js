@@ -15,13 +15,7 @@ export default function VocationalTrainingCampaign() {
 
       <div className={styles.descriptionContainer}>
         <p className={styles.description}>
-          A skilled person is many times better equipped than an unskilled one.
-          A good vocational training center can completely transform the life of
-          a person living in financially challenged circumstances. This program
-          has been designed to uplift the poor masses and empower them to
-          overcome their hardships. Providing such training is one of the best
-          forms of support that can be offered to a destitute individual under
-          the umbrella of{" "}
+          Helpline&apos;s vocational training work creates structured learning opportunities for people who need practical skills rather than academic pathways alone. These centres help participants gain the confidence and hands-on ability needed to begin earning or contributing to household income. Skill-building replaces uncertainty with ability and dependence with confidence, giving people a practical route toward income, dignity, and self-respect under the umbrella of{" "}
           <span style={{ fontWeight: "bold", color: "#f15b43" }}>
             MAWAKHAT-E-MADINA
           </span>
@@ -46,17 +40,14 @@ export default function VocationalTrainingCampaign() {
             <div className={styles.posterHeader}>
               <h2 className={styles.posterTitle}>Training Programs</h2>
               <p className={styles.posterDescription}>
-                We offer 6 months training in various technical fields to help
-                individuals gain valuable skills for employment and
-                entrepreneurship.
+                Workshop-based skills training designed around outcomes: better preparation, greater confidence, and stronger income potential for deserving individuals.
               </p>
             </div>
 
             <div className={styles.quoteContainer}>
               <div className={styles.quoteIcon}>"</div>
               <p className={styles.quoteText}>
-                Empowering individuals through skill development is the key to
-                creating sustainable livelihoods and stronger communities.
+                A trained person is more prepared. A skilled person has more choices. A family with income potential has more room to breathe.
               </p>
               <p className={styles.quoteReference}>
                 - Vocational Training Initiative

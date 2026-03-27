@@ -55,28 +55,28 @@ const SahoolatCenter = () => {
     {
       title: "Basic Necessities",
       description:
-        "Providing essential items including food, clothing, and basic household items to families in need.",
+        "A place where people can access help, guidance, and essential support in a structured and respectful way, covering food, clothing, and household essentials.",
       icon: <FaHandHoldingHeart size={40} />,
       color: "#FF6B6B",
     },
     {
       title: "Medical Assistance",
       description:
-        "Supporting healthcare needs through medical camps, medicine distribution, and health awareness programs.",
+        "Connecting families with healthcare support, medicine access, and organized medical help when professional care is needed most.",
       icon: <FaHandHoldingMedical size={40} />,
       color: "#4ECDC4",
     },
     {
       title: "Education Support",
       description:
-        "Offering educational assistance through scholarships, books, and learning materials.",
+        "Helping children continue their education through resource connection, guidance, and essential learning support for deserving families.",
       icon: <FaGraduationCap size={40} />,
       color: "#45B7D1",
     },
     {
       title: "Emergency Relief",
       description:
-        "Immediate assistance during crisis situations and natural disasters.",
+        "Organized and compassionate support during crisis situations, ensuring people receive timely assistance with dignity and care.",
       icon: <FaHandsHelping size={40} />,
       color: "#FFA07A",
     },
@@ -151,15 +151,13 @@ const SahoolatCenter = () => {
                   <span className={styles.gradientText}>Sahoolat</span> Center
                 </h1>
 
-                {/* Animated typing effect for subtitle */}
                 <motion.p
                   className={`lead mb-5 ${styles.heroSubtitle}`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.6, duration: 0.8 }}
                 >
-                  Empowering communities through comprehensive support and
-                  resources, ensuring dignity and hope for all.
+                  One of the clearest examples of organized community support, where people can access help, guidance, and essential support in a structured and respectful way.
                 </motion.p>
 
                 {/* CTA Buttons with animation */}
@@ -265,10 +263,7 @@ const SahoolatCenter = () => {
                   <span className={styles.underline}>Our Mission</span>
                 </h2>
                 <p className="lead mb-0" style={{ lineHeight: 1.7 }}>
-                  The Sahoolat Center is dedicated to providing comprehensive
-                  support and resources to those in need, ensuring dignity and
-                  respect while fostering community well-being and
-                  self-sufficiency.
+                  The Sahoolat Center brings together support, guidance, resource connection, and service delivery under one values-based umbrella. It is where compassion becomes organized action, ensuring people feel seen and families feel supported.
                 </p>
               </motion.div>
             </Col>
@@ -377,25 +372,24 @@ const SahoolatCenter = () => {
                   <span className={styles.underline}>Our Impact</span>
                 </h2>
                 <p className="mb-4">
-                  Through our dedicated efforts and the support of our
-                  community, we have made significant progress:
+                  The impact of this work is often relational as well as practical. People feel seen. Families feel supported. Communities experience service that is organized and compassionate rather than distant and impersonal.
                 </p>
                 <ul className={styles.impactList}>
                   <li>
                     <span className={styles.impactIcon}>✓</span>
-                    Assisted thousands of families with basic necessities
+                    5,000+ families helped with essential support and guidance
                   </li>
                   <li>
                     <span className={styles.impactIcon}>✓</span>
-                    Provided medical support to countless individuals
+                    1,200+ students supported through education assistance
                   </li>
                   <li>
                     <span className={styles.impactIcon}>✓</span>
-                    Supported education for underprivileged students
+                    200+ volunteers serving their communities with care
                   </li>
                   <li>
                     <span className={styles.impactIcon}>✓</span>
-                    Responded to numerous emergency situations
+                    50+ emergency responses delivered with urgency and dignity
                   </li>
                 </ul>
               </motion.div>
@@ -412,14 +406,13 @@ const SahoolatCenter = () => {
                 <div className="p-5">
                   <h3 className="mb-4 fw-bold">Get Involved</h3>
                   <p className="mb-4">
-                    Join us in our mission to serve the community. There are
-                    many ways to contribute and make a difference:
+                    Support can help sustain community-facing service spaces, improve support systems, connect families with the help they need, and strengthen programs built around dignity and brotherhood.
                   </p>
                   <ul className={`mb-4 ${styles.involvementList}`}>
-                    <li>Volunteer your time and skills</li>
-                    <li>Donate resources to support our programs</li>
-                    <li>Spread awareness about our initiatives</li>
-                    <li>Partner with us for greater impact</li>
+                    <li>Volunteer your time and skills for community service</li>
+                    <li>Donate resources to strengthen support programs</li>
+                    <li>Help connect families with guidance and assistance</li>
+                    <li>Partner with Helpline for lasting community impact</li>
                   </ul>
                   <div className="d-flex flex-wrap gap-3 mt-4">
                     <motion.div

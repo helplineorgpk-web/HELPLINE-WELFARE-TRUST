@@ -24,62 +24,38 @@ export const HelplineData = {
     { id: 6, icon: "🩹", title: "Medical Camps", amount: "PKR 70,000" },
   ],
   educationContent: {
-    title: "HELPLINE EDUCATION",
-    supportButtonText: "SUPPORTING APPEAL",
+    title: "Education that Opens Doors",
+    supportButtonText: "SUPPORT EDUCATION",
     headerBg: "img/causes/cause17.jpg",
     videoSrc: "https://www.youtube.com/embed/TZKNHw18OhM",
-    heading: "Helpline Education System",
+    heading: "Education for Children Who Need It Most",
     description: `
-      Being a developing country, Pakistan has suffered the most from
-      different turmoil and plunged further deep in the fields of
-      education and advancement. Approximately 25 million children are
-      illiterate and the rest mostly are being imparted directionless
-      education. Economical development, unless coupled with social
-      development, cannot achieve desired progress in society. Helpline
-      firmly believes that education is the most important means to
-      achieve economic as well as social development. It is, therefore,
-      actively engaged in providing quality education to underprivileged
-      children in remote areas of Punjab and Sindh. The Helpline is
-      running a system of 15 government schools along with 6 own schools
-      across the country benefiting about 6000 students. Free education,
-      daily lunch, Free Bags and free shoes are provided to the children in
-      these schools. Apart from this, Technical Education Centers have
-      been set up within the schools where women can learn sewing and
-      embroidery for free. The total annual cost of this helpline
-      educational project is Rs 54,697,938/-.
+      Education changes the direction of a child's life. It gives confidence, discipline, hope, and the ability to dream beyond present circumstances. Helpline Welfare Trust works to make education possible for children from low-income and underserved communities by supporting schools, students, and learning environments across Pakistan. Through the Al-Kitab education system and related support efforts, Helpline helps children continue their studies in safe and supportive learning environments. The work includes Helpline-operated schools, adopted schools, student support, orphan care, Quran education, and expansion projects that aim to serve even more children in the years ahead.
     `,
   },
   HelplineHealthData: {
-    title: "HELPLINE's HEALTH SERVICES",
-    supportButtonText: "SUPPORTING APPEAL",
+    title: "Healthcare & Clean Water",
+    supportButtonText: "SUPPORT HEALTHCARE",
     headerBg: "img/causes/karbathheader.png",
     videoSrc: "https://www.youtube.com/embed/G25BUguOoEc",
-    heading: "Helpline Health Projects",
+    heading: "Healthcare and Clean Water for Families Who Cannot Afford to Wait",
     description: `
-      Pakistan has been listed by the World Health Organization (WHO) as
-      one of 57 nations facing a severe shortage of health workers, and
-      the country ranks 122nd globally in terms of the quality of its
-      healthcare services. Tragically, Pakistan also has one of the
-      highest rates of infant mortality in the world.
+      Good health is not a luxury. It is a basic need that affects every part of life. Helpline Welfare Trust supports free medical services, medicine access, eye care, and water solutions that reduce illness and make daily life safer.
   
-      Helpline Social Welfare Foundation has established a nationwide
-      network to ensure that people, regardless of their socio-economic
-      status, have access to top-quality healthcare. This includes
-      numerous hospitals, clinics, dispensaries, diagnostic centres, and
-      blood banks, as well as mobile medical camps and ambulances.
-      Notably, the foundation has implemented successful initiatives in
-      remote and underdeveloped regions like Tharparkar in Sindh and
-      Quetta in Balochistan.
+      Over 2,000 water pumps installed across Pakistan, 1,000+ free cataract operations, and 3,000+ free medical care cases reflect the scale and commitment of this work.       Support healthcare and clean water to help Helpline deliver treatment, medicine, safe water, and life-changing care to families who need it most.
   
-      The foundation’s efforts have proven particularly beneficial
-      in underdeveloped areas like Tharparkar in Sindh and Quetta in
-      Balochistan. These regions, which have traditionally been deprived
-      of healthcare facilities, have benefited significantly from the
-      foundation’s healthcare initiatives. By ensuring that people in
-      remote and impoverished areas receive quality healthcare, the
-      foundation has made a significant contribution towards improving the
-      overall health of the nation and reducing the disparities between
-      different segments of society.
+
+    `,
+  },
+  HelplineLivelihoodData: {
+    title: "Skills, Training & Livelihoods",
+    supportButtonText: "SUPPORT LIVELIHOODS",
+    headerBg: "/img/causes/livelihood-header.jpg",
+    heading: "Skills That Help Families Stand on Their Own Feet",
+    description: `
+      Not every form of support should end with short-term relief. In many cases, the most meaningful help is the kind that equips a person to support themselves and their family with confidence. Helpline Welfare Trust supports practical skills, training opportunities, and livelihood pathways that help people earn with dignity and move toward self-reliance.
+
+      This focus area brings together vocational training, skill development, digital learning, and livelihood support. The purpose is simple: help deserving individuals, especially youth and women, develop useful skills that can improve their economic condition and strengthen their role within the family and community.
     `,
   },
   allOverPakistanStats: [
@@ -1669,7 +1645,6 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
         "Floods hit Pakistan; Abdul Akbar, Helpline provide economical housing solutions.",
       description:
         "Torrential rains and flooding have submerged a third of Pakistan and killed more than 1190 people, including 399 children creating an unprecedented climate catastrophe. Houses in the settlements situated near the Indus River have been swept away along with most of the crops. Overall 370 thousand houses were destroyed while 730 thousand more have been partially damaged.The Helpline has decided to provide shelter to the affected families before the forthcoming winters. An economical model house has been designed. The drawing and cost of this model house along with the estimated cost are being offered to kind-hearted people.",
-
       desc: "House Constructions For Flood Effectives In Rajanpur",
       color: "#f15b43",
     },
@@ -1683,7 +1658,6 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
         "Installation of Filtration Plants and Hand Pumps for the availability of Clean Water",
       description:
         "Helpline is dedicated to ensuring access to clean water in Balochistan, particularly in underserved areas like Khuzdar. Recognizing the urgent need for safe drinking water, the organization has implemented impactful projects to improve water availability for local communities. These initiatives include the installation of advanced water filtration plants, which provide purified water to hundreds of families daily, reducing the risk of waterborne diseases. In addition, Helpline has successfully installed numerous hand pumps in remote villages, empowering underprivileged families with easy access to clean water near their homes. These projects not only improve health and hygiene but also save time and effort for women and children who often travel long distances for water. Helpline remains committed to expanding these efforts.",
-
       desc: "CLEAN WATER PROJECT IN BALOCHISTAN",
       color: "#5fb35b",
     },
@@ -1696,8 +1670,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       detail:
         "Govt. Roru Goth School empowers students with quality education.",
       description:
-        "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school’s commitment to providing education to underprivileged students is highly commendable, and Helpline NGO’s support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school’s academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
-
+        "Govt. Roru Goth School, Alighar Education Complex (Gojra) is an exceptional institution that is supported by Helpline NGO. The school is committed to providing quality education to students who may not have the means to afford their fees. The students at the school are highly motivated and determined, despite facing financial difficulties. They are driven to succeed academically and are dedicated to their studies. The school's commitment to providing education to underprivileged students is highly commendable, and Helpline NGO's support has been essential in making this possible. By providing financial assistance, Helpline NGO is ensuring that these students have access to a supportive learning environment, with qualified and dedicated teachers. The school's academic programs are tailored to meet the unique needs of each student, ensuring that they receive a comprehensive education that prepares them for their future.",
       desc: "GPS Roru Goth School (Mirpurkhas).",
       adopted: "Adopted",
       color: "#f15b43",
@@ -2782,16 +2755,16 @@ May the Almighty bless you abundantly for your kindness.  `,
     },
   ],
   disasterContent: {
-    title: "HELPLINE DISASTER",
+    title: "Disaster Relief & Rehabilitation",
     headerBg: "img/causes/disasterbg.jpg",
-    supportButtonText: "SUPPORTING APPEAL",
+    supportButtonText: "SUPPORT RELIEF",
     videoSrc:
       "https://www.youtube.com/embed/uBu8B3Cf9fg?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fhelpline.org.pk&amp;widgetid=3",
     videoSrc2:
       "https://www.youtube.com/embed/A9OMSHZOiv0?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fhelpline.org.pk&amp;widgetid=1",
-    heading: "Helpline Disaster Management System",
+    heading: "From Emergency Response to Rebuilding Lives",
     description: `
-      Helpline NGO is committed to Disaster Management as one of its top priorities, given its nationwide presence and integrated network of volunteers across Pakistan. In the event of any sudden disaster anywhere in the country, the volunteers of Helpline NGO are always ready to provide immediate assistance and take part in relief activities. In addition, Helpline NGO has established specialized Disaster Management Cells throughout the country to ensure prompt rescue and relief services to deal with any unfortunate situation. These cells have been designated as independent departments at both the central and provincial levels, reflecting the importance that Helpline NGO places on Disaster Management.
+      When disaster strikes, families can lose safety, shelter, food, health, and stability almost overnight. Helpline Welfare Trust responds to disasters with urgent relief and longer-term rehabilitation so affected families are not left alone after the first wave of help has passed. The work covers immediate response when people are in danger, practical relief while hardship is acute, and rehabilitation support that helps families stand again. Be part of urgent relief and lasting recovery. Support Helpline's disaster response and rehabilitation work for families facing crisis across Pakistan.
     `,
     stats: [
       { label: "Ration Packages", value: "12,636" },
@@ -2819,14 +2792,14 @@ May the Almighty bless you abundantly for your kindness.  `,
     ],
   },
   familyWelfareContent: {
-    title: "HELPLINE FAMILY WELFARE",
+    title: "Social Welfare & Family Support",
     headerBg: "img/causes/familywelfare.jpeg",
-    supportButtonText: "SUPPORTING APPEAL",
+    supportButtonText: "SUPPORT FAMILIES",
     videoSrc:
       "https://www.youtube.com/embed/7p8vBnWjJes?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fhelpline.org.pk&amp;widgetid=3",
-    heading: "Family Welfare Management System",
+    heading: "Standing with Families Through Food Support, Essentials, and Everyday Care",
     description: `
-     Pakistan is facing multifarious social problems for years ranging from poverty to civic ignorance and lack of basic facilities of life. People face severe problems in terms of health, education, and the economy. The country stands at 152nd position in Human Development Index (HDI) and almost 51% of Pakistan’s population is deprived of basic necessities (health, education, etc.).” The best amongst you is the one who helps others.
+      Many families do not need sympathy alone. They need timely, practical help that gets them through the week, the month, or the season with dignity. A food package, essential household support, or a trusted welfare response can make the difference between stability and crisis for a widow, a daily wage worker, an elderly person, or a family already living under pressure. Support families with dignity. Help Helpline provide food, essentials, and practical welfare support to households facing hardship across Pakistan.
     `,
   },
   CleanWaterContent: {
@@ -3142,35 +3115,35 @@ Helpline have realized that providing access to technology and digital education
       id: 1,
       title: "Brain Scoop in Lahore",
       description:
-        "Brain Scoop, a Lahore-based IT company, specializes in software development, web design, and digital marketing. Supported by the Helpline NGO, it has expanded operations and enhanced client services. With a skilled team and innovative problem-solving, Brain Scoop is a trusted name in the regional tech industry.",
+        "A Lahore IT lab offering practical software, web, and digital skills training.",
       image: "/img/causes/itlab1.png",
     },
     {
       id: 2,
       title: "Brain Scoop in Islamabad",
       description:
-        "Brain Scoop, an Islamabad-based IT company, excels in software development, web design, and digital marketing. Backed by the Helpline NGO, it has expanded its operations to deliver innovative, high-quality solutions. Known for its skilled team and creative problem-solving, Brain Scoop is a trusted name in the regional tech industry.",
+        "Islamabad center focused on hands-on coding, design, and digital learning programs.",
       image: "/img/causes/itlab2.png",
     },
     {
       id: 3,
       title: "Brain Scoop in Bahalwapur",
       description:
-        "The Helpline NGO supports Brain Scoop with financial and technical resources, helping it improve technology, infrastructure, and talent. This enables the IT lab to handle larger projects and expand its reach while delivering top-quality solutions. With a skilled team and expertise in software development and web design, Brain Scoop is recognized as a trusted IT lab in the region.",
+        "Bahawalpur lab building tech skills through guided projects and modern IT tools.",
       image: "/img/causes/itlab3.png",
     },
     {
       id: 4,
       title: "Brain Scoop in Nawab Shah",
       description:
-        "Brain Scoop, known for its skilled team and expertise in software development and web design, is a trusted IT lab in the region. With support from the Helpline NGO, it not only delivers innovative solutions but also promotes IT education and training, nurturing local talent and creating opportunities for young people in technology.",
+        "Nawab Shah lab supports youth with practical software and web development training.",
       image: "/img/causes/itlab4.png",
     },
     {
       id: 5,
       title: "Brain Scoop in Tando Allah Yar",
       description:
-        "Brain Scoop has also been able to promote IT education and training in the community, helping to develop local talent and create new opportunities for young people in the field of technology. Overall, Brain Scoop’s commitment to excellence, combined with the support of the Helpline NGO, has made it a valuable asset to the community, providing high-quality IT solutions and helping to develop local talent in Tando Allah Yar.",
+        "Tando Allah Yar center prepares students for real-world IT careers and freelancing.",
       image: "/img/causes/itlab5.png",
     },
   ],
@@ -3244,14 +3217,14 @@ Helpline Welfare Trust is proud to be officially recognized by multiple esteemed
     },
   ],
   HelplineIslamicData: {
-    title: "Helpline Islamic Activity",
+    title: "Islamic Programs",
     headerBg: "img/causes/islam.png",
     videoSrc: "https://www.youtube.com/embed/1KuzgWg2m7o",
-    heading: "Helpline Islamic Activity",
+    heading: "Islamic Giving That Reaches People with Dignity and Care",
     description: `
-       Helpline promotes Islamic values through Quran distribution, educational programs, Ramadan iftar campaigns, and zakat collection. It supports mosque construction, organizes study circles, and provides aid to orphans and the needy. Key initiatives include Eid celebrations and sacrificial meat distribution, fostering hope and unity in the community.
+       For many donors, giving is not only a financial act. It is an act of faith, responsibility, and gratitude. Helpline Welfare Trust turns acts of worship and charity into organized support for families, students, and communities through Islamic programs rooted in service and compassion. These programs include Ramzan support, Qurbani distribution, Islamic activity, and masjid or maktab-related work. Make your giving count in this world and the next.
     `,
-    detailHeader: "Helpline Islamic Activity",
+    detailHeader: "Islamic Programs",
   },
   digiLabs: [
     {
@@ -3476,7 +3449,7 @@ Helpline Welfare Trust is proud to be officially recognized by multiple esteemed
       title: "Healthy food for everyone in a campaign.",
       author: "Admin",
       date: "24th June 2021",
-      link: "https://www.instagram.com/helplineorg/?utm_source=qr",
+      link: "https://www.instagram.com/helplinewelfaretrust/",
     },
     {
       id: 2,
@@ -3485,7 +3458,7 @@ Helpline Welfare Trust is proud to be officially recognized by multiple esteemed
       title: "Desired goods for all in a campaign.",
       author: "Admin",
       date: "24th June 2021",
-      link: "https://www.instagram.com/helplineorg/?utm_source=qr",
+      link: "https://www.instagram.com/helplinewelfaretrust/",
     },
     {
       id: 3,
@@ -3494,7 +3467,7 @@ Helpline Welfare Trust is proud to be officially recognized by multiple esteemed
       title: "Expected clothes for all in a campaign.",
       author: "Admin",
       date: "24th June 2021",
-      link: "https://www.instagram.com/helplineorg/?utm_source=qr",
+      link: "https://www.instagram.com/helplinewelfaretrust/",
     },
   ],
   formFields: [

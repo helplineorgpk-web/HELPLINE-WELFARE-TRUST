@@ -24,7 +24,7 @@ export default function MawakhatHeader() {
               <div className="breadcrumb_title">
                 <h2>Muwakhat-e-Madina</h2>
                 <p style={{ fontSize: "1.1rem", color: "#FC4C31" }}>
-                  Help The Needy: A Commitment
+                  A Model of Brotherhood, Dignity, and Shared Responsibility
                 </p>
               </div>
             </div>

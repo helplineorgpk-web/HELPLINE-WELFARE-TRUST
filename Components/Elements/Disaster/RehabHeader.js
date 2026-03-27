@@ -22,7 +22,7 @@ export default function RehabHeader() {
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h3 style={{ color: "white" }}>Disaster - Relief & Rehabilitation </h3>
+                <h3 style={{ color: "white" }}>From Emergency Response to Rebuilding Lives</h3>
               </div>
             </div>
           </div>

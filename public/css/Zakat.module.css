@@ -176,6 +176,185 @@
   color: white;
 }
 
+/* ---- Zakat Calculator ---- */
+
+.calcForm {
+  margin-top: 2rem;
+}
+
+.calcGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.calcField,
+.calcFieldDebt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.calcField label,
+.calcFieldDebt label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #263b5d;
+}
+
+.calcFieldDebt {
+  grid-column: 1 / -1;
+  max-width: 400px;
+}
+
+.calcFieldDebt label {
+  color: #c0392b;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(101, 202, 187, 0.35);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #fff;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.inputWrap:focus-within {
+  border-color: #65cabb;
+  box-shadow: 0 0 0 3px rgba(101, 202, 187, 0.15);
+}
+
+.currencyTag {
+  padding: 0.7rem 0.85rem;
+  background: linear-gradient(135deg, #f0faf8, #e8f4f1);
+  color: #263b5d;
+  font-weight: 700;
+  font-size: 0.85rem;
+  user-select: none;
+  border-right: 1px solid rgba(101, 202, 187, 0.2);
+}
+
+.inputWrap input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.7rem 0.85rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #34495e;
+  background: transparent;
+}
+
+.inputWrap input::placeholder {
+  color: #b0bec5;
+}
+
+.calcActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.calcBtn {
+  padding: 0.85rem 2.25rem;
+  background: linear-gradient(135deg, #65cabb, #4a90e2);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(101, 202, 187, 0.4);
+  font-family: "Poppins", sans-serif;
+}
+
+.calcBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(101, 202, 187, 0.5);
+}
+
+.calcBtnReset {
+  padding: 0.85rem 2.25rem;
+  background: transparent;
+  color: #65cabb;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid #65cabb;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.calcBtnReset:hover {
+  background: rgba(101, 202, 187, 0.08);
+  transform: translateY(-2px);
+}
+
+.calcResult {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(101, 202, 187, 0.1),
+    rgba(74, 144, 226, 0.06)
+  );
+  border-radius: 1.25rem;
+  border: 1px solid rgba(101, 202, 187, 0.25);
+}
+
+.calcResult h3 {
+  color: #263b5d;
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.resultItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(101, 202, 187, 0.15);
+}
+
+.resultItem span {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+.resultItem strong {
+  font-size: 1.15rem;
+  color: #263b5d;
+}
+
+.resultZakat {
+  background: linear-gradient(135deg, #65cabb, #4a90e2);
+  border: none;
+}
+
+.resultZakat span {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.resultZakat strong {
+  color: #fff;
+  font-size: 1.35rem;
+}
+
 @media (max-width: 768px) {
   .content {
     padding: 2rem 1rem;
@@ -192,5 +371,27 @@
 
   .infoCard {
     padding: 1.5rem;
+  }
+
+  .calcGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .calcFieldDebt {
+    max-width: 100%;
+  }
+
+  .calcActions {
+    flex-direction: column;
+  }
+
+  .calcBtn,
+  .calcBtnReset {
+    width: 100%;
+    text-align: center;
+  }
+
+  .resultGrid {
+    grid-template-columns: 1fr;
   }
 }
