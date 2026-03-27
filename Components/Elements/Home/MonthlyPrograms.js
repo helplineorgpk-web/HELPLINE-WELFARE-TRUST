@@ -85,7 +85,69 @@ const styles = {
 
 export default function MonthlyPrograms() {
   return (
-    <section style={styles.section} className="monthly-programs-area">
+    <section style={styles.section} className="monthly-programs-area monthly-programs-section">
+      <style>{`
+        .monthly-programs-section .container {
+          max-width: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+          .monthly-programs-section {
+            padding: 50px 16px 60px !important;
+          }
+          .monthly-programs-section .container {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          .monthly-programs-section .sub_title {
+            font-size: 0.9rem;
+          }
+          .monthly-programs-section h2.mt-2 {
+            font-size: 1.6rem !important;
+          }
+          .monthly-programs-section .monthly-program-card {
+            margin-bottom: 0;
+          }
+          .monthly-programs-section .monthly-program-card > div:first-of-type {
+            height: 160px !important;
+          }
+          .monthly-programs-section .monthly-program-card > div:last-of-type {
+            padding: 18px !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .monthly-programs-section {
+            padding: 40px 12px 50px !important;
+          }
+          .monthly-programs-section .container {
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+          .monthly-programs-section h2.mt-2 {
+            font-size: 1.4rem !important;
+          }
+          .monthly-programs-section .row.mb-4 p {
+            font-size: 0.9rem !important;
+            margin-bottom: 2rem !important;
+          }
+          .monthly-programs-section .monthly-program-card > div:first-of-type {
+            height: 140px !important;
+          }
+          .monthly-programs-section .monthly-program-card > div:last-of-type {
+            padding: 16px !important;
+          }
+          .monthly-programs-section .monthly-program-card h3 {
+            font-size: 1.1rem !important;
+          }
+          .monthly-programs-section .monthly-program-card p {
+            font-size: 0.875rem !important;
+          }
+        }
+      `}</style>
       <div className="container">
         <div className="row mb-4">
           <div className="col-12">

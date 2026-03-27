@@ -1,14 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import SideBarMobile from "./SideBarMobile";
-import SideBarFullscreen from "./SideBarFullscreen";
-import Header2 from "./Header2";
+import Header1 from "./Header1";
 import Footer1 from "./Footer1";
 
 export default function Layout2({ children }) {
-  const [isToggledInfo, setToggledInfo] = useState(false);
-  const toggleTrueFalseInfo = () => setToggledInfo(!isToggledInfo);
-
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -18,22 +13,7 @@ export default function Layout2({ children }) {
 
   return (
     <>
-      <Header2 toggleTrueFalseInfo={toggleTrueFalseInfo} />
-
-      <SideBarMobile
-        toggleTrueFalseInfo={toggleTrueFalseInfo}
-        isToggledInfo={isToggledInfo}
-      />
-
-      <SideBarFullscreen
-        toggleTrueFalseInfo={toggleTrueFalseInfo}
-        isToggledInfo={isToggledInfo}
-      />
-
-      <div
-        onClick={toggleTrueFalseInfo}
-        className={`offcanvas-overlay ${isToggledInfo ? "overlay-open" : ""}`}
-      ></div>
+      <Header1 />
 
       {/* back to top Start  */}
       <a

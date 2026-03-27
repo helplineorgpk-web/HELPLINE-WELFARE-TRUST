@@ -80,7 +80,9 @@ export default function App({ Component, pageProps }) {
         }}
       />
 
-      <Component {...pageProps} />
+      <div suppressHydrationWarning>
+        <Component {...pageProps} />
+      </div>
 
       <WhatsAppButton />
       <ChatBot />

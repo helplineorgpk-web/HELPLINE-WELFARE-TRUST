@@ -22,9 +22,9 @@ export default function DarulEhsanHeader() {
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h2>Muwakhat-e-Madina</h2>
+                <h2>Dar ul Ehsan</h2>
                 <p style={{ fontSize: "1.1rem", color: "#FC4C31" }}>
-                  Help The Needy: A Commitment
+                  Support, Care, and Community Well-being
                 </p>
               </div>
             </div>

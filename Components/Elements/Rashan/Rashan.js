@@ -11,20 +11,13 @@ export default function Rashan() {
           <div className="container">
             <div className={styles.row}>
               <div className={styles.colmd6}>
-                <h2 className={styles.sectiontitle}>Rashan Program</h2>
+                <h2 className={styles.sectiontitle}>Monthly Rashan Support</h2>
                 <div className={styles.line}></div>
                 <p>
-                  As per latest survay, 45% of Pakistan's population living
-                  bellow the poverty line. The most effected segment of our
-                  society is those women and children who have extremly megar
-                  income and our unable to have basic food.Helpline has develope
-                  a comprihensive program, augmented by a strong varification
-                  process to support such Families by avoiding them basic food.
+                  Many families do not need sympathy alone. They need timely, practical help that gets them through the week, the month, or the season with dignity. A food package or essential household support can make the difference between stability and crisis for a widow, a daily wage worker, an elderly person, or a family already living under pressure.
                 </p>
                 <p>
-                  Helpline, with the help of our worthy doners, has been
-                  distributing rashan packages in all the provinces of Pakistan since 1992. The packages include
-                  Atta, Ghee, Rice, Sugar, Daal, and tea. 
+                  Monthly food support helps deserving families who struggle to meet regular household needs. This kind of support is especially important for single mothers, low-income households, the elderly, and families dealing with ongoing financial pressure. Helpline has been distributing rashan packages across all provinces of Pakistan, including Atta, Ghee, Rice, Sugar, Daal, and tea.
                 </p>
               </div>
 

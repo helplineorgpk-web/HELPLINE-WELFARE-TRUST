@@ -28,7 +28,7 @@ export default function QurbaniHeader() {
                     fontWeight: "bold",
                   }}
                 >
-                  Qurbani Program
+                  Qurbani Distribution
                 </p>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Layout2 from "../Components/Layout/Layout2";
-import RashanHeader from "../Components/Elements/Rashan/RashanHeader";
+import SocialCapitalHeader from "../Components/Elements/SocialCapital/SocialCapitalHeader";
 import Rashan from "../Components/Elements/Rashan/Rashan";
 import RashanDistributionJourney from "../Components/Elements/Rashan/RashanDistributionJourney";
 import RashanDistributionArea from "../Components/Elements/Rashan/RashanDistributionArea";
@@ -8,15 +8,9 @@ import RashanCampaign from "../Components/Elements/Rashan/RashanCampaign";
 // import RashanGallery from "../Components/Elements/Rashan/RashanGallery";
 
 export default function Images() {
-  const img = "/img/causes/cause24.jpg";
-
   return (
     <Layout2>
-      <RashanHeader
-        background={img}
-        Detail={"Rashan"}
-        datainfo={"Rashan Program"}
-      />
+      <SocialCapitalHeader layout="donation" />
       <Rashan />
       <RashanCampaign />
       <RashanDistributionJourney />

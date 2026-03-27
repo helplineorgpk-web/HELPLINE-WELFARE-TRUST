@@ -1,28 +1,121 @@
 .mainContainer {
   display: flex;
   gap: 2rem;
-  padding: 1rem;
-  max-width: 1600px;
+  padding: 2rem 3rem;
+  max-width: 1400px;
   margin: 0 auto;
   margin-top: 10rem;
+  margin-bottom: 3rem;
+  min-height: 650px;
 }
 
 .leftSection {
-  flex: 1.5;
-  background: url("/img/bg/istockphoto-1369931137-612x612.jpg") no-repeat center
-    center/cover;
-  background-color: #65cabb;
-  border-radius: 1rem;
-  padding: 3rem;
+  flex: 1.4;
+  border-radius: 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
+  min-height: 600px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.campaignSliderWrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.campaignSwiper {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  border-radius: 1.5rem;
+}
+
+.campaignSlide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+}
+
+
+.campaignLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.campaignImage {
+  object-fit: cover;
+  border-radius: 1.5rem;
+  transition: transform 0.5s ease;
+}
+
+.campaignSlide:hover .campaignImage {
+  transform: scale(1.05);
+}
+
+.campaignOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 2.5rem;
+  z-index: 2;
+  color: white;
+}
+
+.campaignSlideTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.5px;
+}
+
+.campaignDescription {
+  font-size: 0.95rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  max-width: 85%;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.donateHeader {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.campaignSwiper .swiper-pagination {
+  bottom: 25px !important;
+  z-index: 3;
+}
+
+.campaignSwiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  transition: all 0.3s ease;
+}
+
+.campaignSwiper .swiper-pagination-bullet-active {
+  background: #f15b43;
+  width: 30px;
+  border-radius: 6px;
 }
 
 .rightSection {
-  flex: 1;
-  max-width: 420px;
+  flex: 0.8;
+  max-width: 400px;
+  display: flex;
+  align-items: stretch;
 }
 
 .headerContainer {
@@ -34,6 +127,10 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 100%;
+}
+
+.rightSection .donateCard {
   height: 100%;
 }
 .contentArea{
@@ -640,9 +737,35 @@ justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-  .leftSection {
-    padding: 1.5rem 1rem;
+  .mainContainer {
     flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+
+  .leftSection {
+    min-height: 350px;
+    border-radius: 1rem;
+  }
+
+  .campaignSwiper,
+  .campaignSlide {
+    min-height: 350px;
+    border-radius: 1rem;
+  }
+
+  .campaignOverlay {
+    padding: 1.25rem;
+  }
+
+  .campaignSlideTitle {
+    font-size: 1.25rem;
+  }
+
+  .campaignDescription {
+    font-size: 0.85rem;
+    max-width: 100%;
   }
 
   .rightSection {
@@ -650,49 +773,23 @@ justify-content: space-between;
     max-width: 100%;
   }
 
-  .headerNewTag {
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.3rem;
-    width: 100%;
-    margin-bottom: 1rem;
+  .donateCard {
+    padding: 1.5rem;
+    border-radius: 1rem;
   }
 
-  .brand {
-    font-size: 0.9rem;
+  .donateHeading {
+    font-size: 1.35rem;
   }
 
-  .contentArea {
-    margin-top: 1rem;
-  }
-
-  .headline {
-    font-size: 1.8rem;
-    max-width: 100%;
-  }
-
-  .tagline {
-    font-size: 0.75rem;
-    line-height: 1.3;
-  }
-
-  .airo2 {
-    font-size: 1.2rem;
-    display: block;
-    margin-top: 0.2rem;
-    margin-left: 0;
-  }
-
-  .airo1 {
+  .detailCard {
+    padding: 0.875rem 1rem;
     font-size: 0.85rem;
-    display: inline-block;
   }
 
-  .subtext {
-    font-size: 0.9rem;
-    max-width: 100%;
-    line-height: 1.4;
+  .donateButton {
+    padding: 0.875rem;
+    font-size: 1rem;
   }
 
   .visionBox,
@@ -1001,4 +1098,227 @@ justify-content: space-between;
 .swiperContainer .swiper-pagination-bullet-active {
   background: #f15b43;
   opacity: 1;
+}
+
+/* ====== DONATE CARD STYLES ====== */
+.donateCard {
+  width: 100%;
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(241, 91, 67, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.donateCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f15b43, #65cabb, #f15b43);
+  background-size: 200% 100%;
+  animation: gradientSlide 3s ease infinite;
+}
+
+@keyframes gradientSlide {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.donateHeading {
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.donateSubheading {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.donateSelect {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e8e8e8;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23f15b43' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+.donateSelect:focus {
+  outline: none;
+  border-color: #f15b43;
+  box-shadow: 0 0 0 3px rgba(241, 91, 67, 0.1);
+}
+
+.donationDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.detailCard {
+  background: linear-gradient(135deg, #fff9f8 0%, #fff 100%);
+  border: 2px solid #fde8e5;
+  border-left: 4px solid #f15b43;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  color: #2c3e50;
+  box-shadow: 0 2px 8px rgba(241, 91, 67, 0.08);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.detailCard:hover {
+  transform: translateX(4px);
+  border-left-width: 6px;
+  box-shadow: 0 4px 12px rgba(241, 91, 67, 0.15);
+  background: linear-gradient(135deg, #fff5f3 0%, #fff 100%);
+}
+
+.detailCard.selectedCard {
+  background: linear-gradient(135deg, #f15b43 0%, #e04a32 100%);
+  color: white;
+  border-color: #e04a32;
+  border-left-color: #c73a24;
+  box-shadow: 0 4px 15px rgba(241, 91, 67, 0.35);
+  transform: translateX(4px);
+}
+
+.donateInput {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid #e8e8e8;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: 600;
+  color: #2c3e50;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.donateInput::placeholder {
+  color: #bdc3c7;
+  font-weight: 400;
+}
+
+.donateInput:focus {
+  outline: none;
+  border-color: #f15b43;
+  box-shadow: 0 0 0 4px rgba(241, 91, 67, 0.1);
+}
+
+.donateButton {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f15b43 0%, #e04a32 100%);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.75rem;
+  box-shadow: 0 4px 15px rgba(241, 91, 67, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.donateButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.donateButton:hover {
+  background: linear-gradient(135deg, #65cabb 0%, #4db8a9 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(101, 202, 187, 0.4);
+}
+
+.donateButton:hover::before {
+  left: 100%;
+}
+
+.donateButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(241, 91, 67, 0.3);
+}
+
+.validationError {
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: #c0392b;
+  background: #fdedec;
+  border-radius: 0.5rem;
+  border-left: 3px solid #e74c3c;
+}
+
+.sr_only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .donateCard {
+    max-width: 100%;
+    padding: 1.25rem;
+  }
+
+  .donateHeading {
+    font-size: 1.5rem;
+  }
+
+  .detailCard {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.9rem;
+  }
 }

@@ -9,7 +9,11 @@ export default function CauseDetails() {
   const router = useRouter();
   const { id } = router.query;
 
-  const allCauses = [...HelplineData.causes];
+  const allCauses = [
+    ...(HelplineData.causes || []),
+    ...(HelplineData.ownSchools || []),
+    ...(HelplineData.adoptedSchools || []),
+  ];
   const cause = allCauses.find((item) => item.id === parseInt(id));
 
   if (!cause) {

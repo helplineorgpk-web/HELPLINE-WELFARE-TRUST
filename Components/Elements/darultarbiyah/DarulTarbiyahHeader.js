@@ -22,9 +22,9 @@ export default function DarulTarbiyahHeader() {
                 </li>
               </ul>
               <div className="breadcrumb_title">
-                <h2>Muwakhat-e-Madina</h2>
+                <h2>Dar ul Tarbiyah</h2>
                 <p style={{ fontSize: "1.1rem", color: "#FC4C31" }}>
-                  Help The Needy: A Commitment
+                  Growth, Learning, and Character Development
                 </p>
               </div>
             </div>

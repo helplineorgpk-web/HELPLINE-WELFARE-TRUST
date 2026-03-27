@@ -14,20 +14,7 @@ export default function MasjidMaktab() {
 
       <div className={styles.descriptionContainer}>
         <p className={styles.description}>
-          Masjid is supposed to play a pivotal role in any muslim community. But
-          unfortunately it has lost its place as a community Hub. Most of the
-          masjids in pakistan, represent some sect where people from other sects
-          are not welcomed with open heart. Therefore it has lost its
-          significance as central place rather number of masjids in the same
-          location have divided the community. Therefore, the call of the day is
-          to revive the role of masjid on lines of Masjid e Nabvi (SAW). Concept
-          of Masjid school is driven from this need. Helpline has established
-          primary schools in the masjid basement in Al Kitab School, Rana Town.
-          Association of younger children will gradually be developed with
-          masjid from 4-5 years of age. This school besides teaching regular
-          syllabus, will focus on TARBIAT of students as per Sirat e Nabvi
-          (SAW). Besides, this masjid will be developed as COMMUNITY HUB for
-          addressing Social and other issues of dependent population.
+          Masjid and Maktab support helps strengthen community worship and religious learning. When this work is linked to education spaces such as Al-Kitab, it supports both spiritual development and community connection. Helpline has established primary schools in the masjid basement, where association of younger children is gradually developed with the masjid. This school, besides teaching the regular syllabus, focuses on Tarbiyat of students. The masjid serves as a community hub for addressing social and other needs of the dependent population.
         </p>
         <div className={styles.arabicCalligraphy}>
           <span>مَسْجِدٌ أُسِّسَ عَلَى التَّقْوَىٰ</span>

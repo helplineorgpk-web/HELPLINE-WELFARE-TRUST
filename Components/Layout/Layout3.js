@@ -1,13 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Footer3 from "./Footer3";
-import Header3 from "./Header3";
-import SideBarMobile from "./SideBarMobile";
+import Footer1 from "./Footer1";
+import Header1 from "./Header1";
 
 export default function Layout3({ children }) {
-  const [isToggledInfo, setToggledInfo] = useState(false);
-  const toggleTrueFalseInfo = () => setToggledInfo(!isToggledInfo);
-
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -17,20 +13,7 @@ export default function Layout3({ children }) {
 
   return (
     <>
-      <Header3
-        toggleTrueFalseInfo={toggleTrueFalseInfo}
-        isToggledInfo={isToggledInfo}
-      />
-
-      <SideBarMobile
-        toggleTrueFalseInfo={toggleTrueFalseInfo}
-        isToggledInfo={isToggledInfo}
-      />
-
-      <div
-        onClick={toggleTrueFalseInfo}
-        className={`offcanvas-overlay d-lg-none ${isToggledInfo ? "overlay-open" : ""}`}
-      ></div>
+      <Header1 />
 
       {/* back to top Start  */}
       <a
@@ -50,7 +33,7 @@ export default function Layout3({ children }) {
 
       {children}
 
-      <Footer3 />
+      <Footer1 />
     </>
   );
 }

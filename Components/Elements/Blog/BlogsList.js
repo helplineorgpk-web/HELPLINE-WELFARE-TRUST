@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useMemo } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { blogsData } from "../../../data/blogsData";
+import { blogsListItems } from "../../../data/blogsData";
+
+function blogHref(blog) {
+  return `/blog/${blog.slug || blog.id}`;
+}
 
 export default function BlogsList() {
+  const popularPosts = useMemo(
+    () =>
+      [...blogsListItems]
+        .sort((a, b) => (b.views || 0) - (a.views || 0))
+        .slice(0, 5),
+    []
+  );
+  const tagKeywords = useMemo(
+    () =>
+      blogsListItems[0]?.keywords
+        ?.split(", ")
+        .slice(0, 12) ?? [],
+    []
+  );
   return (
     <>
       <style jsx>{`
@@ -44,14 +63,12 @@ export default function BlogsList() {
           height: 240px;
         }
 
-        .blog_image_wrap img {
-          width: 100%;
-          height: 100%;
+        .blog_image_wrap .blog_card_image {
           object-fit: cover;
           transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .blog_card_modern:hover .blog_image_wrap img {
+        .blog_card_modern:hover .blog_image_wrap .blog_card_image {
           transform: scale(1.1);
         }
 
@@ -352,25 +369,29 @@ export default function BlogsList() {
           <div className="row">
             <div className="col-xxl-8 col-xl-8 col-lg-7">
               <div className="blogs_grid">
-                {blogsData.map((blog) => (
+                {blogsListItems.map((blog, index) => (
                   <Link
                     key={blog.id}
-                    href={`/blog/${blog.id}`}
+                    href={blogHref(blog)}
                     style={{ textDecoration: "none", display: "block" }}
                   >
                     <article className="blog_card_modern">
                       <div className="blog_image_wrap">
-                        <img src={blog.image} alt={blog.title} />
+                        <Image
+                          src={blog.image}
+                          alt={blog.title}
+                          fill
+                          className="blog_card_image"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          priority={index < 2}
+                          quality={75}
+                        />
                         <span className="category_badge_modern">
                           {blog.category}
                         </span>
                       </div>
                       <div className="blog_card_body">
-                        <h3 className="blog_title_modern">
-                          <Link href={`/blog/${blog.id}`}>
-                            {blog.title}
-                          </Link>
-                        </h3>
+                        <h3 className="blog_title_modern">{blog.title}</h3>
                         <p className="blog_excerpt_modern">{blog.excerpt}</p>
                         <div className="blog_meta_modern">
                           <div className="meta_info">
@@ -383,9 +404,9 @@ export default function BlogsList() {
                               {blog.date}
                             </span>
                           </div>
-                          <Link href={`/blog/${blog.id}`} className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn read_more_btn">
+                          <span className="g_btn hbtn_1 to_right1 rad-30 nav-donate-btn read_more_btn">
                             Read More<span></span>
-                          </Link>
+                          </span>
                         </div>
                       </div>
                     </article>
@@ -411,18 +432,20 @@ export default function BlogsList() {
 
                 <div className="sidebar_widget_modern">
                   <h4 className="widget_title">Popular Posts</h4>
-                  {blogsData.map((blog) => (
+                  {popularPosts.map((blog) => (
                     <div key={blog.id} className="popular_post">
-                      <img
+                      <Image
                         src={blog.image}
                         alt={blog.title}
+                        width={80}
+                        height={80}
                         className="popular_post_img"
+                        sizes="80px"
+                        quality={65}
                       />
                       <div className="popular_post_content">
                         <h5 className="popular_post_title">
-                          <Link href={`/blog/${blog.id}`}>
-                            {blog.title}
-                          </Link>
+                          <Link href={blogHref(blog)}>{blog.title}</Link>
                         </h5>
                         <div className="popular_post_date">
                           <i className="fal fa-calendar-alt"></i> {blog.date}
@@ -450,18 +473,15 @@ export default function BlogsList() {
                 <div className="sidebar_widget_modern">
                   <h4 className="widget_title">Tags</h4>
                   <div className="tags_cloud">
-                    {blogsData[0]?.keywords
-                      ?.split(", ")
-                      .slice(0, 12)
-                      .map((keyword, index) => (
-                        <Link
-                          key={index}
-                          href={`/blogs?search=${keyword}`}
-                          className="tag_item"
-                        >
-                          {keyword}
-                        </Link>
-                      ))}
+                    {tagKeywords.map((keyword, index) => (
+                      <Link
+                        key={index}
+                        href={`/blogs?search=${encodeURIComponent(keyword)}`}
+                        className="tag_item"
+                      >
+                        {keyword}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>

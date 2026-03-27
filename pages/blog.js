@@ -1,12 +1,16 @@
 import React from "react";
-import BlogBreadCrumb from "../Components/Elements/Blog/BlogBreadCrumb";
+import AboutBreadCumb from "../Components/Elements/About/AboutBreadCumb";
 import BlogCauseDetails from "../Components/Elements/Blog/BlogCauseDetails";
 import Layout2 from "../Components/Layout/Layout2";
 
 export default function Blog() {
   return (
     <Layout2>
-      <BlogBreadCrumb />
+      <AboutBreadCumb
+        title="Blog"
+        description="News, stories from the field, program highlights, and updates on how Helpline Welfare Trust is serving communities across Pakistan."
+        backgroundImage="/img/Campaigns/Blog.jpg"
+      />
       <BlogCauseDetails />
     </Layout2>
   );

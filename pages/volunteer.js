@@ -1,16 +1,17 @@
 import React from "react";
+import AboutBreadCumb from "../Components/Elements/About/AboutBreadCumb";
 import Layout2 from "../Components/Layout/Layout2";
-import VolunteerAbout from "../Components/Elements/Volunteer/VolunteerAbout";
-import VolunteerBreadCrumb from "../Components/Elements/Volunteer/VolunteerBreadCrumb";
-import NewsFeed from "../Components/Elements/Home/NewsFeed";
-import JoinAsVolunteer from "../pages/joinAsVolunteer";
+import VolunteerPageSection from "../Components/Elements/Volunteer/VolunteerPageSection";
 
 export default function volunteer() {
   return (
     <Layout2>
-      <VolunteerBreadCrumb />
-      <JoinAsVolunteer />
-      <VolunteerAbout />
+      <AboutBreadCumb
+        title="Volunteer"
+        description="Join our volunteer network and help transform lives through education, healthcare, and community support initiatives across Pakistan."
+        backgroundImage="/img/Campaigns/Volounteer.jpg"
+      />
+      <VolunteerPageSection />
     </Layout2>
   );
 }

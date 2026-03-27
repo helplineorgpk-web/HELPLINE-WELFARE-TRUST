@@ -6,7 +6,11 @@ import AboutJourney from "../Components/Elements/About/AboutJourney";
 export default function ourjourney() {
   return (
     <Layout2>
-      <AboutBreadCumb content={"Our Journey"} />
+      <AboutBreadCumb
+        title="Our Journey"
+        description="Explore Helpline's journey of impact, growth, and community transformation across the years."
+        backgroundImage="/img/Campaigns/OurJoureney.jpg"
+      />
       <AboutJourney />
     </Layout2>
   );

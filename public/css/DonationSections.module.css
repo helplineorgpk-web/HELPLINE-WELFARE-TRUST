@@ -1,0 +1,216 @@
+/* Shared section styles - solid white background */
+.section {
+  background: #ffffff;
+  padding: 80px 24px 100px;
+}
+
+.sectionTitle {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.sectionTitleUnderline {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #65cabb;
+  margin: 0.75rem auto 1.5rem;
+}
+
+.sectionIntro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+/* Expense Ratios */
+.expenseLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.donutWrap {
+  flex-shrink: 0;
+  position: relative;
+  width: 220px;
+  height: 220px;
+}
+
+.legendList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  min-width: 280px;
+}
+
+.legendItem {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+  align-items: flex-start;
+}
+
+.legendSwatch {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.legendContent h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.35rem 0;
+}
+
+.legendContent p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #555;
+  margin: 0;
+}
+
+/* Where does your money go */
+.moneyGoesIntro {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #444;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+}
+
+.programGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.programCard {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.programIconWrap {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  border: 2px solid #65cabb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0522d;
+}
+
+.programIconWrap svg {
+  width: 40px;
+  height: 40px;
+}
+
+.programCard h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+}
+
+.programCard p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #555;
+  margin: 0;
+}
+
+.programCardLast {
+  grid-column: 2;
+}
+
+@media (max-width: 768px) {
+  .programGrid {
+    grid-template-columns: 1fr;
+  }
+  .programCardLast {
+    grid-column: 1;
+  }
+}
+
+/* FAQ */
+.faqInner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqList {
+  border-top: 1px solid #e5e5e5;
+}
+
+.faqItem {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.faqQuestion:hover {
+  color: #333;
+}
+
+.faqIcon {
+  flex-shrink: 0;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  color: #666;
+  line-height: 1;
+}
+
+.faqAnswer {
+  padding: 0 0 1.25rem 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.faqAnswer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 56px 20px 72px;
+  }
+  .expenseLayout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

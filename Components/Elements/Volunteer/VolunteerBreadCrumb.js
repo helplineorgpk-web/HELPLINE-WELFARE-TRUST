@@ -16,7 +16,7 @@ export default function VolunteerBreadCrumb() {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <span className="active">Team</span>
+                  <span className="active">Volunteer</span>
                 </li>
               </ul>
               <div className="breadcrumb_title">

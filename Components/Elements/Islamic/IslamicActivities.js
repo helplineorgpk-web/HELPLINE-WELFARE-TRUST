@@ -10,10 +10,9 @@ const IslamicActivities = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1>Islamic Activities</h1>
+        <h1>Islamic Programs</h1>
         <p>
-          Learn about essential Islamic activities and understand their
-          significance in faith.
+          Helpline Welfare Trust turns acts of worship and charity into organized support for families, students, and communities through Islamic programs rooted in service and compassion. Whether a donor gives during Ramzan, contributes to Qurbani, or supports Islamic learning spaces, the outcome is practical support delivered with care.
         </p>
       </div>
       <div className={styles.buttonWrapper}>

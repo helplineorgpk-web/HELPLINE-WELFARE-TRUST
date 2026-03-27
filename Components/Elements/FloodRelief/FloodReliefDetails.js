@@ -38,16 +38,12 @@ function FloodReliefDetails() {
     <section className="container">
       <section className={styles.floodReliefDetails}>
         <div className="container">
-          <h3>Flood Relief Program Impact</h3>
+          <h3>Disaster Relief &amp; Rehabilitation Impact</h3>
           <p>
-            Helpline Pakistan has been providing immediate relief to flood-affected families 
-            across Pakistan. In {selectedYear}, we supported{" "}
+            When disaster strikes, families can lose safety, shelter, food, health, and stability almost overnight. Helpline Welfare Trust responds with urgent relief and longer-term rehabilitation. In {selectedYear}, we supported{" "}
             {floodReliefData[selectedYear]?.data.find((r) => r.province === "Total")
               ?.families || ""}{" "}
-            families with emergency relief packages including food supplies, clean water, 
-            medical aid, temporary shelter, and essential household items. Our relief efforts 
-            span across all provinces, ensuring no affected family is left behind during 
-            these challenging times.
+            families with emergency relief packages including food, tents, clean water, medicines, and other essentials needed for survival and safety. In times of disaster, fast help saves lives, and committed recovery support helps communities begin again.
           </p>
         </div>
       </section>

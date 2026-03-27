@@ -9,12 +9,10 @@ export default function RamzanRashanInfo() {
           <div className="container">
             <div className={styles.row}>
               <div className={styles.colmd6}>
-                <h2 className={styles.sectiontitle}>Ramzan Rashan Program</h2>
+                <h2 className={styles.sectiontitle}>Ramzan Rashan Support</h2>
                 <div className={styles.line}></div>
                 <p>
-                  Helpline distributs every year a wide range of rashan among
-                  the needy families and individuals during the Specially blessed month of Ramzan. 
-      
+                  During Ramzan, the burden on poor families often increases. Helpline&apos;s Ramzan Rashan work helps deserving households observe the holy month with greater stability and dignity by providing food packages and essential supplies. This is one of the most impactful ways donors can support families during a sacred time.
                 </p>
               </div>
               <div className={styles.colmd6}>
@@ -33,12 +31,9 @@ export default function RamzanRashanInfo() {
 
       <section className={styles.rashandetails}>
         <div className="container">
-          <h3>Ramzan Rashan Program in Provinces</h3>
+          <h3>Ramzan Support Across Pakistan</h3>
           <p>
-            During the holy month of Ramzan, Pak Helpline distributed thousands of Ramzan Rashan
-            packages among the needy families and individuals. The packages include Atta, Ghee, 
-            Rice, Sugar, Daal, Dates, and other essential items. The program covers different 
-            areas of Pakistan including Punjab, Sindh, Baluchistan, KPK, and Kashmir.
+            Ramzan is a month of worship, mercy, and generosity, but it can also be a difficult time for poor households trying to manage food and daily expenses. Helpline distributes thousands of Ramzan Rashan packages across Pakistan including Punjab, Sindh, Balochistan, KPK, and Kashmir. Each package includes Atta, Ghee, Rice, Sugar, Daal, Dates, and other essential items to help families observe the month with peace and dignity.
           </p>
         </div>
       </section>
