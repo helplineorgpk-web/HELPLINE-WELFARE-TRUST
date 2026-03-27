@@ -1,10 +1,9 @@
 "use client";
 import React, { useState, useRef, useCallback, useMemo, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/effect-fade";
 import Image from "next/image";
 import Link from "next/link";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
@@ -178,10 +177,14 @@ export default function Header({ slides: slidesProp }) {
 
   const swiperConfig = useMemo(
     () => ({
-      modules: [Autoplay, EffectFade],
-      effect: "fade",
-      autoplay: { delay: 5000, disableOnInteraction: false },
+      modules: [Autoplay],
+      // Use transform-based horizontal sliding for better GPU acceleration.
+      speed: 900,
+      autoplay: { delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: true },
       loop: true,
+      slidesPerView: 1,
+      watchSlidesProgress: true,
+      resistanceRatio: 0.85,
       className: "hero-slider",
       onSlideChange,
     }),
@@ -271,10 +274,18 @@ export default function Header({ slides: slidesProp }) {
           width: 100%;
           height: 100%;
           min-height: 100%;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          transform: translate3d(0, 0, 0);
+          will-change: transform;
         }
         .hero-slide-image {
           object-fit: cover;
           object-position: center;
+          will-change: transform;
+          transform: translateZ(0);
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
         }
         .hero-overlay {
           position: absolute;
@@ -688,7 +699,7 @@ export default function Header({ slides: slidesProp }) {
 
       <section className="hero-section">
         <Swiper {...swiperConfig}>
-          {memoizedSlides.map((slide, idx) => (
+          {memoizedSlides.map((slide) => (
             <SwiperSlide key={slide.image} className="hero-slide">
               <Image
                 src={slide.image}
@@ -696,10 +707,12 @@ export default function Header({ slides: slidesProp }) {
                 fill
                 priority={slide.priority}
                 loading={slide.priority ? "eager" : "lazy"}
+                fetchPriority={slide.priority ? "high" : "low"}
                 placeholder="blur"
                 blurDataURL={slide.blurDataURL}
                 sizes="100vw"
-                quality={85}
+                quality={75}
+                decoding="async"
                 className="hero-slide-image"
               />
             </SwiperSlide>
