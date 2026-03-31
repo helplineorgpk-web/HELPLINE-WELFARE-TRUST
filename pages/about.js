@@ -11,7 +11,7 @@ import FounderMessage from "../Components/Elements/About/FounderMessage.js";
 export default function About() {
   return (
     <Layout2>
-      <AboutBreadCumb title="About Us" backgroundImage="/img/Campaigns/About.jpg" />
+      <AboutBreadCumb title="About Us" backgroundImage="/img/Campaigns/About.webp" />
       <OurIntro />
       <FounderMessage />
       <ChairmanMessage />

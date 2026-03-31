@@ -33,7 +33,7 @@ export default function SustainableEnvironmentWash() {
       <div className="sustainable-environment-page">
         <SocialCapitalHeader
           layout="donation"
-          image="/img/Campaigns/Environment.jpg"
+          image="/img/Campaigns/Environment.webp"
           donationTitle="Support Sustainable Environment"
           donationSubtitle="Help families with water, hygiene, and health support"
           donationCauses={WASH_DONATION_CAUSES}

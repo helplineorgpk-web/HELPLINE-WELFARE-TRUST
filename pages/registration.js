@@ -9,7 +9,7 @@ export default function registration() {
       <AboutBreadCumb
         title="Registration"
         description="Complete your registration to connect with Helpline programs and opportunities."
-        backgroundImage="/img/Campaigns/Registration.jpg"
+        backgroundImage="/img/Campaigns/Registration.webp"
       />
       <Registeration content={HelplineData.HelplineregistrationData.pdf} />
     </Layout2>

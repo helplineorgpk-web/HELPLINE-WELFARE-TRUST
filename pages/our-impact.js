@@ -59,7 +59,7 @@ export default function OurImpactPage() {
       <AboutBreadCumb
         title="Our Impact"
         description="These key stats reflect our commitment to empowering communities across Pakistan. Each number tells a story of hope, growth, and lasting impact created through your support."
-        backgroundImage="/img/Campaigns/About.jpg"
+        backgroundImage="/img/Campaigns/About.webp"
       />
       <RealChangeSection />
       <ImpactStatsSection

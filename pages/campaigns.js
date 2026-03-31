@@ -18,7 +18,7 @@ const campaignsData = [
     href: "/ramzanRashan",
     description:
       "Provide essential food items to families during the blessed month of Ramadan. Help us ensure no family goes hungry.",
-    image: "/img/Campaigns/RamadanPackage2.jpg",
+    image: "/img/Campaigns/RamadanPackage2.webp",
     details: {
       goal: 2000000,
       raised: 850000,
@@ -66,7 +66,7 @@ const campaignsData = [
     href: "/student-support",
     description:
       "Sponsor students' education, ensuring they don't drop out due to financial constraints.",
-    image: "/img/Campaigns/HelplineStudentSupport2.jpg",
+    image: "/img/Campaigns/HelplineStudentSupport2.webp",
     details: {
       goal: 1000000,
       raised: 450000,
@@ -92,7 +92,7 @@ const campaignsData = [
     href: "/vocationalTrainingCenters",
     description:
       "Equip youth with technical skills for sustainable employment and self-reliance.",
-    image: "/img/Campaigns/Vocational3.jpg",
+    image: "/img/Campaigns/Vocational3.webp",
     details: {
       goal: 1200000,
       raised: 380000,
@@ -113,7 +113,7 @@ const campaignsData = [
     href: "/masjid",
     description:
       "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
-    image: "/img/Campaigns/MasjidMaktab2.jpg",
+    image: "/img/Campaigns/MasjidMaktab2.webp",
     details: {
       goal: 2500000,
       raised: 750000,
@@ -281,11 +281,14 @@ export default function Campaigns() {
         </div>
 
         <Row className="g-4 g-lg-5">
-          {campaignsData.map((campaign) => {
+          {campaignsData.map((campaign, index) => {
             const presets = getPresetAmounts(campaign);
             const amount = getAmount(campaign.id);
             const detailHref = campaign.href || `/campaign/${campaign.id}`;
             const showDonationError = donationErrorId === campaign.id;
+            const isCampaignWebp = campaign.image.startsWith("/img/Campaigns/") && campaign.image.endsWith(".webp");
+            const isPriorityImage = isCampaignWebp || campaign.featured || index < 2;
+            const isEagerImage = isCampaignWebp || index < 4;
 
             return (
               <Col key={campaign.id} lg={6} md={6} sm={12} className="mb-4 mb-lg-5">
@@ -295,8 +298,10 @@ export default function Campaigns() {
                       src={campaign.image}
                       alt={campaign.title}
                       fill
-                      priority={campaign.featured}
-                      quality={90}
+                      priority={isPriorityImage}
+                      loading={isEagerImage ? "eager" : "lazy"}
+                      fetchPriority={isPriorityImage ? "high" : "auto"}
+                      quality={75}
                       sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
                       className={styles.image}
                     />

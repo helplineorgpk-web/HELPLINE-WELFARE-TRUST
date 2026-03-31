@@ -17,7 +17,7 @@ export default function health() {
     <Layout2>
       <HealthHeader
         content={HelplineData.HelplineHealthData}
-        image="/img/Campaigns/Medical.jpg"
+        image="/img/Campaigns/Medical.webp"
       />
       <HealthCommunityLed />
       <HealthWomenChildren />

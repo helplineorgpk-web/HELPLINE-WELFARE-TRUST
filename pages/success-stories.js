@@ -10,7 +10,7 @@ export default function SuccessStoriesPage() {
       <AboutBreadCumb
         title="Success Stories"
         description="Our success stories highlight the impact of our programs and the lives transformed through our work."
-        backgroundImage="/img/Campaigns/About.jpg"
+        backgroundImage="/img/Campaigns/About.webp"
       />
       <FeaturedStoryCard />
       <MoreSuccessStories />

@@ -9,7 +9,7 @@ export default function volunteer() {
       <AboutBreadCumb
         title="Volunteer"
         description="Join our volunteer network and help transform lives through education, healthcare, and community support initiatives across Pakistan."
-        backgroundImage="/img/Campaigns/Volounteer.jpg"
+        backgroundImage="/img/Campaigns/Volounteer.webp"
       />
       <VolunteerPageSection />
     </Layout2>

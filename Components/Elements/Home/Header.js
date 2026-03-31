@@ -41,7 +41,7 @@ const CAUSE_OPTIONS = [
 
 const heroSlides = [
   {
-    image: "/img/Campaigns/RamadanPackage2.jpg",
+    image: "/img/Campaigns/RamadanPackage2.webp",
     title: "RAMADAN FOOD PACKAGE",
     subtitle: "Help us provide essential food supplies to families during the blessed month. Your donation ensures no family goes hungry.",
     link: "/ramzanRashan",
@@ -56,7 +56,7 @@ const heroSlides = [
     },
   },
   {
-    image: "/img/Campaigns/HelplineStudentSupport2.jpg",
+    image: "/img/Campaigns/HelplineStudentSupport2.webp",
     title: "SUPPORT A STUDENT",
     subtitle: "Sponsor students' education and help them build a brighter future. Education is the key to breaking the cycle of poverty.",
     link: "/student-support",
@@ -71,7 +71,7 @@ const heroSlides = [
     },
   },
   {
-    image: "/img/Campaigns/Vocational3.jpg",
+    image: "/img/Campaigns/Vocational3.webp",
     title: "VOCATIONAL TRAINING",
     subtitle: "Equip youth with technical skills for sustainable employment and self-reliance.",
     link: "/vocationalTrainingCenters",
@@ -86,7 +86,7 @@ const heroSlides = [
     },
   },
   {
-    image: "/img/Campaigns/MasjidMaktab2.jpg",
+    image: "/img/Campaigns/MasjidMaktab2.webp",
     title: "SCHOOL MASJID PROJECT",
     subtitle: "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
     link: "/masjid",
@@ -162,7 +162,7 @@ export default function Header({ slides: slidesProp }) {
         heroTitleLine2: slide.heroTitleLine2 ?? "HELP THEMSELVES",
         heroSubtitle: slide.heroSubtitle ?? slide.subtitle ?? "Your support transforms lives.",
         heroStyle: { ...defaultHeroStyle, ...slide.heroStyle },
-        priority: idx === 0,
+        priority: true,
         blurDataURL: slide.blurDataURL ?? "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==",
       })),
     [slidesSource]
@@ -707,7 +707,7 @@ export default function Header({ slides: slidesProp }) {
                 fill
                 priority={slide.priority}
                 loading={slide.priority ? "eager" : "lazy"}
-                fetchPriority={slide.priority ? "high" : "low"}
+                fetchPriority={slide.priority ? "high" : "auto"}
                 placeholder="blur"
                 blurDataURL={slide.blurDataURL}
                 sizes="100vw"

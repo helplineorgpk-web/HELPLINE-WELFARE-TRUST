@@ -1,7 +1,7 @@
 export const blogsData = [
   {
     id: 9,
-    image: "/img/Campaigns/RamadanPackage2.jpg",
+    image: "/img/Campaigns/RamadanPackage2.webp",
     category: "Ramadan",
     title: "The Importance of Ramadan Giving",
     excerpt: "Discover why giving during Ramadan holds such profound spiritual and social significance. Learn how charity in the holy month multiplies blessings, strengthens communities, and helps organizations like Helpline Welfare Trust provide food, education, and hope to those in need.",

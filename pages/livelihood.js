@@ -32,7 +32,7 @@ export default function livelihood() {
   return (
     <Layout2>
       <LivelihoodHeader
-        image="/img/Campaigns/Food.jpg"
+        image="/img/Campaigns/Food.webp"
       />
       <LivelihoodStats />
       <LivelihoodContent />

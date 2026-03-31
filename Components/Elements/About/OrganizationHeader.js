@@ -8,7 +8,7 @@ const HERO_BLUR =
 export default function OrganizationHeader({
   title = "Our Leadership",
   description = "Meet the dedicated leadership team guiding Helpline's mission with vision, service, and accountability.",
-  backgroundImage = "/img/Campaigns/Organization.jpg",
+  backgroundImage = "/img/Campaigns/Organization.webp",
 }) {
   const heroImage = useMemo(
     () => ({
@@ -26,10 +26,13 @@ export default function OrganizationHeader({
           alt={heroImage.alt}
           fill
           priority
+          loading="eager"
+          fetchPriority="high"
           placeholder="blur"
           blurDataURL={HERO_BLUR}
           sizes="100vw"
-          quality={78}
+          quality={75}
+          decoding="async"
           className={styles.heroBgImage}
         />
       </div>
