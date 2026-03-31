@@ -22,7 +22,7 @@ const EDUCATION_CAUSE_OPTIONS = [
   },
 ];
 
-const HERO_IMAGE = "/img/Campaigns/Education.jpg";
+const HERO_IMAGE = "/img/Campaigns/Education.webp";
 const HERO_BLUR =
   "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==";
 
@@ -338,10 +338,13 @@ export default function EducationHeader() {
             alt="Al-Kitab Education System"
             fill
             priority
+            loading="eager"
+            fetchPriority="high"
             placeholder="blur"
             blurDataURL={HERO_BLUR}
             sizes="100vw"
-            quality={85}
+            quality={75}
+            decoding="async"
             className="edu-hero-slide-image"
           />
         </div>

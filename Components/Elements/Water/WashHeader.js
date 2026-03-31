@@ -138,14 +138,17 @@ export default function WashHeader() {
       <section className="wash-hero-section">
         <div className="wash-hero-image-wrap">
           <Image
-            src="/img/Campaigns/Environment.jpg"
+            src="/img/Campaigns/Environment.webp"
             alt="Sustainable Environment & WASH"
             fill
             priority
+            loading="eager"
+            fetchPriority="high"
             placeholder="blur"
             blurDataURL={HERO_BLUR}
             sizes="100vw"
-            quality={85}
+            quality={75}
+            decoding="async"
             className="wash-hero-slide-image"
           />
         </div>

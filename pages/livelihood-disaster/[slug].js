@@ -38,7 +38,7 @@ export default function LivelihoodDisasterDetailPage({ detail }) {
         <title>{pageTitle}</title>
         <meta name="description" content={detail.description} />
       </Head>
-      <LivelihoodHeader image="/img/Campaigns/Food.jpg" />
+      <LivelihoodHeader image="/img/Campaigns/Food.webp" />
 
       <section className={styles.section}>
         <div className={styles.container}>
@@ -91,13 +91,22 @@ export default function LivelihoodDisasterDetailPage({ detail }) {
             <>
               <h2 className={styles.sectionHeading}>In the field</h2>
               <div className={styles.galleryGrid}>
-                {gallery.map((item) => (
+                {gallery.map((item) => {
+                  const isCampaignWebp =
+                    item.src.startsWith("/img/Campaigns/") &&
+                    item.src.endsWith(".webp");
+                  return (
                   <figure key={item.src} className={styles.galleryCard}>
                     <div className={styles.galleryImageWrap}>
                       <Image
                         src={item.src}
                         alt={item.caption || detail.title}
                         fill
+                        priority={isCampaignWebp}
+                        loading={isCampaignWebp ? "eager" : "lazy"}
+                        fetchPriority={isCampaignWebp ? "high" : "auto"}
+                        quality={75}
+                        decoding="async"
                         className={styles.galleryImage}
                         sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
@@ -108,7 +117,8 @@ export default function LivelihoodDisasterDetailPage({ detail }) {
                       </figcaption>
                     ) : null}
                   </figure>
-                ))}
+                  );
+                })}
               </div>
             </>
           ) : null}

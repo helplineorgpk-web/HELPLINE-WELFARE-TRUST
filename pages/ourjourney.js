@@ -9,7 +9,7 @@ export default function ourjourney() {
       <AboutBreadCumb
         title="Our Journey"
         description="Explore Helpline's journey of impact, growth, and community transformation across the years."
-        backgroundImage="/img/Campaigns/OurJoureney.jpg"
+        backgroundImage="/img/Campaigns/OurJoureney.webp"
       />
       <AboutJourney />
     </Layout2>

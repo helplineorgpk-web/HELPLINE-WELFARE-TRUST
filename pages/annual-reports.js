@@ -16,7 +16,7 @@ export default function AnnualReportsPage() {
       <AboutBreadCumb
         title="Annual Reports"
         description="Our annual reports showcase the difference your support makes. Each report highlights milestones, financial accountability, and the lives transformed through Helpline Welfare Trust programs in education, healthcare, economic empowerment, environment, and community development. Discover how, year after year, we are building a stronger, self-reliant Pakistan together."
-        backgroundImage="/img/Campaigns/Report.jpg"
+        backgroundImage="/img/Campaigns/Report.webp"
       />
       <AnnualReportsFeatured />
       <AnnualReportsGrid />

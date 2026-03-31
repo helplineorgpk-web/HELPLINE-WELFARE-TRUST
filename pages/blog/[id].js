@@ -40,7 +40,7 @@ export default function BlogDetail() {
       <AboutBreadCumb
         title="Blog"
         description="News, stories from the field, program highlights, and updates on how Helpline Welfare Trust is serving communities across Pakistan."
-        backgroundImage="/img/Campaigns/Blog.jpg"
+        backgroundImage="/img/Campaigns/Blog.webp"
       />
       <BlogDetailsContent blog={blog} />
     </Layout2>

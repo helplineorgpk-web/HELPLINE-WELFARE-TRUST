@@ -25,9 +25,9 @@ const SOCIAL_WELFARE_CAUSE_OPTIONS = [
 const HERO_BLUR =
   "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEQ/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==";
 
-const DONATION_HERO_DEFAULT = "/img/Campaigns/Disaster.jpg";
+const DONATION_HERO_DEFAULT = "/img/Campaigns/Disaster.webp";
 /** Shared default for text-layout pages using this header (videos, gallery, etc.) */
-const TEXT_HERO_DEFAULT = "/img/Campaigns/Disaster.jpg";
+const TEXT_HERO_DEFAULT = "/img/Campaigns/Disaster.webp";
 
 function formatAmount(value) {
   if (!value) return "";
@@ -355,10 +355,13 @@ export default function SocialCapitalHeader({
               alt="Social Welfare Development"
               fill
               priority
+              loading="eager"
+              fetchPriority="high"
               placeholder="blur"
               blurDataURL={HERO_BLUR}
               sizes="100vw"
-              quality={85}
+              quality={75}
+              decoding="async"
               className="sc-donate-hero-slide-image"
             />
           </div>
@@ -591,10 +594,13 @@ export default function SocialCapitalHeader({
             alt={sectionName}
             fill
             priority
+            loading="eager"
+            fetchPriority="high"
             placeholder="blur"
             blurDataURL={HERO_BLUR}
             sizes="100vw"
-            quality={85}
+            quality={75}
+            decoding="async"
             className="sc-hero-slide-image"
           />
         </div>

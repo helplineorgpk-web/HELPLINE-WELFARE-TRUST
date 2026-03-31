@@ -43,7 +43,7 @@ export const livelihoodDisasterCards = [
     ],
     imageGallery: [
       {
-        src: "/img/Campaigns/Medical.jpg",
+        src: "/img/Campaigns/Medical.webp",
         caption: "Medical and health support as part of disaster relief",
       },
       {
@@ -121,7 +121,7 @@ export const livelihoodDisasterCards = [
         caption: "Families supported with safer housing solutions",
       },
       {
-        src: "/img/Campaigns/Food.jpg",
+        src: "/img/Campaigns/Food.webp",
         caption: "Food security and ration support in crisis",
       },
     ],
