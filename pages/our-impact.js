@@ -85,3 +85,10 @@ export default function OurImpactPage() {
     </Layout2>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 86400,
+  };
+}

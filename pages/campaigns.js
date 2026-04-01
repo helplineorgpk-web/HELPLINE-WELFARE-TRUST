@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useCallback } from "react";
 import Layout1 from "../Components/Layout/Layout1";
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -203,7 +201,7 @@ function formatPkr(value) {
   return new Intl.NumberFormat("en-PK").format(value);
 }
 
-export default function Campaigns() {
+export default function Campaigns({ campaigns = campaignsData }) {
   const [cardState, setCardState] = useState({});
   const [paymentCampaign, setPaymentCampaign] = useState(null);
   const [donationErrorId, setDonationErrorId] = useState(null);
@@ -281,7 +279,7 @@ export default function Campaigns() {
         </div>
 
         <Row className="g-4 g-lg-5">
-          {campaignsData.map((campaign, index) => {
+          {campaigns.map((campaign, index) => {
             const presets = getPresetAmounts(campaign);
             const amount = getAmount(campaign.id);
             const detailHref = campaign.href || `/campaign/${campaign.id}`;
@@ -302,6 +300,7 @@ export default function Campaigns() {
                       loading={isEagerImage ? "eager" : "lazy"}
                       fetchPriority={isPriorityImage ? "high" : "auto"}
                       quality={75}
+                      decoding="async"
                       sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
                       className={styles.image}
                     />
@@ -452,4 +451,13 @@ export default function Campaigns() {
       )}
     </Layout1>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      campaigns: campaignsData,
+    },
+    revalidate: 3600,
+  };
 }

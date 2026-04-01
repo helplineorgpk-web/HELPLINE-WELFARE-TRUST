@@ -1,15 +1,19 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import Layout1 from "../Components/Layout/Layout1";
 import SupportArea from "../Components/Elements/Home/SupportArea";
-import NewsFeed from "../Components/Elements/Home/NewsFeed";
 import CausesArea from "../Components/Elements/Home/CausesArea";
 import AboutArea from "../Components/Elements/Home/AboutArea";
 import HeadArea from "../Components/Elements/Home/HeadArea";
 import AllOverPakistan from "../Components/Elements/Home/AllOverPakistan";
 import HelplineProject from "../Components/Elements/Home/HelplineProject";
-import MonthlyPrograms from "../Components/Elements/Home/MonthlyPrograms";
+const MonthlyPrograms = dynamic(
+  () => import("../Components/Elements/Home/MonthlyPrograms")
+);
 import WayToDonate from "../Components/Elements/Home/WayToDonate";
-import BlogsSection from "../Components/Elements/Home/BlogsSection";
+const BlogsSection = dynamic(
+  () => import("../Components/Elements/Home/BlogsSection")
+);
 import ZakatInformationHub from "../Components/Elements/Home/ZakatInformationHub";
 import { HelplineData } from "../pages/api/data";
 import Meta from "../Components/SEO/Meta";
@@ -17,15 +21,17 @@ import Educations from "../Components/Elements/Home/Educations";
 import Header from "../Components/Elements/Home/Header";
 import Header2 from "../Components/Layout/Header2";
 import PowerOfFive from "../Components/Elements/Home/PowerOfFive";
-import GlobalGoals from "../Components/Elements/Home/GlobalGoals";
+const GlobalGoals = dynamic(
+  () => import("../Components/Elements/Home/GlobalGoals")
+);
+const NewsFeed = dynamic(() => import("../Components/Elements/Home/NewsFeed"));
 
 const data = {
   Water: "Recent development",
   waterprojects: "Latest Cause",
 };
 
-export default function Home() {
-  const cause = HelplineData.homeCauses;
+export default function Home({ cause }) {
   return (
     <>
       <Meta
@@ -54,4 +60,13 @@ export default function Home() {
       </Layout1>
     </>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      cause: HelplineData.homeCauses,
+    },
+    revalidate: 3600,
+  };
 }

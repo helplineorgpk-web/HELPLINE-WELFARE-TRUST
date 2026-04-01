@@ -16,3 +16,10 @@ export default function Blogs() {
   );
 }
 
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 3600,
+  };
+}
+

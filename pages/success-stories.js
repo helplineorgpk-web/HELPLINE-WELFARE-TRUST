@@ -17,3 +17,10 @@ export default function SuccessStoriesPage() {
     </Layout2>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 86400,
+  };
+}

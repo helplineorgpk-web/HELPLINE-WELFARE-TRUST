@@ -73,3 +73,10 @@ export default function SustainableEnvironmentWash() {
     </Layout2>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 3600,
+  };
+}

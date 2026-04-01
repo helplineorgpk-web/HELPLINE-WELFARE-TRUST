@@ -1,29 +1,10 @@
 import React from "react";
-import { useRouter } from "next/router";
 import { blogsData } from "../../data/blogsData.js";
 import AboutBreadCumb from "../../Components/Elements/About/AboutBreadCumb";
 import BlogDetailsContent from "../../Components/Elements/BlogDetails/BlogDetailsContent";
 import Layout2 from "../../Components/Layout/Layout2";
 
-export default function BlogDetail() {
-  const router = useRouter();
-  const { id } = router.query;
-
-  if (!router.isReady) {
-    return (
-      <Layout2>
-        <div style={{ padding: "2rem", textAlign: "center" }}>
-          <p>Loading...</p>
-        </div>
-      </Layout2>
-    );
-  }
-
-  // Find blog by id or slug
-  const blog = blogsData.find(
-    (item) => item.id === parseInt(id) || item.slug === id
-  );
-
+export default function BlogDetail({ blog }) {
   if (!blog) {
     return (
       <Layout2>
@@ -45,5 +26,29 @@ export default function BlogDetail() {
       <BlogDetailsContent blog={blog} />
     </Layout2>
   );
+}
+
+export async function getStaticPaths() {
+  const paths = blogsData.flatMap((item) => [
+    { params: { id: String(item.id) } },
+    { params: { id: item.slug } },
+  ]);
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const { id } = params;
+  const blog = blogsData.find(
+    (item) => item.id === parseInt(id, 10) || item.slug === id
+  );
+
+  return {
+    props: { blog: blog ?? null },
+    revalidate: 3600,
+  };
 }
 

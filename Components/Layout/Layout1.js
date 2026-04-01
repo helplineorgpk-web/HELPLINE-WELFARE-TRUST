@@ -10,10 +10,13 @@ export default function Layout1({ children }) {
 
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const onScroll = () => {
       setScroll(window.scrollY > 100);
-    });
-  }, [scroll]);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <>
