@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Layout1 from '../../Components/Layout/Layout1';
 import { Container, Row, Col, Card, ListGroup, Button } from 'react-bootstrap';
 
@@ -169,11 +169,7 @@ const campaignsData = [
   }
 ];
 
-export default function CampaignDetail() {
-  const router = useRouter();
-  const { id } = router.query;
-
-  const campaign = campaignsData.find(c => c.id === id);
+export default function CampaignDetail({ campaign }) {
 
   if (!campaign) {
     return (
@@ -181,7 +177,7 @@ export default function CampaignDetail() {
         <Container className="py-5 text-center">
           <h1>Campaign Not Found</h1>
           <p>The campaign you're looking for doesn't exist.</p>
-          <Button variant="primary" onClick={() => router.push("/campaigns")}>Back to Campaigns</Button>
+          <Button variant="primary" href="/campaigns">Back to Campaigns</Button>
         </Container>
       </Layout1>
     );
@@ -193,7 +189,18 @@ export default function CampaignDetail() {
         <Row>
           <Col lg={8}>
             <Card className="mb-4">
-              <Card.Img variant="top" src={campaign.image} style={{ height: "1000px", objectFit: "cover" }} />
+              <div style={{ position: "relative", width: "100%", height: "500px" }}>
+                <Image
+                  src={campaign.image}
+                  alt={campaign.title}
+                  fill
+                  priority
+                  fetchPriority="high"
+                  quality={75}
+                  sizes="(max-width: 992px) 100vw, 66vw"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
               <Card.Body>
                 <div className="d-flex justify-content-between align-items-center mb-3">
                   <h1 className="h2 mb-0">{campaign.title}</h1>
@@ -279,4 +286,22 @@ export default function CampaignDetail() {
       </Container>
     </Layout1>
   );
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: campaignsData.map((campaign) => ({
+      params: { id: campaign.id },
+    })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const campaign = campaignsData.find((item) => item.id === params.id) ?? null;
+
+  return {
+    props: { campaign },
+    revalidate: 3600,
+  };
 }

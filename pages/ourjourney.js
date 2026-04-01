@@ -15,3 +15,10 @@ export default function ourjourney() {
     </Layout2>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 86400,
+  };
+}

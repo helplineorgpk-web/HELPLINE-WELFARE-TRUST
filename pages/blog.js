@@ -15,3 +15,10 @@ export default function Blog() {
     </Layout2>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 3600,
+  };
+}

@@ -23,3 +23,10 @@ export default function AnnualReportsPage() {
     </Layout2>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 86400,
+  };
+}

@@ -11,11 +11,16 @@ import "metismenujs/dist/metismenujs.css";
 import "./../public/css/policies.css";
 import "../styles/globals.css";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import { DefaultSeo } from 'next-seo';
 import { defaultSEO } from '../config/seo.config';
 import Script from 'next/script';
-import WhatsAppButton from '../Components/Common/WhatsAppButton';
-import ChatBot from '../Components/Common/ChatBot';
+const WhatsAppButton = dynamic(() => import("../Components/Common/WhatsAppButton"), {
+  ssr: false,
+});
+const ChatBot = dynamic(() => import("../Components/Common/ChatBot"), {
+  ssr: false,
+});
 
 export default function App({ Component, pageProps }) {
   return (
@@ -42,7 +47,7 @@ export default function App({ Component, pageProps }) {
       {/* Google Tag Manager */}
       <Script
         id="gtm"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

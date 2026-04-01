@@ -6,6 +6,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "./VolunteerPageSection.module.css";
 
+const EMAILJS_SERVICE_ID = "service_cb00nwp";
+const EMAILJS_TEMPLATE_ID = "template_2m4dd8r";
+const EMAILJS_PUBLIC_KEY = "E2G6lzak44zoyL3Hy";
+
 const STEPS = [
   "Visit our website and complete the online volunteer application with your details and areas of interest.",
   "Select the department or cause you're passionate about—education, health, environment, events, or community outreach.",
@@ -16,69 +20,78 @@ const STEPS = [
 ];
 
 export default function VolunteerPageSection() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [age, setAge] = useState("");
-  const [gender, setGender] = useState("");
-  const [address, setAddress] = useState("");
-  const [country, setCountry] = useState("");
-  const [zipCode, setZipCode] = useState("");
+  const [phoneWhatsApp, setPhoneWhatsApp] = useState("");
+  const [email, setEmail] = useState("");
+  const [currentStatus, setCurrentStatus] = useState("");
+  const [universityDepartment, setUniversityDepartment] = useState("");
+  const [skills, setSkills] = useState("");
+  const [skillsToLearn, setSkillsToLearn] = useState("");
+  const [hoursPerWeek, setHoursPerWeek] = useState("");
   const [city, setCity] = useState("");
-  const [state, setState] = useState("");
-  const [aboutYourself, setAboutYourself] = useState("");
+  const [workPreference, setWorkPreference] = useState("");
+  const [portfolioLink, setPortfolioLink] = useState("");
+  const [whyJoin, setWhyJoin] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSubmitted(false);
     const finalMessage = `
 Volunteer application
 
 Personal Details:
-- First Name: ${firstName}
-- Last Name: ${lastName}
-- Age: ${age}
-- Gender: ${gender}
-- Address: ${address}
-- Country: ${country}
-- Zip Code: ${zipCode}
+- Phone / WhatsApp: ${phoneWhatsApp}
+- Email: ${email}
+- Current Status: ${currentStatus}
+- University / Department: ${universityDepartment}
+- Skills: ${skills}
+- Skills to Learn: ${skillsToLearn}
+- Hours Available Per Week: ${hoursPerWeek}
 - City: ${city}
-- State: ${state}
+- On-site or Remote Preference: ${workPreference}
+- Portfolio Link: ${portfolioLink || "N/A"}
 
-About Yourself:
-${aboutYourself}
+Why They Want to Join:
+${whyJoin}
     `.trim();
 
     const templateParams = {
       to_name: "Helpline",
-      from_name: `${firstName} ${lastName}`.trim(),
-      from_email: "",
+      name: "Volunteer Applicant",
+      email,
+      phone: phoneWhatsApp,
+      time: new Date().toLocaleString(),
       message: finalMessage,
     };
 
     emailjs
       .send(
-        "service_sn43jtj",
-        "template_2m4dd8r",
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         templateParams,
-        "E2G6lzak44zoyL3Hy"
+        EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
+          setSubmitted(true);
           toast.success("Your volunteer form has been submitted successfully!", {
             position: "top-right",
             autoClose: 3000,
           });
-          setFirstName("");
-          setLastName("");
-          setAge("");
-          setGender("");
-          setAddress("");
-          setCountry("");
-          setZipCode("");
+          setPhoneWhatsApp("");
+          setEmail("");
+          setCurrentStatus("");
+          setUniversityDepartment("");
+          setSkills("");
+          setSkillsToLearn("");
+          setHoursPerWeek("");
           setCity("");
-          setState("");
-          setAboutYourself("");
+          setWorkPreference("");
+          setPortfolioLink("");
+          setWhyJoin("");
         },
         () => {
+          setSubmitted(false);
           toast.error("Submission failed. Please try again later.", {
             position: "top-right",
             autoClose: 3000,
@@ -110,26 +123,26 @@ ${aboutYourself}
           <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.row}>
               <div>
-                <label className={styles.label} htmlFor="firstName">First Name</label>
+                <label className={styles.label} htmlFor="phoneWhatsApp">Phone / WhatsApp</label>
                 <input
-                  id="firstName"
-                  type="text"
+                  id="phoneWhatsApp"
+                  type="tel"
                   className={styles.input}
-                  placeholder="Enter First Name"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
+                  placeholder="Enter Phone / WhatsApp"
+                  value={phoneWhatsApp}
+                  onChange={(e) => setPhoneWhatsApp(e.target.value)}
                   required
                 />
               </div>
               <div>
-                <label className={styles.label} htmlFor="lastName">Last Name</label>
+                <label className={styles.label} htmlFor="email">Email</label>
                 <input
-                  id="lastName"
-                  type="text"
+                  id="email"
+                  type="email"
                   className={styles.input}
-                  placeholder="Enter Last Name"
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
+                  placeholder="Enter Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </div>
@@ -137,71 +150,67 @@ ${aboutYourself}
 
             <div className={styles.row}>
               <div>
-                <label className={styles.label} htmlFor="age">Age</label>
+                <label className={styles.label} htmlFor="currentStatus">Current Status</label>
                 <input
-                  id="age"
-                  type="number"
+                  id="currentStatus"
+                  type="text"
                   className={styles.input}
-                  placeholder="Enter Age"
-                  min="16"
-                  max="120"
-                  value={age}
-                  onChange={(e) => setAge(e.target.value)}
+                  placeholder="e.g. Student, Employed, Freelancer"
+                  value={currentStatus}
+                  onChange={(e) => setCurrentStatus(e.target.value)}
                   required
                 />
               </div>
               <div>
-                <label className={styles.label} htmlFor="gender">Gender</label>
-                <select
-                  id="gender"
-                  className={`${styles.input} ${styles.select}`}
-                  value={gender}
-                  onChange={(e) => setGender(e.target.value)}
+                <label className={styles.label} htmlFor="universityDepartment">University / Department</label>
+                <input
+                  id="universityDepartment"
+                  type="text"
+                  className={styles.input}
+                  placeholder="Enter University / Department"
+                  value={universityDepartment}
+                  onChange={(e) => setUniversityDepartment(e.target.value)}
                   required
-                >
-                  <option value="">Select</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
-                </select>
+                />
               </div>
             </div>
 
             <div>
-              <label className={styles.label} htmlFor="address">Address</label>
+              <label className={styles.label} htmlFor="skills">Skills</label>
               <textarea
-                id="address"
+                id="skills"
                 className={styles.textarea}
-                placeholder="Enter Address"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
+                placeholder="List your current skills"
+                value={skills}
+                onChange={(e) => setSkills(e.target.value)}
                 required
               />
             </div>
 
             <div>
-              <label className={styles.label} htmlFor="country">Country</label>
-              <input
-                id="country"
-                type="text"
-                className={styles.input}
-                placeholder="Enter Country"
-                value={country}
-                onChange={(e) => setCountry(e.target.value)}
+              <label className={styles.label} htmlFor="skillsToLearn">Skills They Want to Learn</label>
+              <textarea
+                id="skillsToLearn"
+                className={styles.textarea}
+                placeholder="Mention skills you want to learn"
+                value={skillsToLearn}
+                onChange={(e) => setSkillsToLearn(e.target.value)}
                 required
               />
             </div>
 
-            <div className={styles.row3}>
+            <div className={styles.row}>
               <div>
-                <label className={styles.label} htmlFor="zipCode">Zip Code</label>
+                <label className={styles.label} htmlFor="hoursPerWeek">Hours Available Per Week</label>
                 <input
-                  id="zipCode"
-                  type="text"
+                  id="hoursPerWeek"
+                  type="number"
                   className={styles.input}
-                  placeholder="Enter Zip Code"
-                  value={zipCode}
-                  onChange={(e) => setZipCode(e.target.value)}
+                  placeholder="Enter Hours Per Week"
+                  min="1"
+                  value={hoursPerWeek}
+                  onChange={(e) => setHoursPerWeek(e.target.value)}
+                  required
                 />
               </div>
               <div>
@@ -216,33 +225,56 @@ ${aboutYourself}
                   required
                 />
               </div>
-              <div>
-                <label className={styles.label} htmlFor="state">State</label>
-                <input
-                  id="state"
-                  type="text"
-                  className={styles.input}
-                  placeholder="Enter State"
-                  value={state}
-                  onChange={(e) => setState(e.target.value)}
-                />
-              </div>
             </div>
 
             <div>
-              <label className={styles.label} htmlFor="aboutYourself">About Yourself</label>
+              <label className={styles.label} htmlFor="workPreference">On-site or Remote Preference</label>
+              <select
+                id="workPreference"
+                className={`${styles.input} ${styles.select}`}
+                value={workPreference}
+                onChange={(e) => setWorkPreference(e.target.value)}
+                required
+              >
+                <option value="">Select</option>
+                <option value="On-site">On-site</option>
+                <option value="Remote">Remote</option>
+                <option value="Either">Either</option>
+              </select>
+            </div>
+
+            <div>
+              <label className={styles.label} htmlFor="portfolioLink">Portfolio Link (if any)</label>
+              <input
+                id="portfolioLink"
+                type="url"
+                className={styles.input}
+                placeholder="Enter Portfolio URL"
+                value={portfolioLink}
+                onChange={(e) => setPortfolioLink(e.target.value)}
+              />
+            </div>
+
+            <div>
+              <label className={styles.label} htmlFor="whyJoin">Why They Want to Join</label>
               <textarea
-                id="aboutYourself"
+                id="whyJoin"
                 className={styles.textarea}
-                placeholder="Tell us something about yourself"
-                value={aboutYourself}
-                onChange={(e) => setAboutYourself(e.target.value)}
+                placeholder="Tell us why you want to join"
+                value={whyJoin}
+                onChange={(e) => setWhyJoin(e.target.value)}
+                required
               />
             </div>
 
             <button type="submit" className={styles.submitBtn}>
               Submit
             </button>
+            {submitted && (
+              <p className={styles.intro}>
+                Thank you! Your volunteer form has been submitted successfully.
+              </p>
+            )}
           </form>
           <ToastContainer />
         </div>
