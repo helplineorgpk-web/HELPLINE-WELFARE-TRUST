@@ -33,7 +33,8 @@ export const defaultSEO = {
   additionalMetaTags: [
     {
       name: 'viewport',
-      content: 'width=device-width, initial-scale=1, maximum-scale=5',
+      content:
+        'width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover',
     },
     {
       name: 'apple-mobile-web-app-capable',

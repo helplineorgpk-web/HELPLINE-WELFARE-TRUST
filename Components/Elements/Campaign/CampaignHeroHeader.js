@@ -7,13 +7,14 @@ const DEFAULT_PRIMARY_CTA = { href: "/ramzanRashan", label: "DONATE NOW" };
 const DEFAULT_SECONDARY_CTA = { href: "/campaigns#featured", label: "BECOME A FUNDRAISER" };
 
 function CampaignHeroHeader({
-  label = "HUMAN DEVELOPMENT FUND",
-  title = "RISE",
-  subtitle = "Help Today Build Tomorrow. Your support transforms lives and builds hope in communities.",
+  label = "HELPLINE WELFARE TRUST",
+  title = "OUR CAMPAIGNS",
+  subtitle =
+    "Explore active Helpline drives—from food relief and Ramadan packages to education, healthcare, and vocational training. Your donation funds transparent, community-led programs across Pakistan.",
   primaryCta = DEFAULT_PRIMARY_CTA,
   secondaryCta = DEFAULT_SECONDARY_CTA,
   videoUrl = HERO_VIDEO_URL,
-  videoTitle = "Help Today Build Tomorrow",
+  videoTitle = "Helpline campaigns and field impact",
 }) {
   const resolvedPrimaryCta = useMemo(() => primaryCta, [primaryCta]);
   const resolvedSecondaryCta = useMemo(() => secondaryCta, [secondaryCta]);

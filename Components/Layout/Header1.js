@@ -28,7 +28,7 @@ export default function Header1() {
       setMobileMenuOpen(false);
       setMobileMenuClosing(false);
       setMobileExpandedIdx(null);
-    }, 280);
+    }, 150);
   }, [mobileMenuOpen]);
 
   const toggleMobileMenu = useCallback(() => {
@@ -38,7 +38,7 @@ export default function Header1() {
         setMobileMenuOpen(false);
         setMobileMenuClosing(false);
         setMobileExpandedIdx(null);
-      }, 280);
+      }, 150);
     } else {
       setMobileMenuOpen(true);
     }
@@ -47,6 +47,42 @@ export default function Header1() {
   const toggleMobileAccordion = useCallback((idx) => {
     setMobileExpandedIdx((prev) => (prev === idx ? null : idx));
   }, []);
+
+  /** Prevent background page scroll behind the mobile menu (iOS Safari). */
+  useEffect(() => {
+    if (typeof window === "undefined" || typeof document === "undefined") {
+      return undefined;
+    }
+    const active = mobileMenuOpen || mobileMenuClosing;
+    if (!active) return undefined;
+
+    const scrollY = window.scrollY;
+    const prev = {
+      position: document.body.style.position,
+      top: document.body.style.top,
+      left: document.body.style.left,
+      right: document.body.style.right,
+      overflow: document.body.style.overflow,
+      width: document.body.style.width,
+    };
+
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    document.body.style.width = "100%";
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.position = prev.position;
+      document.body.style.top = prev.top;
+      document.body.style.left = prev.left;
+      document.body.style.right = prev.right;
+      document.body.style.overflow = prev.overflow;
+      document.body.style.width = prev.width;
+      window.scrollTo(0, scrollY);
+    };
+  }, [mobileMenuOpen, mobileMenuClosing]);
 
   return (
     <>
@@ -130,13 +166,16 @@ export default function Header1() {
           background: #fff;
           box-shadow: 0 16px 40px rgba(0,0,0,0.15);
           max-height: calc(100vh - 80px);
+          max-height: calc(100svh - 80px);
+          max-height: calc(100dvh - 80px);
           overflow-y: auto;
+          overscroll-behavior: contain;
           -webkit-overflow-scrolling: touch;
           z-index: 9998;
           opacity: 0;
-          transform: translateY(-12px);
+          transform: translateY(-8px);
           visibility: hidden;
-          transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+          transition: opacity 0.14s ease-out, transform 0.14s ease-out, visibility 0.14s ease-out;
           pointer-events: none;
         }
         .hdf-mobile-dropdown.open {
@@ -147,7 +186,7 @@ export default function Header1() {
         }
         .hdf-mobile-dropdown.closing {
           opacity: 0;
-          transform: translateY(-12px);
+          transform: translateY(-8px);
           visibility: hidden;
           pointer-events: none;
         }
@@ -164,7 +203,7 @@ export default function Header1() {
           opacity: 0;
           visibility: hidden;
           pointer-events: none;
-          transition: opacity 0.25s ease, visibility 0.25s ease;
+          transition: opacity 0.14s ease-out, visibility 0.14s ease-out;
         }
         .hdf-mobile-backdrop.open {
           opacity: 1;
@@ -204,7 +243,7 @@ export default function Header1() {
           color: #f15b43;
         }
         .hdf-mobile-nav-link.has-sub i {
-          transition: transform 0.2s ease;
+          transition: transform 0.12s ease-out;
         }
         .hdf-mobile-nav-link.has-sub.open i {
           transform: rotate(180deg);

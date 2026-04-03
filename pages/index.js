@@ -1,30 +1,27 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Layout1 from "../Components/Layout/Layout1";
-import SupportArea from "../Components/Elements/Home/SupportArea";
-import CausesArea from "../Components/Elements/Home/CausesArea";
-import AboutArea from "../Components/Elements/Home/AboutArea";
-import HeadArea from "../Components/Elements/Home/HeadArea";
 import AllOverPakistan from "../Components/Elements/Home/AllOverPakistan";
-import HelplineProject from "../Components/Elements/Home/HelplineProject";
 const MonthlyPrograms = dynamic(
-  () => import("../Components/Elements/Home/MonthlyPrograms")
+  () => import("../Components/Elements/Home/MonthlyPrograms"),
+  { ssr: false }
 );
-import WayToDonate from "../Components/Elements/Home/WayToDonate";
 const BlogsSection = dynamic(
-  () => import("../Components/Elements/Home/BlogsSection")
+  () => import("../Components/Elements/Home/BlogsSection"),
+  { ssr: false }
 );
-import ZakatInformationHub from "../Components/Elements/Home/ZakatInformationHub";
 import { HelplineData } from "../pages/api/data";
 import Meta from "../Components/SEO/Meta";
 import Educations from "../Components/Elements/Home/Educations";
 import Header from "../Components/Elements/Home/Header";
-import Header2 from "../Components/Layout/Header2";
 import PowerOfFive from "../Components/Elements/Home/PowerOfFive";
 const GlobalGoals = dynamic(
-  () => import("../Components/Elements/Home/GlobalGoals")
+  () => import("../Components/Elements/Home/GlobalGoals"),
+  { ssr: false }
 );
-const NewsFeed = dynamic(() => import("../Components/Elements/Home/NewsFeed"));
+const NewsFeed = dynamic(() => import("../Components/Elements/Home/NewsFeed"), {
+  ssr: false,
+});
 
 const data = {
   Water: "Recent development",

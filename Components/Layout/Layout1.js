@@ -10,12 +10,26 @@ export default function Layout1({ children }) {
 
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
+    let rafId = null;
+
     const onScroll = () => {
-      setScroll(window.scrollY > 100);
+      if (rafId) return;
+
+      rafId = window.requestAnimationFrame(() => {
+        setScroll(window.scrollY > 100);
+        rafId = null;
+      });
     };
+
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
-    return () => window.removeEventListener("scroll", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (rafId) {
+        window.cancelAnimationFrame(rafId);
+      }
+    };
   }, []);
 
   return (
