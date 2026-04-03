@@ -12,6 +12,7 @@ import "./../public/css/policies.css";
 import "../styles/globals.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 import { DefaultSeo } from 'next-seo';
 import { defaultSEO } from '../config/seo.config';
 import Script from 'next/script';
@@ -23,6 +24,24 @@ const ChatBot = dynamic(() => import("../Components/Common/ChatBot"), {
 });
 
 export default function App({ Component, pageProps }) {
+  const [showClientWidgets, setShowClientWidgets] = useState(false);
+
+  useEffect(() => {
+    const enableWidgets = () => setShowClientWidgets(true);
+
+    if (typeof window === "undefined") {
+      return undefined;
+    }
+
+    if ("requestIdleCallback" in window) {
+      const idleId = window.requestIdleCallback(enableWidgets, { timeout: 2500 });
+      return () => window.cancelIdleCallback(idleId);
+    }
+
+    const timeoutId = window.setTimeout(enableWidgets, 1200);
+    return () => window.clearTimeout(timeoutId);
+  }, []);
+
   return (
     <>
       <Head>
@@ -89,8 +108,12 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </div>
 
-      <WhatsAppButton />
-      <ChatBot />
+      {showClientWidgets ? (
+        <>
+          <WhatsAppButton />
+          <ChatBot />
+        </>
+      ) : null}
 
       {/* Structured Data for Website */}
       <Script

@@ -87,15 +87,13 @@
 
 @media (max-width: 500px) {
   .statsGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .stat {
     border-bottom: 1px solid #e5e7eb;
+    padding: 1rem 0.5rem;
   }
-  .stat:last-child {
-    border-bottom: none;
-  }
-  .stat:nth-child(odd) {
-    border-right: none;
+  .label {
+    max-width: 120px;
   }
 }

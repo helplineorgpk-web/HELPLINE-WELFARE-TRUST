@@ -240,11 +240,12 @@ export default function Campaigns({ campaigns = campaignsData }) {
         <div className={styles.heroOverlay} />
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <p className={styles.heroLabel}>HUMAN DEVELOPMENT FUND</p>
-            <h1 className={styles.heroTitle}>RISE</h1>
+            <p className={styles.heroLabel}>HELPLINE WELFARE TRUST</p>
+            <h1 className={styles.heroTitle}>OUR CAMPAIGNS</h1>
             <p className={styles.heroSubtitle}>
-              Help Today Build Tomorrow. Your support transforms lives and
-              builds hope in communities.
+              Explore active Helpline drives—from food relief and Ramadan
+              packages to education, healthcare, and vocational training. Your
+              donation funds transparent, community-led programs across Pakistan.
             </p>
             <div className={styles.heroCta}>
               <Link href="/ramzanRashan" className={styles.heroBtnPrimary}>
@@ -259,12 +260,12 @@ export default function Campaigns({ campaigns = campaignsData }) {
             <div className={styles.heroVideoInner}>
               <iframe
                 src={HERO_VIDEO_URL}
-                title="Help Today Build Tomorrow"
+                title="Helpline campaigns and field impact"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className={styles.heroVideoIframe}
               />
-              <p className={styles.heroVideoTitle}>Help Today Build Tomorrow</p>
+              <p className={styles.heroVideoTitle}>Helpline campaigns and impact</p>
             </div>
           </div>
         </div>

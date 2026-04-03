@@ -131,3 +131,11 @@ p {
   width: 100%;
   height: 100%;
 }
+
+/* MetisMenu: faster accordion open/close on mobile sidebar */
+.metismenu .mm-collapsing {
+  transition-duration: 0.14s !important;
+}
+.metismenu .has-arrow::after {
+  transition-duration: 0.12s !important;
+}

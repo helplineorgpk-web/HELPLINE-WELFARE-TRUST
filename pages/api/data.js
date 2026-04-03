@@ -2251,7 +2251,7 @@ May the Almighty bless you abundantly for your kindness.  `,
     {
       id: 32,
       designation: "Friend/Reformer",
-      name: "Brig Zahid Hussain Goryaya (Retd)",
+      name: "Brig Zahid Hussain Goraya (Retd)",
       image: "/img/team/iconimage.png",
       description:
         "Brigadier Zahid Hussain Goryaya (Retd) is a Friend/Reformer, lending his experience and support to various initiatives of Helpline NGO.",

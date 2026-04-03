@@ -78,6 +78,7 @@ export default function BlogsList() {
           left: 1rem;
           background: rgba(255, 255, 255, 0.95);
           backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
           color: #1e293b;
           padding: 0.5rem 1rem;
           border-radius: 50px;

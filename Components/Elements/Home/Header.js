@@ -57,6 +57,7 @@ const heroSlides = [
   },
   {
     image: "/img/Campaigns/HelplineStudentSupport2.webp",
+    imageMobile: "/img/Campaigns/Educationmobile.jpg",
     title: "SUPPORT A STUDENT",
     subtitle: "Sponsor students' education and help them build a brighter future. Education is the key to breaking the cycle of poverty.",
     link: "/student-support",
@@ -72,6 +73,7 @@ const heroSlides = [
   },
   {
     image: "/img/Campaigns/Vocational3.webp",
+    imageMobile: "/img/Campaigns/Vocationalmobile.jpg",
     title: "VOCATIONAL TRAINING",
     subtitle: "Equip youth with technical skills for sustainable employment and self-reliance.",
     link: "/vocationalTrainingCenters",
@@ -87,6 +89,7 @@ const heroSlides = [
   },
   {
     image: "/img/Campaigns/MasjidMaktab2.webp",
+    imageMobile: "/img/Campaigns/Masjidmobile.jpg",
     title: "SCHOOL MASJID PROJECT",
     subtitle: "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
     link: "/masjid",
@@ -563,8 +566,8 @@ export default function Header({ slides: slidesProp }) {
             height: 100% !important;
           }
           .hero-content {
-            padding: 80px 20px 32px;
-            justify-content: center;
+            padding: 126px 20px 32px;
+            justify-content: flex-start;
             align-items: center;
             text-align: center !important;
             width: 100%;
@@ -616,10 +619,11 @@ export default function Header({ slides: slidesProp }) {
         }
         @media (max-width: 480px) {
           .hero-content {
-            padding: 70px 16px 28px;
+            padding: 100px 16px 28px;
             text-align: center !important;
             width: 100%;
             max-width: 100%;
+            justify-content: flex-start;
           }
           .hero-text {
             text-align: center !important;
@@ -661,8 +665,9 @@ export default function Header({ slides: slidesProp }) {
         }
         @media (max-width: 360px) {
           .hero-content {
-            padding: 60px 12px 24px;
+            padding: 92px 12px 24px;
             text-align: center;
+            justify-content: flex-start;
           }
           .hero-title {
             font-size: 22px;
@@ -680,7 +685,7 @@ export default function Header({ slides: slidesProp }) {
         @media (max-width: 768px) {
           @supports (padding: max(0px)) {
             .hero-content {
-              padding-top: max(80px, calc(80px + env(safe-area-inset-top)));
+              padding-top: max(126px, calc(126px + env(safe-area-inset-top)));
               padding-left: max(16px, env(safe-area-inset-left));
               padding-right: max(16px, env(safe-area-inset-right));
               padding-bottom: max(32px, env(safe-area-inset-bottom));
@@ -699,10 +704,13 @@ export default function Header({ slides: slidesProp }) {
 
       <section className="hero-section">
         <Swiper {...swiperConfig}>
-          {memoizedSlides.map((slide) => (
+          {memoizedSlides.map((slide) => {
+            const bgSrc =
+              isMobile && slide.imageMobile ? slide.imageMobile : slide.image;
+            return (
             <SwiperSlide key={slide.image} className="hero-slide">
               <Image
-                src={slide.image}
+                src={bgSrc}
                 alt={slide.title}
                 fill
                 priority={slide.priority}
@@ -716,7 +724,8 @@ export default function Header({ slides: slidesProp }) {
                 className="hero-slide-image"
               />
             </SwiperSlide>
-          ))}
+            );
+          })}
         </Swiper>
 
         <div className="hero-overlay" />

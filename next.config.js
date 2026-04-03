@@ -15,7 +15,7 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
     formats: ["image/avif", "image/webp"],
-    qualities: [75, 90],
+    qualities: [75, 85, 90],
   },
 
   // Enable compression and optimization

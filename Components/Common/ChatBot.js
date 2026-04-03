@@ -258,7 +258,7 @@ const knowledgeBase = {
     "Muhammad Arif Mehr - Friend/Reformer:\n\nMuhammad Arif Mehr is a Friend/Reformer of Helpline Welfare Trust. As an active supporter and community advocate, he contributes to the organizational mission and vision. Friends/Reformers play a crucial role in supporting Helpline's initiatives and spreading awareness about the organization's work.\n\nRole: Friend/Reformer\n\nHe actively supports Helpline's mission and contributes to community development and social welfare initiatives.",
   ],
   brigZahidHussain: [
-    "Brig Zahid Hussain Goryaya (Retd) - Friend/Reformer:\n\nBrig Zahid Hussain Goryaya (Retd) is a Friend/Reformer of Helpline Welfare Trust. As a retired Brigadier with a military background, he brings leadership experience and supports organizational initiatives and programs. Friends/Reformers are valued supporters who contribute to Helpline's mission.\n\nRole: Friend/Reformer\nStatus: Retired Brigadier\n\nHe supports Helpline's initiatives and contributes his expertise to help the organization achieve its goals.",
+    "Brig Zahid Hussain Goraya (Retd) - Friend/Reformer:\n\nBrig Zahid Hussain Goraya (Retd) is a Friend/Reformer of Helpline Welfare Trust. As a retired Brigadier with a military background, he brings leadership experience and supports organizational initiatives and programs. Friends/Reformers are valued supporters who contribute to Helpline's mission.\n\nRole: Friend/Reformer\nStatus: Retired Brigadier\n\nHe supports Helpline's initiatives and contributes his expertise to help the organization achieve its goals.",
   ],
   colZubairAhmad: [
     "Colonel Zubair Ahmad Chughtai (Retd) - Friend/Reformer:\n\nColonel Zubair Ahmad Chughtai (Retd) is a Friend/Reformer of Helpline Welfare Trust. As a retired Colonel with leadership experience, he is active in community service and support. Friends/Reformers play an important role in supporting Helpline's mission and programs.\n\nRole: Friend/Reformer\nStatus: Retired Colonel\n\nHe actively supports community service initiatives and contributes to Helpline's mission of serving humanity.",
@@ -951,7 +951,7 @@ function getBotResponse(userMessage) {
 
   if (
     message.match(
-      /\b(brig zahid hussain|zahid hussain goryaya|brig zahid|friend reformer zahid)\b/
+      /\b(brig zahid hussain|zahid hussain goraya|brig zahid|friend reformer zahid)\b/
     )
   ) {
     return knowledgeBase.brigZahidHussain[0];
@@ -1038,11 +1038,12 @@ export default function ChatBot() {
       {/* Floating Chat Button */}
       {!isOpen && (
         <div
+          className="hl-chat-fab"
           onClick={() => setIsOpen(true)}
           style={{
             position: "fixed",
-            bottom: "90px",
-            right: "20px",
+            bottom: "calc(90px + env(safe-area-inset-bottom, 0px))",
+            right: "max(20px, env(safe-area-inset-right, 0px))",
             width: "60px",
             height: "60px",
             backgroundColor: "#4A90E2",
@@ -1077,12 +1078,14 @@ export default function ChatBot() {
       {/* Chat Window */}
       {isOpen && (
         <div
+          className="hl-chat-window"
           style={{
             position: "fixed",
-            bottom: "20px",
-            right: "20px",
+            bottom: "calc(20px + env(safe-area-inset-bottom, 0px))",
+            right: "max(20px, env(safe-area-inset-right, 0px))",
             width: "380px",
             height: "500px",
+            maxHeight: "min(500px, calc(100vh - 40px))",
             backgroundColor: "#ffffff",
             borderRadius: "20px",
             boxShadow: "0 8px 32px rgba(0, 0, 0, 0.2)",
@@ -1137,9 +1140,12 @@ export default function ChatBot() {
 
           {/* Messages Container */}
           <div
+            className="hl-chat-messages"
             style={{
               flex: 1,
               overflowY: "auto",
+              WebkitOverflowScrolling: "touch",
+              overscrollBehavior: "contain",
               padding: "20px",
               backgroundColor: "#f5f5f5",
               display: "flex",
@@ -1227,6 +1233,7 @@ export default function ChatBot() {
           >
             <input
               type="text"
+              className="hl-chat-input"
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
               placeholder="Type your message..."
@@ -1274,14 +1281,36 @@ export default function ChatBot() {
         </div>
       )}
 
-      <style jsx>{`
+      <style jsx global>{`
+        /* Safari iOS: 16px+ inputs avoid automatic zoom on focus */
         @media (max-width: 768px) {
-          div[style*="width: 380px"] {
-            width: calc(100vw - 40px) !important;
-            right: 20px !important;
-            left: 20px !important;
-            height: calc(100vh - 40px) !important;
-            max-height: 500px !important;
+          .hl-chat-input {
+            font-size: 16px !important;
+          }
+          .hl-chat-window {
+            left: max(20px, env(safe-area-inset-left, 0px)) !important;
+            right: max(20px, env(safe-area-inset-right, 0px)) !important;
+            width: auto !important;
+            height: min(
+                500px,
+                calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 40px)
+              )
+              !important;
+            height: min(
+                500px,
+                calc(100svh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 40px)
+              )
+              !important;
+            max-height: min(
+                500px,
+                calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 40px)
+              )
+              !important;
+            max-height: min(
+                500px,
+                calc(100svh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 40px)
+              )
+              !important;
           }
         }
       `}</style>
