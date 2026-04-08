@@ -1,12 +1,29 @@
+/* Helpline campaigns theme */
+:root {
+  --camp-navy: #1a3a5c;
+  --camp-navy-deep: #142d48;
+  --camp-teal: #1e9c91;
+  --camp-teal-dark: #157a72;
+  --camp-coral: #f15b43;
+  --camp-coral-dark: #d94a35;
+  --camp-cream: #faf1f0;
+  --camp-gold: #f0d78c;
+  --camp-gold-deep: #e8c84a;
+  /* Campaign filter pills (reference UI) */
+  --filter-pill-active: #283e5a;
+  --filter-pill-text: #6b7280;
+  --filter-pill-text-hover: #4b5563;
+}
+
 /* Hero banner */
 .heroSection {
   position: relative;
   width: 100%;
-  min-height: 420px;
+  min-height: 440px;
   background: #f8f9fa url("/img/Campaigns/CampaignHeader.png") center center / cover no-repeat;
   display: flex;
   align-items: center;
-  padding: 140px 24px 48px;
+  padding: 140px 24px 52px;
   overflow: hidden;
 }
 
@@ -17,8 +34,31 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(
+    115deg,
+    rgba(255, 251, 248, 0.92) 0%,
+    rgba(240, 250, 248, 0.88) 45%,
+    rgba(255, 255, 255, 0.82) 100%
+  );
   pointer-events: none;
+}
+
+.heroSection::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    var(--camp-teal) 0%,
+    var(--camp-teal-dark) 35%,
+    var(--camp-coral) 85%,
+    var(--camp-gold-deep) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
 }
 
 .heroOverlay {
@@ -47,28 +87,48 @@
 }
 
 .heroLabel {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: #1a3a5c;
-  margin: 0 0 8px 0;
+  position: relative;
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--camp-teal-dark);
+  margin: 0 0 14px 0;
+  padding-bottom: 8px;
   text-transform: uppercase;
 }
 
+.heroLabel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--camp-coral) 0%,
+    var(--camp-teal) 100%
+  );
+}
+
 .heroTitle {
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 700;
-  color: #1a3a5c;
+  font-size: clamp(2.35rem, 5.5vw, 3.75rem);
+  font-weight: 800;
+  color: var(--camp-navy);
   margin: 0 0 16px 0;
-  letter-spacing: 4px;
+  letter-spacing: 0.12em;
+  line-height: 1.1;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 .heroSubtitle {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-  margin: 0 0 24px 0;
-  max-width: 420px;
+  font-size: 1.02rem;
+  color: #4a5568;
+  line-height: 1.65;
+  margin: 0 0 26px 0;
+  max-width: 440px;
 }
 
 .heroCta {
@@ -91,27 +151,39 @@
 }
 
 .heroBtnPrimary {
-  background: #1a1a1a;
+  background: linear-gradient(
+    145deg,
+    var(--camp-navy) 0%,
+    var(--camp-navy-deep) 100%
+  );
   color: #fff;
-  border: 2px solid #1a1a1a;
+  border: 2px solid var(--camp-navy-deep);
+  box-shadow: 0 4px 14px rgba(26, 58, 92, 0.25);
 }
 
 .heroBtnPrimary:hover {
-  background: #333;
-  border-color: #333;
+  background: linear-gradient(
+    145deg,
+    var(--camp-teal) 0%,
+    var(--camp-teal-dark) 100%
+  );
+  border-color: var(--camp-teal-dark);
   color: #fff;
+  box-shadow: 0 6px 20px rgba(30, 156, 145, 0.35);
 }
 
 .heroBtnSecondary {
-  background: transparent;
-  color: #1a3a5c;
-  border: 2px solid #1a3a5c;
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--camp-navy);
+  border: 2px solid var(--camp-navy);
+  backdrop-filter: blur(6px);
 }
 
 .heroBtnSecondary:hover {
-  border-color: #1a3a5c;
-  background: #1a3a5c;
+  border-color: var(--camp-coral);
+  background: var(--camp-coral);
   color: #fff;
+  box-shadow: 0 4px 16px rgba(241, 91, 67, 0.3);
 }
 
 .heroVideoWrap {
@@ -124,9 +196,13 @@
   position: relative;
   width: 100%;
   padding-top: 56.25%;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  box-shadow:
+    0 4px 0 rgba(30, 156, 145, 0.35),
+    0 24px 48px rgba(26, 58, 92, 0.22);
+  outline: 1px solid rgba(255, 255, 255, 0.6);
+  outline-offset: -1px;
 }
 
 .heroVideoIframe {
@@ -139,11 +215,12 @@
 }
 
 .heroVideoTitle {
-  margin: 12px 0 0 0;
-  font-size: 0.95rem;
+  margin: 14px 0 0 0;
+  font-size: 0.9rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--camp-navy);
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 768px) {
@@ -163,37 +240,380 @@
 /* Section header */
 .sectionHeader {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .sectionTitle {
   font-size: 2rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #1a3a5c;
   margin: 0 0 8px 0;
+  letter-spacing: 0.02em;
+}
+
+.sectionTitle::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #1e9c91 0%, #187e76 45%, #1a3a5c 100%);
 }
 
 .sectionSubtitle {
-  font-size: 1.1rem;
-  color: #6c757d;
-  margin: 0;
-}
-
-/* Campaign cards - compact width and size */
-.campaignCard {
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  border: none;
-  overflow: hidden;
-  background-color: #faf1f0;
-  border-radius: 8px;
-  max-width: 500px;
+  font-size: 1.08rem;
+  color: #5a6c7d;
+  margin: 0.75rem 0 0 0;
+  line-height: 1.55;
+  max-width: 36rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Listing area under hero */
+.listingBackdrop {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #fffdfb 0%,
+    var(--camp-cream) 12%,
+    #f7f4f3 55%,
+    #faf8f7 100%
+  );
+}
+
+.listingBackdrop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.listingContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.listingHydrationShell {
+  padding: 0.75rem 0 0.5rem;
+}
+
+.listingHydrationTitle {
+  width: min(340px, 72%);
+  height: 28px;
+  margin: 0 auto 22px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #e9edf2 20%, #f6f8fa 40%, #e9edf2 60%);
+  background-size: 200% 100%;
+  animation: campaignsShimmer 1.3s linear infinite;
+}
+
+.listingHydrationPills {
+  width: min(760px, 100%);
+  height: 48px;
+  margin: 0 auto 22px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #eceff4 20%, #f8fafc 42%, #eceff4 60%);
+  background-size: 200% 100%;
+  animation: campaignsShimmer 1.3s linear infinite;
+}
+
+.listingHydrationCards {
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #eceff4 20%, #f8fafc 42%, #eceff4 60%);
+  background-size: 200% 100%;
+  animation: campaignsShimmer 1.3s linear infinite;
+}
+
+@keyframes campaignsShimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Category filter panel — pill strip (white pills, navy active) */
+.filterPanel {
+  max-width: 960px;
+  margin: 0 auto 2.5rem;
+  padding: 1.1rem 1.25rem 1.15rem;
+  border-radius: 14px;
+  background: #f3f4f6;
+  border: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.filterPanelEyebrow {
+  margin: 0 0 0.85rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #6b7280;
+}
+
+.filterScroll {
+  margin: 0 -0.2rem;
+  padding: 0.2rem 0.2rem 0.1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(107, 114, 128, 0.4) transparent;
+}
+
+.filterScroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.filterScroll::-webkit-scrollbar-thumb {
+  background: rgba(107, 114, 128, 0.35);
+  border-radius: 99px;
+}
+
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-width: min-content;
+  padding: 2px 0 4px;
+}
+
+.filterBtn {
+  flex-shrink: 0;
+  padding: 11px 22px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--filter-pill-text);
+  background: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow:
+    0 2px 6px rgba(15, 23, 42, 0.06),
+    0 1px 2px rgba(15, 23, 42, 0.04);
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.filterBtn:hover {
+  color: var(--filter-pill-text-hover);
+  box-shadow:
+    0 4px 12px rgba(15, 23, 42, 0.1),
+    0 2px 4px rgba(15, 23, 42, 0.05);
+}
+
+.filterBtn:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px var(--filter-pill-active),
+    0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+.filterBtnActive {
+  color: #fff;
+  background: var(--filter-pill-active);
+  box-shadow:
+    0 3px 12px rgba(40, 62, 90, 0.35),
+    0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.filterBtnActive:hover {
+  color: #fff;
+  background: #1f3250;
+  box-shadow:
+    0 4px 16px rgba(40, 62, 90, 0.4),
+    0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.filterAllHint {
+  margin: 0.85rem 0 0;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+.filterHint {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0.85rem 0 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.filterHintBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--filter-pill-active);
+  background: #fff;
+  border: none;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.filterHintText {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.filterHintText strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+.filterClearLink {
+  margin-left: 0.35rem;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--filter-pill-active);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.filterClearLink:hover {
+  color: #1f3250;
+}
+
+.filterEmpty {
+  text-align: center;
+  padding: 2.75rem 1.75rem 2.5rem;
+  margin: 0 0 1.5rem;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    #fafafa 0%,
+    #f4fbfb 100%
+  );
+  border: 1px dashed rgba(30, 156, 145, 0.28);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.filterEmptyVisual {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.25rem;
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    rgba(30, 156, 145, 0.12) 0%,
+    rgba(26, 58, 92, 0.1) 100%
+  );
+  border: 1px solid rgba(30, 156, 145, 0.15);
+  box-shadow: 0 6px 20px rgba(30, 156, 145, 0.08);
+}
+
+.filterEmptyTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a3a5c;
+}
+
+.filterEmptyText {
+  margin: 0 auto 1.25rem;
+  max-width: 26rem;
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.filterEmptyBtn {
+  padding: 11px 22px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #1e9c91 0%, #157a72 100%);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(30, 156, 145, 0.35);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.filterEmptyBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(30, 156, 145, 0.42);
+}
+
+.filterEmptyBtn:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(30, 156, 145, 0.35),
+    0 4px 14px rgba(30, 156, 145, 0.35);
+}
+
+/* Campaign cards */
+.campaignCard {
+  transition:
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.28s ease;
+  border: 1px solid rgba(26, 58, 92, 0.08);
+  overflow: hidden;
+  background: linear-gradient(
+    165deg,
+    #fffefd 0%,
+    var(--camp-cream) 100%
+  );
+  border-radius: 16px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow:
+    0 2px 8px rgba(26, 58, 92, 0.06),
+    0 12px 28px rgba(26, 58, 92, 0.06);
+}
+
+.campaignCardFeatured {
+  border-color: rgba(30, 156, 145, 0.35);
+  box-shadow:
+    0 2px 8px rgba(30, 156, 145, 0.12),
+    0 14px 36px rgba(26, 58, 92, 0.1);
+}
+
 .campaignCard:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-5px);
+  box-shadow:
+    0 8px 24px rgba(26, 58, 92, 0.1),
+    0 20px 40px rgba(241, 91, 67, 0.08) !important;
+  border-color: rgba(30, 156, 145, 0.2);
 }
 
 .imageWrapper {
@@ -201,6 +621,41 @@
   width: 100%;
   padding-top: 52%;
   overflow: hidden;
+}
+
+.imageGradient {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(26, 58, 92, 0.35) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.featuredRibbon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 5px 12px;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    var(--camp-coral) 0%,
+    var(--camp-coral-dark) 100%
+  );
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(241, 91, 67, 0.45);
 }
 
 .image {
@@ -211,6 +666,7 @@
   height: 100% !important;
   object-fit: cover !important;
   transition: transform 0.3s ease;
+  z-index: 0;
 }
 
 .campaignCard:hover .image {
@@ -218,48 +674,84 @@
 }
 
 .campaignCard :global(.card-body) {
-  padding: 0.65rem 0.75rem;
+  padding: 0.85rem 1rem 0.75rem;
+}
+
+.cardCatRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 0.65rem;
+}
+
+.cardCatChip {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--camp-teal-dark);
+  background: rgba(30, 156, 145, 0.12);
+  border: 1px solid rgba(30, 156, 145, 0.22);
+  border-radius: 999px;
 }
 
 .cardTitle {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--camp-navy);
+  margin-bottom: 0.45rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
 }
 
 .cardDescription {
-  color: #6c757d;
-  font-size: 0.8rem;
-  line-height: 1.4;
+  color: #5c6570;
+  font-size: 0.825rem;
+  line-height: 1.5;
   min-height: 36px;
 }
 
 .progress {
-  height: 6px;
-  border-radius: 4px;
-  background-color: #e9ecef;
+  height: 8px;
+  border-radius: 99px;
+  background-color: rgba(26, 58, 92, 0.08);
   overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 
 .progressBar {
-  background: linear-gradient(90deg, #1e9c91 0%, #187e76 100%);
+  background: linear-gradient(
+    90deg,
+    var(--camp-teal) 0%,
+    var(--camp-teal-dark) 55%,
+    var(--camp-coral) 100%
+  );
   transition: width 0.6s ease;
+  border-radius: 99px;
+  box-shadow: 0 0 12px rgba(30, 156, 145, 0.35);
 }
 
 .statsContainer {
   display: flex;
   justify-content: space-between;
-  margin-top: 0.35rem;
+  margin-top: 0.45rem;
   font-size: 0.75rem;
-  color: #6c757d;
+  font-weight: 600;
+  color: var(--camp-navy);
+}
+
+.statsContainer :global(.text-muted) {
+  color: #5a6570 !important;
 }
 
 /* In-card payment */
 .paymentSection {
   margin-bottom: 0.6rem;
-  padding: 0.6rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 0.65rem 0 0.5rem;
+  border-top: 1px solid rgba(26, 58, 92, 0.1);
+  margin-top: 0.15rem;
 }
 
 .paymentLabel {
@@ -277,40 +769,53 @@
 }
 
 .presetBtn {
-  padding: 5px 10px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #1a3a5c;
-  background: #f0d78c;
-  border: 1px solid #e8c84a;
-  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--camp-navy-deep);
+  background: linear-gradient(180deg, var(--camp-gold) 0%, #e9cf7a 100%);
+  border: 1px solid var(--camp-gold-deep);
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(26, 58, 92, 0.08);
 }
 
 .presetBtn:hover {
-  background: #e8c84a;
+  background: linear-gradient(180deg, var(--camp-gold-deep) 0%, #d4a84b 100%);
   border-color: #d4a84b;
+  transform: translateY(-1px);
 }
 
 .presetBtnActive {
-  background: #1a3a5c;
+  background: linear-gradient(
+    145deg,
+    var(--camp-navy) 0%,
+    var(--camp-teal-dark) 100%
+  );
   color: #fff;
-  border-color: #1a3a5c;
+  border-color: var(--camp-navy-deep);
+  box-shadow: 0 2px 8px rgba(26, 58, 92, 0.25);
 }
 
 .amountInput {
   width: 100%;
-  padding: 6px 10px;
+  padding: 8px 12px;
   font-size: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid rgba(26, 58, 92, 0.15);
+  border-radius: 8px;
   margin-bottom: 6px;
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .amountInput:focus {
   outline: none;
-  border-color: #1e9c91;
+  border-color: var(--camp-teal);
+  box-shadow: 0 0 0 3px rgba(30, 156, 145, 0.15);
+}
+
+.amountInput::placeholder {
+  color: #9aa5b1;
 }
 
 .donationError {
@@ -329,40 +834,49 @@
 .detailButton {
   flex: 1;
   min-width: 90px;
-  background: transparent;
-  color: #1a3a5c;
-  border: 1px solid #1a3a5c;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.8rem;
-  font-weight: 600;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--camp-navy);
+  border: 2px solid var(--camp-navy);
+  padding: 0.55rem 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: all 0.2s ease;
 }
 
 .detailButton:hover {
-  background: #1a3a5c;
+  background: var(--camp-navy);
   color: #fff;
+  border-color: var(--camp-navy);
+  box-shadow: 0 4px 12px rgba(26, 58, 92, 0.2);
 }
 
 .actionButton {
   flex: 1;
   min-width: 90px;
-  background-color: #1a1a1a;
+  background: linear-gradient(
+    145deg,
+    var(--camp-coral) 0%,
+    var(--camp-coral-dark) 100%
+  );
   color: #fff;
   border: none;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.75rem;
-  font-weight: 700;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: background-color 0.2s ease;
+  letter-spacing: 0.06em;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(241, 91, 67, 0.35);
 }
 
 .actionButton:hover {
-  background-color: #333;
   color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(241, 91, 67, 0.45);
 }
 
 /* Payment modal (merchant account) */
@@ -404,29 +918,114 @@
 }
 
 .cardFooter {
-  background-color: transparent;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 0.5rem 0.75rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(250, 241, 240, 0.5) 100%
+  );
+  border-top: 1px solid rgba(26, 58, 92, 0.08);
+  padding: 0.55rem 1rem;
 }
 
 .badge {
-  font-size: 0.65rem;
-  font-weight: 600;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .badgeUpcoming {
-  background-color: #1e9c91;
+  background: linear-gradient(
+    135deg,
+    var(--camp-teal) 0%,
+    var(--camp-teal-dark) 100%
+  );
   color: white;
+  box-shadow: 0 2px 8px rgba(30, 156, 145, 0.3);
 }
 
 .badgeActive {
-  background-color: #28a745;
+  background: linear-gradient(135deg, #22a06b 0%, #188a55 100%);
   color: white;
+  box-shadow: 0 2px 8px rgba(34, 160, 107, 0.25);
 }
 
 @media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 1.65rem;
+  }
+
+  .sectionTitle::after {
+    margin-top: 12px;
+    height: 3px;
+    width: 48px;
+  }
+
+  .filterPanel {
+    margin-bottom: 2rem;
+    padding: 1rem 0.85rem 1.05rem;
+    border-radius: 12px;
+  }
+
+  .filterPanelEyebrow {
+    margin-bottom: 0.65rem;
+    font-size: 0.8125rem;
+  }
+
+  .filterScroll {
+    margin: 0 -0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      #000 4%,
+      #000 96%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      #000 4%,
+      #000 96%,
+      transparent 100%
+    );
+  }
+
+  .filterBar {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    padding-bottom: 6px;
+  }
+
+  .filterBtn {
+    padding: 9px 16px;
+    font-size: 0.8125rem;
+  }
+
+  .filterAllHint {
+    font-size: 0.8125rem;
+    padding: 0 0.25rem;
+  }
+
+  .filterHint {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .filterClearLink {
+    margin-left: 0;
+    margin-top: 0.15rem;
+  }
+
+  .filterEmpty {
+    padding: 2rem 1.25rem;
+    border-radius: 16px;
+  }
+
   .campaignCard {
     max-width: 100%;
   }
@@ -447,4 +1046,70 @@
     padding: 5px 8px;
     font-size: 0.7rem;
   }
+}
+
+/* Campaign detail page theme alignment */
+.detailContainer {
+  margin-top: 250px;
+}
+
+.detailMainCard,
+.detailSideCard {
+  border: 1px solid rgba(26, 58, 92, 0.08);
+  border-radius: 16px;
+  background: #ffffff !important;
+  box-shadow:
+    0 2px 8px rgba(26, 58, 92, 0.06),
+    0 12px 28px rgba(26, 58, 92, 0.06);
+}
+
+.detailHeroImageWrap {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.detailHeroImage {
+  object-fit: cover;
+}
+
+.detailMainBody,
+.detailSideBody {
+  padding: 1rem;
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+.detailSideHeader {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(250, 241, 240, 0.6) 100%);
+  border-bottom: 1px solid rgba(26, 58, 92, 0.08);
+}
+
+.detailTitle {
+  color: var(--camp-navy);
+  font-weight: 700;
+}
+
+.detailIntroText {
+  color: #5c6570;
+  line-height: 1.65;
+}
+
+.detailMainCard :global(.list-group-item),
+.detailSideCard :global(.list-group-item),
+.detailMainCard :global(.card),
+.detailSideCard :global(.card) {
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+.detailMainCard :global(.list-group),
+.detailMainCard :global(.card-body),
+.detailMainCard :global(.card-header),
+.detailMainCard :global(.row),
+.detailMainCard :global([class*="col-"]) {
+  background: #ffffff !important;
+  background-image: none !important;
 }

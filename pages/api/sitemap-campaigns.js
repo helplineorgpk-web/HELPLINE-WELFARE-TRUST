@@ -1,21 +1,4 @@
-// Campaign data from the campaign detail page
-const campaignsData = [
-  {
-    id: "flood-relief-project",
-  },
-  {
-    id: "education-support",
-  },
-  {
-    id: "medical-aid",
-  },
-  {
-    id: "qurbani-2025",
-  },
-  {
-    id: "ramzan-2025",
-  }
-];
+import { campaignsData } from "../campaigns";
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
