@@ -748,6 +748,206 @@ export const campaignsData = [
     status: "Upcoming",
     categories: ["social-welfare"],
   },
+  {
+    id: "sponsor-womens-skills-training",
+    title: "Sponsor a Woman's Skills Training",
+    href: "/campaigns",
+    description:
+      "Women trainee sponsorship — help more women complete employable skills training.",
+    image: "/img/causes/cause13.jpg",
+    details: {
+      goal: 1500000,
+      raised: 0,
+      packages: [
+        {
+          name: "Starter support",
+          price: 3000,
+          description: "Starter support for a woman trainee",
+        },
+        {
+          name: "Training materials",
+          price: 5000,
+          description: "Training materials for skills programs",
+        },
+        {
+          name: "Trainee support",
+          price: 10000,
+          description: "Full trainee support tier",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["sustainability"],
+    campaignCode: "CAM-SUST-WTRN-012",
+    longDescription:
+      "Help more women complete employable skills training. Your sponsorship covers materials, continuity, and direct support so trainees can finish programs and move toward stable income.",
+    impact: [
+      { value: "Sponsor a trainee", label: "Call to action" },
+      { value: "PKR 3,000+", label: "Suggested support tiers" },
+      { value: "Skills", label: "Employable training focus" },
+    ],
+  },
+  {
+    id: "fund-womens-workshop",
+    title: "Fund a Women's Workshop",
+    href: "/campaigns",
+    description:
+      "Workshop support and equipment — raise funds for machines, materials, and workshop continuity.",
+    image: "/img/causes/construction2.jpeg",
+    details: {
+      goal: 2000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Materials support",
+          price: 5000,
+          description: "Materials support for women's workshops",
+        },
+        {
+          name: "Machine support",
+          price: 10000,
+          description: "Machine and equipment support",
+        },
+        {
+          name: "Workshop support",
+          price: 25000,
+          description: "Broader workshop continuity support",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["sustainability"],
+    campaignCode: "CAM-SUST-WWS-013",
+    longDescription:
+      "Raise funds for machines, materials, and workshop continuity so women can keep learning in a safe, equipped space. Donations help sustain operations and replace or repair essential equipment.",
+    impact: [
+      { value: "Fund a workshop", label: "Call to action" },
+      { value: "PKR 5,000+", label: "Materials to full support" },
+      { value: "Continuity", label: "Workshop operations" },
+    ],
+  },
+  {
+    id: "sponsor-youth-trainee",
+    title: "Sponsor a Youth Trainee",
+    href: "/campaigns",
+    description:
+      "Youth trainee sponsorship — help boys and girls gain practical employable skills.",
+    image: "/img/causes/StudentSupportProgram.jpg",
+    details: {
+      goal: 1500000,
+      raised: 0,
+      packages: [
+        {
+          name: "Starter support",
+          price: 3000,
+          description: "Starter support for a youth trainee",
+        },
+        {
+          name: "Skills materials",
+          price: 5000,
+          description: "Materials for practical skills training",
+        },
+        {
+          name: "Trainee support",
+          price: 10000,
+          description: "Full trainee support tier",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["sustainability"],
+    campaignCode: "CAM-SUST-YTRN-014",
+    longDescription:
+      "Help boys and girls gain practical employable skills through structured training. Sponsorship keeps young people in programs with the supplies and support they need to complete their courses.",
+    impact: [
+      { value: "Sponsor a student", label: "Call to action" },
+      { value: "PKR 3,000+", label: "Flexible sponsorship tiers" },
+      { value: "Youth", label: "Practical skills pathway" },
+    ],
+  },
+  {
+    id: "equip-youth-workshop",
+    title: "Equip a Youth Workshop",
+    href: "/campaigns",
+    description:
+      "Workshop equipment campaign — raise funds for workshop equipment and operations.",
+    image: "/img/causes/upgraded1.JPG",
+    details: {
+      goal: 2000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Tools support",
+          price: 5000,
+          description: "Tools support for youth workshops",
+        },
+        {
+          name: "Equipment support",
+          price: 10000,
+          description: "Equipment purchases and maintenance",
+        },
+        {
+          name: "Workshop support",
+          price: 25000,
+          description: "Broader workshop operations support",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["sustainability"],
+    campaignCode: "CAM-SUST-YWS-015",
+    longDescription:
+      "Raise funds for workshop equipment and operations so young people can train with reliable tools and a functioning learning environment. Support covers tools, equipment, and day-to-day workshop needs.",
+    impact: [
+      { value: "Equip a workshop", label: "Call to action" },
+      { value: "PKR 5,000+", label: "Tools to full support" },
+      { value: "Operations", label: "Equipment & continuity" },
+    ],
+  },
+  {
+    id: "sponsor-chicken-box",
+    title: "Sponsor a Chicken Box",
+    href: "/campaigns",
+    description:
+      "Livelihood and chicken box campaign — help families move toward self-sufficiency through small livestock support.",
+    image: "/img/Campaigns/Food.webp",
+    details: {
+      goal: 1500000,
+      raised: 0,
+      packages: [
+        {
+          name: "Starter support",
+          price: 3000,
+          description: "Starter support for a chicken box",
+        },
+        {
+          name: "Family support",
+          price: 10000,
+          description: "Expanded family livelihood support",
+        },
+        {
+          name: "Bigger support",
+          price: 25000,
+          description: "Larger livelihood package",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["sustainability"],
+    campaignCode: "CAM-SUST-CHICK-016",
+    longDescription:
+      "Help families move toward self-sufficiency through small livestock support. A chicken box provides a practical starting point for income and nutrition while building longer-term resilience.",
+    impact: [
+      { value: "Sponsor a chicken box", label: "Call to action" },
+      { value: "PKR 3,000+", label: "Starter to expanded support" },
+      { value: "Livelihood", label: "Small livestock pathway" },
+    ],
+  },
 ];
 
 function getPresetAmounts(campaign) {
@@ -1102,7 +1302,9 @@ export default function Campaigns({ campaigns = campaignsData }) {
                       <small className="text-muted">
                         {campaign.status === "Running"
                           ? "Running"
-                          : "Ended"}{" "}
+                          : campaign.status === "Upcoming"
+                            ? "Upcoming"
+                            : "Ended"}{" "}
                         {formatCampaignEndDate(campaign.details.endDate)}
                       </small>
                       <span

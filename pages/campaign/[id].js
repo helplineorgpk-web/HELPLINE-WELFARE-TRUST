@@ -235,6 +235,13 @@ function buildBeneficiarySection(campaign) {
       "Communities where education continuity reduces dropout risk",
     ];
   }
+  if ((campaign.categories || []).includes("sustainability")) {
+    return [
+      "Women and youth in skills training, workshops, and vocational programs",
+      "Families building livelihoods through structured support (including small livestock)",
+      "Communities where employability and self-sufficiency are strengthened",
+    ];
+  }
   if ((campaign.categories || []).includes("disaster-relief")) {
     return [
       "Families affected by emergencies and natural disasters",
@@ -280,6 +287,13 @@ function buildCampaignObjectives(campaign) {
       "Increase student enrollment and retention through direct sponsorship.",
       "Improve school delivery quality with better resources and infrastructure.",
       "Reduce dropout risk in vulnerable communities through consistent funding.",
+    ];
+  }
+  if ((campaign.categories || []).includes("sustainability")) {
+    return [
+      "Expand access to skills training, workshop materials, and equipment.",
+      "Support trainees and families through clear sponsorship and donation tiers.",
+      "Strengthen long-term self-reliance through vocational and livelihood programs.",
     ];
   }
   return [
