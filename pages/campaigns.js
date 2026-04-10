@@ -336,7 +336,7 @@ export const campaignsData = [
     href: "/campaigns",
     description:
       "Give direct support for adopted government schools in interior Sindh for education continuity.",
-    image: "/img/causes/gpsmisali1.jpg",
+    image: "/img/causes/masari.jpg",
     details: {
       goal: 2500000,
       raised: 670000,
@@ -690,33 +690,6 @@ export const campaignsData = [
     categories: ["education", "social-welfare"],
   },
   {
-    id: "flood-relief-project",
-    title: "Flood Relief Project",
-    href: "/flood-relief",
-    description:
-      "Providing immediate relief to flood-affected families across Pakistan.",
-    image: "/img/causes/disasterbg.jpg",
-    details: {
-      goal: 2000000,
-      raised: 1250000,
-      packages: [
-        {
-          name: "Emergency Package",
-          price: 10000,
-          description: "Food, water, medical supplies for 1 week",
-        },
-        {
-          name: "Family Package",
-          price: 25000,
-          description: "Complete relief package for 1 month",
-        },
-      ],
-      endDate: "2026-12-31",
-    },
-    status: "Running",
-    categories: ["disaster-relief", "healthcare"],
-  },
-  {
     id: "qurbani-2026",
     title: "Qurbani Program 2026",
     href: "/qurbani",
@@ -794,7 +767,7 @@ export const campaignsData = [
     href: "/campaigns",
     description:
       "Workshop support and equipment — raise funds for machines, materials, and workshop continuity.",
-    image: "/img/causes/construction2.jpeg",
+    image: "/img/programs/computerlab.jpg",
     details: {
       goal: 2000000,
       raised: 0,
@@ -826,86 +799,6 @@ export const campaignsData = [
       { value: "Fund a workshop", label: "Call to action" },
       { value: "PKR 5,000+", label: "Materials to full support" },
       { value: "Continuity", label: "Workshop operations" },
-    ],
-  },
-  {
-    id: "sponsor-youth-trainee",
-    title: "Sponsor a Youth Trainee",
-    href: "/campaigns",
-    description:
-      "Youth trainee sponsorship — help boys and girls gain practical employable skills.",
-    image: "/img/causes/StudentSupportProgram.jpg",
-    details: {
-      goal: 1500000,
-      raised: 0,
-      packages: [
-        {
-          name: "Starter support",
-          price: 3000,
-          description: "Starter support for a youth trainee",
-        },
-        {
-          name: "Skills materials",
-          price: 5000,
-          description: "Materials for practical skills training",
-        },
-        {
-          name: "Trainee support",
-          price: 10000,
-          description: "Full trainee support tier",
-        },
-      ],
-      endDate: "2026-12-31",
-    },
-    status: "Upcoming",
-    categories: ["sustainability"],
-    campaignCode: "CAM-SUST-YTRN-014",
-    longDescription:
-      "Help boys and girls gain practical employable skills through structured training. Sponsorship keeps young people in programs with the supplies and support they need to complete their courses.",
-    impact: [
-      { value: "Sponsor a student", label: "Call to action" },
-      { value: "PKR 3,000+", label: "Flexible sponsorship tiers" },
-      { value: "Youth", label: "Practical skills pathway" },
-    ],
-  },
-  {
-    id: "equip-youth-workshop",
-    title: "Equip a Youth Workshop",
-    href: "/campaigns",
-    description:
-      "Workshop equipment campaign — raise funds for workshop equipment and operations.",
-    image: "/img/causes/upgraded1.JPG",
-    details: {
-      goal: 2000000,
-      raised: 0,
-      packages: [
-        {
-          name: "Tools support",
-          price: 5000,
-          description: "Tools support for youth workshops",
-        },
-        {
-          name: "Equipment support",
-          price: 10000,
-          description: "Equipment purchases and maintenance",
-        },
-        {
-          name: "Workshop support",
-          price: 25000,
-          description: "Broader workshop operations support",
-        },
-      ],
-      endDate: "2026-12-31",
-    },
-    status: "Upcoming",
-    categories: ["sustainability"],
-    campaignCode: "CAM-SUST-YWS-015",
-    longDescription:
-      "Raise funds for workshop equipment and operations so young people can train with reliable tools and a functioning learning environment. Support covers tools, equipment, and day-to-day workshop needs.",
-    impact: [
-      { value: "Equip a workshop", label: "Call to action" },
-      { value: "PKR 5,000+", label: "Tools to full support" },
-      { value: "Operations", label: "Equipment & continuity" },
     ],
   },
   {
@@ -946,6 +839,451 @@ export const campaignsData = [
       { value: "Sponsor a chicken box", label: "Call to action" },
       { value: "PKR 3,000+", label: "Starter to expanded support" },
       { value: "Livelihood", label: "Small livestock pathway" },
+    ],
+  },
+  {
+    id: "give-zakat-highest-need",
+    title: "Give Zakat Where It Is Needed Most",
+    href: "/campaigns",
+    description:
+      "Flexible Zakat — let donors give Zakat toward urgent eligible needs across programs.",
+    image: "/img/causes/RashanPackage.jpg",
+    details: {
+      goal: 3000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Starter gift",
+          price: 2500,
+          description: "Starter Zakat contribution",
+        },
+        {
+          name: "Zakat support",
+          price: 5000,
+          description: "Mid-tier Zakat gift",
+        },
+        {
+          name: "Zakat contribution",
+          price: 10000,
+          description: "Larger Zakat allocation",
+        },
+        {
+          name: "Major Zakat",
+          price: 25000,
+          description: "High-impact Zakat tier",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["social-welfare"],
+    campaignCode: "CAM-SW-ZAKAT-023",
+    longDescription:
+      "Pool Zakat where need is greatest among eligible recipients, with suggested amounts and a custom field for any lawful amount. Best paired with clear eligibility messaging and distribution oversight.",
+    impact: [
+      { value: "Pay Zakat now", label: "Call to action" },
+      { value: "PKR 2,500+", label: "Suggested Zakat tiers" },
+      { value: "Highest need", label: "Flexible urgent deployment" },
+    ],
+  },
+  {
+    id: "install-ro-filter-plant",
+    title: "Install a New RO Filter Plant",
+    href: "/campaigns",
+    description:
+      "New RO plant — raise funds to install a new RO filter plant in a water-scarcity area (~PKR 1,000,000 per plant).",
+    image: "/img/causes/blochistanwater.jpg",
+    details: {
+      goal: 1000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Plant support",
+          price: 25000,
+          description: "Contribution toward new RO installation",
+        },
+        {
+          name: "Plant build support",
+          price: 50000,
+          description: "Mid-tier plant funding",
+        },
+        {
+          name: "Major plant support",
+          price: 100000,
+          description: "Strong push toward plant completion",
+        },
+        {
+          name: "Lead plant support",
+          price: 250000,
+          description: "Large contribution toward one plant",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["social-welfare"],
+    campaignCode: "CAM-SW-WATER-024",
+    longDescription:
+      "Fund installation of a new reverse-osmosis plant where clean water is scarce. Approximate full plant cost is around one million PKR; tiered gifts help reach that target while allowing many donors to participate.",
+    impact: [
+      { value: "Donate for a new RO plant", label: "Call to action" },
+      { value: "~PKR 1M", label: "Approx. per plant" },
+      { value: "Water-scarce areas", label: "New installation focus" },
+    ],
+  },
+  {
+    id: "support-existing-ro-plant",
+    title: "Keep an Existing RO Plant Running",
+    href: "/campaigns",
+    description:
+      "RO plant running costs — monthly support for maintenance and electricity (~PKR 150,000 / month).",
+    image: "/img/water/IMG_20201101_124923.jpg",
+    details: {
+      goal: 150000,
+      raised: 0,
+      packages: [
+        {
+          name: "Monthly support",
+          price: 5000,
+          description: "Toward maintenance and utilities",
+        },
+        {
+          name: "Operations support",
+          price: 10000,
+          description: "Stronger monthly operations gift",
+        },
+        {
+          name: "Plant upkeep",
+          price: 25000,
+          description: "Major monthly upkeep contribution",
+        },
+        {
+          name: "Sustainer support",
+          price: 50000,
+          description: "Large monthly running-cost support",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["social-welfare"],
+    campaignCode: "CAM-SW-WATER-025",
+    longDescription:
+      "Existing RO plants need steady funds for filters, repairs, and electricity. This campaign frames ~PKR 150,000 per month as a running-cost target donors can chip away at through recurring or one-time gifts.",
+    impact: [
+      { value: "Support an RO plant", label: "Call to action" },
+      { value: "~PKR 150k/mo", label: "Running cost target" },
+      { value: "Maintenance", label: "Keep plants operational" },
+    ],
+  },
+  {
+    id: "fund-kmc-essential-medicines",
+    title: "Fund Essential Medicines at KMC",
+    href: "/campaigns",
+    description:
+      "Hospital medicines fund — flexible support for free medicines at KMC for patients who cannot afford them.",
+    image: "/img/causes/freemedical.jpg",
+    details: {
+      goal: 2000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Starter support",
+          price: 2500,
+          description: "Starter medicines support",
+        },
+        {
+          name: "Medicine support",
+          price: 5000,
+          description: "Medicine purchase support",
+        },
+        {
+          name: "Patient support",
+          price: 10000,
+          description: "Broader patient medicine support",
+        },
+        {
+          name: "Major medicine support",
+          price: 50000,
+          description: "High-impact medicines contribution",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["healthcare"],
+    campaignCode: "CAM-HC-MEDS-026",
+    longDescription:
+      "Raise flexible support for essential free medicines at KMC so deserving patients receive prescriptions without financial barriers. Works well alongside recurring monthly medicine drives as costs are finalized.",
+    impact: [
+      { value: "Donate for medicines", label: "Call to action" },
+      { value: "PKR 2,500+", label: "Flexible gift tiers" },
+      { value: "KMC", label: "Hospital medicines focus" },
+    ],
+  },
+  {
+    id: "support-kmc-patient-care",
+    title: "Support Patient Care at KMC",
+    href: "/campaigns",
+    description:
+      "Hospital patient care — support free checkups and clinic-day care for patients at KMC.",
+    image: "/img/causes/karbathhospital.JPG",
+    details: {
+      goal: 2000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Starter support",
+          price: 2500,
+          description: "Starter patient care support",
+        },
+        {
+          name: "Care support",
+          price: 5000,
+          description: "Direct care support",
+        },
+        {
+          name: "Clinic support",
+          price: 10000,
+          description: "Clinic-day and consultation support",
+        },
+        {
+          name: "Major clinic support",
+          price: 25000,
+          description: "Major contribution to patient care",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["healthcare"],
+    campaignCode: "CAM-HC-CARE-027",
+    longDescription:
+      "Raise flexible support for free checkups and clinic-day care so more patients can access dignified outpatient services. Complements medicines and other KMC giving options.",
+    impact: [
+      { value: "Support patient care", label: "Call to action" },
+      { value: "PKR 2,500+", label: "Care & clinic tiers" },
+      { value: "KMC", label: "Checkups & clinic days" },
+    ],
+  },
+  {
+    id: "mithi-mobile-dispensary-ambulance",
+    title: "Upgrade the Mithi Mobile Dispensary to an Ambulance",
+    href: "/campaigns",
+    description:
+      "Capital campaign — raise PKR 13 million to upgrade the Mithi mobile dispensary into a fully equipped ambulance.",
+    image: "/img/causes/mithimedicalcamp1.jpg",
+    details: {
+      goal: 13000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Support gift",
+          price: 25000,
+          description: "Contribution toward ambulance upgrade",
+        },
+        {
+          name: "Bigger gift",
+          price: 50000,
+          description: "Stronger capital support",
+        },
+        {
+          name: "Major gift",
+          price: 100000,
+          description: "Major gift toward vehicle & equipment",
+        },
+        {
+          name: "Lead gift",
+          price: 250000,
+          description: "Leadership-level capital support",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["healthcare"],
+    campaignCode: "CAM-HC-AMB-028",
+    longDescription:
+      "Fund the capital requirement to upgrade the Mithi mobile dispensary into an ambulance so emergency and outreach care can reach remote communities safely. Campaign goal reflects the approximate PKR 13 million upgrade target.",
+    impact: [
+      { value: "Support the ambulance upgrade", label: "Call to action" },
+      { value: "PKR 13M", label: "Capital goal (approx.)" },
+      { value: "Mithi", label: "Mobile care upgrade" },
+    ],
+  },
+  {
+    id: "restore-sight-cataract-surgery",
+    title: "Restore Sight Through Cataract Surgery",
+    href: "/campaigns",
+    description:
+      "Cataract surgery campaign — sponsor sight-restoring operations including lens (PKR 13,000 per operation).",
+    image: "/img/Campaigns/Medical.webp",
+    details: {
+      goal: 2000000,
+      raised: 0,
+      packages: [
+        {
+          name: "1 surgery",
+          price: 13000,
+          description: "One cataract operation including lens",
+        },
+        {
+          name: "2 surgeries",
+          price: 26000,
+          description: "Two cataract operations including lens",
+        },
+        {
+          name: "5 surgeries",
+          price: 65000,
+          description: "Five cataract operations including lens",
+        },
+        {
+          name: "10 surgeries",
+          price: 130000,
+          description: "Ten cataract operations including lens",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["healthcare"],
+    campaignCode: "CAM-HC-CAT-029",
+    longDescription:
+      "Raise funds for sight-restoring cataract surgeries for deserving patients, priced at approximately PKR 13,000 per operation including lens. Scale impact by sponsoring one or multiple procedures.",
+    impact: [
+      { value: "Sponsor a cataract operation", label: "Call to action" },
+      { value: "PKR 13,000", label: "Per operation (incl. lens)" },
+      { value: "Sight restoration", label: "Deserving patients" },
+    ],
+  },
+  {
+    id: "emergency-response-fund",
+    title: "Emergency Response Fund",
+    href: "/campaigns",
+    description:
+      "Rapid response — raise fast, flexible emergency funds for rescue and relief when crises hit.",
+    image: "/img/causes/disasterbg.jpg",
+    details: {
+      goal: 3000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Starter gift",
+          price: 5000,
+          description: "Starter emergency response support",
+        },
+        {
+          name: "Family relief",
+          price: 10000,
+          description: "Family-level relief contribution",
+        },
+        {
+          name: "Bigger relief",
+          price: 25000,
+          description: "Stronger response support",
+        },
+        {
+          name: "Major relief",
+          price: 100000,
+          description: "Major emergency response gift",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["disaster-relief"],
+    campaignCode: "CAM-DR-RESP-032",
+    longDescription:
+      "Keep a ready pool of funds for rescue and first-line relief—food, shelter material, transport, and coordination—when disasters strike. Flexible gifts help teams move quickly before larger appeals launch.",
+    impact: [
+      { value: "Donate for emergency response", label: "Call to action" },
+      { value: "PKR 5,000+", label: "Flexible relief tiers" },
+      { value: "Rapid", label: "Rescue & relief focus" },
+    ],
+  },
+  {
+    id: "donate-calamity-management-program",
+    title: "Donate for Calamity Management Program",
+    href: "/flood-relief",
+    description:
+      "Calamity management — preparedness, relief, rehabilitation, and recovery for natural or human-made disasters.",
+    image: "/img/causes/houseconstruction4.jpeg",
+    details: {
+      goal: 5000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Emergency supplies",
+          price: 5000,
+          description: "Emergency supplies and kit support",
+        },
+        {
+          name: "Family relief",
+          price: 10000,
+          description: "Family relief support",
+        },
+        {
+          name: "Response support",
+          price: 25000,
+          description: "Broader response and field support",
+        },
+        {
+          name: "Major support",
+          price: 100000,
+          description: "Major calamity program support",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["disaster-relief"],
+    campaignCode: "CAM-DR-REHAB-033",
+    longDescription:
+      "Support the full cycle of calamity work: preparedness, immediate relief, rehabilitation, and longer recovery—not only floods but earthquakes and other shocks. This program replaces a single flood-only framing with one durable disaster pipeline.",
+    impact: [
+      { value: "Donate for calamity management", label: "Call to action" },
+      { value: "PKR 5,000+", label: "Relief to recovery" },
+      { value: "Full cycle", label: "Preparedness & rehab" },
+    ],
+  },
+  {
+    id: "sponsor-safe-home-disaster-family",
+    title: "Sponsor a Safe Home for a Disaster-Hit Family",
+    href: "/campaigns",
+    description:
+      "Safe housing — support safer rebuilding for families after disasters, backed by Helpline’s shelter track record.",
+    image: "/img/causes/houseconstruction1.jpeg",
+    details: {
+      goal: 4000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Starter support",
+          price: 25000,
+          description: "Starter housing recovery support",
+        },
+        {
+          name: "Housing support",
+          price: 50000,
+          description: "Stronger safe-home contribution",
+        },
+        {
+          name: "Major housing support",
+          price: 100000,
+          description: "Major gift toward safer housing",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Upcoming",
+    categories: ["disaster-relief"],
+    campaignCode: "CAM-DR-HOME-034",
+    longDescription:
+      "Raise support for future safe housing and proof-of-impact rebuilding after disasters. Donors sponsor dignified, safer shelter aligned with field assessments and Helpline’s housing experience.",
+    impact: [
+      { value: "Sponsor safer housing", label: "Call to action" },
+      { value: "PKR 25,000+", label: "Housing gift tiers" },
+      { value: "Rebuild", label: "Disaster-hit families" },
     ],
   },
 ];

@@ -408,7 +408,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Campaign detail pages
   const campaignPages: MetadataRoute.Sitemap = [
-    'flood-relief-project',
+    'emergency-response-fund',
+    'donate-calamity-management-program',
+    'sponsor-safe-home-disaster-family',
     'education-support',
     'medical-aid',
     'qurbani-2025',

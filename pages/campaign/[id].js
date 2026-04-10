@@ -6,6 +6,8 @@ import { campaignsData } from "../campaigns";
 import UBLPaymentForm from "../../Components/Elements/Payment/UBLPaymentForm";
 import CampaignHeroHeader from "../../Components/Elements/Campaign/CampaignHeroHeader";
 import styles from "../../styles/Campaigns.module.css";
+import { CAMPAIGN_DETAIL_SECTIONS } from "../../data/campaignDetailSections";
+import { CAMPAIGN_DETAIL_HIGHLIGHTS } from "../../data/campaignDetailHighlights";
 
 const EDUCATION_DETAIL_CONTENT = {
   "support-the-student": {
@@ -214,6 +216,12 @@ function buildImpact(campaign, supplemental) {
 }
 
 function buildCampaignHighlights(campaign) {
+  const story = CAMPAIGN_DETAIL_HIGHLIGHTS[campaign.id];
+  if (story?.length) return story;
+
+  const custom = CAMPAIGN_DETAIL_SECTIONS[campaign.id];
+  if (custom?.highlights?.length) return custom.highlights;
+
   const topPackages = (campaign?.details?.packages || [])
     .slice(0, 3)
     .map((pkg) => `${pkg.name} (Rs.${formatPkr(pkg.price)})`);
@@ -228,6 +236,9 @@ function buildCampaignHighlights(campaign) {
 }
 
 function buildBeneficiarySection(campaign) {
+  const custom = CAMPAIGN_DETAIL_SECTIONS[campaign.id];
+  if (custom?.beneficiaries?.length) return custom.beneficiaries;
+
   if ((campaign.categories || []).includes("education")) {
     return [
       "Students from low-income families",
@@ -249,6 +260,13 @@ function buildBeneficiarySection(campaign) {
       "Vulnerable households needing immediate relief",
     ];
   }
+  if ((campaign.categories || []).includes("healthcare")) {
+    return [
+      "Patients who need free or subsidized medicines, surgery, and outpatient care",
+      "Communities served by hospital outreach, mobile units, and field medical teams",
+      "Individuals eligible for sight-restoring procedures and emergency transport support",
+    ];
+  }
   if ((campaign.categories || []).includes("social-welfare")) {
     return [
       "Underprivileged families requiring urgent support",
@@ -264,6 +282,9 @@ function buildBeneficiarySection(campaign) {
 }
 
 function buildDonationUsage(campaign) {
+  const custom = CAMPAIGN_DETAIL_SECTIONS[campaign.id];
+  if (custom?.donationUsage?.length) return custom.donationUsage;
+
   const packageNames = (campaign?.details?.packages || []).map((pkg) => pkg.name);
   return [
     "Direct beneficiary support and field implementation",
@@ -282,6 +303,9 @@ function getPresetAmounts(campaign) {
 }
 
 function buildCampaignObjectives(campaign) {
+  const custom = CAMPAIGN_DETAIL_SECTIONS[campaign.id];
+  if (custom?.objectives?.length) return custom.objectives;
+
   if ((campaign.categories || []).includes("education")) {
     return [
       "Increase student enrollment and retention through direct sponsorship.",
@@ -296,6 +320,23 @@ function buildCampaignObjectives(campaign) {
       "Strengthen long-term self-reliance through vocational and livelihood programs.",
     ];
   }
+  if (
+    (campaign.categories || []).includes("healthcare") &&
+    !(campaign.categories || []).includes("disaster-relief")
+  ) {
+    return [
+      "Increase access to essential medicines, checkups, and clinic-day services.",
+      "Fund capital upgrades and outreach capacity such as ambulance and mobile care.",
+      "Restore vision and quality of life through structured surgical sponsorship.",
+    ];
+  }
+  if ((campaign.categories || []).includes("disaster-relief")) {
+    return [
+      "Accelerate rescue, relief, and early stabilization for affected households.",
+      "Fund preparedness, rehabilitation, and recovery—not only the first days of a crisis.",
+      "Support safer shelter and dignified rebuilding where disasters destroy homes.",
+    ];
+  }
   return [
     "Deliver timely and transparent support to target beneficiaries.",
     "Improve measurable campaign outcomes through structured implementation.",
@@ -304,6 +345,9 @@ function buildCampaignObjectives(campaign) {
 }
 
 function buildImplementationProcess(campaign) {
+  const custom = CAMPAIGN_DETAIL_SECTIONS[campaign.id];
+  if (custom?.implementation?.length) return custom.implementation;
+
   return [
     `Needs assessment is performed for ${campaign.title} beneficiaries.`,
     "Funds are allocated to approved campaign packages and field activities.",

@@ -115,7 +115,9 @@ export default async function handler(req, res) {
 
   // Add dynamic campaign pages
   const campaignPages = [
-    { id: 'flood-relief-project' },
+    { id: 'emergency-response-fund' },
+    { id: 'donate-calamity-management-program' },
+    { id: 'sponsor-safe-home-disaster-family' },
     { id: 'education-support' },
     { id: 'medical-aid' },
     { id: 'qurbani-2025' },
