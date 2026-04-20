@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/run-next-dev.js",
+    "dev:clean": "rm -rf .next && node scripts/run-next-dev.js",
+    "dev:turbo": "next dev --turbopack",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",

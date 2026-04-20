@@ -3,16 +3,16 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Layout2 from "../../Components/Layout/Layout2";
-import LivelihoodHeader from "../../Components/Elements/Livelihood/LivelihoodHeader";
+import RehabHeader from "../../Components/Elements/Disaster/RehabHeader";
 import styles from "../../Components/Elements/Livelihood/LivelihoodDisasterDetail.module.css";
 import {
-  livelihoodDisasterCards,
-  getLivelihoodDisasterBySlug,
+  livelihoodDisasterCards as disasterCards,
+  getLivelihoodDisasterBySlug as getDisasterBySlug,
 } from "../../Components/Elements/Livelihood/livelihoodDisasterData";
 
 export async function getStaticPaths() {
   return {
-    paths: livelihoodDisasterCards.map((item) => ({
+    paths: disasterCards.map((item) => ({
       params: { slug: item.slug },
     })),
     fallback: false,
@@ -20,13 +20,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const detail = getLivelihoodDisasterBySlug(params.slug);
+  const detail = getDisasterBySlug(params.slug);
   return {
     props: { detail },
   };
 }
 
-export default function LivelihoodDisasterDetailPage({ detail }) {
+export default function DisasterDetailPage({ detail }) {
   const pageTitle = `${detail.title} | Helpline Welfare Trust`;
   const sections = detail.detailSections ?? [];
   const highlights = detail.impactHighlights ?? [];
@@ -38,13 +38,13 @@ export default function LivelihoodDisasterDetailPage({ detail }) {
         <title>{pageTitle}</title>
         <meta name="description" content={detail.description} />
       </Head>
-      <LivelihoodHeader image="/img/Campaigns/Food.webp" />
+      <RehabHeader />
 
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.breadcrumbWrap}>
-            <Link href="/livelihood" className={styles.backLink}>
-              Back to Livelihood
+            <Link href="/disaster" className={styles.backLink}>
+              Back to Disaster Relief
             </Link>
           </div>
 

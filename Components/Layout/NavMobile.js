@@ -41,9 +41,9 @@ export default function NavMobile() {
           <ul className="sub-menu">
             <li><Link href="/edu">Education &amp; Literacy</Link></li>
             <li><Link href="/health">Primary Healthcare</Link></li>
-            <li><Link href="/livelihood">Livelihood &amp; Food Security Disaster Relief</Link></li>
+            <li><Link href="/disaster">Disaster Relief</Link></li>
             <li><Link href="/social-capital-development">Social Welfare Development</Link></li>
-            <li><Link href="/sustainable-environment-wash">Sustainable Environment</Link></li>
+            <li><Link href="/sustainable-environment-wash">Sustainability &amp; Endowment</Link></li>
           </ul>
         </li>
 

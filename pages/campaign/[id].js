@@ -2,7 +2,6 @@ import React, { useCallback, useMemo, useState } from "react";
 import Image from "next/image";
 import Layout1 from "../../Components/Layout/Layout1";
 import { Container, Row, Col, Card, ListGroup, Button } from "react-bootstrap";
-import { campaignsData } from "../campaigns";
 import UBLPaymentForm from "../../Components/Elements/Payment/UBLPaymentForm";
 import CampaignHeroHeader from "../../Components/Elements/Campaign/CampaignHeroHeader";
 import styles from "../../styles/Campaigns.module.css";
@@ -614,6 +613,7 @@ export default function CampaignDetail({ campaign }) {
 }
 
 export async function getStaticPaths() {
+  const { campaignsData } = await import("../../data/campaignsData");
   return {
     paths: campaignsData.map((campaign) => ({
       params: { id: campaign.id },
@@ -623,6 +623,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const { campaignsData } = await import("../../data/campaignsData");
   const campaign = campaignsData.find((item) => item.id === params.id) ?? null;
 
   return {

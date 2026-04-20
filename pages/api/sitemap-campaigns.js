@@ -1,4 +1,4 @@
-import { campaignsData } from "../campaigns";
+import { campaignsData } from "../../data/campaignsData";
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {

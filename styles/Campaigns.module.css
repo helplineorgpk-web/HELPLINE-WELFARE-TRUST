@@ -1,20 +1,3 @@
-/* Helpline campaigns theme */
-:root {
-  --camp-navy: #1a3a5c;
-  --camp-navy-deep: #142d48;
-  --camp-teal: #1e9c91;
-  --camp-teal-dark: #157a72;
-  --camp-coral: #f15b43;
-  --camp-coral-dark: #d94a35;
-  --camp-cream: #faf1f0;
-  --camp-gold: #f0d78c;
-  --camp-gold-deep: #e8c84a;
-  /* Campaign filter pills (reference UI) */
-  --filter-pill-active: #283e5a;
-  --filter-pill-text: #6b7280;
-  --filter-pill-text-hover: #4b5563;
-}
-
 /* Hero banner */
 .heroSection {
   position: relative;

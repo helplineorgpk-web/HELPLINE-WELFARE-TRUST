@@ -53,13 +53,18 @@ const nextConfig = {
     ];
   },
   async headers() {
+    // In development, never mark _next chunks immutable — browsers will keep stale
+    // hashed chunks after HMR/navigation and break with "Failed to load chunk".
+    const isProd = process.env.NODE_ENV === "production";
     return [
       {
         source: "/_next/static/:path*",
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: isProd
+              ? "public, max-age=31536000, immutable"
+              : "no-store, must-revalidate",
           },
         ],
       },
@@ -68,7 +73,9 @@ const nextConfig = {
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: isProd
+              ? "public, max-age=31536000, immutable"
+              : "public, max-age=0, must-revalidate",
           },
         ],
       },

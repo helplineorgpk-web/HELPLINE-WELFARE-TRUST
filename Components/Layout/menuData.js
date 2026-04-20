@@ -25,9 +25,9 @@ export const menuData = [
       items: [
         { label: "Education & Literacy", href: "/edu" },
         { label: "Primary Healthcare", href: "/health" },
-        { label: "Livelihood & Disaster Relief", href: "/livelihood" },
+        { label: "Disaster Relief", href: "/disaster" },
         { label: "Social Welfare Development", href: "/social-capital-development" },
-        { label: "Sustainable Environment", href: "/sustainable-environment-wash" },
+        { label: "Sustainability & Endowment", href: "/sustainable-environment-wash" },
       ],
     },
   },

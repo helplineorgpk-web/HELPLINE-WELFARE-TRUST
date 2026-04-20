@@ -21,6 +21,19 @@
   --hl-cta-primary-hover: #65cabb;
   --hl-cta-secondary-text: #666666;
   --hl-cta-secondary-bg: #F5F5F5;
+  /* Campaign palette */
+  --camp-navy: #1a3a5c;
+  --camp-navy-deep: #142d48;
+  --camp-teal: #1e9c91;
+  --camp-teal-dark: #157a72;
+  --camp-coral: #f15b43;
+  --camp-coral-dark: #d94a35;
+  --camp-cream: #faf1f0;
+  --camp-gold: #f0d78c;
+  --camp-gold-deep: #e8c84a;
+  --filter-pill-active: #283e5a;
+  --filter-pill-text: #6b7280;
+  --filter-pill-text-hover: #4b5563;
 }
 
 html,

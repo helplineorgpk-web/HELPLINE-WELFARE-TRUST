@@ -5,12 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import NavFullscreen from "./NavFullscreen";
 import { menuData } from "./menuData";
+import UBLPaymentForm from "../Elements/Payment/UBLPaymentForm";
 
 export default function Header1() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileMenuClosing, setMobileMenuClosing] = useState(false);
   const [mobileExpandedIdx, setMobileExpandedIdx] = useState(null);
+  const [donateModalOpen, setDonateModalOpen] = useState(false);
+  const [activePaymentTab, setActivePaymentTab] = useState("online");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,6 +51,15 @@ export default function Header1() {
     setMobileExpandedIdx((prev) => (prev === idx ? null : idx));
   }, []);
 
+  const openDonateModal = useCallback(() => {
+    setDonateModalOpen(true);
+    setActivePaymentTab("online");
+  }, []);
+
+  const closeDonateModal = useCallback(() => {
+    setDonateModalOpen(false);
+  }, []);
+
   /** Prevent background page scroll behind the mobile menu (iOS Safari). */
   useEffect(() => {
     if (typeof window === "undefined" || typeof document === "undefined") {
@@ -83,6 +95,24 @@ export default function Header1() {
       window.scrollTo(0, scrollY);
     };
   }, [mobileMenuOpen, mobileMenuClosing]);
+
+  useEffect(() => {
+    if (!donateModalOpen || typeof document === "undefined") {
+      return undefined;
+    }
+    const onEsc = (event) => {
+      if (event.key === "Escape") {
+        closeDonateModal();
+      }
+    };
+    document.addEventListener("keydown", onEsc);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onEsc);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [donateModalOpen, closeDonateModal]);
 
   return (
     <>
@@ -132,6 +162,7 @@ export default function Header1() {
           align-items: center;
           justify-content: center;
           padding: 12px 28px;
+          border: none;
           background: #f15b43;
           color: #fff;
           font-size: 14px;
@@ -140,11 +171,124 @@ export default function Header1() {
           border-radius: 6px;
           transition: all 0.3s ease;
           white-space: nowrap;
+          cursor: pointer;
         }
         .hdf-donate-btn:hover {
           background: #d94832;
           transform: translateY(-1px);
           box-shadow: 0 4px 12px rgba(241,91,67,0.3);
+        }
+        .hdf-donate-modal-overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.6);
+          z-index: 10010;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 16px;
+        }
+        .hdf-donate-modal {
+          width: min(960px, 100%);
+          max-height: 92vh;
+          overflow: auto;
+          background: #fff;
+          border-radius: 12px;
+          box-shadow: 0 16px 45px rgba(0, 0, 0, 0.25);
+        }
+        .hdf-donate-modal-head {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 16px 18px;
+          border-bottom: 1px solid #ececec;
+        }
+        .hdf-donate-modal-head h3 {
+          margin: 0;
+          font-size: 20px;
+          color: #213047;
+        }
+        .hdf-donate-modal-close {
+          border: none;
+          background: transparent;
+          color: #444;
+          font-size: 24px;
+          line-height: 1;
+          cursor: pointer;
+        }
+        .hdf-donate-tabs {
+          display: flex;
+          gap: 8px;
+          padding: 12px 18px 0;
+          border-bottom: 1px solid #ececec;
+        }
+        .hdf-donate-tab {
+          border: 1px solid #e7e7e7;
+          background: #f7f8fb;
+          color: #344054;
+          padding: 10px 14px;
+          border-radius: 8px 8px 0 0;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        .hdf-donate-tab.active {
+          background: #fff;
+          border-bottom-color: #fff;
+          color: #f15b43;
+        }
+        .hdf-donate-tab-panel {
+          padding: 18px;
+        }
+        .hdf-bank-card {
+          border: 1px solid #ececec;
+          border-radius: 10px;
+          padding: 16px;
+          background: #fafcff;
+        }
+        .hdf-bank-card h4 {
+          margin: 0 0 8px;
+          font-size: 18px;
+          color: #213047;
+        }
+        .hdf-bank-info {
+          margin: 10px 0;
+          line-height: 1.7;
+          color: #364254;
+          font-size: 15px;
+        }
+        .hdf-bank-note {
+          margin-top: 14px;
+          background: #fff8f6;
+          border: 1px solid #ffe3db;
+          color: #733f32;
+          padding: 12px;
+          border-radius: 8px;
+          font-size: 14px;
+        }
+        .hdf-bank-logos {
+          margin-top: 14px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
+          align-items: center;
+        }
+        .hdf-bank-logo-chip {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 10px;
+          border: 1px solid #e9ecf2;
+          border-radius: 8px;
+          background: #fff;
+          min-width: 108px;
+          min-height: 44px;
+        }
+        .hdf-bank-logo-chip img {
+          width: auto !important;
+          height: 24px !important;
+          max-width: 92px;
+          object-fit: contain;
         }
         .hdf-hamburger {
           display: none;
@@ -322,9 +466,9 @@ export default function Header1() {
             </div>
 
             <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-              <Link href="/donation" className="hdf-donate-btn">
+              <button type="button" className="hdf-donate-btn" onClick={openDonateModal}>
                 Donate Now
-              </Link>
+              </button>
               <button
                 onClick={toggleMobileMenu}
                 className="hdf-hamburger"
@@ -408,6 +552,97 @@ export default function Header1() {
               </ul>
             </div>
           </>,
+          document.body
+        )}
+
+      {typeof document !== "undefined" &&
+        donateModalOpen &&
+        createPortal(
+          <div
+            className="hdf-donate-modal-overlay"
+            onClick={(e) => e.target === e.currentTarget && closeDonateModal()}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Donation payment options"
+          >
+            <div className="hdf-donate-modal">
+              <div className="hdf-donate-modal-head">
+                <h3>Donate Now</h3>
+                <button
+                  type="button"
+                  className="hdf-donate-modal-close"
+                  onClick={closeDonateModal}
+                  aria-label="Close donation modal"
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="hdf-donate-tabs">
+                <button
+                  type="button"
+                  className={`hdf-donate-tab ${activePaymentTab === "online" ? "active" : ""}`}
+                  onClick={() => setActivePaymentTab("online")}
+                >
+                  Online Payment (Merchant Card)
+                </button>
+                <button
+                  type="button"
+                  className={`hdf-donate-tab ${activePaymentTab === "bank" ? "active" : ""}`}
+                  onClick={() => setActivePaymentTab("bank")}
+                >
+                  UBL Bank Account
+                </button>
+              </div>
+              <div className="hdf-donate-tab-panel">
+                {activePaymentTab === "online" ? (
+                  <UBLPaymentForm donationType="General Donation" />
+                ) : (
+                  <div className="hdf-bank-card">
+                    <h4>UBL Bank Transfer Details</h4>
+                    <p className="hdf-bank-info">
+                      <strong>Account Number:</strong> 063563501118170
+                    </p>
+                    <p className="hdf-bank-info">
+                      <strong>IBAN:</strong> PK69UNIL0112063501118170
+                    </p>
+                    <p className="hdf-bank-info">
+                      <strong>Bank Name:</strong> United Bank Limited
+                    </p>
+                    <div className="hdf-bank-logos" aria-label="Supported payment channels">
+                      <span className="hdf-bank-logo-chip">
+                        <Image
+                          src="/img/payment/ubl-pay-logo.png"
+                          alt="UBL"
+                          width={82}
+                          height={22}
+                        />
+                      </span>
+                      <span className="hdf-bank-logo-chip">
+                        <Image
+                          src="/img/payment/jazzcash-logo.svg"
+                          alt="JazzCash"
+                          width={90}
+                          height={24}
+                        />
+                      </span>
+                      <span className="hdf-bank-logo-chip">
+                        <Image
+                          src="/img/payment/easypaisa-logo.svg"
+                          alt="Easypaisa"
+                          width={90}
+                          height={24}
+                        />
+                      </span>
+                    </div>
+                    <div className="hdf-bank-note">
+                      We receive donations from any digital account, including JazzCash,
+                      Easypaisa, and all banks through transfer/deposit into this UBL account.
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>,
           document.body
         )}
     </>
