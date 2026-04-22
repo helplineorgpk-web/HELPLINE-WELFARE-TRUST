@@ -1,5 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './UBLPaymentForm.module.css';
+
+const DEFAULT_DONATION_TYPES = [
+  'General Donation',
+  'Education Support',
+  'Medical Aid',
+  'Food Distribution',
+  'Orphanage Support',
+  'Emergency Relief',
+  'Mosque Construction',
+  'Water Well',
+];
 
 const UBLPaymentForm = ({ 
   onPaymentInitiated, 
@@ -9,20 +20,50 @@ const UBLPaymentForm = ({
   donationType = 'General Donation',
   donorName = '',
   donorEmail = '',
-  donorPhone = ''
+  donorPhone = '',
+  amount: legacyAmount,
+  cause: legacyCause,
 }) => {
+  const resolvedAmount =
+    donationAmount ||
+    (typeof legacyAmount === 'number' || typeof legacyAmount === 'string'
+      ? legacyAmount
+      : 0);
+  const resolvedType =
+    (donationType && donationType !== 'General Donation'
+      ? donationType
+      : legacyCause) || donationType || 'General Donation';
+
   const [formData, setFormData] = useState({
-    amount: donationAmount,
+    amount: resolvedAmount,
     donorName: donorName,
     donorEmail: donorEmail,
     donorPhone: donorPhone,
-    donationType: donationType,
+    donationType: resolvedType,
     currency: 'PKR'
   });
+
+  // Keep the dropdown in sync whenever the parent opens the modal with a
+  // different donation type / amount (e.g. user clicked another campaign card).
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      donationType: resolvedType,
+      amount: resolvedAmount || prev.amount,
+    }));
+  }, [resolvedType, resolvedAmount]);
+
+  const donationTypeOptions = React.useMemo(() => {
+    const incoming = (formData.donationType || '').trim();
+    if (incoming && !DEFAULT_DONATION_TYPES.includes(incoming)) {
+      return [incoming, ...DEFAULT_DONATION_TYPES];
+    }
+    return DEFAULT_DONATION_TYPES;
+  }, [formData.donationType]);
   
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  console.log("error", error);
+  const [isMonthlyDonation, setIsMonthlyDonation] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -69,12 +110,11 @@ const UBLPaymentForm = ({
         amount: parseFloat(formData.amount),
         currency: formData.currency,
         orderName: ` ${formData.donorName}`,
-        orderInfo: `Donation by ${formData.donorName} (${formData.donorEmail}) for ${formData.donationType}`,
+        orderInfo: `Donation by ${formData.donorName} (${formData.donorEmail}) for ${formData.donationType}${isMonthlyDonation ? " [Monthly]" : ""}`,
         returnPath: `${window.location.origin}/payment/callback`,
         transactionHint: 'CPT:Y;VCC:Y;',
         language: 'en'
       };
-console.log("paymentData", paymentData);
       // Call registration API
       const response = await fetch('/api/ubl-payment', {
         method: 'POST',
@@ -90,6 +130,7 @@ console.log("paymentData", paymentData);
         // Store payment data in session storage for callback
         const paymentData = {
           ...formData,
+          isMonthlyDonation,
           transactionId: result.transactionId,
           orderId: result.orderId,
           timestamp: new Date().toISOString()
@@ -107,7 +148,8 @@ console.log("paymentData", paymentData);
             name: formData.donorName,
             email: formData.donorEmail,
             phone: formData.donorPhone,
-            donationType: formData.donationType
+            donationType: formData.donationType,
+            isMonthlyDonation
           },
           timestamp: new Date().toISOString()
         }));
@@ -178,14 +220,11 @@ console.log("paymentData", paymentData);
               onChange={handleInputChange}
               required
             >
-              <option value="General Donation">General Donation</option>
-              <option value="Education Support">Education Support</option>
-              <option value="Medical Aid">Medical Aid</option>
-              <option value="Food Distribution">Food Distribution</option>
-              <option value="Orphanage Support">Orphanage Support</option>
-              <option value="Emergency Relief">Emergency Relief</option>
-              <option value="Mosque Construction">Mosque Construction</option>
-              <option value="Water Well">Water Well</option>
+              {donationTypeOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -249,6 +288,19 @@ console.log("paymentData", paymentData);
             </div>
           )}
 
+          <label className={styles.consentCheck}>
+            <input
+              type="checkbox"
+              checked={isMonthlyDonation}
+              onChange={(e) => {
+                setIsMonthlyDonation(e.target.checked);
+              }}
+            />
+            <span>
+              Make this a monthly donation
+            </span>
+          </label>
+
           <button 
             type="submit" 
             className={styles.submitButton}
@@ -262,6 +314,28 @@ console.log("paymentData", paymentData);
           <div className={styles.securityInfo}>
             <h4>Secure Payment</h4>
             <p>Your payment is processed securely through UBL Pay powered by Etisalat Payment Gateway.</p>
+          </div>
+
+          <div className={styles.bankDetails}>
+            <h4>UBL Bank Account Details</h4>
+            <p><strong>Account Number:</strong> 063563501118170</p>
+            <p><strong>IBAN:</strong> PK69UNIL0112063501118170</p>
+            <p><strong>Bank Name:</strong> United Bank Limited</p>
+            <p><strong>Account Title:</strong> Helpline Welfare Organization</p>
+            <p className={styles.bankNote}>
+              You can donate through any bank transfer, JazzCash, or Easypaisa to this account.
+            </p>
+            <div className={styles.bankLogos} aria-label="Supported bank transfer channels">
+              <span className={styles.bankLogoChip}>
+                <img src="/img/payment/ubl-pay-logo.png" alt="UBL" />
+              </span>
+              <span className={styles.bankLogoChip}>
+                <img src="/img/Campaigns/JazzCash_logo_(2025).png" alt="JazzCash" />
+              </span>
+              <span className={styles.bankLogoChip}>
+                <img src="/img/Campaigns/EASYPAISA-New-Logo-Vector.svg-.png" alt="Easypaisa" />
+              </span>
+            </div>
           </div>
           
           <div className={styles.acceptedCards}>

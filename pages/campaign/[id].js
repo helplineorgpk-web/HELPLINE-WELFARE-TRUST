@@ -382,6 +382,7 @@ export default function CampaignDetail({ campaign }) {
   const [selectedAmount, setSelectedAmount] = useState(
     String(campaign?.details?.packages?.[0]?.price || 1000)
   );
+  const [selectedDonationType, setSelectedDonationType] = useState(campaign.title);
   const [showDonationError, setShowDonationError] = useState(false);
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
 
@@ -394,6 +395,14 @@ export default function CampaignDetail({ campaign }) {
     setShowDonationError(false);
     setIsPaymentOpen(true);
   }, [selectedAmount]);
+
+  const handlePackageSelect = useCallback((pkg) => {
+    if (!pkg || !pkg.price) return;
+    setSelectedAmount(String(pkg.price));
+    setSelectedDonationType(pkg.name || campaign.title);
+    setShowDonationError(false);
+    setIsPaymentOpen(true);
+  }, [campaign.title]);
 
   const closeDonationFlow = useCallback(() => {
     setIsPaymentOpen(false);
@@ -515,7 +524,15 @@ export default function CampaignDetail({ campaign }) {
                 <h4 className="h5 mb-3">Available Packages</h4>
                 <ListGroup className="mb-4">
                   {campaign.details.packages.map((pkg, index) => (
-                    <ListGroup.Item key={index} className="d-flex justify-content-between align-items-center">
+                    <ListGroup.Item
+                      key={index}
+                      action
+                      as="button"
+                      type="button"
+                      active={selectedAmount === String(pkg.price)}
+                      className="d-flex justify-content-between align-items-center"
+                      onClick={() => handlePackageSelect(pkg)}
+                    >
                       <div>
                         <h5 className="h6 mb-1">{pkg.name}</h5>
                         {pkg.description && <small className="text-muted">{pkg.description}</small>}
@@ -541,6 +558,7 @@ export default function CampaignDetail({ campaign }) {
                       }`}
                       onClick={() => {
                         setSelectedAmount(String(amount));
+                        setSelectedDonationType(campaign.title);
                         setShowDonationError(false);
                       }}
                     >
@@ -558,6 +576,7 @@ export default function CampaignDetail({ campaign }) {
                   onChange={(e) => {
                     const value = e.target.value.replace(/\D/g, "");
                     setSelectedAmount(value);
+                    setSelectedDonationType(campaign.title);
                     setShowDonationError(false);
                   }}
                   placeholder="Other amount"
@@ -601,7 +620,7 @@ export default function CampaignDetail({ campaign }) {
             </button>
             <UBLPaymentForm
               donationAmount={parseInt(selectedAmount, 10) || 0}
-              donationType={campaign.title}
+              donationType={selectedDonationType}
               onPaymentCompleted={closeDonationFlow}
               onPaymentFailed={() => {}}
             />

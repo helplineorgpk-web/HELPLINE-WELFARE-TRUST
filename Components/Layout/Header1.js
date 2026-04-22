@@ -13,7 +13,6 @@ export default function Header1() {
   const [mobileMenuClosing, setMobileMenuClosing] = useState(false);
   const [mobileExpandedIdx, setMobileExpandedIdx] = useState(null);
   const [donateModalOpen, setDonateModalOpen] = useState(false);
-  const [activePaymentTab, setActivePaymentTab] = useState("online");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,7 +52,6 @@ export default function Header1() {
 
   const openDonateModal = useCallback(() => {
     setDonateModalOpen(true);
-    setActivePaymentTab("online");
   }, []);
 
   const closeDonateModal = useCallback(() => {
@@ -215,27 +213,6 @@ export default function Header1() {
           font-size: 24px;
           line-height: 1;
           cursor: pointer;
-        }
-        .hdf-donate-tabs {
-          display: flex;
-          gap: 8px;
-          padding: 12px 18px 0;
-          border-bottom: 1px solid #ececec;
-        }
-        .hdf-donate-tab {
-          border: 1px solid #e7e7e7;
-          background: #f7f8fb;
-          color: #344054;
-          padding: 10px 14px;
-          border-radius: 8px 8px 0 0;
-          font-size: 14px;
-          font-weight: 600;
-          cursor: pointer;
-        }
-        .hdf-donate-tab.active {
-          background: #fff;
-          border-bottom-color: #fff;
-          color: #f15b43;
         }
         .hdf-donate-tab-panel {
           padding: 18px;
@@ -577,69 +554,8 @@ export default function Header1() {
                   &times;
                 </button>
               </div>
-              <div className="hdf-donate-tabs">
-                <button
-                  type="button"
-                  className={`hdf-donate-tab ${activePaymentTab === "online" ? "active" : ""}`}
-                  onClick={() => setActivePaymentTab("online")}
-                >
-                  Online Payment (Merchant Card)
-                </button>
-                <button
-                  type="button"
-                  className={`hdf-donate-tab ${activePaymentTab === "bank" ? "active" : ""}`}
-                  onClick={() => setActivePaymentTab("bank")}
-                >
-                  UBL Bank Account
-                </button>
-              </div>
               <div className="hdf-donate-tab-panel">
-                {activePaymentTab === "online" ? (
-                  <UBLPaymentForm donationType="General Donation" />
-                ) : (
-                  <div className="hdf-bank-card">
-                    <h4>UBL Bank Transfer Details</h4>
-                    <p className="hdf-bank-info">
-                      <strong>Account Number:</strong> 063563501118170
-                    </p>
-                    <p className="hdf-bank-info">
-                      <strong>IBAN:</strong> PK69UNIL0112063501118170
-                    </p>
-                    <p className="hdf-bank-info">
-                      <strong>Bank Name:</strong> United Bank Limited
-                    </p>
-                    <div className="hdf-bank-logos" aria-label="Supported payment channels">
-                      <span className="hdf-bank-logo-chip">
-                        <Image
-                          src="/img/payment/ubl-pay-logo.png"
-                          alt="UBL"
-                          width={82}
-                          height={22}
-                        />
-                      </span>
-                      <span className="hdf-bank-logo-chip">
-                        <Image
-                          src="/img/payment/jazzcash-logo.svg"
-                          alt="JazzCash"
-                          width={90}
-                          height={24}
-                        />
-                      </span>
-                      <span className="hdf-bank-logo-chip">
-                        <Image
-                          src="/img/payment/easypaisa-logo.svg"
-                          alt="Easypaisa"
-                          width={90}
-                          height={24}
-                        />
-                      </span>
-                    </div>
-                    <div className="hdf-bank-note">
-                      We receive donations from any digital account, including JazzCash,
-                      Easypaisa, and all banks through transfer/deposit into this UBL account.
-                    </div>
-                  </div>
-                )}
+                <UBLPaymentForm donationType="General Donation" />
               </div>
             </div>
           </div>,

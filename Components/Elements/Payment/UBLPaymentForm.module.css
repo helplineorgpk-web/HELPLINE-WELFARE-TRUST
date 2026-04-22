@@ -79,6 +79,22 @@
   margin-top: 10px;
 }
 
+.consentCheck {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #2c3e50;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.consentCheck input {
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+}
+
 .submitButton {
   background: linear-gradient(135deg, #3498db, #2980b9);
   color: white;
@@ -129,6 +145,58 @@
   font-size: 14px;
   margin: 0;
   line-height: 1.5;
+}
+
+.bankDetails {
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e7edf4;
+  background: #f8fbff;
+}
+
+.bankDetails h4 {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.bankDetails p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #425466;
+}
+
+.bankNote {
+  margin-top: 10px !important;
+}
+
+.bankLogos {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.bankLogoChip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 105px;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.bankLogoChip img {
+  width: auto;
+  height: 22px;
+  max-width: 90px;
+  object-fit: contain;
 }
 
 .cardLogos {
