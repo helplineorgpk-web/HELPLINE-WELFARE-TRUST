@@ -376,11 +376,11 @@ export const campaignsData = [
   },
   {
     id: "adopt-student-at-marawan-school",
-    title: "Adopt a Student at Marawan School",
+    title: "Adopt a Student at Manawan School",
     href: "/campaigns",
     description:
       "Drive direct student sponsorships for Marawan School under student adoption campaign.",
-    image: "/img/causes/irtiqa1.jpg",
+    image: "/img/causes/irtiqa.png",
     details: {
       goal: 1200000,
       raised: 280000,
