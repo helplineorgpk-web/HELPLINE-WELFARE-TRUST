@@ -3,6 +3,7 @@ import React, { useState, useRef, useCallback, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 const MIN_DONATION = 100;
 
@@ -50,6 +51,7 @@ export default function SocialCapitalHeader({
   const raw =
     image != null && String(image).trim() !== "" ? String(image).trim() : defaultHero;
   const heroImage = raw.startsWith("/") ? raw : `/${raw}`;
+  const heroAsset = useMemo(() => getHeroAsset(heroImage), [heroImage]);
 
   const [selectedCause, setSelectedCause] = useState(donationCauses[0]?.id || "");
   const [amount, setAmount] = useState("");
@@ -349,16 +351,14 @@ export default function SocialCapitalHeader({
         <section className="sc-donate-hero-section">
           <div className="sc-donate-hero-image-wrap">
             <Image
-              src={heroImage}
+              src={heroAsset.src}
               alt="Social Welfare Development"
               fill
               priority
-              loading="eager"
-              fetchPriority="high"
-              placeholder="empty"
+              placeholder="blur"
+              blurDataURL={heroAsset.blurDataURL}
               sizes="100vw"
-              quality={75}
-              decoding="async"
+              quality={70}
               className="sc-donate-hero-slide-image"
             />
           </div>
@@ -588,16 +588,14 @@ export default function SocialCapitalHeader({
       <section className="sc-hero-section">
         <div className="sc-hero-image-wrap">
           <Image
-            src={heroImage}
+            src={heroAsset.src}
             alt={sectionName}
             fill
             priority
-            loading="eager"
-            fetchPriority="high"
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={heroAsset.blurDataURL}
             sizes="100vw"
-            quality={75}
-            decoding="async"
+            quality={70}
             className="sc-hero-slide-image"
           />
         </div>
