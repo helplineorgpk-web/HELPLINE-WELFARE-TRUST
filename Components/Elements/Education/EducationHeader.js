@@ -125,7 +125,7 @@ export default function EducationHeader() {
           height: 100vh;
           min-height: 100vh;
           overflow: hidden;
-          background: #fff;
+          background:rgb(255, 255, 255);
         }
         .edu-hero-image-wrap {
           position: absolute;
