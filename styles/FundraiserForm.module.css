@@ -1,0 +1,174 @@
+.wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 140px 16px 72px;
+}
+
+.headerBlock {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #1e9c91;
+}
+
+.title {
+  margin: 0.45rem 0 0.35rem;
+  font-size: clamp(1.9rem, 4.6vw, 2.65rem);
+  font-weight: 800;
+  color: #1a3a5c;
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 720px;
+  color: #5c6570;
+  line-height: 1.6;
+}
+
+.formCard {
+  background: #fff;
+  border: 1px solid rgba(26, 58, 92, 0.12);
+  border-radius: 16px;
+  padding: 1.1rem;
+  box-shadow:
+    0 2px 12px rgba(26, 58, 92, 0.08),
+    0 16px 40px rgba(26, 58, 92, 0.06);
+}
+
+.sectionTitle {
+  margin: 0.9rem 0 0.65rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a3a5c;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.gridSingle {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid #d7dde3;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  color: #1f2937;
+  background: #fff;
+  padding: 0.65rem 0.8rem;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 86px;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #1e9c91;
+  box-shadow: 0 0 0 3px rgba(30, 156, 145, 0.16);
+}
+
+.declaration {
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  color: #334155;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.declaration input {
+  margin-top: 3px;
+}
+
+.successMessage,
+.errorMessage {
+  margin: 0.85rem 0 0;
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+  font-size: 0.88rem;
+}
+
+.successMessage {
+  background: #ecfdf5;
+  color: #0f766e;
+  border: 1px solid #b7f0d7;
+}
+
+.errorMessage {
+  background: #fff1f2;
+  color: #b42318;
+  border: 1px solid #ffccd3;
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.78rem 1rem;
+  width: 100%;
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(145deg, #f15b43 0%, #e3422c 100%);
+  box-shadow: 0 8px 24px rgba(241, 91, 67, 0.28);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.submitBtn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(241, 91, 67, 0.35);
+}
+
+.submitBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-top: 118px;
+    padding-bottom: 50px;
+  }
+
+  .formCard {
+    padding: 0.95rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

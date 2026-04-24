@@ -614,6 +614,7 @@
   width: 100%;
   padding-top: 52%;
   overflow: hidden;
+  background: #e8ecf2;
 }
 
 .imageGradient {
@@ -668,6 +669,8 @@
 
 .campaignCard :global(.card-body) {
   padding: 0.85rem 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardCatRow {
@@ -696,6 +699,7 @@
   color: var(--camp-navy);
   margin-bottom: 0.45rem;
   line-height: 1.3;
+  min-height: 2.6em;
   letter-spacing: -0.01em;
 }
 
@@ -703,7 +707,7 @@
   color: #5c6570;
   font-size: 0.825rem;
   line-height: 1.5;
-  min-height: 36px;
+  min-height: 4.5em;
 }
 
 .progress {
@@ -757,14 +761,20 @@
 .presetButtons {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 4px;
   margin-bottom: 6px;
+  align-content: flex-start;
+  min-height: 52px;
 }
 
 .presetBtn {
-  padding: 6px 12px;
-  font-size: 0.72rem;
+  flex: 0 0 calc((100% - 8px) / 3);
+  min-width: calc((100% - 8px) / 3);
+  padding: 5px 6px;
+  font-size: 0.63rem;
   font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
   color: var(--camp-navy-deep);
   background: linear-gradient(180deg, var(--camp-gold) 0%, #e9cf7a 100%);
   border: 1px solid var(--camp-gold-deep);
@@ -821,7 +831,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.4rem;
 }
 
 .detailButton {

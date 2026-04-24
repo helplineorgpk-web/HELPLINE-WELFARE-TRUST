@@ -2,8 +2,6 @@ import React, { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../../../public/css/AboutHeader.module.css";
-const HERO_BLUR =
-  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==";
 
 export default function OrganizationHeader({
   title = "Our Leadership",
@@ -28,8 +26,7 @@ export default function OrganizationHeader({
           priority
           loading="eager"
           fetchPriority="high"
-          placeholder="blur"
-          blurDataURL={HERO_BLUR}
+          placeholder="empty"
           sizes="100vw"
           quality={75}
           decoding="async"

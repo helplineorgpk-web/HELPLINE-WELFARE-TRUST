@@ -44,18 +44,6 @@ function formatPkr(value) {
   return PKR_FORMATTER.format(value);
 }
 
-/** ISO date only (YYYY-MM-DD); avoid toLocaleDateString — server vs browser locale breaks hydration. */
-function formatCampaignEndDate(isoDate) {
-  if (!isoDate || typeof isoDate !== "string") return "";
-  const parts = isoDate.trim().split("-");
-  if (parts.length !== 3) return isoDate;
-  const [y, mo, da] = parts;
-  const month = Number(mo);
-  const day = Number(da);
-  if (!y || Number.isNaN(month) || Number.isNaN(day)) return isoDate;
-  return `${month}/${day}/${y}`;
-}
-
 const CampaignCard = React.memo(function CampaignCard({
   campaign,
   amount,
@@ -106,8 +94,7 @@ const CampaignCard = React.memo(function CampaignCard({
             decoding="async"
             sizes="(max-width: 576px) 92vw, (max-width: 992px) 48vw, 32vw"
             className={styles.image}
-            placeholder={campaign.blurDataURL ? "blur" : "empty"}
-            blurDataURL={campaign.blurDataURL}
+            placeholder="empty"
           />
           <div className={styles.imageGradient} aria-hidden />
         </div>
@@ -196,27 +183,6 @@ const CampaignCard = React.memo(function CampaignCard({
             </button>
           </div>
         </Card.Body>
-        <Card.Footer className={styles.cardFooter}>
-          <div className="d-flex justify-content-between align-items-center">
-            <small className="text-muted">
-              {campaign.status === "Running"
-                ? "Running"
-                : campaign.status === "Upcoming"
-                  ? "Upcoming"
-                  : "Ended"}{" "}
-              {formatCampaignEndDate(campaign.endDate)}
-            </small>
-            <span
-              className={`${styles.badge} ${
-                campaign.status === "Upcoming"
-                  ? styles.badgeUpcoming
-                  : styles.badgeActive
-              }`}
-            >
-              {campaign.status}
-            </span>
-          </div>
-        </Card.Footer>
       </Card>
     </Col>
   );
@@ -297,7 +263,7 @@ export default function Campaigns({ campaigns = [] }) {
                 DONATE NOW
               </Link>
               <Link
-                href="/campaigns#featured"
+                href="/become-a-fundraiser"
                 className={styles.heroBtnSecondary}
               >
                 BECOME A FUNDRAISER
@@ -463,6 +429,7 @@ export default function Campaigns({ campaigns = [] }) {
                 parseInt(cardState[paymentCampaign.id]?.amount ?? "", 10) || 0
               }
               donationType={paymentCampaign.title}
+              presetAmounts={paymentCampaign.presets || []}
               onPaymentCompleted={closePaymentModal}
               onPaymentFailed={() => {}}
             />

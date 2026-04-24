@@ -22,9 +22,6 @@ const SOCIAL_WELFARE_CAUSE_OPTIONS = [
   },
 ];
 
-const HERO_BLUR =
-  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEQ/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==";
-
 const DONATION_HERO_DEFAULT = "/img/Campaigns/Disaster.webp";
 /** Shared default for text-layout pages using this header (videos, gallery, etc.) */
 const TEXT_HERO_DEFAULT = "/img/Campaigns/Disaster.webp";
@@ -144,6 +141,7 @@ export default function SocialCapitalHeader({
             height: 100vh;
             min-height: 100vh;
             overflow: hidden;
+            background: #fff;
           }
           .sc-donate-hero-image-wrap {
             position: absolute;
@@ -357,8 +355,7 @@ export default function SocialCapitalHeader({
               priority
               loading="eager"
               fetchPriority="high"
-              placeholder="blur"
-              blurDataURL={HERO_BLUR}
+              placeholder="empty"
               sizes="100vw"
               quality={75}
               decoding="async"
@@ -473,6 +470,7 @@ export default function SocialCapitalHeader({
           height: 100vh;
           min-height: 100vh;
           overflow: hidden;
+          background: #fff;
         }
         .sc-hero-image-wrap {
           position: absolute;
@@ -596,8 +594,7 @@ export default function SocialCapitalHeader({
             priority
             loading="eager"
             fetchPriority="high"
-            placeholder="blur"
-            blurDataURL={HERO_BLUR}
+            placeholder="empty"
             sizes="100vw"
             quality={75}
             decoding="async"

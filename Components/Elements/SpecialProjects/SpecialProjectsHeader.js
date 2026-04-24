@@ -3,9 +3,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const HERO_BLUR =
-  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==";
-
 const HERO_IMAGE = "/img/Campaigns/Vocational.jpg";
 
 export default function SpecialProjectsHeader() {
@@ -23,6 +20,7 @@ export default function SpecialProjectsHeader() {
           height: 100vh;
           min-height: 100vh;
           overflow: hidden;
+          background: #fff;
         }
         .sp-hero-image-wrap {
           position: absolute;
@@ -142,8 +140,7 @@ export default function SpecialProjectsHeader() {
             alt="Special Projects"
             fill
             priority
-            placeholder="blur"
-            blurDataURL={HERO_BLUR}
+            placeholder="empty"
             sizes="100vw"
             quality={85}
             className="sp-hero-slide-image"

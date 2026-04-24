@@ -3,9 +3,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const HERO_BLUR =
-  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEQ/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==";
-
 export default function WashHeader() {
   const heading = "Healthcare &\nClean Water";
   const description =
@@ -21,6 +18,7 @@ export default function WashHeader() {
           height: 100vh;
           min-height: 100vh;
           overflow: hidden;
+          background: #fff;
         }
         .wash-hero-image-wrap {
           position: absolute;
@@ -144,8 +142,7 @@ export default function WashHeader() {
             priority
             loading="eager"
             fetchPriority="high"
-            placeholder="blur"
-            blurDataURL={HERO_BLUR}
+            placeholder="empty"
             sizes="100vw"
             quality={75}
             decoding="async"

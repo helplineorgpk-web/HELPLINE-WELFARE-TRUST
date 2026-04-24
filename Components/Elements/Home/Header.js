@@ -166,7 +166,6 @@ export default function Header({ slides: slidesProp }) {
         heroSubtitle: slide.heroSubtitle ?? slide.subtitle ?? "Your support transforms lives.",
         heroStyle: { ...defaultHeroStyle, ...slide.heroStyle },
         priority: true,
-        blurDataURL: slide.blurDataURL ?? "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFEQYSITETQVFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/ANlg3O6Kv0yPMuTjkJoBLDJYaAaUc5B4ycgjn5Ugb67S+GlJrSlSOYn/2Q==",
       })),
     [slidesSource]
   );
@@ -264,6 +263,7 @@ export default function Header({ slides: slidesProp }) {
           min-height: 100dvh;
           min-height: -webkit-fill-available;
           overflow: hidden;
+          background: #fff;
         }
         .hero-slider {
           width: 100%;
@@ -716,8 +716,7 @@ export default function Header({ slides: slidesProp }) {
                 priority={slide.priority}
                 loading={slide.priority ? "eager" : "lazy"}
                 fetchPriority={slide.priority ? "high" : "auto"}
-                placeholder="blur"
-                blurDataURL={slide.blurDataURL}
+                placeholder="empty"
                 sizes="100vw"
                 quality={75}
                 decoding="async"

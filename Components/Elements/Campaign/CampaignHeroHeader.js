@@ -4,7 +4,10 @@ import styles from "../../../styles/Campaigns.module.css";
 
 const HERO_VIDEO_URL = "https://www.youtube.com/embed/Zed6wEaHiag";
 const DEFAULT_PRIMARY_CTA = { href: "/ramzanRashan", label: "DONATE NOW" };
-const DEFAULT_SECONDARY_CTA = { href: "/campaigns#featured", label: "BECOME A FUNDRAISER" };
+const DEFAULT_SECONDARY_CTA = {
+  href: "/become-a-fundraiser",
+  label: "BECOME A FUNDRAISER",
+};
 
 function CampaignHeroHeader({
   label = "HELPLINE WELFARE TRUST",
