@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useCallback, useMemo, useEffect, useSyncExternalStore } from "react";
+import React, { useState, useRef, useCallback, useMemo, useSyncExternalStore } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
