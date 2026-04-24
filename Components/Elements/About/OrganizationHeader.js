@@ -2,19 +2,21 @@ import React, { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../../../public/css/AboutHeader.module.css";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 export default function OrganizationHeader({
   title = "Our Leadership",
   description = "Meet the dedicated leadership team guiding Helpline's mission with vision, service, and accountability.",
   backgroundImage = "/img/Campaigns/Organization.webp",
 }) {
-  const heroImage = useMemo(
-    () => ({
-      src: backgroundImage,
+  const heroImage = useMemo(() => {
+    const asset = getHeroAsset(backgroundImage);
+    return {
+      src: asset.src,
+      blurDataURL: asset.blurDataURL,
       alt: `${title} banner`,
-    }),
-    [backgroundImage, title]
-  );
+    };
+  }, [backgroundImage, title]);
 
   return (
     <section className={styles.aboutHero}>
@@ -24,12 +26,10 @@ export default function OrganizationHeader({
           alt={heroImage.alt}
           fill
           priority
-          loading="eager"
-          fetchPriority="high"
-          placeholder="empty"
+          placeholder="blur"
+          blurDataURL={heroImage.blurDataURL}
           sizes="100vw"
-          quality={75}
-          decoding="async"
+          quality={70}
           className={styles.heroBgImage}
         />
       </div>

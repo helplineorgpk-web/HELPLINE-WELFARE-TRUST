@@ -2,8 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 const HERO_IMAGE = "/img/bg/breadcrumb_bg_4.jpg";
+const HERO_ASSET = getHeroAsset(HERO_IMAGE);
 
 export default function AnnualReportsHero() {
   const description =
@@ -137,13 +139,14 @@ export default function AnnualReportsHero() {
       <section className="ar-hero-section">
         <div className="ar-hero-image-wrap">
           <Image
-            src={HERO_IMAGE}
+            src={HERO_ASSET.src}
             alt="Annual Reports"
             fill
             priority
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={HERO_ASSET.blurDataURL}
             sizes="100vw"
-            quality={85}
+            quality={55}
             className="ar-hero-slide-image"
           />
         </div>

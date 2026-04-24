@@ -2,8 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 const HERO_IMAGE = "/img/bg/breadcrum_bg_2.jpg";
+const HERO_ASSET = getHeroAsset(HERO_IMAGE);
 
 export default function EventsHeader() {
   const heading = "Events";
@@ -136,13 +138,14 @@ export default function EventsHeader() {
       <section className="ev-hero-section">
         <div className="ev-hero-image-wrap">
           <Image
-            src={HERO_IMAGE}
+            src={HERO_ASSET.src}
             alt="Events"
             fill
             priority
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={HERO_ASSET.blurDataURL}
             sizes="100vw"
-            quality={85}
+            quality={70}
             className="ev-hero-slide-image"
           />
         </div>

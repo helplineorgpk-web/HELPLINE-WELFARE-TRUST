@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useCallback, useMemo, useEffect } from "react";
+import React, { useState, useRef, useCallback, useMemo, useEffect, useSyncExternalStore } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -7,6 +7,26 @@ import "swiper/css/autoplay";
 import Image from "next/image";
 import Link from "next/link";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
+import { getHeroAsset } from "../../../lib/heroImage";
+
+// Avoid hydration thrash: subscribe to matchMedia once so `isMobile` is
+// resolved synchronously on the client's first render instead of toggling
+// after useEffect runs (which caused mobile visitors to fetch the heavy
+// desktop webp first and then re-fetch the mobile jpg).
+const MOBILE_MEDIA_QUERY = "(max-width: 768px)";
+function subscribeMobile(cb) {
+  if (typeof window === "undefined") return () => {};
+  const mql = window.matchMedia(MOBILE_MEDIA_QUERY);
+  mql.addEventListener("change", cb);
+  return () => mql.removeEventListener("change", cb);
+}
+function getMobileSnapshot() {
+  if (typeof window === "undefined") return false;
+  return window.matchMedia(MOBILE_MEDIA_QUERY).matches;
+}
+function getServerMobileSnapshot() {
+  return false;
+}
 
 const MIN_DONATION = 100;
 
@@ -131,16 +151,12 @@ export default function Header({ slides: slidesProp }) {
   const [showPaymentForm, setShowPaymentForm] = useState(false);
   const [validationError, setValidationError] = useState("");
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useSyncExternalStore(
+    subscribeMobile,
+    getMobileSnapshot,
+    getServerMobileSnapshot
+  );
   const amountInputRef = useRef(null);
-
-  useEffect(() => {
-    const mql = window.matchMedia("(max-width: 768px)");
-    const handle = () => setIsMobile(mql.matches);
-    handle();
-    mql.addEventListener("change", handle);
-    return () => mql.removeEventListener("change", handle);
-  }, []);
 
   const slidesSource = slidesProp && slidesProp.length > 0 ? slidesProp : heroSlides;
 
@@ -165,7 +181,10 @@ export default function Header({ slides: slidesProp }) {
         heroTitleLine2: slide.heroTitleLine2 ?? "HELP THEMSELVES",
         heroSubtitle: slide.heroSubtitle ?? slide.subtitle ?? "Your support transforms lives.",
         heroStyle: { ...defaultHeroStyle, ...slide.heroStyle },
-        priority: true,
+        // Only the first slide is the LCP candidate. Marking every slide
+        // priority caused the browser to race-download every hero image at
+        // page load, starving the first-paint image of bandwidth.
+        priority: idx === 0,
       })),
     [slidesSource]
   );
@@ -705,21 +724,22 @@ export default function Header({ slides: slidesProp }) {
       <section className="hero-section">
         <Swiper {...swiperConfig}>
           {memoizedSlides.map((slide) => {
-            const bgSrc =
+            const rawSrc =
               isMobile && slide.imageMobile ? slide.imageMobile : slide.image;
+            const asset = getHeroAsset(rawSrc);
             return (
             <SwiperSlide key={slide.image} className="hero-slide">
               <Image
-                src={bgSrc}
+                src={asset.src}
                 alt={slide.title}
                 fill
                 priority={slide.priority}
                 loading={slide.priority ? "eager" : "lazy"}
-                fetchPriority={slide.priority ? "high" : "auto"}
-                placeholder="empty"
+                fetchPriority={slide.priority ? "high" : "low"}
+                placeholder="blur"
+                blurDataURL={asset.blurDataURL}
                 sizes="100vw"
-                quality={75}
-                decoding="async"
+                quality={70}
                 className="hero-slide-image"
               />
             </SwiperSlide>

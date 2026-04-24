@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "optimize:campaign-images": "node scripts/optimize-campaign-images.js",
+    "optimize:hero-images": "node scripts/optimize-hero-images.js",
     "sass": "node-sass --watch public/scss/main.scss public/css/style.css --source-map public/css/style.css.map"
   },
   "dependencies": {

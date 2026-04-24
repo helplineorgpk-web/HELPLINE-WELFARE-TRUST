@@ -1,12 +1,15 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
 import styles from "../../../public/css/Edu.module.css";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 function DisasterHeader({ content, image, fullHeight = false }) {
   const heroImage = useMemo(() => {
-    const src = image?.startsWith("/") ? image : `/${image || ""}`;
+    const rawSrc = image?.startsWith("/") ? image : `/${image || ""}`;
+    const asset = getHeroAsset(rawSrc);
     return {
-      src,
+      src: asset.src,
+      blurDataURL: asset.blurDataURL,
       alt: content?.title ? `${content.title} banner` : "Registration banner",
     };
   }, [image, content?.title]);
@@ -19,9 +22,10 @@ function DisasterHeader({ content, image, fullHeight = false }) {
           alt={heroImage.alt}
           fill
           priority
-          placeholder="empty"
+          placeholder="blur"
+          blurDataURL={heroImage.blurDataURL}
           sizes="100vw"
-          quality={78}
+          quality={70}
           className={styles.bannerImage}
         />
         <div className={styles.overlay}>

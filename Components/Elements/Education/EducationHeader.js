@@ -2,6 +2,7 @@
 import React, { useState, useRef, useCallback, useMemo } from "react";
 import Image from "next/image";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 const MIN_DONATION = 100;
 
@@ -23,6 +24,7 @@ const EDUCATION_CAUSE_OPTIONS = [
 ];
 
 const HERO_IMAGE = "/img/Campaigns/Education.webp";
+const HERO_ASSET = getHeroAsset(HERO_IMAGE);
 
 function formatAmount(value) {
   if (!value) return "";
@@ -333,16 +335,14 @@ export default function EducationHeader() {
       <section className="edu-hero-section">
         <div className="edu-hero-image-wrap">
           <Image
-            src={HERO_IMAGE}
+            src={HERO_ASSET.src}
             alt="Al-Kitab Education System"
             fill
             priority
-            loading="eager"
-            fetchPriority="high"
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={HERO_ASSET.blurDataURL}
             sizes="100vw"
-            quality={75}
-            decoding="async"
+            quality={70}
             className="edu-hero-slide-image"
           />
         </div>

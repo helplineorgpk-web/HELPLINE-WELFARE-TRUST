@@ -2,8 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 const HERO_IMAGE = "/img/bg/breadcrumb_bg_4.jpg";
+const HERO_ASSET = getHeroAsset(HERO_IMAGE);
 
 export default function OurImpactHeader() {
   const heading = "Our Impact";
@@ -121,13 +123,14 @@ export default function OurImpactHeader() {
       <section className="oi-hero-section">
         <div className="oi-hero-image-wrap">
           <Image
-            src={HERO_IMAGE}
+            src={HERO_ASSET.src}
             alt="Our Impact"
             fill
             priority
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={HERO_ASSET.blurDataURL}
             sizes="100vw"
-            quality={85}
+            quality={70}
             className="oi-hero-slide-image"
           />
         </div>

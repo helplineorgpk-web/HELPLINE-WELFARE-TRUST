@@ -2,6 +2,7 @@
 import React, { useState, useRef, useCallback, useMemo } from "react";
 import Image from "next/image";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 const MIN_DONATION = 100;
 
@@ -32,6 +33,7 @@ function normalizeImageSrc(src) {
 
 export default function HealthHeader({ content, image }) {
   const HERO_IMAGE = normalizeImageSrc(image);
+  const HERO_ASSET = useMemo(() => getHeroAsset(HERO_IMAGE), [HERO_IMAGE]);
   const heading = content?.title ?? "Healthcare & Clean Water";
   const subheading = "Healthcare and clean water for families who cannot afford to wait";
 
@@ -335,13 +337,14 @@ export default function HealthHeader({ content, image }) {
       <section className="health-hero-section">
         <div className="health-hero-image-wrap">
           <Image
-            src={HERO_IMAGE}
+            src={HERO_ASSET.src}
             alt={heading}
             fill
             priority
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={HERO_ASSET.blurDataURL}
             sizes="100vw"
-            quality={85}
+            quality={70}
             className="health-hero-slide-image"
           />
         </div>

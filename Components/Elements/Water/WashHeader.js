@@ -2,6 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getHeroAsset } from "../../../lib/heroImage";
+
+const HERO_ASSET = getHeroAsset("/img/Campaigns/Environment.webp");
 
 export default function WashHeader() {
   const heading = "Healthcare &\nClean Water";
@@ -136,16 +139,14 @@ export default function WashHeader() {
       <section className="wash-hero-section">
         <div className="wash-hero-image-wrap">
           <Image
-            src="/img/Campaigns/Environment.webp"
+            src={HERO_ASSET.src}
             alt="Sustainable Environment & WASH"
             fill
             priority
-            loading="eager"
-            fetchPriority="high"
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={HERO_ASSET.blurDataURL}
             sizes="100vw"
-            quality={75}
-            decoding="async"
+            quality={70}
             className="wash-hero-slide-image"
           />
         </div>

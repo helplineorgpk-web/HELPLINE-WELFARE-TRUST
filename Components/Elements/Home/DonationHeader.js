@@ -2,6 +2,7 @@
 import React, { useState, useRef, useCallback, useMemo, useEffect } from "react";
 import Image from "next/image";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 const MIN_DONATION = 100;
 
@@ -41,6 +42,8 @@ const HERO_IMAGES = [
   "/img/Campaigns/Disaster.webp",
   "/img/Campaigns/Environment.webp",
 ];
+
+const HERO_ASSETS = HERO_IMAGES.map((src) => getHeroAsset(src));
 
 function formatAmount(value) {
   if (!value) return "";
@@ -409,22 +412,25 @@ export default function DonationHeader() {
 
       <section className="hero-section">
         <div className="hero-image-wrap">
-          {HERO_IMAGES.map((img, index) => (
-            <Image
-              key={img}
-              src={img}
-              alt="Donate"
-              fill
-              priority
-              loading="eager"
-              fetchPriority="high"
-              placeholder="empty"
-              sizes="100vw"
-              quality={75}
-              decoding="async"
-              className={`hero-slide-image ${index === activeSlide ? "active" : ""}`}
-            />
-          ))}
+          {HERO_ASSETS.map((asset, index) => {
+            const isFirst = index === 0;
+            return (
+              <Image
+                key={asset.src}
+                src={asset.src}
+                alt="Donate"
+                fill
+                priority={isFirst}
+                loading={isFirst ? "eager" : "lazy"}
+                fetchPriority={isFirst ? "high" : "low"}
+                placeholder="blur"
+                blurDataURL={asset.blurDataURL}
+                sizes="100vw"
+                quality={70}
+                className={`hero-slide-image ${index === activeSlide ? "active" : ""}`}
+              />
+            );
+          })}
         </div>
 
         <div className="hero-overlay" />

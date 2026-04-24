@@ -2,6 +2,7 @@
 import React, { useState, useRef, useCallback, useMemo } from "react";
 import Image from "next/image";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 const MIN_DONATION = 100;
 
@@ -27,6 +28,7 @@ function parseAmount(value) {
 
 export default function LivelihoodHeader({ image }) {
   const HERO_IMAGE = image && image.startsWith("/") ? image : image ? `/${image}` : "/img/causes/karbathheader.png";
+  const HERO_ASSET = useMemo(() => getHeroAsset(HERO_IMAGE), [HERO_IMAGE]);
 
   const [selectedCause, setSelectedCause] = useState(CAUSE_OPTIONS[0].id);
   const [amount, setAmount] = useState("");
@@ -312,13 +314,14 @@ export default function LivelihoodHeader({ image }) {
       <section className="livelihood-hero-section">
         <div className="livelihood-hero-image-wrap">
           <Image
-            src={HERO_IMAGE}
+            src={HERO_ASSET.src}
             alt="Livelihood & Food Security"
             fill
             priority
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={HERO_ASSET.blurDataURL}
             sizes="100vw"
-            quality={85}
+            quality={70}
             className="livelihood-hero-slide-image"
           />
         </div>

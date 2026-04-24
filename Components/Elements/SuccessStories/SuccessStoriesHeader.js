@@ -2,8 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getHeroAsset } from "../../../lib/heroImage";
 
 const HERO_IMAGE = "/img/bg/breadcrumb_bg_4.jpg";
+const HERO_ASSET = getHeroAsset(HERO_IMAGE);
 
 export default function SuccessStoriesHeader() {
   const heading = "Success Stories";
@@ -133,13 +135,14 @@ export default function SuccessStoriesHeader() {
       <section className="ss-hero-section">
         <div className="ss-hero-image-wrap">
           <Image
-            src={HERO_IMAGE}
+            src={HERO_ASSET.src}
             alt="Success Stories"
             fill
             priority
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL={HERO_ASSET.blurDataURL}
             sizes="100vw"
-            quality={85}
+            quality={70}
             className="ss-hero-slide-image"
           />
         </div>
