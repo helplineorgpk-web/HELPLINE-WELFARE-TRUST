@@ -82,15 +82,15 @@ const campaignImageAssets = {
   },
   "/img/Campaigns/Vocational3.webp": {
     "optimized": "/img/campaigns-opt/img_campaigns_vocational3.webp",
-    "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoQAAgAA4BaJaQAD4AQb+sAQAD++K23jot0+0HdsjPjic9sXfk4YAAA"
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAgAA4BaJaQAD4AQgUWviAAA/vixuKQe87HDXDNI0ewoq0KLpCtX8o23/L6Xsrd9aUWRtd38ksAA"
   },
   "/img/Campaigns/MasjidMaktab2.webp": {
     "optimized": "/img/campaigns-opt/img_campaigns_masjidmaktab2.webp",
     "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAgAA4BaJbACdAEOzcSyt3QA/viwXk/xU46USAxegLxX6/hdNDt2pEQ8/A/YrjRLufZ4DCz9MN/djjxHwpFYZVmUAAAA"
   },
-  "/img/causes/qurbani1.jpg": {
-    "optimized": "/img/campaigns-opt/img_causes_qurbani1.webp",
-    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAQCdASoQAAsAA4BaJZACdAEHy7wYAADOOTE7kiYQMzyTKCX15hLyNkksS+J+IuatJfjCBbUDlVd45dbBcQAxDfd+3Zn4SDgAjkg6lPPjay5soQR0rTxr38oHHYNtQAA="
+  "/img/Campaigns/2026 Qurbani.jpg": {
+    "optimized": "/img/campaigns-opt/img_campaigns_2026_qurbani.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAgAA4BaJaQAAudlQvnCYAD+9/CtHSZNOI3sdMbv7JJnGRA1zOO/q0/kOmaS0ImGAA=="
   },
   "/img/causes/cause13.jpg": {
     "optimized": "/img/campaigns-opt/img_causes_cause13.webp",

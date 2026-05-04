@@ -92,7 +92,7 @@ const heroSlides = [
     },
   },
   {
-    image: "/img/Campaigns/Vocational3.webp",
+    image: "/img/Campaigns/Vocational.webp",
     imageMobile: "/img/Campaigns/Vocationalmobile.jpg",
     title: "VOCATIONAL TRAINING",
     subtitle: "Equip youth with technical skills for sustainable employment and self-reliance.",
@@ -108,7 +108,7 @@ const heroSlides = [
     },
   },
   {
-    image: "/img/Campaigns/MasjidMaktab2.webp",
+    image: "/img/Campaigns/MasjidMaktab.webp",
     imageMobile: "/img/Campaigns/Masjidmobile.jpg",
     title: "SCHOOL MASJID PROJECT",
     subtitle: "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
@@ -116,6 +116,23 @@ const heroSlides = [
     heroTitleLine1: "BUILD",
     heroTitleLine2: "TOGETHER",
     heroSubtitle: "Support integrated school and masjid facilities to uplift communities.",
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+  },
+  {
+    image: "/img/Campaigns/Qurbani3.jpg",
+    title: "QURBANI PROGRAM 2026",
+    subtitle:
+      "Participate in our Qurbani program to help distribute meat to deserving families during Eid ul Adha.",
+    link: "/qurbani",
+    heroTitleLine1: "QURBANI 2026",
+    heroTitleLine2: "SHARE THE BLESSING",
+    heroSubtitle:
+      "Join our Qurbani program and help deliver meat to families in need this Eid ul Adha.",
     heroStyle: {
       titleHighlightColor: "#f15b43",
       linePrimaryColor: "#f15b43",
@@ -291,6 +308,12 @@ export default function Header({ slides: slidesProp }) {
         .hero-slider .swiper-wrapper {
           height: 100%;
         }
+        .hero-slider .swiper-slide {
+          width: 100% !important;
+          max-width: 100%;
+          flex-shrink: 0;
+          box-sizing: border-box;
+        }
         .hero-slide {
           position: relative;
           width: 100%;
@@ -301,7 +324,12 @@ export default function Header({ slides: slidesProp }) {
           transform: translate3d(0, 0, 0);
           will-change: transform;
         }
-        .hero-slide-image {
+        .hero-slide .hero-slide-image {
+          position: absolute !important;
+          inset: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-width: none !important;
           object-fit: cover;
           object-position: center;
           will-change: transform;
@@ -577,12 +605,6 @@ export default function Header({ slides: slidesProp }) {
           .hero-slide {
             height: 100% !important;
             min-height: 100% !important;
-          }
-          .hero-slide .hero-slide-image {
-            position: absolute !important;
-            inset: 0 !important;
-            width: 100% !important;
-            height: 100% !important;
           }
           .hero-content {
             padding: 126px 20px 32px;
