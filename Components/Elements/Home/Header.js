@@ -108,7 +108,7 @@ const heroSlides = [
     },
   },
   {
-    image: "/img/Campaigns/MasjidMaktab.webp",
+    image: "/img/Campaigns/MasjidMaktab.jpg",
     imageMobile: "/img/Campaigns/Masjidmobile.jpg",
     title: "SCHOOL MASJID PROJECT",
     subtitle: "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
