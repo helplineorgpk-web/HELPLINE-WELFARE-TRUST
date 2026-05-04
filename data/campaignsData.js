@@ -1,5 +1,42 @@
 export const campaignsData = [
   {
+    id: "waqaf-qurbani-2026",
+    title: "WAQAF Qurbani 2026",
+    href: "/qurbani",
+    description:
+      "FOR DESERVING PEOPLE—WAQAF Qurbani this Eid ul Adha.\nPick goat, cow share, or full cow; we distribute meat with care.",
+    image: "/img/Campaigns/Qurbani3.jpg",
+    donationPresets: [75000, 37000, 259000],
+    details: {
+      goal: 2000000,
+      raised: 0,
+      packages: [
+        {
+          name: "GOAT",
+          price: 75000,
+          description:
+            "Sponsor a complete goat sacrifice; meat is prepared and shared with verified deserving households in our distribution network.",
+        },
+        {
+          name: "COW (PER SHARE)",
+          price: 37000,
+          description:
+            "One seventh share in a collective cow—ideal when you want to participate at a set tier while meat is pooled and distributed equitably.",
+        },
+        {
+          name: "FULL COW",
+          price: 259000,
+          description:
+            "Sponsor an entire cow; maximizes meat volume for community distribution under the same WAQAF Qurbani program controls.",
+        },
+      ],
+      endDate: "2026-06-15",
+    },
+    status: "Running",
+    featured: true,
+    categories: ["social-welfare"],
+  },
+  {
     id: "ramzan-2026",
     title: "Ramadan Food Package 2026",
     href: "/ramzanRashan",
@@ -24,7 +61,6 @@ export const campaignsData = [
       endDate: "2026-04-15",
     },
     status: "Running",
-    featured: true,
     categories: ["social-welfare"],
   },
   {

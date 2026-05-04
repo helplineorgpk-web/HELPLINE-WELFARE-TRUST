@@ -5,6 +5,12 @@ export const CAMPAIGN_DETAIL_HIGHLIGHTS = {
     "Two clear tiers—Basic and Family—so donors pick speed and scale without guesswork.",
     "Volunteer-led packing lines plus field distribution keep dignity at the front.",
   ],
+  "waqaf-qurbani-2026": [
+    "WAQAF framing: your Qurbani is channeled through Helpline’s annual program so worship translates into meals for people who rarely afford meat.",
+    "Three published tiers—Rs.75,000 goat, Rs.37,000 cow share, Rs.259,000 full cow—so you pick scale without negotiating ad hoc.",
+    "Animals, slaughter, and cut-and-pack logistics follow agreed Shariah guidance; distribution is staged for dignity and safety at busy sites.",
+    "Designed for Eid ul Adha concentration: book early, pay your tier, and trust field teams to execute while you focus on the days of takbir.",
+  ],
   "rashan-program": [
     "Year-round monthly rashan for families who face hunger between paychecks or harvests.",
     "Single Monthly Package tier keeps accounting simple for repeat givers.",

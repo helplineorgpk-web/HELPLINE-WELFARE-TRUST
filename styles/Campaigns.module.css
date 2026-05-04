@@ -708,6 +708,7 @@
   font-size: 0.825rem;
   line-height: 1.5;
   min-height: 4.5em;
+  white-space: pre-line;
 }
 
 .progress {

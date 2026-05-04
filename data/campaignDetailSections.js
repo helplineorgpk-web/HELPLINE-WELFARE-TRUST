@@ -25,6 +25,28 @@ export const CAMPAIGN_DETAIL_SECTIONS = {
       "Distribution is tracked with spot checks; feedback informs the next Ramadan planning cycle.",
     ],
   },
+  "waqaf-qurbani-2026": {
+    beneficiaries: [
+      "Low-income and working-poor families in areas where Helpline runs Eid ul Adha meat distribution.",
+      "Households with children, elders, or widows for whom a Qurbani portion is a rare source of quality protein.",
+      "Communities vetted through local references so support goes to people who are truly deserving, not only the loudest queue.",
+    ],
+    donationUsage: [
+      "Your chosen tier—GOAT (Rs.75,000), COW (PER SHARE) (Rs.37,000), or FULL COW (Rs.259,000)—feeds the WAQAF Qurbani pool for that option (single animal, pooled shares, or whole cow).",
+      "Live animal purchase, transport, and Shariah-compliant slaughter; butchering, packing, and cold-chain or same-day handoff where the program requires it.",
+      "Field staff, transportation, and basic hygiene supplies at distribution points; light documentation so programs stay auditable for donors and partners.",
+    ],
+    objectives: [
+      "Make WAQAF Qurbani simple to give: three clear prices, one program, no hidden add-ons.",
+      "Get safe, edible meat to eligible families in an orderly way—queues, tickets, or zoned handouts as each site needs.",
+      "Keep donor confidence through honest communication when market or animal costs shift before Eid.",
+    ],
+    implementation: [
+      "Pre-Eid: confirm demand by tier, book healthy animals with trusted suppliers, and align volunteer rosters with each site’s expected crowd.",
+      "Eid days: sacrifice per fiqh protocol for each tier, then pack and label shares for fair handout; escalate crowding or heat risks with on-site leads.",
+      "After Eid: match distributed shares to donor bookings, close the books on each tier, and note lessons for the next WAQAF Qurbani cycle.",
+    ],
+  },
   "rashan-program": {
     beneficiaries: [
       "Working-poor families facing month-end food gaps outside Ramadan season.",

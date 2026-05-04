@@ -295,6 +295,11 @@ function buildDonationUsage(campaign) {
 }
 
 function getPresetAmounts(campaign) {
+  if (Array.isArray(campaign?.donationPresets) && campaign.donationPresets.length > 0) {
+    return campaign.donationPresets
+      .map((n) => Number(n))
+      .filter((n) => Number.isFinite(n) && n > 0);
+  }
   const prices = (campaign?.details?.packages || []).map((pkg) => pkg.price);
   const unique = [...new Set(prices)].sort((a, b) => a - b);
   const baseline = [1000, 2500].filter((n) => !unique.includes(n));
