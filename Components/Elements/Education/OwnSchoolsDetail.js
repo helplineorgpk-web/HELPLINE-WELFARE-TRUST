@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./OwnSchoolsDetail.module.css";
 
-const IMAGE_SRC = "/img/Campaigns/Student.jpg";
+const IMAGE_SRC = "/img/causes/future.jpg";
 
 export default function OwnSchoolsDetail() {
   return (

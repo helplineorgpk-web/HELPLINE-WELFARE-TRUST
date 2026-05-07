@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import styles from './UBLPaymentForm.module.css';
 
 const FALLBACK_PRESET_AMOUNTS = [1000, 2500, 2200, 11000, 22000];
+const EMPTY_PRESET_AMOUNTS = [];
 
 const DEFAULT_DONATION_TYPES = [
   'General Donation',
@@ -55,7 +56,7 @@ const UBLPaymentForm = ({
   donorName = '',
   donorEmail = '',
   donorPhone = '',
-  presetAmounts = [],
+  presetAmounts = EMPTY_PRESET_AMOUNTS,
   amount: legacyAmount,
   cause: legacyCause,
 }) => {
@@ -115,10 +116,28 @@ const UBLPaymentForm = ({
   const [view, setView] = useState(VIEWS.FORM);
   const [pledgeReference, setPledgeReference] = useState('');
   const [copyNotice, setCopyNotice] = useState('');
+  const customAmountInputRef = useRef(null);
 
   const parsedAmount = Number(formData.amount);
   const isPresetSelected =
     Number.isFinite(parsedAmount) && donationPresetAmounts.includes(parsedAmount);
+  const amountButtons = useMemo(() => {
+    if (!Number.isFinite(parsedAmount) || parsedAmount <= 0) {
+      return donationPresetAmounts;
+    }
+
+    if (donationPresetAmounts.includes(parsedAmount)) {
+      return [
+        parsedAmount,
+        ...donationPresetAmounts.filter((value) => value !== parsedAmount),
+      ];
+    }
+
+    return [
+      parsedAmount,
+      ...donationPresetAmounts.filter((value) => value !== parsedAmount),
+    ];
+  }, [donationPresetAmounts, parsedAmount]);
 
   useEffect(() => {
     const nextAmount = Number(resolvedAmount);
@@ -148,12 +167,11 @@ const UBLPaymentForm = ({
 
   const handleCustomAmountToggle = () => {
     setShowCustomAmountInput(true);
-    if (isPresetSelected) {
-      setFormData((prev) => ({
-        ...prev,
-        amount: '',
-      }));
-    }
+    setFormData((prev) => ({
+      ...prev,
+      amount: isPresetSelected ? '' : prev.amount,
+    }));
+    setTimeout(() => customAmountInputRef.current?.focus(), 0);
   };
 
   const validateForm = () => {
@@ -400,7 +418,7 @@ const UBLPaymentForm = ({
               <div className={styles.formGroup}>
                 <label htmlFor="amount">Donation Amount (PKR)</label>
                 <div className={styles.amountButtons}>
-                  {donationPresetAmounts.map((amount) => (
+                  {amountButtons.map((amount) => (
                     <button
                       key={amount}
                       type="button"
@@ -426,6 +444,7 @@ const UBLPaymentForm = ({
                 </div>
                 {showCustomAmountInput ? (
                   <input
+                    ref={customAmountInputRef}
                     type="number"
                     id="amount"
                     name="amount"
@@ -434,7 +453,7 @@ const UBLPaymentForm = ({
                     min="1"
                     step="0.01"
                     required
-                    placeholder="Enter amount"
+                    placeholder="Enter custom amount"
                   />
                 ) : (
                   <input type="hidden" name="amount" value={formData.amount || ''} />
@@ -522,7 +541,8 @@ const UBLPaymentForm = ({
 
               {error && <div className={styles.errorMessage}>{error}</div>}
 
-              {paymentMethod === PAYMENT_METHODS.ONLINE && (
+              {(paymentMethod === PAYMENT_METHODS.ONLINE ||
+                paymentMethod === PAYMENT_METHODS.MANUAL) && (
                 <label className={styles.consentCheck}>
                   <input
                     type="checkbox"
@@ -793,7 +813,7 @@ const UBLPaymentForm = ({
           </div>
         )}
 
-        {view === VIEWS.FORM && (
+        {view === VIEWS.FORM && paymentMethod === PAYMENT_METHODS.ONLINE && (
           <div className={styles.paymentInfo}>
             <div className={styles.securityInfo}>
               <h4>Secure Payment</h4>
