@@ -1,5 +1,75 @@
 export const campaignsData = [
   {
+    id: "become-a-member-100",
+    title: "Become a Member — Rs. 100 Only",
+    href: "/campaign/become-a-member-100",
+    description:
+      "Become a member of Helpline Welfare Trust with a one-time donation of just Rs. 100. Join thousands supporting education, healthcare, disaster relief, social welfare, and sustainability.",
+    image: "/img/Campaigns/100rupees.jpg",
+    donationPresets: [100, 500, 1000],
+    longDescription:
+      "Your Rs. 100 membership connects you directly to Helpline Welfare Trust’s mission across Pakistan. Every membership contribution is pooled transparently and allocated across our five core focus areas—so one small gift supports education, health, emergency response, community welfare, and long-term sustainability together.",
+    focusAreas: [
+      {
+        title: "Education & Literacy",
+        share: 20,
+        description:
+          "Helps keep children in school through fees, books, uniforms, and literacy support at Helpline-operated and partner schools.",
+      },
+      {
+        title: "Primary Healthcare",
+        share: 20,
+        description:
+          "Funds free medical camps, essential medicines, outpatient care, and outreach for families who cannot afford treatment.",
+      },
+      {
+        title: "Disaster Relief",
+        share: 20,
+        description:
+          "Supports rapid food, shelter, and rescue assistance when floods, earthquakes, or other emergencies hit vulnerable communities.",
+      },
+      {
+        title: "Social Welfare Development",
+        share: 20,
+        description:
+          "Strengthens rashan drives, orphan care, vocational training, and welfare programs for families facing daily hardship.",
+      },
+      {
+        title: "Sustainability & Endowment",
+        share: 20,
+        description:
+          "Builds long-term capacity through waqf-style endowment, green initiatives, and programs that help communities become self-reliant.",
+      },
+    ],
+    impact: [
+      { value: "Rs. 100", label: "One-Time Membership" },
+      { value: "5 Areas", label: "Shared Impact" },
+      { value: "Open", label: "Year-Round Joining" },
+    ],
+    details: {
+      goal: 5000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Trust Membership",
+          price: 100,
+          description:
+            "One-time Rs. 100 membership—your contribution is distributed across all five Helpline focus areas.",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Running",
+    featured: true,
+    categories: [
+      "education",
+      "healthcare",
+      "disaster-relief",
+      "social-welfare",
+      "sustainability",
+    ],
+  },
+  {
     id: "waqaf-qurbani-2026",
     title: "WAQAF Qurbani 2026",
     href: "/qurbani",
@@ -33,7 +103,7 @@ export const campaignsData = [
       endDate: "2026-06-15",
     },
     status: "Running",
-    featured: true,
+    featured: false,
     categories: ["social-welfare"],
   },
   {

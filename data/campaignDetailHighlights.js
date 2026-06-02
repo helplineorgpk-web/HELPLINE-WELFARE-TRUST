@@ -1,5 +1,11 @@
 /** Narrative bullets for “Campaign Highlights” — unique per campaign (not only status/amounts). */
 export const CAMPAIGN_DETAIL_HIGHLIGHTS = {
+  "become-a-member-100": [
+    "One simple step: donate Rs. 100 once and become a Helpline Welfare Trust member.",
+    "Your Rs. 100 is shared equally—Rs. 20 each—across five core focus areas.",
+    "No need to pick a single cause; one membership supports the whole Trust mission.",
+    "Ideal for students, first-time donors, and anyone who wants to start small and stay connected.",
+  ],
   "ramzan-2026": [
     "Seasonal Ramadan drive: food packs timed to sehri and iftar needs in partner areas.",
     "Two clear tiers—Basic and Family—so donors pick speed and scale without guesswork.",

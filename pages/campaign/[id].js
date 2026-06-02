@@ -449,6 +449,40 @@ export default function CampaignDetail({ campaign }) {
                   {buildLongDescription(campaign, educationDetails)}
                 </Card.Text>
 
+                {Array.isArray(campaign.focusAreas) && campaign.focusAreas.length > 0 ? (
+                  <>
+                    <h3 className="h4 mt-4">How Your Rs. 100 Is Spent</h3>
+                    <p className={styles.focusAreasLead}>
+                      Each Rs. 100 membership is divided equally across Helpline&apos;s five
+                      focus areas—Rs. 20 per area—so your one donation supports the full
+                      mission.
+                    </p>
+                    <Row className="g-3 mb-4">
+                      {campaign.focusAreas.map((area) => (
+                        <Col key={area.title} md={6}>
+                          <Card className={`h-100 ${styles.focusAreaCard}`}>
+                            <Card.Body>
+                              <div className={styles.focusAreaHeader}>
+                                <h4 className={`h6 mb-0 ${styles.focusAreaTitle}`}>
+                                  {area.title}
+                                </h4>
+                                {area.share ? (
+                                  <span className={styles.focusAreaShare}>
+                                    Rs. {formatPkr(area.share)}
+                                  </span>
+                                ) : null}
+                              </div>
+                              <Card.Text className={styles.focusAreaText}>
+                                {area.description}
+                              </Card.Text>
+                            </Card.Body>
+                          </Card>
+                        </Col>
+                      ))}
+                    </Row>
+                  </>
+                ) : null}
+
                 <h3 className="h4 mt-4">Our Impact</h3>
                 <Row className="text-center g-3 mb-4">
                   {impactData.map((item, index) => (

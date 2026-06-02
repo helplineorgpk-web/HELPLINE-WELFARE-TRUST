@@ -3,6 +3,30 @@
  * Each campaign id should have distinct beneficiaries, usage, objectives, and implementation lines.
  */
 export const CAMPAIGN_DETAIL_SECTIONS = {
+  "become-a-member-100": {
+    beneficiaries: [
+      "Anyone who wants to stand with Helpline Welfare Trust as a registered member donor.",
+      "Families and communities served across all five program pillars—not a single narrow cause.",
+      "Repeat givers who prefer a simple Rs. 100 entry point before scaling support later.",
+    ],
+    donationUsage: [
+      "Rs. 20 from each membership is directed to Education & Literacy—school fees, books, and learning continuity.",
+      "Rs. 20 supports Primary Healthcare—medical camps, medicines, and patient outreach.",
+      "Rs. 20 strengthens Disaster Relief—emergency food, shelter, and field response.",
+      "Rs. 20 funds Social Welfare Development—rashan, orphan care, and livelihood support.",
+      "Rs. 20 is allocated to Sustainability & Endowment—long-term programs and community resilience.",
+    ],
+    objectives: [
+      "Make membership accessible at Rs. 100 so more Pakistanis can join the Trust’s mission.",
+      "Show members exactly how one contribution touches all five focus areas.",
+      "Grow a broad donor base that sustains education, health, relief, welfare, and endowment together.",
+    ],
+    implementation: [
+      "Membership gifts are recorded centrally and tagged for the five-area allocation model.",
+      "Program leads deploy pooled funds to active needs in each pillar each quarter.",
+      "Aggregate impact updates are shared so members see collective outcomes without exposing private beneficiary data.",
+    ],
+  },
   "ramzan-2026": {
     beneficiaries: [
       "Families fasting during Ramadan who struggle to afford sehri and iftar groceries.",
