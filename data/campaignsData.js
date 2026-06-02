@@ -6,6 +6,7 @@ export const campaignsData = [
     description:
       "Become a member of Helpline Welfare Trust with a one-time donation of just Rs. 100. Join thousands supporting education, healthcare, disaster relief, social welfare, and sustainability.",
     image: "/img/Campaigns/100rupees.jpg",
+    imageMobile: "/img/Campaigns/100rupeesmobil.jpg",
     donationPresets: [100, 500, 1000],
     longDescription:
       "Your Rs. 100 membership connects you directly to Helpline Welfare Trust’s mission across Pakistan. Every membership contribution is pooled transparently and allocated across our five core focus areas—so one small gift supports education, health, emergency response, community welfare, and long-term sustainability together.",
@@ -85,19 +86,19 @@ export const campaignsData = [
           name: "GOAT",
           price: 75000,
           description:
-            "Sponsor a complete goat sacrifice; meat is prepared and shared with verified deserving households in our distribution network.",
+            "Sponsor a complete goat sacrifice; meat is prepared and shared\nwith verified deserving households in our distribution network.",
         },
         {
           name: "COW (PER SHARE)",
           price: 37000,
           description:
-            "One seventh share in a collective cow—ideal when you want to participate at a set tier while meat is pooled and distributed equitably.",
+            "One seventh share in a collective cow—participate at a set tier\nwhile meat is pooled and distributed equitably across families.",
         },
         {
           name: "FULL COW",
           price: 259000,
           description:
-            "Sponsor an entire cow; maximizes meat volume for community distribution under the same WAQAF Qurbani program controls.",
+            "Sponsor an entire cow; maximizes meat volume for community\ndistribution under the same WAQAF Qurbani program controls.",
         },
       ],
       endDate: "2026-06-15",

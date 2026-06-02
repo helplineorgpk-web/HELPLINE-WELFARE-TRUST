@@ -1055,7 +1055,29 @@
 
 /* Campaign detail page theme alignment */
 .detailContainer {
-  margin-top: 250px;
+  margin-top: 1.5rem;
+  padding-top: 0.25rem;
+  overflow: visible;
+}
+
+.detailRow {
+  align-items: flex-start;
+}
+
+.detailSideCol {
+  position: relative;
+  align-self: flex-start;
+}
+
+.detailSideSticky {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.detailSideSticky .detailSideCard {
+  width: 100%;
+  max-width: 100%;
 }
 
 .detailMainCard,
@@ -1066,6 +1088,10 @@
   box-shadow:
     0 2px 8px rgba(26, 58, 92, 0.06),
     0 12px 28px rgba(26, 58, 92, 0.06);
+}
+
+.detailSideCard {
+  margin-bottom: 0;
 }
 
 .detailHeroImageWrap {
@@ -1080,6 +1106,30 @@
   object-fit: cover;
 }
 
+.detailHeroImageMobile {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.detailHeroImageDesktop {
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .detailHeroImageWrapHasMobile {
+    height: auto;
+  }
+
+  .detailHeroImageWrapHasMobile .detailHeroImageMobile {
+    display: block;
+  }
+
+  .detailHeroImageWrapHasMobile .detailHeroImageDesktop {
+    display: none;
+  }
+}
+
 .detailMainBody,
 .detailSideBody {
   padding: 1rem;
@@ -1087,7 +1137,51 @@
   background-image: none !important;
 }
 
+.detailSideBody {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.detailSideFooter {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.packageListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
+  text-align: left;
+}
+
+.packageListHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.packageDescription {
+  display: block;
+  white-space: pre-line;
+  line-height: 1.45;
+  font-size: 0.8125rem;
+  margin: 0;
+}
+
+.packagePrice {
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
 .detailSideHeader {
+  padding: 0.875rem 1rem !important;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(250, 241, 240, 0.6) 100%);
   border-bottom: 1px solid rgba(26, 58, 92, 0.08);
 }

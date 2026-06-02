@@ -1,4 +1,5 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useRef, useState } from "react";
+import { useStickySidebar } from "../../hooks/useStickySidebar";
 import Image from "next/image";
 import Layout1 from "../../Components/Layout/Layout1";
 import { Container, Row, Col, Card, ListGroup, Button } from "react-bootstrap";
@@ -361,6 +362,16 @@ function buildImplementationProcess(campaign) {
 }
 
 export default function CampaignDetail({ campaign }) {
+  const mainColRef = useRef(null);
+  const sideColRef = useRef(null);
+  const sidebarRef = useRef(null);
+  const { sidebarStyle, placeholderHeight, recalculate } = useStickySidebar(
+    sidebarRef,
+    mainColRef,
+    sideColRef,
+    { headerGap: 24 }
+  );
+
   if (!campaign) {
     return (
       <Layout1>
@@ -422,20 +433,39 @@ export default function CampaignDetail({ campaign }) {
         secondaryCta={{ href: "#campaign-detail", label: "CAMPAIGN DETAILS" }}
         videoTitle={`${campaign.title} - Campaign Overview`}
       />
-      <Container className={`py-5 ${styles.detailContainer}`}>
-        <Row id="campaign-detail">
-          <Col lg={8}>
+      <Container className={`py-4 ${styles.detailContainer}`}>
+        <Row id="campaign-detail" className={styles.detailRow}>
+          <Col lg={8} ref={mainColRef}>
             <Card className={`mb-4 ${styles.detailMainCard}`}>
-              <div className={styles.detailHeroImageWrap}>
+              <div
+                className={`${styles.detailHeroImageWrap} ${
+                  campaign.imageMobile ? styles.detailHeroImageWrapHasMobile : ""
+                }`}
+              >
+                {campaign.imageMobile ? (
+                  <Image
+                    src={campaign.imageMobile}
+                    alt={campaign.title}
+                    width={1080}
+                    height={1350}
+                    priority
+                    fetchPriority="high"
+                    quality={75}
+                    sizes="100vw"
+                    className={`${styles.detailHeroImage} ${styles.detailHeroImageMobile}`}
+                    onLoadingComplete={recalculate}
+                  />
+                ) : null}
                 <Image
                   src={campaign.image}
                   alt={campaign.title}
                   fill
-                  priority
+                  priority={!campaign.imageMobile}
                   fetchPriority="high"
                   quality={75}
                   sizes="(max-width: 992px) 100vw, 66vw"
-                  className={styles.detailHeroImage}
+                  className={`${styles.detailHeroImage} ${styles.detailHeroImageDesktop}`}
+                  onLoadingComplete={recalculate}
                 />
               </div>
               <Card.Body className={styles.detailMainBody}>
@@ -535,8 +565,12 @@ export default function CampaignDetail({ campaign }) {
             </Card>
           </Col>
 
-          <Col lg={4}>
-            <Card className={`mb-4 sticky-top ${styles.detailSideCard}`} style={{ top: "20px" }}>
+          <Col lg={4} ref={sideColRef} className={styles.detailSideCol}>
+            {placeholderHeight > 0 ? (
+              <div aria-hidden="true" style={{ height: placeholderHeight }} />
+            ) : null}
+            <div ref={sidebarRef} className={styles.detailSideSticky} style={sidebarStyle}>
+            <Card className={styles.detailSideCard}>
               <Card.Header className={styles.detailSideHeader}>
                 <h3 className="h4 mb-0">Campaign Progress</h3>
               </Card.Header>
@@ -569,19 +603,23 @@ export default function CampaignDetail({ campaign }) {
                       as="button"
                       type="button"
                       active={selectedAmount === String(pkg.price)}
-                      className="d-flex justify-content-between align-items-center"
+                      className={styles.packageListItem}
                       onClick={() => handlePackageSelect(pkg)}
                     >
-                      <div>
-                        <h5 className="h6 mb-1">{pkg.name}</h5>
-                        {pkg.description && <small className="text-muted">{pkg.description}</small>}
-                        {pkg.items && (
-                          <small className="d-block text-muted">
-                            {pkg.items.join(', ')}
-                          </small>
-                        )}
+                      <div className={styles.packageListHeader}>
+                        <h5 className="h6 mb-0">{pkg.name}</h5>
+                        <span className={styles.packagePrice}>Rs.{formatPkr(pkg.price)}</span>
                       </div>
-                      <span>Rs.{formatPkr(pkg.price)}</span>
+                      {pkg.description ? (
+                        <small className={`text-muted ${styles.packageDescription}`}>
+                          {pkg.description}
+                        </small>
+                      ) : null}
+                      {pkg.items ? (
+                        <small className="d-block text-muted">
+                          {pkg.items.join(", ")}
+                        </small>
+                      ) : null}
                     </ListGroup.Item>
                   ))}
                 </ListGroup>
@@ -631,13 +669,14 @@ export default function CampaignDetail({ campaign }) {
                   Donate Now
                 </Button>
 
-                <div className="text-center mt-3">
+                <div className={styles.detailSideFooter}>
                   <small className="text-muted">
                     Campaign ends: {campaign.details.endDate}
                   </small>
                 </div>
               </Card.Body>
             </Card>
+            </div>
           </Col>
         </Row>
       </Container>
