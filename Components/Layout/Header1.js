@@ -7,7 +7,7 @@ import NavFullscreen from "./NavFullscreen";
 import { menuData } from "./menuData";
 import UBLPaymentForm from "../Elements/Payment/UBLPaymentForm";
 
-export default function Header1() {
+export default function Header1({ headerOverDark = false }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileMenuClosing, setMobileMenuClosing] = useState(false);
@@ -128,9 +128,17 @@ export default function Header1() {
           background: #fff;
           box-shadow: 0 2px 12px rgba(0,0,0,0.08);
         }
+        .hdf-header.over-dark:not(.scrolled):not(.mobile-menu-open) {
+          background: rgba(17, 24, 39, 0.45);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+        }
         .hdf-header.mobile-menu-open {
           background: #fff !important;
           box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .hdf-header.over-dark:not(.scrolled):not(.mobile-menu-open) .hdf-hamburger {
+          color: #fff;
         }
         .hdf-header-inner {
           max-width: 1400px;
@@ -424,7 +432,7 @@ export default function Header1() {
 
       <div className="hdf-header-wrap">
         <header
-          className={`hdf-header ${scrolled ? "scrolled" : ""} ${(mobileMenuOpen || mobileMenuClosing) ? "mobile-menu-open" : ""}`}
+          className={`hdf-header ${scrolled ? "scrolled" : ""} ${headerOverDark ? "over-dark" : ""} ${(mobileMenuOpen || mobileMenuClosing) ? "mobile-menu-open" : ""}`}
         >
           <div className="hdf-header-inner">
             <Link href="/" className="hdf-logo" onClick={closeMobileMenu}>
@@ -439,7 +447,10 @@ export default function Header1() {
             </Link>
 
             <div className="hdf-nav-wrapper">
-              <NavFullscreen scrolled={scrolled} />
+              <NavFullscreen
+                scrolled={scrolled}
+                lightNav={headerOverDark && !scrolled && !mobileMenuOpen}
+              />
             </div>
 
             <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>

@@ -404,6 +404,29 @@ export default function Header({ slides: slidesProp }) {
           height: 4px;
           background: #65cabb;
         }
+        .hero-mawakhat-btn {
+          display: inline-block;
+          margin: 0 0 24px 0;
+          padding: 14px 28px;
+          background: #f15b43;
+          color: #fff;
+          border: none;
+          border-radius: 10px;
+          font-size: clamp(14px, 2vw, 16px);
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 16px rgba(241, 91, 67, 0.35);
+        }
+        .hero-mawakhat-btn:hover {
+          background: #d94832;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(241, 91, 67, 0.45);
+          color: #fff;
+        }
         .donate-card-wrapper {
           position: relative;
           z-index: 10;
@@ -586,6 +609,9 @@ export default function Header({ slides: slidesProp }) {
           }
           .hero-line {
             justify-content: center;
+          }
+          .hero-mawakhat-btn {
+            margin-bottom: 20px;
           }
           .donate-card {
             width: 100%;
@@ -808,6 +834,14 @@ export default function Header({ slides: slidesProp }) {
                   "This Ramazan be the helping hand that transforms lives and spreads hope."}
               </p>
             </div>
+            <a
+              href="/img/Mawakhat-e-Madina4Pager.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-mawakhat-btn"
+            >
+              Concept of Mawakhat-e-Madina
+            </a>
             <div
               className="hero-line"
               style={isMobile ? { justifyContent: "center" } : undefined}

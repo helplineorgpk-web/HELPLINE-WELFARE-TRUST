@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Header1 from "./Header1";
 import Footer1 from "./Footer1";
 
-export default function Layout2({ children }) {
+export default function Layout2({ children, headerOverDark = false }) {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     const onScroll = () => {
@@ -16,7 +16,7 @@ export default function Layout2({ children }) {
 
   return (
     <>
-      <Header1 />
+      <Header1 headerOverDark={headerOverDark} />
 
       {/* back to top Start  */}
       <a

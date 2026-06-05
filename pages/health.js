@@ -3,6 +3,7 @@ import Layout2 from "../Components/Layout/Layout2";
 import { HelplineData } from "../pages/api/data";
 import HealthHeader from "../Components/Elements/Health/HealthHeader";
 import HealthCommunityLed from "../Components/Elements/Health/HealthCommunityLed";
+import HealthTelemedicineIntro from "../Components/Elements/Health/HealthTelemedicineIntro";
 import HealthWomenChildren from "../Components/Elements/Health/HealthWomenChildren";
 import HealthImpact from "../Components/Elements/Health/HealthImpact";
 import HealthSuccessStories from "../Components/Elements/Health/HealthSuccessStories";
@@ -20,6 +21,7 @@ export default function health() {
         image="/img/Campaigns/Medical.webp"
       />
       <HealthCommunityLed />
+      <HealthTelemedicineIntro />
       <HealthWomenChildren />
       <HealthImpact />
       <HealthSuccessStories />

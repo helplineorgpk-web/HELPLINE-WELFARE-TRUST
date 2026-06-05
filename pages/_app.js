@@ -13,6 +13,7 @@ import "../styles/globals.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import { DefaultSeo } from 'next-seo';
 import { defaultSEO } from '../config/seo.config';
 import Script from 'next/script';
@@ -24,7 +25,9 @@ const ChatBot = dynamic(() => import("../Components/Common/ChatBot"), {
 });
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
   const [showClientWidgets, setShowClientWidgets] = useState(false);
+  const hideClientWidgets = router.pathname === "/concept-of-mawakhat-e-madina";
 
   useEffect(() => {
     const enableWidgets = () => setShowClientWidgets(true);
@@ -108,7 +111,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </div>
 
-      {showClientWidgets ? (
+      {showClientWidgets && !hideClientWidgets ? (
         <>
           <WhatsAppButton />
           <ChatBot />

@@ -31,11 +31,12 @@ function normalizeImageSrc(src) {
   return src.startsWith("/") ? src : `/${src}`;
 }
 
-export default function HealthHeader({ content, image }) {
+export default function HealthHeader({ content, image, subheading: subheadingProp }) {
   const HERO_IMAGE = normalizeImageSrc(image);
   const HERO_ASSET = useMemo(() => getHeroAsset(HERO_IMAGE), [HERO_IMAGE]);
   const heading = content?.title ?? "Healthcare & Clean Water";
-  const subheading = "Healthcare and clean water for families who cannot afford to wait";
+  const subheading =
+    subheadingProp ?? "Healthcare and clean water for families who cannot afford to wait";
 
   const [selectedCause, setSelectedCause] = useState(CAUSE_OPTIONS[0].id);
   const [amount, setAmount] = useState("");

@@ -929,7 +929,7 @@ export const HelplineData = {
     {
       id: 14,
       category: ["Medical"],
-      img: "/img/causes/cause10.jpg",
+      img: "/img/causes/karbathhospital.JPG",
       img1: "/img/causes/karbathhospital.JPG",
       img2: "/img/causes/karbathhospital1.JPG",
       img3: "/img/causes/karbathhospital2.JPG",

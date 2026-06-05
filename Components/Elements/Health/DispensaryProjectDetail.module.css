@@ -1,0 +1,311 @@
+.section {
+  background: #f8fafc;
+  padding: 0 0 4rem;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0;
+}
+
+.emotionalLead {
+  margin: 0 0 2rem 0;
+  font-size: 1.08rem;
+  color: #374151;
+  line-height: 1.85;
+  max-width: 860px;
+  border-left: 4px solid #0d9488;
+  padding-left: 1.25rem;
+}
+
+.sectionHeading {
+  margin: 2.5rem 0 1rem 0;
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+  font-weight: 700;
+  color: #111827;
+}
+
+.content {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.contentBlock {
+  margin-bottom: 1.75rem;
+}
+
+.contentBlock:last-child {
+  margin-bottom: 0;
+}
+
+.blockTitle {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.35;
+}
+
+.paragraph {
+  margin: 0 0 1rem 0;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contentBlock .paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  overflow: hidden;
+}
+
+.panelTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.costTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.costTable th,
+.costTable td {
+  padding: 0.65rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.costTable th {
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.costTable td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.costTable tfoot td {
+  border-bottom: none;
+  border-top: 2px solid #0d9488;
+  padding-top: 0.85rem;
+  font-weight: 700;
+  color: #0d9488;
+}
+
+.requirementList,
+.welfareList,
+.highlightList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.requirementList li,
+.welfareList li,
+.highlightList li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.55rem;
+  color: #374151;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.requirementList li::before,
+.welfareList li::before,
+.highlightList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0d9488;
+}
+
+.highlightList {
+  padding: 1.25rem 1.25rem 1.25rem 0.5rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  border-left: 4px solid #0d9488;
+}
+
+.recommendationBox {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.recommendationMeta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.92rem;
+  color: #4b5563;
+}
+
+.recommendationMeta strong {
+  display: block;
+  color: #111827;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15rem;
+}
+
+.recommendationSubject {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0d9488;
+  line-height: 1.45;
+}
+
+.teamList {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.teamList li {
+  background: #f0fdfa;
+  color: #0f766e;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+}
+
+.noteBox {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  background: #fff7ed;
+  border-left: 3px solid #f15b43;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.92rem;
+  color: #9a3412;
+  line-height: 1.6;
+}
+
+.grandTotalBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0 0;
+}
+
+.grandTotalLabel {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.grandTotalAmount {
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 700;
+}
+
+.grandTotalNote {
+  width: 100%;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 0.15rem;
+}
+
+.ctaWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.primaryCta,
+.secondaryCta {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border-radius: 8px;
+  padding: 0.72rem 1.1rem;
+}
+
+.primaryCta {
+  background: #f15b43;
+  color: #fff;
+}
+
+.primaryCta:hover {
+  background: #d94832;
+  color: #fff;
+}
+
+.secondaryCta {
+  background: #fff;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+}
+
+.secondaryCta:hover {
+  border-color: #f15b43;
+  color: #f15b43;
+}
+
+@media (max-width: 900px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+
+  .recommendationMeta {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem 0;
+  }
+
+  .section {
+    padding-bottom: 3rem;
+  }
+}

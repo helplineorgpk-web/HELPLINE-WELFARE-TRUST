@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { menuData } from "./menuData";
 
-export default function NavFullscreen({ scrolled = false }) {
+export default function NavFullscreen({ scrolled = false, lightNav = false }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   return (
@@ -25,14 +25,28 @@ export default function NavFullscreen({ scrolled = false }) {
           display: flex;
           align-items: center;
           gap: 6px;
-          padding: 12px 18px;
+          padding: 10px 16px;
           color: #333;
           font-size: 15px;
-          font-weight: 500;
+          font-weight: 600;
           text-decoration: none;
-          transition: color 0.2s ease;
+          transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
           cursor: pointer;
           white-space: nowrap;
+          border-radius: 8px;
+          border: 1px solid transparent;
+        }
+        .hdf-nav.light .hdf-nav-link {
+          color: #fff;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+          border-color: rgba(255, 255, 255, 0.28);
+          background: rgba(255, 255, 255, 0.08);
+        }
+        .hdf-nav.light .hdf-nav-link:hover,
+        .hdf-nav.light .hdf-nav-link.active {
+          color: #fff;
+          background: rgba(255, 255, 255, 0.18);
+          border-color: rgba(255, 255, 255, 0.45);
         }
         .hdf-nav-link:hover,
         .hdf-nav-link.active {
@@ -153,7 +167,7 @@ export default function NavFullscreen({ scrolled = false }) {
       `}</style>
 
       <nav>
-        <ul className="hdf-nav">
+        <ul className={`hdf-nav ${lightNav ? "light" : ""}`}>
           {menuData.map((item, idx) => (
             <li
               key={idx}
