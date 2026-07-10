@@ -58,6 +58,7 @@ export const menuData = [
         { label: "Volunteer", href: "/volunteer" },
         { label: "Images Gallery", href: "/images" },
         { label: "Videos", href: "/videos" },
+        { label: "Daily News", href: "/mawakhat-e-Madina" },
         { label: "Zakat Calculator", href: "/zakat" },
       ],
     },

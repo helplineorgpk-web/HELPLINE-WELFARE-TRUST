@@ -1,0 +1,163 @@
+.section {
+  padding: 5rem 1.5rem;
+  background: #f8fafb;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0d9488;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  font-weight: 700;
+  color: #1a2a3a;
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.7;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 1.75rem;
+  border-radius: 16px;
+  border: 1px solid #e8ecef;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(26, 42, 58, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(26, 42, 58, 0.1);
+}
+
+.cardDonate {
+  border-top: 4px solid #c75b39;
+}
+
+.cardVolunteer {
+  border-top: 4px solid #0d9488;
+}
+
+.iconWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.cardDonate .iconWrap {
+  background: rgba(199, 91, 57, 0.1);
+  color: #c75b39;
+}
+
+.cardVolunteer .iconWrap {
+  background: rgba(13, 148, 136, 0.1);
+  color: #0d9488;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a2a3a;
+  margin: 0 0 0.6rem;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.65;
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-block;
+  padding: 0.8rem 1.75rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.primaryBtn {
+  background: #c75b39;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(199, 91, 57, 0.3);
+}
+
+.primaryBtn:hover {
+  background: #b04e30;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.secondaryBtn {
+  background: #0d9488;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.3);
+}
+
+.secondaryBtn:hover {
+  background: #0b7c72;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 3.5rem 1rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    text-align: center;
+  }
+}

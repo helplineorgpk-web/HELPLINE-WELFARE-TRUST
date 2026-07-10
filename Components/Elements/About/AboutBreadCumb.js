@@ -11,8 +11,10 @@ export default function AboutBreadCumb({
   backgroundImage = "/img/about/aboutus.jpg",
   backgroundImageMobile,
   variant = "default",
+  textTheme = "dark",
 }) {
   const isCampaignHero = variant === "campaign";
+  const isLightText = textTheme === "light";
 
   const heroImage = useMemo(
     () => ({
@@ -27,11 +29,13 @@ export default function AboutBreadCumb({
   return (
     <section
       suppressHydrationWarning
-      className={
-        isCampaignHero
-          ? `${styles.aboutHero} ${styles.aboutHeroMobileAsset}`
-          : styles.aboutHero
-      }
+      className={[
+        styles.aboutHero,
+        isCampaignHero && styles.aboutHeroMobileAsset,
+        isLightText && styles.aboutHeroLightText,
+      ]
+        .filter(Boolean)
+        .join(" ")}
     >
       <div className={styles.heroBgWrap}>
         <picture className={styles.heroPicture}>

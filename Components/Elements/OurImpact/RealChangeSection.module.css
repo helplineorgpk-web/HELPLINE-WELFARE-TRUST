@@ -1,5 +1,5 @@
 .section {
-  padding: 4rem 1.5rem;
+  padding: 5rem 1.5rem;
   background: #fff;
 }
 
@@ -11,16 +11,16 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
-  margin-bottom: 3rem;
+  gap: 3.5rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
 }
 
 .imageWrap {
   position: relative;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
 }
 
 .image {
@@ -30,73 +30,182 @@
   display: block;
 }
 
+.imageAccent {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 80px;
+  height: 80px;
+  background: #0d9488;
+  border-radius: 0 0 16px 0;
+  z-index: -1;
+}
+
 .content {
   padding-top: 0.5rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c75b39;
+  margin-bottom: 0.75rem;
 }
 
 .title {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 700;
-  color: #1a1a1a;
-  margin: 0 0 1.25rem 0;
+  color: #1a2a3a;
+  margin: 0 0 1.25rem;
   line-height: 1.2;
 }
 
 .paragraph {
   font-size: 1rem;
-  color: #374151;
+  color: #4a5568;
+  line-height: 1.75;
+  margin: 0 0 1rem;
+}
+
+.vision {
+  font-size: 1.05rem;
+  color: #1a2a3a;
   line-height: 1.7;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, #f0fdfa 0%, #fdf6f4 100%);
+  border-left: 4px solid #0d9488;
+  border-radius: 0 8px 8px 0;
 }
 
 .tagline {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #1a1a1a;
-  margin: 1.5rem 0 0 0;
+  color: #c75b39;
+  margin: 1rem 0 0;
+}
+
+.quickStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #1a2a3a 0%, #2d4a5e 100%);
+  border-radius: 16px;
+}
+
+.quickStat {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.quickValue {
+  display: block;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 800;
+  color: #c75b39;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.quickLabel {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .becauseOf {
-  padding-top: 1rem;
+  padding-top: 2rem;
   border-top: 1px solid #eee;
 }
 
 .becauseTitle {
   font-size: 1.25rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 1rem 0;
+  font-weight: 700;
+  color: #1a2a3a;
+  margin: 0 0 1.25rem;
 }
 
 .bulletList {
-  margin: 0 0 1.5rem 0;
-  padding-left: 1.5rem;
-  color: #374151;
-  line-height: 1.75;
-  font-size: 1rem;
+  list-style: none;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 2rem;
 }
 
 .bulletList li {
-  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.bulletIcon {
+  flex-shrink: 0;
+  color: #0d9488;
+  margin-top: 3px;
+  font-size: 0.9rem;
 }
 
 .philosophy {
-  font-size: 1rem;
-  color: #374151;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #eef0f2;
+}
+
+.philosophy strong {
+  display: block;
+  font-size: 1.05rem;
+  color: #1a2a3a;
+  margin-bottom: 0.5rem;
+}
+
+.philosophy p {
+  font-size: 0.95rem;
+  color: #4a5568;
   line-height: 1.7;
   margin: 0;
 }
 
+@media (max-width: 900px) {
+  .quickStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bulletList {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 1rem;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
   }
-  .imageWrap {
-    order: 0;
+
+  .imageAccent {
+    display: none;
   }
-  .content {
-    order: 1;
+}
+
+@media (max-width: 400px) {
+  .quickStats {
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
   }
 }

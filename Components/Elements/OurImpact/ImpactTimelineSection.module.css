@@ -1,0 +1,120 @@
+.section {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(135deg, #1a2a3a 0%, #2d4a5e 100%);
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #67b7d1;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #fff;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background: #c75b39;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, #0d9488, #c75b39);
+  border-radius: 2px;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #c75b39;
+  border: 2px solid #1a2a3a;
+  transform: translateX(-5px);
+  box-shadow: 0 0 0 4px rgba(199, 91, 57, 0.25);
+}
+
+.yearBadge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #0d9488;
+  background: rgba(13, 148, 136, 0.15);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.itemTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+  color: #fff;
+}
+
+.itemDesc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .section {
+    padding: 3.5rem 1rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .item {
+    padding-left: 1rem;
+  }
+}

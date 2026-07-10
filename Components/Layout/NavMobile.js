@@ -68,6 +68,7 @@ export default function NavMobile() {
             <li><Link href="/volunteer">Volunteer</Link></li>
             <li><Link href="/images">Images Gallery</Link></li>
             <li><Link href="/videos">Videos</Link></li>
+            <li><Link href="/mawakhat-e-Madina">Daily News</Link></li>
             <li><Link href="/zakat">Zakat Calculator</Link></li>
           </ul>
         </li>

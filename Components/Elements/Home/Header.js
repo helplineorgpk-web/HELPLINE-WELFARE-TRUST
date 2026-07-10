@@ -835,12 +835,10 @@ export default function Header({ slides: slidesProp }) {
               </p>
             </div>
             <a
-              href="/img/Mawakhat-e-Madina4Pager.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/mawakhat-e-Madina"
               className="hero-mawakhat-btn"
             >
-              Concept of Mawakhat-e-Madina
+              Daily News
             </a>
             <div
               className="hero-line"

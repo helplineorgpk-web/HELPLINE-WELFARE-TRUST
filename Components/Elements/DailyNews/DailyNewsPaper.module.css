@@ -1,0 +1,1914 @@
+/* ── Jameel Noori Nastaleeq (Urdu) ── */
+@font-face {
+  font-family: "Jameel Noori Nastaleeq";
+  src: url("https://cdn.jsdelivr.net/npm/jameel-noori/fonts/jameel-noori-nastaleeq4.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ── Newsprint background ── */
+.newsprint {
+  background: #c8c3b8;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b8b3a8' fill-opacity='0.25'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  padding: 100px 1rem 3rem;
+  min-height: 100vh;
+}
+
+.broadsheet {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #faf8f3;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    0 12px 40px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(0, 0, 0, 0.06);
+  position: relative;
+  font-variant-ligatures: normal;
+  font-feature-settings: normal;
+  /* Urdu text scale — unified description reading size */
+  --u-desc: 1.95rem;
+  --u-desc-color: #585858;
+  --u-desc-muted: #787878;
+  --u-body: var(--u-desc);
+  --u-body-sm: var(--u-desc);
+  --u-col-body: var(--u-desc);
+  --u-verse-ur: var(--u-desc);
+  --u-col-title: 2.15rem;
+  --u-caption: 1.65rem;
+  --u-label: 1.6rem;
+  --u-source: 1.58rem;
+  --u-h4: 1.85rem;
+  --u-h3: 2rem;
+  --u-h2: 2.1rem;
+  --u-quote: 1.85rem;
+  --u-lead: var(--u-desc);
+  --u-verse-ar: 1.75rem;
+  --u-closing: var(--u-desc);
+  --u-verse-display: clamp(2rem, 4.5vw, 2.85rem);
+  --u-title-display: clamp(2.35rem, 5vw, 3.25rem);
+  --u-prelude: clamp(1.85rem, 3.5vw, 2.45rem);
+  --u-headline: clamp(2.1rem, 4.5vw, 3rem);
+  --u-heading-color: #111;
+}
+
+/* Unified light description style for all Urdu body text */
+.broadsheet :is(
+  .leadStory,
+  .nijaatIntro,
+  .nijaatText,
+  .bodyText,
+  .tafseerText,
+  .frontCol p,
+  .breakingText,
+  .quranUrdu,
+  .lessonsList li,
+  .tafseerEmotional p,
+  .sideFiller p,
+  .emotionalNoteCenter p,
+  .humanStory p,
+  .galleryNote,
+  .spreadDeck,
+  .nijaatClosing,
+  .paperFooter > p,
+  .pullQuote
+) {
+  font-size: var(--u-desc);
+  font-weight: normal;
+  color: var(--u-desc-color);
+  line-height: 2;
+}
+
+.broadsheet :is(
+  .colSource,
+  .breakingSource,
+  .pdfCaption,
+  .quranVerse cite,
+  .nationVerse cite
+) {
+  font-size: var(--u-source);
+  font-weight: normal;
+  color: var(--u-desc-muted);
+  line-height: 1.85;
+}
+
+/* Headings & poetry — dark black */
+.broadsheet :is(
+  .nijaatPrelude,
+  .nijaatTitle,
+  .nijaatSubtitle,
+  .tafseerTitle,
+  .lessonsTitle,
+  .frontCol h3,
+  .azaabCard h4,
+  .nationCard h4,
+  .spreadHeadline,
+  .frontVerse p,
+  .poetryLabel,
+  .poetryText,
+  .emotionalLabel,
+  .sideFillerLabel,
+  .quranArabic,
+  .roznamaTitle,
+  .roznamaKicker,
+  .roznamaColHead h3,
+  .roznamaActionsTitle,
+  .roznamaActionCard h5,
+  .roznamaClosing
+) {
+  color: var(--u-heading-color);
+}
+
+.broadsheet [dir="rtl"] :is(h2, h3, h4, h5) {
+  color: var(--u-heading-color);
+}
+
+/* ── Rules ── */
+.ruleSingle {
+  height: 1px;
+  background: #1a1a1a;
+  margin: 0.5rem 0;
+}
+
+.ruleDouble {
+  height: 3px;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  margin: 0.4rem 0;
+}
+
+.ruleTriple {
+  height: 7px;
+  border-top: 3px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  margin: 0.5rem 0 0.75rem;
+}
+
+/* ── Masthead ── */
+.masthead {
+  padding: 1.5rem 2rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.mastheadTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+  font-family: "Playfair Display", Georgia, serif;
+  margin-bottom: 0.5rem;
+}
+
+.mastheadVol {
+  font-style: italic;
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+
+.mastheadBrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  margin: 0.75rem auto 0.35rem;
+  max-width: 100%;
+}
+
+.mastheadLogo {
+  width: auto;
+  height: clamp(64px, 14vw, 96px);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.mastheadTitleWrap {
+  text-align: left;
+}
+
+.mastheadOrg {
+  display: block;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: clamp(0.85rem, 2.2vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1a4d8f;
+  line-height: 1.2;
+  margin-bottom: 0.15rem;
+}
+
+.mastheadTitle {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 8vw, 4.75rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin: 0;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.mastheadTagline {
+  font-family: Georgia, serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  margin: 0 0 0.5rem;
+}
+
+.mastheadNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #444;
+  font-family: Georgia, serif;
+  padding: 0.4rem 0;
+}
+
+.mastheadNav a {
+  color: #444;
+  text-decoration: none;
+}
+
+.mastheadNav a:hover {
+  color: #c0392b;
+}
+
+/* ── Front page ── */
+.frontPage {
+  padding: 1.25rem 2rem 2rem;
+  border-bottom: 3px double #1a1a1a;
+}
+
+.leadStory {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-lead);
+  line-height: 2;
+  text-align: center;
+  margin: 1.25rem 0 1.5rem;
+  padding: 0 1rem;
+}
+
+.frontVerse {
+  margin: 1.5rem auto 1.75rem;
+  padding: 0 1.5rem;
+  border: none;
+  text-align: center;
+  max-width: 900px;
+}
+
+.frontVerse p {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-verse-display);
+  font-weight: normal;
+  line-height: 2;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.frontVerse cite {
+  display: block;
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-source);
+  font-weight: normal;
+  color: var(--u-desc-muted);
+  font-style: normal;
+  margin-top: 0.75rem;
+}
+
+.frontPage .pdfFeature {
+  max-width: 720px;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+.frontGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  border-top: 2px solid #1a1a1a;
+}
+
+.frontCol {
+  padding: 1.1rem 1rem;
+  border-right: 1px solid #ccc;
+  text-align: right;
+  position: relative;
+}
+
+.frontCol:last-child {
+  border-right: none;
+}
+
+.frontColHighlight {
+  background: #f5f0e6;
+}
+
+/* ── Nijaat ka Zariya section ── */
+.nijaatSection {
+  padding: 2rem 2rem 2.25rem;
+  border-top: 3px double #1a1a1a;
+  border-bottom: 3px double #1a1a1a;
+  background: linear-gradient(180deg, #f8f6f0 0%, #faf8f3 100%);
+}
+
+.nijaatPrelude {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-prelude);
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 1rem;
+  line-height: 1.7;
+}
+
+.nijaatTitle {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-title-display);
+  font-weight: normal;
+  text-align: center;
+  margin: 1rem 0 1.25rem;
+  line-height: 1.5;
+}
+
+.nijaatIntro,
+.nijaatText {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  text-align: right;
+  margin: 0 0 1rem;
+}
+
+.nijaatIntro {
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nijaatBlock {
+  margin: 2rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ccc;
+}
+
+.nijaatSubtitle {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h3);
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.nijaatVerses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.quranVerse {
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border: 1px solid #d4e8d4;
+  border-right: 4px solid #1a4d3a;
+  text-align: center;
+}
+
+.quranArabic {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-verse-ar);
+  font-weight: normal;
+  line-height: 2;
+  margin: 0 0 0.5rem;
+}
+
+.quranUrdu {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  margin: 0 0 0.35rem;
+  font-style: normal;
+}
+
+.quranVerse cite,
+.nationVerse cite {
+  font-family: Georgia, serif;
+  font-style: normal;
+}
+
+.nationsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.azaabGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.azaabCard {
+  padding: 1rem 1.1rem;
+  background: #fff;
+  border: 1px solid #d4dce8;
+  border-top: 3px solid #1a4d8f;
+  text-align: right;
+  position: relative;
+}
+
+.azaabCard h4 {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h4);
+  font-weight: normal;
+  margin: 0 0 0.5rem;
+}
+
+.tafseerBlock {
+  margin: 1.75rem 0 1.25rem;
+  padding: 1.5rem 1.75rem;
+  background: #fff;
+  border: 1px solid #d4dce8;
+  border-right: 4px solid #1a4d8f;
+}
+
+.tafseerTitle {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-quote);
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e8ecf0;
+}
+
+.tafseerText {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  text-align: justify;
+  margin: 0 0 1rem;
+}
+
+.lessonsList {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  background: #f0f4f8;
+  border-top: 1px solid #d4dce8;
+  border-bottom: 1px solid #d4dce8;
+}
+
+.lessonsTitle {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h4);
+  font-weight: normal;
+  margin: 0 0 0.75rem;
+  text-align: right;
+}
+
+.lessonsList ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lessonsList li {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  text-align: right;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e0e6ec;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.lessonsList li:last-child {
+  border-bottom: none;
+}
+
+.lessonNum {
+  flex-shrink: 0;
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #c0392b;
+  line-height: 1;
+  margin-top: 0.2rem;
+}
+
+.tafseerEmotional {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: #fdf6f0;
+  border: 1px solid #e8c9b0;
+  border-right: 4px solid #c0392b;
+  text-align: right;
+}
+
+.tafseerEmotional p {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  margin: 0;
+  font-style: normal;
+}
+
+.tafseerBlock .nijaatVerses {
+  margin-top: 1.25rem;
+}
+
+.nationCard {
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border: 1px solid #e8d4c4;
+  border-top: 3px solid #c0392b;
+  text-align: right;
+  position: relative;
+}
+
+.nationNum {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.75rem;
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #c0392b;
+  line-height: 1;
+}
+
+.nationCard h4 {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h4);
+  font-weight: normal;
+  margin: 0 0 0.5rem;
+}
+
+.nationVerse {
+  margin: 0.75rem 0 0;
+  padding: 0.75rem 0 0;
+  border-top: 1px dashed #ddd;
+  text-align: center;
+}
+
+.nationVerse .quranArabic {
+  font-size: var(--u-h4);
+}
+
+.nijaatClosing {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  text-align: center;
+  margin: 1.5rem 0 0;
+  padding: 1.25rem 1.5rem;
+  border-top: 2px solid #c8d8c8;
+  background: #f5f9f5;
+}
+
+.colNum {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #c0392b;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.frontCol h3 {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-col-title);
+  font-weight: normal;
+  margin: 0 0 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.frontCol p {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  margin: 0;
+}
+
+.colSource {
+  font-family: Georgia, "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  margin: 0.55rem 0 0;
+  padding-top: 0.45rem;
+  border-top: 1px dashed #ddd;
+  font-style: normal;
+}
+
+.breakingSource {
+  font-family: Georgia, "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  margin: 0.65rem 0 0;
+  padding-top: 0.5rem;
+  border-top: 1px dashed #ccc;
+  font-style: normal;
+}
+
+/* ── PDF figures ── */
+.pdfFigure {
+  margin: 0;
+}
+
+.pdfFeature {
+  margin-bottom: 1rem;
+}
+
+.pdfFigure:not(.pdfFeature) {
+  margin-bottom: 1.25rem;
+}
+
+.pdfFigure:not(.pdfFeature) .pdfImageWrap {
+  border: 1px solid #aaa;
+  padding: 4px;
+  background: #fff;
+  box-shadow: 2px 2px 0 #ddd;
+}
+
+.pdfFigure:not(.pdfFeature) .pdfImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pdfFeature .pdfImageWrap {
+  border: 1px solid #aaa;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.pdfFeature .pdfImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pdfSide {
+  float: right;
+  width: 38%;
+  margin: 0 0 1rem 1.75rem;
+}
+
+.pdfSide .pdfImageWrap {
+  border: 1px solid #aaa;
+  padding: 4px;
+  background: #fff;
+  box-shadow: 2px 2px 0 #ddd;
+}
+
+.pdfSide .pdfImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pdfGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  clear: both;
+  align-items: start;
+}
+
+.pdfGallerySingle {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pdfGallerySingle .pdfGalleryItem {
+  margin: 0 auto;
+}
+
+.pdfGallery .pdfFigure {
+  float: none;
+  width: 100%;
+  margin: 0;
+  border: 1px solid #aaa;
+  padding: 4px;
+  background: #fff;
+}
+
+.pdfGallery .pdfImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pdfRotated .pdfImageWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  background: #f5f0e6;
+}
+
+.pdfRotated .pdfImg {
+  width: auto !important;
+  max-width: 100%;
+  max-height: 260px;
+  transform: rotate(90deg);
+}
+
+.pdfWide .pdfImageWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: #f5f0e6;
+}
+
+.pdfWide .pdfImg {
+  width: auto !important;
+  max-width: 100%;
+  max-height: 320px;
+  transform: rotate(-90deg);
+}
+
+.pdfCaption {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  text-align: center;
+  padding: 0.5rem 0.25rem 0;
+  font-style: normal;
+  border-top: 1px solid #ddd;
+  margin-top: 0.35rem;
+}
+
+.pdfFeature .pdfCaption {
+  border-top: none;
+  padding-top: 0.6rem;
+}
+
+/* ── Page break ornament ── */
+.pageBreak {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 2rem;
+  background: #1a1a1a;
+}
+
+.pageBreakLine {
+  flex: 1;
+  height: 1px;
+  background: #666;
+}
+
+.pageBreakLabel {
+  font-family: Georgia, serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ccc;
+  white-space: nowrap;
+}
+
+/* ── Article spread ── */
+.spread {
+  padding: 2rem 2rem 2.5rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.spreadHeader {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.sectionName {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c0392b;
+  margin-bottom: 0.5rem;
+}
+
+.spreadHeadline {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-headline);
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0 0 0.5rem;
+}
+
+.spreadDeck {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-style: normal;
+  margin: 0 0 0.5rem;
+}
+
+.spreadByline {
+  font-family: Georgia, serif;
+  font-size: 0.8rem;
+  color: #999;
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+.pullQuote {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-desc);
+  font-weight: normal;
+  color: var(--u-desc-color);
+  line-height: 2;
+  text-align: center;
+  margin: 0 0 1.25rem;
+  padding: 1rem 2rem;
+  border-top: 3px solid #1a1a1a;
+  border-bottom: 3px solid #1a1a1a;
+  background: #f5f0e6;
+}
+
+.pdfGrid {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+
+.pdfGrid .pdfImageWrap {
+  border: 1px solid #aaa;
+  padding: 4px;
+  background: #fff;
+  box-shadow: 2px 2px 0 #ddd;
+}
+
+.pdfGrid .pdfImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.spreadGrid {
+  display: grid;
+  grid-template-columns: 1fr 34%;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.imageColumn {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.textColumn {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.sideFiller {
+  break-inside: avoid;
+  margin: 0 0 0.85rem;
+  padding: 0.75rem 1rem;
+  background: #fdf6f0;
+  border-right: 3px solid #c0392b;
+  text-align: right;
+}
+
+.sideFillerLabel {
+  display: block;
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-label);
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+}
+
+.sideFiller p {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  margin: 0;
+  font-style: normal;
+}
+
+.spreadBody {
+  overflow: hidden;
+}
+
+.columns {
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 1px solid #ddd;
+}
+
+.bodyText {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  text-align: justify;
+  margin: 0 0 0.85rem;
+  break-inside: avoid;
+}
+
+/* Full-width inset band */
+.fullWidthInset {
+  width: 100%;
+  clear: both;
+  margin: 1.5rem 0;
+  padding: 1.25rem 0;
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  background: #faf8f3;
+}
+
+.centerInset {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.centerInset .poetryInset {
+  margin: 0 0 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  background: transparent;
+}
+
+.fullWidthInset .centerInset .poetryInset:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.emotionalRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid #ddd;
+}
+
+.emotionalRowTriple {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.emotionalNoteCenter {
+  padding: 1rem 1.5rem;
+  text-align: right;
+  position: relative;
+  border-right: 1px solid #ddd;
+}
+
+.emotionalNoteCenter:last-child {
+  border-right: none;
+}
+
+.emotionalNoteCenter p {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  margin: 0;
+  font-style: normal;
+}
+
+.emotionalRowSingle {
+  grid-template-columns: 1fr;
+}
+
+.emotionalRowSingle .emotionalNoteCenter {
+  border-right: none;
+}
+
+.humanStories {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0;
+  padding: 0 1.5rem;
+}
+
+.humanStory {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+}
+
+.humanStory:last-child {
+  border-bottom: none;
+}
+
+.storyNum {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #c0392b;
+  line-height: 1;
+  text-align: center;
+}
+
+.emotionalLabel {
+  display: block;
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-label);
+  font-weight: normal;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.02em;
+}
+
+.humanStory p {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  margin: 0;
+  font-style: normal;
+}
+
+.pdfGalleryItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdfGalleryItem .pdfFigure {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+
+.galleryNote {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  text-align: right;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.25rem 0;
+  border-top: 1px dashed #ccc;
+  font-style: normal;
+}
+
+/* Stats band */
+.statsBand {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  margin: 1.5rem 0 1rem;
+  clear: both;
+}
+
+.statItem {
+  text-align: center;
+  padding: 0.85rem 0.5rem;
+  border-right: 1px solid #ddd;
+}
+
+.statItem:last-child {
+  border-right: none;
+}
+
+.statItem strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #c0392b;
+  line-height: 1.2;
+}
+
+.statItem span {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-weight: normal;
+  color: var(--u-desc-muted);
+}
+
+.closingLine {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  text-align: center;
+  margin: 1rem 0 0;
+  clear: both;
+}
+
+/* Poetry inset */
+.poetryInset {
+  margin: 1.5rem 0 0;
+  padding: 1.25rem 2rem;
+  border: 1px solid #ccc;
+  border-left: 4px solid #1a4d3a;
+  background: #f8f6f0;
+  text-align: center;
+  clear: both;
+  position: relative;
+}
+
+.poetryLabel {
+  position: absolute;
+  top: -0.55rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #faf8f3;
+  padding: 0 0.75rem;
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-caption);
+  font-weight: normal;
+}
+
+.poetryText {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-desc);
+  line-height: 2;
+  white-space: pre-line;
+  font-style: normal;
+  margin: 0.5rem 0 0.35rem;
+}
+
+.poetryInset cite {
+  font-family: Georgia, serif;
+  font-size: 0.82rem;
+  color: #888;
+  font-style: normal;
+}
+
+.pageNum {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 1.5rem;
+  font-family: Georgia, serif;
+  font-size: 0.72rem;
+  color: #bbb;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── Footer ── */
+.paperFooter {
+  padding: 1.5rem 2rem 2rem;
+  text-align: center;
+}
+
+.paperFooter > p {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  margin: 1rem 0;
+}
+
+.footerActions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.footerActions a {
+  font-family: Georgia, serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 2px solid #c0392b;
+  padding-bottom: 2px;
+}
+
+.footerActions a:hover {
+  color: #c0392b;
+}
+
+.footerCopy {
+  font-family: Georgia, serif !important;
+  font-size: 0.7rem !important;
+  color: #aaa !important;
+  letter-spacing: 0.08em;
+}
+
+/* ── Roznama Dunya reply (two columns) ── */
+.roznamaSection {
+  padding: 2rem 2rem 2.5rem;
+  border-top: 3px double #1a1a1a;
+  background: #faf8f3;
+}
+
+.roznamaMastheadText {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 720px;
+}
+
+.roznamaKicker {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-label);
+  color: var(--u-heading-color);
+  text-align: right;
+  margin: 0 0 0.2rem;
+  line-height: 1.3;
+}
+
+.roznamaTitle {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-title-display);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  text-align: right;
+  margin: 0 0 0.3rem;
+  line-height: 1.2;
+}
+
+.roznamaSubtitle {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-desc);
+  font-weight: normal;
+  color: var(--u-desc-color);
+  text-align: right;
+  margin: 0 0 0.3rem;
+  line-height: 1.45;
+}
+
+.roznamaSource {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-source);
+  color: var(--u-desc-muted);
+  text-align: right;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.roznamaCompare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid #cfc8bc;
+  background: #fff;
+}
+
+.roznamaCol {
+  padding: 1.35rem 1.4rem 1.5rem;
+  text-align: right;
+}
+
+.roznamaColSource {
+  border-left: 1px solid #cfc8bc;
+  background: #fff;
+}
+
+.roznamaColAnswer {
+  background: #f5f0e6;
+}
+
+.roznamaColHead {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.roznamaColHeadCenter {
+  flex: 1;
+  text-align: center;
+}
+
+.roznamaColMainHead {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h3);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  margin: 0 0 0.35rem;
+  line-height: 1.5;
+}
+
+.roznamaColSubhead {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h4);
+  font-weight: normal;
+  color: var(--u-desc-muted);
+  margin: 0 0 0.35rem;
+  line-height: 1.45;
+}
+
+.roznamaTag {
+  flex-shrink: 0;
+  font-family: Georgia, serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #1a1a1a;
+  padding: 0.4rem 0.55rem;
+  line-height: 1;
+}
+
+.roznamaColAnswer .roznamaTag,
+.roznamaOpinionCol .roznamaTag {
+  background: #c0392b;
+}
+
+.roznamaColHead h3 {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h4);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  margin: 0 0 0.35rem;
+  line-height: 1.45;
+}
+
+.roznamaAuthor {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-label);
+  color: var(--u-desc-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.roznamaBody {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-desc);
+  font-weight: normal;
+  color: var(--u-desc-color);
+  line-height: 2;
+  margin: 0 0 0.9rem;
+  text-align: justify;
+}
+
+.roznamaBody:last-child {
+  margin-bottom: 0;
+}
+
+.roznamaPdfBlock {
+  margin-bottom: 2rem;
+}
+
+.roznamaStatsBlock {
+  margin-bottom: 2rem;
+  padding: 1.35rem 1.4rem 1.5rem;
+  background: #fff;
+  border: 1px solid #cfc8bc;
+  border-top: 3px solid #c0392b;
+}
+
+.roznamaStatsTitle {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h3);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  text-align: center;
+  margin: 0 0 0.5rem;
+  line-height: 1.45;
+}
+
+.roznamaStatsSource {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-source);
+  color: var(--u-desc-muted);
+  text-align: center;
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+}
+
+.roznamaStatsSection {
+  margin-bottom: 1.25rem;
+}
+
+.roznamaStatsSection:last-child {
+  margin-bottom: 0;
+}
+
+.roznamaStatsSectionTitle {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h4);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  text-align: right;
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.45;
+}
+
+.roznamaStatsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: 1.75rem;
+  direction: rtl;
+}
+
+.roznamaStatsTable th,
+.roznamaStatsTable td {
+  border: 1px solid #cfc8bc;
+  padding: 0.65rem 0.85rem;
+  text-align: right;
+  vertical-align: top;
+  line-height: 1.75;
+}
+
+.roznamaStatsTable th {
+  background: #1a1a1a;
+  color: #fff;
+  font-weight: normal;
+  font-size: var(--u-label);
+}
+
+.roznamaStatsTable tbody tr:nth-child(even) {
+  background: #f9f7f2;
+}
+
+.roznamaStatsTable td:nth-child(2),
+.roznamaStatsTable td:last-child {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.roznamaStatsTable td:nth-child(2) {
+  width: 28%;
+  color: var(--u-heading-color);
+}
+
+.roznamaStatsTable td:last-child {
+  color: #c0392b;
+  font-weight: normal;
+  width: 32%;
+  white-space: normal;
+}
+
+.roznamaPdfHeading,
+.roznamaOpinionHeading {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h3);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  text-align: center;
+  margin: 0 0 1rem;
+  line-height: 1.45;
+}
+
+.roznamaOpinionBlock {
+  border-top: 2px solid #1a1a1a;
+  padding-top: 1.75rem;
+  --u-opinion-body: 2.35rem;
+  --u-opinion-label: 1.85rem;
+  --u-opinion-h4: 2.1rem;
+  --u-opinion-h3: 2.25rem;
+}
+
+.roznamaOpinionBlock .roznamaMastheadText {
+  text-align: center;
+  margin: 0 auto 1.25rem;
+  max-width: 900px;
+}
+
+.roznamaOpinionBlock .roznamaKicker,
+.roznamaOpinionBlock .roznamaMainHeading,
+.roznamaOpinionBlock .roznamaTitle,
+.roznamaOpinionBlock .roznamaSubtitle,
+.roznamaOpinionBlock .roznamaSource {
+  text-align: center;
+}
+
+.roznamaMainHeading {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: clamp(2.8rem, 6vw, 4rem);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  text-align: center;
+  margin: 0 0 0.85rem;
+  line-height: 1.35;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.roznamaOpinionBlock .roznamaMainHeading {
+  font-size: clamp(3rem, 6.5vw, 4.25rem);
+  margin-bottom: 0.65rem;
+}
+
+.roznamaOpinionBlock .roznamaKicker {
+  font-size: 1.75rem;
+}
+
+.roznamaOpinionBlock .roznamaTitle {
+  font-size: clamp(2.2rem, 4.5vw, 3rem);
+  margin-top: 0.5rem;
+}
+
+.roznamaOpinionBlock .roznamaSubtitle {
+  font-size: 2.15rem;
+}
+
+.roznamaOpinionBlock .roznamaSource {
+  font-size: 1.75rem;
+}
+
+.roznamaOpinionBlock .roznamaOpinionHeading,
+.roznamaOpinionBlock .roznamaActionsTitle {
+  font-size: var(--u-opinion-h3);
+}
+
+.roznamaOpinionCol .roznamaColHead h3,
+.roznamaOpinionCol .roznamaColMainHead {
+  font-size: var(--u-opinion-h3);
+}
+
+.roznamaOpinionCol .roznamaColSubhead {
+  font-size: var(--u-opinion-h4);
+}
+
+.roznamaOpinionCol .roznamaAuthor {
+  font-size: var(--u-opinion-label);
+}
+
+.roznamaOpinionCol .roznamaBody {
+  font-size: var(--u-opinion-body);
+  line-height: 2.1;
+}
+
+.roznamaStoryGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+  margin: 0 0 1.5rem;
+  padding: 1.1rem;
+  background: #fff;
+  border: 1px solid #cfc8bc;
+}
+
+.roznamaStoryFig {
+  margin: 0;
+  text-align: center;
+}
+
+.roznamaStoryWrap {
+  border: 1px solid #aaa;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 2px 2px 0 #ddd;
+  overflow: hidden;
+}
+
+.roznamaStoryImg {
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.roznamaStoryCaption {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-source);
+  color: var(--u-desc-muted);
+  margin: 0.45rem 0 0;
+  line-height: 1.45;
+}
+
+@media (min-width: 1024px) {
+  .roznamaStoryImg {
+    min-height: 320px;
+    max-height: 480px;
+  }
+}
+
+.roznamaSolutionImages {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 0 0 1.5rem;
+  padding: 1.1rem;
+  background: #fff;
+  border: 1px solid #cfc8bc;
+}
+
+.roznamaSolutionFig {
+  margin: 0;
+  text-align: center;
+}
+
+.roznamaSolutionWrap {
+  border: 1px solid #aaa;
+  padding: 6px;
+  background: #fff;
+  box-shadow: 1px 1px 0 #ddd;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.roznamaSolutionImg {
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.roznamaSolutionFigWide .roznamaSolutionImg {
+  max-height: 540px;
+}
+
+@media (min-width: 1024px) {
+  .roznamaSolutionImg {
+    max-height: 760px;
+  }
+
+  .roznamaSolutionFigWide .roznamaSolutionImg {
+    max-height: 660px;
+  }
+}
+
+.roznamaSolutionCaption {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-source);
+  color: var(--u-desc-muted);
+  margin: 0.45rem 0 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.roznamaOpinionBlock .roznamaActionCard h5 {
+  font-size: var(--u-opinion-h4);
+}
+
+.roznamaOpinionBlock .roznamaActionCard p {
+  font-size: var(--u-opinion-body);
+  line-height: 2;
+}
+
+.roznamaOpinionBlock .roznamaClosing {
+  font-size: var(--u-opinion-body);
+  line-height: 2.1;
+}
+
+.roznamaOpinionCol {
+  padding: 1.35rem 1.4rem 1.5rem;
+  text-align: right;
+  background: #f5f0e6;
+  border: 1px solid #cfc8bc;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.roznamaActions {
+  margin: 0 0 1.25rem;
+}
+
+.roznamaActionsTitle {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h3);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.roznamaActionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.roznamaActionCard {
+  padding: 1rem 1.1rem;
+  background: #fff;
+  border: 1px solid #d4dce8;
+  border-top: 3px solid #1a4d8f;
+  text-align: right;
+}
+
+.roznamaActionCard h5 {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-h4);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  margin: 0 0 0.45rem;
+  line-height: 1.4;
+}
+
+.roznamaActionCard p {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-body-sm);
+  color: var(--u-desc-color);
+  line-height: 1.95;
+  margin: 0;
+}
+
+.roznamaPdfStrip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+.roznamaPdfFig {
+  margin: 0;
+}
+
+.roznamaPdfWrap {
+  border: 1px solid #aaa;
+  padding: 4px;
+  background: #fff;
+  box-shadow: 2px 2px 0 #ddd;
+  overflow: hidden;
+}
+
+.roznamaPdfImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.roznamaClosing {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-desc);
+  font-weight: normal;
+  color: var(--u-heading-color);
+  text-align: center;
+  line-height: 2;
+  margin: 1.25rem auto 0.75rem;
+  max-width: 980px;
+  padding: 1.1rem 1.25rem;
+  background: #f0f7f0;
+  border-top: 2px solid #1a4d3a;
+}
+
+.roznamaPdfLink {
+  text-align: center;
+  margin: 0.5rem 0 0;
+}
+
+.roznamaPdfLink a {
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  font-size: var(--u-label);
+  color: #1a4d8f;
+  text-decoration: underline;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .newsprint {
+    padding: 90px 0.5rem 2rem;
+  }
+
+  .masthead,
+  .frontPage,
+  .spread,
+  .paperFooter,
+  .roznamaSection {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .frontGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .frontCol {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .frontCol:last-child {
+    border-bottom: none;
+  }
+
+  .roznamaCompare,
+  .roznamaActionGrid,
+  .roznamaStoryGallery,
+  .roznamaSolutionImages,
+  .roznamaPdfStrip {
+    grid-template-columns: 1fr;
+  }
+
+  .roznamaStoryImg {
+    min-height: 220px;
+    max-height: 320px;
+  }
+
+  .roznamaStatsTable td:nth-child(2),
+  .roznamaStatsTable td:last-child {
+    white-space: normal;
+    width: auto;
+  }
+
+  .roznamaMastheadText,
+  .roznamaKicker,
+  .roznamaTitle,
+  .roznamaSubtitle,
+  .roznamaSource {
+    text-align: center;
+  }
+
+  .roznamaColSource {
+    border-left: none;
+    border-bottom: 1px solid #cfc8bc;
+  }
+
+  .frontPage .pdfFeature {
+    max-width: 100%;
+  }
+
+  .spreadGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .imageColumn {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 1rem;
+  }
+
+  .textColumn {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .pdfSide {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem;
+  }
+
+  .columns {
+    column-count: 1;
+  }
+
+  .statsBand {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statItem:nth-child(2) {
+    border-right: none;
+  }
+
+  .pdfGallery,
+  .pdfGallerySingle {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .emotionalRow,
+  .emotionalRowTriple {
+    grid-template-columns: 1fr;
+  }
+
+  .emotionalNoteCenter {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .emotionalNoteCenter:last-child {
+    border-bottom: none;
+  }
+
+  .humanStories {
+    padding: 0 0.5rem;
+  }
+
+  .mastheadBrand {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.65rem;
+  }
+
+  .mastheadTitleWrap {
+    text-align: center;
+  }
+
+  .nijaatSection {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .tafseerBlock {
+    padding: 1.25rem 1rem;
+  }
+
+  .nijaatVerses,
+  .nationsGrid,
+  .azaabGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mastheadTop {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .columns {
+    column-count: 3;
+  }
+}
+
+/* Jameel Noori: avoid synthetic bold on Urdu script */
+.broadsheet [dir="rtl"] h2,
+.broadsheet [dir="rtl"] h3,
+.broadsheet [dir="rtl"] h4,
+.broadsheet [dir="rtl"] h5,
+.broadsheet [dir="rtl"] strong,
+.broadsheet [dir="rtl"] b {
+  font-weight: normal;
+}
