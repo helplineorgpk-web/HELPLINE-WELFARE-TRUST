@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Layout2 from "../Components/Layout/Layout2";
-import DailyNewsPaper from "../Components/Elements/DailyNews/DailyNewsPaper";
+import DailyNewsShell from "../Components/Elements/DailyNews/DailyNewsShell";
 
 export default function DailyNewsPage() {
   return (
@@ -17,7 +17,7 @@ export default function DailyNewsPage() {
           rel="stylesheet"
         />
       </Head>
-      <DailyNewsPaper />
+      <DailyNewsShell />
     </Layout2>
   );
 }

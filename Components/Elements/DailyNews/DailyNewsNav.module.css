@@ -1,0 +1,539 @@
+@font-face {
+  font-family: "Jameel Noori Nastaleeq";
+  src: url("https://cdn.jsdelivr.net/npm/jameel-noori/fonts/jameel-noori-nastaleeq4.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
+.shell {
+  --dn-green: #1a5c2e;
+  --dn-green-dark: #144724;
+  --dn-green-accent: #2d8a47;
+  --dn-ticker-bg: #2b2b2b;
+  --dn-urdu: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  padding-top: 80px;
+  background: #f4f4f4;
+}
+
+/* ── Green category nav ── */
+.categoryNav {
+  position: sticky;
+  top: 80px;
+  z-index: 900;
+  background: var(--dn-green);
+  border-bottom: 2px solid var(--dn-green-dark);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.categoryInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  min-height: 46px;
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 1;
+}
+
+.menuList::-webkit-scrollbar {
+  display: none;
+}
+
+.menuItem {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.menuBtn,
+.menuLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.65rem 0.85rem;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: var(--dn-urdu);
+  font-size: 1.05rem;
+  line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.menuBtn:hover,
+.menuLink:hover,
+.menuBtn.active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.menuBtn.active {
+  background: rgba(255, 255, 255, 0.18);
+  font-weight: 600;
+}
+
+.chevron {
+  font-size: 0.55rem;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+.homeLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.homeLink:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.homeIcon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.utilities {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.searchBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.searchBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+.fontBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  font-family: var(--dn-urdu);
+  font-size: 0.95rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.fontBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.downloadIcon {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+.englishLink {
+  padding: 0.65rem 0.75rem;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.englishLink:hover {
+  text-decoration: underline;
+}
+
+/* ── Dropdown ── */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 200px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem 0;
+  z-index: 910;
+}
+
+.dropdownItem a,
+.dropdownItem button {
+  display: block;
+  width: 100%;
+  padding: 0.55rem 1rem;
+  border: none;
+  background: transparent;
+  color: #222;
+  font-family: var(--dn-urdu);
+  font-size: 1rem;
+  text-align: right;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.dropdownItem a:hover,
+.dropdownItem button:hover {
+  background: #f0f7f2;
+  color: var(--dn-green);
+}
+
+/* ── Logo strip ── */
+.brandStrip {
+  display: block;
+  width: 100%;
+  border: none;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  padding: 0;
+  text-align: inherit;
+  transition: background 0.15s ease;
+}
+
+.brandStrip:hover {
+  background: #f8faf8;
+}
+
+.brandInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.brandLogo {
+  height: auto;
+  max-height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brandText {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.brandOrg {
+  display: block;
+  font-family: var(--dn-urdu);
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.15rem;
+}
+
+.brandTitle {
+  margin: 0;
+  font-family: var(--dn-urdu);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--dn-green);
+  line-height: 1.3;
+}
+
+/* ── Ticker bar ── */
+.tickerBar {
+  background: var(--dn-ticker-bg);
+  overflow: hidden;
+}
+
+.tickerInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  min-height: 40px;
+}
+
+.tickerLabel {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem;
+  background: var(--dn-green-accent);
+  color: #fff;
+  font-family: var(--dn-urdu);
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.tickerLabel:hover {
+  background: #3da858;
+}
+
+.tickerTrack {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.tickerContent {
+  display: flex;
+  white-space: nowrap;
+  animation: tickerScroll 120s linear infinite;
+  padding: 0 1rem;
+}
+
+.tickerContent:hover {
+  animation-play-state: paused;
+}
+
+.tickerItem {
+  display: inline-block;
+  padding: 0 2.5rem;
+  color: #eee;
+  font-family: var(--dn-urdu);
+  font-size: 1rem;
+  line-height: 1.5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.tickerItem:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.tickerDot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--dn-green-accent);
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+@keyframes tickerScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ── Placeholder panel ── */
+.placeholder {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #faf8f3;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.placeholder h2 {
+  margin: 0 0 0.75rem;
+  font-family: var(--dn-urdu);
+  font-size: 2rem;
+  color: var(--dn-green);
+  font-weight: 700;
+}
+
+.placeholder p {
+  margin: 0;
+  font-family: var(--dn-urdu);
+  font-size: 1.35rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .fontBtn span {
+    display: none;
+  }
+
+  .brandInner {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .brandText {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .englishLink {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .categoryInner {
+    padding: 0 0.5rem;
+  }
+
+  .menuBtn,
+  .menuLink {
+    padding: 0.55rem 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .brandLogo {
+    max-height: 70px;
+  }
+}
+
+/* ── Search overlay ── */
+.searchOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 10000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 6rem 1rem 1rem;
+}
+
+.searchPanel {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.searchInputWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid #eee;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: var(--dn-urdu);
+  font-size: 1.15rem;
+  color: #222;
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: #aaa;
+}
+
+.searchClose {
+  border: none;
+  background: #f0f0f0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.searchClose:hover {
+  background: #e0e0e0;
+}
+
+.searchResults {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.searchResultBtn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1.15rem;
+  border: none;
+  background: transparent;
+  text-align: right;
+  cursor: pointer;
+  font-family: var(--dn-urdu);
+  font-size: 1.05rem;
+  color: #222;
+  transition: background 0.15s ease;
+}
+
+.searchResultBtn:hover {
+  background: #f0f7f2;
+  color: var(--dn-green);
+}
+
+.searchResultBtn small {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.2rem;
+}
+
+.searchEmpty {
+  padding: 1.25rem;
+  text-align: center;
+  font-family: var(--dn-urdu);
+  color: #888;
+  font-size: 1.05rem;
+}

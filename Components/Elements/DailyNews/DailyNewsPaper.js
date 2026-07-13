@@ -29,14 +29,6 @@ function Masthead() {
       </div>
       <div className={styles.ruleDouble} />
       <div className={styles.mastheadBrand}>
-        <Image
-          src="/img/logo2-removebg-preview.webp"
-          alt="Helpline Welfare Trust"
-          width={250}
-          height={100}
-          className={styles.mastheadLogo}
-          priority
-        />
         <div className={styles.mastheadTitleWrap}>
           <span className={styles.mastheadOrg}>Helpline Welfare Trust</span>
           <h1 className={styles.mastheadTitle}>Mawakhat e Madina</h1>
