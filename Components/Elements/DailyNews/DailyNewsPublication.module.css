@@ -1,0 +1,324 @@
+.page {
+  --dn-green: #1a5c2e;
+  --dn-green-accent: #2d8a47;
+  --dn-urdu: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+  background: #eceae4;
+  background-image: linear-gradient(180deg, #f5f4f0 0%, #e8e6e0 100%);
+  padding: 2rem 1.25rem 4rem;
+  min-height: 60vh;
+}
+
+.pageFull {
+  padding: 1.25rem 0 3rem;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.innerFull {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+}
+
+.hero {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem 2.25rem;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  text-align: right;
+}
+
+.innerFull .hero {
+  max-width: none;
+  width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 0;
+  padding: 1.5rem clamp(1rem, 4vw, 2.5rem);
+}
+
+.badge {
+  display: inline-block;
+  background: var(--dn-green-accent);
+  color: #fff;
+  font-family: var(--dn-urdu);
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+  margin-bottom: 0.85rem;
+}
+
+.title {
+  margin: 0 0 0.4rem;
+  font-family: var(--dn-urdu);
+  font-size: clamp(2rem, 5vw, 2.85rem);
+  font-weight: 700;
+  color: var(--dn-green);
+  line-height: 1.35;
+}
+
+.subtitle {
+  margin: 0 0 0.75rem;
+  font-family: var(--dn-urdu);
+  font-size: 1.25rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.description {
+  margin: 0 0 1.25rem;
+  font-family: var(--dn-urdu);
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.9;
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--dn-green);
+  color: #fff;
+  font-family: var(--dn-urdu);
+  font-size: 1.05rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.downloadBtn:hover {
+  background: var(--dn-green-accent);
+}
+
+.viewerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 0.85rem clamp(1rem, 4vw, 2rem);
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0;
+}
+
+.backBtn {
+  border: 1px solid var(--dn-green);
+  background: #fff;
+  color: var(--dn-green);
+  font-family: var(--dn-urdu);
+  font-size: 1.05rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.backBtn:hover {
+  background: var(--dn-green);
+  color: #fff;
+}
+
+.viewerMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+  flex: 1;
+  font-family: var(--dn-urdu);
+}
+
+.viewerMeta strong {
+  font-size: 1.25rem;
+  color: var(--dn-green);
+}
+
+.viewerMeta span {
+  font-size: 0.95rem;
+  color: #777;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  text-align: inherit;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.bookCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  border-color: var(--dn-green-accent);
+}
+
+.bookCover {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #eaeaea;
+}
+
+.bookCoverImg {
+  object-fit: cover;
+}
+
+.bookYear {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  background: var(--dn-green);
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+}
+
+.bookBody {
+  padding: 0.95rem 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.bookTitle {
+  margin: 0;
+  font-family: var(--dn-urdu);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.bookEn {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.82rem;
+  color: #888;
+}
+
+.bookDesc {
+  margin: 0.35rem 0 0;
+  font-family: var(--dn-urdu);
+  font-size: 0.98rem;
+  color: #666;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.bookOpen {
+  margin-top: 0.65rem;
+  font-family: var(--dn-urdu);
+  font-size: 1rem;
+  color: var(--dn-green-accent);
+  font-weight: 700;
+}
+
+.pdfFrameWrap {
+  width: 100%;
+  background: #fff;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+.pdfFrame {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 200px);
+  min-height: 800px;
+  border: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e8e8e8;
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #f0f0f0;
+}
+
+.landscape {
+  aspect-ratio: 4 / 3;
+}
+
+.image {
+  object-fit: contain;
+  background: #fafafa;
+}
+
+.caption {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  font-family: var(--dn-urdu);
+  font-size: 1.05rem;
+  color: #333;
+  text-align: right;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .grid,
+  .booksGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .viewerBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .viewerMeta {
+    align-items: flex-start;
+  }
+
+  .pdfFrame {
+    min-height: 520px;
+    height: calc(100vh - 180px);
+  }
+
+  .innerFull {
+    padding: 0;
+  }
+}

@@ -88,6 +88,21 @@
   font-weight: 600;
 }
 
+.pubBtn {
+  margin-inline-start: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.12) !important;
+  padding: 0.4rem 0.9rem !important;
+  font-weight: 600;
+}
+
+.pubBtn:hover,
+.pubBtn.active {
+  background: #fff !important;
+  color: var(--dn-green) !important;
+}
+
 .chevron {
   font-size: 0.55rem;
   opacity: 0.85;
@@ -195,7 +210,9 @@
   position: absolute;
   top: 100%;
   right: 0;
-  min-width: 200px;
+  min-width: 260px;
+  max-height: min(70vh, 420px);
+  overflow-y: auto;
   background: #fff;
   border: 1px solid #ddd;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);

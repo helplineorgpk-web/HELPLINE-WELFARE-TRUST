@@ -221,7 +221,7 @@ export default function DailyNewsNav({ activeTab, onTabChange }) {
               <li key={item.id} className={styles.menuItem}>
                 <button
                   type="button"
-                  className={`${styles.menuBtn} ${isNavItemActive(item, activeTab) ? styles.active : ""}`}
+                  className={`${styles.menuBtn} ${item.isPubBtn ? styles.pubBtn : ""} ${isNavItemActive(item, activeTab) ? styles.active : ""}`}
                   onClick={() => handleTabClick(item)}
                   aria-expanded={openDropdown === item.id}
                   aria-haspopup={item.hasDropdown ? "true" : undefined}

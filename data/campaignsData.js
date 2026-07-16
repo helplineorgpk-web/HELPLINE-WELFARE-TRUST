@@ -611,10 +611,10 @@ export const campaignsData = [
   },
   {
     id: "adopt-student-at-imam-maryam-smart-school",
-    title: "Adopt a Student at Imam Maryam Smart School",
+    title: "Adopt a Student at Emaan Maryam Smart School",
     href: "/campaigns",
     description:
-      "Direct student sponsorships for Imam Maryam Smart School student adoption campaign.",
+      "Direct student sponsorships for Emaan Maryam Smart School student adoption campaign.",
     image: "/img/causes/smart2.png",
     details: {
       goal: 1200000,

@@ -403,7 +403,7 @@ export const CAMPAIGN_DETAIL_SECTIONS = {
   },
   "adopt-student-at-imam-maryam-smart-school": {
     beneficiaries: [
-      "Imam Maryam Smart School students in digital-forward classrooms.",
+      "Emaan Maryam Smart School students in digital-forward classrooms.",
       "Families investing hope in smart boards and IT labs but unable to pay fully.",
       "Girls especially encouraged through safe tech-enabled learning.",
     ],

@@ -315,12 +315,12 @@ export const HelplineData = {
       img8: "/img/causes/begin1.JPG",
       link: "https://www.youtube.com/embed/7sh2krvAEZY",
       link3: "https://www.youtube.com/embed/_hliltW3iEM",
-      ActualName: "Emman Maryam Smart School Alighar Education Complex",
+      ActualName: "Emaan Maryam Smart School Alighar Education Complex",
       detail: "Free education for brighter futures.",
       description: `Aligarh Educational Complex – A Legacy of Learning and Service  
-    Within the same powerful framework of educational empowerment, the Emman Maryam Smart School caters to more than 300 primary-level children.  
+    Within the same powerful framework of educational empowerment, the Emaan Maryam Smart School caters to more than 300 primary-level children.  
     This school represents the foundation of lifelong learning, where underprivileged children receive quality education, loving mentorship, and the confidence to dream bigger.`,
-      desc: "Emman Maryam Smart School Alighar Education Complex (Gojra)",
+      desc: "Emaan Maryam Smart School Alighar Education Complex (Gojra)",
       historyTitle: "Where Young Minds Begin Their Journey",
       UpgradeTitle: "Helpline’s Focus on Foundational Learning",
       FutureTitle: "Smart Kids, Brighter Futures",
@@ -336,7 +336,7 @@ export const HelplineData = {
     📚 Personalized Learning Paths – ensuring no child is left behind  
     🌍 Strong Community Support – reaching children from surrounding rural villages`,
       detail4:
-        "With its tailored focus on primary education, the Emman Maryam Smart School prepares young children to enter the future with curiosity, resilience, and purpose—paving the way for a brighter Pakistan.",
+        "With its tailored focus on primary education, the Emaan Maryam Smart School prepares young children to enter the future with curiosity, resilience, and purpose—paving the way for a brighter Pakistan.",
       color: "#5fb35b",
     },
     {
@@ -1348,12 +1348,12 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
 
       link: "https://www.youtube.com/embed/7sh2krvAEZY",
       link3: "https://www.youtube.com/embed/_hliltW3iEM",
-      ActualName: "Emman Maryam Smart School Alighar Education Complex",
+      ActualName: "Emaan Maryam Smart School Alighar Education Complex",
       detail: "Free education for brighter futures.",
       description: `Aligarh Educational Complex – A Legacy of Learning and Service  
-    Within the same powerful framework of educational empowerment, the Emman Maryam Smart School caters to more than 300 primary-level children.  
+    Within the same powerful framework of educational empowerment, the Emaan Maryam Smart School caters to more than 300 primary-level children.  
     This school represents the foundation of lifelong learning, where underprivileged children receive quality education, loving mentorship, and the confidence to dream bigger.`,
-      desc: "Emman Maryam Smart School Alighar Education Complex (Gojra)",
+      desc: "Emaan Maryam Smart School Alighar Education Complex (Gojra)",
       historyTitle: "Where Young Minds Begin Their Journey",
       UpgradeTitle: "Helpline’s Focus on Foundational Learning",
       FutureTitle: "Smart Kids, Brighter Futures",
@@ -1369,7 +1369,7 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
     📚 Personalized Learning Paths – ensuring no child is left behind  
     🌍 Strong Community Support – reaching children from surrounding rural villages`,
       detail4:
-        "With its tailored focus on primary education, the Emman Maryam Smart School prepares young children to enter the future with curiosity, resilience, and purpose—paving the way for a brighter Pakistan.",
+        "With its tailored focus on primary education, the Emaan Maryam Smart School prepares young children to enter the future with curiosity, resilience, and purpose—paving the way for a brighter Pakistan.",
       color: "#5fb35b",
     },
 

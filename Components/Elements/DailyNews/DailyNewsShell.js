@@ -2,6 +2,8 @@
 import React, { useState, useCallback, useEffect } from "react";
 import DailyNewsNav from "./DailyNewsNav";
 import DailyNewsPaper from "./DailyNewsPaper";
+import DailyNewsPublication from "./DailyNewsPublication";
+import DailyNewsVideoKhabrain from "./DailyNewsVideoKhabrain";
 import DailyNewsSectionPage, {
   DailyNewsLatestFeed,
 } from "./DailyNewsSectionPage";
@@ -56,6 +58,12 @@ export default function DailyNewsShell() {
     }
     if (activeTab === "taza-tareen") {
       return <DailyNewsLatestFeed onTabChange={changeTab} />;
+    }
+    if (activeTab === "kitabcha" || activeTab === "ujala") {
+      return <DailyNewsPublication publicationId={activeTab} />;
+    }
+    if (activeTab === "video-khabrain") {
+      return <DailyNewsVideoKhabrain />;
     }
     const section = getSection(activeTab);
     if (section) {

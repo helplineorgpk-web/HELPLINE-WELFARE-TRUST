@@ -138,7 +138,7 @@ const EDUCATION_DETAIL_CONTENT = {
   },
   "adopt-student-at-imam-maryam-smart-school": {
     longDescription:
-      "Sponsor learners at Imam Maryam Smart School through direct student adoption. The campaign supports technology-enabled schooling and uninterrupted education.",
+      "Sponsor learners at Emaan Maryam Smart School through direct student adoption. The campaign supports technology-enabled schooling and uninterrupted education.",
     impact: [
       { value: "Smart School", label: "School Focus" },
       { value: "PKR 2,200", label: "Per Student / Month" },

@@ -278,6 +278,50 @@
   font-style: italic;
 }
 
+/* ── Category groups (تازہ ترین feed) ── */
+.categoryBlock {
+  margin-bottom: 2.25rem;
+}
+
+.categoryBlock:last-child {
+  margin-bottom: 0;
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 2px solid var(--dn-green);
+}
+
+.categoryTitle {
+  margin: 0;
+  font-family: var(--dn-urdu);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: var(--dn-green);
+  line-height: 1.3;
+}
+
+.categoryCount {
+  flex-shrink: 0;
+  min-width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.55rem;
+  border-radius: 999px;
+  background: var(--dn-green-light);
+  color: var(--dn-green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
 /* ── Update cards grid ── */
 .updatesGrid {
   display: grid;
@@ -288,6 +332,300 @@
 .updatesGridWide {
   grid-template-columns: 1fr;
   gap: 1.25rem;
+}
+
+/* ── Photo gallery ── */
+.photoGallery {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.65rem;
+}
+
+.photoItem {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #e8e8e8;
+}
+
+.photoImg {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photoItem:hover .photoImg {
+  transform: scale(1.05);
+}
+
+/* ── Featured special-education report ── */
+.featuredReport {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--dn-green-light);
+}
+
+.featuredReportHero {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  align-items: stretch;
+}
+
+.featuredReportImgWrap {
+  position: relative;
+  min-height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #e8e8e8;
+}
+
+.featuredReportImg {
+  object-fit: cover;
+}
+
+.featuredReportIntro {
+  text-align: right;
+}
+
+.featuredReportBadge {
+  display: inline-block;
+  background: #b45309;
+  color: #fff;
+  font-family: var(--dn-urdu);
+  font-size: 0.95rem;
+  padding: 0.25rem 0.85rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+
+.featuredReportTitle {
+  margin: 0 0 0.4rem;
+  font-family: var(--dn-urdu);
+  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  font-weight: 700;
+  color: var(--dn-green);
+  line-height: 1.45;
+}
+
+.featuredReportSubtitle {
+  margin: 0 0 0.85rem;
+  font-family: var(--dn-urdu);
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.75;
+}
+
+.freeEduBanner {
+  margin: 0 0 1rem;
+  padding: 0.85rem 1.1rem;
+  background: linear-gradient(to left, #e8f5ec, #f0faf3);
+  border-inline-end: 4px solid var(--dn-green);
+  border-radius: 6px;
+  font-family: var(--dn-urdu);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dn-green);
+  line-height: 1.85;
+}
+
+.featuredReportMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.featuredReportMeta span {
+  font-family: var(--dn-urdu);
+  font-size: 0.88rem;
+  background: #f3f3f3;
+  color: #444;
+  padding: 0.25rem 0.65rem;
+  border-radius: 3px;
+}
+
+.featuredReportPdf {
+  display: inline-block;
+  font-family: var(--dn-urdu);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dn-green-accent);
+  text-decoration: none;
+}
+
+.featuredReportPdf:hover {
+  text-decoration: underline;
+}
+
+.featuredReportPages {
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+.reportPagesStack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.reportPageItem {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.reportPageImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.featuredReportPdfEmbed {
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+.featuredPdfFrameWrap {
+  width: 100%;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.featuredPdfFrame {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 220px);
+  min-height: 720px;
+  border: none;
+}
+
+.featuredReportBlock {
+  margin-bottom: 1.25rem;
+  text-align: right;
+}
+
+.featuredReportH3 {
+  margin: 0 0 0.65rem;
+  font-family: var(--dn-urdu);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  border-bottom: 2px solid var(--dn-green-light);
+  padding-bottom: 0.35rem;
+}
+
+.featuredReportP {
+  margin: 0 0 0.5rem;
+  font-family: var(--dn-urdu);
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.85;
+}
+
+.featuredReportList {
+  margin: 0;
+  padding: 0 1.25rem 0 0;
+  font-family: var(--dn-urdu);
+  font-size: 1.02rem;
+  color: #333;
+  line-height: 1.9;
+}
+
+.featuredReportNote {
+  margin: 0.75rem 0 0;
+  padding: 0.7rem 0.95rem;
+  background: #fff8e8;
+  border-radius: 5px;
+  font-family: var(--dn-urdu);
+  font-size: 0.98rem;
+  color: #6b4e00;
+  line-height: 1.8;
+}
+
+.featuredReportGrid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.activityGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+
+.activityCard {
+  background: #f8faf8;
+  border: 1px solid #e5eee7;
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+}
+
+.activityTitle {
+  margin: 0 0 0.45rem;
+  font-family: var(--dn-urdu);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dn-green);
+  line-height: 1.5;
+}
+
+.studentTableWrap {
+  overflow-x: auto;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+}
+
+.studentTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--dn-urdu);
+  font-size: 0.98rem;
+  min-width: 560px;
+}
+
+.studentTable th,
+.studentTable td {
+  padding: 0.65rem 0.75rem;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+  line-height: 1.7;
+  vertical-align: top;
+}
+
+.studentTable th {
+  background: var(--dn-green);
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.studentTable tbody tr:nth-child(even) {
+  background: #f7faf8;
+}
+
+.studentTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.budgetTotalRow td {
+  background: #e8f3ec !important;
+  color: var(--dn-green);
 }
 
 /* Clickable wrapper in latest feed */
@@ -303,6 +641,25 @@
   padding: 0;
   cursor: pointer;
   font: inherit;
+}
+
+.featuredLink {
+  display: block;
+  width: 100%;
+  text-align: inherit;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0 0 1.75rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.featuredLink:hover .featuredCard {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  border-color: var(--dn-green-accent);
 }
 
 /* ── Individual update card ── */
@@ -412,6 +769,21 @@
   flex: 1;
 }
 
+.cardExcerptLong {
+  font-size: 1.12rem;
+  color: #444;
+  line-height: 2;
+}
+
+.updateCardTextOnly .cardBody {
+  padding: 1.35rem 1.4rem 1.5rem;
+}
+
+.updateCardTextOnly .cardTitle {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
 .cardReadMore {
   display: inline-block;
   margin-top: 0.75rem;
@@ -431,6 +803,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.featuredCardTextOnly {
+  grid-template-columns: 1fr;
+}
+
+.featuredCardTextOnly .featuredBody {
+  padding: 2rem 2.25rem 2.25rem;
+  max-width: 900px;
+  margin-inline: auto;
+  width: 100%;
 }
 
 .featuredImageWrap {
@@ -478,6 +861,12 @@
   font-size: 1.1rem;
   color: #555;
   line-height: 1.9;
+}
+
+.featuredExcerptLong {
+  font-size: 1.22rem;
+  color: #333;
+  line-height: 2.05;
 }
 
 .featuredMeta {
@@ -533,6 +922,28 @@
 
   .updatesGrid {
     grid-template-columns: 1fr;
+  }
+
+  .photoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featuredReportHero {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredReportImgWrap {
+    min-height: 200px;
+  }
+
+  .featuredReportGrid2,
+  .activityGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredPdfFrame {
+    min-height: 480px;
+    height: calc(100vh - 180px);
   }
 
   .stat {
