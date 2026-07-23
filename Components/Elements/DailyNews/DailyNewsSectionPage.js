@@ -57,21 +57,51 @@ function UpdateCard({ update, sectionTitle, showSection, horizontal }) {
 }
 
 function FeaturedUpdate({ update }) {
-  const textOnly = !update.image;
+  const gallery = update.images?.length
+    ? update.images
+    : update.image
+      ? [update.image]
+      : [];
+  const textOnly = gallery.length === 0;
+  const multiImage = gallery.length > 1;
+
   return (
     <article
-      className={`${styles.featuredCard} ${textOnly ? styles.featuredCardTextOnly : ""}`}
+      className={`${styles.featuredCard} ${textOnly ? styles.featuredCardTextOnly : ""} ${update.stacked ? styles.featuredCardStacked : ""} ${multiImage ? styles.featuredCardGallery : ""}`}
     >
-      {update.image && (
+      {gallery.length === 1 && (
         <div className={styles.featuredImageWrap}>
           <Image
-            src={update.image}
+            src={gallery[0]}
             alt={update.title}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className={styles.featuredImage}
             priority
           />
+        </div>
+      )}
+      {multiImage && (
+        <div className={styles.featuredGallery}>
+          {gallery.map((src, index) => (
+            <div
+              key={src}
+              className={`${styles.featuredGalleryItem} ${index === 0 ? styles.featuredGalleryHero : ""}`}
+            >
+              <Image
+                src={src}
+                alt={`${update.title} — تصویر ${index + 1}`}
+                fill
+                sizes={
+                  index === 0
+                    ? "(max-width: 768px) 100vw, 70vw"
+                    : "(max-width: 768px) 50vw, 30vw"
+                }
+                className={styles.featuredImage}
+                priority={index === 0}
+              />
+            </div>
+          ))}
         </div>
       )}
       <div className={styles.featuredBody}>

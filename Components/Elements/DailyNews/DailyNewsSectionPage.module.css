@@ -809,6 +809,62 @@
   grid-template-columns: 1fr;
 }
 
+.featuredCardStacked {
+  grid-template-columns: 1fr;
+}
+
+.featuredCardStacked .featuredImageWrap {
+  min-height: 560px;
+}
+
+.featuredCardStacked .featuredImage {
+  object-fit: contain;
+  background: #f3eee3;
+}
+
+.featuredCardStacked .featuredBody {
+  padding: 2rem 2.25rem 2.25rem;
+}
+
+.featuredCardStacked .featuredExcerpt {
+  white-space: pre-line;
+  color: #333;
+  line-height: 2.1;
+}
+
+.featuredCardGallery {
+  grid-template-columns: 1fr;
+}
+
+.featuredGallery {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.45rem;
+  min-height: 420px;
+  background: #eceae4;
+  padding: 0.45rem;
+}
+
+.featuredGalleryHero {
+  grid-row: 1 / span 2;
+}
+
+.featuredGalleryItem {
+  position: relative;
+  min-height: 160px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.featuredGalleryItem .featuredImage {
+  object-fit: cover;
+}
+
+.featuredCardStacked.featuredCardGallery .featuredGallery {
+  min-height: 480px;
+}
+
 .featuredCardTextOnly .featuredBody {
   padding: 2rem 2.25rem 2.25rem;
   max-width: 900px;
@@ -893,11 +949,34 @@
   .featuredImageWrap {
     min-height: 220px;
   }
+
+  .featuredCardStacked .featuredImageWrap {
+    min-height: 420px;
+  }
+
+  .featuredGallery {
+    min-height: 360px;
+  }
 }
 
 @media (max-width: 768px) {
   .sectionPage {
     padding: 1.25rem 0.75rem 3rem;
+  }
+
+  .featuredCardStacked .featuredImageWrap {
+    min-height: 300px;
+  }
+
+  .featuredGallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 140px;
+    min-height: auto;
+  }
+
+  .featuredGalleryHero {
+    grid-column: 1 / -1;
+    grid-row: 1;
   }
 
   .heroBannerContent,
