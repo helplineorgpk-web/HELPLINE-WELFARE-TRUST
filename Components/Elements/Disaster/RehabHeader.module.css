@@ -1,0 +1,19 @@
+.header {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.fullscreen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 100px;
+  padding-bottom: 72px;
+}
+
+/* Soften global dark overlay so the designed poster stays visible */
+:global(.breadcrumb_overlay).hideText::before {
+  opacity: 0.15 !important;
+}

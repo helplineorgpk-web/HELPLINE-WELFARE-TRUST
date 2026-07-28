@@ -61,6 +61,20 @@ const CAUSE_OPTIONS = [
 
 const heroSlides = [
   {
+    image: "/img/Campaigns/ranatownflood.webp",
+    title: "RANA TOWN FLOOD APPEAL",
+    subtitle:
+      "Homes underwater. Families stranded. Stand with Rana Town—your gift delivers food, clean water, and shelter now.",
+    link: "/campaign/rana-town-flood-appeal",
+    hideHeroText: true,
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+  },
+  {
     image: "/img/Campaigns/RamadanPackage2.webp",
     title: "RAMADAN FOOD PACKAGE",
     subtitle: "Help us provide essential food supplies to families during the blessed month. Your donation ensures no family goes hungry.",
@@ -797,6 +811,7 @@ export default function Header({ slides: slidesProp }) {
 
         <div className="hero-overlay" />
 
+        {!activeSlide?.hideHeroText ? (
         <div className="hero-content" style={isMobile ? { textAlign: "center" } : undefined}>
           <div className="hero-text" style={isMobile ? { textAlign: "center" } : undefined}>
             <h1
@@ -909,6 +924,9 @@ export default function Header({ slides: slidesProp }) {
             </div>
           </div> */}
         </div>
+        ) : (
+          <h1 className="sr-only">{activeSlide?.title ?? "Rana Town Flood Appeal"}</h1>
+        )}
       </section>
 
       {showPaymentForm && (

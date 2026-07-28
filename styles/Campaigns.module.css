@@ -617,12 +617,20 @@
   background: #e8ecf2;
 }
 
+.imageLink {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+}
+
 .imageGradient {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   height: 45%;
+  pointer-events: none;
   background: linear-gradient(
     180deg,
     transparent 0%,
@@ -1097,13 +1105,66 @@
 .detailHeroImageWrap {
   position: relative;
   width: 100%;
-  height: 460px;
+  aspect-ratio: 2996 / 1700;
+  height: auto;
   overflow: hidden;
   border-radius: 16px 16px 0 0;
+  background: #0b1220;
+}
+
+.detailHeroOpenBtn {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 2;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(8, 14, 22, 0.78);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.detailHeroOpenBtn:hover {
+  background: rgba(8, 14, 22, 0.92);
+}
+
+.detailGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
+  padding: 12px 12px 0;
+  background: #fff;
+}
+
+.detailGalleryItem {
+  position: relative;
+  width: 100%;
+  padding-top: 72%;
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #e8ecf2;
+  cursor: zoom-in;
+}
+
+.detailGalleryImg {
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.detailGalleryItem:hover .detailGalleryImg {
+  transform: scale(1.06);
 }
 
 .detailHeroImage {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 .detailHeroImageMobile {

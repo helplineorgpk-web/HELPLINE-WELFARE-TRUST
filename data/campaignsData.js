@@ -1,5 +1,69 @@
 export const campaignsData = [
   {
+    id: "rana-town-flood-appeal",
+    title: "Rana Town Flood Appeal",
+    href: "/campaign/rana-town-flood-appeal",
+    description:
+      "Homes underwater. Fields ruined. Families in Rana Town need food, clean water, and shelter now—your gift reaches them when every hour counts.",
+    image: "/img/ranatownflood/ranatownflood12.png",
+    gallery: [
+      "/img/ranatownflood/ranatownflood12.png",
+      "/img/ranatownflood/ranatownflood1.png",
+      "/img/ranatownflood/ranatownflood2.png",
+      "/img/ranatownflood/ranatownflood3.png",
+      "/img/ranatownflood/ranatownflood4.png",
+      "/img/ranatownflood/ranatownflood5.png",
+      "/img/ranatownflood/ranatownflood6.png",
+      "/img/ranatownflood/ranatownflood7.png",
+      "/img/ranatownflood/ranatownflood8.png",
+      "/img/ranatownflood/ranatownflood9.png",
+      "/img/ranatownflood/ranatownflood10.png",
+      "/img/ranatownflood/ranatownflood11.png",
+    ],
+    donationPresets: [2500, 5000, 10000, 25000],
+    longDescription:
+      "Floodwater has swallowed streets, farms, and hope in Rana Town. Families who woke up to dry beds are now wading through mud with children in their arms and nowhere safe to sleep. Livelihoods—crops, shops, school days—have been washed away overnight. Helpline Welfare Trust is on the ground with urgent food packs, clean drinking water, medicines, and temporary shelter for the hardest-hit households. This is not tomorrow’s problem. It is tonight’s empty stomach and tomorrow’s fever. Stand with Rana Town: one gift can put a hot meal on a family’s plate, keep a child dry, and remind a drowning neighborhood that they have not been forgotten.",
+    impact: [
+      { value: "Urgent", label: "On-ground relief" },
+      { value: "PKR 2,500+", label: "Relief gift tiers" },
+      { value: "Rana Town", label: "Flood-hit families" },
+    ],
+    details: {
+      goal: 5000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Emergency food kit",
+          price: 2500,
+          description:
+            "Staples and essentials for a flood-hit household in the first critical days.",
+        },
+        {
+          name: "Family relief pack",
+          price: 5000,
+          description:
+            "Food, drinking water support, and basic hygiene for a family under water stress.",
+        },
+        {
+          name: "Shelter & supplies",
+          price: 10000,
+          description:
+            "Stronger support covering food plus temporary shelter materials and field logistics.",
+        },
+        {
+          name: "Major flood relief",
+          price: 25000,
+          description:
+            "Scale relief across several families—meals, water, medicine coordination, and shelter help.",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Running",
+    featured: true,
+    categories: ["disaster-relief", "social-welfare"],
+  },
+  {
     id: "become-a-member-100",
     title: "Become a Member — Rs. 100 Only",
     href: "/campaign/become-a-member-100",
@@ -61,7 +125,7 @@ export const campaignsData = [
       endDate: "2026-12-31",
     },
     status: "Running",
-    featured: true,
+    featured: false,
     categories: [
       "education",
       "healthcare",

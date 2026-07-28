@@ -547,18 +547,31 @@ export function DailyNewsLatestFeed({ onTabChange }) {
   const allUpdates = getAllDailyUpdates();
   const categoryGroups = getUpdatesByCategory();
   const featuredUpdate = allUpdates.find((u) => u.pinFirst) || allUpdates[0];
+  const secondPinned = allUpdates.filter(
+    (u) =>
+      u.pinSecond &&
+      !(
+        featuredUpdate &&
+        u.sectionId === featuredUpdate.sectionId &&
+        u.title === featuredUpdate.title &&
+        u.date === featuredUpdate.date
+      )
+  );
+  const hideUpdate = (u) =>
+    (featuredUpdate &&
+      u.sectionId === featuredUpdate.sectionId &&
+      u.title === featuredUpdate.title &&
+      u.date === featuredUpdate.date) ||
+    secondPinned.some(
+      (p) =>
+        p.sectionId === u.sectionId &&
+        p.title === u.title &&
+        p.date === u.date
+    );
   const groupsWithoutFeatured = categoryGroups
     .map((group) => ({
       ...group,
-      updates: group.updates.filter(
-        (u) =>
-          !(
-            featuredUpdate &&
-            u.sectionId === featuredUpdate.sectionId &&
-            u.title === featuredUpdate.title &&
-            u.date === featuredUpdate.date
-          )
-      ),
+      updates: group.updates.filter((u) => !hideUpdate(u)),
     }))
     .filter((group) => group.updates.length > 0);
 
@@ -592,6 +605,25 @@ export function DailyNewsLatestFeed({ onTabChange }) {
               <FeaturedUpdate update={featuredUpdate} />
             </button>
           )}
+
+          {secondPinned.length > 0 ? (
+            <div className={styles.updatesGrid}>
+              {secondPinned.map((update) => (
+                <button
+                  key={`${update.sectionId}-${update.date}-${update.title}`}
+                  type="button"
+                  className={styles.cardLink}
+                  onClick={() => onTabChange?.(update.sectionId)}
+                >
+                  <UpdateCard
+                    update={update}
+                    sectionTitle={update.sectionTitle}
+                    showSection
+                  />
+                </button>
+              ))}
+            </div>
+          ) : null}
 
           {groupsWithoutFeatured.map((group) => (
             <section key={group.key} className={styles.categoryBlock}>

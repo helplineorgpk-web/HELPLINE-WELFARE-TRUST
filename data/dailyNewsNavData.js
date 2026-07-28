@@ -51,6 +51,7 @@ export const DAILY_NEWS_NAV_ITEMS = [
     ],
   },
   { id: "health", label: "صحت و طبی امداد", hasDropdown: false },
+  { id: "rana-town-flood", label: "سیلاب — رانا ٹاؤن", hasDropdown: false },
   { id: "ration", label: "راشن و امداد", hasDropdown: false },
   { id: "water", label: "صاف پانی", hasDropdown: false },
   { id: "vtc", label: "ووکیشنل تربیت", hasDropdown: false },

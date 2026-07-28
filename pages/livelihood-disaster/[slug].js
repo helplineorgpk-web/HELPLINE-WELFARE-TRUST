@@ -33,12 +33,18 @@ export default function DisasterDetailPage({ detail }) {
   const gallery = detail.imageGallery ?? [];
 
   return (
-    <Layout2>
+    <Layout2 headerOverDark={Boolean(detail.headerImage || detail.headerFullHeight)}>
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={detail.description} />
       </Head>
-      <RehabHeader />
+      <RehabHeader
+        image={detail.headerImage || "/img/causes/disasterbg.jpg"}
+        title={detail.detailTitle || detail.title}
+        breadcrumbActive={detail.title}
+        fullHeight={Boolean(detail.headerFullHeight)}
+        hideText={Boolean(detail.hideHeaderText)}
+      />
 
       <section className={styles.section}>
         <div className={styles.container}>

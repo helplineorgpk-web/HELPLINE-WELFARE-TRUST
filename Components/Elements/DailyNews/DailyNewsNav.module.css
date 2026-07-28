@@ -262,15 +262,21 @@
 }
 
 .brandInner {
+  position: relative;
   max-width: 1400px;
   margin: 0 auto;
   padding: 1.25rem 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  min-height: 110px;
 }
 
 .brandLogo {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   height: auto;
   max-height: 90px;
   width: auto;
@@ -278,8 +284,8 @@
 }
 
 .brandText {
-  text-align: right;
-  margin-right: 1rem;
+  text-align: center;
+  margin: 0;
 }
 
 .brandOrg {
@@ -293,10 +299,26 @@
 .brandTitle {
   margin: 0;
   font-family: var(--dn-urdu);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
+  font-size: clamp(2.35rem, 5.5vw, 3.5rem);
+  font-weight: 900;
   color: var(--dn-green);
-  line-height: 1.3;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 640px) {
+  .brandInner {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+  }
+
+  .brandLogo {
+    position: static;
+    transform: none;
+    order: -1;
+    max-height: 72px;
+  }
 }
 
 /* ── Ticker bar ── */

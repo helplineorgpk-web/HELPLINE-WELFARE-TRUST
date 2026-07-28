@@ -113,6 +113,18 @@ export default function FloodReliefCampaign() {
         <h3 className={styles.galleryTitle}>Relief Distribution & Impact</h3>
         <div className={styles.imageGrids}>
           {[
+            "/img/ranatownflood/ranatownflood1.png",
+            "/img/ranatownflood/ranatownflood2.png",
+            "/img/ranatownflood/ranatownflood3.png",
+            "/img/ranatownflood/ranatownflood4.png",
+            "/img/ranatownflood/ranatownflood5.png",
+            "/img/ranatownflood/ranatownflood6.png",
+            "/img/ranatownflood/ranatownflood7.png",
+            "/img/ranatownflood/ranatownflood8.png",
+            "/img/ranatownflood/ranatownflood9.png",
+            "/img/ranatownflood/ranatownflood10.png",
+            "/img/ranatownflood/ranatownflood11.png",
+            "/img/ranatownflood/ranatownflood12.png",
             "/img/Campaigns/Flood.jpg",
             "/img/causes/causeheader.png",
             "/img/causes/freemedical.jpg",
@@ -120,7 +132,7 @@ export default function FloodReliefCampaign() {
             "/img/causes/labtest.png",
             "/img/causes/ultrasound.jpg",
           ].map((src, index) => (
-            <div className={styles.imageCard} key={index}>
+            <div className={styles.imageCard} key={src}>
               <div className={styles.imageWrapper}>
                 <Image
                   src={src}
@@ -131,7 +143,11 @@ export default function FloodReliefCampaign() {
                 />
               </div>
               <div className={styles.imageOverlay}>
-                <span>Relief Distribution {index + 1}</span>
+                <span>
+                  {src.includes("ranatownflood")
+                    ? `Rana Town Flood ${index + 1}`
+                    : `Relief Distribution ${index + 1}`}
+                </span>
               </div>
             </div>
           ))}

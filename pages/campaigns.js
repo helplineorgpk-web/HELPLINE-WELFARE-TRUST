@@ -83,19 +83,21 @@ const CampaignCard = React.memo(function CampaignCard({
           {campaign.featured ? (
             <span className={styles.featuredRibbon}>Featured</span>
           ) : null}
-          <Image
-            src={campaign.image}
-            alt={campaign.title}
-            fill
-            priority={priority}
-            loading={eager ? "eager" : "lazy"}
-            fetchPriority={priority ? "high" : "auto"}
-            quality={72}
-            decoding="async"
-            sizes="(max-width: 576px) 92vw, (max-width: 992px) 48vw, 32vw"
-            className={styles.image}
-            placeholder="empty"
-          />
+          <Link href={detailHref} className={styles.imageLink} aria-label={`View ${campaign.title} details`}>
+            <Image
+              src={campaign.image}
+              alt={campaign.title}
+              fill
+              priority={priority}
+              loading={eager ? "eager" : "lazy"}
+              fetchPriority={priority ? "high" : "auto"}
+              quality={72}
+              decoding="async"
+              sizes="(max-width: 576px) 92vw, (max-width: 992px) 48vw, 32vw"
+              className={styles.image}
+              placeholder="empty"
+            />
+          </Link>
           <div className={styles.imageGradient} aria-hidden />
         </div>
         <Card.Body>

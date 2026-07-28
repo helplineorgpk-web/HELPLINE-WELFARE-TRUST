@@ -268,13 +268,13 @@ export default function DailyNewsNav({ activeTab, onTabChange }) {
         type="button"
         className={styles.brandStrip}
         onClick={() => navigateToTab("aaj-ka-akhbar")}
-        aria-label="روزنامہ ہیلپ لائن — آج کا اخبار"
+        aria-label="روزنامہ مواخات — آج کا اخبار"
       >
         <div className={styles.brandInner}>
           <div className={styles.brandText}>
             <span className={styles.brandOrg}>ہیلپ لائن ویلفیئر ٹرسٹ</span>
             <h1 className={styles.brandTitle} dir="rtl">
-              روزنامہ ہیلپ لائن
+              روزنامہ مواخات
             </h1>
           </div>
           <Image

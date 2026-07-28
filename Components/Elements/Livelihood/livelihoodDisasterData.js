@@ -1,5 +1,96 @@
 export const livelihoodDisasterCards = [
   {
+    slug: "rana-town-flood-appeal",
+    title: "Rana Town Flood Appeal",
+    description:
+      "Homes and fields under water in Rana Town. Helpline is delivering urgent food, clean water, medicines, and shelter support for flood-hit families—your gift reaches them when every hour counts.",
+    image: "/img/ranatownflood/ranatownflood1.png",
+    headerImage: "/img/Campaigns/ranatownflood.webp",
+    headerFullHeight: true,
+    hideHeaderText: true,
+    detailTitle: "Rana Town Flood Emergency Appeal",
+    detailSections: [
+      {
+        title: "Crisis on the ground",
+        paragraphs: [
+          "Floodwater has swallowed streets, farms, and hope in Rana Town. Families who woke up to dry beds are now wading through mud with children in their arms and nowhere safe to sleep. Livelihoods—crops, shops, and school days—have been washed away overnight.",
+          "Helpline Welfare Trust is on the ground with urgent food packs, clean drinking water, medicines, and temporary shelter for the hardest-hit households.",
+        ],
+      },
+      {
+        title: "Immediate relief priorities",
+        paragraphs: [
+          "Priority support includes emergency food kits, drinking-water assistance, hygiene and basic medicines to reduce waterborne illness, and temporary shelter materials for families cut off by standing water.",
+          "Field teams verify the hardest-hit lanes and prioritize households with children, elders, and those with nowhere dry to sleep.",
+        ],
+      },
+      {
+        title: "How you can help",
+        paragraphs: [
+          "Clear donation tiers—from emergency food kits to major flood relief—let you act at any scale. Every gift is directed to verified Rana Town families through Helpline’s disaster response chain: rescue, relief, and recovery.",
+          "Stand with Rana Town so no flooded household feels abandoned.",
+        ],
+      },
+    ],
+    impactHighlights: [
+      "Urgent on-ground relief for Rana Town flood survivors",
+      "Food, clean water, medicines, and shelter materials",
+      "Transparent tiers from emergency kits to major relief packs",
+    ],
+    imageGallery: [
+      {
+        src: "/img/ranatownflood/ranatownflood1.png",
+        caption: "Rana Town floodwaters surrounding homes and fields",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood2.png",
+        caption: "Flood-affected neighbourhoods in Rana Town",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood3.png",
+        caption: "Standing water across residential and farm areas",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood4.png",
+        caption: "Communities cut off by floodwater",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood5.png",
+        caption: "Impact on daily life and local livelihoods",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood6.png",
+        caption: "Homes and streets under water stress",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood7.png",
+        caption: "Field conditions facing relief teams",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood8.png",
+        caption: "Scale of flooding across the locality",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood9.png",
+        caption: "Families and property at risk from rising water",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood10.png",
+        caption: "Urgent need for food, water, and shelter",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood11.png",
+        caption: "On-ground documentation of the flood emergency",
+      },
+      {
+        src: "/img/ranatownflood/ranatownflood12.png",
+        caption: "Rana Town flood appeal — stand with affected families",
+      },
+    ],
+    ctaText: "Donate for Rana Town Flood Relief",
+    ctaHref: "/campaign/rana-town-flood-appeal",
+  },
+  {
     slug: "disaster-relief-approach",
     title: "Disaster Relief Approach",
     description:

@@ -6,6 +6,12 @@ export const CAMPAIGN_DETAIL_HIGHLIGHTS = {
     "No need to pick a single cause; one membership supports the whole Trust mission.",
     "Ideal for students, first-time donors, and anyone who wants to start small and stay connected.",
   ],
+  "rana-town-flood-appeal": [
+    "Urgent field appeal for Rana Town families whose homes and fields are under floodwater.",
+    "Your gift funds food kits, clean water support, medicines, and temporary shelter materials.",
+    "Clear tiers from Rs.2,500 emergency kits to Rs.25,000 major relief so you can act at any scale.",
+    "Photos from the ground show the water line—click any image to see the full story in fullscreen.",
+  ],
   "ramzan-2026": [
     "Seasonal Ramadan drive: food packs timed to sehri and iftar needs in partner areas.",
     "Two clear tiers—Basic and Family—so donors pick speed and scale without guesswork.",

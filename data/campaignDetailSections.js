@@ -3,6 +3,29 @@
  * Each campaign id should have distinct beneficiaries, usage, objectives, and implementation lines.
  */
 export const CAMPAIGN_DETAIL_SECTIONS = {
+  "rana-town-flood-appeal": {
+    beneficiaries: [
+      "Flood-hit families in Rana Town whose homes and belongings are under water.",
+      "Children, elders, and mothers stranded without dry shelter or cooking fuel.",
+      "Farming households whose crops and livelihoods were ruined by standing floodwater.",
+    ],
+    donationUsage: [
+      "Emergency food kits and drinking-water support for the first critical days.",
+      "Hygiene and basic medicine coordination for waterborne illness risk.",
+      "Temporary shelter materials and field logistics to reach cut-off lanes.",
+      "Scaled family and multi-family relief packs as donations grow.",
+    ],
+    objectives: [
+      "Deliver immediate food, water, and shelter support to Rana Town flood survivors.",
+      "Reduce disease and hunger risk while waters remain high.",
+      "Stand visibly with the community so no flooded household feels abandoned.",
+    ],
+    implementation: [
+      "Field teams verify hardest-hit lanes and prioritize households with children and elders.",
+      "Relief packs are assembled and distributed with local coordination for dignity and speed.",
+      "Photo and progress updates from the ground keep donors connected to real impact.",
+    ],
+  },
   "become-a-member-100": {
     beneficiaries: [
       "Anyone who wants to stand with Helpline Welfare Trust as a registered member donor.",

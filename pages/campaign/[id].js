@@ -5,6 +5,7 @@ import Layout1 from "../../Components/Layout/Layout1";
 import { Container, Row, Col, Card, ListGroup, Button } from "react-bootstrap";
 import UBLPaymentForm from "../../Components/Elements/Payment/UBLPaymentForm";
 import CampaignHeroHeader from "../../Components/Elements/Campaign/CampaignHeroHeader";
+import CampaignImageLightbox from "../../Components/Elements/Campaign/CampaignImageLightbox";
 import styles from "../../styles/Campaigns.module.css";
 import { CAMPAIGN_DETAIL_SECTIONS } from "../../data/campaignDetailSections";
 import { CAMPAIGN_DETAIL_HIGHLIGHTS } from "../../data/campaignDetailHighlights";
@@ -401,6 +402,14 @@ export default function CampaignDetail({ campaign }) {
   const [selectedDonationType, setSelectedDonationType] = useState(campaign.title);
   const [showDonationError, setShowDonationError] = useState(false);
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
+  const galleryImages = useMemo(
+    () =>
+      Array.isArray(campaign.gallery)
+        ? campaign.gallery.filter((src) => typeof src === "string" && src.trim())
+        : [],
+    [campaign.gallery]
+  );
+  const [lightboxIndex, setLightboxIndex] = useState(null);
 
   const openDonationFlow = useCallback(() => {
     const amountNum = parseInt(selectedAmount, 10);
@@ -467,7 +476,48 @@ export default function CampaignDetail({ campaign }) {
                   className={`${styles.detailHeroImage} ${styles.detailHeroImageDesktop}`}
                   onLoadingComplete={recalculate}
                 />
+                {galleryImages.length > 0 ? (
+                  <button
+                    type="button"
+                    className={styles.detailHeroOpenBtn}
+                    onClick={() => setLightboxIndex(0)}
+                    aria-label={`View flood photos for ${campaign.title}`}
+                  >
+                    View photos
+                  </button>
+                ) : null}
               </div>
+              {galleryImages.length > 0 ? (
+                <div className={styles.detailGallery}>
+                  {galleryImages.map((src, index) => (
+                    <button
+                      key={src}
+                      type="button"
+                      className={styles.detailGalleryItem}
+                      onClick={() => setLightboxIndex(index)}
+                      aria-label={`Open photo ${index + 1}`}
+                    >
+                      <Image
+                        src={src}
+                        alt={`${campaign.title} photo ${index + 1}`}
+                        fill
+                        sizes="(max-width: 576px) 33vw, 160px"
+                        quality={65}
+                        className={styles.detailGalleryImg}
+                      />
+                    </button>
+                  ))}
+                </div>
+              ) : null}
+              {lightboxIndex !== null ? (
+                <CampaignImageLightbox
+                  images={galleryImages}
+                  index={lightboxIndex}
+                  alt={campaign.title}
+                  onClose={() => setLightboxIndex(null)}
+                  onChangeIndex={setLightboxIndex}
+                />
+              ) : null}
               <Card.Body className={styles.detailMainBody}>
                 <div className="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
                   <h1 className={`h2 mb-0 ${styles.detailTitle}`}>{campaign.title}</h1>
