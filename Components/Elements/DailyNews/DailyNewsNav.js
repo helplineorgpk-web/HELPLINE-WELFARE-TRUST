@@ -317,6 +317,18 @@ export default function DailyNewsNav({ activeTab, onTabChange }) {
         </div>
       </div>
 
+      <div className={styles.headerBanner}>
+        <Image
+          src="/img/mainNAZRIYAPAKISTANHEADERIMAGE.jpg"
+          alt="سلام پاکستان — نظریہ پاکستان"
+          width={1600}
+          height={1131}
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          className={styles.headerBannerImg}
+          priority
+        />
+      </div>
+
       {searchOpen && (
         <SearchPanel
           query={searchQuery}

@@ -15,6 +15,28 @@
   margin: 0 auto;
 }
 
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid #d5d2c8;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--dn-green);
+  font-family: var(--dn-urdu);
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.backLink:hover {
+  background: var(--dn-green-light);
+  border-color: var(--dn-green-accent);
+}
+
 /* ── Hero banner ── */
 .hero {
   position: relative;
@@ -712,6 +734,23 @@
   object-fit: cover;
 }
 
+.cardVideoBadge {
+  position: absolute;
+  inset-inline-end: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.62);
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
 .cardBody {
   padding: 1.15rem 1.25rem 1.35rem;
   flex: 1;
@@ -832,37 +871,84 @@
   line-height: 2.1;
 }
 
+.featuredCardStacked.featuredCardGallery .featuredExcerpt {
+  white-space: pre-line;
+  color: #333;
+  line-height: 2.15;
+  font-size: 1.15rem;
+}
+
 .featuredCardGallery {
   grid-template-columns: 1fr;
 }
 
 .featuredGallery {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 0.45rem;
-  min-height: 420px;
   background: #eceae4;
   padding: 0.45rem;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.featuredGalleryHero {
-  grid-row: 1 / span 2;
-}
-
-.featuredGalleryItem {
+.galleryMain {
   position: relative;
-  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  min-height: 320px;
+  overflow: hidden;
+  background: #f3eee3;
+}
+
+.galleryMainImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+  max-width: 100%;
+  max-height: 640px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.galleryThumbs {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding-bottom: 2px;
+}
+
+.galleryThumb {
+  position: relative;
+  flex: 0 0 120px;
+  height: 82px;
   overflow: hidden;
   background: #ddd;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  opacity: 0.7;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
 }
 
-.featuredGalleryItem .featuredImage {
+.galleryThumb:hover,
+.galleryThumb:focus-visible {
+  opacity: 1;
+}
+
+.galleryThumbActive {
+  border-color: var(--dn-green-accent);
+  opacity: 1;
+}
+
+.galleryThumbImage {
   object-fit: cover;
-}
-
-.featuredCardStacked.featuredCardGallery .featuredGallery {
-  min-height: 480px;
 }
 
 .featuredCardTextOnly .featuredBody {
@@ -880,6 +966,47 @@
 
 .featuredImage {
   object-fit: cover;
+}
+
+.featuredCardVideo {
+  grid-template-columns: 1fr;
+}
+
+.featuredCardVideo.featuredCardStacked {
+  display: flex;
+  flex-direction: column;
+}
+
+.featuredVideoWrap {
+  position: relative;
+  width: 100%;
+  background: #111;
+  aspect-ratio: 16 / 9;
+  max-height: 520px;
+}
+
+.featuredVideoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+  aspect-ratio: auto;
+  max-height: none;
+  padding: 0.75rem;
+  background: #0f0f0f;
+}
+
+.featuredVideoGrid .featuredVideo {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 6px;
+}
+
+.featuredVideo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #111;
 }
 
 .featuredBody {
@@ -954,8 +1081,12 @@
     min-height: 420px;
   }
 
-  .featuredGallery {
-    min-height: 360px;
+  .galleryMain {
+    min-height: 280px;
+  }
+
+  .galleryMainImage {
+    max-height: 540px;
   }
 }
 
@@ -968,15 +1099,17 @@
     min-height: 300px;
   }
 
-  .featuredGallery {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 220px 140px;
-    min-height: auto;
+  .galleryMain {
+    min-height: 200px;
   }
 
-  .featuredGalleryHero {
-    grid-column: 1 / -1;
-    grid-row: 1;
+  .galleryMainImage {
+    max-height: 380px;
+  }
+
+  .galleryThumb {
+    flex: 0 0 96px;
+    height: 66px;
   }
 
   .heroBannerContent,

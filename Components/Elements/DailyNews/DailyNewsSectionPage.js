@@ -20,6 +20,7 @@ function formatCardDate(dateStr, timeStr) {
 
 function UpdateCard({ update, sectionTitle, showSection, horizontal }) {
   const textOnly = !update.image;
+  const cardText = update.excerpt || update.body;
   return (
     <article
       className={`${styles.updateCard} ${horizontal ? styles.updateCardHorizontal : ""} ${textOnly ? styles.updateCardTextOnly : ""}`}
@@ -33,6 +34,11 @@ function UpdateCard({ update, sectionTitle, showSection, horizontal }) {
             sizes={horizontal ? "280px" : "(max-width: 768px) 100vw, 33vw"}
             className={styles.cardImage}
           />
+          {update.video || update.videos?.length ? (
+            <span className={styles.cardVideoBadge} aria-hidden>
+              ▶
+            </span>
+          ) : null}
         </div>
       )}
       <div className={styles.cardBody}>
@@ -49,10 +55,66 @@ function UpdateCard({ update, sectionTitle, showSection, horizontal }) {
           {update.title}
         </h3>
         <p className={`${styles.cardExcerpt} ${textOnly ? styles.cardExcerptLong : ""}`} dir="rtl">
-          {update.body}
+          {cardText}
         </p>
+        {update.excerpt ? (
+          <span className={styles.cardReadMore} dir="rtl">
+            تفصیل پڑھیں ←
+          </span>
+        ) : null}
       </div>
     </article>
+  );
+}
+
+function FeaturedGallery({ images, title }) {
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const selectImage = (event, index) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setActiveIndex(index);
+  };
+
+  return (
+    <div className={styles.featuredGallery}>
+      <div className={styles.galleryMain}>
+        <Image
+          key={images[activeIndex]}
+          src={images[activeIndex]}
+          alt={`${title} — تصویر ${activeIndex + 1}`}
+          width={1600}
+          height={1067}
+          sizes="(max-width: 768px) 100vw, 70vw"
+          className={styles.galleryMainImage}
+          priority
+        />
+      </div>
+      <div className={styles.galleryThumbs}>
+        {images.map((src, index) => (
+          <span
+            key={src}
+            role="button"
+            tabIndex={0}
+            aria-label={`تصویر ${index + 1} دیکھیں`}
+            className={`${styles.galleryThumb} ${index === activeIndex ? styles.galleryThumbActive : ""}`}
+            onClick={(event) => selectImage(event, index)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                selectImage(event, index);
+              }
+            }}
+          >
+            <Image
+              src={src}
+              alt={`${title} — تھمب نیل ${index + 1}`}
+              fill
+              sizes="140px"
+              className={styles.galleryThumbImage}
+            />
+          </span>
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -62,14 +124,37 @@ function FeaturedUpdate({ update }) {
     : update.image
       ? [update.image]
       : [];
-  const textOnly = gallery.length === 0;
-  const multiImage = gallery.length > 1;
+  const videoSources = update.videos?.length
+    ? update.videos
+    : update.video
+      ? [update.video]
+      : [];
+  const hasVideo = videoSources.length > 0;
+  const textOnly = gallery.length === 0 && !hasVideo;
+  const multiImage = !hasVideo && gallery.length > 1;
 
   return (
     <article
-      className={`${styles.featuredCard} ${textOnly ? styles.featuredCardTextOnly : ""} ${update.stacked ? styles.featuredCardStacked : ""} ${multiImage ? styles.featuredCardGallery : ""}`}
+      className={`${styles.featuredCard} ${textOnly ? styles.featuredCardTextOnly : ""} ${update.stacked ? styles.featuredCardStacked : ""} ${multiImage ? styles.featuredCardGallery : ""} ${hasVideo ? styles.featuredCardVideo : ""}`}
     >
-      {gallery.length === 1 && (
+      {hasVideo && (
+        <div
+          className={`${styles.featuredVideoWrap} ${videoSources.length > 1 ? styles.featuredVideoGrid : ""}`}
+        >
+          {videoSources.map((src, index) => (
+            <video
+              key={src}
+              className={styles.featuredVideo}
+              src={src}
+              poster={update.image || gallery[index] || gallery[0]}
+              controls
+              playsInline
+              preload="metadata"
+            />
+          ))}
+        </div>
+      )}
+      {!hasVideo && gallery.length === 1 && (
         <div className={styles.featuredImageWrap}>
           <Image
             src={gallery[0]}
@@ -81,28 +166,8 @@ function FeaturedUpdate({ update }) {
           />
         </div>
       )}
-      {multiImage && (
-        <div className={styles.featuredGallery}>
-          {gallery.map((src, index) => (
-            <div
-              key={src}
-              className={`${styles.featuredGalleryItem} ${index === 0 ? styles.featuredGalleryHero : ""}`}
-            >
-              <Image
-                src={src}
-                alt={`${update.title} — تصویر ${index + 1}`}
-                fill
-                sizes={
-                  index === 0
-                    ? "(max-width: 768px) 100vw, 70vw"
-                    : "(max-width: 768px) 50vw, 30vw"
-                }
-                className={styles.featuredImage}
-                priority={index === 0}
-              />
-            </div>
-          ))}
-        </div>
+      {!hasVideo && multiImage && (
+        <FeaturedGallery images={gallery} title={update.title} />
       )}
       <div className={styles.featuredBody}>
         <span className={styles.featuredLabel} dir="rtl">
@@ -513,10 +578,21 @@ export default function DailyNewsSectionPage({ sectionId, onTabChange, activeTab
   if (!section) return null;
 
   const hasSidebar = section.childSections?.length > 0;
+  const isStoryDetail = section.dailyUpdates?.length === 1 && Boolean(section.dailyUpdates[0]?.excerpt);
 
   return (
     <div className={styles.sectionPage}>
       <div className={styles.inner}>
+        {isStoryDetail ? (
+          <button
+            type="button"
+            className={styles.backLink}
+            onClick={() => onTabChange?.("taza-tareen")}
+          >
+            ← تازہ ترین پر واپس
+          </button>
+        ) : null}
+
         <SectionHero section={section} />
 
         <div className={hasSidebar ? styles.bodyGrid : styles.bodyFull}>
@@ -530,7 +606,10 @@ export default function DailyNewsSectionPage({ sectionId, onTabChange, activeTab
 
           <div className={styles.mainPanel}>
             <FeaturedReport report={section.featuredReport} />
-            <FeedHeader title="روزانہ اپڈیٹ" label="تازہ ترین" />
+            <FeedHeader
+              title={isStoryDetail ? "تفصیلی رپورٹ" : "روزانہ اپڈیٹ"}
+              label={isStoryDetail ? "مکمل تفصیل" : "تازہ ترین"}
+            />
             <UpdatesFeed updates={section.dailyUpdates} />
             <PhotoGallery
               images={section.gallery}
@@ -546,23 +625,9 @@ export default function DailyNewsSectionPage({ sectionId, onTabChange, activeTab
 export function DailyNewsLatestFeed({ onTabChange }) {
   const allUpdates = getAllDailyUpdates();
   const categoryGroups = getUpdatesByCategory();
-  const featuredUpdate = allUpdates.find((u) => u.pinFirst) || allUpdates[0];
-  const secondPinned = allUpdates.filter(
-    (u) =>
-      u.pinSecond &&
-      !(
-        featuredUpdate &&
-        u.sectionId === featuredUpdate.sectionId &&
-        u.title === featuredUpdate.title &&
-        u.date === featuredUpdate.date
-      )
-  );
+  const pinnedUpdates = allUpdates.filter((u) => u.pinFirst || u.pinSecond);
   const hideUpdate = (u) =>
-    (featuredUpdate &&
-      u.sectionId === featuredUpdate.sectionId &&
-      u.title === featuredUpdate.title &&
-      u.date === featuredUpdate.date) ||
-    secondPinned.some(
+    pinnedUpdates.some(
       (p) =>
         p.sectionId === u.sectionId &&
         p.title === u.title &&
@@ -596,19 +661,9 @@ export function DailyNewsLatestFeed({ onTabChange }) {
         <div className={styles.mainPanel}>
           <FeedHeader title="تمام منصوبوں کی تازہ خبریں" label="تازہ ترین" />
 
-          {featuredUpdate && (
-            <button
-              type="button"
-              className={styles.featuredLink}
-              onClick={() => onTabChange?.(featuredUpdate.sectionId)}
-            >
-              <FeaturedUpdate update={featuredUpdate} />
-            </button>
-          )}
-
-          {secondPinned.length > 0 ? (
+          {pinnedUpdates.length > 0 ? (
             <div className={styles.updatesGrid}>
-              {secondPinned.map((update) => (
+              {pinnedUpdates.map((update) => (
                 <button
                   key={`${update.sectionId}-${update.date}-${update.title}`}
                   type="button"

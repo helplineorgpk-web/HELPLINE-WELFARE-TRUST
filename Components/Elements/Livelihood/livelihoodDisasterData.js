@@ -285,6 +285,89 @@ export const livelihoodDisasterCards = [
     ctaText: "Help Rebuild Communities",
     ctaHref: "/donation",
   },
+  {
+    slug: "flood-relief-ranatown-2026-alkitab-school",
+    title: "Flood Relief Ranatown 2026 Alkitab School",
+    description:
+      "When floodwater swallowed the lanes around Alkitab School, hunger arrived before help. Helpline teams waded through muddy streets to place warm meals in the hands of children and families who had nowhere dry to stand—and nowhere else to turn.",
+    image: "/img/ranatownflood/ranatownfloodhelp5.jpg",
+    headerImage: "/img/ranatownflood/ranatownfloodhelp1.jpg",
+    headerFullHeight: true,
+    hideHeaderText: true,
+    detailTitle: "Food Distribution at Alkitab School — Rana Town Flood 2026",
+    detailSections: [
+      {
+        title: "When the school became a lifeline",
+        paragraphs: [
+          "Alkitab School was meant for blackboards and morning assemblies—not for families standing knee-deep in floodwater, clutching empty stomachs and wet shoes. In Rana Town in 2026, the water rose faster than fear. Homes went under. Kitchens went cold. Children who should have been in class stood in brown water with nowhere safe to eat.",
+          "In that moment, a meal was not charity. It was dignity. It was the difference between a child going to sleep hungry and a child knowing someone still came for them.",
+        ],
+      },
+      {
+        title: "Food carried through the flood",
+        paragraphs: [
+          "Helpline Welfare Trust volunteers did not wait for the water to leave. They waded through submerged lanes in orange vests, carried heavy pots of cooked food through the streets, and set up distribution points where flood-hit families could reach them. Hot meals in sealed containers moved from tractor beds and relief tables into the hands of mothers, elders, and children still standing in the water.",
+          "Every container meant a family did not have to choose between dry ground and an empty plate. Every smile after a hard journey through the flood reminded our teams why they kept going when the streets were almost impassable.",
+        ],
+      },
+      {
+        title: "Why this work still matters",
+        paragraphs: [
+          "Floods take homes, harvests, and school days—but they should never take a child’s hope of a warm meal. The Alkitab School relief effort shows what on-ground compassion looks like when roads disappear and only determination remains: food delivered where it is hardest to reach, with care for the most vulnerable first.",
+          "Your support keeps teams like these moving—into the water, toward the hungry, until every flooded family around Alkitab School knows they were not forgotten.",
+        ],
+      },
+    ],
+    impactHighlights: [
+      "Warm meal distribution for flood-hit families near Alkitab School",
+      "Teams wading through submerged streets to reach those cut off",
+      "Priority support for children, elders, and households with nowhere dry to cook",
+    ],
+    imageGallery: [
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp1.jpg",
+        caption: "Flood emergency relief camp — food containers ready for distribution in standing water",
+      },
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp2.jpg",
+        caption: "Helpline volunteers serving meals to flood-affected families",
+      },
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp3.jpg",
+        caption: "Carrying cooked food through knee-deep floodwater in Rana Town lanes",
+      },
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp4.jpg",
+        caption: "On-ground food relief reaching households cut off by floodwater",
+      },
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp5.jpg",
+        caption: "Children receiving warm meals while standing in floodwater near Alkitab School",
+      },
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp6.jpg",
+        caption: "Mobile kitchen and relief team working through flooded streets",
+      },
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp7.jpg",
+        caption: "Hand-to-hand food distribution in difficult flood conditions",
+      },
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp8.jpg",
+        caption: "Families gathering for emergency meals during the Rana Town floods",
+      },
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp9.jpg",
+        caption: "Volunteers ensuring no flood-hit household is left hungry",
+      },
+      {
+        src: "/img/ranatownflood/ranatownfloodhelp10.jpg",
+        caption: "Alkitab School flood relief 2026 — compassion delivered through the water",
+      },
+    ],
+    ctaText: "Donate for Rana Town Flood Relief",
+    ctaHref: "/campaign/rana-town-flood-appeal",
+  },
 ];
 
 export function getLivelihoodDisasterBySlug(slug) {

@@ -19,6 +19,12 @@ export const campaignsData = [
       "/img/ranatownflood/ranatownflood9.png",
       "/img/ranatownflood/ranatownflood10.png",
       "/img/ranatownflood/ranatownflood11.png",
+      "/img/ranatownflood/ranatownfloodhelp1.jpg",
+      "/img/ranatownflood/ranatownfloodhelp3.jpg",
+      "/img/ranatownflood/ranatownfloodhelp5.jpg",
+      "/img/ranatownflood/ranatownfloodhelp7.jpg",
+      "/img/ranatownflood/ranatownfloodhelp8.jpg",
+      "/img/ranatownflood/ranatownfloodhelp10.jpg",
     ],
     donationPresets: [2500, 5000, 10000, 25000],
     longDescription:

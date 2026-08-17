@@ -1,57 +1,66 @@
-import React, { useState } from "react";
+import React, { useMemo, useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./LivelihoodSuccessStories.module.css";
+import { LIVELIHOOD_SUCCESS_STORIES } from "../../../data/livelihoodSuccessStoriesData";
 
-const STORIES = [
-  {
-    id: "majeed",
-    name: "Majeed",
-    tagline: "From Struggle to Strength",
-    snippet:
-      "Majeed: Rising Beyond Barriers Every morning, Majeed would wake up not to a day of comfort, but to a quiet battle; one that began the day he was born with a disability. In a world where physical strength often defines survival, Majid struggled not just with mobility, but with how others saw him: limited and dependent. But Majid never accepted that narrative. In a small home crowded with the needs...",
-    image: "/img/causes/majeed-story.jpg",
-    readMoreHref: "/cause",
-  },
-  {
-    id: "fatima",
-    name: "Fatima",
-    tagline: "Stitching a New Future",
-    snippet:
-      "Fatima, a young widow from rural Sindh, had no source of income and three children to feed. Through Helpline Welfare Trust vocational training program, she learned tailoring and received a sewing machine. Within months, she started her own small business from home, earning enough to send her children to school and put food on the table. Today, Fatima trains other women in her community...",
-    image: "/img/causes/DSC_0144.JPG",
-    readMoreHref: "/cause",
-  },
-  {
-    id: "ahmed",
-    name: "Ahmed",
-    tagline: "From Farmer to Entrepreneur",
-    snippet:
-      "Ahmed was a subsistence farmer in Tharparkar, barely growing enough to feed his family. After receiving climate-smart agriculture training from Helpline Welfare Trust, he diversified his crops and adopted water-efficient techniques. With a small livestock grant, he built a thriving poultry business alongside his farm. Ahmed now employs two other villagers and serves as a mentor to neighboring farmers...",
-    image: "/img/causes/DSC_0290.JPG",
-    readMoreHref: "/cause",
-  },
-];
+const AUTO_SLIDE_MS = 6500;
+
+function storyCardProps(story) {
+  return {
+    id: story.id,
+    name: story.name,
+    tagline: story.tagline,
+    snippet: story.snippet,
+    image: story.image,
+    readMoreHref: `/livelihood/success-stories/${story.id}`,
+  };
+}
 
 export default function LivelihoodSuccessStories() {
+  const stories = useMemo(
+    () => LIVELIHOOD_SUCCESS_STORIES.map(storyCardProps),
+    []
+  );
   const [currentIndex, setCurrentIndex] = useState(0);
-  const story = STORIES[currentIndex];
+  const [pauseAuto, setPauseAuto] = useState(false);
+  const story = stories[currentIndex];
 
-  const goPrev = () =>
-    setCurrentIndex((i) => (i === 0 ? STORIES.length - 1 : i - 1));
-  const goNext = () =>
-    setCurrentIndex((i) => (i === STORIES.length - 1 ? 0 : i + 1));
+  const goPrev = useCallback(() => {
+    setCurrentIndex((i) => (i === 0 ? stories.length - 1 : i - 1));
+  }, [stories.length]);
+
+  const goNext = useCallback(() => {
+    setCurrentIndex((i) => (i === stories.length - 1 ? 0 : i + 1));
+  }, [stories.length]);
+
+  useEffect(() => {
+    if (stories.length <= 1 || pauseAuto) return undefined;
+    const id = window.setInterval(goNext, AUTO_SLIDE_MS);
+    return () => window.clearInterval(id);
+  }, [stories.length, pauseAuto, goNext]);
 
   return (
-    <section className={styles.section}>
+    <section
+      className={styles.section}
+      aria-labelledby="success-stories-heading"
+      onMouseEnter={() => setPauseAuto(true)}
+      onMouseLeave={() => setPauseAuto(false)}
+    >
       <div className={styles.container}>
-        <h2 className={styles.title}>OUR SUCCESS STORIES</h2>
+        <h2 id="success-stories-heading" className={styles.title}>
+          OUR SUCCESS STORIES
+        </h2>
         <div className={styles.underline} />
         <p className={styles.subtitle}>
           This program has touched lives and created real impact. Explore these
           success stories to see the difference it made.
         </p>
-        <article className={styles.card}>
+        <article
+          className={styles.card}
+          aria-roledescription="carousel"
+          aria-label={`Success story ${currentIndex + 1} of ${stories.length}`}
+        >
           <div className={styles.cardLeft}>
             <div className={styles.imageWrap}>
               <Image
@@ -88,7 +97,7 @@ export default function LivelihoodSuccessStories() {
                 &#8249;
               </button>
               <span className={styles.navIndicator}>
-                {currentIndex + 1} / {STORIES.length}
+                {currentIndex + 1} / {stories.length}
               </span>
               <button
                 type="button"
