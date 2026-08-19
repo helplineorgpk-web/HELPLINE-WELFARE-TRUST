@@ -18,23 +18,31 @@ function formatCardDate(dateStr, timeStr) {
   return `${formatted} | ${timeStr}`;
 }
 
+function youtubeThumb(videoId) {
+  return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null;
+}
+
 function UpdateCard({ update, sectionTitle, showSection, horizontal }) {
-  const textOnly = !update.image;
+  const cardImage = update.image || youtubeThumb(update.youtubeId);
+  const textOnly = !cardImage;
   const cardText = update.excerpt || update.body;
+  const hasPlayBadge = Boolean(
+    update.video || update.videos?.length || update.youtubeId
+  );
   return (
     <article
       className={`${styles.updateCard} ${horizontal ? styles.updateCardHorizontal : ""} ${textOnly ? styles.updateCardTextOnly : ""}`}
     >
-      {update.image && (
+      {cardImage && (
         <div className={styles.cardImageWrap}>
           <Image
-            src={update.image}
+            src={cardImage}
             alt={update.title}
             fill
             sizes={horizontal ? "280px" : "(max-width: 768px) 100vw, 33vw"}
             className={styles.cardImage}
           />
-          {update.video || update.videos?.length ? (
+          {hasPlayBadge ? (
             <span className={styles.cardVideoBadge} aria-hidden>
               ▶
             </span>
@@ -129,15 +137,39 @@ function FeaturedUpdate({ update }) {
     : update.video
       ? [update.video]
       : [];
-  const hasVideo = videoSources.length > 0;
+  const youtubeId = update.youtubeId;
+  const hasVideo = videoSources.length > 0 || Boolean(youtubeId);
   const textOnly = gallery.length === 0 && !hasVideo;
-  const multiImage = !hasVideo && gallery.length > 1;
+  const multiImage = gallery.length > 1;
 
   return (
     <article
       className={`${styles.featuredCard} ${textOnly ? styles.featuredCardTextOnly : ""} ${update.stacked ? styles.featuredCardStacked : ""} ${multiImage ? styles.featuredCardGallery : ""} ${hasVideo ? styles.featuredCardVideo : ""}`}
     >
-      {hasVideo && (
+      {update.schoolName && (
+        <div className={styles.schoolHeadingBlock}>
+          <p className={styles.schoolHeading} dir="rtl">
+            {update.schoolName}
+          </p>
+          {update.schoolPlace ? (
+            <p className={styles.schoolPlace} dir="rtl">
+              {update.schoolPlace}
+            </p>
+          ) : null}
+        </div>
+      )}
+      {youtubeId && (
+        <div className={styles.featuredVideoWrap}>
+          <iframe
+            className={styles.featuredYoutube}
+            src={`https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1&playsinline=1`}
+            title={update.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      )}
+      {!youtubeId && hasVideo && (
         <div
           className={`${styles.featuredVideoWrap} ${videoSources.length > 1 ? styles.featuredVideoGrid : ""}`}
         >
@@ -166,7 +198,7 @@ function FeaturedUpdate({ update }) {
           />
         </div>
       )}
-      {!hasVideo && multiImage && (
+      {multiImage && (
         <FeaturedGallery images={gallery} title={update.title} />
       )}
       <div className={styles.featuredBody}>
@@ -492,6 +524,48 @@ function FeaturedReport({ report }) {
   );
 }
 
+function SectionMediaHeader({ section }) {
+  if (!section.youtubeId && !section.bannerImage) return null;
+  return (
+    <div className={styles.mediaHeader}>
+      {section.youtubeId && (
+        <>
+          <p className={styles.mediaHeaderTitle} dir="rtl">
+            {section.title}
+          </p>
+          <p className={styles.mediaHeaderSubtitle} dir="rtl">
+            ہندو مسلم سکھ عیسائی — سب کو میرا سلام
+          </p>
+        </>
+      )}
+      {section.youtubeId && (
+        <div className={styles.videoEmbedWrap}>
+          <iframe
+            className={styles.videoEmbed}
+            src={`https://www.youtube.com/embed/${section.youtubeId}`}
+            title={section.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      )}
+      {section.bannerImage && (
+        <div className={styles.pageBanner}>
+          <Image
+            src={section.bannerImage}
+            alt={section.title}
+            width={1600}
+            height={1131}
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            className={styles.pageBannerImg}
+            priority
+          />
+        </div>
+      )}
+    </div>
+  );
+}
+
 function SectionHero({ section }) {
   if (section.image) {
     return (
@@ -592,6 +666,8 @@ export default function DailyNewsSectionPage({ sectionId, onTabChange, activeTab
             ← تازہ ترین پر واپس
           </button>
         ) : null}
+
+        <SectionMediaHeader section={section} />
 
         <SectionHero section={section} />
 
