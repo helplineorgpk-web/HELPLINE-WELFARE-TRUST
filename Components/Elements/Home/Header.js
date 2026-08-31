@@ -62,17 +62,21 @@ const CAUSE_OPTIONS = [
 const heroSlides = [
   {
     image: "/img/mainimage.png",
+    imageMobile: "/img/mobilefirstimageslider.png",
     title: "HELPLINE WELFARE TRUST",
     subtitle: "Helpline Welfare Trust",
     link: "/",
     hideHeroText: true,
+    mobileFitContain: true,
   },
   {
     image: "/img/secondimageslider.png",
+    imageMobile: "/img/secondimagesliderbgmobile.png",
     title: "مواخاتِ مدینہ",
     subtitle: "بنیادی حقوق سب کیلئے / سب کے ساتھ",
     link: "/mawakhat-e-Madina",
     hideHeroText: true,
+    mobileFitContain: true,
   },
   {
     image: "/img/Campaigns/RamadanPackage2.webp",
@@ -320,6 +324,13 @@ export default function Header({ slides: slidesProp }) {
           -webkit-backface-visibility: hidden;
           transform: translate3d(0, 0, 0);
           will-change: transform;
+        }
+        .hero-slide picture {
+          position: absolute;
+          inset: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
         }
         .hero-slide .hero-slide-image {
           position: absolute !important;
@@ -629,6 +640,13 @@ export default function Header({ slides: slidesProp }) {
             height: 100% !important;
             min-height: 100% !important;
           }
+          .hero-slide-contain-mobile {
+            background: #e7f3fb;
+          }
+          .hero-slide-contain-mobile .hero-slide-image {
+            object-fit: contain;
+            object-position: center center;
+          }
           .hero-content {
             padding: 126px 20px 32px;
             justify-content: flex-start;
@@ -769,24 +787,44 @@ export default function Header({ slides: slidesProp }) {
       <section className="hero-section">
         <Swiper {...swiperConfig}>
           {memoizedSlides.map((slide) => {
-            const rawSrc =
-              isMobile && slide.imageMobile ? slide.imageMobile : slide.image;
-            const asset = getHeroAsset(rawSrc);
+            const desktopAsset = getHeroAsset(slide.image);
+            const mobileAsset = slide.imageMobile
+              ? getHeroAsset(slide.imageMobile)
+              : null;
+            const slideClass = slide.mobileFitContain
+              ? "hero-slide hero-slide-contain-mobile"
+              : "hero-slide";
             return (
-            <SwiperSlide key={slide.image} className="hero-slide">
-              <Image
-                src={asset.src}
-                alt={slide.title}
-                fill
-                priority={slide.priority}
-                loading={slide.priority ? "eager" : "lazy"}
-                fetchPriority={slide.priority ? "high" : "low"}
-                placeholder="blur"
-                blurDataURL={asset.blurDataURL}
-                sizes="100vw"
-                quality={70}
-                className="hero-slide-image"
-              />
+            <SwiperSlide key={slide.image} className={slideClass}>
+              {mobileAsset ? (
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcSet={mobileAsset.src}
+                  />
+                  <img
+                    src={desktopAsset.src}
+                    alt={slide.title}
+                    className="hero-slide-image"
+                    fetchPriority={slide.priority ? "high" : "low"}
+                    loading={slide.priority ? "eager" : "lazy"}
+                  />
+                </picture>
+              ) : (
+                <Image
+                  src={desktopAsset.src}
+                  alt={slide.title}
+                  fill
+                  priority={slide.priority}
+                  loading={slide.priority ? "eager" : "lazy"}
+                  fetchPriority={slide.priority ? "high" : "low"}
+                  placeholder="blur"
+                  blurDataURL={desktopAsset.blurDataURL}
+                  sizes="100vw"
+                  quality={70}
+                  className="hero-slide-image"
+                />
+              )}
             </SwiperSlide>
             );
           })}
