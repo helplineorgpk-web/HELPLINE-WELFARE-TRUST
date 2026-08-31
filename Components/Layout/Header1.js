@@ -121,24 +121,27 @@ export default function Header1({ headerOverDark = false }) {
           left: 0;
           right: 0;
           z-index: 9999;
-          background: transparent;
-          transition: background 0.3s ease, box-shadow 0.3s ease;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.92) 0%,
+            rgba(255, 255, 255, 0.78) 100%
+          );
+          backdrop-filter: blur(18px) saturate(140%);
+          -webkit-backdrop-filter: blur(18px) saturate(140%);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.95);
+          box-shadow:
+            0 4px 24px rgba(255, 255, 255, 0.35),
+            0 8px 24px rgba(15, 23, 42, 0.06),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
+          transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
         }
-        .hdf-header.scrolled {
-          background: #fff;
-          box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        }
-        .hdf-header.over-dark:not(.scrolled):not(.mobile-menu-open) {
-          background: rgba(17, 24, 39, 0.45);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-        }
+        .hdf-header.scrolled,
         .hdf-header.mobile-menu-open {
-          background: #fff !important;
+          background: #fff;
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+          border-bottom-color: transparent;
           box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        }
-        .hdf-header.over-dark:not(.scrolled):not(.mobile-menu-open) .hdf-hamburger {
-          color: #fff;
         }
         .hdf-header-inner {
           max-width: 1400px;
@@ -157,6 +160,7 @@ export default function Header1({ headerOverDark = false }) {
           height: 65px;
           width: auto;
           object-fit: contain;
+          filter: drop-shadow(0 1px 2px rgba(255, 255, 255, 0.9));
         }
         .hdf-nav-wrapper {
           flex: 1;
@@ -449,7 +453,7 @@ export default function Header1({ headerOverDark = false }) {
             <div className="hdf-nav-wrapper">
               <NavFullscreen
                 scrolled={scrolled}
-                lightNav={headerOverDark && !scrolled && !mobileMenuOpen}
+                lightNav={false}
               />
             </div>
 

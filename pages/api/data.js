@@ -342,7 +342,7 @@ export const HelplineData = {
     {
       id: 24,
       category: ["Own School"],
-      img: "/img/causes/alkitabghani1.jpg",
+      img: "/img/chanigothlatestview.jpg",
       img1: "/img/causes/1.jpg",
       img2: "/img/causes/2.jpg",
       img3: "/img/causes/chani11.jpg",
@@ -381,6 +381,38 @@ export const HelplineData = {
       detail3:
         "We also provide additional support to students who require it, such as counselling and extra academic assistance, to ensure that they reach their full potential. Al-Kitab is more than just a school; it is a community that is committed to creating a better future for our students and their families. We are proud of the work that we do and are dedicated to continuing to provide support to children in need.",
       color: "#65cabb",
+    },
+    {
+      id: 49,
+      category: ["Own School"],
+      img: "/img/umarkotdata/PHOTO-2026-08-27-14-27-11.jpg",
+      img1: "/img/umarkotdata/PHOTO-2026-08-27-12-25-57.jpg",
+      img2: "/img/umarkotdata/PHOTO-2026-08-27-12-51-35.jpg",
+      img3: "/img/umarkotdata/PHOTO-2026-08-27-12-51-29.jpg",
+      img4: "/img/umarkotdata/PHOTO-2026-08-27-12-51-34.jpg",
+      img5: "/img/umarkotdata/PHOTO-2026-08-27-12-51-27.jpg",
+      img6: "/img/umarkotdata/PHOTO-2026-08-27-12-40-39.jpg",
+      img7: "/img/umarkotdata/PHOTO-2026-08-27-12-40-392.jpg",
+      img8: "/img/umarkotdata/PHOTO-2026-08-27-14-27-11.jpg",
+      ActualName: "Al-Kitab Secondary School, Umar Kot Muridke",
+      detail:
+        "Helpline's own campus in Umar Kot, Muridke — purpose-built classrooms, Quran learning, and daily attendance.",
+      description:
+        "Al-Kitab Secondary School in Umar Kot, Muridke is a Helpline Welfare Trust owned campus serving children from surrounding low-income families. The purpose-built two-storey building — red brick, arched windows, white domes, and a central courtyard — gives students a stable, dignified place to learn. Alongside secondary education, the school runs Nazira and Hifz classes under qualified Qaris, with a daily attendance register so every child is accounted for. Grounds along the boundary wall are being planted so the campus is not only a school but a safe, cared-for environment.",
+      desc: "Al-Kitab Education System School, Umar Kot (Muridke).",
+      historyTitle: "A Purpose-Built Campus in Umar Kot, Muridke",
+      UpgradeTitle: "Quran Learning with Daily Discipline",
+      FutureTitle: "Growing with the Community",
+      detail2:
+        "The Muridke campus was established so children in Umar Kot and nearby settlements would not have to travel far, or drop out, for secondary schooling. The architecture itself signals permanence: a full institutional building rather than rented rooms, with a courtyard for assembly, classrooms along a long stone-tiled facade, and a protected compound. For families who could not afford private fees, this campus is the difference between a child remaining at home and a child sitting in class.",
+      detail3:
+        "Hifz and Nazira groups led by Qari Naeem Ullah and Qari Mushtaq Ahmed are recorded in the school’s daily attendance ledger — total strength around 35 students across the two groups, with present and absent marked each day. This is not paperwork for its own sake. It is how Helpline keeps a promise: every enrolled child is seen, followed, and invited back if they miss a day without reason. Academic classes and character building sit beside Quran education so students grow in knowledge and adab together.",
+      detail4:
+        "Planting along the boundary wall, a secure fence, and continued investment in classrooms are the next steps for this campus. Helpline’s aim is the same as at Rana Town, Manawan, and Gojra: keep seats open for children who cannot pay, strengthen teachers, and let Umar Kot Muridke become a lasting centre of free or affordable education for the Sheikhupura belt.",
+      color: "#f15b43",
+      link: "/img/umarkotdata/VIDEO-2026-08-27-12-24-32.mp4",
+      link2: "/img/umarkotdata/VIDEO-2026-08-27-12-40-20.mp4",
+      link3: "/img/umarkotdata/VIDEO-2026-08-27-12-51-23.mp4",
     },
   ],
   adoptedSchools: [
@@ -1230,7 +1262,7 @@ export const HelplineData = {
     {
       id: 24,
       category: ["Education"],
-      img: "/img/causes/alkitabghani1.jpg",
+      img: "/img/chanigothlatestview.jpg",
       img1: "/img/causes/1.jpg",
       img2: "/img/causes/2.jpg",
       img3: "/img/causes/chani11.jpg",

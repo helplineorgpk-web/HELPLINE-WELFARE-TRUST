@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./OurImpact.module.css";
 
 const STATS = [
-  { value: "8", label: "Own Schools in Punjab" },
+  { value: "9", label: "Own Schools in Punjab" },
   { value: "15", label: "Adopted Schools" },
   { value: "1", label: "Orphanage Home" },
   { value: "1", label: "Vocational Training Center" },
-  { value: "23+", label: "Schools Running Across Pakistan" },
+  { value: "24+", label: "Schools Running Across Pakistan" },
   { value: "6727+", label: "Students Enrollment" },
   { value: "67%", label: "Girl's Enrollment Ensured" },
   { value: "100%", label: "Digitally Connected Focus" },

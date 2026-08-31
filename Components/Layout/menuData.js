@@ -12,6 +12,7 @@ export const menuData = [
         { label: "Our Leadership", href: "/organization" },
         { label: "Registration", href: "/registration" },
         { label: "Our Journey", href: "/ourjourney" },
+        { label: "Our Presence", href: "/ourPresence" },
       ],
     },
   },

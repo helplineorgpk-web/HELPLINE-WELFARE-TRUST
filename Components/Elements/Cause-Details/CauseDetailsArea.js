@@ -1,6 +1,61 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+
+const mediaWrapStyle = {
+  position: "relative",
+  width: "100%",
+  maxWidth: "800px",
+  margin: "0 auto",
+  paddingBottom: "56.25%",
+  height: 0,
+  overflow: "hidden",
+  borderRadius: "12px",
+  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+};
+
+const mediaFillStyle = {
+  position: "absolute",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  border: 0,
+  objectFit: "cover",
+  background: "#111",
+};
+
+function MediaEmbed({ src, title }) {
+  if (!src) return null;
+  const isFile = /\.(mp4|webm|ogg)(\?|$)/i.test(src);
+  return (
+    <div style={{ textAlign: "center", margin: "2rem 0" }}>
+      <div style={mediaWrapStyle}>
+        {isFile ? (
+          <video
+            src={src}
+            title={title}
+            controls
+            playsInline
+            preload="metadata"
+            style={mediaFillStyle}
+          />
+        ) : (
+          <iframe
+            src={src}
+            title={title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            style={mediaFillStyle}
+          />
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function CauseDetailsArea({
   title,
   image,
@@ -44,38 +99,7 @@ export default function CauseDetailsArea({
                   </div>
                   <h4 className="details_title">{actualName || title}</h4>
                   <p>{detail}</p>
-                  <div style={{ textAlign: "center", margin: "2rem 0" }}>
-                    {link && (
-                      <div style={{
-                        position: "relative",
-                        width: "100%",
-                        maxWidth: "800px",
-                        margin: "0 auto",
-                        paddingBottom: "56.25%", // 16:9 aspect ratio
-                        height: 0,
-                        overflow: "hidden",
-                        borderRadius: "12px",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
-                      }}>
-                        <iframe
-                          src={link}
-                          title={`${actualName || title} - Video`}
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerPolicy="strict-origin-when-cross-origin"
-                          allowFullScreen
-                          style={{
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            border: 0
-                          }}
-                        ></iframe>
-                      </div>
-                    )}
-                  </div>
+                  <MediaEmbed src={link} title={`${actualName || title} - Video`} />
                   {img1 && (
                     <div className="row mb-45">
                       <div className="col-6 w_img">
@@ -88,39 +112,7 @@ export default function CauseDetailsArea({
                   )}
                   <h4 className="details_title">{historyTitle}</h4>
                   <p>{detail2}</p>
-                  <div style={{ textAlign: "center", margin: "2rem 0" }}>
-
-             {link1 && (
-              <div style={{
-                position: "relative",
-                width: "100%",
-                maxWidth: "800px",
-                margin: "0 auto",
-                paddingBottom: "56.25%", // 16:9 aspect ratio
-                height: 0,
-                overflow: "hidden",
-                borderRadius: "12px",
-                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
-              }}>
-                <iframe
-                  src={link1}
-                  title={`${actualName || title} - History Video`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    border: 0
-                  }}
-                ></iframe>
-              </div>
-             )}
-                  </div>
+                  <MediaEmbed src={link1} title={`${actualName || title} - History Video`} />
                   {img3 && (
                     <div className="row mb-45">
                       <div className="col-6 w_img">
@@ -135,40 +127,7 @@ export default function CauseDetailsArea({
                   <h4 className="details_title">{upgradeTitle}</h4>
 
                   <p>{detail3}</p>
-                  <div style={{ textAlign: "center", margin: "2rem 0" }}>
-
-                      {link2 && (
-                        <div style={{
-                          position: "relative",
-                          width: "100%",
-                          maxWidth: "800px",
-                          margin: "0 auto",
-                          paddingBottom: "56.25%", // 16:9 aspect ratio
-                          height: 0,
-                          overflow: "hidden",
-                          borderRadius: "12px",
-                          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
-                        }}>
-                          <iframe
-                            src={link2}
-                            title={`${actualName || title} - Upgrade Video`}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                            style={{
-                              position: "absolute",
-                              top: 0,
-                              left: 0,
-                              width: "100%",
-                              height: "100%",
-                              border: 0
-                            }}
-                          ></iframe>
-                        </div>
-           )}
-
-                  </div>
+                  <MediaEmbed src={link2} title={`${actualName || title} - Upgrade Video`} />
                   {img5 && (
                     <div className="row mb-45">
                       <div className="col-6 w_img">
@@ -182,38 +141,7 @@ export default function CauseDetailsArea({
                   <h4 className="details_title">{futureTitle}</h4>
 
                   <p>{detail4}</p>
-                  <div style={{ textAlign: "center", margin: "2rem 0" }}>
-                       {link3 && (
-                        <div style={{
-                          position: "relative",
-                          width: "100%",
-                          maxWidth: "800px",
-                          margin: "0 auto",
-                          paddingBottom: "56.25%", // 16:9 aspect ratio
-                          height: 0,
-                          overflow: "hidden",
-                          borderRadius: "12px",
-                          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
-                        }}>
-                          <iframe
-                            src={link3}
-                            title={`${actualName || title} - Future Video`}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                            style={{
-                              position: "absolute",
-                              top: 0,
-                              left: 0,
-                              width: "100%",
-                              height: "100%",
-                              border: 0
-                            }}
-                          ></iframe>
-                        </div>
-                    )}
-                  </div>
+                  <MediaEmbed src={link3} title={`${actualName || title} - Future Video`} />
                   {img7 && (
                     <div className="row mb-45">
                       <div className="col-6 w_img">

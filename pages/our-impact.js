@@ -56,7 +56,7 @@ const EDUCATION_STATS = [
   { value: "2,300+", label: "Teachers Trained" },
   { value: "63%", label: "Girls' Enrollment Ensured" },
   { value: "100%", label: "Digitally Connected Schools" },
-  { value: "8", label: "Own Schools in Punjab" },
+  { value: "9", label: "Own Schools in Punjab" },
   { value: "15", label: "Adopted Schools" },
   { value: "1", label: "Orphanage Home" },
   { value: "1", label: "Vocational Training Center" },

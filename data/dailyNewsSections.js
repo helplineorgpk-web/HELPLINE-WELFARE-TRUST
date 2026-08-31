@@ -2,6 +2,61 @@ const TODAY = "2026-07-15";
 const YESTERDAY = "2026-07-14";
 const TWO_DAYS_AGO = "2026-07-13";
 
+const UMARKOT_MURIDKE_BUILDING =
+  "/img/umarkotdata/PHOTO-2026-08-27-14-27-11.jpg";
+
+const UMARKOT_MURIDKE_PHOTOS = [
+  UMARKOT_MURIDKE_BUILDING,
+  "/img/umarkotdata/PHOTO-2026-08-27-12-25-57.jpg",
+  "/img/umarkotdata/PHOTO-2026-08-27-12-51-35.jpg",
+  "/img/umarkotdata/PHOTO-2026-08-27-12-51-29.jpg",
+  "/img/umarkotdata/frames/DJI_0323-01.jpg",
+  "/img/umarkotdata/frames/DJI_0323-08.jpg",
+  "/img/umarkotdata/frames/DJI_0324-03.jpg",
+  "/img/umarkotdata/frames/DJI_0324-15.jpg",
+  "/img/umarkotdata/frames/DJI_0325-01.jpg",
+  "/img/umarkotdata/frames/DJI_0325-08.jpg",
+];
+
+const UMARKOT_MURIDKE_VIDEOS = [
+  "/img/umarkotdata/VIDEO-2026-08-27-12-24-32.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-24-45.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-24-47.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-24-49.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-20.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-39.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-41.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-412.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-42.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-422.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-423.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-424.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-425.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-426.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-427.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-428.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-429.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4210.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4211.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4212.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4213.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4214.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4215.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4216.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4217.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4218.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4219.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4220.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4221.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4222.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4223.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4224.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-40-4225.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-51-23.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-51-26.mp4",
+  "/img/umarkotdata/VIDEO-2026-08-27-12-51-34.mp4",
+];
+
 /** Feed order on تازہ ترین: disaster (urgent) → education → health → other */
 export const NEWS_CATEGORY_ORDER = ["disaster", "education", "health", "other"];
 
@@ -17,11 +72,11 @@ export const DAILY_NEWS_SECTIONS = {
     id: "taleem-overview",
     category: "education",
     title: "تعلیم و اسکول — روزانہ مجموعی رپورٹ",
-    subtitle: "ہیلپ لائن کے 8 اپنے اسکولوں کی آج کی پیش رفت",
+    subtitle: "ہیلپ لائن کے 9 اپنے اسکولوں کی آج کی پیش رفت",
     location: "پنجاب و سندھ",
     image: "/img/causes/DJI_0010.JPG",
     stats: [
-      { label: "اپنے اسکول", value: "8" },
+      { label: "اپنے اسکول", value: "9" },
       { label: "کل طلبہ", value: "5,000+" },
       { label: "مفت تعلیم", value: "75٪+" },
     ],
@@ -229,6 +284,7 @@ export const DAILY_NEWS_SECTIONS = {
     ],
     childSections: [
       "school-alkitab-rana",
+      "school-alkitab-umarkot-muridke",
       "alkitab-milli-naghme-2026",
       "nazriya-takreeri-muqabla-2026",
       "nazriya-masawari-muqabla-2026",
@@ -442,7 +498,7 @@ export const DAILY_NEWS_SECTIONS = {
     cardTag: "الکتاب سکول، حاصل لاڑ، چنی گوٹھ",
     subtitle: "ضلع بہاولپور — 14 اگست کی پُروقار تقریب",
     location: "حاصل لاڑ، چنی گوٹھ، ضلع بہاولپور",
-    image: "/img/chanigothnew1.jpg",
+    image: "/img/chanigothlatestview.jpg",
     stats: [
       { label: "تقریب", value: "14 اگست" },
       { label: "جذبہ", value: "حب الوطنی" },
@@ -468,12 +524,10 @@ export const DAILY_NEWS_SECTIONS = {
 یہ تقریب صرف جشن نہیں تھی — یہ ان اساتذہ کی محنت کا اعتراف تھی جنہوں نے بچوں کو تیار کیا؛ ان والدین کا فخر تھی جن کے بچے اسٹیج پر کھڑے تھے؛ اور ہیلپ لائن ویلفیئر ٹرسٹ کے اس وژن کی جھلک تھی کہ ہر بچہ تعلیم بھی پائے اور وطن سے محبت بھی سیکھے۔
 
 اللہ تعالیٰ ہمارے وطن پاکستان کو ہمیشہ سلامت رکھے، ان بچوں کو علم و ایمان کی دولت عطا فرمائے، اور ہیلپ لائن کو توفیق دے کہ ہر سال اسی جوش و جذبے کے ساتھ آزادی کا یہ دن منایا جائے۔ پاکستان زندہ باد! آمین ثم آمین`,
-        image: "/img/chanigothnew1.jpg",
+        image: "/img/chanigothlatestview.jpg",
         images: [
+          "/img/chanigothlatestview.jpg",
           "/img/chanigothnew1.jpg",
-          "/img/chanigothnew2.jpg",
-          "/img/chanigothnew3.jpg",
-          "/img/chanigothnew4.jpg",
           "/img/chanigothnew5.jpg",
         ],
         videos: [
@@ -896,7 +950,7 @@ export const DAILY_NEWS_SECTIONS = {
     title: "الکتاب پرائمری سکول",
     subtitle: "چانی گوٹھ، بہاولپور",
     location: "احمد پور شرقیہ، بہاولپور",
-    image: "/img/causes/alkitabghani1.jpg",
+    image: "/img/chanigothlatestview.jpg",
     stats: [
       { label: "طلبہ", value: "83" },
       { label: "اساتذہ", value: "6" },
@@ -904,6 +958,12 @@ export const DAILY_NEWS_SECTIONS = {
     ],
     summary:
       "2021 میں 15 بچوں سے شروع — آج 83 طلبہ اور 6 اساتذہ۔ گرین گروتھ انیشی ایٹو بھی جاری۔",
+    gallery: [
+      "/img/chanigothlatestview.jpg",
+      "/img/causes/alkitabghani1.jpg",
+      "/img/causes/chani5.jpg",
+      "/img/causes/chani11.jpg",
+    ],
     dailyUpdates: [
       {
         date: TODAY,
@@ -1018,6 +1078,86 @@ export const DAILY_NEWS_SECTIONS = {
         title: "کیریئر مشاورت — ٹیکنیکل فیلڈز کی راہنمائی",
         body: "طلبہ کو الیکٹریکل، IT اور ووکیشنل کورسز کے بارے میں بریفنگ دی گئی۔ مستحق طلبہ کو اسکالرشپ اور مسلسل رہنمائی کا وعدہ کیا گیا تاکہ غربت کی وجہ سے ہنر سیکھنا نہ رک سکے۔",
         image: "/img/causes/alkitab2.jpg",
+      },
+    ],
+  },
+
+  "school-alkitab-umarkot-muridke": {
+    id: "school-alkitab-umarkot-muridke",
+    category: "education",
+    title: "الکتاب سیکنڈری سکول — عمر کوٹ مریدکے",
+    cardTag: "الکتاب — عمر کوٹ مریدکے",
+    subtitle: "ہیلپ لائن کا اپنا نیا کیمپس — مقصدی عمارت، حفظ و ناظرہ، اور روزانہ حاضری",
+    location: "عمر کوٹ، مریدکے — شیخوپورہ",
+    image: UMARKOT_MURIDKE_BUILDING,
+    stats: [
+      { label: "طلبہ", value: "35+" },
+      { label: "حفظ و ناظرہ", value: "فعال" },
+      { label: "کیمپس", value: "مکمل عمارت" },
+    ],
+    summary:
+      "مریدکے کے عمر کوٹ میں الکتاب سیکنڈری سکول ہیلپ لائن ویلفیئر ٹرسٹ کا اپنا ادارہ ہے۔ سرخ اینٹوں کی مقصدی عمارت، سفید گنبد، صحن، سبز باغات، اور حفظ و ناظرہ کی باقاعدہ کلاسیں — یہ صرف اینٹیں نہیں، محروم بچوں کے لیے ایک پورا تعلیمی گھر ہے۔",
+    gallery: UMARKOT_MURIDKE_PHOTOS,
+    videos: UMARKOT_MURIDKE_VIDEOS,
+    videoPoster: UMARKOT_MURIDKE_BUILDING,
+    dailyUpdates: [
+      {
+        date: "2026-08-27",
+        time: "02:30 PM",
+        schoolName: "الکتاب سیکنڈری سکول",
+        schoolPlace: "عمر کوٹ، مریدکے — شیخوپورہ، پنجاب",
+        title: "الکتاب عمر کوٹ مریدکے ",
+        excerpt:
+          "مریدکے کے عمر کوٹ میں الکتاب کی مقصدی عمارت تیار ہے: سفید گنبد، سرخ اینٹیں، صحن، اور بچے جو اب کلاس روم میں بیٹھے قرآن اور کتاب دونوں پڑھ رہے ہیں۔ یہ ہیلپ لائن کا اپنا نیا ادارہ ہے۔",
+        body: `کچھ عمارتیں صرف اینٹ اور چھت ہوتی ہیں — اور کچھ عمارتیں ایک پورے محلے کا مستقبل بن جاتی ہیں۔ مریدکے کے عمر کوٹ میں کھڑی یہ سرخ اینٹوں والی دو منزلہ عمارت، سفید گنبدوں اور محراب دار کھڑکیوں کے ساتھ، آج وہی مستقبل ہے: الکتاب سیکنڈری سکول — ہیلپ لائن ویلفیئر ٹرسٹ کا اپنا ادارہ۔
+
+جب دور سے دیکھو تو صحن میں سکول کی گاڑی کھڑی ہے، سفید گنبد آسمان کو چھوتے ہیں، اور لمبی دیوار پر ایک جیسی کھڑکیاں صف میں کھڑی ہیں — گویا ہر کھڑکی کے پیچھے ایک بچے کی کہانی منتظر ہے۔ یہ وہ بستی ہے جہاں بہت سے گھرانوں کے لیے معیاری سیکنڈری تعلیم اب بھی دور کی چیز تھی۔ آج وہی بچے اس مقصدی کیمپس میں داخل ہو رہے ہیں۔
+
+یہ صرف دیواروں کا افتتاح نہیں۔ اندر حفظ و ناظرہ کی کلاسیں چل رہی ہیں — قاری نعیم اللہ اور قاری مشتاق احمد کی نگرانی میں بچے قرآن پڑھ رہے ہیں، اور روزنامچہ حاضری باقاعدہ لکھا جا رہا ہے۔ باہر باغ کی قطاروں میں نئے پودے لگے ہیں، سرخ باڑ اور اونچی دیوار کے ساتھ محفوظ احاطہ ہے، تاکہ بچہ سکول کو گھر جیسا محسوس کرے۔
+
+ہیلپ لائن کا وعدہ یہاں بھی وہی ہے جو رانا ٹاؤن، مناوان اور گوجرہ میں ہے: تعلیم مفت یا بقدرِ استطاعت، کردار سازی کے ساتھ، اور کوئی بچہ غربت کی وجہ سے دروازے سے واپس نہ جائے۔ عمر کوٹ مریدکے کا یہ کیمپس اسی وعدے کی نئی اینٹ ہے۔
+
+اللہ تعالیٰ اس ادارے کو علم، ایمان اور برکت سے بھر دے؛ یہاں پڑھنے والے ہر بچے کو بلندی عطا فرمائے؛ اساتذہ کو صبر اور اجر دے؛ اور ہیلپ لائن کو توفیق دے کہ مریدکے کے اس کیمپس سے مزید روشنی پھیلے۔ آمین ثم آمین`,
+        image: UMARKOT_MURIDKE_BUILDING,
+        images: [
+          UMARKOT_MURIDKE_BUILDING,
+          "/img/umarkotdata/PHOTO-2026-08-27-12-25-57.jpg",
+          "/img/umarkotdata/PHOTO-2026-08-27-12-51-35.jpg",
+        ],
+        video: UMARKOT_MURIDKE_VIDEOS[0],
+        pinFirst: true,
+        pinStart: true,
+        stacked: true,
+      },
+      {
+        date: "2026-08-27",
+        time: "12:40 PM",
+        title: "روزانہ حاضری — حفظ و ناظرہ کی باقاعدہ کلاس",
+        body: "الکتاب سیکنڈری سکول عمر کوٹ کے روزنامچہ حاضری میں قاری نعیم اللہ اور قاری مشتاق احمد کی جماعتیں درج ہیں۔ پندرہ جولائی کو کل ۳۵ طلبہ میں سے ۲۵ حاضر رہے — رخصت اور بیماری کی جگہ بلاوجہ غیر حاضری کو نوٹ کیا گیا تاکہ کسی بچے کا سلسلہ نہ ٹوٹے۔ یہ کاپی صرف نمبر نہیں لکھتی؛ یہ بتاتی ہے کہ ہر بچے کا حساب رکھا جا رہا ہے۔",
+        image: "/img/umarkotdata/PHOTO-2026-08-27-12-40-39.jpg",
+        images: [
+          "/img/umarkotdata/PHOTO-2026-08-27-12-40-39.jpg",
+          "/img/umarkotdata/PHOTO-2026-08-27-12-40-392.jpg",
+        ],
+        stacked: true,
+      },
+      {
+        date: "2026-08-27",
+        time: "12:51 PM",
+        title: "کیمپس کے باغات — دیوار کے ساتھ سبز قطار",
+        body: "سکول کی اونچی دیوار کے ساتھ پھول اور پودوں کی قطاریں لگائی جا رہی ہیں۔ سرخ باڑ احاطے کو سڑک سے جدا کرتی ہے، اور بچوں کے لیے محفوظ، صاف اور سبز ماحول تیار ہو رہا ہے۔ عمارت کے ساتھ زمین بھی تربیت دیتی ہے — کہ علم کے گھر میں حسن اور حفاظت دونوں فرض ہیں۔",
+        image: "/img/umarkotdata/PHOTO-2026-08-27-12-51-29.jpg",
+        images: [
+          "/img/umarkotdata/PHOTO-2026-08-27-12-51-29.jpg",
+          "/img/umarkotdata/PHOTO-2026-08-27-12-51-34.jpg",
+          "/img/umarkotdata/PHOTO-2026-08-27-12-51-27.jpg",
+        ],
+        videos: [
+          "/img/umarkotdata/VIDEO-2026-08-27-12-51-23.mp4",
+          "/img/umarkotdata/VIDEO-2026-08-27-12-51-26.mp4",
+          "/img/umarkotdata/VIDEO-2026-08-27-12-51-34.mp4",
+        ],
+        stacked: true,
       },
     ],
   },
@@ -2111,6 +2251,7 @@ export function getSectionLabel(id) {
     adopted: "اپنائے ہوئے اسکول",
     "gbps-nimro-summer-opening": "گرمیوں کی چھٹیاں — نمرو شریف",
     "alkitab-milli-naghme-2026": "جشنِ آزادی — ملی نغموں کا مقابلہ 2026",
+    "school-alkitab-umarkot-muridke": "الکتاب سیکنڈری — عمر کوٹ مریدکے",
     "alkitab-matric-result-2026": "میٹرک سالانہ نتیجہ 2026 — الکتاب",
     "irtiqa-matric-result-2026": "میٹرک سالانہ نتیجہ 2026 — ارتقاءِ اطفال",
     health: "صحت و طبی امداد",

@@ -22,6 +22,104 @@ function youtubeThumb(videoId) {
   return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null;
 }
 
+function ImageLightbox({ images, index, title, onClose, onChange }) {
+  const total = images?.length || 0;
+  const current = images?.[index];
+
+  React.useEffect(() => {
+    if (!current) return undefined;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") {
+        onClose();
+        return;
+      }
+      if (total < 2) return;
+      if (event.key === "ArrowRight") {
+        onChange((index + 1) % total);
+      } else if (event.key === "ArrowLeft") {
+        onChange((index - 1 + total) % total);
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [current, index, onChange, onClose, total]);
+
+  if (!current) return null;
+
+  const goPrev = (event) => {
+    event.stopPropagation();
+    onChange((index - 1 + total) % total);
+  };
+
+  const goNext = (event) => {
+    event.stopPropagation();
+    onChange((index + 1) % total);
+  };
+
+  return (
+    <div
+      className={styles.lightboxOverlay}
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label={title || "تصویر"}
+    >
+      <button
+        type="button"
+        className={styles.lightboxClose}
+        onClick={onClose}
+        aria-label="بند کریں"
+      >
+        ×
+      </button>
+      {total > 1 ? (
+        <button
+          type="button"
+          className={`${styles.lightboxNav} ${styles.lightboxPrev}`}
+          onClick={goPrev}
+          aria-label="پچھلی تصویر"
+        >
+          ‹
+        </button>
+      ) : null}
+      <div
+        className={styles.lightboxStage}
+        onClick={(event) => event.stopPropagation()}
+      >
+        <Image
+          key={current}
+          src={current}
+          alt={`${title || "تصویر"} — ${index + 1}`}
+          fill
+          sizes="100vw"
+          className={styles.lightboxImage}
+          priority
+        />
+      </div>
+      {total > 1 ? (
+        <button
+          type="button"
+          className={`${styles.lightboxNav} ${styles.lightboxNext}`}
+          onClick={goNext}
+          aria-label="اگلی تصویر"
+        >
+          ›
+        </button>
+      ) : null}
+      <p className={styles.lightboxCounter} dir="rtl">
+        {index + 1} / {total}
+      </p>
+    </div>
+  );
+}
+
 function UpdateCard({ update, sectionTitle, showSection, horizontal }) {
   const cardImage = update.image || youtubeThumb(update.youtubeId);
   const textOnly = !cardImage;
@@ -77,6 +175,7 @@ function UpdateCard({ update, sectionTitle, showSection, horizontal }) {
 
 function FeaturedGallery({ images, title }) {
   const [activeIndex, setActiveIndex] = React.useState(0);
+  const [lightboxIndex, setLightboxIndex] = React.useState(null);
   const selectImage = (event, index) => {
     event.preventDefault();
     event.stopPropagation();
@@ -85,7 +184,12 @@ function FeaturedGallery({ images, title }) {
 
   return (
     <div className={styles.featuredGallery}>
-      <div className={styles.galleryMain}>
+      <button
+        type="button"
+        className={styles.galleryMain}
+        onClick={() => setLightboxIndex(activeIndex)}
+        aria-label="تصویر بڑے سائز میں دیکھیں"
+      >
         <Image
           key={images[activeIndex]}
           src={images[activeIndex]}
@@ -96,7 +200,7 @@ function FeaturedGallery({ images, title }) {
           className={styles.galleryMainImage}
           priority
         />
-      </div>
+      </button>
       <div className={styles.galleryThumbs}>
         {images.map((src, index) => (
           <span
@@ -105,7 +209,15 @@ function FeaturedGallery({ images, title }) {
             tabIndex={0}
             aria-label={`تصویر ${index + 1} دیکھیں`}
             className={`${styles.galleryThumb} ${index === activeIndex ? styles.galleryThumbActive : ""}`}
-            onClick={(event) => selectImage(event, index)}
+            onClick={(event) => {
+              if (index === activeIndex) {
+                event.preventDefault();
+                event.stopPropagation();
+                setLightboxIndex(index);
+                return;
+              }
+              selectImage(event, index);
+            }}
             onKeyDown={(event) => {
               if (event.key === "Enter" || event.key === " ") {
                 selectImage(event, index);
@@ -122,7 +234,47 @@ function FeaturedGallery({ images, title }) {
           </span>
         ))}
       </div>
+      <ImageLightbox
+        images={images}
+        index={lightboxIndex}
+        title={title}
+        onClose={() => setLightboxIndex(null)}
+        onChange={(next) => {
+          setLightboxIndex(next);
+          setActiveIndex(next);
+        }}
+      />
     </div>
+  );
+}
+
+function FeaturedSingleImage({ src, title }) {
+  const [open, setOpen] = React.useState(false);
+  return (
+    <>
+      <button
+        type="button"
+        className={styles.featuredImageWrap}
+        onClick={() => setOpen(true)}
+        aria-label="تصویر بڑے سائز میں دیکھیں"
+      >
+        <Image
+          src={src}
+          alt={title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className={styles.featuredImage}
+          priority
+        />
+      </button>
+      <ImageLightbox
+        images={[src]}
+        index={open ? 0 : null}
+        title={title}
+        onClose={() => setOpen(false)}
+        onChange={() => {}}
+      />
+    </>
   );
 }
 
@@ -187,16 +339,7 @@ function FeaturedUpdate({ update }) {
         </div>
       )}
       {!hasVideo && gallery.length === 1 && (
-        <div className={styles.featuredImageWrap}>
-          <Image
-            src={gallery[0]}
-            alt={update.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className={styles.featuredImage}
-            priority
-          />
-        </div>
+        <FeaturedSingleImage src={gallery[0]} title={update.title} />
       )}
       {multiImage && (
         <FeaturedGallery images={gallery} title={update.title} />
@@ -302,14 +445,21 @@ function FeedHeader({ title, label }) {
 }
 
 function PhotoGallery({ images, title }) {
+  const [openIndex, setOpenIndex] = React.useState(null);
   if (!images?.length) return null;
 
   return (
     <section className={styles.photoGallery}>
       <FeedHeader title={title || "تصویری گیلری"} label="البم" />
       <div className={styles.photoGrid}>
-        {images.map((src) => (
-          <div key={src} className={styles.photoItem}>
+        {images.map((src, index) => (
+          <button
+            key={src}
+            type="button"
+            className={styles.photoItem}
+            onClick={() => setOpenIndex(index)}
+            aria-label={`${title || "تصویر"} بڑے سائز میں دیکھیں`}
+          >
             <Image
               src={src}
               alt={title || "گیلری تصویر"}
@@ -317,6 +467,62 @@ function PhotoGallery({ images, title }) {
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
               className={styles.photoImg}
             />
+          </button>
+        ))}
+      </div>
+      <ImageLightbox
+        images={images}
+        index={openIndex}
+        title={title}
+        onClose={() => setOpenIndex(null)}
+        onChange={setOpenIndex}
+      />
+    </section>
+  );
+}
+
+function VideoGallery({ videos, poster, title }) {
+  const [playingIndex, setPlayingIndex] = React.useState(null);
+  if (!videos?.length) return null;
+
+  return (
+    <section className={styles.photoGallery}>
+      <FeedHeader title={title || "ویڈیو گیلری"} label="البم" />
+      <div className={styles.videoGrid}>
+        {videos.map((src, index) => (
+          <div key={src} className={styles.videoItem}>
+            {playingIndex === index ? (
+              <video
+                className={styles.galleryVideo}
+                src={src}
+                poster={poster}
+                controls
+                autoPlay
+                playsInline
+                preload="auto"
+              />
+            ) : (
+              <button
+                type="button"
+                className={styles.videoPosterBtn}
+                onClick={() => setPlayingIndex(index)}
+                aria-label={`ویڈیو ${index + 1} چلائیں`}
+              >
+                {poster ? (
+                  <Image
+                    src={poster}
+                    alt=""
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className={styles.videoPosterImg}
+                  />
+                ) : null}
+                <span className={styles.videoPlayBadge} aria-hidden>
+                  ▶
+                </span>
+                <span className={styles.videoIndex}>{index + 1}</span>
+              </button>
+            )}
           </div>
         ))}
       </div>
@@ -690,6 +896,11 @@ export default function DailyNewsSectionPage({ sectionId, onTabChange, activeTab
             <PhotoGallery
               images={section.gallery}
               title={`${section.title} — تمام تصاویر`}
+            />
+            <VideoGallery
+              videos={section.videos}
+              poster={section.videoPoster || section.image}
+              title={`${section.title} — تمام ویڈیوز`}
             />
           </div>
         </div>

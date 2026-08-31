@@ -26,7 +26,7 @@ export default function NavFullscreen({ scrolled = false, lightNav = false }) {
           align-items: center;
           gap: 6px;
           padding: 10px 16px;
-          color: #333;
+          color: #1a2744;
           font-size: 15px;
           font-weight: 600;
           text-decoration: none;

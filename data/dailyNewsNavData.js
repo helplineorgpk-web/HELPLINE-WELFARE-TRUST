@@ -25,6 +25,7 @@ export const DAILY_NEWS_NAV_ITEMS = [
     dropdown: [
       { label: "تمام اسکولوں کی روزانہ رپورٹ", tab: "taleem-overview" },
       { label: "الکتاب ہائر سیکنڈری — رانا ٹاؤن", tab: "school-alkitab-rana" },
+      { label: "الکتاب سیکنڈری — عمر کوٹ مریدکے", tab: "school-alkitab-umarkot-muridke" },
       { label: "جشنِ آزادی — ملی نغمے 2026", tab: "alkitab-milli-naghme-2026" },
       { label: "نظریۂ پاکستان — تقریری مقابلہ", tab: "nazriya-takreeri-muqabla-2026" },
       { label: "نظریۂ پاکستان — مصوری کا مقابلہ", tab: "nazriya-masawari-muqabla-2026" },

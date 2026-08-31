@@ -9,7 +9,7 @@ const data = {
 };
 
 const OWN_SCHOOLS_TITLE = "Our Own Schools";
-const OWN_SCHOOLS_DESCRIPTION = "Helpline runs its own schools across Punjab and beyond, providing free or heavily subsidized quality education to underprivileged children. From Al-Kitab Education System to Irtaqa-e-Itfal, Ch Rehmat Ali, Iman Maryam Girls School, and more—each institution is a beacon of hope and opportunity.";
+const OWN_SCHOOLS_DESCRIPTION = "Helpline runs its own schools across Punjab and beyond, providing free or heavily subsidized quality education to underprivileged children. From Al-Kitab Education System to Irtaqa-e-Itfal, Ch Rehmat Ali, Iman Maryam Girls School, Al-Kitab Umar Kot Muridke, and more—each institution is a beacon of hope and opportunity.";
 
 export default function OwnSchools() {
   const ownSchoolsProject = HelplineData.ownSchools;

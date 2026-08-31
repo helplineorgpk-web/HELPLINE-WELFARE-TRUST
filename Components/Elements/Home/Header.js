@@ -61,18 +61,18 @@ const CAUSE_OPTIONS = [
 
 const heroSlides = [
   {
-    image: "/img/Campaigns/ranatownflood.webp",
-    title: "RANA TOWN FLOOD APPEAL",
-    subtitle:
-      "Homes underwater. Families stranded. Stand with Rana Town—your gift delivers food, clean water, and shelter now.",
-    link: "/campaign/rana-town-flood-appeal",
+    image: "/img/mainimage.png",
+    title: "HELPLINE WELFARE TRUST",
+    subtitle: "Helpline Welfare Trust",
+    link: "/",
     hideHeroText: true,
-    heroStyle: {
-      titleHighlightColor: "#f15b43",
-      linePrimaryColor: "#f15b43",
-      lineSecondaryColor: "#65cabb",
-      titleLetterSpacing: "2px",
-    },
+  },
+  {
+    image: "/img/secondimageslider.png",
+    title: "مواخاتِ مدینہ",
+    subtitle: "بنیادی حقوق سب کیلئے / سب کے ساتھ",
+    link: "/mawakhat-e-Madina",
+    hideHeroText: true,
   },
   {
     image: "/img/Campaigns/RamadanPackage2.webp",
@@ -130,23 +130,6 @@ const heroSlides = [
     heroTitleLine1: "BUILD",
     heroTitleLine2: "TOGETHER",
     heroSubtitle: "Support integrated school and masjid facilities to uplift communities.",
-    heroStyle: {
-      titleHighlightColor: "#f15b43",
-      linePrimaryColor: "#f15b43",
-      lineSecondaryColor: "#65cabb",
-      titleLetterSpacing: "2px",
-    },
-  },
-  {
-    image: "/img/Campaigns/Qurbani3.jpg",
-    title: "QURBANI PROGRAM 2026",
-    subtitle:
-      "Participate in our Qurbani program to help distribute meat to deserving families during Eid ul Adha.",
-    link: "/qurbani",
-    heroTitleLine1: "QURBANI 2026",
-    heroTitleLine2: "SHARE THE BLESSING",
-    heroSubtitle:
-      "Join our Qurbani program and help deliver meat to families in need this Eid ul Adha.",
     heroStyle: {
       titleHighlightColor: "#f15b43",
       linePrimaryColor: "#f15b43",
@@ -925,7 +908,7 @@ export default function Header({ slides: slidesProp }) {
           </div> */}
         </div>
         ) : (
-          <h1 className="sr-only">{activeSlide?.title ?? "Rana Town Flood Appeal"}</h1>
+          <h1 className="sr-only">{activeSlide?.title ?? "Helpline Welfare Organization"}</h1>
         )}
       </section>
 
