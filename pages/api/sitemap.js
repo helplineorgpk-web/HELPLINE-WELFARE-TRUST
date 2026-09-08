@@ -64,6 +64,8 @@ export default async function handler(req, res) {
     { path: 'darulEhsan', priority: 0.7, changefreq: 'monthly' },
     { path: 'darulTarbiyah', priority: 0.7, changefreq: 'monthly' },
     { path: 'mawakhat-e-Madina', priority: 0.7, changefreq: 'monthly' },
+    { path: 'mawakhat-pdf', priority: 0.7, changefreq: 'monthly' },
+    { path: 'tahreek-e-mawakhat-balochistan', priority: 0.7, changefreq: 'monthly' },
     { path: 'masjid', priority: 0.7, changefreq: 'monthly' },
     { path: 'islamicactivity', priority: 0.7, changefreq: 'monthly' },
     { path: 'taleem-e-Quran', priority: 0.7, changefreq: 'monthly' },

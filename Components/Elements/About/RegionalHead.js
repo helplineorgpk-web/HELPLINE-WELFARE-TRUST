@@ -7,7 +7,6 @@ export default function EducationWing() {
   const team = HelplineData.team;
   const regionalHeads = team.filter((member) =>
     [
-      "Regional Head (Sindh)",
       "Regional Head (North)",
       "Regional Head (South)",
     ].includes(member.designation)

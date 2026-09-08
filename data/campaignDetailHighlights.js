@@ -1,5 +1,11 @@
 /** Narrative bullets for “Campaign Highlights” — unique per campaign (not only status/amounts). */
 export const CAMPAIGN_DETAIL_HIGHLIGHTS = {
+  "tahreek-e-mawakhat-balochistan": [
+    "Helpline has adopted Masjid and Madrassa Anwar-ul-Quran in Bhit Gaaj, Tehsil Zeedi, District Khuzdar, Balochistan.",
+    "Eighty children already learn Hifz and Nazra; Hafiz Abdul Kareem Sahib manages their food and daily care.",
+    "The campaign builds a Mawakhat Community in sequence: solar, clean water, tree plantation, then a school.",
+    "That school will join the Al-Kitab Education System so these children hold the same rights as students in Rana Town, Manawan, and Umarkot.",
+  ],
   "become-a-member-100": [
     "One simple step: donate Rs. 100 once and become a Helpline Welfare Trust member.",
     "Your Rs. 100 is shared equally—Rs. 20 each—across five core focus areas.",

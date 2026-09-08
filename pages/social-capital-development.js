@@ -5,6 +5,7 @@ import WashStats from "../Components/Elements/Water/WashStats";
 import WashDescription from "../Components/Elements/Water/WashDescription";
 import WashSuccessStories from "../Components/Elements/Water/WashSuccessStories";
 import SocialWelfareMasjidBrief from "../Components/Elements/SocialCapital/SocialWelfareMasjidBrief";
+import SocialWelfareMawakhatBalochistanBrief from "../Components/Elements/SocialCapital/SocialWelfareMawakhatBalochistanBrief";
 import SocialWelfareRamzanBrief from "../Components/Elements/SocialCapital/SocialWelfareRamzanBrief";
 import SocialWelfareRashanBrief from "../Components/Elements/SocialCapital/SocialWelfareRashanBrief";
 import SocialWelfareWaterBrief from "../Components/Elements/SocialCapital/SocialWelfareWaterBrief";
@@ -21,6 +22,7 @@ export default function SocialCapitalDevelopment() {
         <div className={styles.container}>
           <div className={styles.grid}>
             <SocialWelfareMasjidBrief />
+            <SocialWelfareMawakhatBalochistanBrief />
             <SocialWelfareRamzanBrief />
             <SocialWelfareRashanBrief />
             <SocialWelfareWaterBrief />

@@ -41,6 +41,7 @@ export const DAILY_NEWS_NAV_ITEMS = [
       { label: "الکتاب راجن پور", tab: "school-alkitab-rajanpur" },
       { label: "الکتاب بہاولپور", tab: "school-alkitab-bahawalpur" },
       { label: "الکتاب ٹیکنالوجی", tab: "school-alkitab-tech" },
+      { label: "تحریکِ مواخات بلوچستان — بھٹ گاج", tab: "tahreek-e-mawakhat-balochistan" },
       { label: "حکومتی تعلیمی اسکیمز", tab: "gov-education-schemes" },
     ],
   },
@@ -57,6 +58,8 @@ export const DAILY_NEWS_NAV_ITEMS = [
     dropdown: [
       { label: "13 سرکاری اسکول — مجموعی رپورٹ", tab: "adopted-overview" },
       { label: "گرمیوں کی چھٹیاں — نمرو شریف", tab: "gbps-nimro-summer-opening" },
+      { label: "ہیلپ لائن بیگ — مصری بھیل، تندو اللہ یار", tab: "misri-bheel-bags-2026" },
+      { label: "مرمت — دین محمد کاٹھيو سکول", tab: "deen-muhammad-kathio-renovation" },
       { label: "بینظیر پبلک گرلز — نوابشاہ", tab: "adopted-benazir" },
     ],
   },
@@ -77,6 +80,11 @@ export const DAILY_NEWS_NAV_ITEMS = [
   { id: "water", label: "صاف پانی", hasDropdown: false },
   { id: "vtc", label: "ووکیشنل تربیت", hasDropdown: false },
   { id: "masjid", label: "مسجد و کردار سازی", hasDropdown: false },
+  {
+    id: "tahreek-e-mawakhat-balochistan",
+    label: "تحریکِ مواخات بلوچستان",
+    hasDropdown: false,
+  },
   { id: "hindu-muslim", label: "ہندو مسلم بھائی چارہ", hasDropdown: false },
   { id: "kitabcha", label: "کتابچہ", hasDropdown: false, isPubBtn: true },
   { id: "ujala", label: "اجالہ", hasDropdown: false, isPubBtn: true },

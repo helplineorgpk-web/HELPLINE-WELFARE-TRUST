@@ -5,28 +5,22 @@ import styles from "../../../public/css/CentralExectiveCommittee.module.css";
 
 export default function HeadOfficeTeam() {
   const team = HelplineData.team;
-  const executives = team.filter((member) =>
-    [
-      "Managing Trustee",
-      "GM (Admin & HR)",
-      "GM (Education)",
-      "Administrator KMC",
-    ].includes(member.designation)
-  );
+
+  const gmMarketing = ["GM Administration", "GM Marketing"]
+    .map((designation) => team.find((member) => member.designation === designation))
+    .filter(Boolean);
 
   const adminSupport = team.filter((member) =>
     [
       "Senior Manager Purchases",
-      "Manager Admin & Support",
       "Manager Welfare & Health",
-      "Manager Transport",
       "Senior Manager Accounts",
       "Junior Manager Accounts",
     ].includes(member.designation)
   );
 
   const mediaTeam = team.filter((member) =>
-    ["Software Developer","Manager Media", "Media Executive"].includes(member.designation)
+    ["Software Developer", "Media Executive"].includes(member.designation)
   );
 
   const renderTeamSection = (members, title) => (
@@ -73,7 +67,7 @@ export default function HeadOfficeTeam() {
       <div className={styles.mainHeader}>
         <h1>Head Office Team</h1>
       </div>
-      {renderTeamSection(executives, "Team Executives")}
+      {renderTeamSection(gmMarketing, "GM Marketing")}
       {renderTeamSection(adminSupport, "Finance Admin & Support", "Finance")}
       {renderTeamSection(mediaTeam, "Media & Technology")}
     </div>

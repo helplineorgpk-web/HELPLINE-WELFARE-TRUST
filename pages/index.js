@@ -19,6 +19,7 @@ const GlobalGoals = dynamic(
   () => import("../Components/Elements/Home/GlobalGoals"),
   { ssr: false }
 );
+import KamyabPakistan from "../Components/Elements/Home/KamyabPakistan";
 const NewsFeed = dynamic(() => import("../Components/Elements/Home/NewsFeed"), {
   ssr: false,
 });
@@ -44,6 +45,7 @@ export default function Home({ cause }) {
           <PowerOfFive />
           <Educations />
           <GlobalGoals />
+          <KamyabPakistan />
           {/* <AboutArea /> */}
           {/* <CausesArea causes={cause} data={data} />
           <SupportArea />  */}

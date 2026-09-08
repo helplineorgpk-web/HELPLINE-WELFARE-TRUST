@@ -70,6 +70,69 @@ export const campaignsData = [
     categories: ["disaster-relief", "social-welfare"],
   },
   {
+    id: "tahreek-e-mawakhat-balochistan",
+    title: "Tahreek-e-Mawakhat Balochistan",
+    href: "/campaign/tahreek-e-mawakhat-balochistan",
+    description:
+      "Adopt a forgotten valley in Khuzdar. Eighty children already learn Hifz and Nazra at Anwar-ul-Quran. Help us bring solar, clean water, trees, and an Al-Kitab school.",
+    image: "/img/mainimagefullsize.png",
+    gallery: [
+      "/img/mainimagefullsize.png",
+      "/img/madrissaanwarulquran.png",
+      "/img/3rdimageanwarulquran.png",
+      "/img/cleanwateranwarulquran.png",
+      "/img/schoolanwarulquran.png",
+    ],
+    donationPresets: [2500, 5000, 10000, 25000, 50000],
+    longDescription:
+      "In Bhit Gaaj, Tehsil Zeedi, District Khuzdar, Helpline Welfare Trust has adopted Masjid and Madrassa Anwar-ul-Quran. Eighty children sit on its rugs for Hifz and Nazra under Hafiz Abdul Kareem Sahib, who also manages their meals and daily care. Adoption is only the first light. From this masjid we will raise a Mawakhat Community: solar power so nights are no longer dark, then clean water for every household, then trees around the settlement, then a school for both deeni and dunyavi education. That school will join the Al-Kitab Education System, so a child in this mountain valley holds the same right to excellence as a child in Rana Town, Manawan, or Umarkot. Walk with us as a pasmanda ilaqa becomes a living, self-reliant community.",
+    impact: [
+      { value: "~80", label: "Children in Hifz & Nazra" },
+      { value: "Khuzdar", label: "Bhit Gaaj, Balochistan" },
+      { value: "Al-Kitab", label: "Education System" },
+    ],
+    details: {
+      goal: 10000000,
+      raised: 0,
+      packages: [
+        {
+          name: "Feed a child",
+          price: 2500,
+          description:
+            "Meals and daily care for a student at Madrassa Anwar-ul-Quran.",
+        },
+        {
+          name: "Plant the valley",
+          price: 5000,
+          description:
+            "Tree plantation around the Bhit Gaaj settlement so dust gives way to shade.",
+        },
+        {
+          name: "Solar share",
+          price: 10000,
+          description:
+            "Contribute to solar power for the masjid, madrassa, and homes.",
+        },
+        {
+          name: "Clean water",
+          price: 25000,
+          description:
+            "Permanent water support so families drink with dignity and children stay in class.",
+        },
+        {
+          name: "Build the school",
+          price: 50000,
+          description:
+            "Help raise deeni and dunyavi classrooms under the Al-Kitab Education System.",
+        },
+      ],
+      endDate: "2026-12-31",
+    },
+    status: "Running",
+    featured: true,
+    categories: ["education", "social-welfare", "sustainability"],
+  },
+  {
     id: "become-a-member-100",
     title: "Become a Member — Rs. 100 Only",
     href: "/campaign/become-a-member-100",

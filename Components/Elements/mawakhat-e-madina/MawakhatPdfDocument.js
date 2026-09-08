@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import MawakhatVillageCards from "./MawakhatVillageCards";
 import styles from "./MawakhatPdfDocument.module.css";
 
 const PDF_PATH = "/img/Mawakhat-e-Madina4Pager.pdf";
@@ -65,7 +66,11 @@ export default function MawakhatPdfDocument() {
             </article>
           ))}
         </div>
+      </div>
 
+      <MawakhatVillageCards />
+
+      <div className={styles.container}>
         <div className={styles.footer}>
           <p>Want to support Mawakhat-e-Madina programs?</p>
           <Link href="/donation" className={styles.donateBtn}>

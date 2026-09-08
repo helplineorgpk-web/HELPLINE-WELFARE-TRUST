@@ -3,38 +3,14 @@ import Link from "next/link";
 import { HelplineData } from "../../../pages/api/data";
 import styles from "../../../public/css/CentralExectiveCommittee.module.css";
 
-export default function AboutTeam() {
+export default function Directors() {
   const team = HelplineData.team;
-
-  const executives = team.filter((member) =>
-    ["Chairman"].includes(member.designation)
+  const directors = team.filter((member) =>
+    ["Director Health", "Administrator KMC"].includes(member.designation)
   );
 
-  const ADMIN_SUPPORT = team.filter((member) =>
-    ["President", "Vice President"].includes(member.designation)
-  );
-
-  const hrManagement = [
-    "Muhammad Iqbal Khan",
-    "Mian Ali Ilyas",
-    "Colonel Zubair Ahmad Chughtai (Retd)",
-    "Ikhlaq ur Rehman",
-  ]
-    .map((name) => team.find((member) => member.name === name))
-    .filter(Boolean);
-
-  const additionalTrustees = [
-    "Khushnood Ahmad Khan",
-    "Brig Zahid Hussain Goraya (Retd)",
-  ]
-    .map((name) => team.find((member) => member.name === name))
-    .filter(Boolean);
-
-  const renderTeamSection = (members, title) => (
+  const renderTeamSection = (members) => (
     <div className={styles.teamSection}>
-      <div className={styles.sectionHeader}>
-        <h2>{title}</h2>
-      </div>
       <div className={styles.teamGrid}>
         {members.map((member) => (
           <div key={member.id} className={styles.teamCard}>
@@ -43,7 +19,7 @@ export default function AboutTeam() {
             </div>
             <div className={styles.cardContent}>
               <h3>{member.name}</h3>
-              <p style={{ color: "#071BB3", fontSize: "0.8rem" }}>
+              <p style={{ color: "#071BB3", fontSize: "1.2rem" }}>
                 {member.designation}
               </p>
 
@@ -65,14 +41,19 @@ export default function AboutTeam() {
   );
 
   return (
-    <div className={styles.teamContainer}>
+    <div
+      style={{
+        background: "rgb(243 248 254)",
+        padding: "4rem 2rem",
+        textAlign: "center",
+        borderTop: "4px solid red",
+        borderBottom: "4px solid red",
+      }}
+    >
       <div className={styles.mainHeader}>
-        <h1>BOARD OF TRUSTEE</h1>
+        <h1>Directors Health</h1>
       </div>
-      {renderTeamSection(executives, "Chairman")}
-      {renderTeamSection(ADMIN_SUPPORT, "")}
-      {renderTeamSection(hrManagement, "")}
-      {renderTeamSection(additionalTrustees, "")}
+      {renderTeamSection(directors)}
     </div>
   );
 }

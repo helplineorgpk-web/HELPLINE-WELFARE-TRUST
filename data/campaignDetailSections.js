@@ -26,6 +26,31 @@ export const CAMPAIGN_DETAIL_SECTIONS = {
       "Photo and progress updates from the ground keep donors connected to real impact.",
     ],
   },
+  "tahreek-e-mawakhat-balochistan": {
+    beneficiaries: [
+      "Eighty children already studying Hifz and Nazra at Masjid and Madrassa Anwar-ul-Quran in Bhit Gaaj, Khuzdar.",
+      "Hafiz Abdul Kareem Sahib and the household of care that feeds and shelters these students each day.",
+      "Families of this remote valley who will receive solar power, clean water, trees, and a lasting school.",
+      "A generation that will enter the Al-Kitab Education System with the same rights as children in Rana Town, Manawan, and Umarkot.",
+    ],
+    donationUsage: [
+      "Daily meals and care for students already enrolled in Hifz and Nazra.",
+      "Solar installation so the masjid, madrassa, and nearby homes have light after sunset.",
+      "A permanent clean-water solution for the whole settlement.",
+      "Tree plantation around Bhit Gaaj until dust becomes shade.",
+      "Construction and setup of a school for religious and modern education under Al-Kitab.",
+    ],
+    objectives: [
+      "Keep Anwar-ul-Quran running with food, teaching, and dignity for eighty children.",
+      "Raise a Mawakhat Community in order: light, then water, then trees, then school.",
+      "Bring Bhit Gaaj into the Al-Kitab Education System so no child is left behind because of geography.",
+    ],
+    implementation: [
+      "Field teams work with Hafiz Abdul Kareem Sahib to sustain meals, Hifz, and Nazra from day one.",
+      "Solar, water, and plantation are sequenced with local labour and Helpline technical partners.",
+      "The school is designed to join Al-Kitab standards used in Rana Town, Manawan, and Umarkot, with donor updates from the ground.",
+    ],
+  },
   "become-a-member-100": {
     beneficiaries: [
       "Anyone who wants to stand with Helpline Welfare Trust as a registered member donor.",

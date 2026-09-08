@@ -29,6 +29,7 @@ export const menuData = [
         { label: "Disaster Relief", href: "/disaster" },
         { label: "Social Welfare Development", href: "/social-capital-development" },
         { label: "Sustainability & Endowment", href: "/sustainable-environment-wash" },
+        { label: "Mawakhat e Madina", href: "/mawakhat-pdf" },
       ],
     },
   },

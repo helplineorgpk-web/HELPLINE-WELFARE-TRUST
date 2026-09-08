@@ -45,6 +45,7 @@ export default function NavMobile() {
             <li><Link href="/disaster">Disaster Relief</Link></li>
             <li><Link href="/social-capital-development">Social Welfare Development</Link></li>
             <li><Link href="/sustainable-environment-wash">Sustainability &amp; Endowment</Link></li>
+            <li><Link href="/mawakhat-pdf">Mawakhat e Madina</Link></li>
           </ul>
         </li>
 

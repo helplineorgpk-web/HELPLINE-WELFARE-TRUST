@@ -8,12 +8,10 @@ export default function EducationWing() {
 
   const FriendsReformers = team.filter((member) =>
     [
-      "Education Advisor",
       "Advisor",
       "Media Consultant",
-      "Tech Consultant",
-      "Marketing Consultant",
       "Dir Quran Academy",
+      "Principal, VTC Jandial",
     ].includes(member.designation)
   );
 

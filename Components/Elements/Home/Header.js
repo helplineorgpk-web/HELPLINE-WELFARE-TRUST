@@ -61,7 +61,7 @@ const CAUSE_OPTIONS = [
 
 const heroSlides = [
   {
-    image: "/img/mainimage.png",
+    image: "/img/helplineheadermainislider1.jpg",
     imageMobile: "/img/mobilefirstimageslider.png",
     title: "HELPLINE WELFARE TRUST",
     subtitle: "Helpline Welfare Trust",
@@ -70,7 +70,7 @@ const heroSlides = [
     mobileFitContain: true,
   },
   {
-    image: "/img/secondimageslider.png",
+    image: "/img/mawakhatheadermainislider.jpg",
     imageMobile: "/img/secondimagesliderbgmobile.png",
     title: "مواخاتِ مدینہ",
     subtitle: "بنیادی حقوق سب کیلئے / سب کے ساتھ",

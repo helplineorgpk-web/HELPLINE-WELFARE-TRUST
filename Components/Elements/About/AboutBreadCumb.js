@@ -65,7 +65,9 @@ export default function AboutBreadCumb({
                 <span className={styles.breadcrumbCurrent}>{title}</span>
               </nav>
               <h1 className={styles.title}>{title}</h1>
-              <p className={styles.description}>{description}</p>
+              {description ? (
+                <p className={styles.description}>{description}</p>
+              ) : null}
               <div className={styles.accentBar}>
                 <span className={styles.accentBarLeft} />
                 <span className={styles.accentBarRight} />

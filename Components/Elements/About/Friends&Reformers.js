@@ -7,8 +7,11 @@ import styles from "../../../public/css/CentralExectiveCommittee.module.css";
 export default function FriendsReformers() {
   const team = HelplineData.team;
 
-  const FriendsReformers = team.filter((member) =>
-    ["Friend/Reformer"].includes(member.designation)
+  const FriendsReformers = team.filter(
+    (member) =>
+      member.designation === "Friend/Reformer" &&
+      member.name !== "Brig Zahid Hussain Goraya (Retd)" &&
+      member.name !== "Colonel Zubair Ahmad Chughtai (Retd)"
   );
 
   const renderTeamSection = (members, title) => (
