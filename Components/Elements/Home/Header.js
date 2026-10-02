@@ -233,7 +233,22 @@ const heroSlides = [
     hideHeroText: true,
     mobileFitContain: true,
   },
-  
+  {
+    image: "/img/unioncouncil23headermainislider.jpg",
+    title: "UNION COUNCIL 23",
+    subtitle: "مواخات مدینہ کے نظام کی عملی تعمیر وتدبیر — یونین کونسل 23 کے گاؤں",
+    link: "/mawakhat-e-Madina",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/fieldmapheadermainislider.jpg",
+    title: "MAWAKHAT TOWN FIELD MAP",
+    subtitle: "Mawakhat Town, Rana Town Field Map",
+    link: "/mawakhat-e-Madina",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
 ];
 
 
