@@ -4,10 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import Image from "next/image";
 import Link from "next/link";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
-import { getHeroAsset } from "../../../lib/heroImage";
 
 // Avoid hydration thrash: subscribe to matchMedia once so `isMobile` is
 // resolved synchronously on the client's first render instead of toggling
@@ -58,8 +56,188 @@ const CAUSE_OPTIONS = [
     amounts: [{ value: "1300000", label: "VTC Monthly PKR 1,300,000" }],
   },
 ];
-
 const heroSlides = [
+  {
+    image: "/img/helplineheadermainislider1.jpg",
+    title: "HELPLINE WELFARE TRUST",
+    subtitle: "Helpline Welfare Trust",
+    link: "/",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/mawakhatheadermainislider.jpg",
+    title: "مواخاتِ مدینہ",
+    subtitle: "بنیادی حقوق سب کیلئے / سب کے ساتھ",
+    link: "/mawakhat-e-Madina",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/kamyabpakistanheadermainislider.jpg",
+    title: "کامیاب پاکستان پروگرام",
+    subtitle: "بنیادی حقوق سب کے لیے",
+    link: "/",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/studentsupportheadermainislider.jpg",
+    title: "SUPPORT A STUDENT",
+    subtitle: "Sponsor students' education and help them build a brighter future.",
+    link: "/student-support",
+    heroTitleLine1: "EDUCATION",
+    heroTitleLine2: "OPENS DOORS",
+    heroSubtitle: "Sponsor a student and help children from underserved communities stay in school.",
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+    hideHeroText: false,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/alkitabschoolheadermainislider.jpg",
+    title: "AL-KITAB HIGHER SECONDARY SCHOOL",
+    subtitle: "From humble beginnings to a brighter future for students.",
+    link: "/student-support",
+    heroTitleLine1: "EDUCATION",
+    heroTitleLine2: "OPENS DOORS",
+    heroSubtitle: "Sponsor a student and help children from underserved communities stay in school.",
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+    hideHeroText: false,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/vocationaltrainingheadermainislider.jpg",
+    title: "VOCATIONAL TRAINING CENTRE",
+    subtitle: "Equip youth with technical skills for sustainable employment and self-reliance.",
+    link: "/vocationalTrainingCenters",
+    heroTitleLine1: "SKILLS THAT",
+    heroTitleLine2: "CHANGE LIVES",
+    heroSubtitle: "Equip youth with practical skills for employment and self-reliance.",
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+    hideHeroText: false,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/itlabheadermainislider.jpg",
+    title: "IT & SKILLS LAB",
+    subtitle: "Hands-on digital skills training for youth employment.",
+    link: "/vocationalTrainingCenters",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/cleanwaterheadermainislider.jpg",
+    title: "CLEAN WATER PROJECT",
+    subtitle: "Safe drinking water for schools and communities.",
+    link: "/water-projects",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/aiddistributionheadermainislider.jpg",
+    title: "AID DISTRIBUTION",
+    subtitle: "Help us provide essential food supplies to families during the blessed month. Your donation ensures no family goes hungry.",
+    link: "/ramzanRashan",
+    heroTitleLine1: "HELPING PEOPLE",
+    heroTitleLine2: "HELP THEMSELVES",
+    heroSubtitle: "This Ramazan be the helping hand that transforms lives and spreads hope.",
+    // link: "/distribution",
+    hideHeroText: false,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/schoolmealsheadermainislider.jpg",
+    title: "SCHOOL MEAL PROGRAM",
+    subtitle: "Nutritious meals so children can learn, grow, and thrive.",
+    link: "/rashan",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/medicalcampheadermainislider.jpg",
+    title: "HEALTHCARE & MEDICAL CAMPS",
+    subtitle: "Mobile medical camps and community health centres for underserved areas.",
+    link: "/health",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/livelihoodheadermainislider.jpg",
+    title: "LIVELIHOOD SUPPORT",
+    subtitle: "Livestock and poultry support to help families become self-reliant.",
+    link: "/livelihood",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/housingprojectheadermainislider.jpg",
+    title: "HOUSING PROJECT",
+    subtitle: "Building homes and restoring dignity for families in need.",
+    link: "/rehabilitation",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/masjidprojectheadermainislider.jpg",
+    title: "MASJID PROJECT",
+    subtitle: "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
+    link: "/masjid",
+    heroTitleLine1: "BUILD",
+    heroTitleLine2: "TOGETHER",
+    heroSubtitle: "Support integrated school and masjid facilities to uplift communities.",
+    heroStyle: {
+      titleHighlightColor: "#f15b43",
+      linePrimaryColor: "#f15b43",
+      lineSecondaryColor: "#65cabb",
+      titleLetterSpacing: "2px",
+    },
+    hideHeroText: false,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/qurbaniheadermainislider.jpg",
+    title: "QURBANI PROJECT",
+    subtitle: "Sharing the blessing of Qurbani meat with families in need.",
+    link: "/qurbani",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/girlguideheadermainislider.jpg",
+    title: "GIRL GUIDE",
+    subtitle: "Strong girls build a better tomorrow.",
+    link: "/student-support",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  {
+    image: "/img/cadetsheadermainislider.jpg",
+    title: "YOUTH CADET PROGRAM",
+    subtitle: "Discipline, leadership, and character building for the next generation.",
+    link: "/student-support",
+    hideHeroText: true,
+    mobileFitContain: true,
+  },
+  
+];
+
+
+const heroSlides2 = [
   {
     image: "/img/helplineheadermainislider1.jpg",
     imageMobile: "/img/mobilefirstimageslider.png",
@@ -344,6 +522,15 @@ export default function Header({ slides: slidesProp }) {
           transform: translateZ(0);
           backface-visibility: hidden;
           -webkit-backface-visibility: hidden;
+          image-rendering: -webkit-optimize-contrast;
+        }
+        /* Full designed banners: show entire image sharp, no crop-zoom */
+        .hero-slide-contain-mobile {
+          background: #e7f3fb;
+        }
+        .hero-slide-contain-mobile .hero-slide-image {
+          object-fit: contain;
+          object-position: center center;
         }
         .hero-overlay {
           position: absolute;
@@ -640,13 +827,6 @@ export default function Header({ slides: slidesProp }) {
             height: 100% !important;
             min-height: 100% !important;
           }
-          .hero-slide-contain-mobile {
-            background: #e7f3fb;
-          }
-          .hero-slide-contain-mobile .hero-slide-image {
-            object-fit: contain;
-            object-position: center center;
-          }
           .hero-content {
             padding: 126px 20px 32px;
             justify-content: flex-start;
@@ -787,44 +967,29 @@ export default function Header({ slides: slidesProp }) {
       <section className="hero-section">
         <Swiper {...swiperConfig}>
           {memoizedSlides.map((slide) => {
-            const desktopAsset = getHeroAsset(slide.image);
-            const mobileAsset = slide.imageMobile
-              ? getHeroAsset(slide.imageMobile)
-              : null;
-            const slideClass = slide.mobileFitContain
-              ? "hero-slide hero-slide-contain-mobile"
-              : "hero-slide";
+            // Always serve the original hero file directly. Next.js <Image>
+            // recompression was causing soft/blurry banner text on retina screens.
+            const desktopSrc = slide.image;
+            const mobileSrc = slide.imageMobile || null;
+            const slideClass = "hero-slide hero-slide-contain-mobile";
             return (
             <SwiperSlide key={slide.image} className={slideClass}>
-              {mobileAsset ? (
-                <picture>
+              <picture>
+                {mobileSrc ? (
                   <source
                     media="(max-width: 768px)"
-                    srcSet={mobileAsset.src}
+                    srcSet={mobileSrc}
                   />
-                  <img
-                    src={desktopAsset.src}
-                    alt={slide.title}
-                    className="hero-slide-image"
-                    fetchPriority={slide.priority ? "high" : "low"}
-                    loading={slide.priority ? "eager" : "lazy"}
-                  />
-                </picture>
-              ) : (
-                <Image
-                  src={desktopAsset.src}
+                ) : null}
+                <img
+                  src={desktopSrc}
                   alt={slide.title}
-                  fill
-                  priority={slide.priority}
-                  loading={slide.priority ? "eager" : "lazy"}
-                  fetchPriority={slide.priority ? "high" : "low"}
-                  placeholder="blur"
-                  blurDataURL={desktopAsset.blurDataURL}
-                  sizes="100vw"
-                  quality={70}
                   className="hero-slide-image"
+                  fetchPriority={slide.priority ? "high" : "low"}
+                  loading={slide.priority ? "eager" : "lazy"}
+                  decoding="async"
                 />
-              )}
+              </picture>
             </SwiperSlide>
             );
           })}
