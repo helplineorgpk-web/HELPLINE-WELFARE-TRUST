@@ -95,7 +95,7 @@ const heroSlides = [
       lineSecondaryColor: "#65cabb",
       titleLetterSpacing: "2px",
     },
-    hideHeroText: false,
+    hideHeroText: true,
     mobileFitContain: true,
   },
   {
@@ -112,7 +112,7 @@ const heroSlides = [
       lineSecondaryColor: "#65cabb",
       titleLetterSpacing: "2px",
     },
-    hideHeroText: false,
+    hideHeroText: true,
     mobileFitContain: true,
   },
   {
@@ -129,7 +129,7 @@ const heroSlides = [
       lineSecondaryColor: "#65cabb",
       titleLetterSpacing: "2px",
     },
-    hideHeroText: false,
+    hideHeroText: true,
     mobileFitContain: true,
   },
   {
@@ -157,7 +157,7 @@ const heroSlides = [
     heroTitleLine2: "HELP THEMSELVES",
     heroSubtitle: "This Ramazan be the helping hand that transforms lives and spreads hope.",
     // link: "/distribution",
-    hideHeroText: false,
+    hideHeroText: true,
     mobileFitContain: true,
   },
   {
@@ -206,7 +206,7 @@ const heroSlides = [
       lineSecondaryColor: "#65cabb",
       titleLetterSpacing: "2px",
     },
-    hideHeroText: false,
+    hideHeroText: true,
     mobileFitContain: true,
   },
   {
@@ -488,64 +488,71 @@ export default function Header({ slides: slidesProp }) {
           position: relative;
           width: 100%;
           max-width: 100vw;
-          height: 100vh;
-          min-height: 100vh;
-          min-height: 100dvh;
-          min-height: -webkit-fill-available;
+          /* Clear fixed navbar (80px) so the slide's top blue frame is fully visible */
+          margin-top: 80px;
+          height: auto;
+          overflow: visible;
+          background: #fff;
+        }
+        .hero-slider,
+        .hero-section .swiper {
+          width: 100%;
+          height: auto !important;
           overflow: hidden;
           background: #fff;
         }
-        .hero-slider {
-          width: 100%;
-          height: 100%;
-        }
         .hero-slider .swiper-wrapper {
-          height: 100%;
+          height: auto !important;
+          align-items: flex-start;
         }
         .hero-slider .swiper-slide {
           width: 100% !important;
           max-width: 100%;
+          height: auto !important;
           flex-shrink: 0;
           box-sizing: border-box;
+          overflow: visible;
+          background: #fff;
         }
         .hero-slide {
           position: relative;
           width: 100%;
-          height: 100%;
-          min-height: 100%;
-          backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
-          transform: translate3d(0, 0, 0);
-          will-change: transform;
+          height: auto !important;
+          min-height: 0 !important;
+          overflow: visible;
+          background: #fff;
         }
         .hero-slide picture {
-          position: absolute;
-          inset: 0;
+          position: relative;
           display: block;
           width: 100%;
-          height: 100%;
+          height: auto;
+          margin: 0;
+          padding: 0;
+          line-height: 0;
+          font-size: 0;
         }
         .hero-slide .hero-slide-image {
-          position: absolute !important;
-          inset: 0 !important;
+          position: relative !important;
+          inset: auto !important;
+          display: block !important;
           width: 100% !important;
-          height: 100% !important;
-          max-width: none !important;
-          object-fit: cover;
-          object-position: center;
-          will-change: transform;
-          transform: translateZ(0);
-          backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
-          image-rendering: -webkit-optimize-contrast;
+          height: auto !important;
+          max-width: 100% !important;
+          max-height: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          border: 0 !important;
+          vertical-align: top;
+          object-fit: fill;
+          object-position: top left;
+          /* no transform — GPU layers can clip the top blue frame by 1px */
+          transform: none !important;
+          will-change: auto;
+          backface-visibility: visible;
         }
-        /* Full designed banners: show entire image sharp, no crop-zoom */
         .hero-slide-contain-mobile {
-          background: #e7f3fb;
-        }
-        .hero-slide-contain-mobile .hero-slide-image {
-          object-fit: contain;
-          object-position: center center;
+          background: #fff;
         }
         .hero-overlay {
           position: absolute;
@@ -830,20 +837,19 @@ export default function Header({ slides: slidesProp }) {
         }
         @media (max-width: 768px) {
           .hero-section {
-            height: 100vh;
-            height: 100dvh;
-            min-height: 100vh;
-            min-height: 100dvh;
-            min-height: -webkit-fill-available;
+            margin-top: 80px;
+            height: auto;
+            overflow: visible;
+            background: #fff;
           }
           .hero-slider,
           .hero-slider .swiper-wrapper,
           .hero-slide {
-            height: 100% !important;
-            min-height: 100% !important;
+            height: auto !important;
+            min-height: 0 !important;
           }
           .hero-content {
-            padding: 126px 20px 32px;
+            padding: 24px 20px 24px;
             justify-content: flex-start;
             align-items: center;
             text-align: center !important;
@@ -962,7 +968,7 @@ export default function Header({ slides: slidesProp }) {
         @media (max-width: 768px) {
           @supports (padding: max(0px)) {
             .hero-content {
-              padding-top: max(126px, calc(126px + env(safe-area-inset-top)));
+              padding-top: max(24px, calc(24px + env(safe-area-inset-top)));
               padding-left: max(16px, env(safe-area-inset-left));
               padding-right: max(16px, env(safe-area-inset-right));
               padding-bottom: max(32px, env(safe-area-inset-bottom));
