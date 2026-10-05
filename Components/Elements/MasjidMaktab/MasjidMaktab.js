@@ -25,10 +25,10 @@ export default function MasjidMaktab() {
       <section className={styles.imageGrid}>
         <div className={styles.heroImageWrapper}>
           <Image
-            src="/img/Campaigns/MASJID.jpg"
-            alt="Main Masjid Poster"
-            width={600}
-            height={600}
+            src="/img/Campaigns/MasjidMaktab.jpg"
+            alt="Al-Kitab Masjid and Maktab"
+            width={1040}
+            height={498}
             className={styles.heroImage}
             priority
           />

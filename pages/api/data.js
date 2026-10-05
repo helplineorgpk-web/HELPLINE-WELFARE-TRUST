@@ -3088,38 +3088,21 @@ Helpline have realized that providing access to technology and digital education
   ITData: [
     {
       id: 1,
-      title: "Brain Scoop in Lahore",
-      description:
-        "A Lahore IT lab offering practical software, web, and digital skills training.",
-      image: "/img/causes/itlab1.png",
+      title: "315-C Faisal Town IT Lab",
+      description: "House# 315, Sector C, Faisal Town, Lahore",
+      image: "/img/315cfaysaltownitlab1.png",
     },
     {
       id: 2,
-      title: "Brain Scoop in Islamabad",
-      description:
-        "Islamabad center focused on hands-on coding, design, and digital learning programs.",
-      image: "/img/causes/itlab2.png",
+      title: "Al-Kitab Computer Lab",
+      description: "Al-Kitab School computer lab",
+      image: "/img/alkitabcomputerlab.png",
     },
     {
       id: 3,
-      title: "Brain Scoop in Bahalwapur",
-      description:
-        "Bahawalpur lab building tech skills through guided projects and modern IT tools.",
-      image: "/img/causes/itlab3.png",
-    },
-    {
-      id: 4,
-      title: "Brain Scoop in Nawab Shah",
-      description:
-        "Nawab Shah lab supports youth with practical software and web development training.",
-      image: "/img/causes/itlab4.png",
-    },
-    {
-      id: 5,
-      title: "Brain Scoop in Tando Allah Yar",
-      description:
-        "Tando Allah Yar center prepares students for real-world IT careers and freelancing.",
-      image: "/img/causes/itlab5.png",
+      title: "Vocational Training Centre IT Lab",
+      description: "Mohammad Yousaf Vocational Training Centre",
+      image: "/img/vtcitlab.png",
     },
   ],
   HelplineregistrationData: {

@@ -131,6 +131,38 @@
   font-size: 0.875rem;
 }
 
+.placeSection {
+  margin-top: 2.5rem;
+}
+
+.placeTitle {
+  margin: 0 0 0.35rem;
+  color: #263b5d;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.placeAddress {
+  margin: 0 0 1rem;
+  color: #5c6b7a;
+  font-size: 1rem;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(38, 59, 93, 0.1);
+}
+
 .cardActions {
   display: flex;
   gap: 1rem;

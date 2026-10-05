@@ -1,5 +1,31 @@
 export const qurbaniData = [
   {
+    id: "17",
+    year: "Qurbani 2025",
+    location: "Helpline communities across Pakistan",
+    image: "/img/qurbaniheadermainislider.jpg",
+    detailHeader: "Qurbani 2025",
+    detail:
+      "Helpline’s 2025 Qurbani shared fresh meat with families who would otherwise go without. Animals were arranged, meat was packed, and volunteers handed it to households at our schools and in nearby communities.",
+    additionalDetails: [
+      {
+        title: "Qurbani 1446 / 2025",
+        content:
+          "This year’s Qurbani followed the same path as past years: select the animals, complete the sacrifice, pack the meat, and deliver it to families.",
+      },
+      {
+        title: "Who received it",
+        content:
+          "Shares reached families around Al-Kitab schools and other communities Helpline serves, including households that cannot afford meat.",
+      },
+      {
+        title: "How to take part",
+        content:
+          "Sponsors and volunteers can join the next distribution through Helpline. Call the head office or write to info@helpline.org.pk.",
+      },
+    ],
+  },
+  {
     id: "1",
     year: "Qurbani 2024",
     location: "Al-Kitab Educational Complex, Shekhupura",

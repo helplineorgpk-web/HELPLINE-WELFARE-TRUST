@@ -28,10 +28,10 @@ export default function StudentSupport() {
       <section className={styles.imageGrid}>
         <div className={styles.heroImageWrapper}>
           <Image
-            src="/img/Campaigns/student.png"
-            alt="Support A Student Campaign"
-            width={600}
-            height={600}
+            src="/img/Campaigns/Educationmobile.jpg"
+            alt="Student holding a book in class"
+            width={690}
+            height={1225}
             className={styles.heroImage}
             priority
           />
@@ -125,24 +125,49 @@ export default function StudentSupport() {
         </div>
         <div className={styles.contactItems}>
           <div className={styles.contactItem}>
+            <div className={styles.contactIcon}>📍</div>
+            <div className={styles.contactText}>
+              <span>Head Office Location</span>
+              <p>
+                House# 705, Sector A-1, Govt Employees Co-op Housing Society
+                (GECHS), PECO Road, Township, Lahore Pakistan
+              </p>
+            </div>
+          </div>
+          <div className={styles.contactItem}>
+            <div className={styles.contactIcon}>📍</div>
+            <div className={styles.contactText}>
+              <span>Education Wing Location</span>
+              <p>House# 315, Sector C, Faisal Town, Lahore Pakistan</p>
+            </div>
+          </div>
+          <div className={styles.contactItem}>
             <div className={styles.contactIcon}>📞</div>
             <div className={styles.contactText}>
-              <span>Phone</span>
-              <p>+92 300 1234567</p>
+              <span>Head Office Phone</span>
+              <p>
+                <a href="tel:+924235157374">+92-42-3515 7374</a>
+                {"  "}
+                <a href="tel:+924235110164">+92-42-35110164</a>
+              </p>
+            </div>
+          </div>
+          <div className={styles.contactItem}>
+            <div className={styles.contactIcon}>📞</div>
+            <div className={styles.contactText}>
+              <span>Education Wing Phone</span>
+              <p>
+                <a href="tel:+924235195200">042-35195200</a>
+              </p>
             </div>
           </div>
           <div className={styles.contactItem}>
             <div className={styles.contactIcon}>📧</div>
             <div className={styles.contactText}>
               <span>Email</span>
-              <p>education@helpline.org</p>
-            </div>
-          </div>
-          <div className={styles.contactItem}>
-            <div className={styles.contactIcon}>🏢</div>
-            <div className={styles.contactText}>
-              <span>Address</span>
-              <p>Helpline Office, Lahore, Pakistan</p>
+              <p>
+                <a href="mailto:info@helpline.org.pk">info@helpline.org.pk</a>
+              </p>
             </div>
           </div>
         </div>

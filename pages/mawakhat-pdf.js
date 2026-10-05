@@ -22,6 +22,7 @@ export default function MawakhatPdfPage() {
       <CampaignAboutHero
         title="Mawakhat e Madina"
         description=""
+        hideContent
         backgroundImage="/img/mawakhatheadermainislider.jpg"
         backgroundImageMobile="/img/mawakhatheadermainislider.jpg"
       />

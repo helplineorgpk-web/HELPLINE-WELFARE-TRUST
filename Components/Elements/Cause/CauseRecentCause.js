@@ -20,6 +20,7 @@ export default function CauseRecentCause({
   sectionTitle = DEFAULT_SECTION_TITLE,
   sectionDescription = DEFAULT_SECTION_DESCRIPTION,
   initialFilter = "",
+  contentId = "nav-home",
 }) {
   const router = useRouter();
   const categoryKeys = Object.keys(categories || {});
@@ -132,9 +133,9 @@ export default function CauseRecentCause({
         <div className="tab-content" id="nav-tabContent">
           <div
             className="tab-pane fade show active"
-            id="nav-home"
+            id={contentId}
             role="tabpanel"
-            aria-labelledby="nav-home-tab"
+            aria-labelledby={`${contentId}-tab`}
           >
             <div className={styles.home_card}>
               {projects?.length > 0 ? (

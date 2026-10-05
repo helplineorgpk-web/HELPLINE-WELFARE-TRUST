@@ -24,6 +24,7 @@ export default async function handler(req, res) {
     { path: 'cause', priority: 0.9, changefreq: 'weekly' },
     { path: 'water', priority: 0.8, changefreq: 'weekly' },
     { path: 'rashan', priority: 0.8, changefreq: 'weekly' },
+    { path: 'school-meals', priority: 0.8, changefreq: 'weekly' },
     { path: 'ramzanRashan', priority: 0.8, changefreq: 'weekly' },
     { path: 'qurbani', priority: 0.8, changefreq: 'weekly' },
     { path: 'flood-relief', priority: 0.8, changefreq: 'weekly' },

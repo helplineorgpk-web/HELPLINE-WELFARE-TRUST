@@ -8,8 +8,15 @@ const data = {
   OwnSchools: "Own School",
 };
 
+const adoptedData = {
+  AdoptedSchools: "Adopted Schools",
+};
+
 const OWN_SCHOOLS_TITLE = "Our Own Schools";
 const OWN_SCHOOLS_DESCRIPTION = "Helpline runs its own schools across Punjab and beyond, providing free or heavily subsidized quality education to underprivileged children. From Al-Kitab Education System to Irtaqa-e-Itfal, Ch Rehmat Ali, Iman Maryam Girls School, Al-Kitab Umar Kot Muridke, and more—each institution is a beacon of hope and opportunity.";
+
+const ADOPTED_SCHOOLS_TITLE = "Our Adopted Schools";
+const ADOPTED_SCHOOLS_DESCRIPTION = "Helpline has adopted and revitalized government schools across Sindh and other regions, turning under-resourced campuses into thriving centers of learning. Each adopted school receives infrastructure support, qualified teachers, learning materials, and community engagement—ensuring every child has access to quality education.";
 
 export default function OwnSchools() {
   const ownSchoolsProject = HelplineData.ownSchools;
@@ -22,6 +29,13 @@ export default function OwnSchools() {
         causes={ownSchoolsProject}
         sectionTitle={OWN_SCHOOLS_TITLE}
         sectionDescription={OWN_SCHOOLS_DESCRIPTION}
+      />
+      <CauseRecentCause
+        categories={adoptedData}
+        causes={HelplineData.adoptedSchools}
+        sectionTitle={ADOPTED_SCHOOLS_TITLE}
+        sectionDescription={ADOPTED_SCHOOLS_DESCRIPTION}
+        contentId="adopted-schools"
       />
     </Layout2>
   );

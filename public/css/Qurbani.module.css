@@ -45,6 +45,11 @@
   margin-top: 2rem;
 }
 
+.qurbaniGridSingle {
+  grid-template-columns: minmax(240px, 320px);
+  justify-content: start;
+}
+
 .qurbaniCard {
   background: #fff;
   border-radius: 12px;

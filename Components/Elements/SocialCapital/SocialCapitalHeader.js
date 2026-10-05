@@ -45,6 +45,8 @@ export default function SocialCapitalHeader({
   donationTitle = "Make a Difference",
   donationSubtitle = "Your contribution changes lives",
   donationCauses = SOCIAL_WELFARE_CAUSE_OPTIONS,
+  imageFit = "cover",
+  imagePosition = "center",
 }) {
   const defaultHero =
     layout === "donation" ? DONATION_HERO_DEFAULT : TEXT_HERO_DEFAULT;
@@ -150,8 +152,8 @@ export default function SocialCapitalHeader({
             inset: 0;
           }
           .sc-donate-hero-slide-image {
-            object-fit: cover;
-            object-position: center;
+            object-fit: ${imageFit === "contain" ? "contain" : "cover"};
+            object-position: ${imagePosition === "left center" ? "left center" : "center"};
           }
           .sc-donate-hero-content {
             position: absolute;

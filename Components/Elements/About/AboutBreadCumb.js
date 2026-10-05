@@ -12,6 +12,7 @@ export default function AboutBreadCumb({
   backgroundImageMobile,
   variant = "default",
   textTheme = "dark",
+  hideContent = false,
 }) {
   const isCampaignHero = variant === "campaign";
   const isLightText = textTheme === "light";
@@ -49,6 +50,9 @@ export default function AboutBreadCumb({
           />
         </picture>
       </div>
+      {hideContent ? (
+        <h1 className={styles.srOnly}>{title}</h1>
+      ) : (
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -76,6 +80,7 @@ export default function AboutBreadCumb({
           </div>
         </div>
       </div>
+      )}
     </section>
   );
 }

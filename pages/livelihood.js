@@ -7,12 +7,13 @@ import LivelihoodContent from "../Components/Elements/Livelihood/LivelihoodConte
 import LivelihoodDisasterReliefTopics from "../Components/Elements/Livelihood/LivelihoodDisasterReliefTopics";
 import LivelihoodSuccessStories from "../Components/Elements/Livelihood/LivelihoodSuccessStories";
 import CauseRecentCause from "../Components/Elements/Cause/CauseRecentCause";
+import RehabGallery from "../Components/Elements/Rehabilitation/RehabGallery";
 
 const data = {
   Livelihood: "Livelihood",
 };
 
-export default function livelihood() {
+export default function livelihood({ showRehabGallery = false }) {
   const cause = HelplineData.causes;
   const livelihoodProjectCards = cause.filter((item) =>
     item.category?.some((cat) =>
@@ -37,7 +38,7 @@ export default function livelihood() {
       <LivelihoodStats />
       <LivelihoodContent />
       <LivelihoodDisasterReliefTopics />
-     
+      {showRehabGallery ? <RehabGallery /> : null}
       <LivelihoodSuccessStories />
       <CauseRecentCause
         categories={data}

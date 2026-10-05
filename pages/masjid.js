@@ -9,7 +9,10 @@ export default function masjid() {
   const Data = HelplineData.masjidData;
   return (
     <Layout2>
-      <SocialCapitalHeader layout="donation" />
+      <SocialCapitalHeader
+        layout="donation"
+        image="/img/masjid-constructed-render.jpg"
+      />
       <MasjidMaktab />
       <MasjidProgram swiperData={Data} />
     </Layout2>

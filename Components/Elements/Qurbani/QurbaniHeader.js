@@ -6,7 +6,7 @@ export default function QurbaniHeader() {
     //breadcrumb area start
     <section
       className="breadcrumb_area breadcrumb_overlay"
-      style={{ backgroundImage: "url(/img/Campaigns/HaveaBlessedEid.png)" }}
+      style={{ backgroundImage: "url(/img/qurbaniheadermainislider.jpg)" }}
     >
       <div className="container">
         <div className="row">

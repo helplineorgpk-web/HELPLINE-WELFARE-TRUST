@@ -28,7 +28,11 @@ export default function Qurbani({ swiperData }) {
       <div className={styles.yearHeader}>
         <h2>{year}</h2>
       </div>
-      <div className={styles.qurbaniGrid}>
+      <div
+        className={`${styles.qurbaniGrid} ${
+          items.length === 1 ? styles.qurbaniGridSingle : ""
+        }`}
+      >
         {items.map((item) => (
           <div key={item.id} className={styles.qurbaniCard}>
             <div className={styles.imageContainer}>

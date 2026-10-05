@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
 import UBLPaymentForm from "../Payment/UBLPaymentForm";
 
@@ -61,7 +62,8 @@ const heroSlides = [
     image: "/img/helplineheadermainislider1.jpg",
     title: "HELPLINE WELFARE TRUST",
     subtitle: "Helpline Welfare Trust",
-    link: "/",
+    link: "/contact",
+    cta: "Contact Us",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -69,7 +71,8 @@ const heroSlides = [
     image: "/img/mawakhatheadermainislider.jpg",
     title: "مواخاتِ مدینہ",
     subtitle: "بنیادی حقوق سب کیلئے / سب کے ساتھ",
-    link: "/mawakhat-e-Madina",
+    link: "/mawakhat-pdf",
+    cta: "Learn More",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -77,7 +80,8 @@ const heroSlides = [
     image: "/img/kamyabpakistanheadermainislider.jpg",
     title: "کامیاب پاکستان پروگرام",
     subtitle: "بنیادی حقوق سب کے لیے",
-    link: "/",
+    link: "/mawakhat-pdf",
+    cta: "Learn More",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -85,7 +89,8 @@ const heroSlides = [
     image: "/img/studentsupportheadermainislider.jpg",
     title: "SUPPORT A STUDENT",
     subtitle: "Sponsor students' education and help them build a brighter future.",
-    link: "/student-support",
+    link: "/edu",
+    cta: "Support a Student",
     heroTitleLine1: "EDUCATION",
     heroTitleLine2: "OPENS DOORS",
     heroSubtitle: "Sponsor a student and help children from underserved communities stay in school.",
@@ -102,7 +107,8 @@ const heroSlides = [
     image: "/img/alkitabschoolheadermainislider.jpg",
     title: "AL-KITAB HIGHER SECONDARY SCHOOL",
     subtitle: "From humble beginnings to a brighter future for students.",
-    link: "/student-support",
+    link: "/ownSchools",
+    cta: "View Schools",
     heroTitleLine1: "EDUCATION",
     heroTitleLine2: "OPENS DOORS",
     heroSubtitle: "Sponsor a student and help children from underserved communities stay in school.",
@@ -120,6 +126,7 @@ const heroSlides = [
     title: "VOCATIONAL TRAINING CENTRE",
     subtitle: "Equip youth with technical skills for sustainable employment and self-reliance.",
     link: "/vocationalTrainingCenters",
+    cta: "View Centers",
     heroTitleLine1: "SKILLS THAT",
     heroTitleLine2: "CHANGE LIVES",
     heroSubtitle: "Equip youth with practical skills for employment and self-reliance.",
@@ -136,7 +143,8 @@ const heroSlides = [
     image: "/img/itlabheadermainislider.jpg",
     title: "IT & SKILLS LAB",
     subtitle: "Hands-on digital skills training for youth employment.",
-    link: "/vocationalTrainingCenters",
+    link: "/digitalSkill",
+    cta: "View IT Labs",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -145,6 +153,7 @@ const heroSlides = [
     title: "CLEAN WATER PROJECT",
     subtitle: "Safe drinking water for schools and communities.",
     link: "/water-projects",
+    cta: "View Water Projects",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -153,6 +162,7 @@ const heroSlides = [
     title: "AID DISTRIBUTION",
     subtitle: "Help us provide essential food supplies to families during the blessed month. Your donation ensures no family goes hungry.",
     link: "/ramzanRashan",
+    cta: "View Distribution",
     heroTitleLine1: "HELPING PEOPLE",
     heroTitleLine2: "HELP THEMSELVES",
     heroSubtitle: "This Ramazan be the helping hand that transforms lives and spreads hope.",
@@ -164,7 +174,8 @@ const heroSlides = [
     image: "/img/schoolmealsheadermainislider.jpg",
     title: "SCHOOL MEAL PROGRAM",
     subtitle: "Nutritious meals so children can learn, grow, and thrive.",
-    link: "/rashan",
+    link: "/school-meals",
+    cta: "View Meal Program",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -173,6 +184,7 @@ const heroSlides = [
     title: "HEALTHCARE & MEDICAL CAMPS",
     subtitle: "Mobile medical camps and community health centres for underserved areas.",
     link: "/health",
+    cta: "View Healthcare",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -181,6 +193,7 @@ const heroSlides = [
     title: "LIVELIHOOD SUPPORT",
     subtitle: "Livestock and poultry support to help families become self-reliant.",
     link: "/livelihood",
+    cta: "View Livelihood",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -188,7 +201,8 @@ const heroSlides = [
     image: "/img/housingprojectheadermainislider.jpg",
     title: "HOUSING PROJECT",
     subtitle: "Building homes and restoring dignity for families in need.",
-    link: "/rehabilitation",
+    link: "/disaster",
+    cta: "View Housing",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -197,6 +211,7 @@ const heroSlides = [
     title: "MASJID PROJECT",
     subtitle: "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
     link: "/masjid",
+    cta: "View Masjid Project",
     heroTitleLine1: "BUILD",
     heroTitleLine2: "TOGETHER",
     heroSubtitle: "Support integrated school and masjid facilities to uplift communities.",
@@ -214,6 +229,7 @@ const heroSlides = [
     title: "QURBANI PROJECT",
     subtitle: "Sharing the blessing of Qurbani meat with families in need.",
     link: "/qurbani",
+    cta: "View Qurbani",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -221,7 +237,8 @@ const heroSlides = [
     image: "/img/girlguideheadermainislider.jpg",
     title: "GIRL GUIDE",
     subtitle: "Strong girls build a better tomorrow.",
-    link: "/student-support",
+    link: "/ownSchools",
+    cta: "View Schools",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -229,7 +246,8 @@ const heroSlides = [
     image: "/img/cadetsheadermainislider.jpg",
     title: "YOUTH CADET PROGRAM",
     subtitle: "Discipline, leadership, and character building for the next generation.",
-    link: "/student-support",
+    link: "/ownSchools",
+    cta: "View Schools",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -237,7 +255,8 @@ const heroSlides = [
     image: "/img/unioncouncil23headermainislider.jpg",
     title: "UNION COUNCIL 23",
     subtitle: "مواخات مدینہ کے نظام کی عملی تعمیر وتدبیر — یونین کونسل 23 کے گاؤں",
-    link: "/mawakhat-e-Madina",
+    link: "/mawakhat-pdf",
+    cta: "Learn More",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -245,7 +264,8 @@ const heroSlides = [
     image: "/img/fieldmapheadermainislider.jpg",
     title: "MAWAKHAT TOWN FIELD MAP",
     subtitle: "Mawakhat Town, Rana Town Field Map",
-    link: "/mawakhat-e-Madina",
+    link: "/mawakhat-pdf",
+    cta: "Learn More",
     hideHeroText: true,
     mobileFitContain: true,
   },
@@ -368,6 +388,7 @@ export default function Header({ slides: slidesProp }) {
     getServerMobileSnapshot
   );
   const amountInputRef = useRef(null);
+  const swiperRef = useRef(null);
 
   const slidesSource = slidesProp && slidesProp.length > 0 ? slidesProp : heroSlides;
 
@@ -418,6 +439,9 @@ export default function Header({ slides: slidesProp }) {
       watchSlidesProgress: true,
       resistanceRatio: 0.85,
       className: "hero-slider",
+      onSwiper: (swiper) => {
+        swiperRef.current = swiper;
+      },
       onSlideChange,
     }),
     [onSlideChange]
@@ -643,6 +667,96 @@ export default function Header({ slides: slidesProp }) {
           transform: translateY(-2px);
           box-shadow: 0 8px 24px rgba(241, 91, 67, 0.45);
           color: #fff;
+        }
+        .hero-nav {
+          position: absolute;
+          top: 50%;
+          z-index: 6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.92);
+          color: #263b5d;
+          cursor: pointer;
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+          transform: translateY(-50%);
+          transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        }
+        .hero-nav-prev {
+          left: 16px;
+        }
+        .hero-nav-next {
+          right: 16px;
+        }
+        .hero-nav:hover {
+          background: #f15b43;
+          color: #fff;
+        }
+        .hero-nav-prev:hover {
+          transform: translateY(-50%) translateX(-2px);
+        }
+        .hero-nav-next:hover {
+          transform: translateY(-50%) translateX(2px);
+        }
+        .hero-nav svg {
+          width: 16px;
+          height: 16px;
+        }
+        @media (max-width: 768px) {
+          .hero-nav {
+            width: 36px;
+            height: 36px;
+          }
+          .hero-nav-prev {
+            left: 8px;
+          }
+          .hero-nav-next {
+            right: 8px;
+          }
+          .hero-nav svg {
+            width: 13px;
+            height: 13px;
+          }
+        }
+        .hero-banner-cta {
+          position: absolute;
+          left: 50%;
+          bottom: 28px;
+          transform: translateX(-50%);
+          z-index: 5;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 14px 28px;
+          background: #f15b43;
+          color: #fff;
+          border-radius: 10px;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: 0.4px;
+          text-decoration: none;
+          white-space: nowrap;
+          box-shadow: 0 4px 16px rgba(241, 91, 67, 0.35);
+          transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+        }
+        .hero-banner-cta:hover {
+          background: #d94832;
+          color: #fff;
+          transform: translateX(-50%) translateY(-2px);
+          box-shadow: 0 8px 24px rgba(241, 91, 67, 0.45);
+        }
+        @media (max-width: 768px) {
+          .hero-banner-cta {
+            bottom: 16px;
+            padding: 10px 18px;
+            font-size: 13px;
+          }
         }
         .donate-card-wrapper {
           position: relative;
@@ -1016,7 +1130,30 @@ export default function Header({ slides: slidesProp }) {
           })}
         </Swiper>
 
+        <button
+          type="button"
+          className="hero-nav hero-nav-prev"
+          aria-label="Previous banner"
+          onClick={() => swiperRef.current?.slidePrev()}
+        >
+          <FaChevronLeft />
+        </button>
+        <button
+          type="button"
+          className="hero-nav hero-nav-next"
+          aria-label="Next banner"
+          onClick={() => swiperRef.current?.slideNext()}
+        >
+          <FaChevronRight />
+        </button>
+
         <div className="hero-overlay" />
+
+        {activeSlide?.cta && activeSlide?.link ? (
+          <Link href={activeSlide.link} className="hero-banner-cta">
+            {activeSlide.cta}
+          </Link>
+        ) : null}
 
         {!activeSlide?.hideHeroText ? (
         <div className="hero-content" style={isMobile ? { textAlign: "center" } : undefined}>

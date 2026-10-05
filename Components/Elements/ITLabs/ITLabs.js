@@ -1,61 +1,62 @@
 import React from "react";
-import Link from 'next/link';
 import styles from "../../../public/css/Itlab.module.css";
-import { HelplineData } from "../../../pages/api/data";
+
+const labPlaces = [
+  {
+    title: "315-C Faisal Town IT Lab",
+    address: "House# 315, Sector C, Faisal Town, Lahore",
+    photos: [
+      { src: "/img/315cfaysaltownitlab.png", alt: "315-C Faisal Town vocational training center" },
+      { src: "/img/315cfaysaltownitlab1.png", alt: "Students working at computers in the Faisal Town IT lab" },
+      { src: "/img/315cfaysaltownitlab2.png", alt: "Faisal Town IT lab workstations" },
+      { src: "/img/315cfaysaltownitlab3.png", alt: "Students seated at computers in the Faisal Town IT lab" },
+      { src: "/img/315cfaysaltownitlab4.png", alt: "IT class at the Faisal Town lab" },
+    ],
+  },
+  {
+    title: "Al-Kitab Computer Lab",
+    address: "Al-Kitab School",
+    photos: [
+      { src: "/img/alkitabcomputerlab.png", alt: "Al-Kitab computer lab" },
+      { src: "/img/alkitabcomputerlab1.png", alt: "Al-Kitab computer lab desks and monitors" },
+    ],
+  },
+  {
+    title: "Vocational Training Centre IT Lab",
+    address: "Mohammad Yousaf Vocational Training Centre",
+    photos: [
+      { src: "/img/vtcitlab.png", alt: "Vocational training centre IT classroom" },
+      { src: "/img/vtcitlab1.png", alt: "Students practicing on computers at the vocational centre" },
+      { src: "/img/vtcitlab2.png", alt: "Students typing at the vocational centre lab" },
+      { src: "/img/vtcitlab3.png", alt: "Students working side by side in the vocational centre lab" },
+    ],
+  },
+];
 
 const ITLabs = () => {
-  const labData = HelplineData.ITData;
-
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>IT Labs Training Programs</h1>
-      <p className={styles.subtitle}>Discover our comprehensive range of IT training programs designed to help you succeed in the digital world.</p>
-      
-      <div className={styles.cardGrid}>
-        {labData.map((lab, index) => (
-          <div key={index} className={styles.card}>
-            <div className={styles.cardImageWrapper}>
+      <h1 className={styles.heading}>IT Labs</h1>
+      <p className={styles.subtitle}>
+        Computer labs at Helpline centres, shown at the place each photo belongs to.
+      </p>
+
+      {labPlaces.map((place) => (
+        <section key={place.title} className={styles.placeSection}>
+          <h2 className={styles.placeTitle}>{place.title}</h2>
+          <p className={styles.placeAddress}>{place.address}</p>
+          <div className={styles.photoGrid}>
+            {place.photos.map((photo) => (
               <img
-                src={lab.image}
-                alt={lab.title}
-                className={styles.cardImage}
+                key={photo.src}
+                src={photo.src}
+                alt={photo.alt}
+                className={styles.photo}
               />
-              <div className={styles.cardOverlay}>
-                <p className={styles.location}>{lab.title}</p>
-              </div>
-            </div>
-            
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>{lab.programTitle}</h2>
-              <p className={styles.cardDescription}>{lab.description}</p>
-              
-              <div className={styles.stats}>
-                <div className={styles.stat}>
-                  <span className={styles.statNumber}>50+</span>
-                  <span className={styles.statLabel}>Students</span>
-                </div>
-                <div className={styles.stat}>
-                  <span className={styles.statNumber}>4</span>
-                  <span className={styles.statLabel}>Courses</span>
-                </div>
-                <div className={styles.stat}>
-                  <span className={styles.statNumber}>95%</span>
-                  <span className={styles.statLabel}>Success</span>
-                </div>
-              </div>
-              
-              <div className={styles.cardActions}>
-                <Link href="/learn-more" className={styles.learnMore}>
-                  Learn More
-                </Link>
-                <Link href="/enroll" className={styles.enroll}>
-                  Enroll Now
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </section>
+      ))}
     </div>
   );
 };
