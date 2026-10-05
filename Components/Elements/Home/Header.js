@@ -584,6 +584,13 @@ export default function Header({ slides: slidesProp }) {
           // background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%);
           z-index: 1;
         }
+        .hero-slide-hitarea {
+          position: absolute;
+          inset: 0;
+          z-index: 4;
+          display: block;
+          cursor: pointer;
+        }
         .hero-content {
           position: absolute;
           inset: 0;
@@ -1148,6 +1155,14 @@ export default function Header({ slides: slidesProp }) {
         </button>
 
         <div className="hero-overlay" />
+
+        {activeSlide?.link ? (
+          <Link
+            href={activeSlide.link}
+            className="hero-slide-hitarea"
+            aria-label={activeSlide.cta || activeSlide.title || "Open slide"}
+          />
+        ) : null}
 
         {activeSlide?.cta && activeSlide?.link ? (
           <Link href={activeSlide.link} className="hero-banner-cta">
