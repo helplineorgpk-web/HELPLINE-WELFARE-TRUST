@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./AlkitabEzaazDetail.module.css";
 
 const HEADER_IMAGE = "/img/alkitabiankaezaz.jpg";
-const YOUTUBE_ID = "OllQZWMOZGU";
+const YOUTUBE_ID = "gXPb_hE6GUg";
 const YOUTUBE_EMBED = `https://www.youtube.com/embed/${YOUTUBE_ID}?rel=0&modestbranding=1&playsinline=1`;
 
 export default function AlkitabEzaazDetail() {
