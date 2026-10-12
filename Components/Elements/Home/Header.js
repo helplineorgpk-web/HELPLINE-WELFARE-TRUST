@@ -60,6 +60,7 @@ const CAUSE_OPTIONS = [
 const heroSlides = [
   {
     image: "/img/helplineheadermainislider1.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0001.jpg",
     title: "HELPLINE WELFARE TRUST",
     subtitle: "Helpline Welfare Trust",
     link: "/contact",
@@ -69,6 +70,7 @@ const heroSlides = [
   },
   {
     image: "/img/mawakhatheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0002.jpg",
     title: "مواخاتِ مدینہ",
     subtitle: "بنیادی حقوق سب کیلئے / سب کے ساتھ",
     link: "/mawakhat-pdf",
@@ -78,6 +80,7 @@ const heroSlides = [
   },
   {
     image: "/img/kamyabpakistanheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0003.jpg",
     title: "کامیاب پاکستان پروگرام",
     subtitle: "بنیادی حقوق سب کے لیے",
     link: "/kamyab-pakistan",
@@ -87,6 +90,7 @@ const heroSlides = [
   },
   {
     image: "/img/studentsupportheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0004.jpg",
     title: "SUPPORT A STUDENT",
     subtitle: "Sponsor students' education and help them build a brighter future.",
     link: "/edu",
@@ -105,6 +109,7 @@ const heroSlides = [
   },
   {
     image: "/img/alkitabschoolheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0005.jpg",
     title: "AL-KITAB HIGHER SECONDARY SCHOOL",
     subtitle: "From humble beginnings to a brighter future for students.",
     link: "/ownSchools",
@@ -123,6 +128,7 @@ const heroSlides = [
   },
   {
     image: "/img/vocationaltrainingheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0006.jpg",
     title: "VOCATIONAL TRAINING CENTRE",
     subtitle: "Equip youth with technical skills for sustainable employment and self-reliance.",
     link: "/vocationalTrainingCenters",
@@ -141,6 +147,7 @@ const heroSlides = [
   },
   {
     image: "/img/itlabheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0007.jpg",
     title: "IT & SKILLS LAB",
     subtitle: "Hands-on digital skills training for youth employment.",
     link: "/digitalSkill",
@@ -150,6 +157,7 @@ const heroSlides = [
   },
   {
     image: "/img/cleanwaterheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0008.jpg",
     title: "CLEAN WATER PROJECT",
     subtitle: "Safe drinking water for schools and communities.",
     link: "/water-projects",
@@ -159,6 +167,7 @@ const heroSlides = [
   },
   {
     image: "/img/aiddistributionheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0009.jpg",
     title: "AID DISTRIBUTION",
     subtitle: "Help us provide essential food supplies to families during the blessed month. Your donation ensures no family goes hungry.",
     link: "/ramzanRashan",
@@ -172,6 +181,7 @@ const heroSlides = [
   },
   {
     image: "/img/schoolmealsheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0010.jpg",
     title: "SCHOOL MEAL PROGRAM",
     subtitle: "Nutritious meals so children can learn, grow, and thrive.",
     link: "/school-meals",
@@ -181,6 +191,7 @@ const heroSlides = [
   },
   {
     image: "/img/medicalcampheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0011.jpg",
     title: "HEALTHCARE & MEDICAL CAMPS",
     subtitle: "Mobile medical camps and community health centres for underserved areas.",
     link: "/health",
@@ -190,6 +201,7 @@ const heroSlides = [
   },
   {
     image: "/img/livelihoodheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0012.jpg",
     title: "LIVELIHOOD SUPPORT",
     subtitle: "Livestock and poultry support to help families become self-reliant.",
     link: "/livelihood",
@@ -199,6 +211,7 @@ const heroSlides = [
   },
   {
     image: "/img/housingprojectheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0013.jpg",
     title: "HOUSING PROJECT",
     subtitle: "Building homes and restoring dignity for families in need.",
     link: "/disaster",
@@ -208,6 +221,7 @@ const heroSlides = [
   },
   {
     image: "/img/masjidprojectheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0014.jpg",
     title: "MASJID PROJECT",
     subtitle: "Building integrated school and masjid facilities to uplift communities spiritually and educationally.",
     link: "/masjid",
@@ -226,6 +240,7 @@ const heroSlides = [
   },
   {
     image: "/img/qurbaniheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0015.jpg",
     title: "QURBANI PROJECT",
     subtitle: "Sharing the blessing of Qurbani meat with families in need.",
     link: "/qurbani",
@@ -235,6 +250,7 @@ const heroSlides = [
   },
   {
     image: "/img/girlguideheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0016.jpg",
     title: "GIRL GUIDE",
     subtitle: "Strong girls build a better tomorrow.",
     link: "/ownSchools",
@@ -244,6 +260,7 @@ const heroSlides = [
   },
   {
     image: "/img/cadetsheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0017.jpg",
     title: "YOUTH CADET PROGRAM",
     subtitle: "Discipline, leadership, and character building for the next generation.",
     link: "/ownSchools",
@@ -253,6 +270,7 @@ const heroSlides = [
   },
   {
     image: "/img/alkitabiankaezaz.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0018.jpg",
     title: "الکتاب کا اعزاز",
     subtitle: "الکتاب کے طلبہ کا قومی اعزاز اور فخر",
     link: "/alkitab-ezaaz",
@@ -262,6 +280,7 @@ const heroSlides = [
   },
   {
     image: "/img/unioncouncil23headermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0019.jpg",
     title: "UNION COUNCIL 23",
     subtitle: "مواخات مدینہ کے نظام کی عملی تعمیر وتدبیر — یونین کونسل 23 کے گاؤں",
     link: "/mawakhat-pdf",
@@ -271,6 +290,7 @@ const heroSlides = [
   },
   {
     image: "/img/fieldmapheadermainislider.jpg",
+    imageMobile: "/img/landingpagesliderimagesformobile/WebsiteDesignMobile_page-0020.jpg",
     title: "MAWAKHAT TOWN FIELD MAP",
     subtitle: "Mawakhat Town, Rana Town Field Map",
     link: "/mawakhat-pdf",
