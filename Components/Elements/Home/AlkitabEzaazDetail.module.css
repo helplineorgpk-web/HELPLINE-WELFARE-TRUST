@@ -128,6 +128,237 @@
   margin-bottom: 0;
 }
 
+.shorts {
+  margin-top: 2.5rem;
+}
+
+.shortsHead {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.shortsTitle {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #1a2433;
+  line-height: 1.8;
+}
+
+.shortsSub {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #0d9488;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.shortsGrid {
+  --shorts-cols: 5;
+  --shorts-gap: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--shorts-gap);
+}
+
+.shortCard {
+  position: relative;
+  flex: 0 0 auto;
+  /* 0.1px slack keeps sub-pixel rounding from wrapping the last card early */
+  width: calc((100% - (var(--shorts-cols) - 1) * var(--shorts-gap)) / var(--shorts-cols) - 0.1px);
+  aspect-ratio: 9 / 16;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 14px;
+  background: #111;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(38, 59, 93, 0.16);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.shortCard:hover,
+.shortCard:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(38, 59, 93, 0.26);
+}
+
+.shortCard:focus-visible {
+  outline: 3px solid #0d9488;
+  outline-offset: 3px;
+}
+
+.shortCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 18, 32, 0) 45%, rgba(10, 18, 32, 0.88) 100%);
+  pointer-events: none;
+}
+
+.shortThumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.shortCard:hover .shortThumb {
+  transform: scale(1.06);
+}
+
+.shortPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(241, 91, 67, 0.94);
+  color: #fff;
+  font-size: 0.95rem;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease;
+}
+
+.shortPlay svg {
+  margin-left: 3px;
+}
+
+.shortCard:hover .shortPlay {
+  transform: translate(-50%, -50%) scale(1.12);
+}
+
+.shortTitle {
+  position: absolute;
+  left: 0.65rem;
+  right: 0.65rem;
+  bottom: 0.7rem;
+  z-index: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: #fff;
+  font-family: var(--hl-font, system-ui, sans-serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 1rem;
+  background: rgba(13, 20, 33, 0.9);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: lightboxFade 0.2s ease;
+}
+
+@keyframes lightboxFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lightboxBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: min(calc(100vw - 2rem), calc(min(74vh, 720px) * 9 / 16));
+}
+
+.lightboxFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightboxMeta {
+  width: 100%;
+  text-align: center;
+}
+
+.lightboxTitle {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0 0 0.2rem;
+  color: #fff;
+  font-family: var(--hl-font, system-ui, sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.lightboxLink {
+  display: inline-block;
+  color: #5eead4;
+  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.lightboxLink:hover {
+  color: #99f6e4;
+}
+
+.lightboxClose,
+.lightboxNav {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.lightboxClose:hover,
+.lightboxNav:hover {
+  background: #f15b43;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 .cta {
   margin-top: 2.25rem;
   text-align: center;
@@ -161,6 +392,13 @@
   transform: translateY(-2px);
 }
 
+@media (max-width: 900px) {
+  .shortsGrid {
+    --shorts-cols: 4;
+    --shorts-gap: 0.75rem;
+  }
+}
+
 @media (max-width: 768px) {
   .page {
     padding: 2.25rem 0.9rem 3.5rem;
@@ -169,5 +407,53 @@
   .videoCard,
   .story {
     padding: 0.85rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .shortsGrid {
+    --shorts-cols: 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .lightbox {
+    padding: 0.75rem;
+  }
+
+  .lightboxBody {
+    width: min(calc(100vw - 1.5rem), calc(min(74vh, 720px) * 9 / 16));
+  }
+
+  .lightboxClose {
+    top: 0.6rem;
+    right: 0.6rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* No room beside the player on phones, so the arrows sit over its edges */
+  .lightboxNav {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 38px;
+    height: 38px;
+    background: rgba(13, 20, 33, 0.6);
+    transform: translateY(-50%);
+  }
+
+  .lightboxPrev {
+    left: 0.5rem;
+  }
+
+  .lightboxNext {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .shortsGrid {
+    --shorts-cols: 2;
   }
 }
