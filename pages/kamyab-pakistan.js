@@ -9,7 +9,7 @@ export default function KamyabPakistanPage() {
     <Layout2>
       <NextSeo
         title="کامیاب پاکستان پروگرام | قومی و فلاحی پروگرامز | Helpline Welfare"
-        description="کامیاب پاکستان پروگرام — مواخاتِ مدینہ کے نظریہ فلاحی نظام پر مبنی اٹھارہ قومی و فلاحی پروگرامز: تعلیم، صحت، روزگار، صاف پانی، رہائش اور کردار سازی۔"
+        description="کامیاب پاکستان پروگرام — مواخاتِ مدینہ کے نظریہ فلاحی نظام پر مبنی بیس قومی و فلاحی پروگرامز: تعلیم، صحت، روزگار، صاف پانی، رہائش اور کردار سازی۔"
         canonical="https://helplinewelfare.org/kamyab-pakistan"
       />
       <Head>

@@ -242,6 +242,20 @@
   color: #374151;
 }
 
+.cardLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0d9488;
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.cardLink:hover {
+  color: #0b7c72;
+}
+
 .cta {
   margin-top: 2.75rem;
   text-align: center;

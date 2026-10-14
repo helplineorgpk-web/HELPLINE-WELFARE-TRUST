@@ -30,7 +30,7 @@ export default function KamyabPakistanDetail() {
 
             <div className={styles.stats}>
               <div className={styles.stat}>
-                <span className={styles.statValue}>18</span>
+                <span className={styles.statValue}>{KAMYAB_PAKISTAN_PROGRAMS.length}</span>
                 <span className={styles.statLabel}>قومی و فلاحی پروگرامز</span>
               </div>
               <div className={styles.stat}>
@@ -89,6 +89,12 @@ export default function KamyabPakistanDetail() {
                     <p className={styles.blockText}>{program.impact}</p>
                   </div>
                 </div>
+
+                {program.link ? (
+                  <Link href={program.link} className={styles.cardLink}>
+                    مکمل تفصیل دیکھیں ←
+                  </Link>
+                ) : null}
               </article>
             ))}
           </div>
