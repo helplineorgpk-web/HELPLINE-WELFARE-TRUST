@@ -80,6 +80,9 @@ export default function CauseDetailsArea({
   link1,
   link2,
   link3,
+  galleryTitle,
+  gallery,
+  videos,
 }) {
   return (
     <div className="cause_details_area pt-120 pb-80">
@@ -151,6 +154,29 @@ export default function CauseDetailsArea({
                         <img src={img8} alt="img" />
                       </div>
                     </div>
+                  )}
+                  {(gallery?.length > 0 || videos?.length > 0) && (
+                    <>
+                      {galleryTitle && (
+                        <h4 className="details_title">{galleryTitle}</h4>
+                      )}
+                      {videos?.map((src, i) => (
+                        <MediaEmbed
+                          key={src}
+                          src={src}
+                          title={`${actualName || title} - Video ${i + 1}`}
+                        />
+                      ))}
+                      {gallery?.length > 0 && (
+                        <div className="row mb-45">
+                          {gallery.map((src) => (
+                            <div className="col-6 w_img mb-20" key={src}>
+                              <img src={src} alt="img" />
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
               </div>

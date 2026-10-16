@@ -449,6 +449,25 @@ export const HelplineData = {
       detail4:
         "With its renewed strength, Benazir Public Girls School now acts as a catalyst for social change. Each girl who studies here is empowered with the knowledge, confidence, and skills to shape a brighter future—not just for herself but for her family and community. Through Helpline’s sustained commitment, the school continues to produce future leaders, professionals, and change-makers who carry forward the legacy of resilience, empowerment, and progress.",
       color: "#f15b43",
+      galleryTitle: "Celebrating Excellence — Achievers Recognition Ceremony (October 2026)",
+      videos: [
+        "/img/benazir/achievers-video-1.mp4",
+        "/img/benazir/achievers-video-2.mp4",
+        "/img/benazir/achievers-video-3.mp4",
+        "/img/benazir/achievers-video-4.mp4",
+      ],
+      gallery: [
+        "/img/benazir/achievers-1.jpg",
+        "/img/benazir/achievers-2.jpg",
+        "/img/benazir/achievers-3.jpg",
+        "/img/benazir/achievers-4.jpg",
+        "/img/benazir/achievers-5.jpg",
+        "/img/benazir/achievers-6.jpg",
+        "/img/benazir/achievers-7.jpg",
+        "/img/benazir/achievers-8.jpg",
+        "/img/benazir/achievers-9.jpg",
+        "/img/benazir/achievers-10.jpg",
+      ],
     },
     {
       id: 20,
@@ -1510,6 +1529,25 @@ Girls’ School Renovation – completed at a cost of 2.2 Million PKR
       detail4:
         "With its renewed strength, Benazir Public Girls School now acts as a catalyst for social change. Each girl who studies here is empowered with the knowledge, confidence, and skills to shape a brighter future—not just for herself but for her family and community. Through Helpline’s sustained commitment, the school continues to produce future leaders, professionals, and change-makers who carry forward the legacy of resilience, empowerment, and progress.",
       color: "#f15b43",
+      galleryTitle: "Celebrating Excellence — Achievers Recognition Ceremony (October 2026)",
+      videos: [
+        "/img/benazir/achievers-video-1.mp4",
+        "/img/benazir/achievers-video-2.mp4",
+        "/img/benazir/achievers-video-3.mp4",
+        "/img/benazir/achievers-video-4.mp4",
+      ],
+      gallery: [
+        "/img/benazir/achievers-1.jpg",
+        "/img/benazir/achievers-2.jpg",
+        "/img/benazir/achievers-3.jpg",
+        "/img/benazir/achievers-4.jpg",
+        "/img/benazir/achievers-5.jpg",
+        "/img/benazir/achievers-6.jpg",
+        "/img/benazir/achievers-7.jpg",
+        "/img/benazir/achievers-8.jpg",
+        "/img/benazir/achievers-9.jpg",
+        "/img/benazir/achievers-10.jpg",
+      ],
     },
     {
       id: 39,

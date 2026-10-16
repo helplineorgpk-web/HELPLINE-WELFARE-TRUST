@@ -1459,7 +1459,58 @@ export const DAILY_NEWS_SECTIONS = {
     ],
     summary:
       "بینظیر بھٹو کی یاد میں قائم — ہیلپ لائن نے مکمل ذمہ داری لی۔ لڑکیوں کی تعلیم کا سب سے بڑا مرکز۔",
+    gallery: [
+      "/img/benazir/achievers-1.jpg",
+      "/img/benazir/achievers-2.jpg",
+      "/img/benazir/achievers-3.jpg",
+      "/img/benazir/achievers-4.jpg",
+      "/img/benazir/achievers-5.jpg",
+      "/img/benazir/achievers-6.jpg",
+      "/img/benazir/achievers-7.jpg",
+      "/img/benazir/achievers-8.jpg",
+      "/img/benazir/achievers-9.jpg",
+      "/img/benazir/achievers-10.jpg",
+    ],
+    videos: [
+      "/img/benazir/achievers-video-1.mp4",
+      "/img/benazir/achievers-video-2.mp4",
+      "/img/benazir/achievers-video-3.mp4",
+      "/img/benazir/achievers-video-4.mp4",
+    ],
+    videoPoster: "/img/benazir/achievers-7.jpg",
     dailyUpdates: [
+      {
+        date: "2026-10-09",
+        time: "11:00 AM",
+        schoolName: "بینظیر پبلک گرلز ہائر سیکنڈری سکول",
+        schoolPlace: "نوابشاہ، سندھ — ہیلپ لائن کا اپنایا ہوا سکول",
+        title: "سیلیبریٹنگ ایکسیلنس — نمایاں طالبات کے اعزاز میں تقریب",
+        excerpt:
+          "بینظیر پبلک سکول فار گرلز، نوابشاہ میں نمایاں کارکردگی دکھانے والی طالبات کے اعزاز میں تقریب منعقد ہوئی — اسناد، شیلڈز، اور اچیومنٹ وال پر ہر کامیاب بیٹی کی تصویر۔",
+        body: `نو اکتوبر کی صبح — بینظیر پبلک سکول فار گرلز، نوابشاہ کا پنڈال رنگ برنگے غباروں، نیلی سفید قناتوں اور سرخ قالین سے سجا تھا۔ اسٹیج کے پیچھے بینر پر لکھا تھا: "سیلیبریٹنگ ایکسیلنس" — یہ دن ان بیٹیوں کے نام تھا جنہوں نے محنت سے اپنا نام روشن کیا۔
+
+ایک طرف "اچیومنٹ وال" پر نمایاں طالبات کی تصاویر آویزاں تھیں — ہر تصویر ایک کہانی، ہر چہرہ ایک خواب جو سچ ہونے کی راہ پر ہے۔ والدین، اساتذہ اور مہمان پنڈال میں بیٹھے تھے، اور جب ایک ایک طالبہ کا نام پکارا گیا تو تالیوں سے فضا گونج اٹھی۔
+
+مہمانانِ گرامی نے طالبات کو اسناد اور شیلڈز پیش کیں۔ سفید یونیفارم میں کھڑی بچیاں — ہاتھ میں سند، آنکھوں میں اعتماد۔ مقررین نے کہا کہ یہ کامیابی صرف ایک طالبہ کی نہیں، پورے خاندان اور پوری برادری کی ہے۔
+
+یہ وہی سکول ہے جو بینظیر بھٹو کی یاد میں قائم ہوا اور جسے ہیلپ لائن نے اپنایا — جہاں آج 2,200 سے زائد لڑکیاں تعلیم حاصل کر رہی ہیں۔ آج کی تقریب اس بات کا ثبوت ہے کہ جب بیٹیوں کو موقع ملتا ہے تو وہ آگے بڑھ کر دکھاتی ہیں۔
+
+اللہ تعالیٰ ان بیٹیوں کو مزید کامیابیاں عطا فرمائے، اور نوابشاہ کے اس سکول کو علم کی روشنی پھیلانے والا مینار بنائے۔ آمین`,
+        image: "/img/benazir/achievers-1.jpg",
+        images: [
+          "/img/benazir/achievers-1.jpg",
+          "/img/benazir/achievers-7.jpg",
+          "/img/benazir/achievers-5.jpg",
+          "/img/benazir/achievers-4.jpg",
+        ],
+        videos: [
+          "/img/benazir/achievers-video-1.mp4",
+          "/img/benazir/achievers-video-2.mp4",
+          "/img/benazir/achievers-video-3.mp4",
+          "/img/benazir/achievers-video-4.mp4",
+        ],
+        stacked: true,
+      },
       {
         date: TODAY,
         time: "05:50 PM",

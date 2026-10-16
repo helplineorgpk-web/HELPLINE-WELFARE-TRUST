@@ -51,7 +51,9 @@ export default function CauseDetails() {
         link1={cause.link1}
         link2={cause.link2}
         link3={cause.link3}
-
+        galleryTitle={cause.galleryTitle}
+        gallery={cause.gallery}
+        videos={cause.videos}
       />
     </Layout2>
   );
